@@ -1,0 +1,5 @@
+# Almost Lore ads.txt placeholder
+# Replace with authorized digital sellers before serving ads.
+# almostlore.com
+# Example (do not use until you have a real publisher ID):
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
