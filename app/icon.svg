@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Almost Lore">
+  <rect width="32" height="32" rx="4" fill="#2c2218"/>
+  <path d="M8 22.5c3.2-7.2 12.8-7.2 16 0" fill="none" stroke="#f3eadc" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="16" cy="12.2" r="3.1" fill="none" stroke="#c47860" stroke-width="1.6"/>
+</svg>
