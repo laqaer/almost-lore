@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/json-ld";
-import { ogImage, twitterWithImage } from "@/lib/metadata";
+import { openGraphImage, twitterWithImage } from "@/lib/metadata";
 import { organizationJsonLd } from "@/lib/schema";
 import { editorialNote, fundingNote, site } from "@/lib/site";
 
@@ -13,12 +13,12 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: "/about" },
-  openGraph: {
-    title,
-    description,
-    url: "/about",
-    images: [ogImage],
-  },
+    openGraph: {
+      ...openGraphImage,
+      title,
+      description,
+      url: "/about",
+    },
   twitter: {
     ...twitterWithImage,
     title,

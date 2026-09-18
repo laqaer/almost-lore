@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { site, siteUrl } from "@/lib/site";
+import { siteUrl } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
     },
     sitemap: `${siteUrl()}/sitemap.xml`,
-    host: site.domain,
+    host: new URL(siteUrl()).host,
   };
 }

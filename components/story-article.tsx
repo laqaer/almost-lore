@@ -46,8 +46,8 @@ export function StoryArticle({ story }: StoryArticleProps) {
         {story.sections.map((section, index) => (
           <section key={section.heading ?? `opening-${index}`}>
             {section.heading ? <h2>{section.heading}</h2> : null}
-            {section.paragraphs.map((paragraph) => (
-              <p key={paragraph.slice(0, 48)}>{paragraph}</p>
+            {section.paragraphs.map((paragraph, paragraphIndex) => (
+              <p key={paragraphIndex}>{paragraph}</p>
             ))}
           </section>
         ))}
