@@ -6,7 +6,7 @@ export default function NotFound() {
       <p className="text-xs font-medium uppercase tracking-[0.18em] text-rust">404</p>
       <h1 className="mt-3 font-display text-4xl text-ink">That page is not in the folio</h1>
       <p className="mt-4 text-ink-soft">
-        The essay is missing. The hub still has the four public-record stories.
+        The essay is missing. The hub still has the public-record stories.
       </p>
       <p className="mt-6">
         <Link className="text-moss underline underline-offset-3 hover:text-rust" href="/">

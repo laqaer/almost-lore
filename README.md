@@ -13,6 +13,7 @@ Intended host: `almostlore.com` (not wired yet). Set `NEXT_PUBLIC_SITE_URL` if t
 | `/stories/aqua-tofana-myth-vs-record` | Aqua Tofana, myth vs archive |
 | `/stories/balloon-almost-atlantic` | Zanussi, July 1978 |
 | `/stories/forgotten-scheme` | Beach pneumatic subway, 1870 |
+| `/stories/fashoda-incident-1898` | Fashoda Incident, 1898 |
 | `/about` | Laqaer disclosure and editorial standards |
 | `/privacy` | Honest ads-later privacy page |
 

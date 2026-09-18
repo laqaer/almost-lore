@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ogImage, twitterWithImage } from "@/lib/metadata";
+import { openGraphImage, twitterWithImage } from "@/lib/metadata";
 import { site } from "@/lib/site";
 
 const title = "Privacy policy";
@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: "/privacy" },
-  openGraph: {
-    title,
-    description,
-    url: "/privacy",
-    images: [ogImage],
-  },
+    openGraph: {
+      ...openGraphImage,
+      title,
+      description,
+      url: "/privacy",
+    },
   twitter: {
     ...twitterWithImage,
     title,

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { StoryArticle } from "@/components/story-article";
-import { ogImage, twitterWithImage } from "@/lib/metadata";
+import { openGraphImage, twitterWithImage } from "@/lib/metadata";
 import { getStory, stories, storyPath } from "@/lib/stories";
 
 type StoryPageProps = {
@@ -23,13 +23,13 @@ export async function generateMetadata({ params }: StoryPageProps): Promise<Meta
     description: story.dek,
     alternates: { canonical: path },
     openGraph: {
+      ...openGraphImage,
       title: story.title,
       description: story.dek,
       url: path,
       type: "article",
       publishedTime: story.published,
       modifiedTime: story.updated,
-      images: [ogImage],
     },
     twitter: {
       ...twitterWithImage,
