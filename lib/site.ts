@@ -8,7 +8,7 @@ export const site = {
   email: "hello@almostlore.com",
   publisher: "Laqaer",
   locale: "en_US",
-  updated: "2026-09-11",
+  updated: "2026-09-18",
 } as const;
 
 export function siteUrl(): string {

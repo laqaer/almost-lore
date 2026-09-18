@@ -13,8 +13,8 @@ export default function HomePage() {
         <p className="mt-6 max-w-2xl text-xl leading-8 text-ink-soft">
           {site.name} writes original longform about historical near-misses and strange public
           facts — the invented country, the poison legend, the balloon that ditched a hundred miles
-          short, the subway that ran one block. We do not scrape Reddit. We do not invent traffic,
-          reviews, or a body count the archive will not support.
+          short, the subway that ran one block, the almost-war on the Nile. We do not scrape Reddit.
+          We do not invent traffic, reviews, or a body count the archive will not support.
         </p>
       </section>
 
@@ -40,9 +40,9 @@ export default function HomePage() {
           <div className="prose-page mt-4">
             <p>
               A compressed line travels: a man sold a country that was not on the map; a cosmetic
-              killed six hundred husbands; New York had a secret subway. Those lines are useful as
-              doors. They are poor as essays. People land here when they want the version that can
-              survive a footnote.
+              killed six hundred husbands; New York had a secret subway; two empires almost fought
+              over a Nile fort. Those lines are useful as doors. They are poor as essays. People
+              land here when they want the version that can survive a footnote.
             </p>
             <p>
               We do not paste threads, harvest comments, or rewrite someone else’s post. If you
@@ -56,7 +56,7 @@ export default function HomePage() {
       <section id="stories" className="mt-16">
         <h2 className="font-display text-3xl text-ink">Stories</h2>
         <p className="mt-3 max-w-2xl text-ink-soft">
-          Four public-record near-misses. Read one, or start with the hook you already know.
+          Public-record near-misses. Read one, or start with the hook you already know.
         </p>
         <ul className="mt-8 divide-y divide-rule border-y border-rule">
           {stories.map((story) => (
