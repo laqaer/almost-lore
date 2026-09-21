@@ -2,18 +2,23 @@ import type { MetadataRoute } from "next";
 import { site, siteUrl } from "@/lib/site";
 import { stories, storyPath } from "@/lib/stories";
 
-const staticRoutes = ["/", "/about", "/privacy"] as const;
+const staticRoutes = [
+  { path: "/", priority: 1, updated: site.updated },
+  { path: "/about", priority: 0.6, updated: "2026-09-21" },
+  { path: "/now", priority: 0.6, updated: "2026-09-21" },
+  { path: "/friends", priority: 0.6, updated: "2026-09-21" },
+  { path: "/privacy", priority: 0.6, updated: site.updated },
+] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date(site.updated);
   const base = siteUrl();
 
   return [
-    ...staticRoutes.map((path) => ({
-      url: `${base}${path === "/" ? "" : path}`,
-      lastModified,
+    ...staticRoutes.map((route) => ({
+      url: `${base}${route.path === "/" ? "" : route.path}`,
+      lastModified: new Date(route.updated),
       changeFrequency: "monthly" as const,
-      priority: path === "/" ? 1 : 0.6,
+      priority: route.priority,
     })),
     ...stories.map((story) => ({
       url: `${base}${storyPath(story.slug)}`,

@@ -37,9 +37,9 @@ export default function AboutPage() {
       <div className="prose-page mt-8">
         <p>
           <strong>Almost Lore</strong> is original longform about documented historical
-          near-misses and odd public facts. It is published by <strong>{site.publisher}</strong>.
-          The intended production host is <strong>{site.domain}</strong> (not wired yet). For a
-          correction — a date we should hedge, a count we should unsay — write{" "}
+          near-misses and odd public facts. It is published by <strong>{site.publisher}</strong> at{" "}
+          <strong>{site.domain}</strong>. For a correction — a date we should hedge, a count we
+          should unsay — write{" "}
           <a href={`mailto:${site.email}`}>{site.email}</a>.
         </p>
         <p>{editorialNote}</p>

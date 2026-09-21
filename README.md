@@ -2,7 +2,7 @@
 
 Original longform on public-record historical near-misses and weird history. Mogul story factory Site #4. Published by Laqaer.
 
-Intended host: `almostlore.com` (not wired yet). Set `NEXT_PUBLIC_SITE_URL` if the deploy URL should differ.
+Published at `almostlore.com`. Set `NEXT_PUBLIC_SITE_URL` if the deploy URL should differ.
 
 ## Stories
 
@@ -15,6 +15,8 @@ Intended host: `almostlore.com` (not wired yet). Set `NEXT_PUBLIC_SITE_URL` if t
 | `/stories/forgotten-scheme` | Beach pneumatic subway, 1870 |
 | `/stories/fashoda-incident-1898` | Fashoda Incident, 1898 |
 | `/about` | Laqaer disclosure and editorial standards |
+| `/now` | Current editorial focus, longforms on the site, contact |
+| `/friends` | Blogroll of related public history and editorial sites |
 | `/privacy` | Honest ads-later privacy page |
 
 No CMS, auth, database, or picker widgets. Essays are typed content. Article JSON-LD is used only on story pages.
