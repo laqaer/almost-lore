@@ -4,6 +4,9 @@ import { stories, storyPath } from "@/lib/stories";
 
 const staticRoutes = ["/", "/about", "/privacy"] as const;
 
+// Build-time metadata route for Next.js static export.
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date(site.updated);
   const base = siteUrl();
