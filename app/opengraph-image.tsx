@@ -1,5 +1,8 @@
 import { ImageResponse } from "next/og";
 
+// Build-time metadata image for Next.js static export.
+export const dynamic = "force-static";
+
 export const alt = "Almost Lore — public-record near-misses, written as stories";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
