@@ -5,6 +5,7 @@
  *   node scripts/build-pdfs.mjs                 every product
  *   node scripts/build-pdfs.mjs party starter   only these (party | classroom | halloween | starter)
  *   node scripts/build-pdfs.mjs --html          also keep the intermediate HTML in .cache/pdf/
+ *   node scripts/build-pdfs.mjs --previews      also write listing images to ops/marketplace/previews/
  *
  * Paid files go to private/products/ (served only after Stripe verification, never from /public).
  * The repository is public, so those plaintext PDFs are gitignored. With PRODUCTS_KEY set (32 bytes,
@@ -29,6 +30,14 @@ const EDITION = new Date().toISOString().slice(0, 10);
 
 const args = process.argv.slice(2);
 const keepHtml = args.includes("--html");
+const previews = args.includes("--previews");
+/** Sheets (0-based) photographed for marketplace listings, from the US Letter / slide builds. */
+const PREVIEW_SHEETS = {
+  party: [0, 4, 5, 2],
+  halloween: [0, 2, 6, 1],
+  classroom: [0, 1, 2, 3],
+  starter: [0, 2, 3],
+};
 const only = args.filter((a) => !a.startsWith("--"));
 
 // ---------------------------------------------------------------------------------------------
@@ -1055,6 +1064,27 @@ for (const [product, jobs] of Object.entries(JOBS)) {
     );
     console.log(`${path.relative(ROOT, out)}  ${pages} pages`);
     await page.close();
+    if (
+      previews &&
+      (paper === "letter" || paper === "slide") &&
+      !out.includes("printables")
+    ) {
+      const dir = path.join(ROOT, "ops/marketplace/previews");
+      mkdirSync(dir, { recursive: true });
+      const shots = await browser.newPage({
+        deviceScaleFactor: paper === "slide" ? 1.6 : 2.4,
+      });
+      await shots.goto(pathToFileURL(file).href, { waitUntil: "load" });
+      await shots.waitForFunction(() => window.__ready === true, null, {
+        timeout: 60_000,
+      });
+      for (const [i, n] of (PREVIEW_SHEETS[product] ?? []).entries()) {
+        const target = path.join(dir, `${product}-${i + 1}.png`);
+        await shots.locator(".sheet").nth(n).screenshot({ path: target });
+      }
+      await shots.close();
+      console.log(`  previews → ops/marketplace/previews/${product}-*.png`);
+    }
   }
 }
 await browser.close();

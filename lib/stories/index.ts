@@ -1,13 +1,21 @@
 import { aquaTofanaStory } from "@/lib/stories/aqua-tofana";
+import { arkhipovStory } from "@/lib/stories/arkhipov";
 import { balloonStory } from "@/lib/stories/balloon";
+import { cakeStory } from "@/lib/stories/cake";
+import { dancingPlagueStory } from "@/lib/stories/dancing-plague";
 import { fashodaStory } from "@/lib/stories/fashoda";
 import { forgottenSchemeStory } from "@/lib/stories/forgotten-scheme";
+import { molassesStory } from "@/lib/stories/molasses";
 import { poyaisStory } from "@/lib/stories/poyais";
 import type { Story } from "@/lib/stories/types";
 
 export type { Story };
 
 export const stories: Story[] = [
+  molassesStory,
+  dancingPlagueStory,
+  cakeStory,
+  arkhipovStory,
   poyaisStory,
   aquaTofanaStory,
   balloonStory,
