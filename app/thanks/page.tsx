@@ -4,7 +4,7 @@ import { Hand } from "@/components/icons";
 import { NewsletterForm } from "@/components/newsletter-form";
 import { getProduct } from "@/lib/products";
 import { site } from "@/lib/site";
-import { getCheckoutSession } from "@/lib/stripe";
+import { getCheckoutSession, sessionEntitles } from "@/lib/stripe";
 
 export const metadata: Metadata = {
   title: "Thank you",
@@ -17,8 +17,8 @@ export default async function ThanksPage({ searchParams }: Props) {
   const raw = (await searchParams).session_id;
   const sessionId = typeof raw === "string" ? raw : "";
   const session = sessionId ? await getCheckoutSession(sessionId) : null;
-  const paid = session?.payment_status === "paid";
-  const product = paid ? getProduct(session?.metadata?.sku ?? "") : undefined;
+  const paid = sessionEntitles(session);
+  const product = paid ? getProduct(session.metadata?.sku ?? "") : undefined;
 
   if (!paid || !product) {
     return (
@@ -99,11 +99,7 @@ export default async function ThanksPage({ searchParams }: Props) {
           </p>
         </div>
         <div className="on-ink" style={{ minWidth: "min(100%, 380px)" }}>
-          <NewsletterForm
-            source="purchase"
-            tags={[`buyer:${product.sku}`]}
-            cta="Subscribe"
-          />
+          <NewsletterForm source="purchase" cta="Subscribe" />
         </div>
       </div>
     </div>

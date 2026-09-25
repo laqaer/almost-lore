@@ -39,11 +39,23 @@ async function stripe<T>(path: string, init?: { method?: "GET" | "POST"; body?: 
 export type CheckoutSession = {
   id: string;
   url: string | null;
+  livemode?: boolean;
   payment_status: "paid" | "unpaid" | "no_payment_required";
   status: "open" | "complete" | "expired";
   customer_details?: { email?: string | null } | null;
   metadata?: Record<string, string>;
+  payment_intent?: { latest_charge?: { refunded?: boolean } | string | null } | string | null;
 };
+
+/**
+ * A session unlocks its files when checkout completed and money isn't still owed: paid, or free
+ * via a 100% promotion code. Fully refunded purchases stop unlocking.
+ */
+export function sessionEntitles(session: CheckoutSession | null): session is CheckoutSession {
+  if (!session || session.status !== "complete" || session.payment_status === "unpaid") return false;
+  const charge = typeof session.payment_intent === "object" ? session.payment_intent?.latest_charge : null;
+  return !(charge && typeof charge === "object" && charge.refunded);
+}
 
 export async function createCheckoutSession(input: {
   sku: string;
@@ -66,6 +78,9 @@ export async function createCheckoutSession(input: {
       success_url: `${input.origin}/thanks?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${input.origin}${input.cancelPath}`,
       allow_promotion_codes: true,
+      // Card-type methods only: delayed methods (bank debits) would complete "unpaid" and never
+      // reach the download page.
+      "payment_method_types[0]": "card",
       billing_address_collection: "auto",
       "invoice_creation[enabled]": true,
       "metadata[sku]": input.sku,
@@ -77,8 +92,14 @@ export async function createCheckoutSession(input: {
 export async function getCheckoutSession(id: string): Promise<CheckoutSession | null> {
   if (!/^cs_(test|live)_[A-Za-z0-9]+$/.test(id)) return null;
   try {
-    return await stripe<CheckoutSession>(`/checkout/sessions/${id}`);
+    // The expansion lets refunds revoke downloads; a restricted key without Charges read access
+    // can't expand, so fall back to the plain session rather than lock out a paying buyer.
+    return await stripe<CheckoutSession>(`/checkout/sessions/${id}?expand[]=payment_intent.latest_charge`);
   } catch {
-    return null;
+    try {
+      return await stripe<CheckoutSession>(`/checkout/sessions/${id}`);
+    } catch {
+      return null;
+    }
   }
 }

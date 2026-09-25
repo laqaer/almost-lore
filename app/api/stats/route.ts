@@ -1,6 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { getDocket, isDocketOpen } from "@/lib/game/content";
 import { kvEnabled, kvPipeline } from "@/lib/kv";
+import { allow, clientKey } from "@/lib/rate-limit";
 
 /** Minimum plays before any percentage is shown — no tiny-sample theatre. */
 const MIN_SAMPLE = 25;
@@ -43,7 +44,13 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "bad-request" }, { status: 400 });
   }
 
+  if (!(await allow(request, "stats", 20, 3600))) return NextResponse.json({ ok: true });
+
   try {
+    // One tally per browser network per docket: without this, a script could mint a fake
+    // "0% got this right" in 25 requests. Duplicates get a quiet ok and change nothing.
+    const [fresh] = await kvPipeline([["SET", `d:${n}:seen:${clientKey(request)}`, 1, "EX", 172800, "NX"]]);
+    if (fresh !== "OK") return NextResponse.json({ ok: true });
     const commands: (string | number)[][] = [["INCR", `d:${n}:plays`], ["EXPIRE", `d:${n}:plays`, TTL]];
     correct.forEach((ok, i) => {
       if (ok) commands.push(["INCR", `d:${n}:r:${i}`], ["EXPIRE", `d:${n}:r:${i}`, TTL]);

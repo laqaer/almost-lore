@@ -1,7 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { readProductFile } from "@/lib/product-files";
 import { getProduct } from "@/lib/products";
-import { getCheckoutSession } from "@/lib/stripe";
+import { getCheckoutSession, sessionEntitles } from "@/lib/stripe";
 
 /**
  * GET /api/download?session_id=cs_…&file=almost-lore-party-pack.pdf
@@ -13,7 +13,7 @@ export async function GET(request: NextRequest) {
   const file = request.nextUrl.searchParams.get("file") ?? "";
 
   const session = await getCheckoutSession(sessionId);
-  if (!session || session.payment_status !== "paid") {
+  if (!sessionEntitles(session)) {
     return NextResponse.json({ error: "payment-not-verified" }, { status: 403 });
   }
 

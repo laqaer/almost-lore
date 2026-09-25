@@ -24,8 +24,13 @@ export type AnalyticsEvent =
   | "classroom_start"
   | "story_cta_click";
 
+/** Pages that must never send analytics. */
+export function untrackedPath(pathname: string | null | undefined): boolean {
+  return Boolean(pathname && (pathname.startsWith("/class") || pathname.startsWith("/thanks")));
+}
+
 export function track(name: AnalyticsEvent, params: Params = {}): void {
-  if (typeof window === "undefined") return;
+  if (typeof window === "undefined" || untrackedPath(window.location.pathname)) return;
   const w = window as AnalyticsWindow;
   try {
     w.gtag?.("event", name, params);

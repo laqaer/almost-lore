@@ -40,12 +40,64 @@ function empty(): ClerkCard {
   };
 }
 
+const VERDICT_SET = new Set<string>(["happened", "almost", "lore"]);
+const isObj = (v: unknown): v is Record<string, unknown> => typeof v === "object" && v !== null && !Array.isArray(v);
+const isInt = (v: unknown): v is number => Number.isInteger(v) && (v as number) >= 0;
+const isVerdicts = (v: unknown): v is Verdict[] => Array.isArray(v) && v.every((x) => VERDICT_SET.has(x as string));
+
+/** Rebuild the card field by field, so a corrupt or hand-edited value can't crash the game. */
+function sanitize(raw: unknown): ClerkCard {
+  const card = empty();
+  if (!isObj(raw)) return card;
+  if (isObj(raw.dockets)) {
+    for (const [n, rec] of Object.entries(raw.dockets)) {
+      if (
+        isObj(rec) &&
+        isVerdicts(rec.picks) &&
+        isVerdicts(rec.verdicts) &&
+        Array.isArray(rec.correct) &&
+        rec.correct.every((x) => typeof x === "boolean") &&
+        isInt(rec.right)
+      ) {
+        card.dockets[n] = {
+          picks: rec.picks,
+          verdicts: rec.verdicts,
+          correct: rec.correct as boolean[],
+          right: rec.right,
+          completedAt: typeof rec.completedAt === "string" ? rec.completedAt : "",
+        };
+      }
+    }
+  }
+  if (isObj(raw.current) && isInt(raw.current.n) && isVerdicts(raw.current.picks)) {
+    card.current = { n: raw.current.n, picks: raw.current.picks };
+  }
+  if (isInt(raw.streak)) card.streak = raw.streak;
+  if (isInt(raw.maxStreak)) card.maxStreak = raw.maxStreak;
+  if (isInt(raw.lastCompleted)) card.lastCompleted = raw.lastCompleted;
+  if (isObj(raw.perVerdict)) {
+    for (const v of ["happened", "almost", "lore"] as const) {
+      const pv = raw.perVerdict[v];
+      if (isObj(pv) && isInt(pv.seen) && isInt(pv.right)) card.perVerdict[v] = { seen: pv.seen, right: pv.right };
+    }
+  }
+  const t = raw.testResult;
+  if (isObj(t) && isInt(t.right) && isInt(t.total) && (t.blindSpot === null || VERDICT_SET.has(t.blindSpot as string))) {
+    card.testResult = {
+      right: t.right,
+      total: t.total,
+      blindSpot: t.blindSpot as Verdict | null,
+      completedAt: typeof t.completedAt === "string" ? t.completedAt : "",
+    };
+  }
+  return card;
+}
+
 export function loadCard(): ClerkCard {
   try {
     const raw = window.localStorage.getItem(KEY);
     if (!raw) return empty();
-    const parsed = JSON.parse(raw) as Partial<ClerkCard>;
-    return { ...empty(), ...parsed, perVerdict: { ...empty().perVerdict, ...parsed.perVerdict } };
+    return sanitize(JSON.parse(raw));
   } catch {
     return empty();
   }

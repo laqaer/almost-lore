@@ -6,7 +6,7 @@ type Props = { claimId?: string; storySlug?: string };
 
 /** Files a public correction report (a GitHub issue). Deliberately collects no email. */
 export function CorrectionForm({ claimId, storySlug }: Props) {
-  const [state, setState] = useState<"idle" | "sending" | "ok" | "invalid" | "closed" | "error">("idle");
+  const [state, setState] = useState<"idle" | "sending" | "ok" | "invalid" | "closed" | "slow" | "error">("idle");
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -29,6 +29,7 @@ export function CorrectionForm({ claimId, storySlug }: Props) {
       if (json.ok) setState("ok");
       else if (json.error === "missing-fields") setState("invalid");
       else if (json.error === "unconfigured") setState("closed");
+      else if (json.error === "slow-down") setState("slow");
       else setState("error");
     } catch {
       setState("error");
@@ -66,6 +67,7 @@ export function CorrectionForm({ claimId, storySlug }: Props) {
       <p className="signup-note" role="status" aria-live="polite">
         {state === "invalid" && "Tell us what's wrong in at least a sentence."}
         {state === "closed" && "The online form isn't connected yet. Email the address below instead."}
+        {state === "slow" && "That's a lot of reports from here this hour. Try again later, or email us."}
         {state === "error" && "The mail room jammed. Try again in a minute."}
       </p>
     </form>

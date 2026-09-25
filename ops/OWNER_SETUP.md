@@ -5,13 +5,22 @@ button honestly turns into "notify me". Each step below switches on a revenue or
 Set environment variables in **Vercel → Project → Settings → Environment Variables** (Production
 and Preview), then redeploy.
 
+## 0. Make the repository private (1 min) — **do this first**
+GitHub → laqaer/almost-lore → Settings → General → Danger Zone → Change visibility → Private.
+While it's public, anyone can read `content/claims.json` (every future answer and every Party Pack
+card) and rebuild the paid PDFs with `scripts/build-pdfs.mjs`. Vercel, CI and the ops routines all
+keep working on a private repo. Encrypting the PDFs protects the files, not the claims they're
+built from. Treat the launch packs as partly exposed already (the branch was public for a while);
+the product-maker's next volumes are safe once the repo is private.
+
 ## 1. Domain (5 min)
 - Point `almostlore.com` at the Vercel project (Vercel → Domains). Add `www` → apex redirect.
 - `NEXT_PUBLIC_SITE_URL=https://almostlore.com`
 
 ## 2. Take payments — Stripe (15 min) — **turns on revenue**
 - Create/activate a Stripe account, then Developers → API keys → create a **restricted key** with
-  *Checkout Sessions: write* (and read). Use a test key first (`rk_test_…`), buy the Party Pack
+  *Checkout Sessions: write*, plus *PaymentIntents: read* and *Charges: read* (so a refund
+  switches the download off). Production only accepts a live key (`rk_live_…`/`sk_live_…`). Use a test key first (`rk_test_…`), buy the Party Pack
   with card `4242 4242 4242 4242`, confirm `/thanks` shows the download, then switch to live.
 - `STRIPE_SECRET_KEY=rk_live_…`
 - `PRODUCTS_KEY=…` — the key that unlocks the encrypted PDFs in `private/products/*.enc` (your
@@ -26,8 +35,6 @@ and Preview), then redeploy.
   `…_CLASSROOM_PACK`, `…_CLASSROOM_DEPARTMENT`, `…_HALLOWEEN_PACK` to the product URLs and upload the
   PDFs there (the launch report attached them; or decrypt with `PRODUCTS_KEY` — see
   `lib/product-files.ts`).
-- Consider making the GitHub repository private: the claim bank (including Party Pack cards) and
-  the future schedule are readable there. Everything keeps working if you do.
 
 ## 3. Build the list — newsletter (10 min)
 Pick one (Buttondown recommended: its API lets the ops team schedule the Sunday Docket).

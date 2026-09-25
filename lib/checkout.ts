@@ -9,9 +9,17 @@ import { getProduct, hostedCheckoutUrl, type CheckoutMode } from "@/lib/products
  *   3. otherwise                                    → an honest "notify me" waitlist
  * Stripe is never offered for a file this deployment can't deliver: no broken buy buttons.
  */
+/** A test-mode key in production would hand out real files for the 4242 test card. */
+function stripeUsable(): boolean {
+  const key = process.env.STRIPE_SECRET_KEY?.trim();
+  if (!key) return false;
+  if (process.env.VERCEL_ENV === "production") return /^(sk|rk)_live_/.test(key);
+  return true;
+}
+
 export function checkoutMode(sku: string): CheckoutMode {
   const product = getProduct(sku);
-  if (process.env.STRIPE_SECRET_KEY && product?.files.every((f) => productFileAvailable(f.file))) return "stripe";
+  if (stripeUsable() && product?.files.every((f) => productFileAvailable(f.file))) return "stripe";
   if (hostedCheckoutUrl(sku)) return "hosted";
   return "waitlist";
 }

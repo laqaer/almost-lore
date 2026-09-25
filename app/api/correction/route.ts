@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { getClaim } from "@/lib/game/content";
+import { getClaim, isClaimPublic } from "@/lib/game/content";
+import { allow } from "@/lib/rate-limit";
 import { getStory } from "@/lib/stories";
 
 /**
@@ -17,11 +18,18 @@ export async function POST(request: NextRequest) {
   const message = String(body.message ?? "").trim().slice(0, 2000);
   const source = String(body.source ?? "").trim().slice(0, 500);
   const credit = String(body.credit ?? "").trim().slice(0, 60);
-  const claim = getClaim(claimId);
+  // Issues are public: neutralise @mentions and #references in everything a reader typed.
+  const inert = (text: string) => text.replace(/@/g, "@\u200b").replace(/#(\d)/g, "#\u200b$1");
+  // Only claims a reader could have seen: never confirm (or publish) an unopened or pack-only card.
+  const found = getClaim(claimId);
+  const claim = found && isClaimPublic(found.id) ? found : undefined;
   const story = claim ? undefined : getStory(String(body.storySlug ?? "").slice(0, 80));
 
   if ((!claim && !story) || message.length < 10) {
     return NextResponse.json({ ok: false, error: "missing-fields" }, { status: 400 });
+  }
+  if (!(await allow(request, "correction", 5, 3600))) {
+    return NextResponse.json({ ok: false, error: "slow-down" }, { status: 429 });
   }
 
   const token = process.env.CORRECTIONS_GITHUB_TOKEN;
@@ -40,10 +48,10 @@ export async function POST(request: NextRequest) {
         : `**Case file** (\`${story!.slug}\`): ${story!.title}`,
       "",
       "**Reader's report:**",
-      message.replace(/@/g, "@​"),
+      inert(message),
       "",
-      source ? `**Reader's source:** ${source}` : "_No source given._",
-      credit ? `**Credit on /corrections if upheld:** ${credit}` : "_Reader did not ask for credit._",
+      source ? `**Reader's source:** ${inert(source)}` : "_No source given._",
+      credit ? `**Credit on /corrections if upheld:** ${inert(credit)}` : "_Reader did not ask for credit._",
       "",
       "Corrections desk: verify against sources, fix or reply within 24h, log upheld corrections in content/corrections.json.",
     ].join("\n"),

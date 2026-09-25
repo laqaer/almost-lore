@@ -50,7 +50,10 @@ async function ok(res: Response, provider: string): Promise<SignupResult> {
   // 409/400 "already subscribed" responses are a success from the reader's point of view.
   if (res.ok || res.status === 409) return { ok: true, provider };
   const body = await res.text().catch(() => "");
-  if (/already|exists|duplicate/i.test(body)) return { ok: true, provider };
+  // Only a 4xx that says the address is already on the list counts; "does not exist" doesn't.
+  if (res.status >= 400 && res.status < 500 && /already (subscribed|exists|a subscriber)|duplicate/i.test(body)) {
+    return { ok: true, provider };
+  }
   return { ok: false, reason: "provider-error", detail: `${provider} ${res.status}: ${body.slice(0, 300)}` };
 }
 

@@ -31,7 +31,8 @@ ops task; it defines roles, cadence, KPIs and guardrails.
   server-only: future dockets must never reach a client bundle.
 - `lib/stories/*` — Case Files (longform). `lib/products.ts` — catalogue and prices.
 - `app/api/*` — docket, checkout, download (Stripe-verified), subscribe, stats, correction.
-- `private/products/*.pdf.enc` — paid PDFs, AES-encrypted because **this repository is public**.
+- `private/products/*.pdf.enc` — paid PDFs, AES-encrypted in case the repository is public (the
+  owner has been asked to make it private; until then the claim bank itself is readable).
   Never commit a plaintext paid PDF, never put one in `/public`. `lib/product-files.ts` decrypts with
   `PRODUCTS_KEY` per Stripe-verified download; `lib/checkout.ts` hides the buy button when it can't.
 - `ops/` — the operating manual, runbooks, launch kit, reports.

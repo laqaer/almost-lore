@@ -1,5 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { subscribe, type SignupSource } from "@/lib/newsletter";
+import { products } from "@/lib/products";
+import { allow } from "@/lib/rate-limit";
 
 const SOURCES: SignupSource[] = [
   "game-result",
@@ -14,6 +16,8 @@ const SOURCES: SignupSource[] = [
 ];
 
 type Outcome = "ok" | "invalid" | "unconfigured" | "error";
+
+const ALLOWED_TAGS = new Set(["waitlist:deck", ...products.map((p) => `waitlist:${p.sku}`)]);
 
 /** POST /api/subscribe  { email, source, tags?, company? (honeypot) } — JSON or form. */
 export async function POST(request: NextRequest) {
@@ -39,9 +43,10 @@ export async function POST(request: NextRequest) {
   }
 
   const source = SOURCES.includes(body.source as SignupSource) ? (body.source as SignupSource) : "footer";
-  const tags = Array.isArray(body.tags)
-    ? body.tags.map(String).filter((tag) => /^[a-z0-9:-]{1,40}$/.test(tag)).slice(0, 5)
-    : [];
+  // Clients may only ask for waitlist tags; segments like buyers are never client-asserted.
+  const tags = Array.isArray(body.tags) ? body.tags.map(String).filter((tag) => ALLOWED_TAGS.has(tag)).slice(0, 3) : [];
+
+  if (!(await allow(request, "subscribe", 5, 3600))) return reply("error", 429);
 
   const result = await subscribe({
     email: String(body.email ?? ""),

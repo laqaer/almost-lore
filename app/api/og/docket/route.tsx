@@ -1,6 +1,7 @@
 import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";
 import { cleanName } from "@/lib/game/challenge";
+import { rankFor } from "@/lib/game/scoring";
 import { OG, OgSlab, OgWood, ogFonts } from "@/lib/og";
 
 /** Share/challenge card for a docket. Spoiler-free: never shows a claim or a verdict. */
@@ -8,9 +9,13 @@ export async function GET(request: NextRequest) {
   const params = request.nextUrl.searchParams;
   const n = Math.max(1, Math.min(9999, Number(params.get("n")) || 1));
   const rawName = params.get("name");
-  const name = rawName ? cleanName(rawName) : null;
-  const score = Math.max(0, Math.min(5, Number(params.get("score")) || 0));
-  const rank = (params.get("rank") ?? "").slice(0, 32);
+  // The bundled fonts cover Latin scripts only; anything else would crash the renderer, so the
+  // card says "A friend" rather than show broken glyphs.
+  const cleaned = rawName ? cleanName(rawName) : "";
+  const name = rawName ? (/^[\p{Script=Latin}0-9 .'’-]+$/u.test(cleaned) ? cleaned : "A friend") : null;
+  const score = Math.max(0, Math.min(5, Math.trunc(Number(params.get("score")) || 0)));
+  // Never render caller-supplied text beyond the name: the rank is derived from the score.
+  const rank = params.has("rank") ? rankFor(score).title : "";
 
   return new ImageResponse(
     (

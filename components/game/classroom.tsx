@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { Slab } from "@/components/icons";
 import { VERDICT_DEF, VERDICT_SAY } from "@/lib/game/scoring";
@@ -88,9 +87,11 @@ export function Classroom() {
   return (
     <div className="projector">
       <header className="proj-bar mono-s">
-        <Link className="proj-brand wood" href="/">
+        {/* A full page load on purpose: nothing from this page may reach an analytics script. */}
+        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+        <a className="proj-brand wood" href="/">
           Almost Lore
-        </Link>
+        </a>
         <span>Classroom{docket ? ` · Docket No. ${docket.n} · ${formatDocketDate(docket.n)}` : ""}</span>
         <span className="proj-keys">
           {timer !== null ? (
