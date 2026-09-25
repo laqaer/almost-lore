@@ -10,11 +10,20 @@ const SOURCES: SignupSource[] = [
   "shop-waitlist",
   "classroom",
   "deck-waitlist",
+  "purchase",
 ];
+
+type Outcome = "ok" | "invalid" | "unconfigured" | "error";
 
 /** POST /api/subscribe  { email, source, tags?, company? (honeypot) } — JSON or form. */
 export async function POST(request: NextRequest) {
   const type = request.headers.get("content-type") ?? "";
+  const isForm = !type.includes("application/json");
+  // A no-JS form post lands on /newsletter with a status line instead of raw JSON.
+  const reply = (outcome: Outcome, status = 200) =>
+    isForm
+      ? NextResponse.redirect(new URL(`/newsletter?status=${outcome}`, request.url), 303)
+      : NextResponse.json(outcome === "ok" ? { ok: true } : { ok: false, error: outcome === "invalid" ? "invalid-email" : outcome }, { status });
   let body: Record<string, unknown> = {};
   if (type.includes("application/json")) {
     body = ((await request.json().catch(() => ({}))) ?? {}) as Record<string, unknown>;
@@ -26,7 +35,7 @@ export async function POST(request: NextRequest) {
 
   // Bots fill every field; people never see this one.
   if (typeof body.company === "string" && body.company.length > 0) {
-    return NextResponse.json({ ok: true });
+    return reply("ok");
   }
 
   const source = SOURCES.includes(body.source as SignupSource) ? (body.source as SignupSource) : "footer";
@@ -41,8 +50,8 @@ export async function POST(request: NextRequest) {
     referrer: request.headers.get("referer") ?? undefined,
   });
 
-  if (result.ok) return NextResponse.json({ ok: true });
-  if (result.reason === "invalid") return NextResponse.json({ ok: false, error: "invalid-email" }, { status: 400 });
+  if (result.ok) return reply("ok");
+  if (result.reason === "invalid") return reply("invalid", 400);
   console.error("[subscribe]", result.reason, result.reason === "provider-error" ? result.detail : "");
-  return NextResponse.json({ ok: false, error: result.reason }, { status: 503 });
+  return reply(result.reason === "unconfigured" ? "unconfigured" : "error", 503);
 }

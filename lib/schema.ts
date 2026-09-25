@@ -70,7 +70,15 @@ export function articleJsonLd(input: {
   };
 }
 
-export function productJsonLd(input: { name: string; description: string; path: string; priceCents: number; image?: string }) {
+export function productJsonLd(input: {
+  name: string;
+  description: string;
+  path: string;
+  priceCents: number;
+  image?: string;
+  /** False while checkout is unconfigured: no Offer is claimed for something that can't be bought. */
+  purchasable?: boolean;
+}) {
   const url = `${siteUrl()}${input.path}`;
   return {
     "@context": "https://schema.org",
@@ -80,13 +88,16 @@ export function productJsonLd(input: { name: string; description: string; path: 
     url,
     image: input.image ? [input.image] : undefined,
     brand: { "@type": "Brand", name: site.name },
-    offers: {
-      "@type": "Offer",
-      price: (input.priceCents / 100).toFixed(2),
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock",
-      url,
-    },
+    offers:
+      input.purchasable === false
+        ? undefined
+        : {
+            "@type": "Offer",
+            price: (input.priceCents / 100).toFixed(2),
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+            url,
+          },
   };
 }
 

@@ -13,7 +13,7 @@ import { latestClosedDocket, latestOpenDocket } from "@/lib/game/schedule";
 const claims = claimsData as Claim[];
 const dockets = docketsData as Docket[];
 
-export type ClaimSet = "gullibility" | "halloween" | "partyPack" | "classroom" | "starter" | "examples";
+export type ClaimSet = "gullibility" | "halloween" | "halloweenOnline" | "partyPack" | "classroom" | "starter" | "examples";
 const sets = setsData as Record<ClaimSet, string[]>;
 
 const byId = new Map(claims.map((claim) => [claim.id, claim]));
@@ -62,4 +62,18 @@ export function seal(claim: Claim): SealedClaim {
 
 export function claimsForStory(slug: string): Claim[] {
   return claims.filter((claim) => claim.storySlug === slug);
+}
+
+/** A claim as sent to the browser: audit quotes stay on the server. */
+export function publicClaim(claim: Claim): Claim {
+  return { ...claim, sources: claim.sources.map(({ title, publisher, url }) => ({ title, publisher, url })) };
+}
+
+const PUBLIC_SETS: ClaimSet[] = ["gullibility", "halloweenOnline", "starter", "examples"];
+
+/** True when a claim's text is already public: in an open docket or a free, published set. */
+export function isClaimPublic(id: string, now: number = Date.now()): boolean {
+  if (PUBLIC_SETS.some((name) => (sets[name] ?? []).includes(id))) return true;
+  const open = latestOpenDocket(now);
+  return dockets.some((d, i) => i + 1 <= open && d.cards.includes(id));
 }

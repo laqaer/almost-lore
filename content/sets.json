@@ -1,25 +1,20 @@
 {
  "gullibility": [
   "oxford-older-than-aztecs",
-  "anglo-zanzibar-war-1896",
-  "hiroo-onoda-1974",
-  "churchill-nobel-literature",
-  "nintendo-playing-cards",
-  "wojtek-the-soldier-bear",
-  "skylab-littering-fine",
   "napoleon-unusually-short",
-  "einstein-failed-maths",
-  "great-wall-visible-from-space",
-  "declaration-signed-july-4",
-  "paul-revere-british-are-coming",
   "gandhi-nobel-peace-prize",
-  "andrew-johnson-removed-1868",
+  "wojtek-the-soldier-bear",
+  "einstein-failed-maths",
   "apollo-13-moon-landing",
+  "churchill-nobel-literature",
+  "paul-revere-british-are-coming",
   "eiffel-tower-demolished-1909",
-  "quebec-referendum-1995",
-  "aaron-burr-elected-1800",
-  "beatles-snl-reunion-1976",
-  "seed-franklin-turkey"
+  "anglo-zanzibar-war-1896",
+  "declaration-signed-july-4",
+  "andrew-johnson-removed-1868",
+  "skylab-littering-fine",
+  "seed-franklin-turkey",
+  "aaron-burr-elected-1800"
  ],
  "halloween": [
   "mercy-brown-vampire-1892",
@@ -40,6 +35,18 @@
   "cromwell-head-on-a-spike",
   "thomas-paine-bones-lost",
   "seed-salem-burned"
+ ],
+ "halloweenOnline": [
+  "mercy-brown-vampire-1892",
+  "war-of-the-worlds-panic-1938",
+  "dracula-count-wampyr",
+  "gorbals-vampire-1954",
+  "frankenstein-monster-name",
+  "lincoln-body-snatch-1876",
+  "king-james-daemonologie",
+  "seed-salem-burned",
+  "chaplin-coffin-stolen-1978",
+  "jack-o-lantern-pumpkins"
  ],
  "partyPack": [
   "emperor-norton-1859",

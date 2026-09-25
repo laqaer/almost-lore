@@ -19,5 +19,5 @@ played by thousands gets screenshotted. Apply every gate in `ops/content-rubric.
 2. For each: verify against sources within 24 hours.
 3. Upheld → fix the claim in `content/claims.json` (text/record/sources; never change a past
    docket's card list), add an entry to `content/corrections.json`
-   (`{ "date", "claimId", "summary", "credit"? }`), open a PR, and comment on the issue with the fix.
+   (`{ "date", "claimId" or "storySlug", "summary", "credit"? }`), open a PR, and comment on the issue with the fix.
 4. Not upheld → reply on the issue with the sources and reasoning, politely, and close it.

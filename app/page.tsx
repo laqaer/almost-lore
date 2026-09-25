@@ -7,6 +7,7 @@ import { Glyph, Hand, Slab } from "@/components/icons";
 import { JsonLd } from "@/components/json-ld";
 import { NewsletterForm } from "@/components/newsletter-form";
 import { BuyButton } from "@/components/shop/buy-button";
+import { ClassStage, PartyStage } from "@/components/shop/product-art";
 import { getClaim, getSet } from "@/lib/game/content";
 import { checkoutMode, getProduct } from "@/lib/products";
 import { gameJsonLd } from "@/lib/schema";
@@ -532,40 +533,7 @@ export default function HomePage() {
           </div>
           <div className="shop-grid">
             <article className="item">
-              <div className="stage party" aria-hidden="true">
-                <div className="pcard c1">
-                  <span className="mono-s">Party Pack</span>
-                  <p>Happened, almost, or lore? Stamp it, flip it, argue about it.</p>
-                  <div className="foot mono-s">
-                    <span>Card front</span>
-                    <Glyph v="lore" />
-                  </div>
-                </div>
-                <div className="pcard c2">
-                  <span className="mono-s">The record</span>
-                  <p>Every card back carries the verdict and the story.</p>
-                  <div className="foot mono-s">
-                    <span>Card back</span>
-                    <Glyph v="happened" />
-                  </div>
-                </div>
-                <div className="pcard c3">
-                  <span className="mono-s">Stamp Off</span>
-                  <p>Everyone stamps at once. The record decides.</p>
-                  <div className="foot mono-s">
-                    <span>Rules</span>
-                    <Glyph v="almost" />
-                  </div>
-                  <div className="impression v-almost">Almost</div>
-                </div>
-                <div className="paddle">
-                  <div className="face">
-                    <Glyph v="lore" />
-                    Lore
-                  </div>
-                  <div className="stick" />
-                </div>
-              </div>
+              <PartyStage />
               <div className="body">
                 <span className="mono-s cat">Item 1A · print-and-play · 2 to 8 players</span>
                 <h3>
@@ -591,21 +559,7 @@ export default function HomePage() {
             </article>
 
             <article className="item">
-              <div className="stage class" aria-hidden="true">
-                <div className="screen">
-                  <span className="mono-s">
-                    <span>Bell-ringer</span>
-                    <span>Period 3</span>
-                  </span>
-                  <p>Stamp it before the bell: happened, almost, or lore?</p>
-                  <div className="opts">
-                    <Slab v="happened" />
-                    <Slab v="almost" />
-                    <Slab v="lore" />
-                  </div>
-                  <span className="timer">2:00</span>
-                </div>
-              </div>
+              <ClassStage />
               <div className="body">
                 <span className="mono-s cat">Item 2B · for the projector</span>
                 <h3>

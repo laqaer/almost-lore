@@ -1,8 +1,9 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { getClaim } from "@/lib/game/content";
+import { getStory } from "@/lib/stories";
 
 /**
- * POST /api/correction  { claimId, message, source?, credit?, company? (honeypot) }
+ * POST /api/correction  { claimId | storySlug, message, source?, credit?, company? (honeypot) }
  * Files a GitHub issue labelled "correction" for the ops team's corrections desk.
  * Readers' email addresses are never collected here: issues are public.
  *   CORRECTIONS_GITHUB_TOKEN  fine-grained token with Issues: read & write on the repo
@@ -17,24 +18,26 @@ export async function POST(request: NextRequest) {
   const source = String(body.source ?? "").trim().slice(0, 500);
   const credit = String(body.credit ?? "").trim().slice(0, 60);
   const claim = getClaim(claimId);
+  const story = claim ? undefined : getStory(String(body.storySlug ?? "").slice(0, 80));
 
-  if (!claim || message.length < 10) {
+  if ((!claim && !story) || message.length < 10) {
     return NextResponse.json({ ok: false, error: "missing-fields" }, { status: 400 });
   }
 
   const token = process.env.CORRECTIONS_GITHUB_TOKEN;
   const repo = process.env.CORRECTIONS_GITHUB_REPO || "laqaer/almost-lore";
   if (!token) {
-    console.warn("[correction] no CORRECTIONS_GITHUB_TOKEN; report for", claimId, message);
+    console.warn("[correction] no CORRECTIONS_GITHUB_TOKEN; report for", claim?.id ?? story?.slug, message);
     return NextResponse.json({ ok: false, error: "unconfigured" }, { status: 503 });
   }
 
   const issue = {
-    title: `Correction: ${claim.id}`,
+    title: `Correction: ${claim ? claim.id : `case file ${story!.slug}`}`,
     labels: ["correction"],
     body: [
-      `**Claim** (\`${claim.id}\`, stamped ${claim.verdict.toUpperCase()}):`,
-      `> ${claim.claim}`,
+      claim
+        ? `**Claim** (\`${claim.id}\`, stamped ${claim.verdict.toUpperCase()}):\n> ${claim.claim}`
+        : `**Case file** (\`${story!.slug}\`): ${story!.title}`,
       "",
       "**Reader's report:**",
       message.replace(/@/g, "@​"),

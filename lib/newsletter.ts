@@ -17,7 +17,8 @@ export type SignupSource =
   | "newsletter-page"
   | "shop-waitlist"
   | "classroom"
-  | "deck-waitlist";
+  | "deck-waitlist"
+  | "purchase";
 
 export type SignupInput = {
   email: string;

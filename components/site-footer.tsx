@@ -21,7 +21,7 @@ export function SiteFooter() {
               <li><Link href="/answers">The archive</Link></li>
               <li><Link href="/test">Gullibility Test</Link></li>
               <li><Link href="/halloween">Halloween Edition</Link></li>
-              <li><Link href="/class">Projector mode</Link></li>
+              <li><a href="/class">Projector mode</a></li>
             </ul>
           </div>
           <div>
@@ -39,7 +39,7 @@ export function SiteFooter() {
               <li><Link href="/shop/party-pack">Party Pack · $12</Link></li>
               <li><Link href="/shop/classroom-pack">Classroom Pack · $15</Link></li>
               <li><Link href="/halloween">Halloween Pack · $7</Link></li>
-              <li><Link href="/deck">The boxed deck</Link></li>
+              <li><Link href="/shop#deck">The boxed deck</Link></li>
             </ul>
           </div>
           <div>
