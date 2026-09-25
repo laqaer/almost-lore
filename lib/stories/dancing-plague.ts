@@ -3,14 +3,14 @@ import type { Story } from "@/lib/stories/types";
 export const dancingPlagueStory: Story = {
   slug: "dancing-plague-1518",
   title: "Strasbourg dances",
-  dek: "In the summer of 1518, people in Strasbourg began dancing and could not stop. The city's first answer was to hire musicians. What the records show, what they don't, and why historians no longer blame bad bread.",
-  hook: "In 1518 hundreds of people in Strasbourg danced for weeks, some until they died, and the city paid musicians to keep them going.",
+  dek: "In the summer of 1518, people in Strasbourg began dancing and could not stop. The city's first answer was to hire musicians. What the records show, what they don't, and why most historians no longer blame bad bread.",
+  hook: "In 1518 people in Strasbourg danced for weeks and could not stop, and the city paid musicians to keep them going.",
   verdict: "happened",
   yearLabel: "1518",
   published: "2026-09-25",
   updated: "2026-09-25",
   sourcesNote:
-    "This essay is original prose. It follows the surviving Strasbourg evidence as historians have assembled it — city council records, notes from the civic secretary's office, local chronicles written during and after the outbreak, and the physician Paracelsus's later account — and the modern scholarship on dancing manias, especially John Waller's work on 1518. Numbers are the weak point of every account: how many danced, and whether and how many died, depend on chronicles written at different distances from the event. Where they disagree, we say so. The engraving shown is of a different dancing pilgrimage, near Brussels, and is used for its era, not as a picture of Strasbourg.",
+    "This essay is original prose. It follows the surviving Strasbourg evidence as historians have assembled it — the city council's orders, local chronicles written during and after the outbreak, and the physician Paracelsus's later account — and the modern scholarship on dancing manias, especially John Waller's work on 1518. Numbers are the weak point of every account: how many danced, and whether and how many died, depend on chronicles written at different distances from the event. The city's own records of that summer do not mention deaths; the accounts that do were written later, and historians disagree over how far to trust them. Where the sources disagree, we say so. The engraving shown is of a different dancing pilgrimage, near Brussels, and is used for its era, not as a picture of Strasbourg.",
   sections: [
     {
       paragraphs: [
@@ -21,37 +21,37 @@ export const dancingPlagueStory: Story = {
     {
       heading: "Frau Troffea's street",
       paragraphs: [
-        "The chronicles begin with one woman, named in some accounts as Frau Troffea, who began to dance alone in a street in the middle of July and kept going, on and off, for days. Within a week dozens had joined her. By August the outbreak had grown large enough to alarm the council, and one chronicle puts the number of dancers at as many as four hundred over the course of the summer.",
-        "These were not people at a festival. The descriptions are of involuntary movement: dancers who seemed unable to stop, who wept or cried out, whose feet bled, who were carried off exhausted and began again. Contemporaries did not treat it as a party that got out of hand. They treated it as an affliction, and argued about what kind.",
+        "The chronicles begin with one woman, named in some accounts as Frau Troffea, who began to dance alone in a street in the middle of July and kept going, on and off, for four to six days. Within a week more than thirty had joined her. By August the outbreak had grown large enough to alarm the council, and one chronicler asserts that by the end of that month four hundred people had been seized.",
+        "These were not people at a festival. The descriptions are of involuntary movement: dancers who seemed unable to stop, who appeared entranced and saw terrifying visions, whose feet swelled and bled. Contemporaries did not treat it as a party that got out of hand. They treated it as an affliction, and argued about what kind.",
       ],
     },
     {
       heading: "The prescription: dance",
       paragraphs: [
-        "Strasbourg's physicians ruled out a supernatural cause and blamed a natural one: overheated blood. The logic of the time suggested that the dancers had to sweat it out, so the council did something that sounds like satire and is in the paperwork. It cleared space in guild halls and a market, had a wooden stage built, hired musicians and paid strong men to hold the dancers up and keep them moving.",
-        "It did not work. If anything, the spectacle drew more people in. Within weeks the council reversed itself entirely. Public music and dancing were banned, with narrow exceptions, and the authorities turned from medicine to the saints. The afflicted were taken to a shrine of St. Vitus in the hills near Saverne, where priests led them through rituals that included crosses, holy oil and red shoes. By September the outbreak had faded.",
+        "Strasbourg's physicians ruled out astrological and supernatural causes and declared it a natural disease: overheated blood. The authorities' answer was that the afflicted had to dance it out, day and night, so the council did something that sounds like satire and is in the record. It cleared two guildhalls and the outdoor grain market, had a wooden stage built opposite the horse fair, paid musicians, and hired dancers to hold the afflicted up and keep them moving.",
+        "It did not work. Waller argues that the spectacle, staged in the busiest public spaces in the city, drew more people in. Before long the council reversed itself entirely. Public music and dancing were banned until September; respectable households could still dance at a wedding or a first Mass, indoors, to stringed instruments only, with no drums or tambourines. The authorities turned from medicine to the saints. The afflicted were taken to a shrine of St. Vitus in the hills above Saverne, where priests put small crosses in their hands and red shoes on their feet, the shoes marked with crosses in holy oil and sprinkled with holy water. By September the outbreak had faded.",
       ],
     },
     {
       heading: "The death toll nobody can confirm",
       paragraphs: [
-        "The number most often repeated is that fifteen people a day were dying at the height of the epidemic. It appears in popular accounts with great confidence. It does not appear in the city's own surviving records from the summer, and historians who have gone through the evidence treat it cautiously. Some dancers probably did die, of exhaustion, heart failure or infection, and chroniclers wrote of deaths. How many, nobody knows.",
-        "That uncertainty is not a detail to be smoothed over. It is the difference between a strange event, which this certainly was, and a massacre by music, which the evidence does not show. The honest version is that the dancing happened, the council's musicians happened, and the body count is a later sharpening of a story that did not need one.",
+        "The number most often repeated is that fifteen people a day were dying at the height of the epidemic. It appears in popular accounts with great confidence. It does not appear in the city's own surviving records from the summer, which do not say whether anyone died at all. Waller, reading the chronicles, concluded that some dancers did die, of exhaustion, strokes or failing hearts; skeptics point out that the sources he cites for deaths were all written later. How many died, if any, nobody knows.",
+        "That uncertainty is not a detail to be smoothed over. It is the difference between a strange event, which this certainly was, and a massacre by music, which the evidence does not show. The honest version is that the dancing happened, the council's musicians happened, and the precise body count comes from later retellings of a story that did not need one.",
       ],
     },
     {
       heading: "Not the bread",
       paragraphs: [
-        "For much of the twentieth century the favorite explanation was ergot, a fungus that grows on damp rye and contains compounds related to LSD. Poisoned bread, the argument ran, sent a town into convulsions and hallucinations. It is a tidy theory. It also fits badly. Ergotism typically restricts blood flow and causes seizures and gangrene; it does not make hundreds of people perform something recognizable as dancing, on and off, for weeks.",
-        "The explanation most historians now favor is what used to be called mass hysteria and is now called mass psychogenic illness. Strasbourg in 1518 was a city under strain: years of bad harvests and high bread prices, outbreaks of disease, and a population that believed, as people in the region had for generations, that St. Vitus could punish sinners by making them dance. John Waller, whose history of the outbreak is the fullest modern account, argues that in those conditions, belief did the work: people who feared the curse, and saw others struck by it, fell into the trance themselves.",
-        "Strasbourg was not unique. Dancing manias broke out along the Rhine and in the Low Countries in 1374, and there were smaller episodes in the centuries between. What makes 1518 unusual is the quality of the paper trail: a city government that took notes, and physicians who wrote down their reasoning, however wrong.",
+        "For decades a favorite explanation was ergot, a fungus that grows on damp rye and contains compounds related to LSD. Poisoned bread, the argument ran, sent a town into convulsions and hallucinations. It is a tidy theory. It also fits badly. Ergotism typically restricts blood flow and causes seizures and gangrene; it does not make hundreds of people perform something recognizable as dancing, on and off, for weeks.",
+        "The explanation most historians now favor is what used to be called mass hysteria and is now called mass psychogenic illness. Strasbourg in 1518 was a city under strain: years of bad harvests and high bread prices, outbreaks of disease, and a population that believed, as people in the region had for generations, that St. Vitus could punish sinners by making them dance. John Waller, a historian of medicine whose 2008 book A Time to Dance, a Time to Die is a full-length history of the outbreak, argues that in those conditions, belief did the work: people who feared the curse, and saw others struck by it, fell into the trance themselves.",
+        "Strasbourg was not unique. Dancing manias broke out along the Rhine and in the Low Countries in 1374, spreading from around Aachen and Maastricht as far as Strasbourg itself, and there were smaller episodes in the century and a half between. Waller notes that every known outbreak in that span happened along the Rhine and Moselle, a pattern that poisoned grain does not explain and a shared regional belief does. What makes 1518 unusual is the quality of the paper trail: a city government whose orders survive, and a physicians' diagnosis that was written down, however wrong.",
       ],
     },
     {
       heading: "Why the hook is not the essay",
       paragraphs: [
         "The hook is funny because of the band. Put yourself in the council chamber, though, and the decision looks less absurd: learned men applied the best medicine they had to a crisis they could not explain, watched it fail, and changed course within weeks. That is not a bad record for 1518.",
-        "The hook also tends to make the dancers into a punchline. They were among the poorest and most frightened people in a hungry city, and whatever moved them, they suffered. The story deserves to be told the way the council's clerks told it: plainly, with the numbers they had, and without inventing the ones they didn't.",
+        "The hook also tends to make the dancers into a punchline. The chronicles suggest the poor were hit hardest, in a hungry city, and whatever moved them, they suffered. The story deserves to be told the way the council's clerks told it: plainly, with the numbers they had, and without inventing the ones they didn't.",
       ],
     },
   ],
