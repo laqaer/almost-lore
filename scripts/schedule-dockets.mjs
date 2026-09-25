@@ -54,6 +54,12 @@ const MIXES = [
 const telegraph = (c) => c.scores?.telegraph ?? 3;
 const trapScore = (c) => c.difficulty * 2 - telegraph(c) + (c.scores?.fun ?? 3) * 0.5;
 
+const byId = new Map(claims.map((c) => [c.id, c]));
+const trapCounts = { happened: 0, almost: 0, lore: 0 };
+for (const d of dockets) {
+  const last = byId.get(d.cards[d.cards.length - 1]);
+  if (last) trapCounts[last.verdict]++;
+}
 const created = [];
 for (let i = 0; i < days; i++) {
   const n = dockets.length + created.length + 1;
@@ -66,7 +72,31 @@ for (let i = 0; i < days; i++) {
 
   for (const claim of pool.filter((c) => c.pinDate === date)) if (picked.length < 5) take(claim);
 
-  const mix = { ...MIXES[(n - 1) % MIXES.length] };
+  // Mirror what's left in the pool so the tail of the schedule stays balanced, but vary the
+  // pattern (MIXES) so players can't count their way to an answer.
+  const left = { happened: 0, almost: 0, lore: 0 };
+  for (const c of pool) if (!c.pinDate) left[c.verdict]++;
+  const total = left.happened + left.almost + left.lore || 1;
+  const base = MIXES[(n - 1) % MIXES.length];
+  const mix = {};
+  for (const v of ["happened", "almost", "lore"]) {
+    const share = (5 * left[v]) / total;
+    mix[v] = Math.max(0, Math.min(3, Math.round((share + base[v]) / 2), left[v]));
+  }
+  if (left.almost > 0 && mix.almost === 0) mix.almost = 1;
+  let sum = mix.happened + mix.almost + mix.lore;
+  const order = ["happened", "lore", "almost"].sort((a, b) => left[b] - left[a]);
+  while (sum < 5) {
+    const v = order.find((k) => mix[k] < Math.min(3, left[k]));
+    if (!v) break;
+    mix[v]++;
+    sum++;
+  }
+  while (sum > 5) {
+    const v = [...order].reverse().find((k) => mix[k] > (k === "almost" ? 1 : 0));
+    mix[v]--;
+    sum--;
+  }
   for (const c of picked) mix[c.verdict] = Math.max(0, mix[c.verdict] - 1);
 
   for (const verdict of ["almost", "happened", "lore"]) {
@@ -94,8 +124,14 @@ for (let i = 0; i < days; i++) {
     console.warn(`docket ${n}: imperfect mix (${picked.map((c) => c.verdict).join(", ")}) — review by hand`);
   }
 
-  const trap = [...picked].sort((a, b) => trapScore(b) - trapScore(a))[0];
-  const ordered = [...picked.filter((c) => c !== trap).sort((a, b) => a.difficulty - b.difficulty), trap];
+  // The trap is a hard card, but its verdict rotates so the fifth slot never becomes a tell.
+  const best = Math.max(...picked.map(trapScore));
+  const contenders = picked.filter((c) => trapScore(c) >= best - 1.5);
+  const trap = contenders.sort(
+    (a, b) => trapCounts[a.verdict] - trapCounts[b.verdict] || trapScore(b) - trapScore(a) || hash(a.id) - hash(b.id),
+  )[0];
+  trapCounts[trap.verdict]++;
+  const ordered = [...picked.filter((c) => c !== trap).sort((a, b) => hash(a.id + n) - hash(b.id + n)), trap];
   created.push({ n, cards: ordered.map((c) => c.id) });
   console.log(`#${n} ${date}  ${ordered.map((c) => `${c.verdict[0].toUpperCase()}:${c.id}`).join("  ")}`);
 }

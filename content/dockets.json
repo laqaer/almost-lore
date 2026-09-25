@@ -2,21 +2,271 @@
  {
   "n": 1,
   "cards": [
-   "seed-kodak-calendar",
-   "seed-greenland-1946",
-   "seed-viking-helmets",
-   "seed-emu-war-1932",
-   "seed-fashoda-1898"
+   "dancing-plague-1518-musicians",
+   "library-alexandria-single-fire",
+   "project-a119-moon-nuke",
+   "marie-curie-notebooks-radioactive",
+   "great-seal-moses-red-sea"
   ]
  },
  {
   "n": 2,
   "cards": [
+   "lanse-aux-meadows-norse",
+   "greek-statues-left-white",
+   "newton-south-sea-bubble",
+   "petrov-false-alarm-1983",
+   "darwin-rejected-for-his-nose"
+  ]
+ },
+ {
+  "n": 3,
+  "cards": [
+   "liberty-bell-cracked-1776",
+   "burke-and-hare-1828",
+   "columbus-sailors-feared-flat-earth",
+   "vespasian-urine-tax-70",
+   "project-iceworm-greenland"
+  ]
+ },
+ {
+  "n": 4,
+  "cards": [
+   "continental-army-takes-quebec-1775",
+   "nero-fiddled-while-rome-burned",
+   "goldsboro-h-bomb-1961",
+   "mansa-musa-gold-cairo",
+   "harrison-dies-31-days"
+  ]
+ },
+ {
+  "n": 5,
+  "cards": [
+   "senate-ratifies-versailles",
+   "british-burn-white-house-1814",
+   "newton-master-of-the-mint",
+   "medieval-animal-trials-pig",
+   "julius-caesar-caesarean-birth"
+  ]
+ },
+ {
+  "n": 6,
+  "cards": [
+   "kafka-manuscripts-burned",
    "seed-cadaver-synod",
-   "seed-salem-burned",
+   "marie-antoinette-let-them-eat-cake",
+   "sennacherib-captures-jerusalem-701bce",
+   "monroe-dies-july-4-1831"
+  ]
+ },
+ {
+  "n": 7,
+  "cards": [
+   "friday-13th-knights-templar",
    "seed-petrov-1983",
-   "seed-franklin-turkey",
-   "seed-molasses-1919"
+   "pilgrims-landed-on-plymouth-rock",
+   "zhang-heng-seismoscope-132",
+   "edwin-booth-saves-robert-lincoln"
+  ]
+ },
+ {
+  "n": 8,
+  "cards": [
+   "taiwan-atomic-bomb-1988",
+   "pringles-inventor-buried-in-can",
+   "caesar-parthian-invasion-44bce",
+   "zheng-he-reaches-africa",
+   "clan-tartans-ancient"
+  ]
+ },
+ {
+  "n": 9,
+  "cards": [
+   "nero-corinth-canal-67",
+   "saint-patrick-drove-out-snakes",
+   "adams-jefferson-die-july-4-1826",
+   "july-20-plot-kills-hitler",
+   "galileo-thrown-in-dungeon"
+  ]
+ },
+ {
+  "n": 10,
+  "cards": [
+   "maya-predicted-end-of-world-2012",
+   "cinco-de-mayo-independence",
+   "spanish-armada-lands-army",
+   "cleopatra-learned-egyptian",
+   "mars-bluff-bomb-1958"
+  ]
+ },
+ {
+  "n": 11,
+  "cards": [
+   "nasa-space-pen-pencil",
+   "darien-scheme-panama",
+   "paris-blown-up-1944",
+   "deir-el-medina-strike-1158bce",
+   "us-buys-cuba-1848"
+  ]
+ },
+ {
+  "n": 12,
+  "cards": [
+   "nixon-moon-disaster-speech",
+   "washington-wooden-teeth",
+   "pony-express-18-months",
+   "praetorian-throne-auction-193",
+   "first-computer-bug-moth-1947"
+  ]
+ },
+ {
+  "n": 13,
+  "cards": [
+   "ronald-wayne-sold-apple-stake",
+   "nixon-impeached-by-house",
+   "mars-climate-orbiter-units",
+   "alexander-reaches-ganges-326bce",
+   "thomas-crapper-invented-flush-toilet"
+  ]
+ },
+ {
+  "n": 14,
+  "cards": [
+   "spanish-flu-started-in-spain",
+   "mrs-oleary-cow-chicago-fire",
+   "hero-holy-water-vending-machine",
+   "de-gaulle-killed-petit-clamart",
+   "defence-scheme-no-1-invade-us"
+  ]
+ },
+ {
+  "n": 15,
+  "cards": [
+   "kosmos-954-canada",
+   "hoover-dam-workers-buried",
+   "vermont-independent-republic",
+   "napoleon-invades-britain-1805",
+   "hittite-prince-becomes-pharaoh"
+  ]
+ },
+ {
+  "n": 16,
+  "cards": [
+   "pyramids-built-by-slaves",
+   "babbage-difference-engine-completed",
+   "elser-bomb-kills-hitler-1939",
+   "defenestration-prague-survived",
+   "castro-major-league-contract"
+  ]
+ },
+ {
+  "n": 17,
+  "cards": [
+   "cia-acoustic-kitty",
+   "australia-becomes-republic-1999",
+   "lost-cosmonauts-before-gagarin",
+   "fu-go-balloon-bombs-oregon",
+   "gladiators-morituri-te-salutant"
+  ]
+ },
+ {
+  "n": 18,
+  "cards": [
+   "palomares-ambassador-swim-1966",
+   "nasa-invented-tang",
+   "gunpowder-plot-1605",
+   "zimmermann-telegram-1917",
+   "jing-ke-kills-king-of-qin-227bce"
+  ]
+ },
+ {
+  "n": 19,
+  "cards": [
+   "olympic-art-medals",
+   "apollo-12-lightning",
+   "washington-cherry-tree",
+   "seed-molasses-1919",
+   "arabs-capture-constantinople-717"
+  ]
+ },
+ {
+  "n": 20,
+  "cards": [
+   "checkpoint-charlie-tanks-1961",
+   "seed-emu-war-1932",
+   "roman-vomitorium-purging-rooms",
+   "1904-olympic-marathon-strychnine",
+   "tilden-becomes-president-1877"
+  ]
+ },
+ {
+  "n": 21,
+  "cards": [
+   "starfish-prime-hawaii-1962",
+   "operation-downfall-invasion-of-japan",
+   "teddy-roosevelt-shot-speech-1912",
+   "jfk-berliner-jelly-doughnut",
+   "edison-electrocuted-topsy"
+  ]
+ },
+ {
+  "n": 22,
+  "cards": [
+   "us-buys-danish-west-indies-1917",
+   "titanic-sent-first-sos",
+   "seed-fashoda-1898",
+   "lobotomy-nobel-prize",
+   "hubert-latham-flies-channel"
+  ]
+ },
+ {
+  "n": 23,
+  "cards": [
+   "gan-ying-reaches-rome-97",
+   "great-seal-bug-1945",
+   "norad-training-tape-1979",
+   "einstein-built-the-atomic-bomb",
+   "atchison-president-for-a-day"
+  ]
+ },
+ {
+  "n": 24,
+  "cards": [
+   "romans-salted-carthage-146bce",
+   "napoleon-shot-off-sphinx-nose",
+   "mlk-stabbed-1958",
+   "krikalev-last-soviet-citizen",
+   "athens-captures-syracuse-414bce"
+  ]
+ },
+ {
+  "n": 25,
+  "cards": [
+   "arkhipov-b59-torpedo-1962",
+   "langley-aerodrome-flies-1903",
+   "betsy-ross-first-flag",
+   "tug-of-war-olympic-sport",
+   "tanganyika-laughter-epidemic"
+  ]
+ },
+ {
+  "n": 26,
+  "cards": [
+   "jacobites-take-london-1745",
+   "hotline-red-telephone",
+   "seed-kodak-calendar",
+   "gerald-ford-never-elected",
+   "zond-5-tortoises-1968"
+  ]
+ },
+ {
+  "n": 27,
+  "cards": [
+   "norwegian-rocket-1995",
+   "war-plan-red-invade-canada",
+   "trent-affair-war-1861",
+   "gettysburg-address-envelope",
+   "blue-peacock-chickens"
   ]
  }
 ]

@@ -1660,5 +1660,4060 @@
    "hoax",
    "sport"
   ]
+ },
+ {
+  "id": "mercy-brown-vampire-1892",
+  "claim": "In 1892 a Rhode Island family dug up their dead daughter and burned her heart to stop a 'vampire'.",
+  "verdict": "happened",
+  "year": "1892",
+  "yearSort": 1892,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "folklore",
+  "record": "When tuberculosis kept killing the Brown family of Exeter, neighbours blamed the dead. Mercy Brown's body was exhumed, her heart burned on a rock, and the ashes mixed into medicine for her dying brother Edwin. He died anyway.",
+  "sources": [
+   {
+    "title": "Mercy Brown vampire incident",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mercy_Brown_vampire_incident"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "vampire",
+   "new england"
+  ]
+ },
+ {
+  "id": "jack-o-lantern-pumpkins",
+  "claim": "The first jack-o'-lanterns, carved in Ireland and Britain, were hollowed-out pumpkins.",
+  "verdict": "lore",
+  "year": "19th century",
+  "yearSort": 1850,
+  "era": "19th-century",
+  "region": "Europe",
+  "topic": "folklore",
+  "record": "In Ireland and Britain, lantern faces were carved into turnips, swedes and mangelwurzels. Pumpkins are native to the Americas and took over the job in North America, where they were bigger and easier to carve.",
+  "sources": [
+   {
+    "title": "Jack-o'-lantern",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jack-o'-lantern"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "American Halloween imagery made the pumpkin so dominant that people assumed it had always been the vegetable of choice."
+ },
+ {
+  "id": "houdini-died-halloween",
+  "claim": "Harry Houdini, the escape artist, died on Halloween.",
+  "verdict": "happened",
+  "year": "1926",
+  "yearSort": 1926,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "culture",
+  "record": "Houdini died in Detroit on 31 October 1926 of peritonitis from a ruptured appendix, days after a student punched him in the stomach backstage in Montreal. Séances have been held for him on Halloween ever since.",
+  "sources": [
+   {
+    "title": "Harry Houdini",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Harry_Houdini"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": []
+ },
+ {
+  "id": "war-of-the-worlds-panic-1938",
+  "claim": "Orson Welles's 1938 radio play 'The War of the Worlds' sent a terrified America fleeing into the streets.",
+  "verdict": "lore",
+  "year": "1938",
+  "yearSort": 1938,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "culture",
+  "record": "Most listeners were tuned to a rival show, and few who heard it believed it. The legend of mass panic grew from newspaper stories written the next day, when papers were eager to show radio as irresponsible.",
+  "sources": [
+   {
+    "title": "The War of the Worlds (1938 radio drama)",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/The_War_of_the_Worlds_(1938_radio_drama)"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Newspapers, losing advertising to radio, splashed isolated reports of fright across front pages, and later retellings treated those stories as proof of a national panic."
+ },
+ {
+  "id": "poisoned-halloween-candy",
+  "claim": "Strangers poisoning trick-or-treat candy have killed children across America.",
+  "verdict": "lore",
+  "year": "1970s–",
+  "yearSort": 1974,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "crime",
+  "record": "Sociologist Joel Best combed decades of news reports and found no confirmed case of a stranger killing a child with poisoned Halloween candy. The notorious 1974 Texas death was caused by the boy's own father, for insurance money.",
+  "sources": [
+   {
+    "title": "Poisoned candy myths",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Poisoned_candy_myths"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": [],
+  "origin": "A few real family crimes and many hoaxes were retold as random attacks by strangers, and the warnings became an annual tradition."
+ },
+ {
+  "id": "dracula-count-wampyr",
+  "claim": "Bram Stoker published his vampire novel with its villain named Count Wampyr.",
+  "verdict": "almost",
+  "year": "1897",
+  "yearSort": 1897,
+  "era": "19th-century",
+  "region": "Europe",
+  "topic": "literature",
+  "record": "Stoker's working notes call the villain Count Wampyr. Before publication in 1897 he found the name Dracula in a book on Wallachia and used it instead.",
+  "sources": [
+   {
+    "title": "Dracula",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dracula"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "witch-hunts-nine-million",
+  "claim": "Europe's witch hunts executed about nine million people.",
+  "verdict": "lore",
+  "year": "1450–1750",
+  "yearSort": 1600,
+  "era": "early-modern",
+  "region": "Europe",
+  "topic": "law",
+  "record": "Historians estimate roughly 40,000 to 60,000 executions across Europe between about 1450 and 1750. Most took place in the early modern period, not the Middle Ages.",
+  "sources": [
+   {
+    "title": "Witch trials in the early modern period",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Witch_trials_in_the_early_modern_period"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": [],
+  "origin": "The nine-million figure traces to an 18th-century extrapolation by Gottfried Christian Voigt and was repeated by 20th-century writers."
+ },
+ {
+  "id": "samhain-god-of-the-dead",
+  "claim": "The ancient Celts worshipped a god of the dead named Samhain every 31 October.",
+  "verdict": "lore",
+  "year": "Ancient",
+  "yearSort": -100,
+  "era": "ancient",
+  "region": "Europe",
+  "topic": "religion",
+  "record": "Samhain was the name of a Gaelic festival marking the end of the harvest season, not a god. No early source mentions a deity called Samhain.",
+  "sources": [
+   {
+    "title": "Samhain",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Samhain"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "The 'Lord of Death' Samhain was invented by 18th-century antiquarians such as Charles Vallancey and spread through later Halloween lore."
+ },
+ {
+  "id": "gorbals-vampire-1954",
+  "claim": "In 1954 hundreds of Glasgow children stormed a cemetery hunting a vampire with iron teeth.",
+  "verdict": "happened",
+  "year": "1954",
+  "yearSort": 1954,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "folklore",
+  "record": "On 23 September 1954 children armed with sticks and knives searched Glasgow's Southern Necropolis for a 'vampire with iron teeth' said to have eaten two boys. Police cleared them out; there was no vampire, and no missing boys.",
+  "sources": [
+   {
+    "title": "Gorbals Vampire",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gorbals_Vampire"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "king-james-daemonologie",
+  "claim": "A reigning king of Scotland wrote a book on how to hunt witches.",
+  "verdict": "happened",
+  "year": "1597",
+  "yearSort": 1597,
+  "era": "early-modern",
+  "region": "Europe",
+  "topic": "royalty",
+  "record": "James VI of Scotland, later James I of England, published Daemonologie in 1597 after taking part in the North Berwick witch trials. It argued that witchcraft was real and should be punished.",
+  "sources": [
+   {
+    "title": "Daemonologie",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Daemonologie"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "frankenstein-monster-name",
+  "claim": "In Mary Shelley's novel, the monster is named Frankenstein.",
+  "verdict": "lore",
+  "year": "1818",
+  "yearSort": 1818,
+  "era": "19th-century",
+  "region": "Europe",
+  "topic": "literature",
+  "record": "Frankenstein is Victor Frankenstein, the student who builds the creature. The creature itself is never given a name; the book calls it the creature, the fiend or the daemon.",
+  "sources": [
+   {
+    "title": "Frankenstein",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Frankenstein"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Stage and film adaptations, especially the 1931 Universal film, fused the creator's name onto the monster."
+ },
+ {
+  "id": "edison-frankenstein-1910",
+  "claim": "The first film adaptation of Frankenstein was made by Thomas Edison's film studio.",
+  "verdict": "happened",
+  "year": "1910",
+  "yearSort": 1910,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "film",
+  "record": "Edison Studios released a 16-minute Frankenstein in 1910, directed by J. Searle Dawley. The monster was created in a vat of chemicals rather than stitched together.",
+  "sources": [
+   {
+    "title": "Frankenstein (1910 film)",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Frankenstein_(1910_film)"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "lincoln-body-snatch-1876",
+  "claim": "In 1876 grave robbers stole Abraham Lincoln's body and held it for ransom.",
+  "verdict": "almost",
+  "year": "1876",
+  "yearSort": 1876,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "crime",
+  "record": "A counterfeiting gang planned to ransom Lincoln's body for the release of their jailed engraver. On election night 1876 they broke into the tomb in Springfield and pried open the sarcophagus, but Secret Service agents tipped off by an informant closed in.",
+  "sources": [
+   {
+    "title": "Lincoln Tomb",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lincoln_Tomb"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "chaplin-coffin-stolen-1978",
+  "claim": "Thieves stole Charlie Chaplin's coffin from a Swiss cemetery and demanded a ransom.",
+  "verdict": "happened",
+  "year": "1978",
+  "yearSort": 1978,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "crime",
+  "record": "In March 1978, two men dug up Chaplin's coffin in Corsier-sur-Vevey and demanded money from his widow. Police traced their calls, arrested them, and found the coffin buried in a nearby field.",
+  "sources": [
+   {
+    "title": "Charlie Chaplin",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Charlie_Chaplin"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "bran-castle-vlad",
+  "claim": "Vlad the Impaler lived in Transylvania's Bran Castle, sold to tourists today as Dracula's Castle.",
+  "verdict": "lore",
+  "year": "15th century",
+  "yearSort": 1460,
+  "era": "medieval",
+  "region": "Europe",
+  "topic": "folklore",
+  "record": "There is no evidence Vlad III ever lived at Bran; at most he may have passed through the area. Bram Stoker never visited Romania, and there is no evidence he knew of the castle.",
+  "sources": [
+   {
+    "title": "Bran Castle",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bran_Castle"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Twentieth-century tourism promoters attached the Dracula story to a dramatic castle on the old border road."
+ },
+ {
+  "id": "burke-and-hare-1828",
+  "claim": "In 1828 two Edinburgh men murdered at least 16 people to sell their bodies to an anatomy lecturer.",
+  "verdict": "happened",
+  "year": "1828",
+  "yearSort": 1828,
+  "era": "19th-century",
+  "region": "Europe",
+  "topic": "crime",
+  "record": "William Burke and William Hare killed their victims and sold the corpses to Dr Robert Knox for his anatomy classes. Hare turned king's evidence; Burke was hanged in 1829 and his own body was publicly dissected.",
+  "sources": [
+   {
+    "title": "Burke and Hare murders",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Burke_and_Hare_murders"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": []
+ },
+ {
+  "id": "cromwell-head-on-a-spike",
+  "claim": "Oliver Cromwell's severed head was displayed on a pole above Westminster Hall for more than 20 years.",
+  "verdict": "happened",
+  "year": "1661–1680s",
+  "yearSort": 1661,
+  "era": "early-modern",
+  "region": "Europe",
+  "topic": "politics",
+  "record": "After the monarchy returned, Cromwell's body was dug up and 'executed' in 1661. His head sat on a spike above Westminster Hall until a storm knocked it down in the 1680s. It was finally buried at his old Cambridge college in 1960.",
+  "sources": [
+   {
+    "title": "Oliver Cromwell's head",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Oliver_Cromwell's_head"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "thomas-paine-bones-lost",
+  "claim": "An admirer dug up Thomas Paine's bones to give him a grand memorial, and then the bones were lost.",
+  "verdict": "happened",
+  "year": "1819",
+  "yearSort": 1819,
+  "era": "19th-century",
+  "region": "Europe",
+  "topic": "politics",
+  "record": "Radical journalist William Cobbett exhumed Paine in New York in 1819 and shipped the bones to England for a memorial that never happened. After Cobbett's death they passed through several hands and vanished.",
+  "sources": [
+   {
+    "title": "Thomas Paine",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Thomas_Paine"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "oxford-older-than-aztecs",
+  "claim": "Teaching at Oxford University began before the Aztecs founded their capital, Tenochtitlan.",
+  "verdict": "happened",
+  "year": "1096 / 1325",
+  "yearSort": 1096,
+  "era": "medieval",
+  "region": "Europe",
+  "topic": "culture",
+  "record": "There is evidence of teaching at Oxford by 1096, and the university grew rapidly from 1167. The Mexica founded Tenochtitlan on an island in Lake Texcoco in about 1325.",
+  "sources": [
+   {
+    "title": "University of Oxford",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/University_of_Oxford"
+   },
+   {
+    "title": "Tenochtitlan",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tenochtitlan"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "anglo-zanzibar-war-1896",
+  "claim": "In 1896 Britain and Zanzibar fought a war that lasted less than an hour.",
+  "verdict": "happened",
+  "year": "1896",
+  "yearSort": 1896,
+  "era": "19th-century",
+  "region": "Africa",
+  "topic": "war",
+  "record": "On 27 August 1896 British warships shelled the palace of Sultan Khalid bin Barghash after an ultimatum expired. The fighting ended in roughly 38 to 45 minutes, usually called the shortest war on record.",
+  "sources": [
+   {
+    "title": "Anglo-Zanzibar War",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": []
+ },
+ {
+  "id": "hiroo-onoda-1974",
+  "claim": "A Japanese soldier kept fighting World War II in the Philippine jungle until 1974.",
+  "verdict": "happened",
+  "year": "1944–1974",
+  "yearSort": 1974,
+  "era": "20th-century",
+  "region": "Asia",
+  "topic": "war",
+  "record": "Lieutenant Hiroo Onoda refused to believe the war was over and held out on Lubang Island for 29 years. He surrendered only when his former commanding officer flew out and formally relieved him of duty.",
+  "sources": [
+   {
+    "title": "Hiroo Onoda",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hiroo_Onoda"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "churchill-nobel-literature",
+  "claim": "Winston Churchill won the Nobel Prize in Literature.",
+  "verdict": "happened",
+  "year": "1953",
+  "yearSort": 1953,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "literature",
+  "record": "The Swedish Academy awarded Churchill the 1953 Nobel Prize in Literature for his historical and biographical writing and his oratory. He never won the Peace Prize.",
+  "sources": [
+   {
+    "title": "Winston Churchill",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Winston_Churchill"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "nintendo-playing-cards",
+  "claim": "Nintendo started out in 1889 making playing cards.",
+  "verdict": "happened",
+  "year": "1889",
+  "yearSort": 1889,
+  "era": "19th-century",
+  "region": "Asia",
+  "topic": "business",
+  "record": "Fusajiro Yamauchi founded Nintendo Koppai in Kyoto in 1889 to make handmade hanafuda playing cards. Video games came almost a century later.",
+  "sources": [
+   {
+    "title": "Nintendo",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Nintendo"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "wojtek-the-soldier-bear",
+  "claim": "During World War II a brown bear was enlisted in the Polish army and helped carry artillery shells.",
+  "verdict": "happened",
+  "year": "1942–1945",
+  "yearSort": 1943,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "animals",
+  "record": "Wojtek was adopted as a cub by Polish soldiers in Iran and officially enlisted so he could travel with them. At the Battle of Monte Cassino in 1944 he is recorded carrying crates of ammunition.",
+  "sources": [
+   {
+    "title": "Wojtek (bear)",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Wojtek_(bear)"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "skylab-littering-fine",
+  "claim": "When Skylab fell to Earth, an Australian town fined NASA for littering.",
+  "verdict": "happened",
+  "year": "1979",
+  "yearSort": 1979,
+  "era": "20th-century",
+  "region": "Australia",
+  "topic": "space",
+  "record": "Debris from the falling space station landed around Esperance, Western Australia, in July 1979. The shire issued a $400 littering fine, which went unpaid until an American radio host raised the money in 2009.",
+  "sources": [
+   {
+    "title": "Skylab",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Skylab"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "napoleon-unusually-short",
+  "claim": "Napoleon Bonaparte was unusually short.",
+  "verdict": "lore",
+  "year": "1769–1821",
+  "yearSort": 1800,
+  "era": "19th-century",
+  "region": "Europe",
+  "topic": "war",
+  "record": "Napoleon was about 5 feet 7 inches (1.69 m), average or slightly above for a Frenchman of his time. His height was recorded in French inches, which were longer than English ones.",
+  "sources": [
+   {
+    "title": "Napoleon",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Napoleon"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "British caricaturists such as James Gillray drew him tiny, and the confusion between French and English inches made it stick."
+ },
+ {
+  "id": "einstein-failed-maths",
+  "claim": "Albert Einstein failed mathematics at school.",
+  "verdict": "lore",
+  "year": "1890s",
+  "yearSort": 1895,
+  "era": "19th-century",
+  "region": "Europe",
+  "topic": "science",
+  "record": "Einstein excelled at maths and had mastered calculus by about 15. He did fail the general section of an entrance exam to the Zurich Polytechnic at 16, while scoring well in maths and physics.",
+  "sources": [
+   {
+    "title": "Albert Einstein",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "A 1935 'Ripley's Believe It or Not!' item and a mix-up over Swiss grading scales helped spread it; Einstein himself denied it."
+ },
+ {
+  "id": "great-wall-visible-from-space",
+  "claim": "The Great Wall of China can be seen from the Moon with the naked eye.",
+  "verdict": "lore",
+  "year": "Modern",
+  "yearSort": 1932,
+  "era": "20th-century",
+  "region": "Asia",
+  "topic": "architecture",
+  "record": "The wall is long but only a few metres wide, roughly the colour of the land around it. It cannot be seen from the Moon, and astronauts in low Earth orbit report it is very hard to see at all without aid.",
+  "sources": [
+   {
+    "title": "Great Wall of China",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "The idea appeared in print before anyone had been to space, including a 1932 Ripley's cartoon, and outlived every astronaut who said otherwise."
+ },
+ {
+  "id": "declaration-signed-july-4",
+  "claim": "The Declaration of Independence was signed by the Continental Congress on July 4, 1776.",
+  "verdict": "lore",
+  "year": "1776",
+  "yearSort": 1776,
+  "era": "early-modern",
+  "region": "North America",
+  "topic": "politics",
+  "record": "Congress approved the wording on July 4, but most delegates signed the engrossed parchment copy on August 2, 1776. Several signed later still.",
+  "sources": [
+   {
+    "title": "United States Declaration of Independence",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "July 4 appears on the document and became the celebrated date, so the signing was folded into it. Jefferson and Adams later misremembered it too."
+ },
+ {
+  "id": "paul-revere-british-are-coming",
+  "claim": "Paul Revere rode through the Massachusetts countryside shouting 'The British are coming!'",
+  "verdict": "lore",
+  "year": "1775",
+  "yearSort": 1775,
+  "era": "early-modern",
+  "region": "North America",
+  "topic": "war",
+  "record": "The ride depended on secrecy, and many colonists still thought of themselves as British. Witnesses recalled the warning as 'The Regulars are coming out.' Revere was also captured before reaching Concord.",
+  "sources": [
+   {
+    "title": "Paul Revere",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Paul_Revere"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Henry Wadsworth Longfellow's 1860 poem 'Paul Revere's Ride' created the dramatic lone rider the story is remembered by."
+ },
+ {
+  "id": "gandhi-nobel-peace-prize",
+  "claim": "Mahatma Gandhi won the Nobel Peace Prize.",
+  "verdict": "almost",
+  "year": "1937–1948",
+  "yearSort": 1948,
+  "era": "20th-century",
+  "region": "Asia",
+  "topic": "politics",
+  "record": "Gandhi was nominated five times between 1937 and 1948. He was murdered in January 1948, days before that year's nominations closed, and the committee awarded no prize that year, saying there was no suitable living candidate.",
+  "sources": [
+   {
+    "title": "Mahatma Gandhi",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mahatma_Gandhi"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "andrew-johnson-removed-1868",
+  "claim": "The US Senate removed President Andrew Johnson from office in 1868.",
+  "verdict": "almost",
+  "year": "1868",
+  "yearSort": 1868,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "The House impeached Johnson, and the Senate voted 35 to 19 to convict him. That was one vote short of the two-thirds needed, so he finished his term.",
+  "sources": [
+   {
+    "title": "Impeachment of Andrew Johnson",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Impeachment_of_Andrew_Johnson"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "apollo-13-moon-landing",
+  "claim": "The crew of Apollo 13 landed on the Moon in April 1970.",
+  "verdict": "almost",
+  "year": "1970",
+  "yearSort": 1970,
+  "era": "20th-century",
+  "region": "Space",
+  "topic": "space",
+  "record": "Apollo 13 was bound for the Fra Mauro highlands when an oxygen tank exploded two days out. The crew swung around the Moon in their lunar module and splashed down safely, without landing.",
+  "sources": [
+   {
+    "title": "Apollo 13",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Apollo_13"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "eiffel-tower-demolished-1909",
+  "claim": "The Eiffel Tower was pulled down in 1909 when its original 20-year permit ran out.",
+  "verdict": "almost",
+  "year": "1909",
+  "yearSort": 1909,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "architecture",
+  "record": "The tower was built for the 1889 Exposition, and Eiffel's permit ran for 20 years. It survived because it proved useful for radio and wireless telegraphy, and the concession was renewed.",
+  "sources": [
+   {
+    "title": "Eiffel Tower",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Eiffel_Tower"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "quebec-referendum-1995",
+  "claim": "Quebec voted to leave Canada in 1995.",
+  "verdict": "almost",
+  "year": "1995",
+  "yearSort": 1995,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "On 30 October 1995, Quebecers voted on sovereignty. The No side won by 50.58% to 49.42%, a margin of about 55,000 votes out of nearly five million.",
+  "sources": [
+   {
+    "title": "1995 Quebec referendum",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/1995_Quebec_referendum"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "aaron-burr-elected-1800",
+  "claim": "Aaron Burr was elected president of the United States in 1800.",
+  "verdict": "almost",
+  "year": "1800–1801",
+  "yearSort": 1801,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "Burr tied Thomas Jefferson with 73 electoral votes each, which threw the election to the House of Representatives. It took 36 ballots in February 1801 before Jefferson won.",
+  "sources": [
+   {
+    "title": "1800 United States presidential election",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/1800_United_States_presidential_election"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "beatles-snl-reunion-1976",
+  "claim": "John Lennon and Paul McCartney accepted a live TV offer to reunite the Beatles for $3,000.",
+  "verdict": "almost",
+  "year": "1976",
+  "yearSort": 1976,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "music",
+  "record": "On Saturday Night Live in April 1976, Lorne Michaels offered the Beatles $3,000 to reunite on the show. Lennon and McCartney were watching together at the Dakota and briefly considered heading to the studio, but they decided they were too tired.",
+  "sources": [
+   {
+    "title": "Lorne Michaels",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lorne_Michaels"
+   },
+   {
+    "title": "Saturday Night Live (season 1)",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Saturday_Night_Live_(season_1)"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "emperor-norton-1859",
+  "claim": "In 1859 a bankrupt San Francisco businessman declared himself Emperor of the United States.",
+  "verdict": "happened",
+  "year": "1859–1880",
+  "yearSort": 1859,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "Joshua Norton proclaimed himself 'Norton I, Emperor of these United States' and later 'Protector of Mexico'. Local businesses honoured his self-printed banknotes, and many thousands of people turned out for his funeral in 1880.",
+  "sources": [
+   {
+    "title": "Emperor Norton",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Emperor_Norton"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "great-stink-1858",
+  "claim": "In 1858 the Thames smelled so bad that Parliament rushed through money for London's modern sewers.",
+  "verdict": "happened",
+  "year": "1858",
+  "yearSort": 1858,
+  "era": "19th-century",
+  "region": "Europe",
+  "topic": "disaster",
+  "record": "A hot summer turned the sewage-filled Thames into what newspapers called the Great Stink. MPs soaked the Parliament curtains in chloride of lime, then passed a bill in about 18 days to fund Joseph Bazalgette's sewer network.",
+  "sources": [
+   {
+    "title": "Great Stink",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Great_Stink"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "london-beer-flood-1814",
+  "claim": "In 1814 a flood of beer from a burst brewery vat killed eight people in London.",
+  "verdict": "happened",
+  "year": "1814",
+  "yearSort": 1814,
+  "era": "19th-century",
+  "region": "Europe",
+  "topic": "disaster",
+  "record": "A vat of porter at the Horse Shoe Brewery ruptured on 17 October 1814, bursting others. More than a million litres swept through the slum of St Giles, destroying houses and killing eight people.",
+  "sources": [
+   {
+    "title": "London Beer Flood",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/London_Beer_Flood"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": []
+ },
+ {
+  "id": "carrington-event-telegraphs-1859",
+  "claim": "During an 1859 solar storm, some telegraph operators sent messages with their batteries disconnected.",
+  "verdict": "happened",
+  "year": "1859",
+  "yearSort": 1859,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "science",
+  "record": "The Carrington Event, the strongest geomagnetic storm on record, induced currents in telegraph wires. Operators between Boston and Portland, Maine, unhooked their batteries and kept working on the aurora-driven current alone.",
+  "sources": [
+   {
+    "title": "Carrington Event",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Carrington_Event"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "mechanical-turk-hidden-player",
+  "claim": "An 18th-century chess-playing 'automaton' that beat Napoleon was secretly operated by a human hidden inside.",
+  "verdict": "happened",
+  "year": "1770–1854",
+  "yearSort": 1770,
+  "era": "early-modern",
+  "region": "Europe",
+  "topic": "technology",
+  "record": "Wolfgang von Kempelen's Mechanical Turk toured Europe and America for decades and played Napoleon in 1809. A chess master concealed in its cabinet worked the arm through a system of levers and magnets.",
+  "sources": [
+   {
+    "title": "Mechanical Turk",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mechanical_Turk"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "violet-jessop-three-ships",
+  "claim": "A ship stewardess survived the sinking of both the Titanic and her sister ship, the Britannic.",
+  "verdict": "happened",
+  "year": "1912–1916",
+  "yearSort": 1912,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "disaster",
+  "record": "Violet Jessop was also aboard the Olympic when it collided with HMS Hawke in 1911. She survived the Titanic in 1912 and the Britannic, sunk by a mine as a hospital ship, in 1916.",
+  "sources": [
+   {
+    "title": "Violet Jessop",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Violet_Jessop"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "fanta-wartime-germany",
+  "claim": "Fanta was invented in wartime Germany when Coca-Cola's German branch couldn't get Coke syrup.",
+  "verdict": "happened",
+  "year": "1940",
+  "yearSort": 1940,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "business",
+  "record": "Cut off by the wartime trade embargo, Coca-Cola GmbH's head, Max Keith, created a new drink from leftovers such as whey and apple pomace. The name came from 'Fantasie'.",
+  "sources": [
+   {
+    "title": "Fanta",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Fanta"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "operation-mincemeat-1943",
+  "claim": "British intelligence fooled Hitler with fake invasion plans chained to a dead man floated off Spain.",
+  "verdict": "happened",
+  "year": "1943",
+  "yearSort": 1943,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "war",
+  "record": "The body of a homeless Welshman, dressed as a Royal Marines officer, carried letters pointing to Greece and Sardinia. German intelligence believed them, helping the Allied invasion of Sicily in July 1943.",
+  "sources": [
+   {
+    "title": "Operation Mincemeat",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Operation_Mincemeat"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": []
+ },
+ {
+  "id": "ghost-army-inflatable-tanks",
+  "claim": "A US Army unit in World War II used inflatable tanks and sound effects to fake entire divisions.",
+  "verdict": "happened",
+  "year": "1944–1945",
+  "yearSort": 1944,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "war",
+  "record": "The 23rd Headquarters Special Troops, the 'Ghost Army', staged more than 20 deceptions with rubber tanks, recorded troop noise and fake radio traffic. Many of its members were artists and designers.",
+  "sources": [
+   {
+    "title": "Ghost Army",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ghost_Army"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "peter-the-great-beard-tax",
+  "claim": "Russia's Peter the Great made men pay a tax to keep their beards.",
+  "verdict": "happened",
+  "year": "1698",
+  "yearSort": 1698,
+  "era": "early-modern",
+  "region": "Europe",
+  "topic": "law",
+  "record": "Returning from western Europe in 1698, Peter wanted a clean-shaven, modern-looking elite. Men who kept their beards paid a yearly fee and carried a token proving it.",
+  "sources": [
+   {
+    "title": "Beard tax",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Beard_tax"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "window-tax-england",
+  "claim": "For over 150 years, England taxed homes by the number of their windows.",
+  "verdict": "happened",
+  "year": "1696–1851",
+  "yearSort": 1696,
+  "era": "early-modern",
+  "region": "Europe",
+  "topic": "law",
+  "record": "The window tax began in 1696 as a rough measure of wealth. Owners bricked up windows to pay less, and critics called it a tax on light and air until it was repealed in 1851.",
+  "sources": [
+   {
+    "title": "Window tax",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Window_tax"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "kodak-invented-digital-camera",
+  "claim": "Kodak, the film company, built the first self-contained digital camera.",
+  "verdict": "happened",
+  "year": "1975",
+  "yearSort": 1975,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "technology",
+  "record": "Kodak engineer Steven Sasson built a toaster-sized prototype in 1975 that took 23 seconds to record a 0.01-megapixel image onto cassette tape. Kodak kept its film business at the centre and later went bankrupt.",
+  "sources": [
+   {
+    "title": "Steven Sasson",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Steven_Sasson"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "bubble-wrap-wallpaper",
+  "claim": "Bubble wrap was first invented as a textured wallpaper.",
+  "verdict": "happened",
+  "year": "1957",
+  "yearSort": 1957,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "technology",
+  "record": "Alfred Fielding and Marc Chavannes sealed two shower curtains together in 1957 hoping to sell textured wallpaper. It flopped, and they later found their market in packaging.",
+  "sources": [
+   {
+    "title": "Bubble wrap",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bubble_wrap"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "play-doh-wallpaper-cleaner",
+  "claim": "Play-Doh was originally sold as a putty for cleaning soot off wallpaper.",
+  "verdict": "happened",
+  "year": "1930s–1956",
+  "yearSort": 1956,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "business",
+  "record": "Kutol Products made the dough to wipe coal soot from wallpaper. As homes switched to cleaner heating, sales collapsed, and it was relaunched as a children's toy in 1956.",
+  "sources": [
+   {
+    "title": "Play-Doh",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Play-Doh"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "ketchup-sold-as-medicine",
+  "claim": "In the 1830s tomato ketchup was sold in pill form as a medicine.",
+  "verdict": "happened",
+  "year": "1830s",
+  "yearSort": 1834,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "food",
+  "record": "Physician John Cook Bennett claimed tomatoes could treat diarrhoea, indigestion and jaundice, and published recipes for tomato ketchup. Imitators sold 'tomato pills' until the fad collapsed.",
+  "sources": [
+   {
+    "title": "Ketchup",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ketchup"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "swiss-army-invade-liechtenstein-2007",
+  "claim": "In 2007 a company of Swiss soldiers accidentally marched into Liechtenstein at night.",
+  "verdict": "happened",
+  "year": "2007",
+  "yearSort": 2007,
+  "era": "21st-century",
+  "region": "Europe",
+  "topic": "war",
+  "record": "About 170 Swiss infantry recruits lost their way in bad weather and crossed more than a kilometre into Liechtenstein before turning back. Liechtenstein, which has no army, took it in good humour.",
+  "sources": [
+   {
+    "title": "Liechtenstein–Switzerland relations",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Liechtenstein–Switzerland_relations"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "hans-island-whisky-war",
+  "claim": "For decades Canada and Denmark took turns leaving bottles of liquor on a disputed Arctic island.",
+  "verdict": "happened",
+  "year": "1984–2022",
+  "yearSort": 1984,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "Military visits to tiny Hans Island between Greenland and Canada became a ritual of planting flags and leaving whisky or schnapps. The dispute ended in 2022 when the island was split between them.",
+  "sources": [
+   {
+    "title": "Hans Island",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hans_Island"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "einstein-brain-taken",
+  "claim": "The pathologist who performed Albert Einstein's autopsy removed and kept his brain.",
+  "verdict": "happened",
+  "year": "1955",
+  "yearSort": 1955,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "science",
+  "record": "Thomas Harvey took the brain during the 1955 autopsy in Princeton, apparently without clear permission, and kept pieces of it for decades, sending samples to researchers.",
+  "sources": [
+   {
+    "title": "Albert Einstein's brain",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Albert_Einstein's_brain"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "franco-british-union-1940",
+  "claim": "In June 1940 Britain and France merged into a single nation with a shared citizenship.",
+  "verdict": "almost",
+  "year": "1940",
+  "yearSort": 1940,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "politics",
+  "record": "With France collapsing, Churchill's cabinet approved a Declaration of Union on 16 June 1940 offering joint citizenship and a single war cabinet. The French cabinet rejected it, and Paul Reynaud resigned that night.",
+  "sources": [
+   {
+    "title": "Franco-British Union",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Franco-British_Union"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "virgil-aeneid-burned",
+  "claim": "Virgil's Aeneid was burned after his death, as the poet had asked.",
+  "verdict": "almost",
+  "year": "19 BCE",
+  "yearSort": -19,
+  "era": "ancient",
+  "region": "Europe",
+  "topic": "literature",
+  "record": "Dying with the poem unfinished, Virgil asked for the manuscript to be burned. Emperor Augustus overruled the wish and had it published by Virgil's friends Varius and Tucca.",
+  "sources": [
+   {
+    "title": "Aeneid",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aeneid"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "einstein-president-of-israel",
+  "claim": "Albert Einstein served as president of Israel.",
+  "verdict": "almost",
+  "year": "1952",
+  "yearSort": 1952,
+  "era": "20th-century",
+  "region": "Asia",
+  "topic": "politics",
+  "record": "After President Chaim Weizmann died in 1952, Prime Minister David Ben-Gurion's government formally offered Einstein the presidency. He declined, writing that he lacked the aptitude and experience to deal with people.",
+  "sources": [
+   {
+    "title": "Albert Einstein",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "dogger-bank-war-1904",
+  "claim": "Britain declared war on Russia in 1904 after the Russian navy fired on British fishing boats.",
+  "verdict": "almost",
+  "year": "1904",
+  "yearSort": 1904,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "war",
+  "record": "Russia's Baltic Fleet, jumpy on its way to fight Japan, mistook Hull trawlers for enemy torpedo boats and opened fire, killing three fishermen. Britain readied its fleet, but the crisis ended in an international inquiry and compensation.",
+  "sources": [
+   {
+    "title": "Dogger Bank incident",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dogger_Bank_incident"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": []
+ },
+ {
+  "id": "us-annexes-santo-domingo-1870",
+  "claim": "President Ulysses S. Grant annexed the Dominican Republic as US territory in 1870.",
+  "verdict": "almost",
+  "year": "1870",
+  "yearSort": 1870,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "Grant's government signed an annexation treaty with the Dominican government, but the Senate rejected it in June 1870 on a 28 to 28 vote, far short of the two-thirds needed.",
+  "sources": [
+   {
+    "title": "Ulysses S. Grant",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ulysses_S._Grant"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "mount-rushmore-to-the-waist",
+  "claim": "Mount Rushmore's four presidents were carved from the head down to the waist.",
+  "verdict": "almost",
+  "year": "1927–1941",
+  "yearSort": 1941,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "art",
+  "record": "Sculptor Gutzon Borglum's design showed the presidents to the waist. After Borglum died in March 1941 and funding ran out, work stopped with the faces.",
+  "sources": [
+   {
+    "title": "Mount Rushmore",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mount_Rushmore"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "watkins-tower-wembley",
+  "claim": "London built a tower taller than the Eiffel Tower at Wembley in the 1890s.",
+  "verdict": "almost",
+  "year": "1890s",
+  "yearSort": 1894,
+  "era": "19th-century",
+  "region": "Europe",
+  "topic": "architecture",
+  "record": "Railway magnate Edward Watkin planned a tower to top Eiffel's. Only the first stage, about 47 metres, was finished before money and the sinking ground ran out; it was demolished in 1907, and Wembley Stadium later rose on the site.",
+  "sources": [
+   {
+    "title": "Watkin%27s Tower",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Watkin%27s_Tower"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "leonardo-bronze-horse",
+  "claim": "Leonardo da Vinci cast a colossal bronze horse for the Duke of Milan.",
+  "verdict": "almost",
+  "year": "1490s",
+  "yearSort": 1494,
+  "era": "medieval",
+  "region": "Europe",
+  "topic": "art",
+  "record": "Leonardo made a full-size clay model more than 7 metres tall, but in 1494 the bronze set aside for it was used to make cannons. French soldiers later used the clay model for target practice.",
+  "sources": [
+   {
+    "title": "Leonardo%27s horse",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Leonardo%27s_horse"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "blockbuster-buys-netflix",
+  "claim": "Blockbuster bought Netflix for $50 million in 2000.",
+  "verdict": "almost",
+  "year": "2000",
+  "yearSort": 2000,
+  "era": "21st-century",
+  "region": "North America",
+  "topic": "business",
+  "record": "Netflix's founders offered to sell to Blockbuster for about $50 million in 2000 and were turned down. Netflix went on to outgrow the video chain, which filed for bankruptcy in 2010.",
+  "sources": [
+   {
+    "title": "Netflix",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Netflix"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "excite-buys-google",
+  "claim": "The web portal Excite bought Google for $750,000 in 1999.",
+  "verdict": "almost",
+  "year": "1999",
+  "yearSort": 1999,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "business",
+  "record": "Google's founders offered their search engine to Excite for about $750,000 in 1999. Excite's chief executive declined.",
+  "sources": [
+   {
+    "title": "Excite",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Excite"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "esperanto-league-of-nations",
+  "claim": "The League of Nations formally recommended that schools around the world teach Esperanto.",
+  "verdict": "almost",
+  "year": "1921–1922",
+  "yearSort": 1922,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "politics",
+  "record": "In 1921 and 1922, delegates from a dozen countries backed a League resolution recommending Esperanto be taught in schools. France, defending French as the language of diplomacy, blocked it.",
+  "sources": [
+   {
+    "title": "Esperanto",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Esperanto"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "titles-of-nobility-amendment",
+  "claim": "The US Constitution was amended in 1810 to strip citizenship from anyone who accepted a foreign noble title.",
+  "verdict": "almost",
+  "year": "1810",
+  "yearSort": 1810,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "law",
+  "record": "The Titles of Nobility Amendment passed both houses of Congress in 1810 and was sent to the states. It fell short of the number of state ratifications needed and technically remains pending.",
+  "sources": [
+   {
+    "title": "Titles of Nobility Amendment",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Titles_of_Nobility_Amendment"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "tom-selleck-indiana-jones",
+  "claim": "Tom Selleck starred as Indiana Jones in Raiders of the Lost Ark.",
+  "verdict": "almost",
+  "year": "1980",
+  "yearSort": 1980,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "film",
+  "record": "Selleck was chosen for the role, but CBS would not release him from his contract for the new series Magnum, P.I. Harrison Ford was cast instead.",
+  "sources": [
+   {
+    "title": "Tom Selleck",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tom_Selleck"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "decca-signs-the-beatles",
+  "claim": "Decca Records signed the Beatles after their 1962 audition in London.",
+  "verdict": "almost",
+  "year": "1962",
+  "yearSort": 1962,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "music",
+  "record": "The Beatles auditioned at Decca on 1 January 1962 and were turned down; the label signed Brian Poole and the Tremeloes instead. EMI's Parlophone signed the Beatles later that year.",
+  "sources": [
+   {
+    "title": "Decca audition",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Decca_audition"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "mongols-conquer-japan-1281",
+  "claim": "Kublai Khan's Mongol fleet conquered Japan in 1281.",
+  "verdict": "almost",
+  "year": "1281",
+  "yearSort": 1281,
+  "era": "medieval",
+  "region": "Asia",
+  "topic": "war",
+  "record": "The second Mongol invasion was one of the largest seaborne attacks in history. Stiff Japanese defences held the landings, and a typhoon then wrecked much of the fleet, the storm later remembered as the kamikaze, or divine wind.",
+  "sources": [
+   {
+    "title": "Mongol invasions of Japan",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mongol_invasions_of_Japan"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "ottomans-take-vienna-1683",
+  "claim": "The Ottoman army captured Vienna in 1683.",
+  "verdict": "almost",
+  "year": "1683",
+  "yearSort": 1683,
+  "era": "early-modern",
+  "region": "Europe",
+  "topic": "war",
+  "record": "After a two-month siege the city's walls were close to breaking. On 12 September 1683 a relief army under the Polish king Jan III Sobieski routed the besiegers.",
+  "sources": [
+   {
+    "title": "Battle of Vienna",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Vienna"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "fdr-shot-in-miami-1933",
+  "claim": "An assassin shot and killed president-elect Franklin D. Roosevelt in Miami in 1933.",
+  "verdict": "almost",
+  "year": "1933",
+  "yearSort": 1933,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "Giuseppe Zangara fired five shots at Roosevelt's open car in February 1933. Roosevelt was unhurt, but Chicago mayor Anton Cermak was fatally wounded.",
+  "sources": [
+   {
+    "title": "Attempted assassination of Franklin D. Roosevelt",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Attempted_assassination_of_Franklin_D._Roosevelt"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": []
+ },
+ {
+  "id": "statue-of-liberty-for-suez",
+  "claim": "Bartholdi's giant robed woman holding a torch was first erected at the entrance to Egypt's Suez Canal.",
+  "verdict": "almost",
+  "year": "1869",
+  "yearSort": 1869,
+  "era": "19th-century",
+  "region": "Africa",
+  "topic": "art",
+  "record": "Bartholdi pitched a colossal lighthouse figure, 'Egypt Carrying the Light to Asia', to the Khedive of Egypt around 1869. The Khedive declined, and Bartholdi's later statue went to New York.",
+  "sources": [
+   {
+    "title": "Statue of Liberty",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Statue_of_Liberty"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "monopoly-invented-by-darrow",
+  "claim": "The board game Monopoly was invented by Charles Darrow during the Great Depression.",
+  "verdict": "lore",
+  "year": "1930s",
+  "yearSort": 1935,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "business",
+  "record": "Monopoly grew from The Landlord's Game, patented by Lizzie Magie in 1904 to show the evils of land monopolies. Darrow sold a version to Parker Brothers in 1935.",
+  "sources": [
+   {
+    "title": "Monopoly (game)",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Monopoly_(game)"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Parker Brothers' packaging and publicity told Darrow's rags-to-riches story for decades."
+ },
+ {
+  "id": "coca-cola-red-santa",
+  "claim": "Coca-Cola's advertising gave Santa Claus his red suit.",
+  "verdict": "lore",
+  "year": "1931",
+  "yearSort": 1931,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "business",
+  "record": "Santa appeared in red long before Coca-Cola's 1931 ads by Haddon Sundblom, including on magazine covers and in earlier ads for other products. The ads popularized a jolly, human-sized Santa, not the colour.",
+  "sources": [
+   {
+    "title": "Santa Claus",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Santa_Claus"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Coca-Cola's famous and long-running campaign made its Santa the one everyone remembered."
+ },
+ {
+  "id": "fortune-cookies-from-china",
+  "claim": "Fortune cookies come from China.",
+  "verdict": "lore",
+  "year": "Early 1900s",
+  "yearSort": 1900,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "food",
+  "record": "Fortune cookies were popularized in California in the early 20th century, most likely by Japanese immigrants adapting a Japanese cracker. They are rare in China.",
+  "sources": [
+   {
+    "title": "Fortune cookie",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Fortune_cookie"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Chinese restaurants in the US adopted them in the mid-20th century, so diners assumed they were Chinese."
+ },
+ {
+  "id": "caesar-salad-julius-caesar",
+  "claim": "Caesar salad is named after Julius Caesar.",
+  "verdict": "lore",
+  "year": "1924",
+  "yearSort": 1924,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "food",
+  "record": "The salad is credited to Caesar Cardini, an Italian-born restaurateur who served it in Tijuana, Mexico, in the 1920s.",
+  "sources": [
+   {
+    "title": "Caesar salad",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Caesar_salad"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "The name is the obvious guess; the restaurateur was named Caesar too."
+ },
+ {
+  "id": "croissant-vienna-1683",
+  "claim": "The croissant was invented in Vienna to celebrate beating the Ottoman siege of 1683.",
+  "verdict": "lore",
+  "year": "1683",
+  "yearSort": 1683,
+  "era": "early-modern",
+  "region": "Europe",
+  "topic": "food",
+  "record": "Crescent-shaped kipferl pastries existed in Austria long before 1683, and the flaky croissant was developed in France in the 19th century. No contemporary record ties either to the siege.",
+  "sources": [
+   {
+    "title": "Croissant",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Croissant"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "A 20th-century story, repeated in food writing, gave the pastry a heroic origin to match its crescent shape."
+ },
+ {
+  "id": "carrots-night-vision-raf",
+  "claim": "Eating carrots gave RAF pilots exceptional night vision during World War II.",
+  "verdict": "lore",
+  "year": "1940s",
+  "yearSort": 1940,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "war",
+  "record": "British pilots were shooting down German bombers at night because of new airborne radar. The carrot story was encouraged to hide the radar, and to get the public eating a vegetable that was plentiful.",
+  "sources": [
+   {
+    "title": "Carrot",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Carrot"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Wartime British publicity about night-fighter ace John Cunningham and carrot-eating spread the idea."
+ },
+ {
+  "id": "potato-chips-spiteful-chef",
+  "claim": "Potato chips were invented by a Saratoga Springs chef to spite a customer who sent back his fries.",
+  "verdict": "lore",
+  "year": "1853",
+  "yearSort": 1853,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "food",
+  "record": "Recipes for thin fried potato slices appeared in English cookbooks decades earlier, including William Kitchiner's in 1817. The Saratoga story, often told about chef George Crum, surfaced long after the fact.",
+  "sources": [
+   {
+    "title": "Potato chip",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Potato_chip"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "The tale of a prickly customer (sometimes said to be Cornelius Vanderbilt) was popularized in 20th-century advertising."
+ },
+ {
+  "id": "walt-disney-cryogenically-frozen",
+  "claim": "Walt Disney's body was cryogenically frozen after his death.",
+  "verdict": "lore",
+  "year": "1966",
+  "yearSort": 1966,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "culture",
+  "record": "Disney was cremated two days after he died in December 1966, and his ashes were interred at Forest Lawn in Glendale, California.",
+  "sources": [
+   {
+    "title": "Walt Disney",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Walt_Disney"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "The rumour spread in the late 1960s alongside public interest in cryonics and Disney's reputation for futurism."
+ },
+ {
+  "id": "salieri-poisoned-mozart",
+  "claim": "Antonio Salieri poisoned Mozart out of jealousy.",
+  "verdict": "lore",
+  "year": "1791",
+  "yearSort": 1791,
+  "era": "early-modern",
+  "region": "Europe",
+  "topic": "music",
+  "record": "There is no evidence Salieri harmed Mozart; the two were professional rivals who also collaborated. Mozart's death is usually attributed to illness.",
+  "sources": [
+   {
+    "title": "Antonio Salieri",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Antonio_Salieri"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Rumours after Mozart's death were dramatized by Pushkin in 1830, then by Peter Shaffer's play and film 'Amadeus'."
+ },
+ {
+  "id": "iron-maiden-medieval-torture",
+  "claim": "Medieval jailers tortured prisoners inside the spiked cabinet known as the iron maiden.",
+  "verdict": "lore",
+  "year": "Middle Ages",
+  "yearSort": 1400,
+  "era": "medieval",
+  "region": "Europe",
+  "topic": "crime",
+  "record": "No reliable evidence shows the iron maiden was used in the Middle Ages. The surviving examples were assembled in the 18th and 19th centuries, often from unrelated pieces, for museums and showmen.",
+  "sources": [
+   {
+    "title": "Iron maiden",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Iron_maiden"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Johann Philipp Siebenkees's 1793 account of an execution in Nuremberg, now considered a fabrication, launched the legend."
+ },
+ {
+  "id": "guillotin-killed-by-guillotine",
+  "claim": "Dr Joseph-Ignace Guillotin was executed by the guillotine he helped create.",
+  "verdict": "lore",
+  "year": "1814",
+  "yearSort": 1814,
+  "era": "19th-century",
+  "region": "Europe",
+  "topic": "law",
+  "record": "Guillotin proposed a more humane method of execution but did not invent the machine, and he died of natural causes in Paris in 1814.",
+  "sources": [
+   {
+    "title": "Joseph-Ignace Guillotin",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Joseph-Ignace_Guillotin"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "A different Dr Guillotin from Lyon was executed during the Revolution, and the coincidence fed the story."
+ },
+ {
+  "id": "anastasia-survived",
+  "claim": "Grand Duchess Anastasia escaped the execution of Russia's royal family and lived on in secret.",
+  "verdict": "lore",
+  "year": "1918",
+  "yearSort": 1918,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "royalty",
+  "record": "DNA analysis of remains found near Yekaterinburg, including a second grave discovered in 2007, confirmed that all of Nicholas II's children died with their parents in July 1918.",
+  "sources": [
+   {
+    "title": "Grand Duchess Anastasia Nikolaevna of Russia",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Grand_Duchess_Anastasia_Nikolaevna_of_Russia"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": [],
+  "origin": "Several claimants, most famously Anna Anderson, insisted they were Anastasia; DNA tests later showed Anderson was not."
+ },
+ {
+  "id": "tulip-mania-wrecked-dutch-economy",
+  "claim": "Tulip mania wrecked the Dutch economy when the bulb bubble burst in 1637.",
+  "verdict": "lore",
+  "year": "1637",
+  "yearSort": 1637,
+  "era": "early-modern",
+  "region": "Europe",
+  "topic": "business",
+  "record": "Historians such as Anne Goldgar found little evidence of widespread ruin. The trade involved a fairly small circle of merchants and artisans, and the Dutch economy kept booming.",
+  "sources": [
+   {
+    "title": "Tulip mania",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tulip_mania"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Moralizing pamphlets of the time and Charles Mackay's 1841 book 'Extraordinary Popular Delusions' magnified the crash."
+ },
+ {
+  "id": "war-of-the-bucket",
+  "claim": "In 1325 two Italian cities went to war over a stolen wooden bucket.",
+  "verdict": "lore",
+  "year": "1325",
+  "yearSort": 1325,
+  "era": "medieval",
+  "region": "Europe",
+  "topic": "war",
+  "record": "Modena and Bologna fought the Battle of Zappolino as part of a long feud between rival factions. The famous oak bucket was taken as a trophy after the battle, not the cause of it.",
+  "sources": [
+   {
+    "title": "Battle of Zappolino",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Zappolino"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Alessandro Tassoni's 1622 mock-epic poem 'The Rape of the Bucket' made the bucket the star of the story."
+ },
+ {
+  "id": "canute-commands-the-tide",
+  "claim": "King Cnut ordered the tide to go back because he believed he could command the sea.",
+  "verdict": "lore",
+  "year": "11th century",
+  "yearSort": 1030,
+  "era": "medieval",
+  "region": "Europe",
+  "topic": "royalty",
+  "record": "In the earliest version, told by Henry of Huntingdon in the 12th century, Cnut stages the scene to show his flattering courtiers that a king's power is nothing next to God's.",
+  "sources": [
+   {
+    "title": "King Canute and the tide",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/King_Canute_and_the_tide"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "The moral got flipped in retelling, turning a lesson in humility into an example of royal arrogance."
+ },
+ {
+  "id": "et-tu-brute-last-words",
+  "claim": "Julius Caesar's last words were 'Et tu, Brute?'",
+  "verdict": "lore",
+  "year": "44 BCE",
+  "yearSort": -44,
+  "era": "ancient",
+  "region": "Europe",
+  "topic": "quotes",
+  "record": "Ancient writers disagree: Suetonius says Caesar said nothing, or possibly the Greek 'You too, child?'. The Latin line was made famous by Shakespeare's play, written more than 1,600 years later.",
+  "sources": [
+   {
+    "title": "Et tu, Brute%3F",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Et_tu,_Brute%3F"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Shakespeare's 'Julius Caesar' (1599) gave the moment its famous Latin line."
+ },
+ {
+  "id": "voltaire-defend-to-the-death",
+  "claim": "Voltaire wrote, 'I disapprove of what you say, but I will defend to the death your right to say it.'",
+  "verdict": "lore",
+  "year": "1906",
+  "yearSort": 1906,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "quotes",
+  "record": "The line was written in 1906 by Evelyn Beatrice Hall, in a biography of Voltaire, as a summary of his attitude. It is not found in Voltaire's own writings.",
+  "sources": [
+   {
+    "title": "Evelyn Beatrice Hall",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Evelyn_Beatrice_Hall"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Readers took Hall's paraphrase as a direct quotation, and she later had to explain it wasn't."
+ },
+ {
+  "id": "knights-hoisted-by-crane",
+  "claim": "Armoured medieval knights were so weighed down that they had to be hoisted onto their horses by crane.",
+  "verdict": "lore",
+  "year": "Middle Ages",
+  "yearSort": 1400,
+  "era": "medieval",
+  "region": "Europe",
+  "topic": "war",
+  "record": "A full suit of field armour weighed roughly 15 to 25 kilograms, spread across the body. Knights could mount a horse, run and even do acrobatics in it.",
+  "sources": [
+   {
+    "title": "Plate armour",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Plate_armour"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Heavier jousting armour and a scene in the 1944 film 'Henry V' helped create the image of a helpless knight on a winch."
+ },
+ {
+  "id": "teddy-roosevelt-shot-speech-1912",
+  "claim": "Theodore Roosevelt was shot in the chest in 1912 and then gave his campaign speech anyway.",
+  "verdict": "happened",
+  "year": "1912",
+  "yearSort": 1912,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "In Milwaukee on 14 October 1912, a bullet slowed by his folded 50-page speech and glasses case lodged in Roosevelt's chest. He spoke for about an hour and a half before going to hospital.",
+  "sources": [
+   {
+    "title": "Attempted assassination of Theodore Roosevelt",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Attempted_assassination_of_Theodore_Roosevelt"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "edwin-booth-saves-robert-lincoln",
+  "claim": "The brother of Lincoln's assassin once saved Lincoln's son from being crushed by a train.",
+  "verdict": "happened",
+  "year": "c. 1864",
+  "yearSort": 1864,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "On a crowded platform in Jersey City, Robert Todd Lincoln slipped toward a moving train and was pulled back by his collar. His rescuer was the famous actor Edwin Booth, brother of John Wilkes Booth.",
+  "sources": [
+   {
+    "title": "Robert Todd Lincoln",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Robert_Todd_Lincoln"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "adams-jefferson-die-july-4-1826",
+  "claim": "John Adams and Thomas Jefferson died on the same day: July 4, 1826, the Declaration's 50th anniversary.",
+  "verdict": "happened",
+  "year": "1826",
+  "yearSort": 1826,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "Jefferson died at Monticello around midday; Adams died hours later in Massachusetts, reportedly saying 'Thomas Jefferson survives', not knowing his old rival had already died.",
+  "sources": [
+   {
+    "title": "Thomas Jefferson",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Thomas_Jefferson"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "monroe-dies-july-4-1831",
+  "claim": "James Monroe, the fifth US president, also died on the Fourth of July.",
+  "verdict": "happened",
+  "year": "1831",
+  "yearSort": 1831,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "Monroe died in New York City on July 4, 1831, five years to the day after Adams and Jefferson. He was the third of the first five presidents to die on Independence Day.",
+  "sources": [
+   {
+    "title": "James Monroe",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/James_Monroe"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "harrison-dies-31-days",
+  "claim": "William Henry Harrison died 31 days after giving the longest inaugural address in US history.",
+  "verdict": "happened",
+  "year": "1841",
+  "yearSort": 1841,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "Harrison spoke for nearly two hours in cold, wet weather on 4 March 1841 and died on 4 April. His illness was blamed on the speech at the time; modern analyses suggest a typhoid-like infection.",
+  "sources": [
+   {
+    "title": "William Henry Harrison",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/William_Henry_Harrison"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "war-plan-red-invade-canada",
+  "claim": "In the 1930s the US Army drew up plans for invading Canada.",
+  "verdict": "happened",
+  "year": "1930",
+  "yearSort": 1930,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "war",
+  "record": "War Plan Red, approved in 1930 and updated into the 1930s, imagined a war with the British Empire and included seizing Halifax and Canadian rail hubs. It was a planning exercise, and it was declassified in 1974.",
+  "sources": [
+   {
+    "title": "War Plan Red",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/War_Plan_Red"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "defence-scheme-no-1-invade-us",
+  "claim": "In 1921 Canada drew up a plan to invade the United States.",
+  "verdict": "happened",
+  "year": "1921",
+  "yearSort": 1921,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "war",
+  "record": "Colonel James Sutherland Brown's Defence Scheme No. 1 proposed quick raids into Seattle, Minneapolis and Albany to buy time for British reinforcements. It was shelved in 1928.",
+  "sources": [
+   {
+    "title": "Defence Scheme No. 1",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Defence_Scheme_No._1"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "vermont-independent-republic",
+  "claim": "Vermont was an independent republic for 14 years before joining the United States.",
+  "verdict": "happened",
+  "year": "1777–1791",
+  "yearSort": 1777,
+  "era": "early-modern",
+  "region": "North America",
+  "topic": "politics",
+  "record": "The Vermont Republic declared independence in 1777, issued its own coins and ran its own postal service. It became the 14th state in 1791.",
+  "sources": [
+   {
+    "title": "Vermont Republic",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vermont_Republic"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "first-computer-bug-moth-1947",
+  "claim": "In 1947 engineers taped a real moth into their logbook as the 'first actual case of bug being found'.",
+  "verdict": "happened",
+  "year": "1947",
+  "yearSort": 1947,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "technology",
+  "record": "Operators of Harvard's Mark II computer found a moth stuck in a relay and taped it into the log. Engineers had already called glitches 'bugs', which is why the note is a joke.",
+  "sources": [
+   {
+    "title": "Software bug",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Software_bug"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "apollo-12-lightning",
+  "claim": "Apollo 12 was struck by lightning twice during its launch and still went on to the Moon.",
+  "verdict": "happened",
+  "year": "1969",
+  "yearSort": 1969,
+  "era": "20th-century",
+  "region": "Space",
+  "topic": "space",
+  "record": "Seconds after liftoff in November 1969, lightning knocked out the command module's instruments. Controller John Aaron's call to switch 'SCE to Aux' restored the data, and the crew landed on the Moon days later.",
+  "sources": [
+   {
+    "title": "Apollo 12",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Apollo_12"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "krikalev-last-soviet-citizen",
+  "claim": "A cosmonaut left Earth as a Soviet citizen and came home after the Soviet Union had ceased to exist.",
+  "verdict": "happened",
+  "year": "1991–1992",
+  "yearSort": 1991,
+  "era": "20th-century",
+  "region": "Space",
+  "topic": "space",
+  "record": "Sergei Krikalev launched to the Mir station in May 1991. While he was in orbit the USSR dissolved, and he landed in March 1992 as a citizen of Russia.",
+  "sources": [
+   {
+    "title": "Sergei Krikalev",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sergei_Krikalev"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "kosmos-954-canada",
+  "claim": "In 1978 a Soviet nuclear-powered satellite crashed in Canada and scattered radioactive debris.",
+  "verdict": "happened",
+  "year": "1978",
+  "yearSort": 1978,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "space",
+  "record": "Kosmos 954, powered by an onboard nuclear reactor, broke up over the Northwest Territories in January 1978. Canada billed the Soviet Union for the clean-up and received about C$3 million.",
+  "sources": [
+   {
+    "title": "Kosmos 954",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kosmos_954"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "mars-climate-orbiter-units",
+  "claim": "NASA lost a Mars probe because one team used imperial units and another used metric.",
+  "verdict": "happened",
+  "year": "1999",
+  "yearSort": 1999,
+  "era": "20th-century",
+  "region": "Space",
+  "topic": "space",
+  "record": "Software from a contractor reported thruster data in pound-force seconds while NASA's system expected newton-seconds. The Mars Climate Orbiter flew too low and was lost in September 1999.",
+  "sources": [
+   {
+    "title": "Mars Climate Orbiter",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mars_Climate_Orbiter"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "zheng-he-reaches-africa",
+  "claim": "Chinese treasure fleets reached the coast of East Africa in the 1400s.",
+  "verdict": "happened",
+  "year": "1405–1433",
+  "yearSort": 1418,
+  "era": "medieval",
+  "region": "Asia",
+  "topic": "exploration",
+  "record": "Admiral Zheng He led seven Ming voyages across the Indian Ocean. Ships from the fleets reached Malindi and Mogadishu, and a giraffe was brought back to the emperor's court.",
+  "sources": [
+   {
+    "title": "Zheng He",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Zheng_He"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "mansa-musa-gold-cairo",
+  "claim": "A West African king gave away so much gold in Cairo that he depressed its value for years.",
+  "verdict": "happened",
+  "year": "1324",
+  "yearSort": 1324,
+  "era": "medieval",
+  "region": "Africa",
+  "topic": "royalty",
+  "record": "Mansa Musa of Mali passed through Cairo on pilgrimage to Mecca in 1324. According to the chronicler al-Umari, his lavish spending and gifts drove down the value of gold there for about 12 years.",
+  "sources": [
+   {
+    "title": "Mansa Musa",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mansa_Musa"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "lanse-aux-meadows-norse",
+  "claim": "Norse explorers built a settlement in North America about 500 years before Columbus.",
+  "verdict": "happened",
+  "year": "c. 1000",
+  "yearSort": 1000,
+  "era": "medieval",
+  "region": "North America",
+  "topic": "exploration",
+  "record": "Excavations at L'Anse aux Meadows in Newfoundland uncovered Norse buildings and artefacts. Tree-ring dating of cut wood places activity there in 1021.",
+  "sources": [
+   {
+    "title": "L%27Anse aux Meadows",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/L%27Anse_aux_Meadows"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "cleopatra-learned-egyptian",
+  "claim": "Cleopatra was the first ruler of her dynasty to learn the Egyptian language.",
+  "verdict": "happened",
+  "year": "1st century BCE",
+  "yearSort": -50,
+  "era": "ancient",
+  "region": "Africa",
+  "topic": "royalty",
+  "record": "The Ptolemies were Macedonian Greeks who ruled Egypt for nearly three centuries. According to Plutarch, Cleopatra VII was the first of them to learn Egyptian, among many languages she spoke.",
+  "sources": [
+   {
+    "title": "Cleopatra",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Cleopatra"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "medieval-animal-trials-pig",
+  "claim": "In medieval France a pig was tried in court, convicted of killing a child and executed.",
+  "verdict": "happened",
+  "year": "1386",
+  "yearSort": 1386,
+  "era": "medieval",
+  "region": "Europe",
+  "topic": "law",
+  "record": "Animal trials were a real legal practice. In Falaise in 1386 a sow that had killed an infant was reportedly dressed in clothes and hanged in the town square.",
+  "sources": [
+   {
+    "title": "Animal trial",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Animal_trial"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": []
+ },
+ {
+  "id": "olympic-art-medals",
+  "claim": "The Olympics once awarded medals for painting, music and literature.",
+  "verdict": "happened",
+  "year": "1912–1948",
+  "yearSort": 1912,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "sport",
+  "record": "Art competitions ran from 1912 to 1948, with medals for architecture, literature, music, painting and sculpture inspired by sport. They were dropped because most entrants were professionals.",
+  "sources": [
+   {
+    "title": "Art competitions at the Summer Olympics",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Art_competitions_at_the_Summer_Olympics"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "tug-of-war-olympic-sport",
+  "claim": "Tug of war was an Olympic sport.",
+  "verdict": "happened",
+  "year": "1900–1920",
+  "yearSort": 1900,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "sport",
+  "record": "Tug of war was part of the Summer Olympics from 1900 to 1920. The City of London Police team won gold twice.",
+  "sources": [
+   {
+    "title": "Tug of war at the Summer Olympics",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tug_of_war_at_the_Summer_Olympics"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "1904-olympic-marathon-strychnine",
+  "claim": "The winner of the 1904 Olympic marathon was dosed with rat poison during the race.",
+  "verdict": "happened",
+  "year": "1904",
+  "yearSort": 1904,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "sport",
+  "record": "Thomas Hicks's handlers gave him strychnine mixed with brandy and egg whites as a stimulant, then legal. He had to be held up across the finish line; the first man home had ridden part of the course in a car.",
+  "sources": [
+   {
+    "title": "Athletics at the 1904 Summer Olympics – Men%27s marathon",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Athletics_at_the_1904_Summer_Olympics_–_Men%27s_marathon"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "defenestration-prague-survived",
+  "claim": "In 1618 angry nobles threw three officials out of a Prague castle window, and all three survived.",
+  "verdict": "happened",
+  "year": "1618",
+  "yearSort": 1618,
+  "era": "early-modern",
+  "region": "Europe",
+  "topic": "politics",
+  "record": "Two Catholic regents and their secretary fell some 20 metres into the moat. Catholics credited angels; Protestants said they landed in a dung heap. The incident helped trigger the Thirty Years' War.",
+  "sources": [
+   {
+    "title": "Defenestrations of Prague",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Defenestrations_of_Prague"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "newton-south-sea-bubble",
+  "claim": "Isaac Newton lost a large sum in the South Sea Bubble of 1720.",
+  "verdict": "happened",
+  "year": "1720",
+  "yearSort": 1720,
+  "era": "early-modern",
+  "region": "Europe",
+  "topic": "business",
+  "record": "Newton sold early at a profit, then bought back in near the peak and lost heavily when the South Sea Company's shares collapsed. Contemporary accounts put his loss in the thousands of pounds.",
+  "sources": [
+   {
+    "title": "South Sea Company",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/South_Sea_Company"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "newton-master-of-the-mint",
+  "claim": "Isaac Newton spent his later career hunting counterfeiters for the Royal Mint.",
+  "verdict": "happened",
+  "year": "1696–1727",
+  "yearSort": 1699,
+  "era": "early-modern",
+  "region": "Europe",
+  "topic": "science",
+  "record": "As Warden and then Master of the Royal Mint, Newton oversaw a great recoinage and personally pursued forgers. He gathered evidence in disguise and saw the counterfeiter William Chaloner hanged in 1699.",
+  "sources": [
+   {
+    "title": "Isaac Newton",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Isaac_Newton"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "marie-curie-notebooks-radioactive",
+  "claim": "Marie Curie's notebooks are still so radioactive that readers must sign a waiver to see them.",
+  "verdict": "happened",
+  "year": "1890s–1930s",
+  "yearSort": 1898,
+  "era": "19th-century",
+  "region": "Europe",
+  "topic": "science",
+  "record": "Her papers are contaminated with radium, which has a half-life of about 1,600 years. They are stored in lead-lined boxes at the Bibliothèque nationale de France.",
+  "sources": [
+   {
+    "title": "Marie Curie",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Marie_Curie"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "lobotomy-nobel-prize",
+  "claim": "The man who pioneered the lobotomy won a Nobel Prize for it.",
+  "verdict": "happened",
+  "year": "1949",
+  "yearSort": 1949,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "medicine",
+  "record": "Portuguese neurologist Egas Moniz shared the 1949 Nobel Prize in Physiology or Medicine for the procedure. It was later largely abandoned as its harms became clear.",
+  "sources": [
+   {
+    "title": "Egas Moniz",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Egas_Moniz"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": []
+ },
+ {
+  "id": "mars-bluff-bomb-1958",
+  "claim": "In 1958 a US bomber accidentally dropped an atomic bomb on a family's garden in South Carolina.",
+  "verdict": "happened",
+  "year": "1958",
+  "yearSort": 1958,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "disaster",
+  "record": "A Mark 6 bomb fell from a B-47 over Mars Bluff. Its nuclear core was not installed, but its conventional explosives blew a crater about 20 metres wide and injured several members of the Gregg family.",
+  "sources": [
+   {
+    "title": "1958 Mars Bluff B-47 nuclear weapon loss incident",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/1958_Mars_Bluff_B-47_nuclear_weapon_loss_incident"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "zimmermann-telegram-1917",
+  "claim": "In 1917 Germany secretly offered to help Mexico win back Texas, New Mexico and Arizona.",
+  "verdict": "happened",
+  "year": "1917",
+  "yearSort": 1917,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "war",
+  "record": "The Zimmermann Telegram proposed an alliance if the US entered World War I. British codebreakers intercepted it, and its publication helped bring America into the war.",
+  "sources": [
+   {
+    "title": "Zimmermann Telegram",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Zimmermann_Telegram"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "us-buys-danish-west-indies-1917",
+  "claim": "The United States bought the Virgin Islands from Denmark for $25 million in gold.",
+  "verdict": "happened",
+  "year": "1917",
+  "yearSort": 1917,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "Worried Germany might use the islands as a naval base, the US bought the Danish West Indies in 1917. They became the US Virgin Islands.",
+  "sources": [
+   {
+    "title": "Danish West Indies",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Danish_West_Indies"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "fu-go-balloon-bombs-oregon",
+  "claim": "A Japanese balloon bomb killed six people on a picnic in Oregon in 1945.",
+  "verdict": "happened",
+  "year": "1945",
+  "yearSort": 1945,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "war",
+  "record": "Japan launched thousands of hydrogen balloons carrying bombs on the jet stream toward North America. On 5 May 1945 one exploded near Bly, Oregon, killing a pregnant woman and five children.",
+  "sources": [
+   {
+    "title": "Fu-Go balloon bomb",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Fu-Go_balloon_bomb"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": []
+ },
+ {
+  "id": "pringles-inventor-buried-in-can",
+  "claim": "Some of the ashes of the man who designed the Pringles can were buried in a Pringles can.",
+  "verdict": "happened",
+  "year": "2008",
+  "yearSort": 2008,
+  "era": "21st-century",
+  "region": "North America",
+  "topic": "business",
+  "record": "Fredric Baur, the Procter & Gamble chemist who designed the stackable can, died in 2008. His family honoured his request and buried part of his ashes in one.",
+  "sources": [
+   {
+    "title": "Fredric Baur",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Fredric_Baur"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "ronald-wayne-sold-apple-stake",
+  "claim": "Apple's third co-founder sold his 10 percent stake back for $800.",
+  "verdict": "happened",
+  "year": "1976",
+  "yearSort": 1976,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "business",
+  "record": "Ronald Wayne drew up Apple's partnership agreement with Steve Jobs and Steve Wozniak and designed its first logo. Twelve days later he withdrew, fearing the financial risk.",
+  "sources": [
+   {
+    "title": "Ronald Wayne",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ronald_Wayne"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "darien-scheme-panama",
+  "claim": "In 1698 Scotland tried to found its own colony in Panama.",
+  "verdict": "happened",
+  "year": "1698–1700",
+  "yearSort": 1698,
+  "era": "early-modern",
+  "region": "Americas",
+  "topic": "exploration",
+  "record": "The Darien scheme sank a large share of Scotland's available capital into a colony called New Caledonia. Disease, poor planning and Spanish opposition destroyed it, and the losses helped push Scotland toward union with England in 1707.",
+  "sources": [
+   {
+    "title": "Darien scheme",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Darien_scheme"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "pony-express-18-months",
+  "claim": "The Pony Express mail service operated for only about 18 months.",
+  "verdict": "happened",
+  "year": "1860–1861",
+  "yearSort": 1860,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "transport",
+  "record": "Riders relayed mail between Missouri and California from April 1860 to October 1861. The transcontinental telegraph made it obsolete almost immediately.",
+  "sources": [
+   {
+    "title": "Pony Express",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pony_Express"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "gerald-ford-never-elected",
+  "claim": "Gerald Ford became US president without ever being elected president or vice president.",
+  "verdict": "happened",
+  "year": "1973–1974",
+  "yearSort": 1974,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "Ford was appointed vice president under the 25th Amendment after Spiro Agnew resigned in 1973, then became president when Richard Nixon resigned in August 1974. He lost the 1976 election.",
+  "sources": [
+   {
+    "title": "Gerald Ford",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gerald_Ford"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "british-burn-white-house-1814",
+  "claim": "British troops burned the White House during the War of 1812.",
+  "verdict": "happened",
+  "year": "1814",
+  "yearSort": 1814,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "war",
+  "record": "On 24 August 1814 British forces occupied Washington and set fire to the President's House, the Capitol and other buildings. First Lady Dolley Madison had the Gilbert Stuart portrait of Washington rescued first.",
+  "sources": [
+   {
+    "title": "Burning of Washington",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Burning_of_Washington"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "tanganyika-laughter-epidemic",
+  "claim": "In 1962 an outbreak of uncontrollable laughter forced schools to close in Tanganyika.",
+  "verdict": "happened",
+  "year": "1962",
+  "yearSort": 1962,
+  "era": "20th-century",
+  "region": "Africa",
+  "topic": "medicine",
+  "record": "It began at a girls' boarding school in Kashasha and spread to villages over months, affecting around a thousand people. Researchers describe it as mass psychogenic illness.",
+  "sources": [
+   {
+    "title": "Tanganyika laughter epidemic",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tanganyika_laughter_epidemic"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "dancing-plague-1518-musicians",
+  "claim": "During Strasbourg's dancing plague of 1518, the city hired musicians to keep the dancers going.",
+  "verdict": "happened",
+  "year": "1518",
+  "yearSort": 1518,
+  "era": "medieval",
+  "region": "Europe",
+  "topic": "medicine",
+  "record": "Hundreds of people danced compulsively for weeks. Believing the dancers had to dance it out, the council opened guildhalls, built a stage and paid musicians, before changing course and sending sufferers to a shrine.",
+  "sources": [
+   {
+    "title": "Dancing plague of 1518",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "kafka-manuscripts-burned",
+  "claim": "Max Brod burned Franz Kafka's unpublished novels, as Kafka had instructed.",
+  "verdict": "almost",
+  "year": "1924",
+  "yearSort": 1924,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "literature",
+  "record": "Kafka left written instructions for his friend to destroy his manuscripts unread. Brod refused and published 'The Trial', 'The Castle' and 'Amerika' after Kafka's death in 1924.",
+  "sources": [
+   {
+    "title": "Max Brod",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Max_Brod"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "continental-army-takes-quebec-1775",
+  "claim": "American troops captured Quebec City on the last night of 1775.",
+  "verdict": "almost",
+  "year": "1775",
+  "yearSort": 1775,
+  "era": "early-modern",
+  "region": "North America",
+  "topic": "war",
+  "record": "Generals Richard Montgomery and Benedict Arnold attacked through a blizzard on 31 December 1775. Montgomery was killed, Arnold wounded, and hundreds of Americans captured.",
+  "sources": [
+   {
+    "title": "Battle of Quebec (1775)",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Quebec_(1775)"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "nixon-impeached-by-house",
+  "claim": "The House of Representatives impeached Richard Nixon in 1974.",
+  "verdict": "almost",
+  "year": "1974",
+  "yearSort": 1974,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "The House Judiciary Committee approved three articles of impeachment in July 1974. Nixon resigned on 9 August before the full House could vote.",
+  "sources": [
+   {
+    "title": "Impeachment process against Richard Nixon",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Impeachment_process_against_Richard_Nixon"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "nixon-moon-disaster-speech",
+  "claim": "President Nixon went on television in 1969 to mourn the Apollo 11 astronauts, stranded on the Moon.",
+  "verdict": "almost",
+  "year": "1969",
+  "yearSort": 1969,
+  "era": "20th-century",
+  "region": "Space",
+  "topic": "space",
+  "record": "Speechwriter William Safire wrote 'In Event of Moon Disaster' in case Armstrong and Aldrin could not lift off: 'Fate has ordained that the men who went to the Moon to explore in peace will stay on the Moon to rest in peace.' It was never needed.",
+  "sources": [
+   {
+    "title": "In Event of Moon Disaster",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/In_Event_of_Moon_Disaster"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "gunpowder-plot-1605",
+  "claim": "Guy Fawkes and his fellow plotters blew up the House of Lords in 1605.",
+  "verdict": "almost",
+  "year": "1605",
+  "yearSort": 1605,
+  "era": "early-modern",
+  "region": "Europe",
+  "topic": "politics",
+  "record": "Plotters packed 36 barrels of gunpowder into a cellar beneath the Lords, aiming to kill James I at the opening of Parliament. An anonymous warning letter led to a search, and Fawkes was arrested guarding the powder.",
+  "sources": [
+   {
+    "title": "Gunpowder Plot",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gunpowder_Plot"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "elser-bomb-kills-hitler-1939",
+  "claim": "A carpenter's time bomb killed Hitler in a Munich beer hall in 1939.",
+  "verdict": "almost",
+  "year": "1939",
+  "yearSort": 1939,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "war",
+  "record": "Georg Elser spent weeks hollowing out a pillar behind the speaker's podium. Hitler cut his speech short to catch a train and left 13 minutes before the bomb exploded, killing eight people.",
+  "sources": [
+   {
+    "title": "Georg Elser",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Georg_Elser"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": []
+ },
+ {
+  "id": "july-20-plot-kills-hitler",
+  "claim": "Colonel Claus von Stauffenberg's briefcase bomb killed Hitler in July 1944.",
+  "verdict": "almost",
+  "year": "1944",
+  "yearSort": 1944,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "war",
+  "record": "The bomb exploded at the Wolf's Lair on 20 July 1944, but the briefcase had been moved behind a heavy table leg. Hitler was only lightly injured, and the conspirators were hunted down.",
+  "sources": [
+   {
+    "title": "20 July plot",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/20_July_plot"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": []
+ },
+ {
+  "id": "spanish-armada-lands-army",
+  "claim": "The Spanish Armada landed an invasion army in England in 1588.",
+  "verdict": "almost",
+  "year": "1588",
+  "yearSort": 1588,
+  "era": "early-modern",
+  "region": "Europe",
+  "topic": "war",
+  "record": "The Armada was meant to escort the Duke of Parma's army across from Flanders. English fireships and attacks off Gravelines scattered it, and storms wrecked many ships on the way home.",
+  "sources": [
+   {
+    "title": "Spanish Armada",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Spanish_Armada"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "australia-becomes-republic-1999",
+  "claim": "Australia voted to become a republic in 1999.",
+  "verdict": "almost",
+  "year": "1999",
+  "yearSort": 1999,
+  "era": "20th-century",
+  "region": "Australia",
+  "topic": "politics",
+  "record": "A referendum proposed replacing the Queen with a president chosen by Parliament. It was rejected by about 55 percent of voters and failed in every state.",
+  "sources": [
+   {
+    "title": "1999 Australian republic referendum",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/1999_Australian_republic_referendum"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "de-gaulle-killed-petit-clamart",
+  "claim": "Gunmen assassinated French president Charles de Gaulle at Petit-Clamart in 1962.",
+  "verdict": "almost",
+  "year": "1962",
+  "yearSort": 1962,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "politics",
+  "record": "Members of the OAS riddled de Gaulle's Citroën DS with bullets in August 1962. Two tyres were shot out, but the car kept going and no one inside was badly hurt.",
+  "sources": [
+   {
+    "title": "Jean Bastien-Thiry",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jean_Bastien-Thiry"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "arkhipov-b59-torpedo-1962",
+  "claim": "A Soviet submarine fired a nuclear torpedo at US warships during the Cuban Missile Crisis.",
+  "verdict": "almost",
+  "year": "1962",
+  "yearSort": 1962,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "war",
+  "record": "On 27 October 1962 US destroyers dropped signalling depth charges on submarine B-59. Crew accounts say the captain wanted to arm its nuclear torpedo; Vasili Arkhipov, whose agreement was reportedly needed, talked him down.",
+  "sources": [
+   {
+    "title": "Vasili Arkhipov",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vasili_Arkhipov"
+   },
+   {
+    "title": "The Underwater Cuban Missile Crisis",
+    "publisher": "National Security Archive",
+    "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB399/"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "norad-training-tape-1979",
+  "claim": "In 1979 US bombers took off to retaliate after NORAD screens showed a massive Soviet missile attack.",
+  "verdict": "almost",
+  "year": "1979",
+  "yearSort": 1979,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "war",
+  "record": "On 9 November 1979 a training scenario was mistakenly fed into live warning systems. Fighters were scrambled and bomber crews alerted, but satellite and radar data showed no launch within minutes, and no retaliation was ordered.",
+  "sources": [
+   {
+    "title": "List of nuclear close calls",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/List_of_nuclear_close_calls"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "darwin-rejected-for-his-nose",
+  "claim": "Captain FitzRoy refused to take Charles Darwin aboard the Beagle because of the shape of his nose.",
+  "verdict": "almost",
+  "year": "1831",
+  "yearSort": 1831,
+  "era": "19th-century",
+  "region": "Europe",
+  "topic": "science",
+  "record": "Darwin later wrote that FitzRoy, a believer in physiognomy, doubted whether anyone with his nose could have enough energy for the voyage. FitzRoy took him anyway.",
+  "sources": [
+   {
+    "title": "Robert FitzRoy",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Robert_FitzRoy"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "hubert-latham-flies-channel",
+  "claim": "Hubert Latham flew an aeroplane across the English Channel in July 1909.",
+  "verdict": "almost",
+  "year": "1909",
+  "yearSort": 1909,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "transport",
+  "record": "Latham took off from near Calais on 19 July 1909, but his engine failed and he ditched in the sea, where he was found sitting on the floating plane. Louis Blériot made the first crossing six days later.",
+  "sources": [
+   {
+    "title": "Hubert Latham",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hubert_Latham"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "tilden-becomes-president-1877",
+  "claim": "Samuel Tilden, who won the popular vote in 1876, became president of the United States.",
+  "verdict": "almost",
+  "year": "1876–1877",
+  "yearSort": 1877,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "Tilden won the popular vote and was one electoral vote short of a majority when three states' results were disputed. A special commission awarded all of them to Rutherford B. Hayes.",
+  "sources": [
+   {
+    "title": "1876 United States presidential election",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/1876_United_States_presidential_election"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "great-seal-moses-red-sea",
+  "claim": "The first Great Seal of the United States, adopted in 1782, showed Moses parting the Red Sea.",
+  "verdict": "almost",
+  "year": "1776–1782",
+  "yearSort": 1782,
+  "era": "early-modern",
+  "region": "North America",
+  "topic": "politics",
+  "record": "In 1776 Franklin, Jefferson and Adams proposed a seal showing the Israelites crossing the Red Sea. Congress tabled it, and the 1782 design used the bald eagle instead.",
+  "sources": [
+   {
+    "title": "Great Seal of the United States",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Great_Seal_of_the_United_States"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "gettysburg-address-envelope",
+  "claim": "Lincoln wrote the Gettysburg Address on the back of an envelope on the train.",
+  "verdict": "lore",
+  "year": "1863",
+  "yearSort": 1863,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "Lincoln began drafting in Washington before he left and revised it in Gettysburg. The five known manuscript copies are on sheets of paper, not envelopes.",
+  "sources": [
+   {
+    "title": "Gettysburg Address",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gettysburg_Address"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "The story appeared decades later and suited the image of Lincoln as an effortless genius."
+ },
+ {
+  "id": "edison-electrocuted-topsy",
+  "claim": "Thomas Edison personally electrocuted Topsy the elephant to show the dangers of his rival's AC power.",
+  "verdict": "lore",
+  "year": "1903",
+  "yearSort": 1903,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "technology",
+  "record": "Topsy was killed at Coney Island's Luna Park in 1903 on the orders of the park's owners. There is no evidence Edison was involved, and the 'war of the currents' was long over.",
+  "sources": [
+   {
+    "title": "Topsy (elephant)",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Topsy_(elephant)"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": [],
+  "origin": "The execution was filmed by the Edison Manufacturing Company, and its name on the film fused the two stories."
+ },
+ {
+  "id": "spanish-flu-started-in-spain",
+  "claim": "The 1918 'Spanish flu' pandemic started in Spain.",
+  "verdict": "lore",
+  "year": "1918",
+  "yearSort": 1918,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "medicine",
+  "record": "Where the pandemic began is still debated, with theories pointing to the United States, France and China. Spain was neutral in World War I, and its uncensored press reported the outbreak openly, so the name stuck.",
+  "sources": [
+   {
+    "title": "Spanish flu",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Spanish_flu"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": [],
+  "origin": "Wartime censors in the fighting nations suppressed flu news, so Spanish reports made it look like a Spanish disease."
+ },
+ {
+  "id": "cinco-de-mayo-independence",
+  "claim": "Cinco de Mayo celebrates Mexico's independence day.",
+  "verdict": "lore",
+  "year": "1862",
+  "yearSort": 1862,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "Cinco de Mayo marks the Mexican army's victory over the French at the Battle of Puebla on 5 May 1862. Mexico's Independence Day is 16 September.",
+  "sources": [
+   {
+    "title": "Cinco de Mayo",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Cinco_de_Mayo"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "The date became a big celebration of Mexican heritage in the United States, where many assume it marks independence."
+ },
+ {
+  "id": "atchison-president-for-a-day",
+  "claim": "David Rice Atchison was president of the United States for one day in 1849.",
+  "verdict": "lore",
+  "year": "1849",
+  "yearSort": 1849,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "Zachary Taylor's inauguration was delayed to Monday because 4 March fell on a Sunday. Taylor's term had legally begun anyway, and Atchison was never sworn in.",
+  "sources": [
+   {
+    "title": "David Rice Atchison",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/David_Rice_Atchison"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Atchison's supporters later promoted the claim, and his gravestone calls him 'President of the United States for one day'."
+ },
+ {
+  "id": "betsy-ross-first-flag",
+  "claim": "Betsy Ross designed the first American flag at George Washington's request.",
+  "verdict": "lore",
+  "year": "1776",
+  "yearSort": 1776,
+  "era": "early-modern",
+  "region": "North America",
+  "topic": "politics",
+  "record": "Betsy Ross was a real Philadelphia upholsterer who made flags, but no contemporary record shows she designed or made the first Stars and Stripes.",
+  "sources": [
+   {
+    "title": "Betsy Ross",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Betsy_Ross"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Her grandson William Canby told the story in a speech in 1870, nearly a century later, based on family tradition."
+ },
+ {
+  "id": "liberty-bell-cracked-1776",
+  "claim": "The Liberty Bell cracked when it was rung to announce the Declaration of Independence.",
+  "verdict": "lore",
+  "year": "1776",
+  "yearSort": 1776,
+  "era": "early-modern",
+  "region": "North America",
+  "topic": "politics",
+  "record": "No record shows the bell was rung for the Declaration in July 1776. The famous crack developed much later, most likely in the 1840s.",
+  "sources": [
+   {
+    "title": "Liberty Bell",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Liberty_Bell"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "An 1847 short story by George Lippard invented the scene of an old bellman ringing the bell for independence."
+ },
+ {
+  "id": "hoover-dam-workers-buried",
+  "claim": "Workers who died building the Hoover Dam are buried inside its concrete.",
+  "verdict": "lore",
+  "year": "1931–1936",
+  "yearSort": 1933,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "disaster",
+  "record": "The dam was poured in relatively shallow blocks, so a fallen worker would have been found quickly. The Bureau of Reclamation says no one is entombed in it.",
+  "sources": [
+   {
+    "title": "Hoover Dam",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hoover_Dam"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": [],
+  "origin": "The dam's scale, and the roughly one hundred deaths during construction, made the grim rumour easy to believe."
+ },
+ {
+  "id": "maya-predicted-end-of-world-2012",
+  "claim": "The ancient Maya predicted the world would end in 2012.",
+  "verdict": "lore",
+  "year": "2012",
+  "yearSort": 2012,
+  "era": "21st-century",
+  "region": "Americas",
+  "topic": "religion",
+  "record": "The Maya Long Count calendar completed a major cycle, a b'ak'tun, in December 2012, much like an odometer rolling over. Maya inscriptions mention dates far beyond 2012.",
+  "sources": [
+   {
+    "title": "2012 phenomenon",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/2012_phenomenon"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "New Age writers from the 1970s onward turned the calendar date into a prophecy of doom or transformation."
+ },
+ {
+  "id": "gladiators-morituri-te-salutant",
+  "claim": "Roman gladiators routinely greeted the emperor with 'We who are about to die salute you.'",
+  "verdict": "lore",
+  "year": "1st century",
+  "yearSort": 52,
+  "era": "ancient",
+  "region": "Europe",
+  "topic": "quotes",
+  "record": "The phrase is recorded only once, by Suetonius, from a staged naval battle on the Fucine Lake in 52 CE, and those fighters were condemned prisoners, not gladiators.",
+  "sources": [
+   {
+    "title": "Ave Imperator, morituri te salutant",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ave_Imperator,_morituri_te_salutant"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Nineteenth-century paintings, notably Jean-Léon Gérôme's, made it look like standard arena ritual."
+ },
+ {
+  "id": "columbus-sailors-feared-flat-earth",
+  "claim": "Columbus's crew feared they would sail off the edge of a flat Earth.",
+  "verdict": "lore",
+  "year": "1492",
+  "yearSort": 1492,
+  "era": "medieval",
+  "region": "Europe",
+  "topic": "exploration",
+  "record": "Educated Europeans had known the Earth was round since antiquity. The debate over Columbus was about its size: his critics correctly said Asia was much too far away.",
+  "sources": [
+   {
+    "title": "Myth of the flat Earth",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Myth_of_the_flat_Earth"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Washington Irving's romanticized 1828 biography of Columbus popularized the flat-Earth drama."
+ },
+ {
+  "id": "marie-antoinette-let-them-eat-cake",
+  "claim": "Marie Antoinette responded to starving peasants with 'Let them eat cake.'",
+  "verdict": "lore",
+  "year": "1789",
+  "yearSort": 1789,
+  "era": "early-modern",
+  "region": "Europe",
+  "topic": "quotes",
+  "record": "There is no evidence she said it. Jean-Jacques Rousseau attributed a similar line about brioche to 'a great princess' in his Confessions, written when Marie Antoinette was a child in Austria.",
+  "sources": [
+   {
+    "title": "Let them eat cake",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Let_them_eat_cake"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Revolutionary pamphlets and later retellings pinned the arrogant remark on the unpopular queen."
+ },
+ {
+  "id": "washington-wooden-teeth",
+  "claim": "George Washington's false teeth were made of wood.",
+  "verdict": "lore",
+  "year": "1790s",
+  "yearSort": 1790,
+  "era": "early-modern",
+  "region": "North America",
+  "topic": "medicine",
+  "record": "Washington's dentures were made from hippopotamus ivory, human teeth, animal teeth and metal springs. There is no evidence any were wooden.",
+  "sources": [
+   {
+    "title": "George Washington",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/George_Washington"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Stained, grainy ivory may have looked like wood, and the homespun image suited his legend."
+ },
+ {
+  "id": "galileo-thrown-in-dungeon",
+  "claim": "Galileo was thrown into a dungeon for saying the Earth goes around the Sun.",
+  "verdict": "lore",
+  "year": "1633",
+  "yearSort": 1633,
+  "era": "early-modern",
+  "region": "Europe",
+  "topic": "science",
+  "record": "After his 1633 trial the Inquisition sentenced Galileo to imprisonment, but it was commuted to house arrest. He spent his last years at his villa in Arcetri and kept writing.",
+  "sources": [
+   {
+    "title": "Galileo affair",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Galileo_affair"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Later retellings dramatized his punishment, turning house arrest into a dungeon."
+ },
+ {
+  "id": "senate-ratifies-versailles",
+  "claim": "The US Senate ratified the Treaty of Versailles and took America into the League of Nations.",
+  "verdict": "almost",
+  "year": "1919–1920",
+  "yearSort": 1920,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "President Wilson championed the League, but the Senate rejected the treaty in November 1919 and again in March 1920, when it fell seven votes short of the two-thirds needed. The US never joined.",
+  "sources": [
+   {
+    "title": "Treaty of Versailles",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Versailles"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "operation-downfall-invasion-of-japan",
+  "claim": "Allied troops invaded Japan's home islands in November 1945.",
+  "verdict": "almost",
+  "year": "1945",
+  "yearSort": 1945,
+  "era": "20th-century",
+  "region": "Asia",
+  "topic": "war",
+  "record": "Operation Downfall planned landings on Kyushu for November 1945 and near Tokyo in 1946, the largest amphibious assault ever prepared. Japan announced its surrender in August, and the invasion was cancelled.",
+  "sources": [
+   {
+    "title": "Operation Downfall",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Operation_Downfall"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": []
+ },
+ {
+  "id": "paris-blown-up-1944",
+  "claim": "Retreating German forces blew up Paris's bridges and landmarks in August 1944, as Hitler had ordered.",
+  "verdict": "almost",
+  "year": "1944",
+  "yearSort": 1944,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "war",
+  "record": "Hitler ordered that Paris should fall into Allied hands only as a field of ruins, and explosives were laid under bridges. The garrison commander, Dietrich von Choltitz, surrendered the city largely intact on 25 August.",
+  "sources": [
+   {
+    "title": "Liberation of Paris",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Liberation_of_Paris"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "us-buys-cuba-1848",
+  "claim": "The United States bought Cuba from Spain in 1848.",
+  "verdict": "almost",
+  "year": "1848",
+  "yearSort": 1848,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "President James K. Polk authorised an offer of $100 million for Cuba in 1848. Spain refused, and later American attempts to buy or seize the island also failed.",
+  "sources": [
+   {
+    "title": "Ostend Manifesto",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ostend_Manifesto"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "babbage-difference-engine-completed",
+  "claim": "Charles Babbage completed his Difference Engine for the British government in the 1830s.",
+  "verdict": "almost",
+  "year": "1822–1842",
+  "yearSort": 1832,
+  "era": "19th-century",
+  "region": "Europe",
+  "topic": "technology",
+  "record": "The government put about £17,000 into Babbage's calculating machine, but only a small working section was assembled. The project was abandoned in 1842; a full engine was finally built from his plans by the Science Museum in 1991.",
+  "sources": [
+   {
+    "title": "Difference engine",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Difference_engine"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "arabs-capture-constantinople-717",
+  "claim": "An Arab army captured Constantinople in 718.",
+  "verdict": "almost",
+  "year": "717–718",
+  "yearSort": 718,
+  "era": "medieval",
+  "region": "Europe",
+  "topic": "war",
+  "record": "The Umayyad Caliphate besieged the Byzantine capital by land and sea for about a year. Greek fire, a harsh winter, famine and Bulgarian attacks forced the survivors to retreat in 718.",
+  "sources": [
+   {
+    "title": "Siege of Constantinople (717–718)",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Constantinople_(717–718)"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "napoleon-invades-britain-1805",
+  "claim": "Napoleon's army crossed the English Channel and invaded Britain in 1805.",
+  "verdict": "almost",
+  "year": "1803–1805",
+  "yearSort": 1805,
+  "era": "19th-century",
+  "region": "Europe",
+  "topic": "war",
+  "record": "Napoleon massed around 200,000 men and a flotilla of invasion barges at Boulogne. Without control of the Channel he turned the army east against Austria in August 1805, and Trafalgar ended the threat that October.",
+  "sources": [
+   {
+    "title": "Napoleon%27s planned invasion of the United Kingdom",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Napoleon%27s_planned_invasion_of_the_United_Kingdom"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "jacobites-take-london-1745",
+  "claim": "Bonnie Prince Charlie's Jacobite army captured London in 1745.",
+  "verdict": "almost",
+  "year": "1745",
+  "yearSort": 1745,
+  "era": "early-modern",
+  "region": "Europe",
+  "topic": "war",
+  "record": "The Jacobites marched from Scotland as far as Derby, about 125 miles from London, where news of their advance caused panic. On 6 December 1745 their commanders voted to turn back north.",
+  "sources": [
+   {
+    "title": "Jacobite rising of 1745",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jacobite_rising_of_1745"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "trent-affair-war-1861",
+  "claim": "Britain went to war with the US in 1861 after Americans seized two Confederate envoys from a British ship.",
+  "verdict": "almost",
+  "year": "1861",
+  "yearSort": 1861,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "war",
+  "record": "A US warship stopped the British mail steamer Trent and removed Confederate diplomats. Britain sent thousands of troops to Canada and demanded an apology; Lincoln's government released the men, and war was avoided.",
+  "sources": [
+   {
+    "title": "Trent Affair",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Trent_Affair"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "langley-aerodrome-flies-1903",
+  "claim": "Samuel Langley's piloted Aerodrome flew over the Potomac in 1903, days before the Wright brothers.",
+  "verdict": "almost",
+  "year": "1903",
+  "yearSort": 1903,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "transport",
+  "record": "Backed by War Department money, Langley's machine was catapulted from a houseboat twice in 1903. Both times it plunged into the Potomac; the second crash came on 8 December, nine days before the Wrights flew at Kitty Hawk.",
+  "sources": [
+   {
+    "title": "Langley Aerodrome",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Langley_Aerodrome"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "mlk-stabbed-1958",
+  "claim": "In 1958 Martin Luther King Jr. was stabbed in the chest at a Harlem book signing and survived.",
+  "verdict": "happened",
+  "year": "1958",
+  "yearSort": 1958,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "Izola Ware Curry stabbed King with a letter opener that came to rest next to his aorta. Surgeons later told him that if he had sneezed he could have died.",
+  "sources": [
+   {
+    "title": "Martin Luther King Jr.",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Martin_Luther_King_Jr."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": []
+ },
+ {
+  "id": "nero-fiddled-while-rome-burned",
+  "claim": "Emperor Nero played the fiddle while Rome burned in 64 CE.",
+  "verdict": "lore",
+  "year": "64",
+  "yearSort": 64,
+  "era": "ancient",
+  "region": "Europe",
+  "topic": "quotes",
+  "record": "The fiddle had not been invented. Tacitus says Nero was at Antium when the fire broke out and rushed back to organise relief; the rumour at the time was that he sang about the fall of Troy.",
+  "sources": [
+   {
+    "title": "Great Fire of Rome",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Great_Fire_of_Rome"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Hostile ancient writers such as Suetonius and Cassius Dio reported the singing, and English retellings turned his lyre into a fiddle."
+ },
+ {
+  "id": "pilgrims-landed-on-plymouth-rock",
+  "claim": "The Pilgrims stepped ashore onto Plymouth Rock in 1620.",
+  "verdict": "lore",
+  "year": "1620",
+  "yearSort": 1620,
+  "era": "early-modern",
+  "region": "North America",
+  "topic": "exploration",
+  "record": "No account written by the Pilgrims mentions a rock. The boulder was identified in 1741, more than 120 years later, by a 94-year-old man recalling what he had been told as a boy.",
+  "sources": [
+   {
+    "title": "Plymouth Rock",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Plymouth_Rock"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Thomas Faunce's 1741 identification turned an ordinary boulder into a national relic."
+ },
+ {
+  "id": "thomas-crapper-invented-flush-toilet",
+  "claim": "Thomas Crapper invented the flush toilet.",
+  "verdict": "lore",
+  "year": "19th century",
+  "yearSort": 1880,
+  "era": "19th-century",
+  "region": "Europe",
+  "topic": "technology",
+  "record": "Sir John Harington designed a flushing toilet in the 1590s, and Alexander Cumming patented the S-bend in 1775. Crapper was a Victorian plumber who ran a successful business and patented improvements such as the ballcock.",
+  "sources": [
+   {
+    "title": "Thomas Crapper",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Thomas_Crapper"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "A 1969 comic biography, 'Flushed with Pride', exaggerated his inventions, and his name on cisterns did the rest."
+ },
+ {
+  "id": "mrs-oleary-cow-chicago-fire",
+  "claim": "The Great Chicago Fire of 1871 was started by Mrs O'Leary's cow kicking over a lantern.",
+  "verdict": "lore",
+  "year": "1871",
+  "yearSort": 1871,
+  "era": "19th-century",
+  "region": "North America",
+  "topic": "disaster",
+  "record": "The fire did start near the O'Leary barn, but no one proved how. In 1893 reporter Michael Ahern admitted he had invented the cow story, and the city council cleared Catherine O'Leary in 1997.",
+  "sources": [
+   {
+    "title": "Great Chicago Fire",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Great_Chicago_Fire"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "A reporter's colourful story played on prejudice against Irish immigrants and outlived every official finding."
+ },
+ {
+  "id": "einstein-built-the-atomic-bomb",
+  "claim": "Albert Einstein worked on the Manhattan Project to build the first atomic bomb.",
+  "verdict": "lore",
+  "year": "1942–1945",
+  "yearSort": 1943,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "science",
+  "record": "Einstein signed the 1939 letter warning President Roosevelt that Germany might build a bomb, but he was denied a security clearance and did not work on the Manhattan Project.",
+  "sources": [
+   {
+    "title": "Einstein–Szilard letter",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Einstein–Szilard_letter"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "His famous equation and his signature on the letter tied his name to the bomb in public memory."
+ },
+ {
+  "id": "titanic-sent-first-sos",
+  "claim": "The Titanic sent the first SOS distress call in history.",
+  "verdict": "lore",
+  "year": "1912",
+  "yearSort": 1912,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "technology",
+  "record": "SOS was adopted as an international distress signal in 1906 and came into use from 1908, and ships used it before 1912. The Titanic's operators sent both the older CQD and SOS.",
+  "sources": [
+   {
+    "title": "SOS",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/SOS"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "The disaster's fame made the Titanic's SOS the one everyone remembered."
+ },
+ {
+  "id": "napoleon-shot-off-sphinx-nose",
+  "claim": "Napoleon's soldiers shot the nose off the Great Sphinx.",
+  "verdict": "lore",
+  "year": "1798",
+  "yearSort": 1798,
+  "era": "19th-century",
+  "region": "Africa",
+  "topic": "war",
+  "record": "Drawings made decades before Napoleon's 1798 campaign already show the Sphinx without its nose. The 15th-century historian al-Maqrizi reported that a Sufi zealot damaged the face in 1378.",
+  "sources": [
+   {
+    "title": "Great Sphinx of Giza",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Napoleon's famous Egyptian expedition made his troops convenient culprits."
+ },
+ {
+  "id": "washington-cherry-tree",
+  "claim": "As a boy, George Washington chopped down his father's cherry tree and confessed: 'I cannot tell a lie.'",
+  "verdict": "lore",
+  "year": "1740s",
+  "yearSort": 1740,
+  "era": "early-modern",
+  "region": "North America",
+  "topic": "politics",
+  "record": "No evidence supports the tale. It first appeared in the fifth edition of Mason Locke Weems's biography of Washington, published in 1806, years after Washington's death.",
+  "sources": [
+   {
+    "title": "Mason Locke Weems",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mason_Locke_Weems"
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Parson Weems wrote moralizing, invented anecdotes to make Washington a model for children."
+ },
+ {
+  "id": "clan-tartans-ancient",
+  "claim": "Each Scottish clan has worn its own tartan pattern since ancient times.",
+  "verdict": "lore",
+  "year": "19th century",
+  "yearSort": 1842,
+  "era": "19th-century",
+  "region": "Europe",
+  "topic": "culture",
+  "record": "Before the 18th century tartans varied by region and weaver rather than clan. Most 'clan tartans' were named and standardized in the 19th century, helped by the forged 1842 book 'Vestiarium Scoticum'.",
+  "sources": [
+   {
+    "title": "Tartan",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tartan"
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "George IV's 1822 visit to Edinburgh set off a Highland craze, and manufacturers happily assigned patterns to clans."
+ },
+ {
+  "id": "saint-patrick-drove-out-snakes",
+  "claim": "Saint Patrick drove the snakes out of Ireland.",
+  "verdict": "lore",
+  "year": "5th century",
+  "yearSort": 450,
+  "era": "medieval",
+  "region": "Europe",
+  "topic": "religion",
+  "record": "There is no evidence Ireland had native snakes after the last Ice Age; they never recolonized the island once it was cut off by the sea.",
+  "sources": [
+   {
+    "title": "Saint Patrick",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Saint_Patrick"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "The story, first recorded centuries after Patrick's death, is usually read as a metaphor for his driving out paganism."
+ },
+ {
+  "id": "friday-13th-knights-templar",
+  "claim": "Friday the 13th became unlucky because the Knights Templar were arrested on that day in 1307.",
+  "verdict": "lore",
+  "year": "1307",
+  "yearSort": 1307,
+  "era": "medieval",
+  "region": "Europe",
+  "topic": "religion",
+  "record": "The Templars were arrested in France on Friday, 13 October 1307, but no record links the date to bad luck until the 20th century. Fear of Friday the 13th as such appears in writing only from the 19th century.",
+  "sources": [
+   {
+    "title": "Friday the 13th",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Friday_the_13th"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "Novels, most famously 'The Da Vinci Code', popularized the Templar connection."
  }
 ]
