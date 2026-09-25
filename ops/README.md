@@ -29,6 +29,9 @@ lead may call the others (or a saved workflow in `.claude/workflows/`).
 
 ## Cadence (UTC)
 
+Each row is a scheduled routine at claude.ai/code → Routines (named "Almost Lore · …"). Every run
+starts in a fresh session, works from `main`, and stops at once if `ops/PAUSED` exists on `main`.
+
 | When | Routine | Lead | What happens |
 |---|---|---|---|
 | Daily 06:10 | **Clerk** | release-guardian | Site up? Today's and the next 14 dockets valid? Corrections issues triaged (fact-checker)? Build green on `main`? |

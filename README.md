@@ -1,29 +1,44 @@
 # Almost Lore
 
-Original longform on public-record historical near-misses and weird history. Mogul story factory Site #4. Published by Laqaer.
+**Happened, almost, or lore?** A daily history game. Every day at your local midnight, five claims
+go to press, each written as plain fact. Stamp each one **HAPPENED** (true exactly as written),
+**ALMOST** (it didn't happen, but the paperwork shows it came close) or **LORE** (a story everybody
+repeats that the record doesn't support). Then the card flips to the record, with sources.
 
-Intended host: `almostlore.com` (not wired yet). Set `NEXT_PUBLIC_SITE_URL` if the deploy URL should differ.
+Published by Laqaer at `almostlore.com`. Run day to day by an AI operations team working through
+this repository; a human publisher holds the keys and is accountable for every verdict.
 
-## Stories
+## What's here
 
-| Route | Subject |
-| --- | --- |
-| `/` | Hub: what this is, how a hook leads here, story index |
-| `/stories/poyais-invented-country` | Gregor MacGregor / Poyais |
-| `/stories/aqua-tofana-myth-vs-record` | Aqua Tofana, myth vs archive |
-| `/stories/balloon-almost-atlantic` | Zanussi, July 1978 |
-| `/stories/forgotten-scheme` | Beach pneumatic subway, 1870 |
-| `/stories/fashoda-incident-1898` | Fashoda Incident, 1898 |
-| `/about` | Laqaer disclosure and editorial standards |
-| `/privacy` | Honest ads-later privacy page |
+| Route | What |
+|---|---|
+| `/`, `/play`, `/play/[n]` | The daily game, challenge links, share cards |
+| `/answers`, `/answers/[n]` | Published answers once a docket has closed everywhere |
+| `/test` | The Gullibility Test (15 claims, a certificate and a blind spot) |
+| `/halloween` | Haunted History, the seasonal edition |
+| `/class` | Projector mode for classrooms (no analytics, no accounts) |
+| `/case-files` | Longform essays on near-misses, myths and true stories that sound fake |
+| `/shop`, `/shop/[sku]`, `/thanks` | Printable packs; Stripe checkout; verified downloads |
+| `/rules`, `/corrections`, `/newsletter`, `/about`, `/privacy`, `/terms` | The rest of the paper |
 
-No CMS, auth, database, or picker widgets. Essays are typed content. Article JSON-LD is used only on story pages.
+Stack: Next.js 16 (App Router), React 19, Tailwind CSS 4, on Vercel. No database; optional services
+(Stripe, a newsletter provider, Upstash, GA4/Plausible, a GitHub token for corrections) switch on
+with environment variables and degrade honestly without them.
 
-## Local
+## Working on it
 
 ```bash
 npm install
-npm run dev
+npm run dev          # http://localhost:3000
+npm run check        # content validation + lint + typecheck (run before every commit)
+npm run build
 ```
 
-Checks: `npm run lint`, `npm run typecheck`, `npm run build`.
+- **Agents and contributors:** read `CLAUDE.md` first (content and honesty rules), then
+  `ops/README.md` (roles, cadence, KPIs, guardrails).
+- **Owner:** `ops/OWNER_SETUP.md` is the one-time checklist (domain, Stripe, `PRODUCTS_KEY`,
+  newsletter, analytics, marketplaces, routines).
+- **Content:** `content/claims.json` (the claim bank), `content/dockets.json` (the schedule),
+  `content/sets.json` (curated sets and packs). Rubric: `ops/content-rubric.md`.
+- **Printables:** `PRODUCTS_KEY=… node scripts/build-pdfs.mjs`. This repository is public, so paid
+  PDFs are committed only encrypted (`private/products/*.enc`).

@@ -74,4 +74,4 @@ alone to history communities on 27 October (the B-59 anniversary).
 Almost Lore is a free daily history game published by Laqaer. Each day, five claims; players stamp
 each one HAPPENED, ALMOST or LORE, then read a sourced record. An AI editorial team drafts and
 adversarially fact-checks every claim under a public rubric; corrections are logged publicly.
-Screenshots and logo: almostlore.com/press.
+Screenshots: the owner attaches 2–3 from the live site; the logo is almostlore.com/icon.svg and the social card is almostlore.com/opengraph-image.

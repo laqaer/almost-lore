@@ -1,14 +1,23 @@
 # Riso separation generator: makes per-drum ink layers (ink on white) for multiply stacking in CSS.
+#   python3 scripts/riso/riso.py            (from the repo root)
+# Reads the public-domain originals in public/images/archive/ (fetched by scripts/fetch-images.mjs)
+# and writes PNG layers to .cache/riso/; convert the ones you use to WebP in public/images/riso/:
+#   cwebp -q 82 .cache/riso/x.png -o public/images/riso/x.webp
 import numpy as np
 from PIL import Image, ImageFilter, ImageOps
 import os, sys
-K = '/tmp/claude-0/-home-user-almost-lore/54cafdd8-2582-53c3-b22d-4f4c3be4578f/scratchpad/kit/img/'
-O = '/tmp/claude-0/-home-user-almost-lore/54cafdd8-2582-53c3-b22d-4f4c3be4578f/scratchpad/design/b-riso-almanac/img/'
+K = os.environ.get('RISO_SRC', 'public/images/archive/')
+O = os.environ.get('RISO_OUT', '.cache/riso/')
+os.makedirs(O, exist_ok=True)
+# Source names used below → files in public/images/archive/
+ALIAS = {'dancing.jpg': 'dancing-pilgrims.jpg', 'poyais-note.jpg': 'poyais-banknote.jpg',
+         'macgregor.jpg': 'gregor-macgregor.jpg', 'beach.jpg': 'beach-pneumatic.jpg',
+         'molasses.jpg': 'molasses-flood.jpg', 'eiffel.jpg': 'eiffel-construction.jpg'}
 INK = {'ink': (20,16,21), 'pink': (255,79,154), 'blue': (47,91,255), 'sun': (255,210,63)}
 rng = np.random.default_rng(7)
 
 def load(name, W, crop=None):
-    im = Image.open(K+name).convert('L')
+    im = Image.open(K+ALIAS.get(name, name)).convert('L')
     if crop:  # fractional crop l,t,r,b
         w,h = im.size; im = im.crop((int(crop[0]*w),int(crop[1]*h),int(crop[2]*w),int(crop[3]*h)))
     H = round(im.size[1]*W/im.size[0])

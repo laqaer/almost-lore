@@ -1,7 +1,8 @@
 import numpy as np, base64, io
 from PIL import Image, ImageFilter
 rng=np.random.default_rng(11)
-O='img/'
+import os
+O=os.environ.get('RISO_OUT', '.cache/riso/'); os.makedirs(O, exist_ok=True)
 def cblur(a,s):
     # circular (seamless) gaussian blur via FFT
     h,w=a.shape; fy=np.fft.fftfreq(h)[:,None]; fx=np.fft.fftfreq(w)[None,:]

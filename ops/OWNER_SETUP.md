@@ -66,9 +66,18 @@ Pick one (Buttondown recommended: its API lets the ops team schedule the Sunday 
 ## 8. Repo hygiene (5 min)
 - Protect `main`: require the CI check. Optionally allow auto-merge for PRs labelled
   `content-only` so the Monday docket PR can land without you.
-- Review the scheduled routines at claude.ai/code (Routines). Pause any you don't want.
+- **Give the ops team its hands (2 min).** Five routines were created at handover — *Almost Lore ·
+  daily clerk*, *· Monday docket desk*, *· Wednesday growth & search*, *· Friday product & letter*,
+  *· monthly owner packet*. At claude.ai/code → Routines, open each and attach the **GitHub**
+  connector (so runs can open PRs and issues); also attach **OpenSEO** to *Wednesday growth &
+  search*. Until then, runs still work but reply with patches instead of opening PRs.
+- Each routine does nothing until the launch PR is merged into `main`. To pause the whole team,
+  commit an empty `ops/PAUSED` file to `main`; delete it to resume.
 
 ## 9. Launch day (30 min, see `ops/launch-kit.md`)
+- Edition numbers count from `EPOCH` in `lib/game/schedule.ts` (currently 2026-09-25, so that day is
+  No. 1). Launching later is fine: earlier editions simply appear in the archive. If you'd rather
+  launch on "No. 1", ask the docket desk to move `EPOCH` to your launch date in the launch PR.
 Post the drafted launch posts yourself (the team can't post): Show HN, r/WebGames, r/history-adjacent
 communities that allow games, Product Hunt, a teacher community, and your own network. Space them
 over two weeks; relaunch the Gullibility Test separately.
