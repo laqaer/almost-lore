@@ -1,7 +1,9 @@
 /**
  * Minimal Stripe REST client (no SDK dependency). Only used server-side.
  *
- *   STRIPE_SECRET_KEY  → enables on-site Checkout Sessions + verified downloads
+ *   STRIPE_SECRET_KEY  → enables on-site Checkout Sessions + verified downloads.
+ *   Prices come from lib/products.ts (inline price_data); entitlement is the session's metadata.sku,
+ *   which only our server sets.
  */
 
 const API = "https://api.stripe.com/v1";
@@ -44,8 +46,10 @@ export type CheckoutSession = {
 };
 
 export async function createCheckoutSession(input: {
-  price: string;
-  productSlug: string;
+  sku: string;
+  name: string;
+  description: string;
+  unitAmount: number;
   origin: string;
   cancelPath: string;
 }): Promise<CheckoutSession> {
@@ -53,13 +57,19 @@ export async function createCheckoutSession(input: {
     method: "POST",
     body: encode({
       mode: "payment",
-      "line_items[0][price]": input.price,
       "line_items[0][quantity]": 1,
+      "line_items[0][price_data][currency]": "usd",
+      "line_items[0][price_data][unit_amount]": input.unitAmount,
+      "line_items[0][price_data][product_data][name]": input.name,
+      "line_items[0][price_data][product_data][description]": input.description,
+      "line_items[0][price_data][product_data][metadata][sku]": input.sku,
       success_url: `${input.origin}/thanks?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${input.origin}${input.cancelPath}`,
       allow_promotion_codes: true,
-      "metadata[product]": input.productSlug,
-      "payment_intent_data[metadata][product]": input.productSlug,
+      billing_address_collection: "auto",
+      "invoice_creation[enabled]": true,
+      "metadata[sku]": input.sku,
+      "payment_intent_data[metadata][sku]": input.sku,
     }),
   });
 }
@@ -70,17 +80,5 @@ export async function getCheckoutSession(id: string): Promise<CheckoutSession | 
     return await stripe<CheckoutSession>(`/checkout/sessions/${id}`);
   } catch {
     return null;
-  }
-}
-
-export async function listSessionLineItemPrices(id: string): Promise<string[]> {
-  if (!/^cs_(test|live)_[A-Za-z0-9]+$/.test(id)) return [];
-  try {
-    const res = await stripe<{ data: { price?: { id: string } | null }[] }>(
-      `/checkout/sessions/${id}/line_items?limit=10`,
-    );
-    return res.data.map((item) => item.price?.id).filter((price): price is string => Boolean(price));
-  } catch {
-    return [];
   }
 }

@@ -2,13 +2,15 @@
   "name": "almost-lore",
   "version": "1.0.0",
   "private": true,
-  "description": "Almost Lore — original longform on public-record historical near-misses (Mogul factory Site #4).",
+  "description": "Almost Lore — the daily history game of near-misses, myths and true stories that sound made up.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "next typegen && tsc --noEmit",
+    "validate": "node scripts/validate-content.mjs",
+    "check": "npm run validate && npm run lint && npm run typecheck"
   },
   "dependencies": {
     "next": "16.3.4",

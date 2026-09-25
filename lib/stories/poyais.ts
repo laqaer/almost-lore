@@ -5,6 +5,7 @@ export const poyaisStory: Story = {
   title: "The country that existed on paper",
   dek: "Gregor MacGregor did not invent a rumor. He invented offices, banknotes, a loan, and a sailing date — then sent people to a shore that had none of the city he sold.",
   hook: "A man sold land in a country that was not on the map.",
+  verdict: "happened",
   yearLabel: "1822–1823",
   published: "2026-09-11",
   updated: "2026-09-11",

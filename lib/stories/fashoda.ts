@@ -5,6 +5,7 @@ export const fashodaStory: Story = {
   title: "Two flags at Fashoda",
   dek: "In 1898 a French column and an Anglo-Egyptian flotilla met at a ruined fort on the White Nile. Neither side fired. Europe spent the autumn deciding whether that counted as a war.",
   hook: "Britain and France almost went to war in 1898 over an abandoned fort on the Nile — then both sides waited for Europe to blink.",
+  verdict: "almost",
   yearLabel: "1898–1899",
   published: "2026-09-18",
   updated: "2026-09-18",

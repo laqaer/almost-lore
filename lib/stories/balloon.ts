@@ -5,6 +5,7 @@ export const balloonStory: Story = {
   title: "One hundred and ten miles of Atlantic",
   dek: "In July 1978 Don Cameron and Christopher Davey flew Zanussi from Newfoundland toward Europe, leaked, tore, and ditched in the Bay of Biscay. The first successful crossing landed three weeks later.",
   hook: "Two men almost made the first balloon crossing of the Atlantic — close enough that the last stretch was a trawler.",
+  verdict: "almost",
   yearLabel: "July 1978",
   published: "2026-09-11",
   updated: "2026-09-11",

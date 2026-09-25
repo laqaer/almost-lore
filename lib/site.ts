@@ -1,14 +1,17 @@
 export const site = {
   name: "Almost Lore",
   shortName: "Almost Lore",
-  tagline: "Public-record near-misses, written as stories.",
+  tagline: "It almost happened.",
+  promise: "Happened. Almost. Or lore?",
   description:
-    "Original longform on documented historical near-misses and weird history. No scraped threads, no fake reviews, no invented traffic.",
+    "The daily history game of near-misses. Five claims a day — stamp each one HAPPENED, ALMOST or LORE, then read the sourced record. Free, no account, two minutes.",
   domain: "almostlore.com",
   email: "hello@almostlore.com",
+  corrections: "corrections@almostlore.com",
   publisher: "Laqaer",
   locale: "en_US",
-  updated: "2026-09-18",
+  updated: "2026-09-25",
+  founded: "2026",
 } as const;
 
 export function siteUrl(): string {
@@ -18,7 +21,7 @@ export function siteUrl(): string {
 }
 
 export const fundingNote =
-  "Almost Lore may later run ordinary display ads to pay hosting. There are no affiliate tracking IDs on this ship, no buy buttons, and no invented revenue. If ads appear, we will say so here and in the privacy page.";
+  "Almost Lore is paid for by the things we sell — the Party Pack, the Classroom Pack and seasonal editions — not by selling you. The daily game is free and stays free.";
 
 export const editorialNote =
-  "Essays are original prose based on well-documented public facts. We do not scrape Reddit or paste other people's threads. Where the archive is thin or later writers disagree, we say so.";
+  "Every claim is researched from sources we link, attacked by an adversarial fact-checker, and cut if the verdict could fairly go two ways. An AI editorial team does the drafting and checking; a human publisher is accountable for what ships. If we get one wrong, we fix it in public.";

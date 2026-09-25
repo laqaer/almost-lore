@@ -1,0 +1,226 @@
+[
+ {
+  "id": "seed-greenland-1946",
+  "claim": "The United States bought Greenland from Denmark in 1946.",
+  "verdict": "almost",
+  "year": "1946",
+  "yearSort": 1946,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "politics",
+  "record": "In 1946 the Truman administration secretly offered Denmark $100 million in gold for Greenland. Denmark declined, and the offer stayed out of public view for decades.",
+  "sources": [
+   {
+    "title": "Proposals for the United States to purchase Greenland",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Proposals_for_the_United_States_to_purchase_Greenland"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "seed-emu-war-1932",
+  "claim": "In 1932 Australian soldiers armed with machine guns were sent to cull emus in Western Australia.",
+  "verdict": "happened",
+  "year": "1932",
+  "yearSort": 1932,
+  "era": "20th-century",
+  "region": "Australia",
+  "topic": "animals",
+  "record": "Farmers asked for help as emus ravaged wheat crops, and the army sent a small detachment with Lewis guns. The birds scattered, the kill count disappointed, and the operation was withdrawn.",
+  "sources": [
+   {
+    "title": "Emu War",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Emu_War"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "seed-viking-helmets",
+  "claim": "Viking warriors wore horned helmets into battle.",
+  "verdict": "lore",
+  "year": "c. 800–1050",
+  "yearSort": 900,
+  "era": "medieval",
+  "region": "Europe",
+  "topic": "war",
+  "record": "No horned helmet has ever been found from the Viking Age. The only near-complete Viking helmet, from Gjermundbu in Norway, is a plain rounded cap.",
+  "sources": [
+   {
+    "title": "Horned helmet",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Horned_helmet"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "The look was popularised by 19th-century Romantic art and Carl Emil Doepler's 1876 costumes for Wagner's Ring cycle."
+ },
+ {
+  "id": "seed-molasses-1919",
+  "claim": "In 1919 a wave of molasses swept through Boston's North End, killing 21 people.",
+  "verdict": "happened",
+  "year": "1919",
+  "yearSort": 1919,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "disaster",
+  "record": "A storage tank holding over two million gallons burst on 15 January 1919. The wave reached an estimated 35 mph, flattened buildings and killed 21 people.",
+  "sources": [
+   {
+    "title": "Great Molasses Flood",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Great_Molasses_Flood"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": []
+ },
+ {
+  "id": "seed-fashoda-1898",
+  "claim": "Britain and France went to war in 1898 over a ruined fort on the White Nile.",
+  "verdict": "almost",
+  "year": "1898",
+  "yearSort": 1898,
+  "era": "19th-century",
+  "region": "Africa",
+  "topic": "war",
+  "record": "A French column and a British-led flotilla met at Fashoda in September 1898, and both capitals talked of war. France backed down that November, and a 1899 agreement drew the line instead.",
+  "sources": [
+   {
+    "title": "Fashoda Incident",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Fashoda_Incident"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "storySlug": "fashoda-incident-1898"
+ },
+ {
+  "id": "seed-kodak-calendar",
+  "claim": "Eastman Kodak kept its internal books on a 13-month calendar until 1989.",
+  "verdict": "happened",
+  "year": "1928–1989",
+  "yearSort": 1928,
+  "era": "20th-century",
+  "region": "North America",
+  "topic": "business",
+  "record": "George Eastman adopted the International Fixed Calendar at Kodak in 1928: thirteen months of 28 days each. The company used it for internal accounting until 1989.",
+  "sources": [
+   {
+    "title": "International Fixed Calendar",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/International_Fixed_Calendar"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "seed-salem-burned",
+  "claim": "Convicted witches in Salem, Massachusetts, were burned at the stake in 1692.",
+  "verdict": "lore",
+  "year": "1692",
+  "yearSort": 1692,
+  "era": "early-modern",
+  "region": "North America",
+  "topic": "law",
+  "record": "Nineteen people convicted at Salem were hanged, and one man was pressed to death with stones. Burning was the European punishment for witchcraft, not the colonial one.",
+  "sources": [
+   {
+    "title": "Salem witch trials",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Salem_witch_trials"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": [],
+  "origin": "Burnings in continental Europe and later fiction merged in popular memory with Salem."
+ },
+ {
+  "id": "seed-petrov-1983",
+  "claim": "In 1983 the Soviet Union launched nuclear missiles after its satellites reported an American attack.",
+  "verdict": "almost",
+  "year": "1983",
+  "yearSort": 1983,
+  "era": "20th-century",
+  "region": "Europe",
+  "topic": "war",
+  "record": "On 26 September 1983 a Soviet early-warning system reported incoming US missiles. Lt. Col. Stanislav Petrov judged it a false alarm and did not pass it up as an attack; sunlight on clouds had fooled the satellites.",
+  "sources": [
+   {
+    "title": "1983 Soviet nuclear false alarm incident",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/1983_Soviet_nuclear_false_alarm_incident"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": []
+ },
+ {
+  "id": "seed-cadaver-synod",
+  "claim": "In 897 a pope put the exhumed corpse of his predecessor on trial.",
+  "verdict": "happened",
+  "year": "897",
+  "yearSort": 897,
+  "era": "medieval",
+  "region": "Europe",
+  "topic": "religion",
+  "record": "Pope Stephen VI had the body of Pope Formosus dug up, dressed in vestments and propped on a throne for the Cadaver Synod. The corpse was found guilty.",
+  "sources": [
+   {
+    "title": "Cadaver Synod",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Cadaver_Synod"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": []
+ },
+ {
+  "id": "seed-franklin-turkey",
+  "claim": "Benjamin Franklin proposed the wild turkey as the national bird of the United States.",
+  "verdict": "lore",
+  "year": "1784",
+  "yearSort": 1784,
+  "era": "early-modern",
+  "region": "North America",
+  "topic": "politics",
+  "record": "Franklin never made a public proposal. In a private 1784 letter to his daughter he grumbled about the bald eagle's \"bad moral character\" and called the turkey \"a much more respectable bird\".",
+  "sources": [
+   {
+    "title": "Benjamin Franklin",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Benjamin_Franklin"
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [],
+  "origin": "A private letter, widely quoted after his death, hardened into the story of a formal proposal."
+ }
+]

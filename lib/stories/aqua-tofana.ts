@@ -5,6 +5,7 @@ export const aquaTofanaStory: Story = {
   title: "Aqua Tofana, after the legend",
   dek: "The poison that killed six hundred husbands is a later story. The Roman archive holds a 1659 prosecution, a sealed transcript, and a woman popularly called Tofana who was already dead.",
   hook: "A woman sold a colorless poison that killed six hundred men — except the number, the name, and the hanging do not survive the archive intact.",
+  verdict: "lore",
   yearLabel: "1633–1659",
   published: "2026-09-11",
   updated: "2026-09-11",

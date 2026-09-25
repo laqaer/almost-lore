@@ -5,6 +5,7 @@ export const forgottenSchemeStory: Story = {
   title: "The subway that ran one block",
   dek: "Alfred Ely Beach’s 1870 pneumatic tube under Broadway was a working passenger demo, a political long shot, and a civic almost. New York’s real subway opened thirty-four years later.",
   hook: "New York almost had a subway in 1870 — one block long, blown by a fan, then forgotten under Broadway until the next century’s diggers hit the wall.",
+  verdict: "almost",
   yearLabel: "1869–1873",
   published: "2026-09-11",
   updated: "2026-09-11",

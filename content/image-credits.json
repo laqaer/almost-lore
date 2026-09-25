@@ -1,0 +1,112 @@
+{
+ "molasses-flood": {
+  "src": "/images/archive/molasses-flood.jpg",
+  "alt": "Wreckage in Boston's North End after the 1919 molasses flood",
+  "title": "BostonMolassesDisaster.jpg",
+  "artist": "BPL",
+  "date": "Taken on 15 January 1919",
+  "license": "Public domain",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:BostonMolassesDisaster.jpg",
+  "width": 1800,
+  "height": 1433
+ },
+ "poyais-banknote": {
+  "src": "/images/archive/poyais-banknote.jpg",
+  "alt": "A one-dollar banknote of the Bank of Poyais, printed in the 1820s for a country that did not exist",
+  "title": "Bank of Poyais-1 Hard Dollar (1820s) SCAM.jpg",
+  "artist": "National Museum of American History",
+  "date": "2014-08-15 20:07:42",
+  "license": "Public domain",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Bank_of_Poyais-1_Hard_Dollar_(1820s)_SCAM.jpg",
+  "width": 1800,
+  "height": 907
+ },
+ "eiffel-construction": {
+  "src": "/images/archive/eiffel-construction.jpg",
+  "alt": "The Eiffel Tower half-built in 1888",
+  "title": "Louis-Emile Durandelle, The Eiffel Tower - State of the Construction, 1888.jpg",
+  "artist": "Louis-Emile Durandelle",
+  "date": "23 November 1888date QS:P571,+1888-11-23T00:00:00Z/11",
+  "license": "Public domain",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Louis-Emile_Durandelle,_The_Eiffel_Tower_-_State_of_the_Construction,_1888.jpg",
+  "width": 1800,
+  "height": 2290
+ },
+ "emus-drinking": {
+  "src": "/images/archive/emus-drinking.jpg",
+  "alt": "Emus gathering at a water tank in Western Australia during the 1932 Emu War",
+  "title": "Emus coming to drink Emu War.jpg",
+  "artist": "Unknown authorUnknown author",
+  "date": "November \u2013 December 1932",
+  "license": "Public domain",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Emus_coming_to_drink_Emu_War.jpg",
+  "width": 450,
+  "height": 299
+ },
+ "gregor-macgregor": {
+  "src": "/images/archive/gregor-macgregor.jpg",
+  "alt": "Portrait of Gregor MacGregor, the self-styled Cazique of Poyais",
+  "title": "General Gregor MacGregor retouched.jpg",
+  "artist": "en:Samuel William Reynolds (1773\u20131835), after Simon Jacques Rochard (1788\u20131872)",
+  "date": "between 1820 and 1835date QS:P,+1850-00-00T00:00:00Z/7,P1319",
+  "license": "Public domain",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:General_Gregor_MacGregor_retouched.jpg",
+  "width": 500,
+  "height": 630
+ },
+ "dancing-pilgrims": {
+  "src": "/images/archive/dancing-pilgrims.jpg",
+  "alt": "1564 engraving after Bruegel of pilgrims dancing on the road to Molenbeek",
+  "title": "Die Wallfahrt der Fallsuechtigen nach Meulebeeck.jpg",
+  "artist": "Pieter Brueghel the Elder",
+  "date": "1564",
+  "license": "Public domain",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Die_Wallfahrt_der_Fallsuechtigen_nach_Meulebeeck.jpg",
+  "width": 1660,
+  "height": 2116
+ },
+ "marchand-mission": {
+  "src": "/images/archive/marchand-mission.jpg",
+  "alt": "Officers of the Marchand mission photographed in Cairo, 1898",
+  "title": "Groupe de la mission Marchand au Caire 1898.jpg",
+  "artist": "E. Lauro \u2013 Photographe \u2013 rue Kamel Ezb\u00e9kieh \u2013 Le Caire (Egypte)",
+  "date": "1898-10-31",
+  "license": "Public domain",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Groupe_de_la_mission_Marchand_au_Caire_1898.jpg",
+  "width": 1800,
+  "height": 1294
+ },
+ "poyais-black-river": {
+  "src": "/images/archive/poyais-black-river.jpg",
+  "alt": "An idealised 1822 view of the Port of Black River, used to sell Poyais to investors",
+  "title": "View of the Port of Black River in the Territory of Poyais.png",
+  "artist": "Thomas Strangeways (pseudonym)",
+  "date": "1822",
+  "license": "Public domain",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:View_of_the_Port_of_Black_River_in_the_Territory_of_Poyais.png",
+  "width": 594,
+  "height": 317
+ },
+ "walhall-doepler": {
+  "src": "/images/archive/walhall-doepler.jpg",
+  "alt": "Emil Doepler's illustration of Valhalla, part of the 19th-century imagery behind horned-helmet Vikings",
+  "title": "Walhall by Emil Doepler.jpg",
+  "artist": "Emil Doepler",
+  "date": "Published c. 1905",
+  "license": "Public domain",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Walhall_by_Emil_Doepler.jpg",
+  "width": 1536,
+  "height": 1026
+ },
+ "beach-pneumatic": {
+  "src": "/images/archive/beach-pneumatic.jpg",
+  "alt": "1870 engraving of the Beach Pneumatic Transit car in its tunnel under Broadway",
+  "title": "Beach Pneumatic Transit 01.jpg",
+  "artist": "Scientific American (1870)",
+  "date": "1870",
+  "license": "Public domain",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Beach_Pneumatic_Transit_01.jpg",
+  "width": 680,
+  "height": 669
+ }
+}
