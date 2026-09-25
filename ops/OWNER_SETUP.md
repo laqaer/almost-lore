@@ -14,12 +14,20 @@ and Preview), then redeploy.
   *Checkout Sessions: write* (and read). Use a test key first (`rk_test_…`), buy the Party Pack
   with card `4242 4242 4242 4242`, confirm `/thanks` shows the download, then switch to live.
 - `STRIPE_SECRET_KEY=rk_live_…`
+- `PRODUCTS_KEY=…` — the key that unlocks the encrypted PDFs in `private/products/*.enc` (your
+  repository is public, so the paid files are committed encrypted). It was handed to you with the
+  launch report; keep it in your password manager. Without it the site keeps the "notify me"
+  button rather than sell a file it can't deliver. Add the same value as a secret in the Claude
+  cloud environment so the product-maker can rebuild PDFs.
 - Prices come from `lib/products.ts`; you do not need to create products in Stripe.
 - Optional: turn on Stripe Tax and receipts emails in the dashboard.
 - Alternative without Stripe: any hosted checkout that delivers the file itself (Gumroad, Lemon
   Squeezy, Payhip). Set `NEXT_PUBLIC_CHECKOUT_URL_PARTY_PACK`, `…_PARTY_PACK_OFFICE`,
   `…_CLASSROOM_PACK`, `…_CLASSROOM_DEPARTMENT`, `…_HALLOWEEN_PACK` to the product URLs and upload the
-  PDFs from `private/products/` there.
+  PDFs there (the launch report attached them; or decrypt with `PRODUCTS_KEY` — see
+  `lib/product-files.ts`).
+- Consider making the GitHub repository private: the claim bank (including Party Pack cards) and
+  the future schedule are readable there. Everything keeps working if you do.
 
 ## 3. Build the list — newsletter (10 min)
 Pick one (Buttondown recommended: its API lets the ops team schedule the Sunday Docket).
@@ -50,7 +58,7 @@ Pick one (Buttondown recommended: its API lets the ops team schedule the Sunday 
 
 ## 7. Marketplaces — revenue this season without waiting for Google (20 min)
 - Etsy: open a shop, create digital listings for the Party Pack ($12), Halloween Pack ($7) and
-  Office Edition ($79) using `ops/marketplace/etsy.md`; attach PDFs from `private/products/`.
+  Office Edition ($79) using `ops/marketplace/etsy.md`; attach the PDFs.
   Disclose AI-assisted creation per Etsy policy (the listing copy already does).
 - Teachers Pay Teachers: seller account (Premium once sales justify it), list the Classroom Pack
   using `ops/marketplace/tpt.md`.
@@ -71,6 +79,7 @@ over two weeks; relaunch the Gullibility Test separately.
 |---|---|
 | `NEXT_PUBLIC_SITE_URL` | canonical URLs, OG images |
 | `STRIPE_SECRET_KEY` | on-site checkout + verified downloads |
+| `PRODUCTS_KEY` | decrypts the paid PDFs for download (needed with Stripe) |
 | `NEXT_PUBLIC_CHECKOUT_URL_<SKU>` | hosted-checkout fallback per product |
 | `BUTTONDOWN_API_KEY` / `BEEHIIV_*` / `KIT_*` / `NEWSLETTER_WEBHOOK_URL` | email signups |
 | `NEXT_PUBLIC_GA_ID` / `NEXT_PUBLIC_PLAUSIBLE_DOMAIN` | analytics |

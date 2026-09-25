@@ -18,8 +18,9 @@ ops task; it defines roles, cadence, KPIs and guardrails.
 - `npm run validate -- --strict` for any PR that adds or edits claims.
 - `NODE_USE_ENV_PROXY=1 node scripts/fetch-images.mjs` — pull public-domain images listed in
   `content/images.json` (licence-checked, credits written to `content/image-credits.json`).
-- `node scripts/build-pdfs.mjs` — regenerate the paid PDFs into `private/products/` (needs a
-  running `npm run start` or `npm run dev`, see the script header).
+- `PRODUCTS_KEY=… node scripts/build-pdfs.mjs` — regenerate the printable products from
+  `content/` (Playwright + Chromium, no server). Paid PDFs land in `private/products/` in the clear
+  (gitignored) plus encrypted `.enc` copies (committed); the free starter deck goes to `public/free/`.
 - `node scripts/schedule-dockets.mjs` — append dockets from unscheduled claims (never edits past dockets).
 
 ## Where things live
@@ -30,7 +31,9 @@ ops task; it defines roles, cadence, KPIs and guardrails.
   server-only: future dockets must never reach a client bundle.
 - `lib/stories/*` — Case Files (longform). `lib/products.ts` — catalogue and prices.
 - `app/api/*` — docket, checkout, download (Stripe-verified), subscribe, stats, correction.
-- `private/products/` — paid PDFs (never in `/public`).
+- `private/products/*.pdf.enc` — paid PDFs, AES-encrypted because **this repository is public**.
+  Never commit a plaintext paid PDF, never put one in `/public`. `lib/product-files.ts` decrypts with
+  `PRODUCTS_KEY` per Stripe-verified download; `lib/checkout.ts` hides the buy button when it can't.
 - `ops/` — the operating manual, runbooks, launch kit, reports.
 
 ## Content rules (non-negotiable)

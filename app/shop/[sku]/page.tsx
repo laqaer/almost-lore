@@ -11,7 +11,8 @@ import { getSet } from "@/lib/game/content";
 import { VERDICT_SAY } from "@/lib/game/scoring";
 import type { Claim, Verdict } from "@/lib/game/types";
 import { pageMetadata } from "@/lib/metadata";
-import { checkoutMode, formatPrice, getProduct, type Product } from "@/lib/products";
+import { checkoutMode } from "@/lib/checkout";
+import { formatPrice, getProduct, type Product } from "@/lib/products";
 import { faqJsonLd, productJsonLd } from "@/lib/schema";
 
 type Props = { params: Promise<{ sku: string }> };

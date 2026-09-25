@@ -6,7 +6,8 @@ import { ClassStage, HalloweenStage, PartyStage } from "@/components/shop/produc
 import { STARTER_DECK, starterDeckAvailable } from "@/lib/free";
 import { getSet } from "@/lib/game/content";
 import { pageMetadata } from "@/lib/metadata";
-import { checkoutMode, getProduct, type Product } from "@/lib/products";
+import { checkoutMode } from "@/lib/checkout";
+import { getProduct, type Product } from "@/lib/products";
 
 export const metadata = pageMetadata({
   title: "The Shop — printable history games",

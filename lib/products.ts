@@ -2,11 +2,9 @@
  * Product catalog. Prices live here (server-side) and are sent to Stripe as inline
  * price_data, so the owner only needs STRIPE_SECRET_KEY — no dashboard product setup.
  *
- * Checkout resolution per product, first match wins:
- *   1. STRIPE_SECRET_KEY               → on-site Stripe Checkout + verified download on /thanks
- *   2. NEXT_PUBLIC_CHECKOUT_URL_<SKU>  → any hosted checkout that delivers the file itself
- *                                        (Gumroad, Lemon Squeezy, Payhip…). SKU uppercased, dashes → underscores.
- *   3. neither                         → the buy button becomes an honest "notify me" waitlist.
+ * How each product is sold (Stripe, a hosted checkout, or a waitlist) is decided server-side by
+ * checkoutMode() in lib/checkout.ts. Hosted checkouts (Gumroad, Lemon Squeezy, Payhip…) use
+ * NEXT_PUBLIC_CHECKOUT_URL_<SKU>: SKU uppercased, dashes → underscores.
  */
 
 export type ProductFile = {
@@ -42,7 +40,8 @@ export const products: Product[] = [
     path: "/shop/party-pack",
     status: "available",
     files: [
-      { file: "almost-lore-party-pack.pdf", label: "Party Pack (cards, stamps & rules)" },
+      { file: "almost-lore-party-pack-letter.pdf", label: "Party Pack · US Letter" },
+      { file: "almost-lore-party-pack-a4.pdf", label: "Party Pack · A4" },
     ],
     bullets: [
       "Print-and-play cards with the verdict and a one-line record on the back",
@@ -62,7 +61,8 @@ export const products: Product[] = [
     path: "/shop/party-pack",
     status: "available",
     files: [
-      { file: "almost-lore-party-pack.pdf", label: "Party Pack (cards, stamps & rules)" },
+      { file: "almost-lore-party-pack-letter.pdf", label: "Party Pack · US Letter" },
+      { file: "almost-lore-party-pack-a4.pdf", label: "Party Pack · A4" },
     ],
     bullets: [
       "Commercial licence for one organisation, unlimited events",
@@ -81,7 +81,9 @@ export const products: Product[] = [
     path: "/shop/classroom-pack",
     status: "available",
     files: [
-      { file: "almost-lore-classroom-pack.pdf", label: "Classroom Pack (slides, sheets & answer key)" },
+      { file: "almost-lore-classroom-slides.pdf", label: "Slides (16:9, for the projector)" },
+      { file: "almost-lore-classroom-printables-letter.pdf", label: "Teacher guide & printables · US Letter" },
+      { file: "almost-lore-classroom-printables-a4.pdf", label: "Teacher guide & printables · A4" },
     ],
     bullets: [
       "Claim-then-reveal slides for the first five minutes of class",
@@ -101,7 +103,9 @@ export const products: Product[] = [
     path: "/shop/classroom-pack",
     status: "available",
     files: [
-      { file: "almost-lore-classroom-pack.pdf", label: "Classroom Pack (slides, sheets & answer key)" },
+      { file: "almost-lore-classroom-slides.pdf", label: "Slides (16:9, for the projector)" },
+      { file: "almost-lore-classroom-printables-letter.pdf", label: "Teacher guide & printables · US Letter" },
+      { file: "almost-lore-classroom-printables-a4.pdf", label: "Teacher guide & printables · A4" },
     ],
     bullets: ["Up to 10 teachers in one school department", "Same files, one purchase order"],
     license: "Up to 10 teachers in one department of one school.",
@@ -116,7 +120,8 @@ export const products: Product[] = [
     path: "/halloween",
     status: "available",
     files: [
-      { file: "almost-lore-halloween-pack.pdf", label: "Halloween Pack (cards & rules)" },
+      { file: "almost-lore-halloween-pack-letter.pdf", label: "Halloween Pack · US Letter" },
+      { file: "almost-lore-halloween-pack-a4.pdf", label: "Halloween Pack · A4" },
     ],
     bullets: [
       "Printable spooky-history cards with sourced answers",
@@ -156,12 +161,5 @@ export function hostedCheckoutUrl(sku: string): string | undefined {
 }
 
 export type CheckoutMode = "stripe" | "hosted" | "waitlist";
-
-/** Server-side only: decides how a product can be bought right now. */
-export function checkoutMode(sku: string): CheckoutMode {
-  if (process.env.STRIPE_SECRET_KEY) return "stripe";
-  if (hostedCheckoutUrl(sku)) return "hosted";
-  return "waitlist";
-}
 
 export const checkoutEnvDocs = products.map((product) => envKey(product.sku));

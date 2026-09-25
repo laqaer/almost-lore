@@ -1,13 +1,12 @@
-import { readFile } from "node:fs/promises";
-import path from "node:path";
 import { NextResponse, type NextRequest } from "next/server";
+import { readProductFile } from "@/lib/product-files";
 import { getProduct } from "@/lib/products";
 import { getCheckoutSession } from "@/lib/stripe";
 
 /**
  * GET /api/download?session_id=cs_…&file=almost-lore-party-pack.pdf
  * Re-verifies the Stripe Checkout Session on every request, then streams the file from
- * /private/products (never from /public).
+ * /private/products (never from /public), decrypting when only the .enc copy is deployed.
  */
 export async function GET(request: NextRequest) {
   const sessionId = request.nextUrl.searchParams.get("session_id") ?? "";
@@ -25,8 +24,9 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    const bytes = await readFile(path.join(process.cwd(), "private", "products", entitled.file));
-    return new NextResponse(new Uint8Array(bytes), {
+    const bytes = await readProductFile(entitled.file);
+    if (!bytes) throw new Error("not available in this deployment (missing file or PRODUCTS_KEY)");
+    return new NextResponse(bytes as BodyInit, {
       headers: {
         "Content-Type": "application/pdf",
         "Content-Disposition": `attachment; filename="${entitled.file}"`,

@@ -38,3 +38,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# paid product files: only the encrypted .enc copies are committed (see lib/product-files.ts)
+/private/products/*.pdf
+/.cache/

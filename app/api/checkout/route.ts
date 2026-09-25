@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { checkoutMode, getProduct, hostedCheckoutUrl } from "@/lib/products";
+import { checkoutMode } from "@/lib/checkout";
+import { getProduct, hostedCheckoutUrl } from "@/lib/products";
 import { createCheckoutSession } from "@/lib/stripe";
 
 /**

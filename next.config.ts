@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
   // Paid files live outside /public and are streamed by /api/download after Stripe verification.
   outputFileTracingIncludes: {
     "/api/download": ["./private/products/**/*"],
+    "/api/checkout": ["./private/products/**/*"],
     "/api/og/docket": ["./assets/fonts/**/*"],
   },
   async redirects() {

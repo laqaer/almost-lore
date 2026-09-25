@@ -7,7 +7,8 @@ import { BuyButton } from "@/components/shop/buy-button";
 import { HalloweenStage } from "@/components/shop/product-art";
 import { getSet, publicClaim } from "@/lib/game/content";
 import { pageMetadata } from "@/lib/metadata";
-import { checkoutMode, getProduct } from "@/lib/products";
+import { checkoutMode } from "@/lib/checkout";
+import { getProduct } from "@/lib/products";
 import { productJsonLd } from "@/lib/schema";
 import { siteUrl } from "@/lib/site";
 

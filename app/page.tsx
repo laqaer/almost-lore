@@ -9,7 +9,8 @@ import { NewsletterForm } from "@/components/newsletter-form";
 import { BuyButton } from "@/components/shop/buy-button";
 import { ClassStage, PartyStage } from "@/components/shop/product-art";
 import { getClaim, getSet } from "@/lib/game/content";
-import { checkoutMode, getProduct } from "@/lib/products";
+import { checkoutMode } from "@/lib/checkout";
+import { getProduct } from "@/lib/products";
 import { gameJsonLd } from "@/lib/schema";
 import { getStory, readingMinutes } from "@/lib/stories";
 
