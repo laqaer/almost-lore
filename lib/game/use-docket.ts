@@ -2,32 +2,23 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { track } from "@/lib/analytics";
-import { scoreFor } from "@/lib/game/scoring";
-import {
-  loadCard,
-  recordDocket,
-  saveProgress,
-  type ClerkCard,
-  type DocketRecord,
-} from "@/lib/game/storage";
+import { loadCard, recordDocket, saveProgress, type ClerkCard, type DocketRecord } from "@/lib/game/storage";
 import type { Claim, Verdict } from "@/lib/game/types";
 
 export type DocketGame = {
   index: number;
   picks: Verdict[];
-  sealIndex: number | null;
-  /** Seal is armed for the current card but not yet committed by a stamp. */
-  sealArmed: boolean;
   /** The current card has been stamped and shows its record. */
   revealed: boolean;
   done: boolean;
   correct: boolean[];
-  points: number;
+  right: number;
   card: ClerkCard | null;
+  restored: boolean;
+  /** Seconds the player spent on the current card before stamping it. */
+  lastSeconds: number | null;
   stamp: (verdict: Verdict) => void;
   next: () => void;
-  toggleSeal: () => void;
-  restored: boolean;
 };
 
 /**
@@ -37,12 +28,11 @@ export type DocketGame = {
 export function useDocket(n: number, claims: Claim[], isToday: boolean): DocketGame {
   const [picks, setPicks] = useState<Verdict[]>([]);
   const [index, setIndex] = useState(0);
-  const [sealIndex, setSealIndex] = useState<number | null>(null);
-  const [sealArmed, setSealArmed] = useState(false);
   const [done, setDone] = useState(false);
   const [card, setCard] = useState<ClerkCard | null>(null);
   const [restored, setRestored] = useState(false);
-  const started = useRef(false);
+  const [lastSeconds, setLastSeconds] = useState<number | null>(null);
+  const shownAt = useRef<number>(0);
 
   // Restore from the Clerk's Card after mount (localStorage is client-only).
   useEffect(() => {
@@ -52,40 +42,31 @@ export function useDocket(n: number, claims: Claim[], isToday: boolean): DocketG
     const finished = saved.dockets[n];
     if (finished) {
       setPicks(finished.picks);
-      setSealIndex(finished.sealIndex);
       setIndex(claims.length - 1);
       setDone(true);
     } else if (saved.current?.n === n && saved.current.picks.length > 0) {
       const resumed = saved.current.picks.slice(0, claims.length);
       setPicks(resumed);
-      setSealIndex(saved.current.sealIndex);
-      setIndex(Math.min(resumed.length, claims.length - 1));
-      if (resumed.length >= claims.length) setIndex(claims.length - 1);
+      // Resume on the last stamped card (its record is showing) so nothing is skipped.
+      setIndex(Math.max(0, resumed.length - 1));
     }
     setRestored(true);
+    shownAt.current = Date.now();
     /* eslint-enable react-hooks/set-state-in-effect */
   }, [n, claims.length]);
 
-  const correct = useMemo(
-    () => picks.map((pick, i) => claims[i]?.verdict === pick),
-    [picks, claims],
-  );
+  const correct = useMemo(() => picks.map((pick, i) => claims[i]?.verdict === pick), [picks, claims]);
   const revealed = picks.length > index;
-  const points = scoreFor(correct, sealIndex);
+  const right = correct.filter(Boolean).length;
 
   const stamp = useCallback(
     (verdict: Verdict) => {
       if (done || picks.length > index) return;
-      if (!started.current && index === 0) {
-        started.current = true;
-        track("game_start", { docket: n });
-      }
+      if (index === 0 && picks.length === 0) track("game_start", { docket: n });
       const nextPicks = [...picks, verdict];
-      const nextSeal = sealArmed ? index : sealIndex;
       setPicks(nextPicks);
-      setSealIndex(nextSeal);
-      setSealArmed(false);
-      saveProgress(n, nextPicks, nextSeal);
+      setLastSeconds(shownAt.current ? Math.max(1, Math.round((Date.now() - shownAt.current) / 1000)) : null);
+      saveProgress(n, nextPicks);
       track("game_answer", {
         docket: n,
         card: index + 1,
@@ -93,54 +74,34 @@ export function useDocket(n: number, claims: Claim[], isToday: boolean): DocketG
         verdict: claims[index]?.verdict ?? "",
       });
     },
-    [done, picks, index, sealArmed, sealIndex, n, claims],
+    [done, picks, index, n, claims],
   );
 
   const next = useCallback(() => {
-    if (!revealed) return;
+    if (!revealed || done) return;
     if (index < claims.length - 1) {
       setIndex(index + 1);
+      shownAt.current = Date.now();
       return;
     }
-    if (done) return;
     const finalCorrect = picks.map((pick, i) => claims[i].verdict === pick);
     const record: DocketRecord = {
       picks,
       correct: finalCorrect,
       verdicts: claims.map((claim) => claim.verdict),
-      sealIndex,
-      points: scoreFor(finalCorrect, sealIndex),
+      right: finalCorrect.filter(Boolean).length,
       completedAt: new Date().toISOString(),
     };
     setCard(recordDocket(n, record, isToday));
     setDone(true);
-    track("game_complete", { docket: n, points: record.points, right: finalCorrect.filter(Boolean).length });
+    track("game_complete", { docket: n, right: record.right });
     fetch("/api/stats", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ n, correct: finalCorrect }),
       keepalive: true,
     }).catch(() => undefined);
-  }, [revealed, index, claims, done, picks, sealIndex, n, isToday]);
+  }, [revealed, index, claims, done, picks, n, isToday]);
 
-  const toggleSeal = useCallback(() => {
-    if (sealIndex !== null || revealed || done) return;
-    setSealArmed((armed) => !armed);
-  }, [sealIndex, revealed, done]);
-
-  return {
-    index,
-    picks,
-    sealIndex,
-    sealArmed,
-    revealed,
-    done,
-    correct,
-    points,
-    card,
-    stamp,
-    next,
-    toggleSeal,
-    restored,
-  };
+  return { index, picks, revealed, done, correct, right, card, restored, lastSeconds, stamp, next };
 }

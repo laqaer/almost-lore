@@ -222,5 +222,1443 @@
   "solemn": false,
   "tags": [],
   "origin": "A private letter, widely quoted after his death, hardened into the story of a formal proposal."
+ },
+ {
+  "id": "vespasian-urine-tax-70",
+  "claim": "Roman emperor Vespasian taxed the urine collected from Rome's public urinals.",
+  "verdict": "happened",
+  "year": "c. 70 CE",
+  "yearSort": 70,
+  "era": "ancient",
+  "region": "Rome",
+  "topic": "law",
+  "record": "Tanners and launderers bought urine from Rome's public latrines for its ammonia, and Vespasian made the trade pay tax. When his son Titus grumbled, the emperor held a coin from the first payment under his nose and asked if it smelled. The phrase pecunia non olet, 'money doesn't stink,' still carries the joke.",
+  "sources": [
+   {
+    "title": "Pecunia non olet",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pecunia_non_olet",
+    "quote": "Vespasian imposed a urine tax on the distribution of urine from Rome's public urinals (the Roman lower classes urinated into pots, which were later emptied into cesspools)."
+   },
+   {
+    "title": "Suetonius, The Life of Vespasian (Loeb translation), ch. 23",
+    "publisher": "LacusCurtius, University of Chicago",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Vespasian*.html",
+    "quote": "When Titus found fault with him for contriving a tax upon public conveniences, he held a piece of money from the first payment to his son's nose, asking whether its odour was offensive to him."
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "rome",
+   "taxes",
+   "emperors",
+   "latin-phrases"
+  ]
+ },
+ {
+  "id": "praetorian-throne-auction-193",
+  "claim": "In 193 CE, Rome's Praetorian Guard auctioned off the imperial throne to the highest bidder.",
+  "verdict": "happened",
+  "year": "193 CE",
+  "yearSort": 193,
+  "era": "ancient",
+  "region": "Rome",
+  "topic": "politics",
+  "record": "With the throne vacant in March 193, the guard took bids at its camp. Didius Julianus, barred from entering, shouted offers from outside the gates and won with 25,000 sesterces per soldier. The senator-historian Cassius Dio called it a most disgraceful business; Julianus reigned just 66 days.",
+  "sources": [
+   {
+    "title": "Didius Julianus",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Didius_Julianus",
+    "quote": "After the murder of Pertinax on 28 March 193, the Praetorian guard announced that the throne was to be sold to the man who would pay the highest price."
+   },
+   {
+    "title": "Cassius Dio, Roman History, Book 74 (Loeb translation)",
+    "publisher": "LacusCurtius, University of Chicago",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/74*.html",
+    "quote": "For, just as if it had been in some market or auction-room, both the City and its entire empire were auctioned off."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "rome",
+   "emperors",
+   "praetorian-guard",
+   "auction"
+  ]
+ },
+ {
+  "id": "deir-el-medina-strike-1158bce",
+  "claim": "Royal tomb builders in ancient Egypt went on strike under Ramesses III because their grain rations were late.",
+  "verdict": "happened",
+  "year": "c. 1158 BCE",
+  "yearSort": -1158,
+  "era": "ancient",
+  "region": "Egypt",
+  "topic": "business",
+  "record": "In Ramesses III's 29th year, the Deir el-Medina crews who carved royal tombs downed tools and staged sit-ins at temples, shouting 'We are hungry!' The scribe Amennakht logged the protest on a papyrus now in Turin's Museo Egizio, often called the earliest recorded strike.",
+  "sources": [
+   {
+    "title": "Strike Papyrus (Cat. 1880)",
+    "publisher": "Museo Egizio, Turin",
+    "url": "https://collezioni.museoegizio.it/en-GB/material/Cat_1880",
+    "quote": "It is a report concerning a strike held during the reign of King Ramesses III in the village of Deir el-Medina. The workers protested because they had not received their regular food rations, which constituted payment for their work in the Valley of the kings."
+   },
+   {
+    "title": "Deir el-Medina strikes",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Deir_el-Medina_strikes",
+    "quote": "The Deir el-Medina strikes were a series of strikes by the artisans who worked on the tombs in the Egyptian Valley of the Kings, the most notable of which occurred in the 29th year of the reign of Ramesses III (circa 1158 BC)."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "egypt",
+   "labor",
+   "pharaohs",
+   "valley-of-the-kings"
+  ]
+ },
+ {
+  "id": "cleopatra-closer-to-moon-landing",
+  "claim": "Cleopatra lived closer in time to the Apollo 11 Moon landing than to the building of the Great Pyramid.",
+  "verdict": "happened",
+  "year": "69–30 BCE",
+  "yearSort": -69,
+  "era": "ancient",
+  "region": "Egypt",
+  "topic": "royalty",
+  "record": "Khufu's pyramid rose around 2600 BCE, roughly 2,500 years before Cleopatra was born in 69 BCE. Apollo 11 touched down in 1969, about 2,040 years after her birth. To Egypt's last Ptolemaic queen, Giza was already a relic of deep antiquity.",
+  "sources": [
+   {
+    "title": "Did Cleopatra Really Live Closer In Time To The First Lunar Landing Than The Great Pyramids?",
+    "publisher": "WorldAtlas",
+    "url": "https://www.worldatlas.com/articles/so-cleopatra-lived-closer-in-time-to-the-first-lunar-landing-than-the-great-pyramids.html",
+    "quote": "Cleopatra was born ~2,500 years after the Great Pyramid at Giza was built, and ~2,000 years before the first lunar landing."
+   },
+   {
+    "title": "Great Pyramid of Giza",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+    "quote": "It was built c. 2600 BC over a period of about 26 years."
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "egypt",
+   "cleopatra",
+   "pyramids",
+   "timeline"
+  ]
+ },
+ {
+  "id": "hero-holy-water-vending-machine",
+  "claim": "Hero of Alexandria designed a coin-operated machine that dispensed holy water in the 1st century CE.",
+  "verdict": "happened",
+  "year": "1st century CE",
+  "yearSort": 50,
+  "era": "ancient",
+  "region": "Egypt",
+  "topic": "technology",
+  "record": "A coin dropped through a slot landed on a small pan, tipping a lever that opened a valve and let the liquid flow. When the coin slid off, a counterweight snapped the valve shut. Hero described the device for temples, where worshippers washed before entering.",
+  "sources": [
+   {
+    "title": "Vending machine",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vending_machine",
+    "quote": "The earliest known reference to a vending machine is in the work of Hero of Alexandria, an engineer and mathematician in 1st century AD Roman Egypt. His machine accepted a coin and then dispensed wine or holy water."
+   },
+   {
+    "title": "Coin-Operated Holy Water Dispensing Machine",
+    "publisher": "Smith College Museum of Ancient Inventions",
+    "url": "https://www.smith.edu/bigbad/historyscitech/museum/ancient_inventions/hsc18b.htm",
+    "quote": "Designed by the Greek inventor Heron, this coin-operated holy water dispenser was used in Egyptian temples to dispense water for ritual washings."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "alexandria",
+   "inventions",
+   "vending-machine",
+   "engineering"
+  ]
+ },
+ {
+  "id": "zhang-heng-seismoscope-132",
+  "claim": "In 132 CE, China's Zhang Heng built an earthquake detector with dragons that dropped balls into toads' mouths.",
+  "verdict": "happened",
+  "year": "132 CE",
+  "yearSort": 132,
+  "era": "ancient",
+  "region": "China",
+  "topic": "science",
+  "record": "Eight dragon heads ringed a bronze vessel; a tremor made one release its ball into the toad below, showing the quake's direction. The Book of Later Han says it once triggered with no shaking felt in the capital, and days later a messenger arrived reporting an earthquake in Longxi.",
+  "sources": [
+   {
+    "title": "Zhang Heng",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Zhang_Heng",
+    "quote": "To indicate the direction of a distant earthquake, Zhang's device dropped a bronze ball from one of eight tubed projections shaped as dragon heads; the ball fell into the mouth of a corresponding metal object shaped as a toad, each representing a direction like the points on a compass rose."
+   },
+   {
+    "title": "The ancient earthquake detector that puzzled modern historians",
+    "publisher": "Engadget",
+    "url": "https://www.engadget.com/2018-09-28-backlog-zhang-heng-seismoscope.html",
+    "quote": "Mounted on the outside of this were eight dragons, each with a bronze ball clasped within its jaw. Directly underneath these mythical protrusions were eight bronze toads, mouths agape to receive the balls if they fell."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "china",
+   "han-dynasty",
+   "earthquakes",
+   "inventions"
+  ]
+ },
+ {
+  "id": "nero-corinth-canal-67",
+  "claim": "Roman emperor Nero cut a shipping canal through Greece's Isthmus of Corinth in 67 CE.",
+  "verdict": "almost",
+  "year": "67 CE",
+  "yearSort": 67,
+  "era": "ancient",
+  "region": "Greece",
+  "topic": "transport",
+  "record": "Nero broke the ground with a pickaxe and carried off the first basket of soil, and 6,000 Judean prisoners dug trenches from both ends. They got about 700 metres, a tenth of the way, before the project died with Nero in 68. Ships had to wait until 1893.",
+  "sources": [
+   {
+    "title": "Corinth Canal",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Corinth_Canal",
+    "quote": "The emperor Nero was the first to attempt to construct the canal, personally breaking the ground with a pickaxe and removing the first basket-load of soil in 67 AD, but the project was abandoned when he died shortly afterwards."
+   },
+   {
+    "title": "Suetonius, The Life of Nero (Loeb translation), ch. 19",
+    "publisher": "LacusCurtius, University of Chicago",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Nero*.html",
+    "quote": "at a signal given on a trumpet he was first to break ground with a mattock and to carry off a basketful of earth upon his shoulders."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "rome",
+   "greece",
+   "canals",
+   "nero",
+   "engineering"
+  ]
+ },
+ {
+  "id": "caesar-parthian-invasion-44bce",
+  "claim": "Julius Caesar invaded the Parthian Empire with 16 legions in 44 BCE.",
+  "verdict": "almost",
+  "year": "44 BCE",
+  "yearSort": -44,
+  "era": "ancient",
+  "region": "Persia",
+  "topic": "war",
+  "record": "Sixteen legions and 10,000 cavalry were mobilized, six legions were already training in Macedonia, and Caesar was due to leave Rome on 18 March 44 BCE. He was assassinated on the Ides of March, three days before departure, and the eastern campaign never began.",
+  "sources": [
+   {
+    "title": "Julius Caesar's planned invasion of the Parthian Empire",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Julius_Caesar%27s_planned_invasion_of_the_Parthian_Empire",
+    "quote": "Caesar intended to leave Rome to start the campaign on 18 March; however, three days prior to his departure he was assassinated."
+   },
+   {
+    "title": "Appian, The Civil Wars, Book 2 (Loeb translation)",
+    "publisher": "LacusCurtius, University of Chicago",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Appian/Civil_Wars/2*.html",
+    "quote": "He sent across the Adriatic in advance sixteen legions of foot and 10,000 horse."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "rome",
+   "parthia",
+   "julius-caesar",
+   "ides-of-march"
+  ]
+ },
+ {
+  "id": "gan-ying-reaches-rome-97",
+  "claim": "In 97 CE, a Han Chinese envoy named Gan Ying reached the Roman Empire.",
+  "verdict": "almost",
+  "year": "97 CE",
+  "yearSort": 97,
+  "era": "ancient",
+  "region": "China",
+  "topic": "exploration",
+  "record": "General Ban Chao sent Gan Ying west to Da Qin, the Chinese name for Rome. He reached a great sea on Parthia's edge, most likely the Persian Gulf, but Parthian sailors warned the crossing could take two years and drive men to homesickness and death. He turned back.",
+  "sources": [
+   {
+    "title": "Gan Ying",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gan_Ying",
+    "quote": "When [Gan] Ying heard this, he discontinued (his trip)."
+   },
+   {
+    "title": "The Western Regions according to the Hou Hanshu (trans. John E. Hill)",
+    "publisher": "Silk Road Seattle, University of Washington",
+    "url": "https://depts.washington.edu/silkroad/texts/hhshu/hou_han_shu.html",
+    "quote": "These included the reports of his father's envoy, Gan Ying, who reached the shores of the Persian Gulf in 97 CE, and gathered what information he could on the Roman Empire."
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "china",
+   "rome",
+   "silk-road",
+   "han-dynasty",
+   "parthia"
+  ]
+ },
+ {
+  "id": "athens-captures-syracuse-414bce",
+  "claim": "Athens conquered the Sicilian city of Syracuse in 414 BCE during the Peloponnesian War.",
+  "verdict": "almost",
+  "year": "414 BCE",
+  "yearSort": -414,
+  "era": "ancient",
+  "region": "Greece",
+  "topic": "war",
+  "record": "Athenian siege walls had all but encircled Syracuse, and its citizens were about to hold an assembly on ending the war when a lone Corinthian ship arrived with news that Spartan help was coming. The Spartan Gylippus rallied the defense, and by 413 BCE the Athenian expedition had collapsed.",
+  "sources": [
+   {
+    "title": "Sicilian Expedition",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sicilian_Expedition",
+    "quote": "After Nicias defeated the attack, the Athenians finally extended their wall to the sea, completely blockading Syracuse by land, and their fleet entered the harbour to blockade them from sea."
+   },
+   {
+    "title": "Thucydides, History of the Peloponnesian War, Book 7 (trans. Richard Crawley)",
+    "publisher": "Project Gutenberg",
+    "url": "https://www.gutenberg.org/files/7142/7142-h/7142-h.htm",
+    "quote": "Gongylus found the Syracusans on the point of holding an assembly to consider whether they should put an end to the war."
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "athens",
+   "sicily",
+   "peloponnesian-war",
+   "sparta",
+   "thucydides"
+  ]
+ },
+ {
+  "id": "jing-ke-kills-king-of-qin-227bce",
+  "claim": "In 227 BCE, the assassin Jing Ke killed King Zheng of Qin with a dagger hidden inside a rolled-up map.",
+  "verdict": "almost",
+  "year": "227 BCE",
+  "yearSort": -227,
+  "era": "ancient",
+  "region": "China",
+  "topic": "crime",
+  "record": "As the king unrolled the map, Jing Ke seized the dagger and grabbed his sleeve, but the sleeve tore away. The king fled around a pillar until he could draw his long ceremonial sword and cut the assassin down. He went on to unify China as Qin Shi Huang.",
+  "sources": [
+   {
+    "title": "Jing Ke",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jing_Ke",
+    "quote": "When the King Zheng unrolled the map, Jing Ke immediately seized the revealed dagger, grabbed the king's sleeve and attacked him, who somehow managed to back away from the initial thrust by tearing off the sleeve in the process."
+   },
+   {
+    "title": "Assassination as a Symptom",
+    "publisher": "e-flux",
+    "url": "https://www.e-flux.com/notes/6783394/assassination-as-a-symptom",
+    "quote": "His mission failed, and his death only hastened the unification of China under Qin rule."
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": [
+   "china",
+   "qin-shi-huang",
+   "assassination",
+   "warring-states"
+  ]
+ },
+ {
+  "id": "sennacherib-captures-jerusalem-701bce",
+  "claim": "Assyrian king Sennacherib captured Jerusalem during his invasion of Judah in 701 BCE.",
+  "verdict": "almost",
+  "year": "701 BCE",
+  "yearSort": -701,
+  "era": "ancient",
+  "region": "Mesopotamia",
+  "topic": "war",
+  "record": "Sennacherib's army besieged 46 fortified towns of Judah, and his own prism boasts that he shut King Hezekiah inside Jerusalem 'like a bird in a cage.' But the city never fell: Hezekiah paid a huge tribute and gave up neighboring lands, and the Assyrians went home.",
+  "sources": [
+   {
+    "title": "Sennacherib's campaign in the Levant",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sennacherib%27s_campaign_in_the_Levant",
+    "quote": "Having captured most of Judah's settlements, the Assyrians trapped Hezekiah in Jerusalem, but did not take the city itself—Hezekiah was allowed to remain in power as King of Judah in exchange for paying a large tribute to the Assyrians and also surrendering adjacent lands, which were then redistributed to Assyrian vassals in Ekron, Gaza, and Ashdod."
+   },
+   {
+    "title": "Hezekiah's Defeat: The Annals of Sennacherib on the Taylor, Jerusalem, and Oriental Institute Prisms",
+    "publisher": "Center for Online Judaic Studies",
+    "url": "https://cojs.org/hezekiah-s_defeat-_the_annals_of_sennacherib_on_the_taylor-_jerusalem-_and_oriental_institute_prisms-_700_bce/",
+    "quote": "After destroying Ashkelon, further down the Mediterranean coast, the Assyrian army marched into Judah, laid siege to Lakhish and Jerusalem, and eventually cowed Judah into giving a large tribute from the treasuries of the king and Temple."
+   },
+   {
+    "title": "Assyrian siege of Jerusalem",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Assyrian_siege_of_Jerusalem",
+    "quote": "Sennacherib besieged Jerusalem, but did not capture it."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "assyria",
+   "judah",
+   "jerusalem",
+   "sieges"
+  ]
+ },
+ {
+  "id": "alexander-reaches-ganges-326bce",
+  "claim": "Alexander the Great led his army east across northern India to the Ganges River in 326 BCE.",
+  "verdict": "almost",
+  "year": "326 BCE",
+  "yearSort": -326,
+  "era": "ancient",
+  "region": "India",
+  "topic": "war",
+  "record": "At the Hyphasis (Beas) River in Punjab, Alexander's exhausted soldiers refused to march on toward the Ganges. He withdrew to his tent for three days, then declared the omens unfavorable, had twelve great altars built to the Olympian gods, and turned back.",
+  "sources": [
+   {
+    "title": "The Hyphasis Mutiny",
+    "publisher": "World History Encyclopedia",
+    "url": "https://www.worldhistory.org/article/1630/the-hyphasis-mutiny/",
+    "quote": "Alexander claimed the omens were unfavorable for further advancement into India and so he ended his march."
+   },
+   {
+    "title": "Arrian on the mutiny at the Hyphasis",
+    "publisher": "Livius.org",
+    "url": "https://www.livius.org/sources/content/arrian/anabasis/mutiny-at-the-hyphasis/",
+    "quote": "In the Summer of 326, Alexander's men refused to join their king in his attempt to reach the Ganges valley."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "alexander-the-great",
+   "india",
+   "mutiny",
+   "macedon"
+  ]
+ },
+ {
+  "id": "hittite-prince-becomes-pharaoh",
+  "claim": "A Hittite prince married a widowed Egyptian queen and was crowned pharaoh in the 14th century BCE.",
+  "verdict": "almost",
+  "year": "c. 1324 BCE",
+  "yearSort": -1324,
+  "era": "ancient",
+  "region": "Egypt",
+  "topic": "royalty",
+  "record": "A widowed queen, most often identified as Tutankhamun's wife Ankhesenamun, wrote to Hittite king Suppiluliuma I: send me a son, and 'in the land of Egypt he will be king!' After months of doubt he sent Prince Zannanza, who died on the road, probably murdered.",
+  "sources": [
+   {
+    "title": "Zannanza",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Zannanza",
+    "quote": "His son, Zannanza, was chosen and sent to Egypt to become the new pharaoh. However, the Hittite prince never made it past the Egyptian border, though exactly what became of him and how he died is unknown."
+   },
+   {
+    "title": "Rediscovering Egypt's Golden Dynasty: A Foreign Affair",
+    "publisher": "Archaeology Magazine (Archaeological Institute of America)",
+    "url": "https://archaeology.org/issues/september-october-2022/collection/new-kingdom-succession-crisis/rediscovering-egypts-golden-dynasty/",
+    "quote": "Only after months of considering the proposal did he eventually send his son Zannanza to Egypt to be wed and crowned pharaoh."
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": [
+   "egypt",
+   "hittites",
+   "tutankhamun",
+   "diplomacy",
+   "marriage"
+  ]
+ },
+ {
+  "id": "pyramids-built-by-slaves",
+  "claim": "Egypt's Great Pyramid at Giza was built by armies of slaves.",
+  "verdict": "lore",
+  "year": "c. 2600 BCE",
+  "yearSort": -2600,
+  "era": "ancient",
+  "region": "Egypt",
+  "topic": "architecture",
+  "record": "Workers' tombs found beside the Giza pyramids since 1990 held builders buried with jars of bread and beer for the afterlife, an honor unthinkable for slaves. The paid laborers, around 10,000 of them, ate 21 cattle and 23 sheep sent daily from farms across Egypt.",
+  "origin": "The Greek historian Herodotus, writing some two thousand years after the pyramids rose, described their builders as slaves; Hollywood epics later spread the image of whip-driven slave gangs.",
+  "sources": [
+   {
+    "title": "Egypt discovers workers' tombs near pyramids",
+    "publisher": "NBC News",
+    "url": "https://www.nbcnews.com/id/wbna34794254",
+    "quote": "Graves of the pyramid builders were first discovered in the area in 1990, he said, and discoveries such as these show that the workers were paid laborers, rather than the slaves of popular imagination."
+   },
+   {
+    "title": "Tombs suggest pyramids not built by slaves",
+    "publisher": "CBC News (The Associated Press)",
+    "url": "https://www.cbc.ca/news/science/tombs-suggest-pyramids-not-built-by-slaves-1.965867",
+    "quote": "The ancient Greek historian, Herodotus, once described the pyramid builders as slaves, creating what Egyptologists say is a myth later propagated by Hollywood films."
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "egypt",
+   "pyramids",
+   "giza",
+   "archaeology"
+  ]
+ },
+ {
+  "id": "library-alexandria-single-fire",
+  "claim": "The Library of Alexandria was wiped out in one great fire during Julius Caesar's war in Egypt in 48 BCE.",
+  "verdict": "lore",
+  "year": "48 BCE",
+  "yearSort": -48,
+  "era": "ancient",
+  "region": "Egypt",
+  "topic": "literature",
+  "record": "Caesar's blaze probably burned dockside warehouses and many scrolls, but the institution survived: the geographer Strabo visited its research center around 20 BCE. The Library faded over centuries through purges of scholars, shrinking funds, neglect and crumbling papyrus.",
+  "origin": "Plutarch wrote that Caesar's fire spread from the docks and destroyed the great library; later writers turned a slow institutional decline into one dramatic blaze.",
+  "sources": [
+   {
+    "title": "Library of Alexandria",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Library_of_Alexandria",
+    "quote": "Whatever damage Caesar's fire may have caused, evidently the Library was not completely destroyed."
+   },
+   {
+    "title": "The Real Lesson of the Burning of the Library of Alexandria",
+    "publisher": "TIME",
+    "url": "https://time.com/5912689/library-of-alexandria-burning/",
+    "quote": "The fires were major incidents in which many books were lost, but the institution of the library disappeared more gradually both through organizational neglect and through the gradual obsolescence of the papyrus scrolls themselves."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "alexandria",
+   "libraries",
+   "julius-caesar",
+   "books"
+  ]
+ },
+ {
+  "id": "roman-vomitorium-purging-rooms",
+  "claim": "Ancient Romans built rooms called vomitoria where diners threw up so they could keep on feasting.",
+  "verdict": "lore",
+  "year": "1st–5th century CE",
+  "yearSort": 100,
+  "era": "ancient",
+  "region": "Rome",
+  "topic": "food",
+  "record": "A vomitorium was a passageway in an amphitheater or stadium that let crowds 'spew forth' into their seats and pour out at the end of a show. The word first appears in Macrobius in the 5th century, and no ancient source uses it for a place to purge.",
+  "origin": "The Latin root vomere, 'to spew forth,' invited confusion; 19th-century newspapers and Aldous Huxley's comic novel Antic Hay spread the image of Roman purging rooms.",
+  "sources": [
+   {
+    "title": "Vomitorium",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vomitorium",
+    "quote": "A common misconception about vomitoria is that Ancient Romans had designated spaces called vomitoria for the purpose of literal vomiting, so that they could purge to eat more, after binge eating."
+   },
+   {
+    "title": "Mythbusting Ancient Rome – the truth about the vomitorium",
+    "publisher": "School of Historical and Philosophical Inquiry, University of Queensland",
+    "url": "https://hpi.uq.edu.au/article/2017/01/mythbusting-ancient-rome-%E2%80%93-truth-about-vomitorium",
+    "quote": "The vomitorium is clearly part of this group, but no ancient source actually employs the word to describe a place for post-prandial puking."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "rome",
+   "feasting",
+   "architecture",
+   "words"
+  ]
+ },
+ {
+  "id": "julius-caesar-caesarean-birth",
+  "claim": "Julius Caesar was born by caesarean section, and the operation is named after his birth.",
+  "verdict": "lore",
+  "year": "c. 100 BCE",
+  "yearSort": -100,
+  "era": "ancient",
+  "region": "Rome",
+  "topic": "medicine",
+  "record": "Roman surgeons cut a baby from the womb only when the mother was dead or dying, yet Caesar's mother Aurelia lived until he was an adult. The operation's name may instead trace to the Latin caedere, 'to cut,' or to a Roman law requiring the surgery.",
+  "origin": "Pliny the Elder claimed an early ancestor of Caesar's family was 'cut from the womb,' explaining the name Caesar; retellings later transferred the story to Julius himself.",
+  "sources": [
+   {
+    "title": "Caesarean section",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Caesarean_section",
+    "quote": "Some popular misconceptions involve Caesar himself being born from the procedure, which is considered false because the procedure was lethal to mothers in ancient Rome, and Caesar's mother Aurelia Cotta lived until he was an adult."
+   },
+   {
+    "title": "Cesarean Section - A Brief History",
+    "publisher": "U.S. National Library of Medicine",
+    "url": "https://www.nlm.nih.gov/exhibition/cesarean/part1.html",
+    "quote": "It is commonly believed to be derived from the surgical birth of Julius Caesar, however this seems unlikely since his mother Aurelia is reputed to have lived to hear of her son's invasion of Britain."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "rome",
+   "julius-caesar",
+   "childbirth",
+   "etymology"
+  ]
+ },
+ {
+  "id": "romans-salted-carthage-146bce",
+  "claim": "After destroying Carthage in 146 BCE, the Romans sowed its fields with salt so nothing would ever grow there.",
+  "verdict": "lore",
+  "year": "146 BCE",
+  "yearSort": -146,
+  "era": "ancient",
+  "region": "North Africa",
+  "topic": "war",
+  "record": "Rome did raze Carthage, enslave its survivors and ban anyone from rebuilding, and ten senators ordered whatever remained destroyed. But no ancient writer mentions salt, and the land was not even cursed; only resettlement was forbidden.",
+  "origin": "The salting shows up in 19th-century reference books, then entered scholarship through B. L. Hallward's chapter in the 1930 Cambridge Ancient History and was long accepted as fact.",
+  "sources": [
+   {
+    "title": "Salting the earth",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Salting_the_earth",
+    "quote": "Though ancient sources mention symbolically drawing a plow over various cities and salting them, none mention Carthage in particular. The salting story entered the academic literature in Bertrand Hallward's chapter in the first edition of the Cambridge Ancient History (1930), and was widely accepted as factual."
+   },
+   {
+    "title": "Salting the earth",
+    "publisher": "Kiwi Hellenist (Peter Gainsford, classicist)",
+    "url": "https://kiwihellenist.blogspot.com/2016/12/salting-earth.html",
+    "quote": "The salting-the-earth story, though, is pure myth. There isn’t a shred of ancient evidence to suggest that it happened."
+   },
+   {
+    "title": "Siege of Carthage (Third Punic War)",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Carthage_(Third_Punic_War)",
+    "quote": "the notion that Roman forces then sowed the city with salt is a 19th-century invention."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": [
+   "rome",
+   "carthage",
+   "punic-wars",
+   "salt"
+  ]
+ },
+ {
+  "id": "greek-statues-left-white",
+  "claim": "Ancient Greek sculptors meant their marble statues to be seen as gleaming, unpainted white stone.",
+  "verdict": "lore",
+  "year": "c. 600–100 BCE",
+  "yearSort": -400,
+  "era": "ancient",
+  "region": "Greece",
+  "topic": "art",
+  "record": "Greek statues were painted, with colored eyes, hair and patterned clothing, and traces of pigment survive on well-preserved pieces. Time and weather stripped most of it away. Euripides even has Helen wish she could shed her beauty the way you would wipe color off a statue.",
+  "origin": "Renaissance artists took weathered, excavated statues at face value, and 18th-century critic Johann Winckelmann praised white marble as ideal beauty, dismissing believers in painted statues as eccentrics.",
+  "sources": [
+   {
+    "title": "True Colors",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/arts-culture/true-colors-17888/",
+    "quote": "Colored statues? To us, classical antiquity means white marble. Not so to the Greeks, who thought of their gods in living color and portrayed them that way too."
+   },
+   {
+    "title": "Ancient Greek sculpture",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ancient_Greek_sculpture",
+    "quote": "Ancient Greek sculptures were originally painted in multiple colours; they appear colourless today only because the original pigments have deteriorated."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "greece",
+   "sculpture",
+   "polychromy",
+   "art-history"
+  ]
+ },
+ {
+  "id": "petrov-false-alarm-1983",
+  "claim": "The Soviet Union fired nuclear missiles at the US in 1983 after its satellites reported five incoming ICBMs.",
+  "verdict": "almost",
+  "year": "1983",
+  "yearSort": 1983,
+  "era": "20th-century",
+  "region": "Soviet Union",
+  "topic": "war",
+  "record": "Soviet satellites really did flag five American launches on 26 September 1983. Duty officer Stanislav Petrov reasoned a true first strike would be far bigger, waited for radar confirmation that never came and treated it as a false alarm. Sunlight glinting off high clouds had fooled the sensors.",
+  "sources": [
+   {
+    "title": "1983 Soviet nuclear false alarm incident",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/1983_Soviet_nuclear_false_alarm_incident",
+    "quote": "He decided to wait for corroborating evidence—of which none arrived—rather than immediately relaying the warning up the chain of command."
+   },
+   {
+    "title": "The Man Who \"Saved the World\" Dies at 77",
+    "publisher": "Arms Control Association",
+    "url": "https://www.armscontrol.org/act/2017-10/news-briefs/man-who-saved-world-dies-77",
+    "quote": "Petrov went with false alarm, later explaining he reasoned that if the United States really were to start a nuclear war, it would do so with more than five missiles."
+   },
+   {
+    "title": "Stanislav Petrov",
+    "publisher": "U.S. National Park Service",
+    "url": "https://www.nps.gov/people/stanislav_petrov.htm",
+    "quote": "On 26 September 1983, just three weeks after the Soviet military had shot down Korean Air Lines Flight 007, Lieutenant Colonel Petrov was the duty officer at the command center for the Oko nuclear early-warning system when the system reported that five missiles had been launched from the United States."
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "nuclear",
+   "false-alarm",
+   "soviet-union",
+   "early-warning",
+   "cold-war"
+  ]
+ },
+ {
+  "id": "goldsboro-h-bomb-1961",
+  "claim": "A hydrogen bomb exploded over North Carolina in 1961 after falling from a US B-52 that broke apart in mid-air.",
+  "verdict": "almost",
+  "year": "1961",
+  "yearSort": 1961,
+  "era": "20th-century",
+  "region": "United States",
+  "topic": "disaster",
+  "record": "Two 3.8-megaton Mark 39 bombs fell near Goldsboro. On one, the parachute opened and the arming sequence ran almost to the end; a single low-voltage arm/safe switch, still set to 'safe', blocked the blast. A Sandia engineer later wrote that this one switch stood between the US and catastrophe.",
+  "sources": [
+   {
+    "title": "1961 Goldsboro B-52 crash",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/1961_Goldsboro_B-52_crash",
+    "quote": "Parker F. Jones, a supervisor at Sandia, concluded in a reassessment of the accident in 1969 that \"one simple, dynamo-technology, low voltage switch stood between the United States and a major catastrophe\""
+   },
+   {
+    "title": "Brush with Catastrophe: The Day the U.S. Almost Nuked Itself",
+    "publisher": "National Archives (Prologue blog)",
+    "url": "https://prologue.blogs.archives.gov/2021/01/22/brush-with-catastrophe-the-day-the-u-s-almost-nuked-itself",
+    "quote": "One of the bombs performed precisely in accordance with its design: its parachute deployed, its trigger mechanisms engaged, and, remarkably, one single low-voltage switch thwarted unimaginable destruction."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": [
+   "nuclear",
+   "broken-arrow",
+   "accident",
+   "north-carolina",
+   "b-52"
+  ]
+ },
+ {
+  "id": "operation-northwoods-1962",
+  "claim": "In 1962 the US military staged a fake airliner shootdown to create an excuse for invading Cuba.",
+  "verdict": "almost",
+  "year": "1962",
+  "yearSort": 1962,
+  "era": "20th-century",
+  "region": "United States / Cuba",
+  "topic": "politics",
+  "record": "The Joint Chiefs formally proposed it in Operation Northwoods, a March 1962 memo signed by chairman Lyman Lemnitzer that also floated a 'real or simulated' sinking of a boat of Cuban refugees. Kennedy rejected the scheme, none of it was carried out, and the memo stayed secret until 1997.",
+  "sources": [
+   {
+    "title": "Operation Northwoods",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Operation_Northwoods",
+    "quote": "Although part of the US government's anti-communist Cuban Project, Operation Northwoods was never officially accepted; it was approved by the Joint Chiefs of Staff but then rejected by President Kennedy."
+   },
+   {
+    "title": "Chairman, Joint Chiefs of Staff, Memorandum to the Secretary of Defense, \"Justification for US Military Intervention in Cuba,\" 13 March 1962",
+    "publisher": "National Security Archive, George Washington University",
+    "url": "https://nsarchive.gwu.edu/CMC-60/joint-chiefs-pretexts-to-invade-Cuba-1962",
+    "quote": "Of all the Mongoose documents, this one from the Joint Chiefs with the code word “Northwoods” ranks as the most shocking, proposing pretexts like a fake shoot down of a civilian airliner that would justify a U.S. invasion of Cuba."
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "cuba",
+   "false-flag",
+   "joint-chiefs",
+   "kennedy",
+   "declassified"
+  ]
+ },
+ {
+  "id": "project-a119-moon-nuke",
+  "claim": "In 1959 the US Air Force exploded a nuclear bomb on the Moon so that the flash could be seen from Earth.",
+  "verdict": "almost",
+  "year": "1958–1959",
+  "yearSort": 1959,
+  "era": "20th-century",
+  "region": "United States / Moon",
+  "topic": "space",
+  "record": "Project A119, a secret 1958 Air Force study, settled on a small W25 warhead and had a young Carl Sagan modelling how the dust cloud would spread. The Air Force cancelled it in January 1959, and it stayed hidden until project leader Leonard Reiffel spoke out in 2000.",
+  "sources": [
+   {
+    "title": "Project A119",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Project_A119",
+    "quote": "The project was canceled by the Air Force in January 1959, seemingly out of fear of the risk to the population if anything went wrong with the launch."
+   },
+   {
+    "title": "Why the Air Force Almost Blasted the Moon with an H-Bomb",
+    "publisher": "HISTORY",
+    "url": "https://www.history.com/articles/nuclear-bomb-moon-cold-war-plan",
+    "quote": "Sometime before May 1958, the U.S. Air Force asked the ARF team to investigate something truly out of the ordinary: the visibility and effects of a hypothetical nuclear explosion on the moon."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "moon",
+   "nuclear",
+   "air-force",
+   "carl-sagan",
+   "space-race"
+  ]
+ },
+ {
+  "id": "project-iceworm-greenland",
+  "claim": "In the 1960s the US Army hid 600 nuclear missiles in tunnels beneath Greenland's ice sheet.",
+  "verdict": "almost",
+  "year": "1960–1966",
+  "yearSort": 1960,
+  "era": "20th-century",
+  "region": "Greenland",
+  "topic": "war",
+  "record": "Project Iceworm planned exactly that, and the Army built a nuclear-powered test base, Camp Century, inside the ice, complete with a hospital, theatre and church. But the creeping ice squeezed the tunnels, Denmark never consented, and no Iceworm missiles were ever deployed.",
+  "sources": [
+   {
+    "title": "Project Iceworm",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Project_Iceworm",
+    "quote": "The missiles, which could strike targets within the Soviet Union, were never fielded and necessary consent from the Danish government to do so was never obtained."
+   },
+   {
+    "title": "Camp Century",
+    "publisher": "Atomic Heritage Foundation / National Museum of Nuclear Science & History",
+    "url": "https://ahf.nuclearmuseum.org/ahf/history/camp-century/",
+    "quote": "Although the project was eventually canceled and no missiles were ever deployed to Greenland, it would have been an extraordinary engineering and construction achievement had Iceworm come to fruition."
+   },
+   {
+    "title": "When the Pentagon Dug Ice Tunnels in Greenland to Hide Nukes",
+    "publisher": "HISTORY",
+    "url": "https://www.history.com/articles/project-iceworm-cold-war-nuclear-weapons-greenland",
+    "quote": "Operation Iceworm was shut down because the walls of snow and ice kept moving, squeezing the tracks that carried the missile train."
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "greenland",
+   "denmark",
+   "camp-century",
+   "missiles",
+   "arctic"
+  ]
+ },
+ {
+  "id": "checkpoint-charlie-tanks-1961",
+  "claim": "American and Soviet tanks exchanged fire at Berlin's Checkpoint Charlie in October 1961.",
+  "verdict": "almost",
+  "year": "1961",
+  "yearSort": 1961,
+  "era": "20th-century",
+  "region": "Germany",
+  "topic": "war",
+  "record": "On 27 October 1961 US and Soviet tanks faced each other barely 100 yards apart, main guns trained, after a row over Allied access to East Berlin. A back-channel understanding between Kennedy and Khrushchev ended it: the Soviet tanks withdrew the next morning, the Americans followed, and no shots were fired.",
+  "sources": [
+   {
+    "title": "Berlin Crisis of 1961",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Berlin_Crisis_of_1961",
+    "quote": "A brief stand-off between American and Soviet tanks occurred at Checkpoint Charlie in October after a dispute about free movement of Allied personnel; the confrontation ended peacefully after Khrushchev and Kennedy agreed to withdraw the tanks and reduce tensions."
+   },
+   {
+    "title": "Standoff in Berlin, October 1961",
+    "publisher": "U.S. Army",
+    "url": "https://www.army.mil/article/46993/standoff_in_berlin_october_1961",
+    "quote": "With the attention of the world fixed on Berlin, American and Soviet tanks, barely one hundred yards apart, faced each other for more than 24 hours with their main guns trained on each other."
+   },
+   {
+    "title": "Tanks at Checkpoint Charlie – The Cold War in October 1961",
+    "publisher": "DDR Museum Berlin",
+    "url": "https://www.ddr-museum.de/en/blog/2025/tanks-at-checkpoint-charlie-the-cold-war-in-october-1961",
+    "quote": "The confrontation at Checkpoint Charlie ended without any shots being fired."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "berlin",
+   "tanks",
+   "standoff",
+   "kennedy",
+   "khrushchev"
+  ]
+ },
+ {
+  "id": "taiwan-atomic-bomb-1988",
+  "claim": "Taiwan secretly built its own atomic bomb in the late 1980s.",
+  "verdict": "almost",
+  "year": "1987–1988",
+  "yearSort": 1988,
+  "era": "20th-century",
+  "region": "Taiwan",
+  "topic": "politics",
+  "record": "Taiwan's covert program had completed every stage short of final assembly and testing, reportedly a year or two from a deliverable weapon. Then in January 1988 the CIA spirited out Colonel Chang Hsien-yi, its informant inside the program, and US pressure shut the effort down.",
+  "sources": [
+   {
+    "title": "Taiwan and weapons of mass destruction",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Taiwan_and_weapons_of_mass_destruction",
+    "quote": "The final secret nuclear weapons program was shut down in the late 1980s under US pressure after completing all stages of weapons development besides final assembly and testing."
+   },
+   {
+    "title": "How a CIA informant stopped Taiwan from developing nuclear weapons",
+    "publisher": "WRAL (CNN)",
+    "url": "https://www.wral.com/archive/21887585/",
+    "quote": "Chang exposed Taiwan’s secret nuclear program to the United States, its closest ally, passing intelligence that ultimately led the US to pressure Taiwan into shutting down the program – which proliferation experts say was near completion."
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "taiwan",
+   "nuclear",
+   "cia",
+   "proliferation",
+   "defector"
+  ]
+ },
+ {
+  "id": "norwegian-rocket-1995",
+  "claim": "Russia launched a nuclear strike in 1995 after mistaking a Norwegian science rocket for a US missile.",
+  "verdict": "almost",
+  "year": "1995",
+  "yearSort": 1995,
+  "era": "20th-century",
+  "region": "Norway / Russia",
+  "topic": "science",
+  "record": "Russian radar read a Black Brant XII rocket, sent up from Norway to study the northern lights, as a possible US Trident missile. Boris Yeltsin was handed the Cheget nuclear briefcase, the only known activation in a crisis, but within minutes officers saw the rocket heading away from Russia.",
+  "sources": [
+   {
+    "title": "Norwegian rocket incident",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Norwegian_rocket_incident",
+    "quote": "The Norwegian rocket incident was the first and thus far only known incident where any nuclear-weapons state had its nuclear briefcase activated and prepared for launching an attack."
+   },
+   {
+    "title": "When Russian Radar Mistook a Norwegian Scientific Rocket for a U.S. Missile, the World Narrowly Avoided Nuclear War",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/smart-news/when-russian-radar-mistook-a-norwegian-scientific-rocket-for-a-us-missile-the-world-narrowly-avoided-nuclear-war-180985836/",
+    "quote": "Russian President Boris Yeltsin was notified and given the Cheget, Russia's nuclear briefcase—typically kept near the leader of a nuclear-weapons state at all times."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "russia",
+   "norway",
+   "yeltsin",
+   "nuclear-briefcase",
+   "false-alarm"
+  ]
+ },
+ {
+  "id": "cia-acoustic-kitty",
+  "claim": "In the 1960s the CIA surgically fitted a cat with a microphone and radio transmitter to eavesdrop on people.",
+  "verdict": "happened",
+  "year": "1960s",
+  "yearSort": 1965,
+  "era": "20th-century",
+  "region": "United States",
+  "topic": "animals",
+  "record": "Project Acoustic Kitty put a microphone in a cat's ear canal, a transmitter at the base of its skull and an antenna woven through its fur. Cats proved hard to steer, and a closing memo concluded the idea would not be practical for real intelligence work.",
+  "sources": [
+   {
+    "title": "Acoustic Kitty",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Acoustic_Kitty",
+    "quote": "In an hour-long procedure, a veterinary surgeon implanted a microphone in the cat's ear canal, a small radio transmitter at the base of its skull, and a thin wire into its fur."
+   },
+   {
+    "title": "The CIA Experimented On Animals in the 1960s Too. Just Ask 'Acoustic Kitty'",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/smart-news/cia-experimented-animals-1960s-too-just-ask-acoustic-kitty-180964313/",
+    "quote": "The antenna was made from fine wire and woven, all the way to the tail, through the cat's long fur to conceal it."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "cia",
+   "espionage",
+   "cats",
+   "surveillance",
+   "declassified"
+  ]
+ },
+ {
+  "id": "starfish-prime-hawaii-1962",
+  "claim": "In 1962 a US hydrogen bomb exploded 250 miles up in space and knocked out streetlights in Hawaii.",
+  "verdict": "happened",
+  "year": "1962",
+  "yearSort": 1962,
+  "era": "20th-century",
+  "region": "Pacific Ocean",
+  "topic": "science",
+  "record": "The Starfish Prime test above Johnston Atoll unleashed an electromagnetic pulse far bigger than expected, killing about 300 streetlights and tripping burglar alarms roughly 900 miles away in Hawaii. Hotels there had thrown rooftop parties to watch the glowing artificial aurora.",
+  "sources": [
+   {
+    "title": "Starfish Prime",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Starfish_Prime",
+    "quote": "The Starfish Prime electromagnetic pulse also made those effects known to the public by causing electrical damage in Hawaii, about 900 miles (1,450 km) away from the detonation point, knocking out about 300 streetlights, setting off numerous burglar alarms, and damaging a telephone company microwave link."
+   },
+   {
+    "title": "Going Nuclear Over the Pacific",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/history/going-nuclear-over-the-pacific-24428997/",
+    "quote": "Telephone service was disrupted, streetlights were down and burglar alarms were set off by a pulse that was much larger than scientists expected."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "nuclear-test",
+   "emp",
+   "hawaii",
+   "space",
+   "aurora"
+  ]
+ },
+ {
+  "id": "great-seal-bug-1945",
+  "claim": "In 1945 Soviet children gave the US ambassador a carved Great Seal that secretly held a listening bug.",
+  "verdict": "happened",
+  "year": "1945",
+  "yearSort": 1945,
+  "era": "20th-century",
+  "region": "Soviet Union",
+  "topic": "technology",
+  "record": "Young Pioneers presented the wooden eagle to Averell Harriman as a 'gesture of friendship', and it hung in the ambassador's Moscow residence until the bug was exposed in 1952. Its designer, Leon Theremin, also invented the theremin; the device had no battery and woke only when agents beamed radio waves at it.",
+  "sources": [
+   {
+    "title": "The Thing (listening device)",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/The_Thing_(listening_device)",
+    "quote": "On August 4, 1945, several weeks before the end of World War II, a delegation from the Young Pioneer Organization of the Soviet Union presented the bugged carving to Ambassador Harriman, as a \"gesture of friendship\" to the Soviet Union's war ally."
+   },
+   {
+    "title": "Cold War Espionage Stories: Listening In",
+    "publisher": "Wright Museum of World War II",
+    "url": "https://wrightmuseum.org/cold-war-espionage-stories-listening-in/",
+    "quote": "In August 1945, as the Allied victory in World War II was rapidly approaching, a group of Soviet students and members of the Young Pioneers presented U.S. Ambassador W. Averell Harriman with a handsome wooden carving of the Great Seal of the United States."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "espionage",
+   "bug",
+   "moscow",
+   "theremin",
+   "embassy"
+  ]
+ },
+ {
+  "id": "blue-peacock-chickens",
+  "claim": "British engineers proposed sealing live chickens inside a 1950s nuclear landmine to keep it warm.",
+  "verdict": "happened",
+  "year": "1957",
+  "yearSort": 1957,
+  "era": "20th-century",
+  "region": "United Kingdom",
+  "topic": "war",
+  "record": "Blue Peacock was a ten-kiloton mine meant to be buried in West Germany against a Soviet advance. Fearing its electronics would freeze, designers suggested chickens with a week of food and water as living heaters. The file was released on 1 April 2004, and the National Archives insisted the Civil Service does not do jokes.",
+  "sources": [
+   {
+    "title": "Blue Peacock",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Blue_Peacock",
+    "quote": "One proposal suggested that live chickens would be sealed inside the casing, with a supply of food and water."
+   },
+   {
+    "title": "In The 1950s, The UK Tried To Make A Nuclear Bomb Filled With Live Chickens",
+    "publisher": "IFLScience",
+    "url": "https://www.iflscience.com/in-the-1950s-the-uk-tried-to-make-a-nuclear-bomb-filled-with-live-chickens-77749",
+    "quote": "In order to keep the bomb warm and operational, the idea was to take a group of unsuspecting chickens and seal them within the bomb's casing."
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "uk",
+   "nuclear-mine",
+   "chickens",
+   "west-germany",
+   "declassified"
+  ]
+ },
+ {
+  "id": "zond-5-tortoises-1968",
+  "claim": "Two Soviet tortoises flew around the Moon and back to Earth in 1968, months before any human did.",
+  "verdict": "happened",
+  "year": "1968",
+  "yearSort": 1968,
+  "era": "20th-century",
+  "region": "Soviet Union / Moon",
+  "topic": "space",
+  "record": "Zond 5 looped around the Moon in September 1968 carrying two Russian tortoises, fruit fly eggs and plants, then splashed down in the Indian Ocean. The tortoises had lost a little weight but were otherwise healthy. Apollo 8's crew circled the Moon that December.",
+  "sources": [
+   {
+    "title": "Zond 5",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Zond_5",
+    "quote": "In September 1968 Zond 5 travelled around the Moon in a circumlunar trajectory and became the first Moon mission to include animals and the first to return safely to Earth."
+   },
+   {
+    "title": "50 Years Ago: On the Way to the Moon",
+    "publisher": "NASA",
+    "url": "https://www.nasa.gov/history/50-years-ago-on-the-way-to-the-moon-0/",
+    "quote": "Scientists found that the tortoises, the first living organisms to have made a circumlunar flight, had lost a little weight but were otherwise in good health."
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "space-race",
+   "moon",
+   "tortoises",
+   "soviet-union",
+   "zond"
+  ]
+ },
+ {
+  "id": "palomares-ambassador-swim-1966",
+  "claim": "In 1966 the US ambassador to Spain swam for the press to show an H-bomb accident hadn't tainted the sea.",
+  "verdict": "happened",
+  "year": "1966",
+  "yearSort": 1966,
+  "era": "20th-century",
+  "region": "Spain",
+  "topic": "disaster",
+  "record": "After a B-52 collision scattered four hydrogen bombs around Palomares, Ambassador Angier Biddle Duke and Spanish minister Manuel Fraga took a much-photographed dip on 8 March. 'If this is radioactivity, I love it!' Duke told reporters, with the last bomb still missing offshore.",
+  "sources": [
+   {
+    "title": "1966 Palomares accident",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/1966_Palomares_accident",
+    "quote": "To defuse public alarm over contamination, on 8 March Spanish minister for information and tourism Manuel Fraga Iribarne and United States ambassador Angier Biddle Duke swam on nearby beaches in front of the press."
+   },
+   {
+    "title": "Remembering the Palomares H-bomb Incident via History",
+    "publisher": "The University of Chicago, Atomic Age blog",
+    "url": "https://lucian.uchicago.edu/blogs/atomicage/2016/01/18/remembering-the-palomares-h-bomb-incident-via-history/",
+    "quote": "On March 8, U.S. Ambassador Angier Biddle Duke even held a much-publicized “swimming party” where he took a dip at one of Palomares’ beaches to prove the water was safe."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": [
+   "spain",
+   "broken-arrow",
+   "hydrogen-bomb",
+   "public-relations",
+   "b-52"
+  ]
+ },
+ {
+  "id": "nasa-space-pen-pencil",
+  "claim": "NASA spent millions developing a pen that writes in space while Soviet cosmonauts simply used pencils.",
+  "verdict": "lore",
+  "year": "1960s",
+  "yearSort": 1965,
+  "era": "20th-century",
+  "region": "United States / Soviet Union",
+  "topic": "technology",
+  "record": "Paul Fisher spent about $1 million of his own company's money on the pressurized Space Pen, then pitched it to NASA. NASA ordered 400 for Apollo and the Soviets ordered 100 a year later, both paying $2.39 a pen. Pencils were a hazard anyway: flaking tips and flammable wood.",
+  "origin": "An internet-era joke that hopped from inbox to inbox and even surfaced on The West Wing in 2002; a space historian was heard telling it, pencil held up for the punchline.",
+  "sources": [
+   {
+    "title": "Fact or Fiction?: NASA Spent Millions to Develop a Pen that Would Write in Space, whereas the Soviet Cosmonauts Used a Pencil",
+    "publisher": "Scientific American",
+    "url": "https://www.scientificamerican.com/article/fact-or-fiction-nasa-spen/",
+    "quote": "Paul C. Fisher and his company, the Fisher Pen Company, reportedly invested $1 million to create what is now commonly known as the space pen. None of this investment money came from NASA's coffers--the agency only became involved after the pen was dreamed into existence."
+   },
+   {
+    "title": "The billion dollar space pen",
+    "publisher": "The Space Review",
+    "url": "https://www.thespacereview.com/article/613/1",
+    "quote": "This story, like most modern urban legends, has proliferated on the Internet, but it has also been passed by word of mouth."
+   },
+   {
+    "title": "Space Pen",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Space_Pen",
+    "quote": "However, the claim that NASA spent millions on the Space Pen is incorrect, as the Fisher pen was developed using private capital, not government funding."
+   }
+  ],
+  "difficulty": 1,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "nasa",
+   "space-pen",
+   "soviet-union",
+   "urban-legend",
+   "space-race"
+  ]
+ },
+ {
+  "id": "hotline-red-telephone",
+  "claim": "The Moscow–Washington hotline set up in 1963 was a red telephone the US president could pick up.",
+  "verdict": "lore",
+  "year": "1963",
+  "yearSort": 1963,
+  "era": "20th-century",
+  "region": "United States / Soviet Union",
+  "topic": "politics",
+  "record": "The hotline linked teletype machines, with the American end at the Pentagon, partly because written messages left less room for heated misunderstandings. It switched to fax in 1986 and has run as secure email since 2008. It never carried a phone call.",
+  "origin": "The 1964 films Fail-Safe and Dr. Strangelove showed hotline telephones, and later TV shows and campaign ads built around a ringing 'red phone' fixed the image.",
+  "sources": [
+   {
+    "title": "Moscow–Washington hotline",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Moscow%E2%80%93Washington_hotline",
+    "quote": "A hotline telephone was depicted in the film Fail-Safe as the \"Red 1 / Ultimate 1 Touch phone\", and also in Stanley Kubrick's film Dr. Strangelove, both from 1964 and both loosely based on Peter George's Cold War thriller novel Red Alert from 1958."
+   },
+   {
+    "title": "Was there really a \"red telephone\" hotline during the Cold War?",
+    "publisher": "HISTORY",
+    "url": "https://www.history.com/articles/was-there-really-a-red-telephone-hotline-during-the-cold-war",
+    "quote": "Rather than a telephone link, which presented the possibility of miscommunications, the hotline consisted of teletype machines that allowed the two countries to send written messages to one another via transatlantic cable."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "hotline",
+   "red-phone",
+   "teletype",
+   "pentagon",
+   "kremlin"
+  ]
+ },
+ {
+  "id": "jfk-berliner-jelly-doughnut",
+  "claim": "Berliners laughed at JFK in 1963 because 'Ich bin ein Berliner' meant 'I am a jelly doughnut.'",
+  "verdict": "lore",
+  "year": "1963",
+  "yearSort": 1963,
+  "era": "20th-century",
+  "region": "Germany",
+  "topic": "quotes",
+  "record": "Kennedy's German was correct, and in Berlin the jam doughnut is usually called a Pfannkuchen anyway. The crowd did laugh seconds later, but at his quip thanking the interpreter for translating his German.",
+  "origin": "Len Deighton's 1983 spy novel Berlin Game joked that a Berliner is a doughnut; a New York Times review repeated it as fact, and a 1988 Times op-ed spread it widely.",
+  "sources": [
+   {
+    "title": "Ich bin ein Berliner",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ich_bin_ein_Berliner",
+    "quote": "The misconception appears to have originated in Len Deighton's 1983 spy novel Berlin Game, which contains the following passage, spoken by Bernard Samson:"
+   },
+   {
+    "title": "TWE Remembers: John F. Kennedy's \"Ich bin ein Berliner\" Speech",
+    "publisher": "Council on Foreign Relations",
+    "url": "https://www.cfr.org/articles/twe-remembers-john-f-kennedys-ich-bin-ein-berliner-speech",
+    "quote": "The legend has persisted despite being debunked time and again, perhaps because so many news sources, including the august New York Times, have repeated the mistake over and over."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "kennedy",
+   "berlin",
+   "german",
+   "misquote",
+   "doughnut"
+  ]
+ },
+ {
+  "id": "nasa-invented-tang",
+  "claim": "NASA developed the orange drink Tang for its astronauts during the 1960s space race.",
+  "verdict": "lore",
+  "year": "1960s",
+  "yearSort": 1962,
+  "era": "20th-century",
+  "region": "United States",
+  "topic": "food",
+  "record": "General Foods food scientist William A. Mitchell, who also created Pop Rocks and Cool Whip, formulated Tang in 1957, and it reached shops in 1959. Sales were poor until NASA picked it for John Glenn's 1962 orbital eating experiments.",
+  "origin": "Tang flew on Gemini and Apollo missions while General Foods ran an advertising blitz on the space link, so most people met the drink through NASA and assumed the agency invented it.",
+  "sources": [
+   {
+    "title": "Tang (drink mix)",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tang_(drink_mix)",
+    "quote": "Since then it has been closely associated with the U.S. human spaceflight program, which created the misconception that Tang was invented for the space program."
+   },
+   {
+    "title": "NASA invented Tang? It's a myth",
+    "publisher": "Deseret News",
+    "url": "https://www.deseret.com/2008/11/12/20285418/nasa-invented-tang-it-s-a-myth/",
+    "quote": "Contrary to popular myth, Tang was NOT invented by NASA. The orange breakfast drink was developed in 1957 by General Foods, but it wasn't used in space until 1962."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "nasa",
+   "tang",
+   "general-foods",
+   "food",
+   "space-race"
+  ]
+ },
+ {
+  "id": "lost-cosmonauts-before-gagarin",
+  "claim": "Several Soviet cosmonauts died on secret space flights before Yuri Gagarin's 1961 orbit.",
+  "verdict": "lore",
+  "year": "1957–1961",
+  "yearSort": 1960,
+  "era": "20th-century",
+  "region": "Soviet Union",
+  "topic": "space",
+  "record": "Soviet archives and cosmonaut memoirs opened after 1991 turned up no such flights. What Moscow really hid was a death on the ground: trainee Valentin Bondarenko died after a fire in a test chamber less than three weeks before Gagarin flew.",
+  "origin": "Late-1950s rumours in the Italian press, then two Turin radio hams, the Judica-Cordiglia brothers, who claimed to have recorded dying cosmonauts; Bondarenko's unexplained vanishing from group photos fed the stories.",
+  "sources": [
+   {
+    "title": "Lost Cosmonauts",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lost_Cosmonauts",
+    "quote": "Even with the availability of published Soviet archival material and memoirs of Russian space pioneers, no evidence has emerged to support the Lost Cosmonaut theories."
+   },
+   {
+    "title": "The \"Lost Cosmonauts\" Theory And The Recording That Claims To Back It Up",
+    "publisher": "IFLScience",
+    "url": "https://www.iflscience.com/the-lost-cosmonauts-theory-and-the-recording-that-claims-to-back-it-up-63894",
+    "quote": "No details of lost cosmonauts, or anything that would verify these recordings and other stories, have been found."
+   },
+   {
+    "title": "Valentin Bondarenko",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Valentin_Bondarenko",
+    "quote": "Bondarenko had already appeared in group films and photos of the first cosmonaut group, and his unexplained disappearance sparked rumours of cosmonauts dying in failed launches."
+   }
+  ],
+  "difficulty": 2,
+  "schoolSafe": true,
+  "solemn": true,
+  "tags": [
+   "cosmonauts",
+   "conspiracy-theory",
+   "gagarin",
+   "soviet-secrecy",
+   "space-race"
+  ]
+ },
+ {
+  "id": "castro-major-league-contract",
+  "claim": "Before leading Cuba's revolution, Fidel Castro was offered a contract to pitch in US Major League Baseball.",
+  "verdict": "lore",
+  "year": "c. 1950",
+  "yearSort": 1950,
+  "era": "20th-century",
+  "region": "Cuba",
+  "topic": "sport",
+  "record": "Castro pitched in university games, but baseball historian Peter Bjarkman found he was never a serious prospect or pursued by big-league scouts. The oft-quoted $5,000 New York Giants bonus has no documentary trail.",
+  "origin": "Largely 'Hoak's Hoax': ex-major-leaguer Don Hoak's June 1964 Sport magazine tale, written with Myron Cope, of facing a young Castro in Havana, later embellished by journalists and never denied by Castro.",
+  "sources": [
+   {
+    "title": "Fidel Castro and Baseball",
+    "publisher": "Society for American Baseball Research (SABR)",
+    "url": "https://sabr.org/bioproj/topic/fidel-castro-and-baseball/",
+    "quote": "Fidel was never a serious pitching prospect who might demand a $5,000 bonus or even a serious contract offer."
+   },
+   {
+    "title": "Review of Fidel Castro and Baseball: The Untold Story",
+    "publisher": "Sport in American History",
+    "url": "https://ussporthistory.com/2021/06/19/review-of-fidel-castro-and-baseball-the-untold-story/",
+    "quote": "As for the myth, Bjarkman attributed its genesis to an interview of Don Hoak, a former major league baseball player, conducted by journalist Myon Cope, which was published in Sport magazine in June 1964."
+   }
+  ],
+  "difficulty": 3,
+  "schoolSafe": true,
+  "solemn": false,
+  "tags": [
+   "castro",
+   "baseball",
+   "cuba",
+   "hoax",
+   "sport"
+  ]
  }
 ]

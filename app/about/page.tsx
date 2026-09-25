@@ -1,87 +1,72 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { JsonLd } from "@/components/json-ld";
-import { openGraphImage, twitterWithImage } from "@/lib/metadata";
-import { organizationJsonLd } from "@/lib/schema";
+import { DocPage } from "@/components/doc-page";
+import { pageMetadata } from "@/lib/metadata";
 import { editorialNote, fundingNote, site } from "@/lib/site";
 
-const title = "About Almost Lore";
-const description =
-  "Almost Lore is an original-narrative site from Laqaer for public-record historical near-misses. Editorial standards and contact.";
-
-export const metadata: Metadata = {
-  title,
-  description,
-  alternates: { canonical: "/about" },
-    openGraph: {
-      ...openGraphImage,
-      title,
-      description,
-      url: "/about",
-    },
-  twitter: {
-    ...twitterWithImage,
-    title,
-    description,
-  },
-};
+export const metadata: Metadata = pageMetadata({
+  title: "About Almost Lore",
+  description:
+    "Almost Lore is a daily history game about near-misses, myths and true stories that sound made up. Who makes it, how it's checked, and how it's paid for.",
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (
-    <article className="mx-auto max-w-measure px-4 py-12 sm:px-6">
-      <JsonLd data={organizationJsonLd()} />
-      <p className="text-xs font-medium uppercase tracking-[0.18em] text-rust">About</p>
-      <h1 className="mt-3 font-display text-4xl leading-[1.15] text-ink sm:text-5xl">
-        A reader for near-misses, published by Laqaer
-      </h1>
-      <div className="prose-page mt-8">
-        <p>
-          <strong>Almost Lore</strong> is original longform about documented historical
-          near-misses and odd public facts. It is published by <strong>{site.publisher}</strong>.
-          The intended production host is <strong>{site.domain}</strong> (not wired yet). For a
-          correction — a date we should hedge, a count we should unsay — write{" "}
-          <a href={`mailto:${site.email}`}>{site.email}</a>.
-        </p>
-        <p>{editorialNote}</p>
+    <DocPage
+      kicker="The masthead"
+      title="About"
+      dek="A daily almanac of near-misses, published by people who can't let a wrong fact go."
+    >
+      <p>
+        <strong>Almost Lore</strong> is a daily history game. Every day at your local midnight, five claims go to press,
+        each written as plain fact. You stamp each one <strong>HAPPENED</strong>, <strong>ALMOST</strong> or{" "}
+        <strong>LORE</strong>, and the card flips to the record: what actually happened, with the sources.
+      </p>
+      <p>
+        The middle stamp is the point. True-or-false is easy to fake; <em>almost</em> makes you know how close a thing came —
+        the offer that was refused, the vote that failed, the war that stayed in the newspapers. History is full of them, and
+        they are better stories than most of what did happen.
+      </p>
 
-        <h2>Editorial standards</h2>
-        <ul>
-          <li>
-            <strong>Original narrative only.</strong> We do not scrape Reddit, paste comment
-            threads, or rewrite another site’s article as if it were ours.
-          </li>
-          <li>
-            <strong>Public record first.</strong> Loans, trial files, contemporaneous news, and
-            municipal paper outrank a later legend. If the archive is thin, the sentence stays
-            thin.
-          </li>
-          <li>
-            <strong>Uncertainty stays visible.</strong> We will not average conflicting death
-            tolls into a fake precise number.
-          </li>
-          <li>
-            <strong>No fake social proof.</strong> No invented reviews, traffic, or revenue.
-          </li>
-          <li>
-            <strong>No other-brand bleed.</strong> This property is Almost Lore — not a dumping
-            ground for unrelated Laqaer consumer sites.
-          </li>
-        </ul>
+      <h2>Who makes it</h2>
+      <p>
+        Almost Lore is published by <strong>{site.publisher}</strong>. {editorialNote}
+      </p>
+      <p>
+        Every claim goes through a gauntlet before it reaches you: a researcher drafts it with sources and verbatim quotes, a
+        separate adversarial fact-checker tries to refute it, and a fairness judge cuts anything where a reasonable expert
+        could argue for a different stamp. The full rubric is public on <Link href="/rules">the rules page</Link>.
+      </p>
 
-        <h2>How the site is funded</h2>
-        <p>{fundingNote}</p>
-        <p>
-          There are no affiliate programs and no retailer tracking IDs on this ship. See{" "}
-          <Link href="/privacy">privacy</Link> for what a small editorial site actually collects.
-        </p>
+      <h2>When we get one wrong</h2>
+      <p>
+        We will, occasionally. Every claim has an &ldquo;argue with the record&rdquo; link. Upheld corrections are fixed and
+        logged publicly on <Link href="/corrections">the corrections page</Link>, with credit if you want it.
+      </p>
 
-        <h2>What we are not</h2>
-        <p>
-          Not a historian’s monograph, not a primary-source edition, not a shop. If a piece
-          summarizes a scholarly reconstruction, it says so. If you need the transcript or the
-          bond notice itself, go to the archive or the book — not to a hook.
-        </p>
-      </div>
-    </article>
+      <h2>How it&apos;s paid for</h2>
+      <p>{fundingNote}</p>
+      <ul>
+        <li>
+          <Link href="/shop/party-pack">The Party Pack</Link> — the game, printed, for your table.
+        </li>
+        <li>
+          <Link href="/shop/classroom-pack">The Classroom Pack</Link> — bell-ringers for teachers.
+        </li>
+        <li>
+          <Link href="/halloween">Seasonal editions</Link> — free to play, with printable packs.
+        </li>
+      </ul>
+      <p>
+        No accounts, no ads, no selling your data. Details on the <Link href="/privacy">privacy page</Link>.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Press, schools, partnerships or a strongly held opinion about Napoleon&apos;s height:{" "}
+        <a href={`mailto:${site.email}`}>{site.email}</a>.
+      </p>
+    </DocPage>
   );
 }

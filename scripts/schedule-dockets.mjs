@@ -13,7 +13,7 @@
  */
 import { readFileSync, writeFileSync } from "node:fs";
 
-const EXCLUSIVE_SETS = ["partyPack", "halloween", "gullibility", "starter"];
+const EXCLUSIVE_SETS = ["partyPack", "halloween", "gullibility", "starter", "examples"];
 const EPOCH = readFileSync(new URL("../lib/game/schedule.ts", import.meta.url), "utf8").match(
   /EPOCH = "(\d{4}-\d{2}-\d{2})"/,
 )[1];

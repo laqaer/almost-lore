@@ -28,5 +28,10 @@
   "seed-cadaver-synod",
   "seed-franklin-turkey"
  ],
- "starter": []
+ "starter": [],
+ "examples": [
+  "cleopatra-closer-to-moon-landing",
+  "seed-greenland-1946",
+  "seed-viking-helmets"
+ ]
 }

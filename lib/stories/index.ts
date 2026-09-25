@@ -16,7 +16,7 @@ export const stories: Story[] = [
 ];
 
 export function storyPath(slug: string): string {
-  return `/stories/${slug}`;
+  return `/case-files/${slug}`;
 }
 
 export function getStory(slug: string): Story | undefined {

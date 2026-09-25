@@ -5,21 +5,20 @@ import type { Verdict } from "@/lib/game/types";
  * because storage can be blocked (private windows, embedded previews).
  */
 
-const KEY = "almostlore:v1";
+const KEY = "almostlore:v2";
 
 export type DocketRecord = {
   picks: Verdict[];
   correct: boolean[];
   verdicts: Verdict[];
-  sealIndex: number | null;
-  points: number;
+  right: number;
   completedAt: string;
 };
 
 export type ClerkCard = {
   dockets: Record<string, DocketRecord>;
   /** In-progress docket so a refresh does not lose stamps. */
-  current?: { n: number; picks: Verdict[]; sealIndex: number | null };
+  current?: { n: number; picks: Verdict[] };
   streak: number;
   maxStreak: number;
   lastCompleted: number | null;
@@ -60,9 +59,9 @@ export function saveCard(card: ClerkCard): void {
   }
 }
 
-export function saveProgress(n: number, picks: Verdict[], sealIndex: number | null): void {
+export function saveProgress(n: number, picks: Verdict[]): void {
   const card = loadCard();
-  card.current = { n, picks, sealIndex };
+  card.current = { n, picks };
   saveCard(card);
 }
 

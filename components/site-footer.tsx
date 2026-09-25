@@ -1,66 +1,68 @@
 import Link from "next/link";
-import { editorialNote, fundingNote, site } from "@/lib/site";
-import { stories, storyPath } from "@/lib/stories";
+import { site } from "@/lib/site";
 
 export function SiteFooter() {
+  const year = new Date().getFullYear();
   return (
-    <footer className="mt-20 border-t border-rule bg-paper-deep/60">
-      <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6">
-        <div className="grid gap-10 md:grid-cols-3">
+    <footer className="footer">
+      <div className="wrap">
+        <div className="foot-grid">
           <div>
-            <p className="font-display text-2xl text-ink">{site.name}</p>
-            <p className="mt-3 max-w-sm text-sm leading-6 text-ink-soft">{site.tagline}</p>
-            <p className="mt-3 text-sm text-ink-soft">
-              Published by {site.publisher}. Intended host: {site.domain} (not wired yet).
+            <p className="motto">It almost happened. We have the paperwork.</p>
+            <p className="who">
+              Published by {site.publisher}. Researched and fact-checked by an AI editorial team under a public
+              rubric; a human publisher answers for every verdict.
             </p>
           </div>
           <div>
-            <h2 className="font-serif text-lg text-ink">Stories</h2>
-            <ul className="mt-3 space-y-2 text-sm">
-              {stories.map((story) => (
-                <li key={story.slug}>
-                  <Link className="text-moss hover:text-rust" href={storyPath(story.slug)}>
-                    {story.title}
-                  </Link>
-                </li>
-              ))}
+            <span className="mono-s">Play</span>
+            <ul>
+              <li><Link href="/play">Today&apos;s docket</Link></li>
+              <li><Link href="/answers">The archive</Link></li>
+              <li><Link href="/test">Gullibility Test</Link></li>
+              <li><Link href="/halloween">Halloween Edition</Link></li>
+              <li><Link href="/class">Projector mode</Link></li>
             </ul>
           </div>
           <div>
-            <h2 className="font-serif text-lg text-ink">Site</h2>
-            <ul className="mt-3 space-y-2 text-sm">
-              <li>
-                <Link className="text-moss hover:text-rust" href="/about">
-                  About &amp; standards
-                </Link>
-              </li>
-              <li>
-                <Link className="text-moss hover:text-rust" href="/privacy">
-                  Privacy
-                </Link>
-              </li>
-              <li>
-                <a className="text-moss hover:text-rust" href={`mailto:${site.email}`}>
-                  {site.email}
-                </a>
-              </li>
+            <span className="mono-s">Read</span>
+            <ul>
+              <li><Link href="/case-files">Case Files</Link></li>
+              <li><Link href="/rules">The rules</Link></li>
+              <li><Link href="/corrections">Corrections</Link></li>
+              <li><Link href="/newsletter">The Sunday Docket</Link></li>
+            </ul>
+          </div>
+          <div>
+            <span className="mono-s">Shop</span>
+            <ul>
+              <li><Link href="/shop/party-pack">Party Pack · $12</Link></li>
+              <li><Link href="/shop/classroom-pack">Classroom Pack · $15</Link></li>
+              <li><Link href="/halloween">Halloween Pack · $7</Link></li>
+              <li><Link href="/deck">The boxed deck</Link></li>
+            </ul>
+          </div>
+          <div>
+            <span className="mono-s">Masthead</span>
+            <ul>
+              <li><Link href="/about">About</Link></li>
+              <li><a href={`mailto:${site.email}`}>Contact</a></li>
+              <li><Link href="/privacy">Privacy</Link></li>
+              <li><Link href="/terms">Terms &amp; refunds</Link></li>
             </ul>
           </div>
         </div>
-
-        <div className="mt-10 space-y-3 border-t border-rule pt-6 text-sm leading-6 text-ink-soft">
-          <p>
-            <strong className="text-ink">How this is funded. </strong>
-            {fundingNote}
-          </p>
-          <p>
-            <strong className="text-ink">How the stories are written. </strong>
-            {editorialNote}
-          </p>
-          <p>
-            © {new Date().getFullYear()} {site.publisher}. Almost Lore is an editorial site, not a
-            shop and not a review mill.
-          </p>
+        <div className="wood bigmark" aria-hidden="true">
+          <span className="mis" data-t="Almost Lore">
+            Almost Lore
+          </span>
+        </div>
+        <div className="colophon mono-s">
+          <span>
+            © {year} {site.publisher} · {site.domain}
+          </span>
+          <span>Printed daily in fluoro pink, riso blue &amp; sunflower on bone</span>
+          <span>Archival images: public domain, credited where used</span>
         </div>
       </div>
     </footer>

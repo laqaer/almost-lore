@@ -13,7 +13,7 @@ import { latestClosedDocket, latestOpenDocket } from "@/lib/game/schedule";
 const claims = claimsData as Claim[];
 const dockets = docketsData as Docket[];
 
-export type ClaimSet = "gullibility" | "halloween" | "partyPack" | "classroom" | "starter";
+export type ClaimSet = "gullibility" | "halloween" | "partyPack" | "classroom" | "starter" | "examples";
 const sets = setsData as Record<ClaimSet, string[]>;
 
 const byId = new Map(claims.map((claim) => [claim.id, claim]));

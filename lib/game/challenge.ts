@@ -5,11 +5,7 @@ import type { Verdict } from "@/lib/game/types";
  * The friend's UI keeps them sealed until the friend has stamped all five.
  */
 
-export type Challenge = {
-  name: string;
-  picks: Verdict[];
-  sealIndex: number | null;
-};
+export type Challenge = { name: string; picks: Verdict[] };
 
 const CODE: Record<Verdict, string> = { happened: "h", almost: "a", lore: "l" };
 const DECODE: Record<string, Verdict> = { h: "happened", a: "almost", l: "lore" };
@@ -37,28 +33,19 @@ function toBase64Url(value: string): string {
 function fromBase64Url(value: string): string {
   const padded = value.replace(/-/g, "+").replace(/_/g, "/") + "===".slice((value.length + 3) % 4);
   const binary = atob(padded);
-  const bytes = Uint8Array.from(binary, (c) => c.charCodeAt(0));
-  return new TextDecoder().decode(bytes);
+  return new TextDecoder().decode(Uint8Array.from(binary, (c) => c.charCodeAt(0)));
 }
 
 export function encodeChallenge(challenge: Challenge): string {
-  const picks = challenge.picks.map((p) => CODE[p]).join("");
-  const seal = challenge.sealIndex === null ? "-" : String(challenge.sealIndex);
-  return toBase64Url(`1|${cleanName(challenge.name)}|${picks}|${seal}`);
+  return toBase64Url(`2|${cleanName(challenge.name)}|${challenge.picks.map((p) => CODE[p]).join("")}`);
 }
 
 export function decodeChallenge(token: string | undefined | null): Challenge | null {
   if (!token || token.length > 80) return null;
   try {
-    const [version, name, picks, seal] = fromBase64Url(token).split("|");
-    if (version !== "1" || !/^[hal]{5}$/.test(picks ?? "")) return null;
-    const sealIndex = seal === "-" ? null : Number(seal);
-    if (sealIndex !== null && !(sealIndex >= 0 && sealIndex < 5)) return null;
-    return {
-      name: cleanName(name ?? ""),
-      picks: picks.split("").map((c) => DECODE[c]),
-      sealIndex,
-    };
+    const [version, name, picks] = fromBase64Url(token).split("|");
+    if (version !== "2" || !/^[hal]{5}$/.test(picks ?? "")) return null;
+    return { name: cleanName(name ?? ""), picks: picks.split("").map((c) => DECODE[c]) };
   } catch {
     return null;
   }

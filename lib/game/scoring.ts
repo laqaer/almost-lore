@@ -6,68 +6,51 @@ export const VERDICT_LABEL: Record<Verdict, string> = {
   lore: "Lore",
 };
 
+/** Keyboard shortcuts: H/A/L and 1/2/3. */
 export const VERDICT_KEY: Record<Verdict, string> = {
-  happened: "1",
-  almost: "2",
-  lore: "3",
+  happened: "H",
+  almost: "A",
+  lore: "L",
 };
 
-export const VERDICT_BLURB: Record<Verdict, string> = {
-  happened: "True, exactly as written.",
-  almost: "It came documented-close. It didn't happen.",
-  lore: "A story everyone repeats. The record says no.",
+export const VERDICT_DEF: Record<Verdict, string> = {
+  happened: "True exactly as worded",
+  almost: "Came documented-close",
+  lore: "A popular myth",
+};
+
+export const VERDICT_SAY: Record<Verdict, string> = {
+  happened: "It really happened.",
+  almost: "It almost happened.",
+  lore: "It's lore.",
 };
 
 export type Rank = { title: string; line: string };
 
-/** Score runs 0–6: five cards plus one bonus point for a sealed card that was right. */
-export function rankFor(score: number): Rank {
-  if (score >= 6) return { title: "Keeper of the Archive", line: "Perfect, and you bet on it." };
-  if (score === 5) return { title: "Archivist", line: "The record bows to you." };
-  if (score === 4) return { title: "Historian", line: "One footnote short of flawless." };
-  if (score === 3) return { title: "Pub Quizzer", line: "Dangerous after two pints." };
-  if (score === 2) return { title: "Tour Guide", line: "Confident. Occasionally correct." };
-  if (score === 1) return { title: "Uncle at Thanksgiving", line: "Loud, sure, and mostly wrong." };
-  return { title: "Hollywood Screenwriter", line: "Never let the facts get in the way." };
+export const RANKS: Rank[] = [
+  { title: "Hollywood Screenwriter", line: "Never let the facts get in the way of a good story." },
+  { title: "Uncle at Thanksgiving", line: "Loud, certain, and wrong with real conviction." },
+  { title: "Tour Guide", line: "Confident. Occasionally correct. Tips welcome." },
+  { title: "Pub Quizzer", line: "Dangerous after two pints, respectable before." },
+  { title: "Historian", line: "One footnote short of flawless." },
+  { title: "Keeper of the Archive", line: "Five for five. No prize, but considerable smugness." },
+];
+
+export function rankFor(right: number): Rank {
+  return RANKS[Math.max(0, Math.min(5, right))];
 }
 
-export function scoreFor(correct: boolean[], sealIndex: number | null): number {
-  const base = correct.filter(Boolean).length;
-  const bonus = sealIndex !== null && correct[sealIndex] ? 1 : 0;
-  return base + bonus;
+/** Spoiler-free result row: ✓ kept, ✗ fooled. */
+export function glyphRow(correct: boolean[]): string {
+  return correct.map((ok) => (ok ? "✓" : "✗")).join("");
 }
 
-/** Spoiler-free result row: ◆ right, ◇ wrong, the sealed card wrapped in brackets. */
-export function glyphRow(correct: boolean[], sealIndex: number | null): string {
-  return correct
-    .map((ok, i) => {
-      const g = ok ? "◆" : "◇";
-      return i === sealIndex ? `[${g}]` : g;
-    })
-    .join(" ");
-}
-
-export function sealLine(correct: boolean[], sealIndex: number | null): string {
-  if (sealIndex === null) return "no seal";
-  return correct[sealIndex] ? "seal kept" : "seal cracked";
-}
-
-export function shareText(input: {
-  n: number;
-  correct: boolean[];
-  sealIndex: number | null;
-  trapClaim?: string;
-  url: string;
-}): string {
-  const points = scoreFor(input.correct, input.sealIndex);
+export function shareText(input: { n: number; correct: boolean[]; trapClaim?: string; url: string }): string {
   const right = input.correct.filter(Boolean).length;
-  const lines = [
-    `Almost Lore No. ${input.n} · ${rankFor(points).title}`,
-    `${glyphRow(input.correct, input.sealIndex)}  ${right}/5 · ${sealLine(input.correct, input.sealIndex)}`,
-  ];
+  const lines = [`Almost Lore No. ${input.n} · ${rankFor(right).title}`, `${glyphRow(input.correct)}  ${right}/5`];
   if (input.trapClaim) {
-    lines.push(`Today's trap — happened, almost, or lore?`, `“${input.trapClaim}”`);
+    lines.push("", "Today's trap — happened, almost, or lore?", `“${input.trapClaim}”`);
   }
-  lines.push(input.url);
+  lines.push("", input.url);
   return lines.join("\n");
 }
