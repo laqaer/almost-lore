@@ -39,6 +39,7 @@ const PATHS = [
   "/stories/dogger-bank-1904",
   "/stories/trent-affair",
   "/stories/venezuelan-crisis-1895",
+  "/stories/aroostook-war",
 ];
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
