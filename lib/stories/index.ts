@@ -1,11 +1,14 @@
 import { aquaTofanaStory } from "@/lib/stories/aqua-tofana";
 import { balloonStory } from "@/lib/stories/balloon";
+import { beringStory } from "@/lib/stories/bering";
 import { carolineAffairStory } from "@/lib/stories/caroline-affair";
+import { darienStory } from "@/lib/stories/darien";
 import { doggerBankStory } from "@/lib/stories/dogger-bank";
 import { fashodaStory } from "@/lib/stories/fashoda";
 import { forgottenSchemeStory } from "@/lib/stories/forgotten-scheme";
 import { pigWarStory } from "@/lib/stories/pig-war";
 import { poyaisStory } from "@/lib/stories/poyais";
+import { sanFranciscoFogStory } from "@/lib/stories/san-francisco-fog";
 import { trentAffairStory } from "@/lib/stories/trent-affair";
 import { venezuelanCrisisStory } from "@/lib/stories/venezuelan-crisis";
 import type { Story } from "@/lib/stories/types";
@@ -23,6 +26,9 @@ export const stories: Story[] = [
   doggerBankStory,
   trentAffairStory,
   venezuelanCrisisStory,
+  sanFranciscoFogStory,
+  beringStory,
+  darienStory,
 ];
 
 export function storyPath(slug: string): string {
