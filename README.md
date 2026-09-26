@@ -19,6 +19,9 @@ Published at `almostlore.com`. Set `NEXT_PUBLIC_SITE_URL` if the deploy URL shou
 | `/stories/dogger-bank-1904` | Dogger Bank Incident, 1904 |
 | `/stories/trent-affair` | Trent Affair, 1861–1862 |
 | `/stories/venezuelan-crisis-1895` | Venezuelan Crisis, 1895–1899 |
+| `/stories/san-francisco-fog-1950` | San Francisco bacterial spray, September 1950 |
+| `/stories/bering-island-winter` | Bering’s wreck on Bering Island, 1741–1742 |
+| `/stories/darien-scheme` | Company of Scotland at Darien, 1698–1700 |
 | `/dossier` | Paid Poyais working file. Checkout stays closed until Stripe is connected |
 | `/support` | Corrections and refund notes, stored for the publisher |
 | `/terms` | Price, delivery, and refund terms for the working file |
