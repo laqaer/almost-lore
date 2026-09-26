@@ -13,8 +13,9 @@ export default function HomePage() {
         <p className="mt-6 max-w-2xl text-xl leading-8 text-ink-soft">
           {site.name} writes original longform about historical near-misses and strange public
           facts — the invented country, the poison legend, the balloon that ditched a hundred miles
-          short, the subway that ran one block, the almost-war on the Nile. We do not scrape Reddit.
-          We do not invent traffic, reviews, or a body count the archive will not support.
+          short, the subway that ran one block, the almost-war on the Nile, the boundary dispute
+          remembered for a pig. We do not scrape Reddit. We do not invent traffic, reviews, or a
+          body count the archive will not support.
         </p>
       </section>
 
@@ -29,9 +30,10 @@ export default function HomePage() {
               turned a rumor into a round number, we say so.
             </p>
             <p>
-              It is not a shop, a CMS, or a scoreboard. There are no accounts and no affiliate
-              tags. Display ads may appear later to pay hosting; until then the pages are just
-              pages.
+              It is not a CMS or a scoreboard. There are no accounts and no affiliate tags. The
+              essays are free. One printable working file, for the Poyais essay, is described on
+              its own page and can be bought only when card checkout is actually open. Display ads
+              are not running.
             </p>
           </div>
         </div>

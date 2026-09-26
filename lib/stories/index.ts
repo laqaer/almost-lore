@@ -2,6 +2,7 @@ import { aquaTofanaStory } from "@/lib/stories/aqua-tofana";
 import { balloonStory } from "@/lib/stories/balloon";
 import { fashodaStory } from "@/lib/stories/fashoda";
 import { forgottenSchemeStory } from "@/lib/stories/forgotten-scheme";
+import { pigWarStory } from "@/lib/stories/pig-war";
 import { poyaisStory } from "@/lib/stories/poyais";
 import type { Story } from "@/lib/stories/types";
 
@@ -13,6 +14,7 @@ export const stories: Story[] = [
   balloonStory,
   forgottenSchemeStory,
   fashodaStory,
+  pigWarStory,
 ];
 
 export function storyPath(slug: string): string {

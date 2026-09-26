@@ -8,7 +8,7 @@ export const site = {
   email: "hello@almostlore.com",
   publisher: "Laqaer",
   locale: "en_US",
-  updated: "2026-09-18",
+  updated: "2026-09-26",
 } as const;
 
 export function siteUrl(): string {
@@ -18,7 +18,7 @@ export function siteUrl(): string {
 }
 
 export const fundingNote =
-  "Almost Lore may later run ordinary display ads to pay hosting. There are no affiliate tracking IDs on this ship, no buy buttons, and no invented revenue. If ads appear, we will say so here and in the privacy page.";
+  "The essays are free. A separate printable working file for the Poyais essay is offered at $9 when card checkout is actually open; the dossier page says whether it is. There are no affiliate tracking IDs and no display ads on this ship. If ads are added later to pay hosting, we will say so here and in the privacy page.";
 
 export const editorialNote =
   "Essays are original prose based on well-documented public facts. We do not scrape Reddit or paste other people's threads. Where the archive is thin or later writers disagree, we say so.";

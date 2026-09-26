@@ -8,7 +8,7 @@ const title = "Now";
 const description =
   "What Almost Lore is focused on now: public-record near-misses, the longforms on the site, and how to send a correction.";
 
-const updated = "2026-09-21";
+const updated = "2026-09-26";
 
 export const metadata: Metadata = {
   title,
@@ -68,9 +68,10 @@ export default function NowPage() {
 
         <h2>What’s next</h2>
         <p>
-          More of the same, one sourced essay at a time. No newsletter, no accounts, and no shop.
-          Display ads are not running. If they are added later to pay hosting, the about page and
-          the privacy page will say so.
+          The newest longform is the Pig War on San Juan Island. The Poyais essay now points at
+          a separate working file. That file is $9 only when the dossier page says card checkout
+          is open. There is still no newsletter and no account. Display ads are not running. If
+          they are added later to pay hosting, the about page and the privacy page will say so.
         </p>
 
         <h2>Contact</h2>
