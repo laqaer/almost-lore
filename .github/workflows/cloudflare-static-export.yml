@@ -1,0 +1,42 @@
+name: Cloudflare static-export compatibility
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cloudflare-static-export-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  static-export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run lint
+      - name: Generate Next.js route types
+        run: npx next typegen
+      - run: npm run typecheck
+      - run: npm run build
+      - name: Verify static output
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f out/index.html
+          test -f out/404.html
+          test -f out/robots.txt
+          test -f out/sitemap.xml
+          test -f out/about.html
+          test -f out/privacy.html
+          test "$(find out/stories -name 'index.html' -o -name '*.html' | wc -l)" -ge 1
+      - name: Validate Cloudflare bundle without deploying
+        run: npx --yes wrangler@4.135.0 deploy --dry-run --outdir "$RUNNER_TEMP/cloudflare-dry-run"

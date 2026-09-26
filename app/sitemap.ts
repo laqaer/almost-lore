@@ -10,6 +10,9 @@ const staticRoutes = [
   { path: "/privacy", priority: 0.6, updated: site.updated },
 ] as const;
 
+// Build-time metadata route for Next.js static export.
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteUrl();
 
