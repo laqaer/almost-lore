@@ -42,7 +42,8 @@ const PATHS = [
   "/stories/san-francisco-fog-1950",
   "/stories/bering-island-winter",
   "/stories/darien-scheme",
-];
+  "/stories/aroostook-war",
+]
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
