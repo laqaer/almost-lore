@@ -37,3 +37,7 @@ npm run dev
 ```
 
 Checks: `npm run lint`, `npm run typecheck`, `npm run build`.
+
+## IndexNow
+
+Run `npm run indexnow` after a production deploy. The key file must already be live at `https://almostlore.com/7843aae65a441c1d1eea85e21facde25.txt` (body is the key). `npm run build` does not submit. `npm run indexnow -- --dry-run` prints the payload and does not send it.
