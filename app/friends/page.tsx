@@ -3,43 +3,43 @@ import { openGraphImage, twitterWithImage } from "@/lib/metadata";
 
 const title = "Friends";
 const description =
-  "A short blogroll of public history and editorial sites a reader of Almost Lore might like.";
+  "A short list of people and their personal sites a reader of Almost Lore might like.";
 
 const friends = [
   {
-    name: "The Public Domain Review",
-    href: "https://publicdomainreview.org/",
-    note: "Essays and image essays from works out of copyright. The odd fact stays attached to a source.",
+    name: "Nick Gray",
+    href: "https://nickgray.net/",
+    note: "Essays on his own site. He also keeps the /friends directory this page follows.",
   },
   {
-    name: "JSTOR Daily",
-    href: "https://daily.jstor.org/",
-    note: "Short essays that point at the journal article or book underneath a public fact.",
+    name: "Derek Sivers",
+    href: "https://sive.rs/",
+    note: "Essays on his own site, and notes on books he has read. The /now page here already points at him.",
   },
   {
-    name: "Lapham’s Quarterly",
-    href: "https://www.laphamsquarterly.org/",
-    note: "History by theme, built from excerpts written at the time, plus later essays.",
+    name: "Jay Hoffmann",
+    href: "https://jayhoffmann.com/",
+    note: "His personal site. He also writes The History of the Web, from research on how the web was built.",
   },
   {
-    name: "Aeon",
-    href: "https://aeon.co/",
-    note: "Commissioned essays in history, philosophy, and science. Edited prose, free to read.",
+    name: "Bret Devereaux",
+    href: "https://acoup.blog/",
+    note: "An ancient and military historian, writing long essays on his own site.",
   },
   {
-    name: "Contingent",
-    href: "https://contingentmagazine.org/",
-    note: "History written by historians, published outside the paywalled journal.",
+    name: "Ada Palmer",
+    href: "https://www.adapalmer.com/",
+    note: "Renaissance historian at the University of Chicago. The Ex Urbe essays came out of her research in Italy.",
   },
   {
-    name: "History Workshop",
-    href: "https://www.historyworkshop.org.uk/",
-    note: "A long-running radical-history project. The essays are public, and they argue.",
+    name: "Craig Mod",
+    href: "https://craigmod.com/",
+    note: "Essays on his own site, mostly long walks across Japan and the books that come from them.",
   },
   {
-    name: "The History of the Web",
-    href: "https://thehistoryoftheweb.com/",
-    note: "Jay Hoffmann’s indie site on how the web actually got built. Documented, and not a product blog.",
+    name: "Manuel Moreale",
+    href: "https://manuelmoreale.com/",
+    note: "Essays on his own site, and interviews with people about the personal websites they keep.",
   },
 ] as const;
 
@@ -65,13 +65,13 @@ export default function FriendsPage() {
     <article className="mx-auto max-w-measure px-4 py-12 sm:px-6">
       <p className="text-xs font-medium uppercase tracking-[0.18em] text-rust">Friends</p>
       <h1 className="mt-3 font-display text-4xl leading-[1.15] text-ink sm:text-5xl">
-        Sites in the neighborhood
+        People on their own sites
       </h1>
       <div className="prose-page mt-8">
         <p>
-          Public history desks, essay magazines, and one indie history of the web. A reader who
-          wants the footnote version of a near-miss may want these too. The notes are ours. None
-          of these is an ad, and none is an affiliate link.
+          A list of people, and the personal websites they write on. A reader who wants the
+          footnote version of a near-miss may want these too. The notes are ours. None of these is
+          an ad, and none is an affiliate link.
         </p>
         <ul>
           {friends.map((friend) => (
