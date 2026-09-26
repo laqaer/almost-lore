@@ -8,7 +8,10 @@ Published at `almostlore.com`. Set `NEXT_PUBLIC_SITE_URL` if the deploy URL shou
 
 | Route | Subject |
 | --- | --- |
-| `/` | Hub: what this is, how a hook leads here, story index |
+| `/` | The newest story, then the rest of the file |
+| `/stories/san-francisco-fog-1950` | September 1950 Serratia spray |
+| `/stories/bering-island-winter` | Bering, 1741–42 |
+| `/stories/darien-scheme` | Company of Scotland at Darien |
 | `/stories/poyais-invented-country` | Gregor MacGregor / Poyais |
 | `/stories/aqua-tofana-myth-vs-record` | Aqua Tofana, myth vs archive |
 | `/stories/balloon-almost-atlantic` | Zanussi, July 1978 |

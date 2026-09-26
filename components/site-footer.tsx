@@ -9,10 +9,7 @@ export function SiteFooter() {
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <p className="font-display text-2xl text-ink">{site.name}</p>
-            <p className="mt-3 max-w-sm text-sm leading-6 text-ink-soft">{site.tagline}</p>
-            <p className="mt-3 text-sm text-ink-soft">
-              Published by {site.publisher} at {site.domain}.
-            </p>
+            <p className="mt-3 max-w-sm text-sm leading-6 text-ink-soft">{site.description}</p>
           </div>
           <div>
             <h2 className="font-serif text-lg text-ink">Stories</h2>
@@ -67,10 +64,7 @@ export function SiteFooter() {
             <strong className="text-ink">How the stories are written. </strong>
             {editorialNote}
           </p>
-          <p>
-            © {new Date().getFullYear()} {site.publisher}. Almost Lore is an editorial site, not a
-            shop and not a review mill.
-          </p>
+          <p>© {new Date().getFullYear()} {site.publisher}.</p>
         </div>
       </div>
     </footer>

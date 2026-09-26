@@ -34,12 +34,8 @@ export function StoryArticle({ story }: StoryArticleProps) {
       </p>
 
       <aside className="hook-card mt-8">
-        <p className="text-xs font-medium uppercase tracking-[0.16em] text-rust">The hook</p>
+        <p className="text-xs font-medium uppercase tracking-[0.16em] text-rust">The line that travels</p>
         <p className="mt-2 font-serif text-lg leading-7 text-ink">{story.hook}</p>
-        <p className="mt-3 text-sm leading-6 text-ink-soft">
-          That is the compressed line that tends to travel. The essay below is the public-record
-          version.
-        </p>
       </aside>
 
       <div className="prose-lore mt-10">

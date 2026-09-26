@@ -6,9 +6,9 @@ import { stories, storyPath } from "@/lib/stories";
 
 const title = "Now";
 const description =
-  "What Almost Lore is focused on now: public-record near-misses, the longforms on the site, and how to send a correction.";
+  "What is on the desk: the longforms up, the ones just added, and where to send a correction.";
 
-const updated = "2026-09-21";
+const updated = "2026-09-25";
 
 export const metadata: Metadata = {
   title,
@@ -41,10 +41,10 @@ export default function NowPage() {
       <div className="prose-page mt-8">
         <h2>Current editorial focus</h2>
         <p>
-          Original longform about documented historical near-misses and odd public facts. A scheme
-          that sold a country, a poison legend that outran the trial file, a balloon that ditched
-          short of Europe, a subway that ran one block, an almost-war on the Nile. If the archive
-          is thin, the sentence stays thin.
+          The file, not the slogan. Newest on the desk: a bacterium sprayed over San Francisco in
+          September 1950, Bering’s winter on the island that kept him, and the Darien colony that
+          Scotland landed twice. Older pieces stay up: the paper country, the poison legend, the
+          balloon, the one-block subway, the fort on the Nile.
         </p>
         <p>
           The standard is on the <Link href="/about">about</Link> page: public record first, no
@@ -68,9 +68,11 @@ export default function NowPage() {
 
         <h2>What’s next</h2>
         <p>
-          More of the same, one sourced essay at a time. No newsletter, no accounts, and no shop.
-          Display ads are not running. If they are added later to pay hosting, the about page and
-          the privacy page will say so.
+          One sourced essay at a time, chosen because someone is already repeating it wrong.
+          Candidates on the desk, not yet written: the Dyatlov pass, the 1908 Tunguska airburst,
+          the 1961 Goldsboro bomb that did not detonate, the Radium Girls’ first refusal, the
+          Antikythera mechanism’s missing half. No newsletter. No accounts. Display ads are the
+          funding plan and are not switched on; ads.txt is still a placeholder.
         </p>
 
         <h2>Contact</h2>

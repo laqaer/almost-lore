@@ -1,13 +1,19 @@
 import { aquaTofanaStory } from "@/lib/stories/aqua-tofana";
 import { balloonStory } from "@/lib/stories/balloon";
+import { beringStory } from "@/lib/stories/bering";
+import { darienStory } from "@/lib/stories/darien";
 import { fashodaStory } from "@/lib/stories/fashoda";
 import { forgottenSchemeStory } from "@/lib/stories/forgotten-scheme";
 import { poyaisStory } from "@/lib/stories/poyais";
+import { sanFranciscoFogStory } from "@/lib/stories/san-francisco-fog";
 import type { Story } from "@/lib/stories/types";
 
 export type { Story };
 
 export const stories: Story[] = [
+  sanFranciscoFogStory,
+  beringStory,
+  darienStory,
   poyaisStory,
   aquaTofanaStory,
   balloonStory,

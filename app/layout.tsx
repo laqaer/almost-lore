@@ -26,7 +26,7 @@ const sourceSans = Source_Sans_3({
   display: "swap",
 });
 
-const title = "Almost Lore — Public-record near-misses, written as stories";
+const title = "Almost Lore";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
