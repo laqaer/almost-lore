@@ -15,6 +15,12 @@ export function SiteHeader() {
           <Link className="hover:text-rust" href="/about">
             About
           </Link>
+          <Link className="hover:text-rust" href="/now">
+            Now
+          </Link>
+          <Link className="hover:text-rust" href="/friends">
+            Friends
+          </Link>
           <Link className="hover:text-rust" href="/privacy">
             Privacy
           </Link>
