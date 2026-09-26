@@ -20,4 +20,4 @@ Outstanding obligations: none to customers. No prepaid orders. No subscriptions.
 
 Paying customers: 0. Retained customers: 0.
 
-Worker reconciliation at 2026-09-26T05:13:45Z, source `cron`: `liveCashCents` 0, `livePaidCount` 0, `testPaidCount` 0, fees unavailable, provisional. No processor export exists to reconcile against.
+Worker reconciliation at 2026-09-26T05:13:45Z, source `cron`: `liveCashCents` 0, `livePaidCount` 0, `testPaidCount` 0, fees unavailable, provisional. A later manual reconcile at 05:35:58Z, after the essay was on production, still showed `liveCashCents` 0. No processor export exists. Production `POST /api/checkout` returned “not open” and created no charge. Sales tax is not configured for a future sale.

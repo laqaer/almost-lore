@@ -26,11 +26,12 @@ Another agent can restart from `ops/STATE.md`, `ops/LEDGER.md`, and `ops/EXPERIM
 - At 05:16:11Z the schedule was set to `0 13 * * *` UTC. Staging KV copies of the worker source and the dossier were deleted. The product keys remain.
 - The ops token is a Worker secret named `OPS_TOKEN`. It is not in git. Stop path without it: Cloudflare dashboard → Workers → `almost-lore-ops`.
 
-## Still to verify after production
+## Observed after production, 2026-09-26T05:22:00Z
 
-1. `https://almostlore.com/stories/pig-war-san-juan` returns 200. That starts E1. Record the timestamp in `EXPERIMENTS.md`.
-2. `/dossier` shows no pay button. `/api/status` through the Vercel rewrite matches the worker.
-3. `/support` and `/terms` render. A real customer note, if one arrives, stays in KV until handled.
+1. `https://almostlore.com/stories/pig-war-san-juan` returned 200. E1’s window starts then. See `EXPERIMENTS.md`.
+2. `/dossier` settled, in Chrome, on the closed-checkout sentence and did not render the pay button. `/api/status` and `POST /api/checkout` go through the Vercel rewrite. Checkout returned 503 and created no charge.
+3. `/support` and `/terms` returned 200. A production-form test note was stored and then deleted. A later customer note should stay until it is handled.
+4. Fashoda and the Poyais essay still returned 200. The Poyais page links to `/dossier`.
 
 ## When Stripe is connected
 
