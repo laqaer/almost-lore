@@ -77,9 +77,11 @@ export default function AboutPage() {
 
         <h2>What we are not</h2>
         <p>
-          Not a historian’s monograph, not a primary-source edition, not a shop. If a piece
-          summarizes a scholarly reconstruction, it says so. If you need the transcript or the
-          bond notice itself, go to the archive or the book — not to a hook.
+          Not a historian’s monograph and not a primary-source edition. The essays are not
+          paywalled. One working file may be sold separately; it is a reading aid, not a
+          substitute for the archive. If a piece summarizes a scholarly reconstruction, it says
+          so. If you need the transcript or the bond notice itself, go to the archive or the
+          book — not to a hook.
         </p>
       </div>
     </article>

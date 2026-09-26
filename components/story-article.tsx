@@ -58,6 +58,15 @@ export function StoryArticle({ story }: StoryArticleProps) {
           <strong className="text-ink">On sources. </strong>
           {story.sourcesNote}
         </p>
+        {story.dossier ? (
+          <p className="mt-4">
+            <strong className="text-ink">Working file. </strong>
+            {story.dossier.note}{" "}
+            <Link className="text-moss underline underline-offset-3 hover:text-rust" href={story.dossier.href}>
+              {story.dossier.label}
+            </Link>
+          </p>
+        ) : null}
       </aside>
 
       <nav aria-label="More stories" className="mt-14 border-t border-rule pt-8">

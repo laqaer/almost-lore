@@ -45,6 +45,21 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
+                <Link className="text-moss hover:text-rust" href="/dossier">
+                  Poyais working file
+                </Link>
+              </li>
+              <li>
+                <Link className="text-moss hover:text-rust" href="/support">
+                  Support
+                </Link>
+              </li>
+              <li>
+                <Link className="text-moss hover:text-rust" href="/terms">
+                  Terms
+                </Link>
+              </li>
+              <li>
                 <Link className="text-moss hover:text-rust" href="/privacy">
                   Privacy
                 </Link>
@@ -69,7 +84,7 @@ export function SiteFooter() {
           </p>
           <p>
             © {new Date().getFullYear()} {site.publisher}. Almost Lore is an editorial site, not a
-            shop and not a review mill.
+            review mill. The essays are free.
           </p>
         </div>
       </div>

@@ -3,6 +3,12 @@ export type StorySection = {
   paragraphs: string[];
 };
 
+export type StoryDossier = {
+  href: string;
+  label: string;
+  note: string;
+};
+
 export type Story = {
   slug: string;
   title: string;
@@ -13,4 +19,5 @@ export type Story = {
   updated: string;
   sourcesNote: string;
   sections: StorySection[];
+  dossier?: StoryDossier;
 };

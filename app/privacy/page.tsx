@@ -47,7 +47,21 @@ export default function PrivacyPage() {
           </li>
           <li>
             <strong>Email you send us.</strong> Messages to {site.email} include whatever you
-            write. We use that to reply. We do not add you to a newsletter by default.
+            write, if that address is receiving mail. We use that to reply. We do not add you to
+            a newsletter by default. As of {site.updated}, the domain has no mail server; use
+            the support form instead.
+          </li>
+          <li>
+            <strong>Support form.</strong> The <a href="/support">support page</a> stores your
+            note, the topic you pick, and an email if you type one. Those records sit in
+            Cloudflare Workers KV on the publisher’s account. We use them to answer corrections,
+            download problems, and refund requests. We do not sell that list.
+          </li>
+          <li>
+            <strong>Checkout, when it is open.</strong> Stripe hosts the payment page. Almost
+            Lore does not receive your card number. We receive the checkout result Stripe sends
+            back: whether the $9 working file was paid, refunded, or abandoned. Test charges, if
+            we ever run them, are not treated as customer revenue.
           </li>
           <li>
             <strong>Optional analytics.</strong> If we later add a privacy-respecting analytics
@@ -64,7 +78,8 @@ export default function PrivacyPage() {
           vendors are invisible.
         </p>
         <p>
-          Almost Lore does not sell products and does not take payment-card numbers.
+          The essays are free. The Poyais working file is a separate $9 download when checkout
+          is open. Almost Lore does not take payment-card numbers; Stripe does, on Stripe’s page.
         </p>
 
         <h2>What we do not do</h2>

@@ -14,12 +14,18 @@ Published at `almostlore.com`. Set `NEXT_PUBLIC_SITE_URL` if the deploy URL shou
 | `/stories/balloon-almost-atlantic` | Zanussi, July 1978 |
 | `/stories/forgotten-scheme` | Beach pneumatic subway, 1870 |
 | `/stories/fashoda-incident-1898` | Fashoda Incident, 1898 |
+| `/stories/pig-war-san-juan` | Pig War, San Juan Island, 1859–1872 |
+| `/dossier` | Paid Poyais working file. Checkout stays closed until Stripe is connected |
+| `/support` | Corrections and refund notes, stored for the publisher |
+| `/terms` | Price, delivery, and refund terms for the working file |
 | `/about` | Laqaer disclosure and editorial standards |
 | `/now` | Current editorial focus, longforms on the site, contact |
 | `/friends` | Blogroll of related public history and editorial sites |
 | `/privacy` | Honest ads-later privacy page |
 
-No CMS, auth, database, or picker widgets. Essays are typed content. Article JSON-LD is used only on story pages.
+No CMS, reader accounts, or picker widgets. Essays are typed content. Article JSON-LD is used only on story pages.
+
+Card checkout and the support queue live on the Cloudflare Worker `almost-lore-ops`, not in this static export. The paid file body is not in this public repository. Operating notes are in `ops/`.
 
 ## Local
 

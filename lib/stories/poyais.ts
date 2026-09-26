@@ -10,6 +10,11 @@ export const poyaisStory: Story = {
   updated: "2026-09-11",
   sourcesNote:
     "This essay is original prose. It follows the public outline of the Poyais episode as it appears in contemporary loan notices, later court and newspaper coverage, and modern scholarship on the 1822–23 London and Scottish issues. Departure dates, passenger counts, and death totals are not a single agreed ledger; where later writers disagree, the disagreement is named rather than averaged into a fake precision.",
+  dossier: {
+    href: "/dossier",
+    label: "The Poyais working file",
+    note: "A separate printable dossier: the loan terms, the ship list, and the figures this essay will not adopt. The essay stays free.",
+  },
   sections: [
     {
       paragraphs: [

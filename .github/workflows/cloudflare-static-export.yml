@@ -22,6 +22,7 @@ jobs:
           node-version: "22"
           cache: npm
       - run: npm ci --no-audit --no-fund
+      - run: npm test
       - run: npm run lint
       - name: Generate Next.js route types
         run: npx next typegen
@@ -37,6 +38,10 @@ jobs:
           test -f out/sitemap.xml
           test -f out/about.html
           test -f out/privacy.html
+          test -f out/dossier.html
+          test -f out/support.html
+          test -f out/terms.html
+          test -f out/stories/pig-war-san-juan.html
           test "$(find out/stories -name 'index.html' -o -name '*.html' | wc -l)" -ge 1
       - name: Validate Cloudflare bundle without deploying
         run: npx --yes wrangler@4.135.0 deploy --dry-run --outdir "$RUNNER_TEMP/cloudflare-dry-run"

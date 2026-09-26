@@ -35,6 +35,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# Paid working-file body. The repo is public; the file lives in Cloudflare KV.
+/fulfillment/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
