@@ -16,6 +16,8 @@ This file is the narrative ledger. It is not a processor export. The worker stat
 | AI / agent usage billed to the project | not visible | No project invoice in scope. Do not treat this session as $0 of owner Cursor cost if the owner is billed for the agent elsewhere. |
 | Net operating profit | provisional 0 | Incomplete on domain renewal and any Cursor charges. No customer revenue. |
 
-Outstanding obligations: none to customers. No prepaid orders. No subscriptions.
+Outstanding obligations: none to customers. No prepaid orders. No subscriptions. One operator support note was written during verification and then removed; it is not a customer obligation.
 
 Paying customers: 0. Retained customers: 0.
+
+Worker reconciliation at 2026-09-26T05:13:45Z, source `cron`: `liveCashCents` 0, `livePaidCount` 0, `testPaidCount` 0, fees unavailable, provisional. No processor export exists to reconcile against.

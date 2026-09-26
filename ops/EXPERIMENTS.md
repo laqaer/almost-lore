@@ -12,7 +12,7 @@ Rules below were written before the pages were public. Do not move the metric af
 - Success metric: `https://almostlore.com/stories/pig-war-san-juan` returns HTTP 200 on production, and within 21 days of that deploy the URL is indexed or appears in a Google result. Indexing we cannot see is not success.
 - Evaluation window: 21 days from the production deploy that contains the essay.
 - Stop / pivot: If the URL is not indexed at day 21, do not write a second essay in the same pattern until the first can be measured. Fix titles, internal links, or Search Console access before adding volume.
-- Status: prepared on 2026-09-26, before production. The window starts when `https://almostlore.com/stories/pig-war-san-juan` first returns 200 from the deploy of this change. Indexing is not yet observed. Search Console is not connected to this agent (a Google verification TXT already exists on the domain; OpenSEO credits are 0).
+- Status: not started. At 2026-09-26T05:13:45Z the ops cron recorded HTTP 404 for `https://almostlore.com/stories/pig-war-san-juan`. The window starts only when that URL first returns 200 from the deploy of this change. Indexing is not observed. Search Console is not connected to this agent (a Google verification TXT already exists on the domain; OpenSEO credits are 0).
 
 ## E2 — Poyais working file, $9 once
 
