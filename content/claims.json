@@ -86,7 +86,9 @@
   "difficulty": 2,
   "schoolSafe": true,
   "solemn": true,
-  "tags": []
+  "tags": [],
+  "storySlug": "great-molasses-flood",
+  "pinDate": "2026-09-27"
  },
  {
   "id": "seed-fashoda-1898",
@@ -4540,7 +4542,9 @@
   "difficulty": 2,
   "schoolSafe": true,
   "solemn": false,
-  "tags": []
+  "tags": [],
+  "storySlug": "dancing-plague-1518",
+  "pinDate": "2026-09-25"
  },
  {
   "id": "kafka-manuscripts-burned",
@@ -4787,7 +4791,9 @@
   "difficulty": 2,
   "schoolSafe": true,
   "solemn": false,
-  "tags": []
+  "tags": [],
+  "storySlug": "arkhipov-submarine-b59",
+  "pinDate": "2026-09-28"
  },
  {
   "id": "norad-training-tape-1979",
@@ -5173,7 +5179,9 @@
   "schoolSafe": true,
   "solemn": false,
   "tags": [],
-  "origin": "Revolutionary pamphlets and later retellings pinned the arrogant remark on the unpopular queen."
+  "origin": "Revolutionary pamphlets and later retellings pinned the arrogant remark on the unpopular queen.",
+  "storySlug": "let-them-eat-cake",
+  "pinDate": "2026-09-26"
  },
  {
   "id": "washington-wooden-teeth",
