@@ -14,6 +14,12 @@
     "title": "Proposals for the United States to purchase Greenland",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Proposals_for_the_United_States_to_purchase_Greenland"
+   },
+   {
+    "title": "America has actually tried to acquire Greenland 3 other times, as early as 1867",
+    "publisher": "Fortune",
+    "url": "https://fortune.com/2026/01/08/secret-history-american-efforts-to-acquire-greenland-civil-war-world-war-ii/",
+    "quote": "President Harry Truman's administration formally offered Denmark $100 million in gold to buy Greenland"
    }
   ],
   "difficulty": 2,
@@ -36,6 +42,12 @@
     "title": "Emu War",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Emu_War"
+   },
+   {
+    "title": "Looking back: Australia's Emu Wars",
+    "publisher": "Australian Geographic",
+    "url": "https://www.australiangeographic.com.au/nature-wildlife/2016/10/australias-emu-wars/",
+    "quote": "Early on the morning of 2 November 1932, the Seventh Heavy Battery of the Royal Australian Artillery alighted at Campion, WA, on to a hot red-dirt landscape about halfway between Perth and Kalgoorlie. There they unpacked two Lewis automatic machine guns and 10,000 rounds of ammunition."
    }
   ],
   "difficulty": 2,
@@ -81,6 +93,12 @@
     "title": "Great Molasses Flood",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Great_Molasses_Flood"
+   },
+   {
+    "title": "The Great Molasses Flood of 1919: Date, Deaths & Facts",
+    "publisher": "HISTORY",
+    "url": "https://www.history.com/articles/the-great-molasses-flood-of-1919",
+    "quote": "A fifteen-foot wall of syrup cascaded over Commercial Street at 35 miles per hour, obliterating all the buildings, people, horses and wagons in its path."
    }
   ],
   "difficulty": 2,
@@ -122,12 +140,18 @@
   "era": "20th-century",
   "region": "North America",
   "topic": "business",
-  "record": "George Eastman adopted the International Fixed Calendar at Kodak in 1928: thirteen months of 28 days each. The company used it for internal accounting until 1989.",
+  "record": "George Eastman adopted the International Fixed Calendar at Kodak in the 1920s: thirteen months of 28 days each, plus a spare 'Year Day'. The company kept using it for internal accounting until 1989.",
   "sources": [
    {
     "title": "International Fixed Calendar",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/International_Fixed_Calendar"
+   },
+   {
+    "title": "The Calendar",
+    "publisher": "99% Invisible",
+    "url": "https://99percentinvisible.org/episode/the-calendar/",
+    "quote": "The Eastman Kodak company adopted the 13-month calendar in 1924 and they continued to use it until 1989."
    }
   ],
   "difficulty": 2,
@@ -159,30 +183,8 @@
   "origin": "Burnings in continental Europe and later fiction merged in popular memory with Salem."
  },
  {
-  "id": "seed-petrov-1983",
-  "claim": "In 1983 the Soviet Union launched nuclear missiles after its satellites reported an American attack.",
-  "verdict": "almost",
-  "year": "1983",
-  "yearSort": 1983,
-  "era": "20th-century",
-  "region": "Europe",
-  "topic": "war",
-  "record": "On 26 September 1983 a Soviet early-warning system reported incoming US missiles. Lt. Col. Stanislav Petrov judged it a false alarm and did not pass it up as an attack; sunlight on clouds had fooled the satellites.",
-  "sources": [
-   {
-    "title": "1983 Soviet nuclear false alarm incident",
-    "publisher": "Wikipedia",
-    "url": "https://en.wikipedia.org/wiki/1983_Soviet_nuclear_false_alarm_incident"
-   }
-  ],
-  "difficulty": 2,
-  "schoolSafe": true,
-  "solemn": true,
-  "tags": []
- },
- {
   "id": "seed-cadaver-synod",
-  "claim": "In 897 a pope put the exhumed corpse of his predecessor on trial.",
+  "claim": "In 897 a pope put the exhumed corpse of one of his predecessors on trial.",
   "verdict": "happened",
   "year": "897",
   "yearSort": 897,
@@ -195,6 +197,12 @@
     "title": "Cadaver Synod",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Cadaver_Synod"
+   },
+   {
+    "title": "The Strange Case of Pope Formosus",
+    "publisher": "Catholic Answers Magazine",
+    "url": "https://www.catholic.com/magazine/print-edition/the-strange-case-of-pope-formosus",
+    "quote": "In early 897, a bizarre event known as the “cadaver synod” occurred in St. John Lateran’s in Rome. The disinterred corpse of Pope Formosus (891–894) was brought before the then-reigning pontiff, Stephen VI (896–897), to be tried on a variety of charges."
    }
   ],
   "difficulty": 2,
@@ -217,6 +225,12 @@
     "title": "Benjamin Franklin",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Benjamin_Franklin"
+   },
+   {
+    "title": "Did Benjamin Franklin Want the National Bird To Be A Turkey?",
+    "publisher": "The Franklin Institute",
+    "url": "https://fi.edu/en/science-and-education/benjamin-franklin/national-bird",
+    "quote": "although Benjamin Franklin defended the honor of the turkey against the bald eagle, he did not propose it become one of America's most important symbols."
    }
   ],
   "difficulty": 2,
@@ -234,7 +248,7 @@
   "era": "ancient",
   "region": "Rome",
   "topic": "law",
-  "record": "Tanners and launderers bought urine from Rome's public latrines for its ammonia, and Vespasian made the trade pay tax. When his son Titus grumbled, the emperor held a coin from the first payment under his nose and asked if it smelled. The phrase pecunia non olet, 'money doesn't stink,' still carries the joke.",
+  "record": "Tanners and launderers bought urine from Rome's public latrines for its ammonia, and Vespasian made the trade pay tax. When his son Titus grumbled, the emperor held a coin from the first payment under Titus's nose and asked if it smelled. The phrase pecunia non olet, 'money doesn't stink,' still carries the joke.",
   "sources": [
    {
     "title": "Pecunia non olet",
@@ -336,7 +350,7 @@
   "era": "ancient",
   "region": "Egypt",
   "topic": "royalty",
-  "record": "Khufu's pyramid rose around 2600 BCE, roughly 2,500 years before Cleopatra was born in 69 BCE. Apollo 11 touched down in 1969, about 2,040 years after her birth. To Egypt's last Ptolemaic queen, Giza was already a relic of deep antiquity.",
+  "record": "Khufu's pyramid rose around 2600 BCE, roughly 2,500 years before Cleopatra was born in 70 or 69 BCE. Apollo 11 touched down in 1969, about 2,040 years after her birth. To Egypt's last Ptolemaic queen, Giza was already a relic of deep antiquity.",
   "sources": [
    {
     "title": "Did Cleopatra Really Live Closer In Time To The First Lunar Landing Than The Great Pyramids?",
@@ -349,6 +363,12 @@
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
     "quote": "It was built c. 2600 BC over a period of about 26 years."
+   },
+   {
+    "title": "Cleopatra - Life, Rule & Death",
+    "publisher": "HISTORY",
+    "url": "https://www.history.com/articles/cleopatra",
+    "quote": "Born in 70 or 69 B.C., Cleopatra was a daughter of Ptolemy XII (Auletes), a descendant of Ptolemy I Soter, one of Alexander The Great’s generals and the founder of the Macedonian Dynasty in Egypt."
    }
   ],
   "difficulty": 1,
@@ -438,7 +458,7 @@
   "era": "ancient",
   "region": "Greece",
   "topic": "transport",
-  "record": "Nero broke the ground with a pickaxe and carried off the first basket of soil, and 6,000 Judean prisoners dug trenches from both ends. They got about 700 metres, a tenth of the way, before the project died with Nero in 68. Ships had to wait until 1893.",
+  "record": "Nero broke the ground with a pickaxe and carried off the first basket of soil, and 6,000 Judean prisoners began cutting trenches from both ends. The dig was abandoned in 68, the year Nero died, and ships had to wait until 1893.",
   "sources": [
    {
     "title": "Corinth Canal",
@@ -451,6 +471,12 @@
     "publisher": "LacusCurtius, University of Chicago",
     "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Nero*.html",
     "quote": "at a signal given on a trumpet he was first to break ground with a mattock and to carry off a basketful of earth upon his shoulders."
+   },
+   {
+    "title": "The Wars of the Jews, Book III (Whiston translation)",
+    "publisher": "Project Gutenberg",
+    "url": "https://www.gutenberg.org/files/2850/2850-h/2850-h.htm",
+    "quote": "Out of the young men he chose six thousand of the strongest, and sent them to Nero, to dig through the Isthmus, and sold the remainder for slaves"
    }
   ],
   "difficulty": 2,
@@ -590,6 +616,12 @@
     "publisher": "e-flux",
     "url": "https://www.e-flux.com/notes/6783394/assassination-as-a-symptom",
     "quote": "His mission failed, and his death only hastened the unification of China under Qin rule."
+   },
+   {
+    "title": "Commemorating a Failed Assassin: The Making of the Jing Ke Lore in Early China",
+    "publisher": "Early China (Cambridge University Press)",
+    "url": "https://www.cambridge.org/core/journals/early-china/article/commemorating-a-failed-assassin-the-making-of-the-jing-ke-lore-in-early-china/AA42F52B4A539B88623ABD3F8BFB626C",
+    "quote": "Once in the Qin court, Jing Ke drew the dagger and attempted to capture the king alive. He failed and was instead executed."
    }
   ],
   "difficulty": 3,
@@ -685,7 +717,7 @@
   "era": "ancient",
   "region": "Egypt",
   "topic": "royalty",
-  "record": "A widowed queen, most often identified as Tutankhamun's wife Ankhesenamun, wrote to Hittite king Suppiluliuma I: send me a son, and 'in the land of Egypt he will be king!' After months of doubt he sent Prince Zannanza, who died on the road, probably murdered.",
+  "record": "A widowed queen, most often identified as Tutankhamun's wife Ankhesenamun, begged Hittite king Suppiluliuma I for a son: 'To me he will be husband, but in Egypt he will be king.' After months of doubt he sent Prince Zannanza, who died before reaching Egypt. Suppiluliuma blamed the Egyptians; how he died is unknown.",
   "sources": [
    {
     "title": "Zannanza",
@@ -720,8 +752,8 @@
   "era": "ancient",
   "region": "Egypt",
   "topic": "architecture",
-  "record": "Workers' tombs found beside the Giza pyramids since 1990 held builders buried with jars of bread and beer for the afterlife, an honor unthinkable for slaves. The paid laborers, around 10,000 of them, ate 21 cattle and 23 sheep sent daily from farms across Egypt.",
-  "origin": "The Greek historian Herodotus, writing some two thousand years after the pyramids rose, described their builders as slaves; Hollywood epics later spread the image of whip-driven slave gangs.",
+  "record": "Workers' tombs found beside the Giza pyramids since 1990 held builders buried in the king's shadow with jars of bread and beer for the afterlife, a privilege Egyptologists say slaves never had. By one estimate, about 10,000 laborers worked three-month shifts, fed 21 cattle and 23 sheep a day from farms across Egypt.",
+  "origin": "Herodotus, writing some two thousand years later, told of 100,000 Egyptians forced to toil for an oppressive king in three-month shifts; Hollywood epics later turned that into whip-driven slave gangs.",
   "sources": [
    {
     "title": "Egypt discovers workers' tombs near pyramids",
@@ -734,6 +766,12 @@
     "publisher": "CBC News (The Associated Press)",
     "url": "https://www.cbc.ca/news/science/tombs-suggest-pyramids-not-built-by-slaves-1.965867",
     "quote": "The ancient Greek historian, Herodotus, once described the pyramid builders as slaves, creating what Egyptologists say is a myth later propagated by Hollywood films."
+   },
+   {
+    "title": "The History of Herodotus, Vol. 1, Book II (Macaulay translation)",
+    "publisher": "Project Gutenberg",
+    "url": "https://www.gutenberg.org/files/2707/2707-h/2707-h.htm",
+    "quote": "for he shut up all the temples, and having first kept them from sacrificing there, he then bade all the Egyptians work for him."
    }
   ],
   "difficulty": 1,
@@ -860,7 +898,7 @@
   "era": "ancient",
   "region": "North Africa",
   "topic": "war",
-  "record": "Rome did raze Carthage, enslave its survivors and ban anyone from rebuilding, and ten senators ordered whatever remained destroyed. But no ancient writer mentions salt, and the land was not even cursed; only resettlement was forbidden.",
+  "record": "Rome did raze Carthage, enslave its survivors and forbid anyone to live there, and ten senators ordered whatever remained obliterated. But no ancient writer mentions salt; Appian even notes that simply walking on the site was not forbidden.",
   "origin": "The salting shows up in 19th-century reference books, then entered scholarship through B. L. Hallward's chapter in the 1930 Cambridge Ancient History and was long accepted as fact.",
   "sources": [
    {
@@ -880,6 +918,12 @@
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Siege_of_Carthage_(Third_Punic_War)",
     "quote": "the notion that Roman forces then sowed the city with salt is a 19th-century invention."
+   },
+   {
+    "title": "Appian, The Punic Wars 27 (Punica 135)",
+    "publisher": "Livius.org",
+    "url": "https://www.livius.org/sources/content/appian/appian-the-punic-wars/appian-the-punic-wars-27/",
+    "quote": "They decreed that if anything was still left of Carthage, Scipio should obliterate it and that nobody should be allowed to live there. Direful threats were leveled against any who should disobey and chiefly against the rebuilding of Byrsa or Megara, but it was not forbidden to go upon the ground."
    }
   ],
   "difficulty": 2,
@@ -902,7 +946,7 @@
   "region": "Greece",
   "topic": "art",
   "record": "Greek statues were painted, with colored eyes, hair and patterned clothing, and traces of pigment survive on well-preserved pieces. Time and weather stripped most of it away. Euripides even has Helen wish she could shed her beauty the way you would wipe color off a statue.",
-  "origin": "Renaissance artists took weathered, excavated statues at face value, and 18th-century critic Johann Winckelmann praised white marble as ideal beauty, dismissing believers in painted statues as eccentrics.",
+  "origin": "Excavated statues had lost most of their paint, and 18th-century critic Johann Winckelmann hailed white marble as ideal beauty; for generations after, antiquarians who pictured the statues in color were dismissed as eccentrics.",
   "sources": [
    {
     "title": "True Colors",
@@ -1047,7 +1091,7 @@
   "era": "20th-century",
   "region": "United States / Moon",
   "topic": "space",
-  "record": "Project A119, a secret 1958 Air Force study, settled on a small W25 warhead and had a young Carl Sagan modelling how the dust cloud would spread. The Air Force cancelled it in January 1959, and it stayed hidden until project leader Leonard Reiffel spoke out in 2000.",
+  "record": "Project A119, a secret 1958 Air Force study, settled on a small W25 warhead and had a young Carl Sagan modelling how the dust cloud would spread. The Air Force cancelled it in January 1959; the plan surfaced only in 1999–2000, via a Sagan biography and project leader Leonard Reiffel.",
   "sources": [
    {
     "title": "Project A119",
@@ -1060,6 +1104,12 @@
     "publisher": "HISTORY",
     "url": "https://www.history.com/articles/nuclear-bomb-moon-cold-war-plan",
     "quote": "Sometime before May 1958, the U.S. Air Force asked the ARF team to investigate something truly out of the ordinary: the visibility and effects of a hypothetical nuclear explosion on the moon."
+   },
+   {
+    "title": "US planned one big nuclear blast for mankind",
+    "publisher": "The Guardian (The Observer)",
+    "url": "https://www.theguardian.com/science/2000/may/14/spaceexploration.theobserver",
+    "quote": "Reiffel was approached by senior US Air Force officers in 1958, who asked him to 'fast-track' a project to investigate the visibility and effects of a nuclear explosion on the moon."
    }
   ],
   "difficulty": 2,
@@ -1572,6 +1622,12 @@
     "publisher": "Deseret News",
     "url": "https://www.deseret.com/2008/11/12/20285418/nasa-invented-tang-it-s-a-myth/",
     "quote": "Contrary to popular myth, Tang was NOT invented by NASA. The orange breakfast drink was developed in 1957 by General Foods, but it wasn't used in space until 1962."
+   },
+   {
+    "title": "Advertisement for Tang, \"Chosen for the Gemini Astronauts,\" 1966",
+    "publisher": "The Henry Ford",
+    "url": "https://www.thehenryford.org/collections/explore/artifact/379420",
+    "quote": "General Foods Corporation marketed Tang, a fruit flavored powdered drink, in 1959. Sales were poor until NASA selected it for use on John Glenn's 1962 Mercury flight and subsequent missions."
    }
   ],
   "difficulty": 2,
@@ -1636,8 +1692,8 @@
   "era": "20th-century",
   "region": "Cuba",
   "topic": "sport",
-  "record": "Castro pitched in university games, but baseball historian Peter Bjarkman found he was never a serious prospect or pursued by big-league scouts. The oft-quoted $5,000 New York Giants bonus has no documentary trail.",
-  "origin": "Largely 'Hoak's Hoax': ex-major-leaguer Don Hoak's June 1964 Sport magazine tale, written with Myron Cope, of facing a young Castro in Havana, later embellished by journalists and never denied by Castro.",
+  "record": "Castro pitched as a schoolboy, but baseball historian Peter Bjarkman found he never made the University of Havana team and was never a serious big-league prospect. The oft-quoted $5,000 New York Giants bonus rests on scouting reports nobody else has ever seen.",
+  "origin": "Don Hoak's invented 1964 Sport magazine tale, written with Myron Cope, of batting against a young Castro in Havana fed the legend; a 1989 Harper's piece by David Truby added the Giants and the $5,000 bonus.",
   "sources": [
    {
     "title": "Fidel Castro and Baseball",
@@ -1703,6 +1759,12 @@
     "title": "Jack-o'-lantern",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Jack-o'-lantern"
+   },
+   {
+    "title": "How Jack O'Lanterns Originated in Irish Myth",
+    "publisher": "HISTORY",
+    "url": "https://www.history.com/articles/history-of-the-jack-o-lantern-irish-origins",
+    "quote": "Immigrants from these countries brought their vegetable-carving traditions with them when they came to the United States"
    }
   ],
   "difficulty": 2,
@@ -1726,6 +1788,12 @@
     "title": "Harry Houdini",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Harry_Houdini"
+   },
+   {
+    "title": "October 31, 1926: Death Proves Inescapable for Even Houdini",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/smithsonian-institution/october-31-1926-death-proves-inescapable-for-even-houdini-122032841/",
+    "quote": "But this day in 1926 the Great Houdini was unable to cheat death one more time and succumbed to peritonitis resulting from a ruptured appendix at age 52."
    }
   ],
   "difficulty": 2,
@@ -1742,12 +1810,18 @@
   "era": "20th-century",
   "region": "North America",
   "topic": "culture",
-  "record": "Most listeners were tuned to a rival show, and few who heard it believed it. The legend of mass panic grew from newspaper stories written the next day, when papers were eager to show radio as irresponsible.",
+  "record": "Few people were even listening: a ratings survey that night found just 2% of those polled tuned to the play. Some listeners were genuinely frightened, but nothing like a nationwide stampede took place.",
   "sources": [
    {
     "title": "The War of the Worlds (1938 radio drama)",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/The_War_of_the_Worlds_(1938_radio_drama)"
+   },
+   {
+    "title": "The Myth of the War of the Worlds Panic",
+    "publisher": "Slate (Jefferson Pooley and Michael J. Socolow)",
+    "url": "https://slate.com/culture/2013/10/orson-welles-war-of-the-worlds-panic-myth-the-infamous-radio-broadcast-did-not-cause-a-nationwide-hysteria.html",
+    "quote": "In other words, 98 percent of those surveyed were listening to something else, or nothing at all, on Oct. 30, 1938."
    }
   ],
   "difficulty": 2,
@@ -1794,6 +1868,12 @@
     "title": "Dracula",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Dracula"
+   },
+   {
+    "title": "Dracula Lives! (in Philadelphia)",
+    "publisher": "Atlas Obscura",
+    "url": "https://www.atlasobscura.com/articles/bram-stoker-dracula-rosenbach",
+    "quote": "Stoker originally planned to call his vampire “Count Wampyr” but changed it to “Count Dracula”"
    }
   ],
   "difficulty": 3,
@@ -1810,12 +1890,18 @@
   "era": "early-modern",
   "region": "Europe",
   "topic": "law",
-  "record": "Historians estimate roughly 40,000 to 60,000 executions across Europe between about 1450 and 1750. Most took place in the early modern period, not the Middle Ages.",
+  "record": "Modern estimates mostly run from about 40,000 to 60,000 executions in Europe between roughly 1450 and 1750, and even high estimates stay under 100,000. Most took place in the early modern period, not the Middle Ages.",
   "sources": [
    {
     "title": "Witch trials in the early modern period",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Witch_trials_in_the_early_modern_period"
+   },
+   {
+    "title": "Witches: Origins, Wicca, Witch Hunts & Trials",
+    "publisher": "HISTORY",
+    "url": "https://www.history.com/articles/history-of-witches",
+    "quote": "Between the years 1500 and 1660, up to 80,000 suspected witches were put to death in Europe."
    }
   ],
   "difficulty": 2,
@@ -1839,6 +1925,12 @@
     "title": "Samhain",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Samhain"
+   },
+   {
+    "title": "Trick or Treat: A History of Halloween (excerpt, Lisa Morton, Reaktion Books)",
+    "publisher": "PopMatters",
+    "url": "https://www.popmatters.com/164786-trick-or-treat-a-history-of-halloween-2495802276.html",
+    "quote": "Vallancey believed this was a 'false derivation', and went on to state that Samhain was actually a Celtic deity who was also known as 'balsab… for Bal is lord, and Sab death'."
    }
   ],
   "difficulty": 2,
@@ -1884,6 +1976,12 @@
     "title": "Daemonologie",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Daemonologie"
+   },
+   {
+    "title": "The Scottish king who wrote a treatise on demonology and obsessed over witches",
+    "publisher": "The Conversation",
+    "url": "https://theconversation.com/the-scottish-king-who-wrote-a-treatise-on-demonology-and-obsessed-over-witches-268595",
+    "quote": "A few years later, James decided to write a treatise called Daemonologie, setting out his views on the relationship between witches and their master, the devil."
    }
   ],
   "difficulty": 2,
@@ -1906,13 +2004,19 @@
     "title": "Frankenstein",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Frankenstein"
+   },
+   {
+    "title": "Frankenstein: Penetrating the Secrets of Nature — Transformation of a Monster",
+    "publisher": "U.S. National Library of Medicine",
+    "url": "https://www.nlm.nih.gov/exhibition/frankenstein/exhibition4.html",
+    "quote": "Mary Shelley had not given her monster a name; later, audiences would use the word Frankenstein to refer both to the monster and his maker."
    }
   ],
   "difficulty": 1,
   "schoolSafe": true,
   "solemn": false,
   "tags": [],
-  "origin": "Stage and film adaptations, especially the 1931 Universal film, fused the creator's name onto the monster."
+  "origin": "Stage versions from 1823 and Universal's films from 1931 made the creature the star, and audiences moved its maker's name onto it."
  },
  {
   "id": "edison-frankenstein-1910",
@@ -1929,6 +2033,12 @@
     "title": "Frankenstein (1910 film)",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Frankenstein_(1910_film)"
+   },
+   {
+    "title": "Frankenstein (1910)",
+    "publisher": "AFI Catalog, American Film Institute",
+    "url": "https://catalog.afi.com/Catalog/moviedetails/38876",
+    "quote": "This was the first filmed version of Frankenstein"
    }
   ],
   "difficulty": 3,
@@ -1973,6 +2083,12 @@
     "title": "Charlie Chaplin",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Charlie_Chaplin"
+   },
+   {
+    "title": "Grave Robbers Once Held Charlie Chaplin's Body For Ransom",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/smart-news/grave-robbers-once-held-charlie-chaplins-body-ransom-180954443/",
+    "quote": "“They said, look, somebody dug up the grave and he's gone,” Chaplin's son Eugene recalled"
    }
   ],
   "difficulty": 2,
@@ -1989,12 +2105,18 @@
   "era": "medieval",
   "region": "Europe",
   "topic": "folklore",
-  "record": "There is no evidence Vlad III ever lived at Bran; at most he may have passed through the area. Bram Stoker never visited Romania, and there is no evidence he knew of the castle.",
+  "record": "Vlad III never lived at Bran, which was not under his rule, and his links to it are fleeting at best. Bram Stoker never visited Romania, and there is no evidence he knew of the castle.",
   "sources": [
    {
     "title": "Bran Castle",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Bran_Castle"
+   },
+   {
+    "title": "Visit 'Dracula's Castle' in Transylvania, Romania",
+    "publisher": "National Geographic",
+    "url": "https://www.nationalgeographic.com/travel/article/dracula-castle-things-to-do-brasov-transylvania",
+    "quote": "Stoker never visited Transylvania, much less Bran Castle."
    }
   ],
   "difficulty": 2,
@@ -2005,7 +2127,7 @@
  },
  {
   "id": "burke-and-hare-1828",
-  "claim": "In 1828 two Edinburgh men murdered at least 16 people to sell their bodies to an anatomy lecturer.",
+  "claim": "In 1828 two men in Edinburgh murdered at least 16 people to sell their bodies to an anatomy lecturer.",
   "verdict": "happened",
   "year": "1828",
   "yearSort": 1828,
@@ -2018,6 +2140,12 @@
     "title": "Burke and Hare murders",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Burke_and_Hare_murders"
+   },
+   {
+    "title": "Burke and Hare",
+    "publisher": "University of Edinburgh, College of Medicine and Veterinary Medicine",
+    "url": "https://medicine-vet-medicine.ed.ac.uk/about/history/burke-and-hare",
+    "quote": "Hare escaped by turning King's Evidence against Burke, and Burke was hanged on 28 January, 1829."
    }
   ],
   "difficulty": 2,
@@ -2040,6 +2168,12 @@
     "title": "Oliver Cromwell's head",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Oliver_Cromwell's_head"
+   },
+   {
+    "title": "Oliver Cromwell's head",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Oliver_Cromwell%27s_head",
+    "quote": "on a stormy night in the late 1680s, it was blown from the top of Westminster Hall, thrown to the ground"
    }
   ],
   "difficulty": 2,
@@ -2111,6 +2245,12 @@
     "title": "Anglo-Zanzibar War",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War"
+   },
+   {
+    "title": "Anniversary of the Shortest War in Human History: the Anglo-Zanzibar War",
+    "publisher": "British Online Archives",
+    "url": "https://britishonlinearchives.com/posts/category/notable-days/814/anniversary-of-the-shortest-war-in-human-history-the-anglo-zanzibar-war",
+    "quote": "Despite lasting only 38 minutes, the war included an artillery battle and naval action which claimed around 500 lives."
    }
   ],
   "difficulty": 1,
@@ -2155,6 +2295,12 @@
     "title": "Winston Churchill",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Winston_Churchill"
+   },
+   {
+    "title": "The Nobel Prize in Literature 1953",
+    "publisher": "The Nobel Prize (NobelPrize.org)",
+    "url": "https://www.nobelprize.org/prizes/literature/1953/summary/",
+    "quote": "for his mastery of historical and biographical description as well as for brilliant oratory in defending exalted human values"
    }
   ],
   "difficulty": 2,
@@ -2171,12 +2317,18 @@
   "era": "19th-century",
   "region": "Asia",
   "topic": "business",
-  "record": "Fusajiro Yamauchi founded Nintendo Koppai in Kyoto in 1889 to make handmade hanafuda playing cards. Video games came almost a century later.",
+  "record": "Fusajiro Yamauchi founded Nintendo Koppai in Kyoto in 1889 to make handmade hanafuda playing cards. Its first home video game machines arrived in 1977, 88 years later.",
   "sources": [
    {
     "title": "Nintendo",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Nintendo"
+   },
+   {
+    "title": "Company History",
+    "publisher": "Nintendo",
+    "url": "https://www.nintendo.co.jp/corporate/en/history/index.html",
+    "quote": "Fusajiro Yamauchi began manufacturing and selling Japanese playing cards, Hanafuda, in Shimogyo-ku, Kyoto, Japan."
    }
   ],
   "difficulty": 2,
@@ -2186,19 +2338,25 @@
  },
  {
   "id": "wojtek-the-soldier-bear",
-  "claim": "During World War II a brown bear was enlisted in the Polish army and helped carry artillery shells.",
+  "claim": "In World War II a brown bear was enlisted in the Polish army, complete with a rank and a service number.",
   "verdict": "happened",
   "year": "1942–1945",
   "yearSort": 1943,
   "era": "20th-century",
   "region": "Europe",
   "topic": "animals",
-  "record": "Wojtek was adopted as a cub by Polish soldiers in Iran and officially enlisted so he could travel with them. At the Battle of Monte Cassino in 1944 he is recorded carrying crates of ammunition.",
+  "record": "Polish soldiers adopted Wojtek as a cub in Iran in 1942 and signed him up so he could travel with them; he ended the war a corporal. Stories of him hauling shell crates at Monte Cassino made him the unit's emblem, though accounts differ on whether the crates were full.",
   "sources": [
    {
     "title": "Wojtek (bear)",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Wojtek_(bear)"
+   },
+   {
+    "title": "Wojtek the Bear: Surprising World War II Animal Hero",
+    "publisher": "TIME",
+    "url": "https://time.com/4731787/wojtek-the-bear-history/",
+    "quote": "The regiment changed its insignia to an image of the bear and an ammo shell and boasted that the bear was an 'enlisted' soldier, giving him a rank and number."
    }
   ],
   "difficulty": 2,
@@ -2221,6 +2379,12 @@
     "title": "Skylab",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Skylab"
+   },
+   {
+    "title": "First fine for littering from space",
+    "publisher": "Guinness World Records",
+    "url": "https://www.guinnessworldrecords.com/world-records/114725-first-fine-for-littering-from-space",
+    "quote": "the Shire of Esperance issued NASA with a fine of A$400 for littering"
    }
   ],
   "difficulty": 2,
@@ -2243,6 +2407,12 @@
     "title": "Napoleon",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Napoleon"
+   },
+   {
+    "title": "Was Napoleon Short? Origins of the 'Napoleon Complex'",
+    "publisher": "HISTORY",
+    "url": "https://www.history.com/articles/napoleon-complex-short",
+    "quote": "that equals around 1.67 meters, or just under 5'6\", which is a little above average for a French man"
    }
   ],
   "difficulty": 1,
@@ -2266,13 +2436,19 @@
     "title": "Albert Einstein",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+   },
+   {
+    "title": "Making the Grade - 20 Things You Need to Know About Einstein",
+    "publisher": "TIME",
+    "url": "https://content.time.com/time/specials/packages/article/0,28804,1936731_1936743_1936758,00.html",
+    "quote": "In 1935, a rabbi in Princeton showed him a clipping of the Ripley's column with the headline \"Greatest living mathematician failed in mathematics.\" Einstein laughed."
    }
   ],
   "difficulty": 1,
   "schoolSafe": true,
   "solemn": false,
   "tags": [],
-  "origin": "A 1935 'Ripley's Believe It or Not!' item and a mix-up over Swiss grading scales helped spread it; Einstein himself denied it."
+  "origin": "A 'Ripley's Believe It or Not!' column ran the headline 'Greatest living mathematician failed in mathematics'; shown it in 1935, Einstein denied it."
  },
  {
   "id": "great-wall-visible-from-space",
@@ -2289,13 +2465,19 @@
     "title": "Great Wall of China",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
+   },
+   {
+    "title": "Great Wall",
+    "publisher": "NASA",
+    "url": "https://www.nasa.gov/image-article/great-wall/",
+    "quote": "Despite myths to the contrary, the wall isn't visible from the moon, and is difficult or impossible to see from Earth orbit without the high-powered lenses used for this photo."
    }
   ],
   "difficulty": 1,
   "schoolSafe": true,
   "solemn": false,
   "tags": [],
-  "origin": "The idea appeared in print before anyone had been to space, including a 1932 Ripley's cartoon, and outlived every astronaut who said otherwise."
+  "origin": "The idea was in print long before spaceflight, from a 1754 letter by antiquary William Stukeley to a 1932 Ripley's cartoon, and has outlasted Apollo astronauts' reports that no human structure is visible from the Moon."
  },
  {
   "id": "declaration-signed-july-4",
@@ -2335,6 +2517,12 @@
     "title": "Paul Revere",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Paul_Revere"
+   },
+   {
+    "title": "The Real Story of Paul Revere's Ride",
+    "publisher": "Paul Revere House",
+    "url": "https://www.paulreverehouse.org/the-real-story/",
+    "quote": "a British patrol intercepted all three men. Prescott and Dawes escaped; Revere was held for some time, questioned, and let go"
    }
   ],
   "difficulty": 2,
@@ -2352,12 +2540,18 @@
   "era": "20th-century",
   "region": "Asia",
   "topic": "politics",
-  "record": "Gandhi was nominated five times between 1937 and 1948. He was murdered in January 1948, days before that year's nominations closed, and the committee awarded no prize that year, saying there was no suitable living candidate.",
+  "record": "Gandhi was nominated five times. In 1947 the Nobel committee split three to two against him; after his murder in January 1948 it seriously weighed a posthumous award, then gave no peace prize that year.",
   "sources": [
    {
     "title": "Mahatma Gandhi",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Mahatma_Gandhi"
+   },
+   {
+    "title": "Mahatma Gandhi, the missing laureate",
+    "publisher": "NobelPrize.org",
+    "url": "https://www.nobelprize.org/prizes/themes/mahatma-gandhi-the-missing-laureate/",
+    "quote": "We know little about the Norwegian Nobel Committee’s discussions on Gandhi’s candidature in 1948 – other than the above quoted entry of November 18 in Gunnar Jahn’s diary – but it seems clear that they seriously considered a posthumous award."
    }
   ],
   "difficulty": 2,
@@ -2380,6 +2574,12 @@
     "title": "Impeachment of Andrew Johnson",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Impeachment_of_Andrew_Johnson"
+   },
+   {
+    "title": "The Impeachment of Andrew Johnson (1868)",
+    "publisher": "United States Senate",
+    "url": "https://www.senate.gov/about/powers-procedures/impeachment/impeachment-johnson.htm",
+    "quote": "A clear majority voted against the president, but the tally fell one vote short of the necessary two-thirds majority to convict."
    }
   ],
   "difficulty": 2,
@@ -2424,6 +2624,12 @@
     "title": "Eiffel Tower",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Eiffel_Tower"
+   },
+   {
+    "title": "How the Eiffel Tower Was Saved From Being Demolished",
+    "publisher": "HISTORY",
+    "url": "https://www.history.com/articles/eiffel-tower-survival",
+    "quote": "The tower's scientific capabilities led to Eiffel receiving a 70-year extension on his permit"
    }
   ],
   "difficulty": 2,
@@ -2440,12 +2646,18 @@
   "era": "20th-century",
   "region": "North America",
   "topic": "politics",
-  "record": "On 30 October 1995, Quebecers voted on sovereignty. The No side won by 50.58% to 49.42%, a margin of about 55,000 votes out of nearly five million.",
+  "record": "On 30 October 1995, Quebecers voted on sovereignty. The No side won by 50.58% to 49.42%, a margin of 54,288 votes out of more than 4.6 million valid ballots, on a turnout of 93.5%.",
   "sources": [
    {
     "title": "1995 Quebec referendum",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/1995_Quebec_referendum"
+   },
+   {
+    "title": "Quebec Referendum (1995)",
+    "publisher": "The Canadian Encyclopedia",
+    "url": "https://www.thecanadianencyclopedia.ca/en/article/quebec-referendum-1995",
+    "quote": "Ultimately, after an emotional and somewhat controversial campaign, the \"No \" side achieved victory by a narrow majority of 50.58 per cent."
    }
   ],
   "difficulty": 2,
@@ -2468,6 +2680,12 @@
     "title": "1800 United States presidential election",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/1800_United_States_presidential_election"
+   },
+   {
+    "title": "Electoral College & Indecisive Elections",
+    "publisher": "US House of Representatives: History, Art & Archives",
+    "url": "https://history.house.gov/Institution/Origins-Development/Electoral-College/",
+    "quote": "The 1800 presidential election further tested the presidential selection system when Jefferson and Aaron Burr, the Republican candidates for President and Vice President, tied at 73 electoral ballots each."
    }
   ],
   "difficulty": 3,
@@ -2477,7 +2695,7 @@
  },
  {
   "id": "beatles-snl-reunion-1976",
-  "claim": "John Lennon and Paul McCartney accepted a live TV offer to reunite the Beatles for $3,000.",
+  "claim": "In 1976 John Lennon and Paul McCartney reunited the Beatles on live TV for a $3,000 fee.",
   "verdict": "almost",
   "year": "1976",
   "yearSort": 1976,
@@ -2533,12 +2751,18 @@
   "era": "19th-century",
   "region": "Europe",
   "topic": "disaster",
-  "record": "A hot summer turned the sewage-filled Thames into what newspapers called the Great Stink. MPs soaked the Parliament curtains in chloride of lime, then passed a bill in about 18 days to fund Joseph Bazalgette's sewer network.",
+  "record": "A hot summer turned the sewage-filled Thames into what the press called the Great Stink. Parliament's river-side curtains were soaked in chloride of lime, and on 2 August a new law let London's Metropolitan Board of Works borrow £3 million for Joseph Bazalgette's sewers.",
   "sources": [
    {
     "title": "Great Stink",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Great_Stink"
+   },
+   {
+    "title": "The Great Stink of 1858",
+    "publisher": "London Museum",
+    "url": "https://www.londonmuseum.org.uk/collections/london-stories/great-stink-of-1858/",
+    "quote": "Curtains and blinds were soaked in chloride of lime to block the smell. Parliament was sitting that summer, and MPs felt the full force of the stink."
    }
   ],
   "difficulty": 2,
@@ -2555,12 +2779,18 @@
   "era": "19th-century",
   "region": "Europe",
   "topic": "disaster",
-  "record": "A vat of porter at the Horse Shoe Brewery ruptured on 17 October 1814, bursting others. More than a million litres swept through the slum of St Giles, destroying houses and killing eight people.",
+  "record": "A 22-foot vat of porter at the Horse Shoe Brewery burst on 17 October 1814, rupturing others. Hundreds of thousands of litres of beer swept into the St Giles slum, demolishing homes; among the dead were mourners at a wake.",
   "sources": [
    {
     "title": "London Beer Flood",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/London_Beer_Flood"
+   },
+   {
+    "title": "The London Beer Flood of 1814",
+    "publisher": "Historic UK",
+    "url": "https://www.historic-uk.com/HistoryUK/HistoryofBritain/The-London-Beer-Flood-of-1814/",
+    "quote": "On Monday 17th October 1814, a terrible disaster claimed the lives of at least 8 people."
    }
   ],
   "difficulty": 2,
@@ -2627,6 +2857,12 @@
     "title": "Violet Jessop",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Violet_Jessop"
+   },
+   {
+    "title": "Servants at Sea: Violet Jessop",
+    "publisher": "Molly Brown House Museum",
+    "url": "https://mollybrown.org/servants-at-sea-violet-jessop/",
+    "quote": "She retired at the age of 63 after a 42 year career at sea- surviving the sinking of not one, but two White Star Line ships."
    }
   ],
   "difficulty": 2,
@@ -2649,6 +2885,12 @@
     "title": "Fanta",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Fanta"
+   },
+   {
+    "title": "Die bewegte Geschichte von Fanta",
+    "publisher": "The Coca-Cola Company (coca-cola.com, Switzerland)",
+    "url": "https://www.coca-cola.com/ch/de/about-us/die-geschichte-von-fanta",
+    "quote": "Im Jahr 1940 ist wegen des zweiten Weltkriegs die Einfuhr des Coca‑Cola Konzentrats in Deutschland verboten und sämtliche Rohstoffe sind knapp."
    }
   ],
   "difficulty": 2,
@@ -2693,6 +2935,12 @@
     "title": "Ghost Army",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Ghost_Army"
+   },
+   {
+    "title": "How the Ghost Army of WWII Used Art to Deceive the Nazis",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/history/how-the-ghost-army-of-wwii-used-art-to-deceive-the-nazis-180980336/",
+    "quote": "built on a skeleton of inflatable rubber tubes, covered by rubberized canvas"
    }
   ],
   "difficulty": 2,
@@ -2715,6 +2963,12 @@
     "title": "Beard tax",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Beard_tax"
+   },
+   {
+    "title": "Why Peter the Great Established a Beard Tax",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/smart-news/why-tsar-peter-great-established-beard-tax-180964693/",
+    "quote": "Those paying the tax were given a token, silver for nobility and copper for commoners."
    }
   ],
   "difficulty": 2,
@@ -2737,6 +2991,12 @@
     "title": "Window tax",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Window_tax"
+   },
+   {
+    "title": "The Window Tax: A Case Study in Excess Burden",
+    "publisher": "Journal of Economic Perspectives (American Economic Association)",
+    "url": "https://www.aeaweb.org/articles?id=10.1257%2Fjep.29.1.163",
+    "quote": "In spite of the pernicious health and aesthetic effects and despite widespread protests, the tax persisted for over a century and a half: it was finally repealed in 1851."
    }
   ],
   "difficulty": 2,
@@ -2781,6 +3041,12 @@
     "title": "Bubble wrap",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Bubble_wrap"
+   },
+   {
+    "title": "The Accidental Invention of Bubble Wrap",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/innovation/accidental-invention-bubble-wrap-180971325/",
+    "quote": "They were trying to create a textured wallpaper in 1957 that would appeal to the burgeoning Beat generation"
    }
   ],
   "difficulty": 2,
@@ -2803,6 +3069,12 @@
     "title": "Play-Doh",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Play-Doh"
+   },
+   {
+    "title": "The Accidental Invention of Play-Doh",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/innovation/accidental-invention-play-doh-180973527/",
+    "quote": "The much-loved children’s toy was a desperate spinoff of a putty used to clean soot off of wallpaper"
    }
   ],
   "difficulty": 2,
@@ -2812,19 +3084,25 @@
  },
  {
   "id": "ketchup-sold-as-medicine",
-  "claim": "In the 1830s tomato ketchup was sold in pill form as a medicine.",
+  "claim": "In the 1830s, pills made from tomato extract were sold in the US as a cure-all.",
   "verdict": "happened",
   "year": "1830s",
   "yearSort": 1834,
   "era": "19th-century",
   "region": "North America",
   "topic": "food",
-  "record": "Physician John Cook Bennett claimed tomatoes could treat diarrhoea, indigestion and jaundice, and published recipes for tomato ketchup. Imitators sold 'tomato pills' until the fad collapsed.",
+  "record": "Physician John Cook Bennett touted tomatoes as a remedy for diarrhoea, indigestion and jaundice, and printed recipes for tomato catsup. Patent-medicine makers followed with 'tomato pills', sold with the jingle 'tomato pills will cure all your ills', until the fad collapsed.",
   "sources": [
    {
     "title": "Ketchup",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Ketchup"
+   },
+   {
+    "title": "Tomatoes as Medicine",
+    "publisher": "JSTOR Daily",
+    "url": "https://daily.jstor.org/tomatoes-as-medicine",
+    "quote": "Meanwhile, Smith notes, other doctors began experimenting with cure-alls made from concentrated forms of tomatoes."
    }
   ],
   "difficulty": 3,
@@ -2891,6 +3169,12 @@
     "title": "Albert Einstein's brain",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Albert_Einstein's_brain"
+   },
+   {
+    "title": "Scientists Get A New Look At Einstein's Brain",
+    "publisher": "NPR",
+    "url": "https://www.npr.org/sections/health-shots/2012/11/19/165483381/scientists-get-a-new-look-at-einsteins-brain",
+    "quote": "In the hours after Einstein's death in 1955, the autopsy pathologist, Thomas Harvey, took dozens of photographs and dissected the physicist's brain into 240 parts for preservation."
    }
   ],
   "difficulty": 2,
@@ -2907,12 +3191,18 @@
   "era": "20th-century",
   "region": "Europe",
   "topic": "politics",
-  "record": "With France collapsing, Churchill's cabinet approved a Declaration of Union on 16 June 1940 offering joint citizenship and a single war cabinet. The French cabinet rejected it, and Paul Reynaud resigned that night.",
+  "record": "With France collapsing, Churchill's cabinet approved a Declaration of Union on 16 June 1940, offering common citizenship and a single war cabinet. Reynaud's ministers, bent on an armistice, met it with hostility; Pétain called it 'fusion with a corpse', and Reynaud resigned that night.",
   "sources": [
    {
     "title": "Franco-British Union",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Franco-British_Union"
+   },
+   {
+    "title": "June 1940: Britain's forgotten attempt to build a European Union",
+    "publisher": "LSE British Politics and Policy blog",
+    "url": "https://blogs.lse.ac.uk/politicsandpolicy/britain-and-the-first-attempt-to-build-a-european-union/",
+    "quote": "The declaration was drafted by Jean Monnet, Sir Arthur Salter, and Robert Vansittart, and called for a federal union with joint organs of defence, foreign, financial and economic policies, a common citizenship and a single War Cabinet."
    }
   ],
   "difficulty": 3,
@@ -2957,6 +3247,12 @@
     "title": "Albert Einstein",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+   },
+   {
+    "title": "When Albert Einstein Was Asked to Become President of Israel",
+    "publisher": "HISTORY",
+    "url": "https://www.history.com/articles/albert-einstein-presidency-israel",
+    "quote": "I am deeply moved by the offer from our State of Israel, and at once saddened and ashamed that I cannot accept it"
    }
   ],
   "difficulty": 2,
@@ -2973,12 +3269,18 @@
   "era": "20th-century",
   "region": "Europe",
   "topic": "war",
-  "record": "Russia's Baltic Fleet, jumpy on its way to fight Japan, mistook Hull trawlers for enemy torpedo boats and opened fire, killing three fishermen. Britain readied its fleet, but the crisis ended in an international inquiry and compensation.",
+  "record": "Russia's Baltic Fleet, jumpy on its way to fight Japan, mistook Hull trawlers for Japanese torpedo boats and opened fire, killing two fishermen. Britain ordered its Home Fleet to raise steam, but the crisis ended in an international inquiry and £66,000 in compensation.",
   "sources": [
    {
     "title": "Dogger Bank incident",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Dogger_Bank_incident"
+   },
+   {
+    "title": "M2626 | Maritime Memorials (Dogger Bank Incident memorial, Hessle Road, Hull)",
+    "publisher": "Royal Museums Greenwich",
+    "url": "https://memorials.rmg.co.uk/m2626/",
+    "quote": "TO THE MEMORY OF / GEORGE HENRY SMITH / (SKIPPER) / AND / WILLIAM RICHARD LEGGETT / (THIRD HAND)/OF THE ILL-FATED TRAWLER 'CRANE' / WHO LOST THEIR LIVES IN THE NORTH SEA / BY THE ACTION OF THE RUSSIAN BALTIC FLEET / OCTOBER 22ND 1904"
    }
   ],
   "difficulty": 3,
@@ -3001,6 +3303,12 @@
     "title": "Ulysses S. Grant",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Ulysses_S._Grant"
+   },
+   {
+    "title": "An Overlooked Success: How the Failed Annexation of Santo Domingo led to the Successful Prosecution of the Ku Klux Klan",
+    "publisher": "Not Even Past (University of Texas at Austin, Department of History)",
+    "url": "https://notevenpast.org/an-overlooked-success-how-the-failed-annexation-of-santo-domingo-led-to-the-successful-prosecution-of-the-ku-klux-klan/",
+    "quote": "The treaty for the annexation of the island of San Domingo to the United States was rejected by the Senate this afternoon by a vote of 28 to 28, being ten less than the required two-thirds to secure its ratification."
    }
   ],
   "difficulty": 3,
@@ -3067,6 +3375,12 @@
     "title": "Leonardo%27s horse",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Leonardo%27s_horse"
+   },
+   {
+    "title": "Leonardo's Horse: A Long Shot Pays Off",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/arts-culture/leonardos-horse-a-long-shot-pays-off-60946193/",
+    "quote": "But then a French army threatened and the metal was needed for cannon. When Milan fell in September 1499, Leonardo fled. French archers used the clay horse for target practice."
    }
   ],
   "difficulty": 2,
@@ -3089,6 +3403,12 @@
     "title": "Netflix",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Netflix"
+   },
+   {
+    "title": "Netflix cofounder Marc Randolph recalls Blockbuster rejecting chance to buy it",
+    "publisher": "Fortune",
+    "url": "https://www.fortune.com/2023/04/14/netflix-cofounder-marc-randolph-recalls-blockbuster-rejecting-chance-to-buy-it",
+    "quote": "In 2000, the two tried to sell their startup to Blockbuster for $50 million. They were flat-out rejected."
    }
   ],
   "difficulty": 2,
@@ -3105,12 +3425,18 @@
   "era": "20th-century",
   "region": "North America",
   "topic": "business",
-  "record": "Google's founders offered their search engine to Excite for about $750,000 in 1999. Excite's chief executive declined.",
+  "record": "Google's founders first offered Excite their search engine for $1 million in 1999. Investor Vinod Khosla haggled them down to about $750,000, but chief executive George Bell still turned it down.",
   "sources": [
    {
     "title": "Excite",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Excite"
+   },
+   {
+    "title": "History of Google",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/History_of_Google",
+    "quote": "Vinod Khosla...talked the duo down to $750,000, but Bell still rejected it"
    }
   ],
   "difficulty": 3,
@@ -3121,18 +3447,24 @@
  {
   "id": "esperanto-league-of-nations",
   "claim": "The League of Nations formally recommended that schools around the world teach Esperanto.",
-  "verdict": "almost",
+  "verdict": "happened",
   "year": "1921–1922",
   "yearSort": 1922,
   "era": "20th-century",
   "region": "Europe",
   "topic": "politics",
-  "record": "In 1921 and 1922, delegates from a dozen countries backed a League resolution recommending Esperanto be taught in schools. France, defending French as the language of diplomacy, blocked it.",
+  "record": "In September 1922 the League of Nations Assembly adopted a resolution recommending that member states teach Esperanto in schools. French delegate Gabriel Hanotaux had fought recognition for years; France retaliated by banning Esperanto lessons in its own schools.",
   "sources": [
    {
     "title": "Esperanto",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Esperanto"
+   },
+   {
+    "title": "Esperanto as an international auxiliary language. Report of the general Secretariat of the League of Nations adopted by the third Assembly, 1922",
+    "publisher": "League of Nations / UN Archives Geneva",
+    "url": "https://archives.ungeneva.org/esperanto-as-an-auxiliary-international-language-third-assembly-of-the-league-of-nations-report-submitted-by-the-fifth-committee-to-the-third-assembly-and-resolutions-adopted-by-the-assembly-21-september-1922",
+    "quote": "Resolutions adopted by the Assembly, 21 September 1922"
    }
   ],
   "difficulty": 3,
@@ -3149,12 +3481,18 @@
   "era": "19th-century",
   "region": "North America",
   "topic": "law",
-  "record": "The Titles of Nobility Amendment passed both houses of Congress in 1810 and was sent to the states. It fell short of the number of state ratifications needed and technically remains pending.",
+  "record": "The Titles of Nobility Amendment passed both houses of Congress in 1810 and went to the states. Between 1812 and 1816 it twice came within two states of ratification, and with no deadline set, it technically remains pending.",
   "sources": [
    {
     "title": "Titles of Nobility Amendment",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Titles_of_Nobility_Amendment"
+   },
+   {
+    "title": "Unratified Amendments: Titles of Nobility",
+    "publisher": "U.S. National Archives (Pieces of History)",
+    "url": "https://prologue.blogs.archives.gov/2020/01/30/unratified-amendments-titles-of-nobility/",
+    "quote": "The amendment was then sent to the state legislatures for ratification but never reached the three-fourths threshold to be added to the Constitution."
    }
   ],
   "difficulty": 3,
@@ -3177,6 +3515,12 @@
     "title": "Tom Selleck",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Tom_Selleck"
+   },
+   {
+    "title": "Tom Selleck talks losing 'Indiana Jones' role due to 'Magnum, P.I.'",
+    "publisher": "TODAY (NBC News)",
+    "url": "https://www.today.com/popculture/movies/tom-selleck-indiana-jones-magnum-pi-rcna151263",
+    "quote": "I was offered the role and wanted it, but I had done a pilot of 'Magnum.' And Steven Spielberg and George Lucas kept the offer out to me. They said, 'We'll work it out and you can do both.' And the more they wanted me, the more CBS said, 'No, we don't want to let him do it.'"
    }
   ],
   "difficulty": 2,
@@ -3221,6 +3565,12 @@
     "title": "Mongol invasions of Japan",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Mongol_invasions_of_Japan"
+   },
+   {
+    "title": "Japan's Kamikaze Winds, the Stuff of Legend, May Have Been Real",
+    "publisher": "National Geographic",
+    "url": "https://www.nationalgeographic.com/science/article/141104-kamikaze-kublai-khan-winds-typhoon-japan-invasion",
+    "quote": "Twice, in 1274 and 1281, Kublai sent his overwhelming forces across the Korea Strait, and twice his fleet was destroyed"
    }
   ],
   "difficulty": 2,
@@ -3243,6 +3593,12 @@
     "title": "Battle of Vienna",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Battle_of_Vienna"
+   },
+   {
+    "title": "The Period of the Turkish Sieges (1529 to 1683)",
+    "publisher": "City of Vienna",
+    "url": "https://www.wien.gv.at/en/education/history-turkish-sieges",
+    "quote": "The city walls as well as individual buildings in the inner city suffered severe damage."
    }
   ],
   "difficulty": 2,
@@ -3265,6 +3621,12 @@
     "title": "Attempted assassination of Franklin D. Roosevelt",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Attempted_assassination_of_Franklin_D._Roosevelt"
+   },
+   {
+    "title": "Assassination Attempt Lead Bullet Fragment in Case",
+    "publisher": "FDR Presidential Library & Museum (National Archives)",
+    "url": "https://fdr.blogs.archives.gov/2012/02/14/from-the-museum-32",
+    "quote": "Though a bystander deflected his hand, Zangara wounded four people and fatally shot Chicago Mayor Anton Cermak, who was standing beside Roosevelt's car."
    }
   ],
   "difficulty": 2,
@@ -3309,6 +3671,12 @@
     "title": "Monopoly (game)",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Monopoly_(game)"
+   },
+   {
+    "title": "Monopoly Was Designed to Teach the 99% About Income Inequality",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/arts-culture/monopoly-was-designed-teach-99-about-income-inequality-180953630/",
+    "quote": "It was a Quaker iteration that Darrow copied and sold to Parker Brothers in 1935"
    }
   ],
   "difficulty": 2,
@@ -3326,12 +3694,18 @@
   "era": "20th-century",
   "region": "North America",
   "topic": "business",
-  "record": "Santa appeared in red long before Coca-Cola's 1931 ads by Haddon Sundblom, including on magazine covers and in earlier ads for other products. The ads popularized a jolly, human-sized Santa, not the colour.",
+  "record": "Santa wore red and white on Puck magazine covers in the early 1900s, and a mineral-water firm used him in colour ads in the 1920s. Haddon Sundblom's Coca-Cola Santas, from 1931, fixed a warm, human-sized Santa in the public mind.",
   "sources": [
    {
     "title": "Santa Claus",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Santa_Claus"
+   },
+   {
+    "title": "Haddon Sundblom and the Coca-Cola Santas",
+    "publisher": "The Coca-Cola Company",
+    "url": "https://www.coca-colacompany.com/about-us/history/haddon-sundblom-and-the-coca-cola-santas",
+    "quote": "Nast continued to draw Santa for 30 years, changing the color of his coat from tan to the red he’s known for today."
    }
   ],
   "difficulty": 2,
@@ -3355,6 +3729,12 @@
     "title": "Fortune cookie",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Fortune_cookie"
+   },
+   {
+    "title": "Cracking Open the History of Fortune Cookies",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/arts-culture/cracking-open-the-history-of-fortune-cookies-28538557/",
+    "quote": "Chinese entrepreneurs stepped in to fill the void and by the end of the war they were indelibly associated with fortune cookies, whose popularity had spread nationwide."
    }
   ],
   "difficulty": 2,
@@ -3401,6 +3781,12 @@
     "title": "Croissant",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Croissant"
+   },
+   {
+    "title": "Is the Croissant Really French?",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/arts-culture/croissant-really-french-180955130/",
+    "quote": "the kipfel existed long before the Ottoman siege of Vienna"
    }
   ],
   "difficulty": 2,
@@ -3418,12 +3804,18 @@
   "era": "20th-century",
   "region": "Europe",
   "topic": "war",
-  "record": "British pilots were shooting down German bombers at night because of new airborne radar. The carrot story was encouraged to hide the radar, and to get the public eating a vegetable that was plentiful.",
+  "record": "RAF night fighters were finding German bombers with new airborne radar. British publicity credited carrots instead, possibly partly to mask the radar, while the Ministry of Food pushed a plentiful vegetable. Vitamin A only helps night vision in people who are deficient.",
   "sources": [
    {
     "title": "Carrot",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Carrot"
+   },
+   {
+    "title": "A WWII Propaganda Campaign Popularized the Myth That Carrots Help You See in the Dark",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/arts-culture/a-wwii-propaganda-campaign-popularized-the-myth-that-carrots-help-you-see-in-the-dark-28812484/",
+    "quote": "Though the British were “happy to go along with the story [of carrot-improved vision], they never set out to use it to fool the Germans,” Legate told Scientific American in 2014."
    }
   ],
   "difficulty": 2,
@@ -3441,19 +3833,25 @@
   "era": "19th-century",
   "region": "North America",
   "topic": "food",
-  "record": "Recipes for thin fried potato slices appeared in English cookbooks decades earlier, including William Kitchiner's in 1817. The Saratoga story, often told about chef George Crum, surfaced long after the fact.",
+  "record": "Recipes for thin fried potato slices appeared decades earlier, including William Kitchiner's in 1817, and a Saratoga cook named Eliza was famous for her fried potatoes by 1849. Crum's name was not linked to the dish until 1885.",
   "sources": [
    {
     "title": "Potato chip",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Potato_chip"
+   },
+   {
+    "title": "The Story of the Invention of the Potato Chip Is a Myth",
+    "publisher": "JSTOR Daily",
+    "url": "https://daily.jstor.org/story-invention-potato-chip-myth",
+    "quote": "In almost all its particulars, the story of George Crum's deep-fried stunt is wrong."
    }
   ],
   "difficulty": 3,
   "schoolSafe": true,
   "solemn": false,
   "tags": [],
-  "origin": "The tale of a prickly customer (sometimes said to be Cornelius Vanderbilt) was popularized in 20th-century advertising."
+  "origin": "The prickly-customer tale grew with retelling, and a 1970s paper-company advertisement cast Cornelius Vanderbilt as the diner, though he was in Europe that summer."
  },
  {
   "id": "walt-disney-cryogenically-frozen",
@@ -3493,6 +3891,12 @@
     "title": "Antonio Salieri",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Antonio_Salieri"
+   },
+   {
+    "title": "Salieri & the Poisoning of Mozart",
+    "publisher": "Wisconsin Public Radio (WPR)",
+    "url": "https://www.wpr.org/culture/salieri-poisoning-mozart",
+    "quote": "Although this is my final illness, I can say in good faith that there is no truth to the absurd rumor that I poisoned Mozart"
    }
   ],
   "difficulty": 2,
@@ -3510,19 +3914,25 @@
   "era": "medieval",
   "region": "Europe",
   "topic": "crime",
-  "record": "No reliable evidence shows the iron maiden was used in the Middle Ages. The surviving examples were assembled in the 18th and 19th centuries, often from unrelated pieces, for museums and showmen.",
+  "record": "There is no evidence of iron maidens before the 19th century. The examples shown in museums were pieced together then, often from unrelated old parts, for exhibitions and showmen.",
   "sources": [
    {
     "title": "Iron maiden",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Iron_maiden"
+   },
+   {
+    "title": "7 Famous Torture Devices, Real and Mythical",
+    "publisher": "HISTORY",
+    "url": "https://www.history.com/articles/7-famous-torture-devices-medieval-iron",
+    "quote": "The first known iron maidens were constructed in the 19th century, and passed off in museums as medieval torture devices."
    }
   ],
   "difficulty": 2,
   "schoolSafe": true,
   "solemn": false,
   "tags": [],
-  "origin": "Johann Philipp Siebenkees's 1793 account of an execution in Nuremberg, now considered a fabrication, launched the legend."
+  "origin": "Johann Philipp Siebenkees's late-18th-century tale of a 1515 execution in Nuremberg, which historians suspect he invented, launched the legend."
  },
  {
   "id": "guillotin-killed-by-guillotine",
@@ -3539,6 +3949,12 @@
     "title": "Joseph-Ignace Guillotin",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Joseph-Ignace_Guillotin"
+   },
+   {
+    "title": "French history myths: The inventor of guillotine was guillotined",
+    "publisher": "The Local France",
+    "url": "https://www.thelocal.fr/20220801/french-history-myths-the-inventor-of-guillotine-was-guillotined",
+    "quote": "During the Terror a doctor with a similar name was guillotined in Lyon, giving rise to the belief that Joseph-Ignace suffered this ironic death."
    }
   ],
   "difficulty": 2,
@@ -3585,6 +4001,12 @@
     "title": "Tulip mania",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Tulip_mania"
+   },
+   {
+    "title": "There Never Was a Real Tulip Fever",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/history/there-never-was-real-tulip-fever-180964915/",
+    "quote": "There weren't that many people involved and the economic repercussions were pretty minor"
    }
   ],
   "difficulty": 3,
@@ -3608,6 +4030,12 @@
     "title": "Battle of Zappolino",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Battle_of_Zappolino"
+   },
+   {
+    "title": "Palazzo Comunale di Modena",
+    "publisher": "VisitModena (City of Modena)",
+    "url": "https://www.visitmodena.it/en/discover-modena/art-and-culture/historic-buildings-and-castles/palazzo-comunale",
+    "quote": "the Secchia rapita (Stolen Bucket), a normal wooden bucket, reminding the people of Modena of their glorious victory against the Bolognese in 1325 in the battle of Zappolino."
    }
   ],
   "difficulty": 3,
@@ -3625,7 +4053,7 @@
   "era": "medieval",
   "region": "Europe",
   "topic": "royalty",
-  "record": "In the earliest version, told by Henry of Huntingdon in the 12th century, Cnut stages the scene to show his flattering courtiers that a king's power is nothing next to God's.",
+  "record": "In the earliest version, written by Henry of Huntingdon in the 12th century, Cnut lets the tide soak him to prove that a king's power is 'empty and worthless' beside God's. He then hung his gold crown on a crucifix and never wore it again.",
   "sources": [
    {
     "title": "King Canute and the tide",
@@ -3677,6 +4105,12 @@
     "title": "Evelyn Beatrice Hall",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Evelyn_Beatrice_Hall"
+   },
+   {
+    "title": "Quote Origin: I Disapprove of What You Say, But I Will Defend to the Death Your Right to Say It",
+    "publisher": "Quote Investigator",
+    "url": "https://quoteinvestigator.com/2015/06/01/defend-say/",
+    "quote": "is my own expression and should not have been put in inverted commas"
    }
   ],
   "difficulty": 3,
@@ -3700,6 +4134,12 @@
     "title": "Plate armour",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Plate_armour"
+   },
+   {
+    "title": "Debunking the biggest myths about knight's armour",
+    "publisher": "Sky HISTORY",
+    "url": "https://www.history.co.uk/shows/knight-fight/articles/debunking-the-biggest-myths-about-knights-armour",
+    "quote": "Mann was horrified to discover that his insights and expertise had been ignored, particularly during a scene in which Olivier’s Henry V is lifted onto his noble steed using a crane-like contraption."
    }
   ],
   "difficulty": 2,
@@ -3717,12 +4157,18 @@
   "era": "20th-century",
   "region": "North America",
   "topic": "politics",
-  "record": "In Milwaukee on 14 October 1912, a bullet slowed by his folded 50-page speech and glasses case lodged in Roosevelt's chest. He spoke for about an hour and a half before going to hospital.",
+  "record": "In Milwaukee on 14 October 1912, a bullet slowed by his folded 50-page speech and steel glasses case lodged in Roosevelt's chest muscle. He delivered the speech anyway, for somewhere between 50 and 90 minutes depending on the account, before going to hospital.",
   "sources": [
    {
     "title": "Attempted assassination of Theodore Roosevelt",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Attempted_assassination_of_Theodore_Roosevelt"
+   },
+   {
+    "title": "The Speech That Saved Teddy Roosevelt's Life",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/history/the-speech-that-saved-teddy-roosevelts-life-83479091/",
+    "quote": "the bullet had been slowed by the thick manuscript and the spectacles case."
    }
   ],
   "difficulty": 2,
@@ -3767,6 +4213,12 @@
     "title": "Thomas Jefferson",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Thomas_Jefferson"
+   },
+   {
+    "title": "Thomas Jefferson and John Adams die",
+    "publisher": "HISTORY",
+    "url": "https://www.history.com/this-day-in-history/july-4/thomas-jefferson-and-john-adams-die",
+    "quote": "His last words were, 'Thomas Jefferson still survives.' He was mistaken: Jefferson had died five hours earlier"
    }
   ],
   "difficulty": 2,
@@ -3789,6 +4241,12 @@
     "title": "James Monroe",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/James_Monroe"
+   },
+   {
+    "title": "James Monroe: Life After the Presidency",
+    "publisher": "Miller Center, University of Virginia",
+    "url": "https://millercenter.org/president/monroe/life-after-the-presidency",
+    "quote": "He died that year on July 4, in New York City. Monroe was the third of the first five Presidents to die on the Fourth of July"
    }
   ],
   "difficulty": 3,
@@ -3805,12 +4263,18 @@
   "era": "19th-century",
   "region": "North America",
   "topic": "politics",
-  "record": "Harrison spoke for nearly two hours in cold, wet weather on 4 March 1841 and died on 4 April. His illness was blamed on the speech at the time; modern analyses suggest a typhoid-like infection.",
+  "record": "Harrison read his 8,445-word address for nearly two hours on 4 March 1841, in a cold wind and without an overcoat, and died on 4 April. His death was long blamed on that raw day; a 2014 analysis argued enteric fever from Washington's tainted water was likelier.",
   "sources": [
    {
     "title": "William Henry Harrison",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/William_Henry_Harrison"
+   },
+   {
+    "title": "Science Rewrites the Death of America's Shortest-Serving President",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/smart-news/science-rewrites-death-americas-shortest-serving-president-180950343/",
+    "quote": "Harrison likely developed enteric fever, and that it was this, not pneumonia, that killed him."
    }
   ],
   "difficulty": 2,
@@ -3855,6 +4319,12 @@
     "title": "Defence Scheme No. 1",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Defence_Scheme_No._1"
+   },
+   {
+    "title": "Invasion plans",
+    "publisher": "Legion Magazine",
+    "url": "https://legionmagazine.com/invasion-plans/",
+    "quote": "It was more than just a thought experiment"
    }
   ],
   "difficulty": 3,
@@ -3864,19 +4334,25 @@
  },
  {
   "id": "vermont-independent-republic",
-  "claim": "Vermont was an independent republic for 14 years before joining the United States.",
+  "claim": "Vermont spent 14 years as an unrecognized independent state, with its own coins, before joining the US.",
   "verdict": "happened",
   "year": "1777–1791",
   "yearSort": 1777,
   "era": "early-modern",
   "region": "North America",
   "topic": "politics",
-  "record": "The Vermont Republic declared independence in 1777, issued its own coins and ran its own postal service. It became the 14th state in 1791.",
+  "record": "Vermont declared independence in January 1777 and, with no recognition from Congress or any foreign power, ran its own government, coinage and postal service. It became the 14th state on 4 March 1791.",
   "sources": [
    {
     "title": "Vermont Republic",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Vermont_Republic"
+   },
+   {
+    "title": "Discover and Learn | Vermont's 250th",
+    "publisher": "State of Vermont",
+    "url": "https://anniversary250.vermont.gov/discover-and-learn",
+    "quote": "Vermont remained a sovereign republic for fourteen years until January 1791, when it became the first state to join the Union following the ratification of the United States Constitution."
    }
   ],
   "difficulty": 2,
@@ -3899,6 +4375,12 @@
     "title": "Software bug",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Software_bug"
+   },
+   {
+    "title": "September 9: First Instance of Actual Computer Bug Being Found",
+    "publisher": "Computer History Museum",
+    "url": "https://www.computerhistory.org/tdih/september/9/",
+    "quote": "a moth caught between the relay contacts of the Harvard Mark II computer in Cambridge, Massachusetts. They taped the dead moth into the logbook for the computer."
    }
   ],
   "difficulty": 2,
@@ -3943,6 +4425,12 @@
     "title": "Sergei Krikalev",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Sergei_Krikalev"
+   },
+   {
+    "title": "Sergei K. Krikalev",
+    "publisher": "New Mexico Museum of Space History",
+    "url": "https://nmspacemuseum.org/inductee/sergei-k-krikalev/",
+    "quote": "On May 18, 1991, Sergei Krikalev returned to Mir as part of the Mir EO-9 crew"
    }
   ],
   "difficulty": 2,
@@ -3965,6 +4453,12 @@
     "title": "Kosmos 954",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Kosmos_954"
+   },
+   {
+    "title": "Previous nuclear incidents and accidents: COSMOS 954",
+    "publisher": "Health Canada (Canada.ca)",
+    "url": "https://www.canada.ca/en/health-canada/services/health-risks-safety/radiation/radiological-nuclear-emergencies/previous-incidents-accidents/cosmos-954.html",
+    "quote": "On 24 January 1978, COSMOS 954, a Soviet nuclear-powered surveillance satellite, crashed in the Northwest Territories."
    }
   ],
   "difficulty": 3,
@@ -3974,7 +4468,7 @@
  },
  {
   "id": "mars-climate-orbiter-units",
-  "claim": "NASA lost a Mars probe because one team used imperial units and another used metric.",
+  "claim": "NASA lost a Mars probe because one team used English units and another used metric.",
   "verdict": "happened",
   "year": "1999",
   "yearSort": 1999,
@@ -3987,6 +4481,12 @@
     "title": "Mars Climate Orbiter",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Mars_Climate_Orbiter"
+   },
+   {
+    "title": "Mars Climate Orbiter",
+    "publisher": "NASA Jet Propulsion Laboratory",
+    "url": "https://www.jpl.nasa.gov/missions/mars-climate-orbiter/",
+    "quote": "unsuccessful due to a navigation error caused by a failure to translate English units to metric"
    }
   ],
   "difficulty": 2,
@@ -4031,6 +4531,12 @@
     "title": "Mansa Musa",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Mansa_Musa"
+   },
+   {
+    "title": "Al-Umari's Account of Mansa Musa's Visit to Cairo",
+    "publisher": "World History Commons",
+    "url": "https://worldhistorycommons.org/al-umaris-account-mansa-musas-visit-cairo",
+    "quote": "They exchanged gold until they depressed its value in Egypt and caused its price to fall"
    }
   ],
   "difficulty": 2,
@@ -4053,6 +4559,12 @@
     "title": "L%27Anse aux Meadows",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/L%27Anse_aux_Meadows"
+   },
+   {
+    "title": "L'Anse aux Meadows National Historic Site",
+    "publisher": "Parks Canada",
+    "url": "https://parks.canada.ca/lhn-nhs/nl/meadows",
+    "quote": "Here Norse expeditions sailed from Greenland, building a small encampment of timber-and-sod buildings over 1000 years ago"
    }
   ],
   "difficulty": 1,
@@ -4062,7 +4574,7 @@
  },
  {
   "id": "cleopatra-learned-egyptian",
-  "claim": "Cleopatra was the first ruler of her dynasty to learn the Egyptian language.",
+  "claim": "Cleopatra was the first ruler of her dynasty known to have learned the Egyptian language.",
   "verdict": "happened",
   "year": "1st century BCE",
   "yearSort": -50,
@@ -4075,6 +4587,12 @@
     "title": "Cleopatra",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Cleopatra"
+   },
+   {
+    "title": "Plutarch, Life of Antony, 27 (trans. Bernadotte Perrin, Loeb Classical Library)",
+    "publisher": "LacusCurtius, University of Chicago",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony*.html",
+    "quote": "although the kings of Egypt before her had not even made an effort to learn the native language, and some actually gave up their Macedonian dialect."
    }
   ],
   "difficulty": 3,
@@ -4119,6 +4637,12 @@
     "title": "Art competitions at the Summer Olympics",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Art_competitions_at_the_Summer_Olympics"
+   },
+   {
+    "title": "When the Olympics Gave Out Medals for Art",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/arts-culture/when-the-olympics-gave-out-medals-for-art-6878965/",
+    "quote": "From 1912 to 1952, juries awarded a total of 151 medals to original works in the fine arts inspired by athletic endeavors"
    }
   ],
   "difficulty": 2,
@@ -4163,6 +4687,12 @@
     "title": "Athletics at the 1904 Summer Olympics – Men%27s marathon",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Athletics_at_the_1904_Summer_Olympics_–_Men%27s_marathon"
+   },
+   {
+    "title": "How the 1904 Marathon Became One of the Weirdest Olympic Events of All Time",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/history/how-the-1904-marathon-became-one-of-the-weirdest-olympic-events-of-all-time-14910747/",
+    "quote": "Seven miles from the finish, his handlers fed him a concoction of strychnine and egg whites—the first recorded instance of drug use in the modern Olympics"
    }
   ],
   "difficulty": 2,
@@ -4207,6 +4737,12 @@
     "title": "South Sea Company",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/South_Sea_Company"
+   },
+   {
+    "title": "The Market Crash That Cost Newton a Fortune",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/smart-news/market-crash-cost-newton-fortune-180961655/",
+    "quote": "Newton jumped back in at a much higher price—and lost £20,000 (or more than $3 million in today's money)"
    }
   ],
   "difficulty": 2,
@@ -4216,41 +4752,25 @@
  },
  {
   "id": "newton-master-of-the-mint",
-  "claim": "Isaac Newton spent his later career hunting counterfeiters for the Royal Mint.",
+  "claim": "Isaac Newton became a Royal Mint official who personally hunted down counterfeiters.",
   "verdict": "happened",
   "year": "1696–1727",
   "yearSort": 1699,
   "era": "early-modern",
   "region": "Europe",
   "topic": "science",
-  "record": "As Warden and then Master of the Royal Mint, Newton oversaw a great recoinage and personally pursued forgers. He gathered evidence in disguise and saw the counterfeiter William Chaloner hanged in 1699.",
+  "record": "As Warden of the Royal Mint from 1696, Newton oversaw a great recoinage and conducted more than 100 cross-examinations of witnesses, informers and suspects. He prosecuted 28 coiners, including William Chaloner, hanged in 1699.",
   "sources": [
    {
     "title": "Isaac Newton",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Isaac_Newton"
-   }
-  ],
-  "difficulty": 2,
-  "schoolSafe": true,
-  "solemn": false,
-  "tags": []
- },
- {
-  "id": "marie-curie-notebooks-radioactive",
-  "claim": "Marie Curie's notebooks are still so radioactive that readers must sign a waiver to see them.",
-  "verdict": "happened",
-  "year": "1890s–1930s",
-  "yearSort": 1898,
-  "era": "19th-century",
-  "region": "Europe",
-  "topic": "science",
-  "record": "Her papers are contaminated with radium, which has a half-life of about 1,600 years. They are stored in lead-lined boxes at the Bibliothèque nationale de France.",
-  "sources": [
+   },
    {
-    "title": "Marie Curie",
-    "publisher": "Wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Marie_Curie"
+    "title": "Isaac Newton",
+    "publisher": "Royal Mint Museum",
+    "url": "https://www.royalmintmuseum.org.uk/journal/people/isaac-newton/",
+    "quote": "The enormous operation was completed within three years, leaving Newton more time to devote to his main duty of investigating and bringing to justice those who clipped and counterfeited the coin of the realm."
    }
   ],
   "difficulty": 2,
@@ -4295,6 +4815,12 @@
     "title": "1958 Mars Bluff B-47 nuclear weapon loss incident",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/1958_Mars_Bluff_B-47_nuclear_weapon_loss_incident"
+   },
+   {
+    "title": "When the U.S. Air Force Accidentally Dropped an Atomic Bomb on Mars Bluff, South Carolina",
+    "publisher": "The Daily Beast",
+    "url": "https://www.thedailybeast.com/when-the-us-air-force-accidentally-dropped-an-atomic-bomb-on-mars-bluff-south-carolina/",
+    "quote": "a massive crater over 50 feet wide and 30 feet deep"
    }
   ],
   "difficulty": 3,
@@ -4317,6 +4843,12 @@
     "title": "Zimmermann Telegram",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Zimmermann_Telegram"
+   },
+   {
+    "title": "The Zimmermann Telegram",
+    "publisher": "U.S. National Archives",
+    "url": "https://www.archives.gov/education/lessons/zimmermann",
+    "quote": "In January 1917, British cryptographers deciphered a telegram from German Foreign Minister Arthur Zimmermann to the German Minister to Mexico, Heinrich von Eckhardt, offering United States territory to Mexico in return for joining the German cause."
    }
   ],
   "difficulty": 2,
@@ -4326,19 +4858,25 @@
  },
  {
   "id": "us-buys-danish-west-indies-1917",
-  "claim": "The United States bought the Virgin Islands from Denmark for $25 million in gold.",
+  "claim": "The United States bought what are now the US Virgin Islands from Denmark for $25 million in gold.",
   "verdict": "happened",
   "year": "1917",
   "yearSort": 1917,
   "era": "20th-century",
   "region": "North America",
   "topic": "politics",
-  "record": "Worried Germany might use the islands as a naval base, the US bought the Danish West Indies in 1917. They became the US Virgin Islands.",
+  "record": "Worried that Germany might seize the islands as a U-boat base, the US bought St Croix, St John and St Thomas from Denmark, which handed them over on 31 March 1917.",
   "sources": [
    {
     "title": "Danish West Indies",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Danish_West_Indies"
+   },
+   {
+    "title": "Transfer Day, a Significant Day in Virgin Islands History",
+    "publisher": "Legislature of the Virgin Islands",
+    "url": "https://legvi.org/transfer-day-a-significant-day-in-virgin-islands-history/",
+    "quote": "the United States agreed to purchase the Virgin Islands from a financially strapped Denmark for $25 million in gold coin"
    }
   ],
   "difficulty": 2,
@@ -4383,6 +4921,12 @@
     "title": "Fredric Baur",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Fredric_Baur"
+   },
+   {
+    "title": "Man's Final Resting Place: A Pringles Can",
+    "publisher": "CBS News",
+    "url": "https://www.cbsnews.com/news/mans-final-resting-place-a-pringles-can/",
+    "quote": "Baur's children said they honored his request to bury him in one of the cans by placing part of his cremated remains in a Pringles container in his grave"
    }
   ],
   "difficulty": 2,
@@ -4471,6 +5015,12 @@
     "title": "Gerald Ford",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Gerald_Ford"
+   },
+   {
+    "title": "The Unelected President",
+    "publisher": "National Archives Foundation",
+    "url": "https://archivesfoundation.org/newsletter/the-unelected-president/",
+    "quote": "the only person to serve as President without having been elected to either the vice presidency or the presidency"
    }
   ],
   "difficulty": 2,
@@ -4487,12 +5037,18 @@
   "era": "19th-century",
   "region": "North America",
   "topic": "war",
-  "record": "On 24 August 1814 British forces occupied Washington and set fire to the President's House, the Capitol and other buildings. First Lady Dolley Madison had the Gilbert Stuart portrait of Washington rescued first.",
+  "record": "On 24 August 1814 British forces occupied Washington and set fire to the President's House, the Capitol and other public buildings. Before fleeing, Dolley Madison ordered Gilbert Stuart's portrait of George Washington taken down and sent to safety.",
   "sources": [
    {
     "title": "Burning of Washington",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Burning_of_Washington"
+   },
+   {
+    "title": "Who saved the Gilbert Stuart painting of George Washington from the White House before it was burned in 1814?",
+    "publisher": "White House Historical Association",
+    "url": "https://www.whitehousehistory.org/questions/how-did-dolley-madison-save-george-washingtons-portrait",
+    "quote": "First Lady Dolley Madison ordered the Washington painting to be saved, and it was taken down off the wall and sent out of harm’s way by a group of individuals--Jean Pierre Sioussat, the White House steward; Paul Jennings, an enslaved worker; Thomas McGrath, the White House gardener; and two men from New York"
    }
   ],
   "difficulty": 1,
@@ -4561,6 +5117,12 @@
     "title": "Max Brod",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Max_Brod"
+   },
+   {
+    "title": "Kafka: Metamorphosis of an Author",
+    "publisher": "National Library of Israel",
+    "url": "https://www.nli.org.il/en/visit/exhibitions-and-displays/past-exhibitions/kafka-100-years",
+    "quote": "should be burned without exception and without their being read"
    }
   ],
   "difficulty": 2,
@@ -4577,12 +5139,18 @@
   "era": "early-modern",
   "region": "North America",
   "topic": "war",
-  "record": "Generals Richard Montgomery and Benedict Arnold attacked through a blizzard on 31 December 1775. Montgomery was killed, Arnold wounded, and hundreds of Americans captured.",
+  "record": "Richard Montgomery and Benedict Arnold attacked through a blizzard on 31 December 1775. Daniel Morgan's men broke through a barricade in the Lower Town, but Montgomery was killed, Arnold wounded and more than 400 Americans captured.",
   "sources": [
    {
     "title": "Battle of Quebec (1775)",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Battle_of_Quebec_(1775)"
+   },
+   {
+    "title": "Quebec (Battle of Quebec, 1775)",
+    "publisher": "American Battlefield Trust",
+    "url": "https://www.battlefields.org/learn/revolutionary-war/battles/quebec",
+    "quote": "Finally, at around 9 am, General Morgan and over 400 Americans surrendered and were taken prisoner by the British."
    }
   ],
   "difficulty": 2,
@@ -4605,6 +5173,12 @@
     "title": "Impeachment process against Richard Nixon",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Impeachment_process_against_Richard_Nixon"
+   },
+   {
+    "title": "Impeachment Inquiries into President Richard Nixon",
+    "publisher": "US House of Representatives: History, Art & Archives",
+    "url": "https://history.house.gov/HistoricalHighlight/Detail/15032448776",
+    "quote": "Nixon resigned on August 9 before the full House had an opportunity to vote on the articles."
    }
   ],
   "difficulty": 2,
@@ -4671,6 +5245,12 @@
     "title": "Georg Elser",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Georg_Elser"
+   },
+   {
+    "title": "Georg Elser and the Assassination Attempt of November 8, 1939",
+    "publisher": "German Resistance Memorial Center",
+    "url": "https://www.gdw-berlin.de/en/recess/topics/7-georg-elser-and-the-assassination-attempt-of-november-8-1939",
+    "quote": "On November 8, 1939, Hitler left the assembly room unexpectedly only minutes before the explosion, and thus evaded the assassination attempt."
    }
   ],
   "difficulty": 2,
@@ -4693,6 +5273,12 @@
     "title": "20 July plot",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/20_July_plot"
+   },
+   {
+    "title": "The July 20, 1944, Plot to Assassinate Adolf Hitler",
+    "publisher": "United States Holocaust Memorial Museum, Holocaust Encyclopedia",
+    "url": "https://encyclopedia.ushmm.org/content/en/article/the-july-20-1944-plot-to-assassinate-adolf-hitler",
+    "quote": "It detonated, but failed to kill Hitler."
    }
   ],
   "difficulty": 1,
@@ -4753,12 +5339,18 @@
   "era": "20th-century",
   "region": "Europe",
   "topic": "politics",
-  "record": "Members of the OAS riddled de Gaulle's Citroën DS with bullets in August 1962. Two tyres were shot out, but the car kept going and no one inside was badly hurt.",
+  "record": "OAS gunmen fired well over 100 rounds at de Gaulle's Citroën DS on 22 August 1962. Bullets passed inches from his head and two tyres were shot flat, but the driver sped away and no one in the car was hurt.",
   "sources": [
    {
     "title": "Jean Bastien-Thiry",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Jean_Bastien-Thiry"
+   },
+   {
+    "title": "'Close shave!' How De Gaulle escaped assassin's bullets 60 years ago",
+    "publisher": "France 24 (AFP)",
+    "url": "https://www.france24.com/en/live-news/20220821-close-shave-how-de-gaulle-escaped-assassin-s-bullets-60-years-ago",
+    "quote": "Three of the bullets penetrate the bodywork and pass within inches of De Gaulle's head but he and his wife Yvonne miraculously escape unharmed."
    }
   ],
   "difficulty": 2,
@@ -4797,19 +5389,25 @@
  },
  {
   "id": "norad-training-tape-1979",
-  "claim": "In 1979 US bombers took off to retaliate after NORAD screens showed a massive Soviet missile attack.",
+  "claim": "In 1979 the US launched a nuclear counterstrike after NORAD's computers showed 1,400 Soviet missiles inbound.",
   "verdict": "almost",
   "year": "1979",
   "yearSort": 1979,
   "era": "20th-century",
   "region": "North America",
   "topic": "war",
-  "record": "On 9 November 1979 a training scenario was mistakenly fed into live warning systems. Fighters were scrambled and bomber crews alerted, but satellite and radar data showed no launch within minutes, and no retaliation was ordered.",
+  "record": "A training tape loaded into NORAD's Cheyenne Mountain computers showed 1,400 Soviet ICBMs inbound. In the six minutes before satellite data proved it false, NORAD scrambled a dozen interceptors and launched the president's airborne command post; no missile was ever fired.",
   "sources": [
    {
     "title": "List of nuclear close calls",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/List_of_nuclear_close_calls"
+   },
+   {
+    "title": "False Warnings of Soviet Missile Attacks Put U.S. Forces on Alert in 1979-1980",
+    "publisher": "National Security Archive, George Washington University",
+    "url": "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2020-03-16/false-warnings-soviet-missile-attacks-during-1979-80-led-alert-actions-us-strategic-forces",
+    "quote": "warning displays showed... 1,400 Soviet ICBMs heading toward North America"
    }
   ],
   "difficulty": 3,
@@ -4832,6 +5430,12 @@
     "title": "Robert FitzRoy",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Robert_FitzRoy"
+   },
+   {
+    "title": "The Autobiography of Charles Darwin",
+    "publisher": "Project Gutenberg",
+    "url": "https://www.gutenberg.org/files/2010/2010-h/2010-h.htm",
+    "quote": "I had run a very narrow risk of being rejected, on account of the shape of my nose!"
    }
   ],
   "difficulty": 3,
@@ -4848,12 +5452,18 @@
   "era": "20th-century",
   "region": "Europe",
   "topic": "transport",
-  "record": "Latham took off from near Calais on 19 July 1909, but his engine failed and he ditched in the sea, where he was found sitting on the floating plane. Louis Blériot made the first crossing six days later.",
+  "record": "Latham took off near Calais on 19 July 1909, but his engine failed eight miles out and he waited on his floating plane, smoking a cigarette. Blériot crossed on 25 July; two days later Latham ditched again, minutes short of Dover.",
   "sources": [
    {
     "title": "Hubert Latham",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Hubert_Latham"
+   },
+   {
+    "title": "British Civil Aviation in 1909",
+    "publisher": "RAF Museum",
+    "url": "https://www.rafmuseum.org.uk/research/research-enquiries/history-of-aviation-timeline/british-civil-aviation/1909-2/",
+    "quote": "19 July Englishman Hubert Latham attempts to fly the English Channel by aeroplane, but has to ditch his Antoinette IV due to engine trouble."
    }
   ],
   "difficulty": 3,
@@ -4870,12 +5480,18 @@
   "era": "19th-century",
   "region": "North America",
   "topic": "politics",
-  "record": "Tilden won the popular vote and was one electoral vote short of a majority when three states' results were disputed. A special commission awarded all of them to Rutherford B. Hayes.",
+  "record": "Tilden won the popular vote and led 184 to 165 in electoral votes, one short of a majority, with 20 votes from four states in dispute. A special commission split 8 to 7 along party lines and awarded all 20 to Rutherford B. Hayes.",
   "sources": [
    {
     "title": "1876 United States presidential election",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/1876_United_States_presidential_election"
+   },
+   {
+    "title": "Disputed Election of 1876",
+    "publisher": "Miller Center, University of Virginia",
+    "url": "https://millercenter.org/the-presidency/educational-resources/disputed-election-1876",
+    "quote": "The commission voted 8 to 7 to award the electoral votes from South Carolina, Florida, and Louisiana (and one from Oregon) to Hayes."
    }
   ],
   "difficulty": 3,
@@ -4885,14 +5501,14 @@
  },
  {
   "id": "great-seal-moses-red-sea",
-  "claim": "The first Great Seal of the United States, adopted in 1782, showed Moses parting the Red Sea.",
+  "claim": "The Great Seal of the United States depicts Moses parting the Red Sea.",
   "verdict": "almost",
   "year": "1776–1782",
   "yearSort": 1782,
   "era": "early-modern",
   "region": "North America",
   "topic": "politics",
-  "record": "In 1776 Franklin, Jefferson and Adams proposed a seal showing the Israelites crossing the Red Sea. Congress tabled it, and the 1782 design used the bald eagle instead.",
+  "record": "In 1776 Benjamin Franklin proposed a Great Seal showing Moses drowning Pharaoh's army in the Red Sea. Congress tabled the design, and the seal finally adopted in 1782 showed a bald eagle instead.",
   "sources": [
    {
     "title": "Great Seal of the United States",
@@ -4920,6 +5536,12 @@
     "title": "Gettysburg Address",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Gettysburg_Address"
+   },
+   {
+    "title": "Myths and mysteries about the Gettysburg Address",
+    "publisher": "National Constitution Center",
+    "url": "https://constitutioncenter.org/blog/myths-and-mysteries-about-the-gettysburg-address",
+    "quote": "Lincoln started working on his remarks shortly after the battle was fought in July 1863, according to Lincoln experts"
    }
   ],
   "difficulty": 2,
@@ -4943,6 +5565,12 @@
     "title": "Topsy (elephant)",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Topsy_(elephant)"
+   },
+   {
+    "title": "Topsy the Elephant Was a Victim of Her Captors, Not Thomas Edison",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/smart-news/topsy-elephant-was-victim-her-captors-not-really-thomas-edison-180961611/",
+    "quote": "After all, the War of the Currents ended in the 1890s, while Topsy's death came later."
    }
   ],
   "difficulty": 3,
@@ -4966,6 +5594,12 @@
     "title": "Spanish flu",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Spanish_flu"
+   },
+   {
+    "title": "The Spanish Influenza Pandemic: a lesson from history 100 years after 1918",
+    "publisher": "Journal of Preventive Medicine and Hygiene (via PubMed Central)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6477554/",
+    "quote": "As Spain was neutral in the First World War, newspapers there were free to report the devastating effects that the 1918 pandemic virus was having in that country. Thus, it was generally perceived that the pandemic had originated in Spain, and the infection was incorrectly dubbed 'Spanish flu'."
    }
   ],
   "difficulty": 2,
@@ -5012,6 +5646,12 @@
     "title": "David Rice Atchison",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/David_Rice_Atchison"
+   },
+   {
+    "title": "No, David Rice Atchison Was Not 'President for a Day'",
+    "publisher": "United States Senate",
+    "url": "https://www.senate.gov/artandhistory/senate-stories/no-david-rice-atchison-was-not-president-for-a-day.htm",
+    "quote": "Atchison's existing term as senator and president pro tempore had ended at noon on March 4"
    }
   ],
   "difficulty": 3,
@@ -5035,6 +5675,12 @@
     "title": "Betsy Ross",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Betsy_Ross"
+   },
+   {
+    "title": "Did Betsy Ross Really Make the First American Flag?",
+    "publisher": "HISTORY",
+    "url": "https://www.history.com/articles/did-betsy-ross-really-make-the-first-american-flag",
+    "quote": "In fact, her story was first publicly relayed to the Historical Society of Pennsylvania nearly a century later, in 1870, by her grandson, William Canby."
    }
   ],
   "difficulty": 2,
@@ -5058,6 +5704,12 @@
     "title": "Liberty Bell",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Liberty_Bell"
+   },
+   {
+    "title": "The Liberty Bell",
+    "publisher": "National Park Service, Independence National Historical Park",
+    "url": "https://www.nps.gov/inde/learn/historyculture/stories-libertybell.htm",
+    "quote": "While there is evidence that the bell rang to mark the Stamp Act tax and its repeal, there is no evidence that the bell rang on July 4 or 8, 1776."
    }
   ],
   "difficulty": 2,
@@ -5121,12 +5773,18 @@
   "era": "ancient",
   "region": "Europe",
   "topic": "quotes",
-  "record": "The phrase is recorded only once, by Suetonius, from a staged naval battle on the Fucine Lake in 52 CE, and those fighters were condemned prisoners, not gladiators.",
+  "record": "The phrase is recorded for a single event, a staged naval battle on the Fucine Lake in 52 CE, described by Suetonius and Cassius Dio. Those fighters were condemned criminals and captives, and no source calls it a regular salute.",
   "sources": [
    {
     "title": "Ave Imperator, morituri te salutant",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Ave_Imperator,_morituri_te_salutant"
+   },
+   {
+    "title": "Suetonius, The Life of Claudius, 21 (Loeb translation, J. C. Rolfe)",
+    "publisher": "LacusCurtius, University of Chicago",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Claudius*.html",
+    "quote": "But when the combatants cried out: \"Hail, emperor, they who are about to die salute thee,\" he replied, \"Or not,\" and after that all of them refused to fight, maintaining that they had been pardoned."
    }
   ],
   "difficulty": 3,
@@ -5150,6 +5808,12 @@
     "title": "Myth of the flat Earth",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Myth_of_the_flat_Earth"
+   },
+   {
+    "title": "The Myth of the Flat Earth",
+    "publisher": "American Scientific Affiliation (Jeffrey Burton Russell, 1997)",
+    "url": "https://www.asa3.org/ASA/topics/history/1997Russell.html",
+    "quote": "It was he who invented the indelible picture of the young Columbus, a 'simple mariner,' appearing before a dark crowd of benighted inquisitors and hooded theologians at a council of Salamanca, all of whom believed, according to Irving, that the earth was flat like a plate."
    }
   ],
   "difficulty": 1,
@@ -5198,6 +5862,12 @@
     "title": "George Washington",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/George_Washington"
+   },
+   {
+    "title": "George Washington Didn't Have Wooden Teeth—They Were Ivory",
+    "publisher": "Smithsonian Magazine",
+    "url": "https://www.smithsonianmag.com/smart-news/george-washington-didnt-have-wooden-teeth-they-were-ivory-180953273/",
+    "quote": "Washington's dentures over the course of his lifetime used materials like human teeth along with bone and ivory from hippopotamus"
    }
   ],
   "difficulty": 1,
@@ -5221,13 +5891,19 @@
     "title": "Galileo affair",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Galileo_affair"
+   },
+   {
+    "title": "8 Things You May Not Know About Galileo",
+    "publisher": "HISTORY",
+    "url": "https://www.history.com/articles/8-things-you-may-not-know-about-galileo",
+    "quote": "Although Galileo was given life behind bars, his sentence soon was changed to house arrest"
    }
   ],
   "difficulty": 2,
   "schoolSafe": true,
   "solemn": false,
   "tags": [],
-  "origin": "Later retellings dramatized his punishment, turning house arrest into a dungeon."
+  "origin": "Retellings of the 'Eppur si muove' legend put him in a cell; a painting once attributed to Murillo shows him in a dungeon with the words on the wall."
  },
  {
   "id": "senate-ratifies-versailles",
@@ -5244,6 +5920,12 @@
     "title": "Treaty of Versailles",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Treaty_of_Versailles"
+   },
+   {
+    "title": "The Paris Peace Conference and the Treaty of Versailles",
+    "publisher": "US Department of State, Office of the Historian",
+    "url": "https://history.state.gov/milestones/1914-1920/paris-peace",
+    "quote": "In a final vote on March 19, 1920, the Treaty of Versailles fell short of ratification by seven votes."
    }
   ],
   "difficulty": 2,
@@ -5310,6 +5992,12 @@
     "title": "Ostend Manifesto",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Ostend_Manifesto"
+   },
+   {
+    "title": "An Abridged History of Cuban Independence",
+    "publisher": "Chicago History Museum",
+    "url": "https://www.chicagohistory.org/an-abridged-history-of-cuban-independence/",
+    "quote": "in 1848, US president James K. Polk formally offered the Spanish empire $100 million to purchase the island, an offer that Spain declined."
    }
   ],
   "difficulty": 3,
@@ -5326,12 +6014,18 @@
   "era": "19th-century",
   "region": "Europe",
   "topic": "technology",
-  "record": "The government put about £17,000 into Babbage's calculating machine, but only a small working section was assembled. The project was abandoned in 1842; a full engine was finally built from his plans by the Science Museum in 1991.",
+  "record": "The Treasury spent about £17,000, but work stopped in 1833 after a row with his engineer, leaving only a one-seventh demonstration section; the government formally gave up in 1842. The Science Museum finally built his later design, Difference Engine No. 2, in 1991, and it worked.",
   "sources": [
    {
     "title": "Difference engine",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Difference_engine"
+   },
+   {
+    "title": "Charles Babbage's Difference Engines and the Science Museum",
+    "publisher": "Science Museum",
+    "url": "https://www.sciencemuseum.org.uk/objects-and-stories/charles-babbages-difference-engines-and-science-museum",
+    "quote": "was abruptly halted in 1833 following a dispute with Clement and the engine was never built."
    }
   ],
   "difficulty": 3,
@@ -5392,12 +6086,18 @@
   "era": "early-modern",
   "region": "Europe",
   "topic": "war",
-  "record": "The Jacobites marched from Scotland as far as Derby, about 125 miles from London, where news of their advance caused panic. On 6 December 1745 their commanders voted to turn back north.",
+  "record": "The Jacobites reached Derby, about 125 miles from London, on 4 December 1745, causing panic in the capital. With no English rising or French landing in sight, their council voted on 5 December to turn back north.",
   "sources": [
    {
     "title": "Jacobite rising of 1745",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Jacobite_rising_of_1745"
+   },
+   {
+    "title": "Jacobite Risings",
+    "publisher": "National Army Museum",
+    "url": "https://www.nam.ac.uk/explore/jacobites",
+    "quote": "On 4 December 1745, Charles entered Derby. He was now only 200km (125 miles) from London, but his army was tired and weakened by desertion."
    }
   ],
   "difficulty": 2,
@@ -5420,6 +6120,12 @@
     "title": "Trent Affair",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Trent_Affair"
+   },
+   {
+    "title": "The Trent Affair, 1861",
+    "publisher": "US Department of State, Office of the Historian",
+    "url": "https://history.state.gov/milestones/1861-1865/trent-affair",
+    "quote": "The British, on the other hand, strongly protested Wilkes's action as illegal and a violation of their neutrality and demanded the release of the captive Confederate envoys as well as a formal apology."
    }
   ],
   "difficulty": 2,
@@ -5464,6 +6170,12 @@
     "title": "Martin Luther King Jr.",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Martin_Luther_King_Jr."
+   },
+   {
+    "title": "Izola Ware Curry",
+    "publisher": "The Martin Luther King, Jr. Research and Education Institute, Stanford University",
+    "url": "https://kinginstitute.stanford.edu/curry-izola-ware",
+    "quote": "Had Dr. King sneezed or coughed, the weapon would have penetrated the aorta.… He was just a sneeze away from death"
    }
   ],
   "difficulty": 2,
@@ -5480,12 +6192,18 @@
   "era": "ancient",
   "region": "Europe",
   "topic": "quotes",
-  "record": "The fiddle had not been invented. Tacitus says Nero was at Antium when the fire broke out and rushed back to organise relief; the rumour at the time was that he sang about the fall of Troy.",
+  "record": "The fiddle had not been invented. Tacitus says Nero was at Antium when the fire broke out, returned as it neared his palace and organised shelter and food; he reports the tale that Nero sang of Troy's fall only as a rumour.",
   "sources": [
    {
     "title": "Great Fire of Rome",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Great_Fire_of_Rome"
+   },
+   {
+    "title": "Tacitus, Annals, Book XV, 39 (Loeb translation, J. Jackson)",
+    "publisher": "LacusCurtius, University of Chicago",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/15B*.html",
+    "quote": "Nero, who at the time was staying in Antium, did not return to the capital until the fire was nearing the house by which he had connected the Palatine with the Gardens of Maecenas."
    }
   ],
   "difficulty": 1,
@@ -5503,12 +6221,18 @@
   "era": "early-modern",
   "region": "North America",
   "topic": "exploration",
-  "record": "No account written by the Pilgrims mentions a rock. The boulder was identified in 1741, more than 120 years later, by a 94-year-old man recalling what he had been told as a boy.",
+  "record": "No account written by the Pilgrims mentions a rock. The boulder was pointed out in 1741, 121 years later, by Thomas Faunce, a church elder in his nineties, recalling what his father had told him as a boy.",
   "sources": [
    {
     "title": "Plymouth Rock",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Plymouth_Rock"
+   },
+   {
+    "title": "History of Plymouth Rock",
+    "publisher": "Pilgrim Hall Museum",
+    "url": "https://www.pilgrimhall.org/history-of-plymouth-rock/",
+    "quote": "Neither mentions a rock in their account of the landing."
    }
   ],
   "difficulty": 2,
@@ -5555,6 +6279,12 @@
     "title": "Great Chicago Fire",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Great_Chicago_Fire"
+   },
+   {
+    "title": "Whodunit? The Mystery of Mrs. O'Leary's Cow",
+    "publisher": "Chicago Public Library",
+    "url": "https://www.chipublib.org/blogs/post/whodunit-the-mystery-of-mrs-olearys-cow/",
+    "quote": "In 1997, they passed a resolution exonerating Catherine O'Leary and the cow. The City Council did not name an alternate culprit"
    }
   ],
   "difficulty": 2,
@@ -5565,19 +6295,25 @@
  },
  {
   "id": "einstein-built-the-atomic-bomb",
-  "claim": "Albert Einstein worked on the Manhattan Project to build the first atomic bomb.",
+  "claim": "Albert Einstein worked at Los Alamos on the team that built the first atomic bomb.",
   "verdict": "lore",
   "year": "1942–1945",
   "yearSort": 1943,
   "era": "20th-century",
   "region": "North America",
   "topic": "science",
-  "record": "Einstein signed the 1939 letter warning President Roosevelt that Germany might build a bomb, but he was denied a security clearance and did not work on the Manhattan Project.",
+  "record": "Einstein signed the 1939 letter warning Roosevelt that Germany might build a bomb, but the Army judged him a security risk in 1940. He spent the war in Princeton, consulting for the US Navy on explosives, and never worked at Los Alamos.",
   "sources": [
    {
     "title": "Einstein–Szilard letter",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Einstein–Szilard_letter"
+   },
+   {
+    "title": "Albert Einstein",
+    "publisher": "Atomic Heritage Foundation (National Museum of Nuclear Science & History)",
+    "url": "https://ahf.nuclearmuseum.org/ahf/profile/albert-einstein/",
+    "quote": "Einstein played no role in the Manhattan Project, having been denied a security clearance in July 1940 due to his pacifist tendencies."
    }
   ],
   "difficulty": 2,
@@ -5601,6 +6337,12 @@
     "title": "SOS",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/SOS"
+   },
+   {
+    "title": "Why Titanic's first call for help wasn't an SOS signal",
+    "publisher": "National Geographic",
+    "url": "https://www.nationalgeographic.com/history/article/why-titanic-first-call-help-not-sos-signal",
+    "quote": "An international group including the United Kingdom had ratified SOS as the official international distress signal four years earlier in 1908"
    }
   ],
   "difficulty": 2,
@@ -5647,6 +6389,12 @@
     "title": "Mason Locke Weems",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Mason_Locke_Weems"
+   },
+   {
+    "title": "5 Myths About George Washington, Debunked",
+    "publisher": "HISTORY",
+    "url": "https://www.history.com/articles/top-george-washington-myths-cherry-tree-wooden-teeth",
+    "quote": "the cherry tree story didn't appear until the fifth edition came out in 1806"
    }
   ],
   "difficulty": 1,
@@ -5687,12 +6435,18 @@
   "era": "medieval",
   "region": "Europe",
   "topic": "religion",
-  "record": "There is no evidence Ireland had native snakes after the last Ice Age; they never recolonized the island once it was cut off by the sea.",
+  "record": "Ireland's fossil record shows no sign of native snakes at all. The island was too cold for reptiles during the last Ice Age, and rising seas cut it off from Britain before snakes could arrive.",
   "sources": [
    {
     "title": "Saint Patrick",
     "publisher": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Saint_Patrick"
+   },
+   {
+    "title": "Did St. Patrick Really Drive Snakes Out of Ireland?",
+    "publisher": "National Geographic",
+    "url": "https://www.nationalgeographic.com/animals/article/140315-saint-patricks-day-2014-snakes-ireland-nation",
+    "quote": "At no time has there ever been any suggestion of snakes in Ireland."
    }
   ],
   "difficulty": 2,
