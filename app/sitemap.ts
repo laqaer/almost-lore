@@ -6,7 +6,7 @@ const staticRoutes = [
   { path: "/", priority: 1, updated: site.updated },
   { path: "/about", priority: 0.6, updated: "2026-09-21" },
   { path: "/now", priority: 0.6, updated: "2026-09-21" },
-  { path: "/friends", priority: 0.6, updated: "2026-09-21" },
+  { path: "/friends", priority: 0.6, updated: "2026-09-26" },
   { path: "/privacy", priority: 0.6, updated: site.updated },
   { path: "/dossier", priority: 0.7, updated: "2026-09-26" },
   { path: "/dossier/thanks", priority: 0.2, updated: "2026-09-26" },

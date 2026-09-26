@@ -20,7 +20,7 @@ Published at `almostlore.com`. Set `NEXT_PUBLIC_SITE_URL` if the deploy URL shou
 | `/terms` | Price, delivery, and refund terms for the working file |
 | `/about` | Laqaer disclosure and editorial standards |
 | `/now` | Current editorial focus, longforms on the site, contact |
-| `/friends` | Blogroll of related public history and editorial sites |
+| `/friends` | Blogroll of people and their personal sites |
 | `/privacy` | Honest ads-later privacy page |
 
 No CMS, reader accounts, or picker widgets. Essays are typed content. Article JSON-LD is used only on story pages.
