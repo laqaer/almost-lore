@@ -28,7 +28,13 @@ export const metadata: Metadata = {
 };
 
 export default function NowPage() {
-  const published = [...stories].sort((a, b) => (a.published < b.published ? 1 : -1));
+  const published = [...stories].sort((a, b) => {
+    const byPublished = b.published.localeCompare(a.published);
+    if (byPublished !== 0) return byPublished;
+    const byUpdated = b.updated.localeCompare(a.updated);
+    if (byUpdated !== 0) return byUpdated;
+    return stories.indexOf(b) - stories.indexOf(a);
+  });
   const newest = published[0];
 
   return (
@@ -68,10 +74,11 @@ export default function NowPage() {
 
         <h2>What’s next</h2>
         <p>
-          The newest longform is the Pig War on San Juan Island. The Poyais essay now points at
-          a separate working file. That file is $9 only when the dossier page says card checkout
-          is open. There is still no newsletter and no account. Display ads are not running. If
-          they are added later to pay hosting, the about page and the privacy page will say so.
+          The newest longform is <Link href={storyPath(newest.slug)}>{newest.title}</Link>. The
+          Poyais essay now points at a separate working file. That file is $9 only when the
+          dossier page says card checkout is open. There is still no newsletter and no account.
+          Display ads are not running. If they are added later to pay hosting, the about page and
+          the privacy page will say so.
         </p>
 
         <h2>Contact</h2>
