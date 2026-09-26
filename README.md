@@ -17,6 +17,8 @@ Published at `almostlore.com`. Set `NEXT_PUBLIC_SITE_URL` if the deploy URL shou
 | `/stories/pig-war-san-juan` | Pig War, San Juan Island, 1859–1872 |
 | `/stories/caroline-affair` | Caroline Affair and the McLeod case, 1837–1842 |
 | `/stories/dogger-bank-1904` | Dogger Bank Incident, 1904 |
+| `/stories/trent-affair` | Trent Affair, 1861–1862 |
+| `/stories/venezuelan-crisis-1895` | Venezuelan Crisis, 1895–1899 |
 | `/dossier` | Paid Poyais working file. Checkout stays closed until Stripe is connected |
 | `/support` | Corrections and refund notes, stored for the publisher |
 | `/terms` | Price, delivery, and refund terms for the working file |
