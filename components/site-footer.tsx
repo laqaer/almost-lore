@@ -35,6 +35,11 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
+                <Link className="text-moss hover:text-rust" href="/contact">
+                  Contact
+                </Link>
+              </li>
+              <li>
                 <Link className="text-moss hover:text-rust" href="/now">
                   Now
                 </Link>

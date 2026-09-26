@@ -21,6 +21,7 @@ const ENDPOINT = "https://api.indexnow.org/indexnow";
 const PATHS = [
   "/",
   "/about",
+  "/contact",
   "/privacy",
   "/terms",
   "/support",
@@ -36,6 +37,8 @@ const PATHS = [
   "/stories/pig-war-san-juan",
   "/stories/caroline-affair",
   "/stories/dogger-bank-1904",
+  "/stories/trent-affair",
+  "/stories/venezuelan-crisis-1895",
 ];
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");

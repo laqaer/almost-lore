@@ -5,6 +5,7 @@ import { stories, storyPath } from "@/lib/stories";
 const staticRoutes = [
   { path: "/", priority: 1, updated: site.updated },
   { path: "/about", priority: 0.6, updated: "2026-09-21" },
+  { path: "/contact", priority: 0.6, updated: "2026-09-26" },
   { path: "/now", priority: 0.6, updated: "2026-09-21" },
   { path: "/friends", priority: 0.6, updated: "2026-09-26" },
   { path: "/privacy", priority: 0.6, updated: site.updated },
