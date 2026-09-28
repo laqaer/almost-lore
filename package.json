@@ -2,14 +2,14 @@
   "name": "almost-lore",
   "version": "1.0.0",
   "private": true,
-  "description": "Almost Lore — original longform on public-record historical near-misses (Mogul factory Site #4).",
+  "description": "Almost Lore — original longform on public-record historical near-misses.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "test": "node --test workers/ops/policy.test.js",
+    "test": "node --test --experimental-strip-types workers/ops/policy.test.js lib/ads.test.mts",
     "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {

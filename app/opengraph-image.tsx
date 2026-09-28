@@ -53,7 +53,7 @@ export default function OpenGraphImage() {
               maxWidth: 860,
             }}
           >
-            Original longform. No scraped threads. Uncertainty left visible.
+            Original longform from the public record. Uncertainty left visible.
           </div>
         </div>
         <div style={{ display: "flex", fontSize: 22, color: "#a89884" }}>

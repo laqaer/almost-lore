@@ -8,7 +8,7 @@ const title = "Now";
 const description =
   "What Almost Lore is focused on now: public-record near-misses, the longforms on the site, and how to send a correction.";
 
-const updated = "2026-09-26";
+const updated = "2026-09-27";
 
 export const metadata: Metadata = {
   title,
@@ -53,16 +53,15 @@ export default function NowPage() {
           is thin, the sentence stays thin.
         </p>
         <p>
-          The standard is on the <Link href="/about">about</Link> page: public record first, no
-          scraped threads, no invented counts.
+          The standard is on the <Link href="/about">about</Link> page: public record first,
+          sources named, uncertainty left visible.
         </p>
 
         <h2>Longforms on the site</h2>
         <p>
           {stories.length} longforms are published. The newest is{" "}
           <Link href={storyPath(newest.slug)}>{newest.title}</Link> ({newest.published}). Dates
-          below are the days those essays went up here. We do not publish traffic or revenue
-          figures.
+          below are the days those essays went up here.
         </p>
         <ul>
           {published.map((story) => (
@@ -76,9 +75,9 @@ export default function NowPage() {
         <p>
           The newest longform is <Link href={storyPath(newest.slug)}>{newest.title}</Link>. The
           Poyais essay now points at a separate working file. That file is $9 only when the
-          dossier page says card checkout is open. There is still no newsletter and no account.
-          Display ads are not running. If they are added later to pay hosting, the about page and
-          the privacy page will say so.
+          dossier page says card checkout is open. There is no newsletter and no account. If
+          display ads or affiliate links are added later to cover hosting, the about and privacy
+          pages will say so.
         </p>
 
         <h2>Contact</h2>

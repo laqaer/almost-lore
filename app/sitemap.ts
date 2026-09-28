@@ -1,18 +1,20 @@
 import type { MetadataRoute } from "next";
 import { site, siteUrl } from "@/lib/site";
 import { stories, storyPath } from "@/lib/stories";
+import { storyMedia } from "@/lib/stories/media";
 
+// `updated` is the day the page's content last changed. Pages reworked in the
+// 2026-09-27 pass carry that date; /terms was untouched and keeps the earlier one.
 const staticRoutes = [
-  { path: "/", priority: 1, updated: site.updated },
-  { path: "/about", priority: 0.6, updated: "2026-09-21" },
-  { path: "/contact", priority: 0.6, updated: "2026-09-26" },
-  { path: "/now", priority: 0.6, updated: "2026-09-21" },
-  { path: "/friends", priority: 0.6, updated: "2026-09-26" },
-  { path: "/privacy", priority: 0.6, updated: site.updated },
-  { path: "/dossier", priority: 0.7, updated: "2026-09-26" },
-  { path: "/dossier/thanks", priority: 0.2, updated: "2026-09-26" },
-  { path: "/support", priority: 0.4, updated: "2026-09-26" },
-  { path: "/terms", priority: 0.4, updated: "2026-09-26" },
+  { path: "/", priority: 1, updated: "2026-09-27" },
+  { path: "/about", priority: 0.6, updated: "2026-09-27" },
+  { path: "/contact", priority: 0.6, updated: "2026-09-27" },
+  { path: "/now", priority: 0.6, updated: "2026-09-27" },
+  { path: "/friends", priority: 0.6, updated: "2026-09-27" },
+  { path: "/privacy", priority: 0.6, updated: "2026-09-27" },
+  { path: "/dossier", priority: 0.7, updated: "2026-09-27" },
+  { path: "/support", priority: 0.4, updated: "2026-09-27" },
+  { path: "/terms", priority: 0.4, updated: site.updated },
 ] as const;
 
 // Build-time metadata route for Next.js static export.
@@ -28,11 +30,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: route.priority,
     })),
-    ...stories.map((story) => ({
-      url: `${base}${storyPath(story.slug)}`,
-      lastModified: new Date(story.updated),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    })),
+    ...stories.map((story) => {
+      const media = storyMedia[story.slug];
+      return {
+        url: `${base}${storyPath(story.slug)}`,
+        lastModified: new Date(story.updated),
+        changeFrequency: "monthly" as const,
+        priority: 0.8,
+        ...(media ? { images: [`${base}${media.src}`] } : {}),
+      };
+    }),
   ];
 }

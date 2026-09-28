@@ -9,7 +9,7 @@ export const fashodaStory: Story = {
   published: "2026-09-18",
   updated: "2026-09-18",
   sourcesNote:
-    "This essay is original prose. It follows the public diplomatic and military outline of the 1898 Fashoda meeting as it appears in contemporary British and French government statements, newspaper coverage of the autumn crisis, and later scholarly surveys of the Upper Nile question. Arrival dates at the fort are stable in the public file (Marchand on 10 July; Kitchener in the week of 18 September). Troop tallies, the exact calendar day of the first interview, and the precise wording of the November withdrawal instruction are not a single agreed ledger; where compilers disagree, the disagreement is named rather than averaged. We have not scraped Reddit, Wikipedia, or another site’s essay, and we invent no dialogue at the fort.",
+    "This essay is original prose. It follows the public diplomatic and military outline of the 1898 Fashoda meeting as it appears in contemporary British and French government statements, newspaper coverage of the autumn crisis, and later scholarly surveys of the Upper Nile question. Arrival dates at the fort are stable in the public file (Marchand on 10 July; Kitchener in the week of 18 September). Troop tallies, the exact calendar day of the first interview, and the precise wording of the November withdrawal instruction are not a single agreed ledger; where compilers disagree, the disagreement is named rather than averaged.",
   sections: [
     {
       paragraphs: [

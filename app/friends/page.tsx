@@ -70,8 +70,8 @@ export default function FriendsPage() {
       <div className="prose-page mt-8">
         <p>
           A list of people, and the personal websites they write on. A reader who wants the
-          footnote version of a near-miss may want these too. The notes are ours. None of these is
-          an ad, and none is an affiliate link.
+          footnote version of a near-miss may want these too. The notes are ours, and the links
+          are unpaid.
         </p>
         <ul>
           {friends.map((friend) => (

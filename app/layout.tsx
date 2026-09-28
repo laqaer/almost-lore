@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Newsreader, Source_Sans_3 } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { AdsScript } from "@/components/ads-script";
 import { JsonLd } from "@/components/json-ld";
 import { ogImage, openGraphImage } from "@/lib/metadata";
 import { websiteJsonLd } from "@/lib/schema";
@@ -37,7 +38,12 @@ export const metadata: Metadata = {
   description: site.description,
   applicationName: site.name,
   authors: [{ name: site.publisher }],
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    types: {
+      "application/rss+xml": [{ url: "/feed.xml", title: `${site.name} — stories` }],
+    },
+  },
   openGraph: {
     ...openGraphImage,
     url: siteUrl(),
@@ -72,6 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="folio-rule" aria-hidden />
         <main id="main">{children}</main>
         <SiteFooter />
+        <AdsScript />
       </body>
     </html>
   );

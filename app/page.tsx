@@ -1,90 +1,193 @@
+import Image from "next/image";
 import Link from "next/link";
+import { AdSlot } from "@/components/ad-slot";
 import { site } from "@/lib/site";
-import { readingMinutes, stories, storyPath } from "@/lib/stories";
+import { getStory, readingMinutes, stories, storyPath } from "@/lib/stories";
+import { storyMedia } from "@/lib/stories/media";
+
+type Era = { id: string; name: string; blurb: string };
+
+const eras: Era[] = [
+  {
+    id: "before-1800",
+    name: "Before 1800",
+    blurb: "Companies, colonies, and the long eighteenth century.",
+  },
+  {
+    id: "1800s",
+    name: "The Nineteenth Century",
+    blurb: "Loans, borders, and empires at their confident peak.",
+  },
+  {
+    id: "1900-onward",
+    name: "1900 Onward",
+    blurb: "The modern record, including the experiments nobody announced.",
+  },
+];
+
+// Explicit departments instead of parsing `yearLabel`. The invariant below fails
+// the build if a story is ever added without a home.
+const departments: { era: Era; slugs: string[] }[] = [
+  {
+    era: eras[0],
+    slugs: ["aqua-tofana-myth-vs-record", "darien-scheme", "bering-island-winter"],
+  },
+  {
+    era: eras[1],
+    slugs: [
+      "poyais-invented-country",
+      "forgotten-scheme",
+      "caroline-affair",
+      "aroostook-war",
+      "pig-war-san-juan",
+      "trent-affair",
+      "venezuelan-crisis-1895",
+      "fashoda-incident-1898",
+    ],
+  },
+  {
+    era: eras[2],
+    slugs: ["dogger-bank-1904", "san-francisco-fog-1950", "balloon-almost-atlantic"],
+  },
+];
+
+const placedSlugs = departments.flatMap((department) => department.slugs);
+if (
+  placedSlugs.length !== stories.length ||
+  new Set(placedSlugs).size !== stories.length ||
+  placedSlugs.some((slug) => !getStory(slug))
+) {
+  throw new Error("Homepage departments must list every story exactly once.");
+}
+
+function Credit({ slug }: { slug: string }) {
+  const media = storyMedia[slug];
+  if (!media) return null;
+  return (
+    <figcaption className="mt-2 text-xs text-ink-faint">
+      {media.creditUrl ? (
+        <a className="underline underline-offset-2 hover:text-rust" href={media.creditUrl} rel="noopener">
+          {media.credit}
+        </a>
+      ) : (
+        media.credit
+      )}
+    </figcaption>
+  );
+}
 
 export default function HomePage() {
+  const [lead, ...rest] = stories;
+  const restSlugs = new Set(rest.map((story) => story.slug));
+
   return (
-    <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6">
-      <section className="max-w-3xl">
-        <p className="text-xs font-medium uppercase tracking-[0.18em] text-rust">A Laqaer reader</p>
-        <h1 className="mt-3 font-display text-5xl leading-[1.1] text-ink sm:text-6xl">
-          The hook got you here. The record is the story.
-        </h1>
-        <p className="mt-6 max-w-2xl text-xl leading-8 text-ink-soft">
-          {site.name} writes original longform about historical near-misses and strange public
-          facts — the invented country, the poison legend, the balloon that ditched a hundred miles
-          short, the subway that ran one block, the almost-war on the Nile, the boundary dispute
-          remembered for a pig. We do not scrape Reddit. We do not invent traffic, reviews, or a
-          body count the archive will not support.
-        </p>
-      </section>
-
-      <section className="mt-14 grid gap-10 border-t border-rule pt-12 md:grid-cols-2">
-        <div>
-          <h2 className="font-display text-3xl text-ink">What this is</h2>
-          <div className="prose-page mt-4">
-            <p>
-              Almost Lore is a small editorial site from {site.publisher}. Each piece starts from
-              well-documented public facts — loans, trial files, contemporaneous news, municipal
-              charters — and is written as a story with the uncertainty left in. If a later writer
-              turned a rumor into a round number, we say so.
-            </p>
-            <p>
-              It is not a CMS or a scoreboard. There are no accounts and no affiliate tags. The
-              essays are free. One printable working file, for the Poyais essay, is described on
-              its own page and can be bought only when card checkout is actually open. Display ads
-              are not running.
-            </p>
-          </div>
-        </div>
-        <div>
-          <h2 className="font-display text-3xl text-ink">How a Reddit hook leads here</h2>
-          <div className="prose-page mt-4">
-            <p>
-              A compressed line travels: a man sold a country that was not on the map; a cosmetic
-              killed six hundred husbands; New York had a secret subway; two empires almost fought
-              over a Nile fort. Those lines are useful as doors. They are poor as essays. People
-              land here when they want the version that can survive a footnote.
-            </p>
-            <p>
-              We do not paste threads, harvest comments, or rewrite someone else’s post. If you
-              arrived from a hook, the index below is the sourced longform — original prose, labeled
-              gaps, no fake certainty.
-            </p>
-          </div>
+    <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="grid items-start gap-8 py-10 lg:grid-cols-12 lg:gap-12">
+        {storyMedia[lead.slug] ? (
+          <figure className="lg:col-span-7">
+            <Link aria-label={`Read: ${lead.title}`} className="block" href={storyPath(lead.slug)}>
+              <Image
+                alt={storyMedia[lead.slug].alt}
+                className="h-auto w-full bg-paper-deep"
+                height={storyMedia[lead.slug].height}
+                priority
+                sizes="(min-width: 1024px) 58vw, 100vw"
+                src={storyMedia[lead.slug].src}
+                unoptimized
+                width={storyMedia[lead.slug].width}
+              />
+            </Link>
+            <Credit slug={lead.slug} />
+          </figure>
+        ) : null}
+        <div className="lg:col-span-5">
+          <p className="kicker">{lead.yearLabel} · Lead story</p>
+          <h1 className="mt-3 font-display text-3xl leading-[1.1] text-ink sm:text-4xl lg:text-5xl">
+            <Link className="hover:text-rust" href={storyPath(lead.slug)}>
+              {lead.title}
+            </Link>
+          </h1>
+          <p className="mt-4 text-lg leading-8 text-ink-soft">{lead.dek}</p>
+          <p className="mt-4 text-sm text-ink-faint">{readingMinutes(lead)} min read</p>
+          <Link
+            className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-teal hover:text-rust"
+            href={storyPath(lead.slug)}
+          >
+            Read the story <span aria-hidden>→</span>
+          </Link>
         </div>
       </section>
 
-      <section id="stories" className="mt-16">
-        <h2 className="font-display text-3xl text-ink">Stories</h2>
-        <p className="mt-3 max-w-2xl text-ink-soft">
-          Public-record near-misses. Read one, or start with the hook you already know.
-        </p>
-        <ul className="mt-8 divide-y divide-rule border-y border-rule">
-          {stories.map((story) => (
-            <li key={story.slug} className="py-8">
-              <p className="text-xs font-medium uppercase tracking-[0.16em] text-rust">
-                {story.yearLabel} · {readingMinutes(story)} min
-              </p>
-              <h3 className="mt-2 font-display text-3xl leading-tight text-ink">
-                <Link className="hover:text-rust" href={storyPath(story.slug)}>
-                  {story.title}
-                </Link>
-              </h3>
-              <p className="mt-3 max-w-3xl text-lg leading-7 text-ink-soft">{story.dek}</p>
-              <p className="mt-3 font-serif text-ink">
-                <span className="text-ink-faint">Hook. </span>
-                {story.hook}
-              </p>
-              <p className="mt-4">
-                <Link className="text-sm text-moss underline underline-offset-3 hover:text-rust" href={storyPath(story.slug)}>
-                  Read the essay
-                </Link>
-              </p>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <AdSlot className="mt-12" />
+
+      <div id="stories" className="scroll-mt-6">
+        {departments.map(({ era, slugs }) => {
+          const items = slugs.flatMap((slug) => {
+            const story = restSlugs.has(slug) ? getStory(slug) : undefined;
+            return story ? [story] : [];
+          });
+
+          if (items.length === 0) return null;
+
+          return (
+            <section
+              key={era.id}
+              aria-labelledby={`era-${era.id}`}
+              className="mt-14 border-t border-rule pt-8"
+            >
+              <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+                <h2 className="font-display text-2xl text-ink" id={`era-${era.id}`}>
+                  {era.name}
+                </h2>
+                <p className="kicker">
+                  {items.length} {items.length === 1 ? "story" : "stories"}
+                </p>
+              </div>
+              <p className="mt-2 max-w-2xl text-sm text-ink-soft">{era.blurb}</p>
+              <ul className="mt-7 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+                {items.map((story) => (
+                  <li key={story.slug} className="flex flex-col">
+                    {storyMedia[story.slug] ? (
+                      <figure className="flex flex-col">
+                        <Link
+                          aria-label={`Read: ${story.title}`}
+                          className="block"
+                          href={storyPath(story.slug)}
+                        >
+                          <span className="relative block aspect-[4/3] bg-paper-deep">
+                            <Image
+                              alt={storyMedia[story.slug].alt}
+                              className="object-contain"
+                              fill
+                              sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
+                              src={storyMedia[story.slug].src}
+                              unoptimized
+                            />
+                          </span>
+                        </Link>
+                        <Credit slug={story.slug} />
+                      </figure>
+                    ) : null}
+                    <p className="kicker mt-4">{story.yearLabel}</p>
+                    <h3 className="mt-2 font-display text-xl leading-tight text-ink">
+                      <Link className="hover:text-rust" href={storyPath(story.slug)}>
+                        {story.title}
+                      </Link>
+                    </h3>
+                    <p className="mt-2 line-clamp-3 text-sm leading-6 text-ink-soft">{story.dek}</p>
+                    <p className="mt-2 text-xs text-ink-faint">{readingMinutes(story)} min read</p>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          );
+        })}
+      </div>
+
+      <p className="mt-14 border-t border-rule pt-6 text-sm text-ink-soft">
+        {site.name} is an editorial archive of {stories.length} longform essays. Start anywhere; every
+        piece stands on its own.
+      </p>
     </div>
   );
 }

@@ -4,16 +4,18 @@
   --font-sans: var(--font-sans-body), "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-serif-body), "Newsreader", ui-serif, Georgia, serif;
   --font-display: var(--font-fraunces), "Fraunces", ui-serif, Georgia, serif;
-  --color-paper: #f3eadc;
-  --color-paper-deep: #e6d7c2;
-  --color-card: #faf3e8;
-  --color-ink: #2c2218;
-  --color-ink-soft: #5c4c3c;
-  --color-ink-faint: #7a6a58;
-  --color-rule: #d4c3ac;
-  --color-rust: #9c3d28;
-  --color-rust-soft: #ead3c6;
-  --color-moss: #3d5344;
+  --color-paper: #ffffff;
+  --color-paper-deep: #f5f4f1;
+  --color-card: #ffffff;
+  --color-ink: #13171a;
+  --color-ink-soft: #3f474d;
+  --color-ink-faint: #626c73;
+  --color-rule: #e1e3e2;
+  --color-rust: #b0431d;
+  --color-rust-soft: #f7e6dc;
+  --color-teal: #0f6f6c;
+  /* `moss` is the historical name for the link accent; it now points at teal. */
+  --color-moss: #0f6f6c;
   --max-width-measure: 40rem;
 }
 
@@ -24,27 +26,31 @@ html {
 
 body {
   min-height: 100vh;
-  background:
-    radial-gradient(900px 420px at 8% -10%, rgba(156, 61, 40, 0.08), transparent 55%),
-    radial-gradient(800px 380px at 100% 0%, rgba(61, 83, 68, 0.07), transparent 50%),
-    var(--color-paper);
+  background: var(--color-paper);
+  letter-spacing: 0;
 }
 
 ::selection {
-  background: #e4c4a8;
+  background: #cfe7e5;
   color: var(--color-ink);
 }
 
 .folio-rule {
-  height: 3px;
-  background: linear-gradient(90deg, var(--color-rust) 0 28%, var(--color-paper-deep) 28% 72%, var(--color-moss) 72% 100%);
-  opacity: 0.55;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-teal) 0 30%, var(--color-rule) 30% 70%, var(--color-rust) 70% 100%);
 }
 
 .hook-card {
   border: 1px solid var(--color-rule);
   background: var(--color-card);
   padding: 1.15rem 1.25rem;
+}
+
+.kicker {
+  color: var(--color-rust);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .prose-lore {
@@ -67,7 +73,6 @@ body {
   font-family: var(--font-display);
   font-size: 1.7rem;
   font-weight: 500;
-  letter-spacing: -0.02em;
   line-height: 1.25;
   margin-bottom: 0.85rem;
   margin-top: 0.4rem;
@@ -75,6 +80,16 @@ body {
 
 .prose-lore p + p {
   margin-top: 1.2rem;
+}
+
+.prose-lore > section:first-child > p:first-of-type::first-letter {
+  float: left;
+  padding: 0.1rem 0.55rem 0 0;
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-size: 3.4rem;
+  font-weight: 500;
+  line-height: 0.8;
 }
 
 .prose-lore a {
@@ -102,7 +117,6 @@ body {
   font-family: var(--font-display);
   font-size: 1.55rem;
   font-weight: 500;
-  letter-spacing: -0.02em;
   line-height: 1.25;
   margin-top: 2.3rem;
 }
