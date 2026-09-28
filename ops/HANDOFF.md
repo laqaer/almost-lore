@@ -36,3 +36,9 @@ Another agent can restart from `ops/STATE.md`, `ops/LEDGER.md`, and `ops/EXPERIM
 ## When Stripe is connected
 
 Put the secret on the worker, not in git. Use a webhook signing secret on `POST /stripe/webhook`. Run one test-mode purchase and confirm the download works and the ledger’s `testPaidCount` moves while `liveCashCents` stays 0. Do not count that purchase as demand. Then a live key is what turns the button on for real cards. Refunds are requested on `/support` and issued in Stripe. The download function refuses a session with `amount_refunded > 0`.
+
+## Delivered in the SEO + ads pass (2026-09-27)
+
+- Ad code ships inert: `lib/ads.ts` resolves config at build time and serves nothing while `CONSENT_PLATFORM_INSTALLED` is `false`, whatever the env says. `app/ads.txt` lists a seller only once `NEXT_PUBLIC_ADS_PUBLISHER_ID` holds a real id. `app/feed.xml` and per-story imagery/source links are in too.
+- Checks: `npm test` (14 tests, including `lib/ads.test.mts`), `npm run typecheck`, `npm run lint`, and `npm run build` (desktop and mobile). `npm test` needs Node 22+ for TypeScript type stripping; CI runs Node 22.
+- To serve ads: set the three `NEXT_PUBLIC_ADS_*` envs to real values *and* install a certified CMP, then flip `CONSENT_PLATFORM_INSTALLED` in `lib/ads.ts` in the same change. Never invent a publisher id.

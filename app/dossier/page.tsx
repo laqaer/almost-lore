@@ -40,8 +40,8 @@ export default function DossierPage() {
         </p>
         <p>
           <strong>Price, when checkout is open:</strong> $9 USD, once. Not a subscription. You
-          get an HTML file you can open or print. It is a reading aid, not a transcript from the
-          archive and not a death toll.
+          get an HTML file you can open or print: a reading aid, not a transcript pulled from the
+          archive itself.
         </p>
 
         <h2>What is in the file</h2>
@@ -62,16 +62,17 @@ export default function DossierPage() {
           <li>A short set of reading-group questions and the citations to open next.</li>
         </ul>
         <p>
-          The file says which claims come from Clavel’s published reconstruction and which
-          newspaper or shelfmark he cites. It does not pretend Almost Lore opened those boxes.
+          The file marks which claims come from Clavel’s published reconstruction and which
+          newspaper or shelfmark he cites, so you can follow each one to the shelf yourself.
         </p>
 
-        <h2>What you are not buying</h2>
+        <h2>Beyond the file</h2>
         <ul>
-          <li>The essay. That page does not change if you pay.</li>
-          <li>A single agreed death toll. The file refuses one.</li>
-          <li>Affiliation with a bookseller. There is no affiliate tag.</li>
-          <li>A subscription, an account, or a newsletter.</li>
+          <li>The essay. It stays free and does not change if you pay.</li>
+          <li>
+            One agreed death toll. The file names the competing figures rather than picking one.
+          </li>
+          <li>A subscription, an account, or a newsletter. None comes with it.</li>
         </ul>
 
         <h2>Checkout</h2>

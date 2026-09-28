@@ -1,6 +1,6 @@
 # Almost Lore
 
-Original longform on public-record historical near-misses and weird history. Mogul story factory Site #4. Published by Laqaer.
+Original longform on public-record historical near-misses and weird history. Published by Laqaer.
 
 Published at `almostlore.com`. Set `NEXT_PUBLIC_SITE_URL` if the deploy URL should differ.
 
@@ -8,7 +8,7 @@ Published at `almostlore.com`. Set `NEXT_PUBLIC_SITE_URL` if the deploy URL shou
 
 | Route | Subject |
 | --- | --- |
-| `/` | Hub: what this is, how a hook leads here, story index |
+| `/` | Hub: what this is, the story index, and how to reach us |
 | `/stories/poyais-invented-country` | Gregor MacGregor / Poyais |
 | `/stories/aqua-tofana-myth-vs-record` | Aqua Tofana, myth vs archive |
 | `/stories/balloon-almost-atlantic` | Zanussi, July 1978 |
@@ -28,7 +28,7 @@ Published at `almostlore.com`. Set `NEXT_PUBLIC_SITE_URL` if the deploy URL shou
 | `/about` | Laqaer disclosure and editorial standards |
 | `/now` | Current editorial focus, longforms on the site, contact |
 | `/friends` | Blogroll of people and their personal sites |
-| `/privacy` | Honest ads-later privacy page |
+| `/privacy` | Privacy page, naming any ads, affiliate links, or analytics if added |
 
 No CMS, reader accounts, or picker widgets. Essays are typed content. Article JSON-LD is used only on story pages.
 

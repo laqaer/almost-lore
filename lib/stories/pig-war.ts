@@ -9,7 +9,7 @@ export const pigWarStory: Story = {
   published: "2026-09-26",
   updated: "2026-09-26",
   sourcesNote:
-    "This essay is original prose. The narrative follows the National Park Service account of the Pig War at San Juan Island National Historical Park and the HistoryLink.org essay “San Juan Island Pig War,” which itself cites Mike Vouri and Edmond S. Meany. Where those public summaries use different calendar days for the same landing, both days are named. The sentence that the pig was the only casualty is the commemorative claim in those sources, meaning the detachments did not fire on each other. It is not a claim that the island saw no other deaths across thirteen years. We have not scraped Reddit or Wikipedia, and we invent no dialogue in the potato patch.",
+    "This essay is original prose. The narrative follows the National Park Service account of the Pig War at San Juan Island National Historical Park and the HistoryLink.org essay “San Juan Island Pig War,” which itself cites Mike Vouri and Edmond S. Meany. Where those public summaries use different calendar days for the same landing, both days are named. The sentence that the pig was the only casualty is the commemorative claim in those sources, meaning the detachments did not fire on each other. It is not a claim that the island saw no other deaths across thirteen years.",
   sections: [
     {
       paragraphs: [

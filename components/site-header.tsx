@@ -1,29 +1,38 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
 
+const nav = [
+  { href: "/#stories", label: "Stories" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+  { href: "/dossier", label: "Working file" },
+];
+
 export function SiteHeader() {
   return (
-    <header className="border-b border-rule bg-card/90 backdrop-blur">
-      <div className="mx-auto flex max-w-5xl flex-wrap items-baseline justify-between gap-4 px-4 py-5 sm:px-6">
-        <Link href="/" className="font-display text-2xl text-ink tracking-tight">
-          {site.shortName}
-        </Link>
-        <nav aria-label="Primary" className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-ink-soft">
-          <Link className="hover:text-rust" href="/#stories">
-            Stories
+    <header className="bg-paper">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <p className="border-b border-rule py-3 text-center text-[11px] uppercase text-ink-faint">
+          {site.publisher} · an editorial archive
+        </p>
+        <div className="py-7 text-center">
+          <Link
+            className="font-display text-5xl text-ink hover:text-rust sm:text-6xl"
+            href="/"
+          >
+            {site.name}
           </Link>
-          <Link className="hover:text-rust" href="/about">
-            About
-          </Link>
-          <Link className="hover:text-rust" href="/now">
-            Now
-          </Link>
-          <Link className="hover:text-rust" href="/friends">
-            Friends
-          </Link>
-          <Link className="hover:text-rust" href="/privacy">
-            Privacy
-          </Link>
+          <p className="mx-auto mt-3 max-w-xl text-sm text-ink-soft">{site.tagline}</p>
+        </div>
+        <nav
+          aria-label="Primary"
+          className="flex flex-wrap items-center justify-center gap-x-7 gap-y-2 border-t border-rule py-3 text-xs uppercase text-ink-soft"
+        >
+          {nav.map((item) => (
+            <Link key={item.href} className="hover:text-rust" href={item.href}>
+              {item.label}
+            </Link>
+          ))}
         </nav>
       </div>
     </header>

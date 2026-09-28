@@ -11,8 +11,12 @@ export function websiteJsonLd() {
     publisher: {
       "@type": "Organization",
       name: site.publisher,
-      email: site.email,
       url,
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        url: `${url}/support`,
+      },
     },
     inLanguage: "en-US",
   };
@@ -24,6 +28,7 @@ export function articleJsonLd(input: {
   path: string;
   datePublished: string;
   dateModified?: string;
+  images?: string[];
 }) {
   const url = `${siteUrl()}${input.path}`;
   return {
@@ -35,6 +40,7 @@ export function articleJsonLd(input: {
     mainEntityOfPage: url,
     datePublished: input.datePublished,
     dateModified: input.dateModified ?? input.datePublished,
+    ...(input.images && input.images.length > 0 ? { image: input.images } : {}),
     inLanguage: "en-US",
     author: {
       "@type": "Organization",
@@ -55,7 +61,11 @@ export function organizationJsonLd() {
     name: site.name,
     legalName: site.publisher,
     url,
-    email: site.email,
     description: site.description,
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "editorial",
+      url: `${url}/contact`,
+    },
   };
 }

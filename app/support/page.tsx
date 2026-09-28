@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { openGraphImage, twitterWithImage } from "@/lib/metadata";
-import { site } from "@/lib/site";
 
 const title = "Support";
 const description =
@@ -33,9 +32,8 @@ export default function SupportPage() {
       </h1>
       <div className="prose-page mt-8">
         <p>
-          {site.email} is printed on the about page, and this site does not currently receive
-          mail at that address. Use this form. The note is stored for the publisher. It does not
-          add you to a newsletter.
+          Send a correction, a refund request, or a note about the Poyais working file. The note
+          is stored for the publisher, and an email address is only used to reply.
         </p>
         <form className="space-y-4 not-prose" method="post" action="/api/support">
           <p className="hidden" aria-hidden="true">

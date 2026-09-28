@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 const title = "Privacy policy";
 const description =
-  "Privacy policy for Almost Lore, a small editorial site. No accounts, no affiliate IDs, ads possible later.";
+  "Privacy policy for Almost Lore, a small editorial site. No accounts. Advertising is not active; providers and data use would be named here first.";
 
 export const metadata: Metadata = {
   title,
@@ -41,15 +41,14 @@ export default function PrivacyPage() {
         <h2>Information we collect</h2>
         <ul>
           <li>
-            <strong>Server and hosting logs.</strong> Our host (intended: Vercel) and any future
-            CDN may record IP address, user agent, referrer, and requested URL to operate the site
-            and stop abuse.
+            <strong>Server and hosting logs.</strong> The site is hosted on Vercel. Vercel may
+            record IP address, user agent, referrer, and requested URL to operate the site and stop
+            abuse.
           </li>
           <li>
             <strong>Email you send us.</strong> Messages to {site.email} include whatever you
-            write, if that address is receiving mail. We use that to reply. We do not add you to
-            a newsletter by default. As of {site.updated}, the domain has no mail server; use
-            the support form instead.
+            write. We use them only to reply, and we never add you to a newsletter. The{" "}
+            <a href="/support">support form</a> is the reliable way to reach us and get a reply.
           </li>
           <li>
             <strong>Support form.</strong> The <a href="/support">support page</a> stores your
@@ -71,11 +70,9 @@ export default function PrivacyPage() {
 
         <h2>Advertising</h2>
         <p>
-          We may later run ordinary display ads to pay hosting. There are no ad tags and no
-          affiliate tracking IDs on this ship. <code>ads.txt</code> is a placeholder until
-          authorized sellers are listed. If ads are added, ad networks may use cookies or similar
-          identifiers for frequency capping and fraud prevention. We will not pretend those
-          vendors are invisible.
+          Advertising is not currently active, and there are no affiliate links on the site
+          today. If advertising or affiliate links are introduced, this page will identify the
+          providers, what they collect, how it is used, and the privacy controls available to you.
         </p>
         <p>
           The essays are free. The Poyais working file is a separate $9 download when checkout
@@ -87,19 +84,18 @@ export default function PrivacyPage() {
           <li>We do not sell a list of Almost Lore readers as a product.</li>
           <li>We do not ask for account passwords as a condition of reading.</li>
           <li>We do not knowingly collect information from children under 13.</li>
-          <li>We do not invent traffic, reviews, or revenue figures.</li>
         </ul>
 
         <h2>Retention and requests</h2>
         <p>
           Emails are kept as long as needed to handle the thread and basic bookkeeping. Hosting
-          logs follow the host’s retention. To ask what we have from an email you sent, write{" "}
-          <a href={`mailto:${site.email}`}>{site.email}</a>.
+          logs follow Vercel’s retention. To ask what we hold from a note you sent, use the{" "}
+          <a href="/support">support form</a>.
         </p>
 
         <h2>Changes</h2>
         <p>
-          If the site adds accounts, a newsletter, or live ad tags, we will update this page and
+          If the site adds accounts, a newsletter, or advertising, we will update this page and
           the date above.
         </p>
       </div>

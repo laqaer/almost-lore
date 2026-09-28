@@ -1,97 +1,58 @@
 import Link from "next/link";
-import { editorialNote, fundingNote, site } from "@/lib/site";
-import { stories, storyPath } from "@/lib/stories";
+import { site } from "@/lib/site";
+
+const sections = [
+  { href: "/#stories", label: "Stories" },
+  { href: "/about", label: "About" },
+  { href: "/now", label: "Now" },
+  { href: "/dossier", label: "Working file" },
+  { href: "/support", label: "Support" },
+  { href: "/contact", label: "Contact" },
+  { href: "/privacy", label: "Privacy" },
+  { href: "/terms", label: "Terms" },
+];
 
 export function SiteFooter() {
   return (
-    <footer className="mt-20 border-t border-rule bg-paper-deep/60">
-      <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6">
-        <div className="grid gap-10 md:grid-cols-3">
+    <footer className="mt-20 border-t border-rule bg-paper-deep">
+      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+        <div className="grid gap-8 md:grid-cols-3">
           <div>
             <p className="font-display text-2xl text-ink">{site.name}</p>
-            <p className="mt-3 max-w-sm text-sm leading-6 text-ink-soft">{site.tagline}</p>
-            <p className="mt-3 text-sm text-ink-soft">
-              Published by {site.publisher} at {site.domain}.
-            </p>
+            <p className="mt-2 max-w-sm text-sm leading-6 text-ink-soft">{site.tagline}</p>
           </div>
-          <div>
-            <h2 className="font-serif text-lg text-ink">Stories</h2>
-            <ul className="mt-3 space-y-2 text-sm">
-              {stories.map((story) => (
-                <li key={story.slug}>
-                  <Link className="text-moss hover:text-rust" href={storyPath(story.slug)}>
-                    {story.title}
+          <nav aria-label="Footer">
+            <h2 className="kicker">Sections</h2>
+            <ul className="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 text-sm sm:grid-cols-1">
+              {sections.map((item) => (
+                <li key={item.href}>
+                  <Link className="text-teal hover:text-rust" href={item.href}>
+                    {item.label}
                   </Link>
                 </li>
               ))}
-            </ul>
-          </div>
-          <div>
-            <h2 className="font-serif text-lg text-ink">Site</h2>
-            <ul className="mt-3 space-y-2 text-sm">
               <li>
-                <Link className="text-moss hover:text-rust" href="/about">
-                  About &amp; standards
-                </Link>
-              </li>
-              <li>
-                <Link className="text-moss hover:text-rust" href="/contact">
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link className="text-moss hover:text-rust" href="/now">
-                  Now
-                </Link>
-              </li>
-              <li>
-                <Link className="text-moss hover:text-rust" href="/friends">
-                  Friends
-                </Link>
-              </li>
-              <li>
-                <Link className="text-moss hover:text-rust" href="/dossier">
-                  Poyais working file
-                </Link>
-              </li>
-              <li>
-                <Link className="text-moss hover:text-rust" href="/support">
-                  Support
-                </Link>
-              </li>
-              <li>
-                <Link className="text-moss hover:text-rust" href="/terms">
-                  Terms
-                </Link>
-              </li>
-              <li>
-                <Link className="text-moss hover:text-rust" href="/privacy">
-                  Privacy
-                </Link>
-              </li>
-              <li>
-                <a className="text-moss hover:text-rust" href={`mailto:${site.email}`}>
-                  {site.email}
+                <a className="text-teal hover:text-rust" href="/feed.xml">
+                  RSS feed
                 </a>
               </li>
             </ul>
+          </nav>
+          <div>
+            <h2 className="kicker">Contact</h2>
+            <p className="mt-3 text-sm leading-6 text-ink-soft">
+              Questions, corrections, and source notes:{" "}
+              <Link className="text-teal hover:text-rust" href="/contact">
+                the contact page
+              </Link>
+              .
+            </p>
           </div>
         </div>
-
-        <div className="mt-10 space-y-3 border-t border-rule pt-6 text-sm leading-6 text-ink-soft">
-          <p>
-            <strong className="text-ink">How this is funded. </strong>
-            {fundingNote}
-          </p>
-          <p>
-            <strong className="text-ink">How the stories are written. </strong>
-            {editorialNote}
-          </p>
-          <p>
-            © {new Date().getFullYear()} {site.publisher}. Almost Lore is an editorial site, not a
-            review mill. The essays are free.
-          </p>
-        </div>
+        <p className="mt-8 border-t border-rule pt-6 text-sm text-ink-faint">
+          © {new Date().getFullYear()} {site.publisher}. {site.name} publishes original longform
+          essays.
+        </p>
       </div>
     </footer>
   );

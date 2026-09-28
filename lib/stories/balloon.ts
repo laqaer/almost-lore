@@ -9,7 +9,7 @@ export const balloonStory: Story = {
   published: "2026-09-11",
   updated: "2026-09-11",
   sourcesNote:
-    "This essay is original prose. The flight is documented in contemporaneous British reporting — including BBC coverage as the leak was happening — and in the later public record of Double Eagle II’s August 1978 crossing. Distances and the eight-foot tear come from those contemporary accounts. We do not invent cockpit dialogue or a secret rivalry that the public file does not carry.",
+    "This essay is original prose. The flight is documented in contemporaneous British reporting — including BBC coverage as the leak was happening — and in the later public record of Double Eagle II’s August 1978 crossing. Distances and the eight-foot tear come from those contemporary accounts.",
   sections: [
     {
       paragraphs: [
@@ -41,7 +41,7 @@ export const balloonStory: Story = {
     {
       heading: "What “almost” is doing here",
       paragraphs: [
-        "A Reddit-shaped hook will say they were “so close.” Distance is the only honest intensifier. A hundred and ten miles of cold water is close in the way a runway is close when you are still in cloud. The rest of the lore around early Atlantic ballooning — curses, gentlemen’s agreements, a single doomed romantic — is mostly later color. The public file is plainer: a leak reported while the flight was still a news story, a tear in a storm, a designed capsule, a trawler, and then someone else’s barley field.",
+        "Retellings often say they were “so close.” Distance is the only honest intensifier. A hundred and ten miles of cold water is close in the way a runway is close when you are still in cloud. The rest of the lore around early Atlantic ballooning — curses, gentlemen’s agreements, a single doomed romantic — is mostly later color. The public file is plainer: a leak reported while the flight was still a news story, a tear in a storm, a designed capsule, a trawler, and then someone else’s barley field.",
         "Almost Lore is not in the business of ranking courage. The near-miss that belongs on this site is mechanical and documentary. Zanussi proved that a British Rozière could take two men most of the way across a basin that had been eating balloons for years, and that “most of the way” is a phrase you can measure. The successful crossing did not erase that measurement. It just made it easy to forget.",
       ],
     },

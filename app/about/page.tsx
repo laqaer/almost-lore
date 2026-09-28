@@ -7,7 +7,7 @@ import { editorialNote, fundingNote, site } from "@/lib/site";
 
 const title = "About Almost Lore";
 const description =
-  "Almost Lore is an original-narrative site from Laqaer for public-record historical near-misses. Editorial standards and contact.";
+  "Almost Lore publishes original longform about documented historical near-misses. Editorial standards, how the site is funded, and how to reach us.";
 
 export const metadata: Metadata = {
   title,
@@ -39,16 +39,15 @@ export default function AboutPage() {
           <strong>Almost Lore</strong> is original longform about documented historical
           near-misses and odd public facts. It is published by <strong>{site.publisher}</strong> at{" "}
           <strong>{site.domain}</strong>. For a correction — a date we should hedge, a count we
-          should unsay — write{" "}
-          <a href={`mailto:${site.email}`}>{site.email}</a>.
+          should unsay — use the <Link href="/support">support form</Link>.
         </p>
         <p>{editorialNote}</p>
 
         <h2>Editorial standards</h2>
         <ul>
           <li>
-            <strong>Original narrative only.</strong> We do not scrape Reddit, paste comment
-            threads, or rewrite another site’s article as if it were ours.
+            <strong>Original narrative.</strong> Every essay is written for this site from primary
+            documents and the standard published sources, and each piece names what it draws on.
           </li>
           <li>
             <strong>Public record first.</strong> Loans, trial files, contemporaneous news, and
@@ -60,28 +59,29 @@ export default function AboutPage() {
             tolls into a fake precise number.
           </li>
           <li>
-            <strong>No fake social proof.</strong> No invented reviews, traffic, or revenue.
+            <strong>Sources are named.</strong> Each essay’s note lists the record behind it, so a
+            reader can go to the transcript, the treaty, or the loan notice itself.
           </li>
           <li>
-            <strong>No other-brand bleed.</strong> This property is Almost Lore — not a dumping
-            ground for unrelated Laqaer consumer sites.
+            <strong>The site is the essays.</strong> No accounts, no newsletter, no comment
+            threads to moderate.
           </li>
         </ul>
 
         <h2>How the site is funded</h2>
         <p>{fundingNote}</p>
         <p>
-          There are no affiliate programs and no retailer tracking IDs on this ship. See{" "}
-          <Link href="/privacy">privacy</Link> for what a small editorial site actually collects.
+          There are no display ads and no affiliate links on the site today. See{" "}
+          <Link href="/privacy">privacy</Link> for what a small editorial site collects, and for
+          what would be named first if that changes.
         </p>
 
-        <h2>What we are not</h2>
+        <h2>What these essays are</h2>
         <p>
-          Not a historian’s monograph and not a primary-source edition. The essays are not
-          paywalled. One working file may be sold separately; it is a reading aid, not a
-          substitute for the archive. If a piece summarizes a scholarly reconstruction, it says
-          so. If you need the transcript or the bond notice itself, go to the archive or the
-          book — not to a hook.
+          Narratives, not a historian’s monograph and not a primary-source edition. Each essay
+          names its sources and points to the archive behind it. The essays are free to read; one
+          working file may be sold separately as a reading aid, not a substitute for the source
+          material. Where a piece rests on a scholarly reconstruction, it says so.
         </p>
       </div>
     </article>
