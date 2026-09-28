@@ -37,9 +37,8 @@ export default function ContactPage() {
           at <strong>{site.domain}</strong>.
         </p>
         <p>
-          For editorial notes and corrections, write{" "}
-          <a href={`mailto:${site.email}`}>{site.email}</a>. To have a note stored for the
-          publisher, use the <Link href="/support">support form</Link>.
+          For editorial notes and corrections, use the <Link href="/support">support form</Link>.
+          Your note will be stored for the publisher.
         </p>
 
         <h2>Where the rest of it lives</h2>
