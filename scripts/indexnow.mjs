@@ -28,7 +28,6 @@ const PATHS = [
   "/friends",
   "/now",
   "/dossier",
-  "/dossier/thanks",
   "/stories/poyais-invented-country",
   "/stories/aqua-tofana-myth-vs-record",
   "/stories/balloon-almost-atlantic",
