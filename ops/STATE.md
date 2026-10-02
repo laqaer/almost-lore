@@ -36,4 +36,6 @@ States to keep distinct: one probe cron has fired unattended. The daily 13:00 UT
 
 ## Next action
 
+IndexNow maintenance, 2026-09-30: removed `/dossier/thanks` from the submission list because the checkout delivery page declares `noindex`. Verified the dry-run payload retains 23 public URLs, including all 14 essays, and omits the delivery page. No live submission was made; this is not evidence of indexing or revenue.
+
 The next scheduled action is the worker cron at 13:00 UTC on 2026-09-26. It should record Pig War 200 and cash still 0. E2 stays blocked until Stripe is connected and the dossier page shows the pay button. E1 succeeds only if the URL is indexed or appears in a Google result by 2026-10-17. Sales tax on a future $9 sale is not automated.
