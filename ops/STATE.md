@@ -1,6 +1,23 @@
 # Almost Lore — operating state
 
-Updated: 2026-09-26T05:16:11Z
+Updated: 2026-10-03
+
+## Current verification, 2026-10-03
+
+This verification supersedes conflicting status statements below. Earlier observations remain as historical evidence.
+A canonical URL identifies the preferred address for a page.
+
+- All 23 sitemap pages returned HTTP 200. Each page allowed indexing and declared its matching canonical URL.
+- All 14 sitemap images returned HTTP 200 with an image content type.
+- The RSS feed at `/feed.xml` linked to all 14 stories in the sitemap.
+- The sitemap excluded the checkout delivery page, `/dossier/thanks`.
+- Main includes the redesign at `e81058b` and the IndexNow exclusion at `6609ffe`.
+- These checks confirm crawl readiness. They do not confirm search-engine indexing.
+- The latest observed worker cron ran at `2026-10-02T13:01:33.260Z`. Both monitored pages returned HTTP 200.
+- Stripe and its webhook remain unconfigured. The paid experiment has not started.
+
+Keep the indexing experiment deadline at 2026-10-17. Evaluate its original success metric at that deadline.
+Do not repeat this crawl check without a content change, deployment change, or reported failure.
 
 ## Offer
 
