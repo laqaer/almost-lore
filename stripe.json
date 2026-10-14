@@ -1,0 +1,9 @@
+{
+  "project": "almost-lore",
+  "mode": "live",
+  "webhook": {
+    "url": "https://almost-lore-ops.laqaer-products.workers.dev/stripe/webhook",
+    "events": ["checkout.session.completed"],
+    "secret_item": "Almost Lore webhook"
+  }
+}
