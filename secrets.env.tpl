@@ -1,5 +1,5 @@
 # Secrets for the ops worker. Names and 1Password references only; never put a value in this file.
-# Push the values with: ~/.agents/scripts/push-secrets ~/dev/almostlore   (see ~/.agents/docs/secrets.md)
+# Create the webhook and its secret with ~/.agents/scripts/stripe-setup (stripe.json), then push the values with ~/.agents/scripts/push-secrets. See ~/.agents/docs/secrets.md.
 # To test first, point STRIPE_SECRET_KEY at op://Projects/Stripe test/credential, push, buy with card 4242 4242 4242 4242,
 # then point it back at the live item and push again.
 # target: cloudflare-worker almost-lore-ops
