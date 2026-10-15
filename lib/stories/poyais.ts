@@ -60,4 +60,13 @@ export const poyaisStory: Story = {
       ],
     },
   ],
+  furtherReading: [
+    {
+      title:
+        "The Land That Never Was: Sir Gregor Macgregor and the Most Audacious Fraud in History",
+      author: "David Sinclair",
+      href: "https://www.amazon.com/dp/0306813092?tag=laqaer-20",
+      note: "A history of Gregor MacGregor’s Poyais scheme: the land grant, the London loan, and the settlers sent to the Mosquito Coast.",
+    },
+  ],
 };

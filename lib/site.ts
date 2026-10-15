@@ -18,7 +18,7 @@ export function siteUrl(): string {
 }
 
 export const fundingNote =
-  "The essays are free to read. A separate printable working file for the Poyais essay is offered at $9 when card checkout is open; the dossier page says whether it is. There are no display ads and no affiliate links on the site today. If either is added later to cover hosting, this page and the privacy page will name it.";
+  "The essays are free to read. A separate printable working file for the Poyais essay is offered at $9 when card checkout is open; the dossier page says whether it is. There are no display ads on the site today. Some essays link to books on Amazon. As an Amazon Associate, Almost Lore earns from qualifying purchases.";
 
 export const editorialNote =
   "Essays are original prose built from the public record — loan notices, trial files, dispatches, contemporaneous news — and each piece names what it draws on. Where the archive is thin or later writers disagree, the disagreement stays visible.";

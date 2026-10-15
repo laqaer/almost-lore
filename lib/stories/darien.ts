@@ -53,4 +53,18 @@ export const darienStory: Story = {
       ],
     },
   ],
+  furtherReading: [
+    {
+      title: "The Darien Disaster",
+      author: "John Prebble",
+      href: "https://www.amazon.com/dp/0712668535?tag=laqaer-20",
+      note: "A narrative history of the Company of Scotland and its colony at Darien, 1698–1700.",
+    },
+    {
+      title: "The Price of Scotland: Darien, Union and the Wealth of Nations",
+      author: "Douglas Watt",
+      href: "https://www.amazon.com/dp/1906307091?tag=laqaer-20",
+      note: "A financial history of the Company of Scotland, the loss at Darien, and the Darien debt in the Union of 1707.",
+    },
+  ],
 };

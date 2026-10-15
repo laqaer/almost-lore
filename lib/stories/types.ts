@@ -9,6 +9,13 @@ export type StoryDossier = {
   note: string;
 };
 
+export type FurtherReading = {
+  title: string;
+  author: string;
+  href: string;
+  note: string;
+};
+
 export type Story = {
   slug: string;
   title: string;
@@ -20,4 +27,5 @@ export type Story = {
   sourcesNote: string;
   sections: StorySection[];
   dossier?: StoryDossier;
+  furtherReading?: FurtherReading[];
 };
