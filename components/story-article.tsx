@@ -102,9 +102,37 @@ export function StoryArticle({ story }: StoryArticleProps) {
         ) : null}
       </aside>
 
-      {links.length > 0 ? (
+      {story.furtherReading && story.furtherReading.length > 0 ? (
         <aside className="mt-12 border-t border-rule pt-8 text-sm leading-6 text-ink-soft">
           <p className="kicker">Further reading</p>
+          <ul className="mt-3 space-y-4">
+            {story.furtherReading.map((book) => (
+              <li key={book.href}>
+                <a
+                  className="text-teal underline underline-offset-3 hover:text-rust"
+                  href={book.href}
+                  rel="sponsored nofollow noopener"
+                  target="_blank"
+                >
+                  {book.title}
+                </a>
+                {" — "}
+                {book.author}
+                <span className="mt-1 block">{book.note}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-4 text-ink-faint">
+            As an Amazon Associate, Almost Lore earns from qualifying purchases.
+          </p>
+        </aside>
+      ) : null}
+
+      {links.length > 0 ? (
+        <aside className="mt-12 border-t border-rule pt-8 text-sm leading-6 text-ink-soft">
+          <p className="kicker">
+            {story.furtherReading?.length ? "In the record" : "Further reading"}
+          </p>
           <ul className="mt-3 space-y-2">
             {links.map((link) => (
               <li key={link.href}>

@@ -75,9 +75,9 @@ export default function NowPage() {
         <p>
           The newest longform is <Link href={storyPath(newest.slug)}>{newest.title}</Link>. The
           Poyais essay now points at a separate working file. That file is $9 only when the
-          dossier page says card checkout is open. There is no newsletter and no account. If
-          display ads or affiliate links are added later to cover hosting, the about and privacy
-          pages will say so.
+          dossier page says card checkout is open. There is no newsletter and no account. Some
+          essays link to books on Amazon; the about and privacy pages say so. If display ads are
+          added later to cover hosting, those pages will say so.
         </p>
 
         <h2>Contact</h2>

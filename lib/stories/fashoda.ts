@@ -63,4 +63,19 @@ export const fashodaStory: Story = {
       ],
     },
   ],
+  furtherReading: [
+    {
+      title:
+        "The Race to Fashoda: European Colonialism and African Resistance in the Scramble for Africa",
+      author: "David Levering Lewis",
+      href: "https://www.amazon.com/dp/1555840582?tag=laqaer-20",
+      note: "A history of the race to Fashoda, set in the European scramble for Africa and African resistance to it.",
+    },
+    {
+      title: "The Fashoda Incident of 1898: Encounter on the Nile",
+      author: "Darrell Bates",
+      href: "https://www.amazon.com/dp/0192117718?tag=laqaer-20",
+      note: "An account of the 1898 confrontation at Fashoda between the French mission and the Anglo-Egyptian force on the Nile.",
+    },
+  ],
 };

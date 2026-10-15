@@ -54,4 +54,12 @@ export const pigWarStory: Story = {
       ],
     },
   ],
+  furtherReading: [
+    {
+      title: "The Pig War: Standoff at Griffin Bay",
+      author: "Mike Vouri",
+      href: "https://www.amazon.com/dp/1638640025?tag=laqaer-20",
+      note: "A history of the Pig War: the 1859 shooting on San Juan Island and the British and American occupation that followed.",
+    },
+  ],
 };

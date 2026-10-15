@@ -8,8 +8,8 @@ Grounded in the repo and `ops/STATE.md` on 2026-09-27. No outreach has been sent
 | Lever | State on 2026-09-27 | Evidence |
 | --- | --- | --- |
 | $9 Poyais working file | Page and file exist, **checkout closed** | Worker `/status`: `stripeConfigured` false, `webhookConfigured` false, `dossierStored` true. `POST /api/checkout` returns 503 "Checkout is not open". |
-| Display ads | **Not serving today**, gated on accounts and consent | `lib/ads.ts` needs `NEXT_PUBLIC_ADS_ENABLED=true` plus a valid `ca-pub-...` (16 digits), a 10-digit slot, **and** the source constant `CONSENT_PLATFORM_INSTALLED`, currently `false`. Env vars are unset. `app/ads.txt/route.ts` is comment-only until a valid publisher ID is set; once only `NEXT_PUBLIC_ADS_PUBLISHER_ID` is supplied it already lists `google.com, <pub-...>, DIRECT, f08c47fec0942fa0`, even while ads stay disabled. |
-| Affiliate | **No program joined** | No affiliate account, no tracking IDs, no affiliate links in code. |
+| Display ads | **Not serving today**, gated on accounts and consent | `lib/ads.ts` needs `NEXT_PUBLIC_ADS_ENABLED=true` plus a valid `ca-pub-...` (16 digits), a 10-digit slot, **and** the source constant `CONSENT_PLATFORM_INSTALLED`, currently `false`. Env vars are unset. `app/ads.txt/route.ts` is comment-only until `NEXT_PUBLIC_ADSENSE_PUB_ID` matches `pub-` plus 10–20 digits; then it lists `google.com, <pub-...>, DIRECT, f08c47fec0942fa0`, even while ads stay disabled. |
+| Affiliate | **Amazon book links on five essays** | `tag=laqaer-20` on optional further reading. Disclosure is on those essays, `/about`, and `/privacy`. No display ads. |
 | Reader contact | Support form only | `hello@almostlore.com` has no MX. `/support` stores notes in the ops Worker KV. |
 | Spend | **$0** | `ops/LEDGER.md`. Stripe MCP auth timed out earlier; no key was invented. |
 | SEO tooling | OpenSEO connected, **0 credits**, tools not exposed this session | `ops/INTEGRATIONS.md`. Backlink research below was done with direct page fetches, not OpenSEO. |
@@ -73,8 +73,8 @@ Angle rules:
 
 ## Ads and affiliate
 
-- **Ads: start the paperwork now, keep tags off.** Serving needs a real publisher ID **and** `CONSENT_PLATFORM_INSTALLED`. That constant is `false` on purpose, because an env string is not visitor consent. Turning ads on is one change that sets the ids, installs a certified CMP, and flips the constant. `ads.txt` already lists the seller once the publisher ID is set, before ads serve; it is comment-only only while no valid publisher ID exists.
-- **Affiliate (books):** only after an account is approved **and** `/privacy` and `/about` disclose it. Until then any book links stay plain and unpaid.
+- **Ads: start the paperwork now, keep tags off.** Serving needs a real publisher ID **and** `CONSENT_PLATFORM_INSTALLED`. That constant is `false` on purpose, because an env string is not visitor consent. Turning ads on is one change that sets the ids, installs a certified CMP, and flips the constant. `ads.txt` lists the seller once `NEXT_PUBLIC_ADSENSE_PUB_ID` is a valid `pub-` id, before ads serve; it is comment-only while that variable is empty or invalid.
+- **Affiliate (books):** Amazon Associates links are on the further-reading lists for Poyais, Darien, Fashoda, the Trent Affair, and the Pig War. `/privacy` and `/about` carry the disclosure. Do not add more book links without the same disclosure.
 - Both can be started in parallel because they cost no money; they simply cannot be switched on until the missing approvals exist. Judge them on approvals and traffic, not against a 30-day promise.
 
 ## Risks and open questions

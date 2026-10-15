@@ -30,7 +30,7 @@ export default function PrivacyPage() {
       <h1 className="mt-3 font-display text-4xl leading-[1.15] text-ink sm:text-5xl">
         Privacy policy
       </h1>
-      <p className="mt-4 text-sm text-ink-faint">Last updated {site.updated}.</p>
+      <p className="mt-4 text-sm text-ink-faint">Last updated 2026-10-15.</p>
       <div className="prose-page mt-8">
         <p>
           Almost Lore ({site.domain}) is a small editorial site published by {site.publisher}.
@@ -70,9 +70,11 @@ export default function PrivacyPage() {
 
         <h2>Advertising</h2>
         <p>
-          Advertising is not currently active, and there are no affiliate links on the site
-          today. If advertising or affiliate links are introduced, this page will identify the
-          providers, what they collect, how it is used, and the privacy controls available to you.
+          Display advertising is not currently active. Some essays include links to books on
+          Amazon. As an Amazon Associate, Almost Lore earns from qualifying purchases. Opening
+          one of those links sends the request to Amazon; Almost Lore does not receive your
+          Amazon account or payment details. If display advertising is introduced, this page
+          will name the provider before any ad tag is served.
         </p>
         <p>
           The essays are free. The Poyais working file is a separate $9 download when checkout

@@ -58,4 +58,18 @@ export const trentAffairStory: Story = {
       ],
     },
   ],
+  furtherReading: [
+    {
+      title: "Fountain of Discontent: The Trent Affair and Freedom of the Seas",
+      author: "Gordon H. Warren",
+      href: "https://www.amazon.com/dp/093035012X?tag=laqaer-20",
+      note: "A history of the Trent Affair and the argument it raised over freedom of the seas.",
+    },
+    {
+      title: "The Trent Affair: A Diplomatic Crisis",
+      author: "Norman B. Ferris",
+      href: "https://www.amazon.com/dp/0870491695?tag=laqaer-20",
+      note: "A diplomatic history of the Trent crisis of 1861–1862.",
+    },
+  ],
 };

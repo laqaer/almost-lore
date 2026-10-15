@@ -28,17 +28,41 @@ function env(name: string): string {
   return typeof raw === "string" ? raw.trim() : "";
 }
 
-/** `pub-…` form used by ads.txt, derived from the `ca-pub-…` client id. */
+/** `pub-…` form derived from the `ca-pub-…` client id. */
 export function publisherIdFromClient(client: string): string | null {
   return CLIENT_RE.test(client) ? client.replace(/^ca-/, "") : null;
 }
 
 /**
- * The configured `pub-…` id, or null. Independent of whether ads serve, so
- * ads.txt can list the real seller while the account is still being verified.
+ * The configured `pub-…` id from the ad client, or null. Independent of
+ * whether ads serve. ads.txt reads `NEXT_PUBLIC_ADSENSE_PUB_ID` instead.
  */
 export function adsPublisherId(): string | null {
   return publisherIdFromClient(env("NEXT_PUBLIC_ADS_PUBLISHER_ID"));
+}
+
+/** ads.txt accepts only `pub-` plus 10–20 digits. Anything else stays a comment. */
+const ADSENSE_PUB_RE = /^pub-\d{10,20}$/;
+
+export const ADS_TXT_PLACEHOLDER =
+  "# Almost Lore ads.txt — AdSense publisher line added after approval.";
+
+/**
+ * The ads.txt publisher id from `NEXT_PUBLIC_ADSENSE_PUB_ID`, or null.
+ * Separate from the `ca-pub-` client id that gates ad markup.
+ */
+export function adsensePublisherId(): string | null {
+  const raw = env("NEXT_PUBLIC_ADSENSE_PUB_ID");
+  return ADSENSE_PUB_RE.test(raw) ? raw : null;
+}
+
+/** One comment while unset or invalid; one seller line once a real id is set. */
+export function adsTxtBody(): string {
+  const publisherId = adsensePublisherId();
+  const line = publisherId
+    ? `google.com, ${publisherId}, DIRECT, ${ADS_TXT_CERTIFICATION_AUTHORITY}`
+    : ADS_TXT_PLACEHOLDER;
+  return `${line}\n`;
 }
 
 export function adsConfig(): AdsConfig {

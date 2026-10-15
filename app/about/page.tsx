@@ -71,9 +71,9 @@ export default function AboutPage() {
         <h2>How the site is funded</h2>
         <p>{fundingNote}</p>
         <p>
-          There are no display ads and no affiliate links on the site today. See{" "}
-          <Link href="/privacy">privacy</Link> for what a small editorial site collects, and for
-          what would be named first if that changes.
+          There are no display ads on the site today. See{" "}
+          <Link href="/privacy">privacy</Link> for what a small editorial site collects, including
+          the Amazon book links named above.
         </p>
 
         <h2>What these essays are</h2>

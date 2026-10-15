@@ -3,13 +3,20 @@ import test from "node:test";
 
 import {
   ADS_TXT_CERTIFICATION_AUTHORITY,
+  ADS_TXT_PLACEHOLDER,
   adsConfig,
   adsPublisherId,
   adsRunnableConfig,
+  adsTxtBody,
   publisherIdFromClient,
 } from "./ads.ts";
 
-const KEYS = ["NEXT_PUBLIC_ADS_ENABLED", "NEXT_PUBLIC_ADS_PUBLISHER_ID", "NEXT_PUBLIC_ADS_SLOT"];
+const KEYS = [
+  "NEXT_PUBLIC_ADS_ENABLED",
+  "NEXT_PUBLIC_ADS_PUBLISHER_ID",
+  "NEXT_PUBLIC_ADS_SLOT",
+  "NEXT_PUBLIC_ADSENSE_PUB_ID",
+];
 
 function withEnv(values: Record<string, string>, run: () => void) {
   const saved = new Map(KEYS.map((key) => [key, process.env[key]]));
@@ -67,7 +74,7 @@ test("valid ids configure ads but never serve without a consent platform", () =>
   );
 });
 
-test("ads.txt can list a seller before ads serve", () => {
+test("a client id can be parsed before ads serve", () => {
   withEnv({ NEXT_PUBLIC_ADS_PUBLISHER_ID: "ca-pub-1111111111111111" }, () => {
     assert.equal(adsPublisherId(), "pub-1111111111111111");
     assert.equal(adsConfig().enabled, false);
@@ -83,4 +90,23 @@ test("publisher id parsing rejects junk", () => {
 
 test("the ads.txt certification authority is Google's", () => {
   assert.equal(ADS_TXT_CERTIFICATION_AUTHORITY, "f08c47fec0942fa0");
+});
+
+test("ads.txt is comment-only until a valid AdSense publisher id is set", () => {
+  const placeholder = `${ADS_TXT_PLACEHOLDER}\n`;
+  withEnv({}, () => assert.equal(adsTxtBody(), placeholder));
+  withEnv({ NEXT_PUBLIC_ADSENSE_PUB_ID: "" }, () => assert.equal(adsTxtBody(), placeholder));
+  withEnv({ NEXT_PUBLIC_ADSENSE_PUB_ID: "ca-pub-1234567890123456" }, () =>
+    assert.equal(adsTxtBody(), placeholder),
+  );
+  withEnv({ NEXT_PUBLIC_ADSENSE_PUB_ID: "pub-1234" }, () => assert.equal(adsTxtBody(), placeholder));
+  withEnv({ NEXT_PUBLIC_ADSENSE_PUB_ID: "pub-123456789012345678901" }, () =>
+    assert.equal(adsTxtBody(), placeholder),
+  );
+  withEnv({ NEXT_PUBLIC_ADSENSE_PUB_ID: "pub-1234567890123456" }, () => {
+    assert.equal(
+      adsTxtBody(),
+      `google.com, pub-1234567890123456, DIRECT, ${ADS_TXT_CERTIFICATION_AUTHORITY}\n`,
+    );
+  });
 });

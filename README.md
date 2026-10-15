@@ -43,6 +43,16 @@ npm run dev
 
 Checks: `npm run lint`, `npm run typecheck`, `npm run build`.
 
+## ads.txt
+
+`/ads.txt` is written at build time from `NEXT_PUBLIC_ADSENSE_PUB_ID`. Leave it unset and the file is one comment:
+
+```
+# Almost Lore ads.txt — AdSense publisher line added after approval.
+```
+
+After AdSense approval, set that variable to the publisher id (`pub-` plus 10–20 digits) and rebuild. The file becomes one line: `google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0`. Any other value keeps the comment.
+
 ## IndexNow
 
 Run `npm run indexnow` after a production deploy. The key file must already be live at `https://almostlore.com/7843aae65a441c1d1eea85e21facde25.txt` (body is the key). `npm run build` does not submit. `npm run indexnow -- --dry-run` prints the payload and does not send it.
