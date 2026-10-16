@@ -1,6 +1,21 @@
 # Almost Lore — operating state
 
-Updated: 2026-10-03
+Updated: 2026-10-16
+
+## Checkout verification, 2026-10-16
+
+This verification supersedes conflicting checkout statements below. Earlier observations remain as historical evidence.
+
+- By 03:46 UTC, the rendered `/dossier` page showed "Pay $9 and continue to checkout".
+- `/api/status` reported `stripeConfigured`, `stripeLive`, `webhookConfigured`, and `dossierStored` as true. It reported `paused` false.
+- E2 is open. Use 2026-10-15 as the conservative start date and 2026-11-14 as the evaluation date.
+- The exact activation time is unverified. The first browser confirmation occurred on October 15 Pacific time, which was October 16 UTC.
+- The latest summary remains the cron at `2026-10-15T13:00:24.091Z`. Its ledger reports `no_stripe_key`; its zeros do not establish current sales.
+- This pass created no checkout session or charge. Payment completion, webhook delivery, and paid download delivery remain unverified.
+- An owner test purchase is a payment check, not E2 demand evidence or customer revenue. The existing owner task is [issue #22](https://github.com/laqaer/almost-lore/issues/22).
+
+Check the next scheduled reconciliation after 2026-10-16 at 13:00 UTC. Do not diagnose the earlier summary as a failure before that check.
+Keep E1's original metric and 2026-10-17 deadline unchanged. Do not add story volume while indexing measurement remains blocked.
 
 ## Current verification, 2026-10-03
 
@@ -23,7 +38,7 @@ Do not repeat this crawl check without a content change, deployment change, or r
 
 Free essays of public-record historical near-misses, published at https://almostlore.com by Laqaer.
 
-Paid offer, not yet collectible: the Poyais working file, $9 once, for readers who want Clavel’s loan table and an explicit list of figures we will not adopt. Buyer: a reader, writer, or teacher who already wants the footnote version. Channel: the essay page and organic search. Fulfillment cost after the file is stored: a Worker request. The file body is in Cloudflare KV key `product:poyais-working-file:v1`, not in this public git repo.
+Paid offer: the Poyais working file costs $9 once. It includes Clavel's loan table and an explicit list of figures we will not adopt. The intended buyer is a reader, writer, or teacher who wants the footnote version. The channels are the essay page and organic search. Fulfillment uses a Worker request. The file body is in Cloudflare KV key `product:poyais-working-file:v1`, not in this public git repo.
 
 ## What is true
 
@@ -55,4 +70,4 @@ States to keep distinct: one probe cron has fired unattended. The daily 13:00 UT
 
 IndexNow maintenance, 2026-09-30: removed `/dossier/thanks` from the submission list because the checkout delivery page declares `noindex`. Verified the dry-run payload retains 23 public URLs, including all 14 essays, and omits the delivery page. No live submission was made; this is not evidence of indexing or revenue.
 
-The next scheduled action is the worker cron at 13:00 UTC on 2026-09-26. It should record Pig War 200 and cash still 0. E2 stays blocked until Stripe is connected and the dossier page shows the pay button. E1 succeeds only if the URL is indexed or appears in a Google result by 2026-10-17. Sales tax on a future $9 sale is not automated.
+Check the worker reconciliation after 2026-10-16 at 13:00 UTC. E2 is open; its conservative evaluation date is 2026-11-14. E1 succeeds only if its URL is indexed or appears in a Google result by 2026-10-17. Sales tax configuration was not verified during this checkout check.

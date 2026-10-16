@@ -2,7 +2,20 @@
 
 Mandate start: 2026-09-26. Currency: USD.
 
-This file is the narrative ledger. It is not a processor export. The worker status endpoint repeats the same zeros until Stripe is connected. Test charges, if any are ever run, are excluded.
+This file is the narrative ledger. It is not a processor export. Exclude test charges from customer revenue.
+
+## Verification, 2026-10-16
+
+Stripe and its webhook now report as configured in live mode. The dossier page shows the pay button.
+The latest summary is still the 2026-10-15 13:00 UTC cron, with ledger source `no_stripe_key`.
+Current cash, refunds, fees, and customer counts remain unverified until a Stripe-backed reconciliation is available.
+No checkout session or charge was created during this check.
+
+The table and counts below retain the pre-activation record. They are not a current processor balance.
+An owner test purchase is not customer revenue or E2 demand evidence, even in live mode.
+Record any actual processing fees or refunds separately when evidence becomes available.
+
+## Pre-Activation Record
 
 | | Since mandate | Evidence |
 | --- | ---: | --- |
