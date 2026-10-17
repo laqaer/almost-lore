@@ -4,6 +4,13 @@ Mandate start: 2026-09-26. Currency: USD.
 
 This file is the narrative ledger. It is not a processor export. Exclude test charges from customer revenue.
 
+## Reconciliation Failure, 2026-10-17
+
+Cloudflare records an exception for the October 16 daily reconciliation, after 50 subrequests.
+The public summary still predates live activation and reports `no_stripe_key`. Its zeros do not establish current sales or refunds.
+The source repair awaits deployment approval in [issue #23](https://github.com/laqaer/almost-lore/issues/23).
+Current cash, fees, refunds, and customer counts remain unverified. No charge or new discretionary spend occurred during this investigation.
+
 ## Verification, 2026-10-16
 
 Stripe and its webhook now report as configured in live mode. The dossier page shows the pay button.
