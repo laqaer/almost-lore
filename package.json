@@ -10,6 +10,7 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "test": "node --test --experimental-strip-types workers/ops/policy.test.js lib/ads.test.mts",
+    "test:e2e:ops": "node --test e2e/ops.test.mjs",
     "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
