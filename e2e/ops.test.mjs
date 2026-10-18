@@ -3,7 +3,7 @@ import test from "node:test";
 
 const baseUrl = process.env.E2E_BASE_URL || "https://almostlore.com";
 
-test("the public status exposes a recent, successful daily reconciliation", async () => {
+test("the public status exposes a recent, successful scheduled reconciliation", async () => {
   const response = await fetch(new URL("/api/status", baseUrl), {
     signal: AbortSignal.timeout(15_000),
     cache: "no-store",
@@ -26,6 +26,7 @@ test("the public status exposes a recent, successful daily reconciliation", asyn
     `Daily summary is stale: latest=${summary?.at ?? "missing"}; required>=${due.toISOString()}`,
   );
   assert.ok(at <= now.getTime() + 5 * 60_000, "Summary timestamp is in the future");
+  assert.equal(summary.source, "cron", "The latest summary must come from the scheduled reconciliation");
   assert.equal(summary.home?.status, 200);
   assert.equal(summary.pigWar?.status, 200);
   if (status.stripeConfigured && !status.paused) {
