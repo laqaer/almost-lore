@@ -1,6 +1,13 @@
 # Almost Lore — operating state
 
-Updated: 2026-10-17
+Updated: 2026-10-18
+
+## Scoped Repair Authorization, 2026-10-18
+
+The owner authorized the reviewed PR #24 reconciliation repair for the existing `almost-lore-ops` Worker only.
+Authorization and acceptance evidence are tracked in [issue #23](https://github.com/laqaer/almost-lore/issues/23#issuecomment-6245756443).
+Preserve secrets, KV, cron, compatibility settings, payments, DNS, and the $0 spending restriction.
+Complete review and merge before the code-only Worker deployment. Production acceptance remains pending the next existing scheduled run and the read-only E2E check.
 
 ## Reconciliation Failure, 2026-10-17
 
@@ -14,10 +21,21 @@ The October 16 daily job failed. This finding supersedes the earlier instruction
 - A source repair replaces individual requests with Stripe list expansion. It preserves the existing 100-session bound and truncation warning.
 - All 15 existing tests pass. A new read-only HTTP E2E check detects the stale production summary. The repair is not deployed or verified end to end.
 
-Deployment requires the approval tracked in [issue #23](https://github.com/laqaer/almost-lore/issues/23). This heartbeat prohibits a separate infrastructure deployment.
+At this historical check, deployment required the approval tracked in [issue #23](https://github.com/laqaer/almost-lore/issues/23). The scoped authorization above supersedes that hold for this repair only.
 No secrets, DNS, schedules, payment settings, or infrastructure were changed. No checkout session or charge was created.
 Current sales remain unknown. E2 retains its 2026-11-14 evaluation date.
 E1 reaches its original 21-day deadline at 2026-10-17 05:22 UTC. This check occurred before that deadline.
+## E1 Deadline Evaluation, 2026-10-18
+
+E1 is closed without demonstrated success. Its original deadline was 2026-10-17 at 05:22 UTC. This evaluation does not extend that window.
+
+- At approximately 03:50 UTC on October 18, the production essay returned HTTP 200.
+- Google's exact-path `site:` query showed no matching organic result. Bing returned unrelated results, not indexing evidence for this URL.
+- No verified indexing evidence was recorded within the original window. Search Console indexing evidence remains unavailable.
+- Search absence is not proof of universal non-indexing. The experiment still fails its requirement for observed indexing or a Google result.
+
+The original stop rule now applies. Do not add another essay in this pattern until the first can be measured.
+Limit the next work to evidenced title or internal-link repairs, or indexing measurement access. See `ops/EXPERIMENTS.md` for the evaluation evidence.
 
 ## Checkout verification, 2026-10-16
 
@@ -87,7 +105,8 @@ States to keep distinct: one probe cron has fired unattended. The daily 13:00 UT
 
 IndexNow maintenance, 2026-09-30: removed `/dossier/thanks` from the submission list because the checkout delivery page declares `noindex`. Verified the dry-run payload retains 23 public URLs, including all 14 essays, and omits the delivery page. No live submission was made; this is not evidence of indexing or revenue.
 
-Follow issue #23 for the reconciliation repair and deployment approval. Do not treat the stale summary as current sales evidence.
-After an authorized deployment, verify a fresh Stripe-backed summary and the next unattended cron result.
-E2 remains open, with evaluation on 2026-11-14. Evaluate E1 at its original deadline, 2026-10-17 05:22 UTC.
+Follow issue #23 for the authorized reconciliation repair and production acceptance. Do not treat the stale summary as current sales evidence.
+After deployment, verify a fresh Stripe-backed summary and the next unattended cron result; run `npm run test:e2e:ops`.
+E1 is closed. Keep its original deadline and apply the no-new-volume rule until indexing can be measured.
+E2 remains open with its unchanged 2026-11-14 evaluation date.
 Sales tax configuration remains unverified.
