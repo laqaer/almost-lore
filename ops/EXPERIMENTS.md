@@ -12,7 +12,22 @@ Rules below were written before the pages were public. Do not move the metric af
 - Success metric: `https://almostlore.com/stories/pig-war-san-juan` returns HTTP 200 on production, and within 21 days of that deploy the URL is indexed or appears in a Google result. Indexing we cannot see is not success.
 - Evaluation window: 21 days from the production deploy that contains the essay.
 - Stop / pivot: If the URL is not indexed at day 21, do not write a second essay in the same pattern until the first can be measured. Fix titles, internal links, or Search Console access before adding volume.
-- Status: window open, indexing not observed. Production first returned HTTP 200 for `https://almostlore.com/stories/pig-war-san-juan` at 2026-09-26T05:22:00Z (response `Date` header; Vercel deployment `dpl_5pc6yD7MmWHv6VqGkC4yFa3ZdHLR`, commit `d67eba1`). `www` returned the same page. The 21-day window runs through 2026-10-17. A cron probe at 05:13:45Z, before this deploy, recorded 404 and does not start the window. Search Console is not connected. A Google verification TXT already exists on the domain. OpenSEO credits are 0, so no paid index check was run.
+- Launch status (historical): window open, indexing not observed. Production first returned HTTP 200 for `https://almostlore.com/stories/pig-war-san-juan` at 2026-09-26T05:22:00Z (response `Date` header; Vercel deployment `dpl_5pc6yD7MmWHv6VqGkC4yFa3ZdHLR`, commit `d67eba1`). `www` returned the same page. The 21-day window runs through 2026-10-17. A cron probe at 05:13:45Z, before this deploy, recorded 404 and does not start the window. Search Console is not connected. A Google verification TXT already exists on the domain. OpenSEO credits are 0, so no paid index check was run.
+
+### E1 Evaluation, 2026-10-18
+
+Status: closed without demonstrated success. The original deadline was 2026-10-17 at 05:22 UTC. It has not moved.
+This evaluation occurred after the deadline, at approximately 03:50 UTC on October 18. No verified indexing evidence was recorded within the window.
+
+- The production URL returned HTTP 200 during this evaluation.
+- A Google search for `site:almostlore.com/stories/pig-war-san-juan` displayed no matching organic result. Only a Search Console promotion appeared.
+- The same Bing query displayed unrelated results. None of the displayed results established indexing of this URL.
+- Web searches for the exact site path and `"almostlore.com" "Pig War"` returned no results.
+- Search Console indexing evidence remains unavailable. These searches do not prove that the URL is absent from every search index.
+
+The HTTP requirement passed. The indexing requirement was not demonstrated, so E1 does not count as a success.
+Apply the original stop rule: do not add another essay in this pattern until the first can be measured.
+Keep future work limited to evidenced title or internal-link repairs, or indexing measurement access. Do not extend this experiment or count submission acceptance as indexing.
 
 ## E2 — Poyais working file, $9 once
 

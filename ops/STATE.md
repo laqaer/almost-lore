@@ -1,6 +1,18 @@
 # Almost Lore — operating state
 
-Updated: 2026-10-16
+Updated: 2026-10-18
+
+## E1 Deadline Evaluation, 2026-10-18
+
+E1 is closed without demonstrated success. Its original deadline was 2026-10-17 at 05:22 UTC. This evaluation does not extend that window.
+
+- At approximately 03:50 UTC on October 18, the production essay returned HTTP 200.
+- Google's exact-path `site:` query showed no matching organic result. Bing returned unrelated results, not indexing evidence for this URL.
+- No verified indexing evidence was recorded within the original window. Search Console indexing evidence remains unavailable.
+- Search absence is not proof of universal non-indexing. The experiment still fails its requirement for observed indexing or a Google result.
+
+The original stop rule now applies. Do not add another essay in this pattern until the first can be measured.
+Limit the next work to evidenced title or internal-link repairs, or indexing measurement access. See `ops/EXPERIMENTS.md` for the evaluation evidence.
 
 ## Checkout verification, 2026-10-16
 
@@ -70,4 +82,6 @@ States to keep distinct: one probe cron has fired unattended. The daily 13:00 UT
 
 IndexNow maintenance, 2026-09-30: removed `/dossier/thanks` from the submission list because the checkout delivery page declares `noindex`. Verified the dry-run payload retains 23 public URLs, including all 14 essays, and omits the delivery page. No live submission was made; this is not evidence of indexing or revenue.
 
-Check the worker reconciliation after 2026-10-16 at 13:00 UTC. E2 is open; its conservative evaluation date is 2026-11-14. E1 succeeds only if its URL is indexed or appears in a Google result by 2026-10-17. Sales tax configuration was not verified during this checkout check.
+E1 is closed. Keep its original deadline and apply the no-new-volume rule until indexing can be measured.
+E2 remains open with its unchanged 2026-11-14 evaluation date. The separate ledger repair remains in draft PR #24, pending issue #23.
+Sales tax configuration remains unverified.
