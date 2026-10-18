@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AdSlot } from "@/components/ad-slot";
+import { CoastChart } from "@/components/coast-chart";
 import { site } from "@/lib/site";
 import { getStory, readingMinutes, stories, storyPath } from "@/lib/stories";
 import { storyMedia } from "@/lib/stories/media";
@@ -83,26 +84,10 @@ export default function HomePage() {
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6">
       <section className="grid items-start gap-8 py-10 lg:grid-cols-12 lg:gap-12">
-        {storyMedia[lead.slug] ? (
-          <figure className="lg:col-span-7">
-            <Link aria-label={`Read: ${lead.title}`} className="block" href={storyPath(lead.slug)}>
-              <Image
-                alt={storyMedia[lead.slug].alt}
-                className="h-auto w-full bg-paper-deep"
-                height={storyMedia[lead.slug].height}
-                priority
-                sizes="(min-width: 1024px) 58vw, 100vw"
-                src={storyMedia[lead.slug].src}
-                unoptimized
-                width={storyMedia[lead.slug].width}
-              />
-            </Link>
-            <Credit slug={lead.slug} />
-          </figure>
-        ) : null}
-        <div className="lg:col-span-5">
+        <div className="order-1 lg:order-2 lg:col-span-5">
+          <CoastChart />
           <p className="kicker">{lead.yearLabel} · Lead story</p>
-          <h1 className="mt-3 font-display text-3xl leading-[1.1] text-ink sm:text-4xl lg:text-5xl">
+          <h1 className="mt-3 font-display text-6xl leading-[1.02] text-ink">
             <Link className="hover:text-rust" href={storyPath(lead.slug)}>
               {lead.title}
             </Link>
@@ -116,6 +101,29 @@ export default function HomePage() {
             Read the story <span aria-hidden>→</span>
           </Link>
         </div>
+        {storyMedia[lead.slug] ? (
+          <figure className="order-2 lg:order-1 lg:col-span-7">
+            <Link
+              aria-label={`Read: ${lead.title}`}
+              className="lead-plate block"
+              href={storyPath(lead.slug)}
+            >
+              <span className="block overflow-hidden">
+                <Image
+                  alt={storyMedia[lead.slug].alt}
+                  className="h-auto w-full bg-paper-deep"
+                  height={storyMedia[lead.slug].height}
+                  priority
+                  sizes="(min-width: 1024px) 58vw, 100vw"
+                  src={storyMedia[lead.slug].src}
+                  unoptimized
+                  width={storyMedia[lead.slug].width}
+                />
+              </span>
+            </Link>
+            <Credit slug={lead.slug} />
+          </figure>
+        ) : null}
       </section>
 
       <AdSlot className="mt-12" />
@@ -146,7 +154,7 @@ export default function HomePage() {
               <p className="mt-2 max-w-2xl text-sm text-ink-soft">{era.blurb}</p>
               <ul className="mt-7 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
                 {items.map((story) => (
-                  <li key={story.slug} className="flex flex-col">
+                  <li key={story.slug} className="story-card flex flex-col">
                     {storyMedia[story.slug] ? (
                       <figure className="flex flex-col">
                         <Link
@@ -154,7 +162,7 @@ export default function HomePage() {
                           className="block"
                           href={storyPath(story.slug)}
                         >
-                          <span className="relative block aspect-[4/3] bg-paper-deep">
+                          <span className="card-media relative block aspect-[4/3] overflow-hidden bg-paper-deep">
                             <Image
                               alt={storyMedia[story.slug].alt}
                               className="object-contain"
