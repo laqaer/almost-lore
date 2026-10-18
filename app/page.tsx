@@ -85,6 +85,7 @@ export default function HomePage() {
     <div className="mx-auto max-w-6xl px-4 sm:px-6">
       <section className="grid items-start gap-8 py-10 lg:grid-cols-12 lg:gap-12">
         <div className="order-1 lg:order-2 lg:col-span-5">
+          <CoastChart />
           <p className="kicker">{lead.yearLabel} · Lead story</p>
           <h1 className="mt-3 font-display text-6xl leading-[1.02] text-ink">
             <Link className="hover:text-rust" href={storyPath(lead.slug)}>
@@ -99,7 +100,6 @@ export default function HomePage() {
           >
             Read the story <span aria-hidden>→</span>
           </Link>
-          <CoastChart />
         </div>
         {storyMedia[lead.slug] ? (
           <figure className="order-2 lg:order-1 lg:col-span-7">

@@ -194,7 +194,7 @@ body {
 
 .chart-coast {
   stroke: var(--color-ink);
-  stroke-width: 1.45;
+  stroke-width: 1.75;
 }
 
 .chart-shoal {
@@ -214,7 +214,7 @@ body {
 
 .chart-route {
   stroke: var(--color-rust);
-  stroke-width: 1.35;
+  stroke-width: 1.65;
 }
 
 .chart-mark {
@@ -240,6 +240,8 @@ body {
   background-size: 0 1px;
 }
 
+.story-card:hover h3 a,
+.story-card:focus-within h3 a,
 .story-card h3 a:hover,
 .story-card h3 a:focus-visible {
   background-size: 100% 1px;
@@ -251,27 +253,27 @@ body {
 
 @media (prefers-reduced-motion: no-preference) {
   .chart-draw {
-    animation: chart-draw 2.15s cubic-bezier(0.33, 0, 0.2, 1) forwards;
+    animation: chart-draw 2.4s cubic-bezier(0.33, 0, 0.2, 1) 0.2s forwards;
   }
 
   .chart-shoal.chart-draw {
-    animation-duration: 1.7s;
-    animation-delay: 0.2s;
+    animation-duration: 1.8s;
+    animation-delay: 0.35s;
   }
 
   .chart-creek.chart-draw {
-    animation-duration: 1.15s;
-    animation-delay: 0.55s;
+    animation-duration: 1.2s;
+    animation-delay: 0.7s;
   }
 
   .chart-draw-isle {
-    animation-duration: 0.9s;
-    animation-delay: 0.75s;
+    animation-duration: 0.95s;
+    animation-delay: 0.9s;
   }
 
   .chart-draw-route {
-    animation-duration: 1.45s;
-    animation-delay: 0.95s;
+    animation-duration: 1.6s;
+    animation-delay: 1.15s;
   }
 
   @supports (animation-timeline: view()) {
@@ -291,7 +293,7 @@ body {
   .story-card:focus-within .card-media img,
   .lead-plate:hover img,
   .lead-plate:focus-within img {
-    transform: scale(1.03);
+    transform: scale(1.06);
   }
 
   a {

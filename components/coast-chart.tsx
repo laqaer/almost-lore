@@ -4,7 +4,7 @@
  */
 export function CoastChart() {
   return (
-    <div className="coast-chart mt-6" aria-hidden="true">
+    <div className="coast-chart mb-6" aria-hidden="true">
       <svg focusable="false" height={168} viewBox="0 0 480 168" width={480}>
         <rect className="chart-frame" height={167} width={479} x={0.5} y={0.5} />
         <path
