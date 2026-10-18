@@ -145,7 +145,8 @@ body {
   font-weight: 600;
 }
 
-:focus-visible {
+:focus-visible,
+.lead-plate:focus-visible {
   outline: 2px solid var(--color-teal);
   outline-offset: 3px;
 }
@@ -309,6 +310,12 @@ body {
   .chart-draw {
     animation: none;
     stroke-dashoffset: 0;
+  }
+
+  :focus-visible,
+  .lead-plate:focus-visible {
+    outline: 2px solid var(--color-teal);
+    outline-offset: 3px;
   }
 }
 

@@ -105,19 +105,21 @@ export default function HomePage() {
           <figure className="order-2 lg:order-1 lg:col-span-7">
             <Link
               aria-label={`Read: ${lead.title}`}
-              className="lead-plate block overflow-hidden"
+              className="lead-plate block"
               href={storyPath(lead.slug)}
             >
-              <Image
-                alt={storyMedia[lead.slug].alt}
-                className="h-auto w-full bg-paper-deep"
-                height={storyMedia[lead.slug].height}
-                priority
-                sizes="(min-width: 1024px) 58vw, 100vw"
-                src={storyMedia[lead.slug].src}
-                unoptimized
-                width={storyMedia[lead.slug].width}
-              />
+              <span className="block overflow-hidden">
+                <Image
+                  alt={storyMedia[lead.slug].alt}
+                  className="h-auto w-full bg-paper-deep"
+                  height={storyMedia[lead.slug].height}
+                  priority
+                  sizes="(min-width: 1024px) 58vw, 100vw"
+                  src={storyMedia[lead.slug].src}
+                  unoptimized
+                  width={storyMedia[lead.slug].width}
+                />
+              </span>
             </Link>
             <Credit slug={lead.slug} />
           </figure>
