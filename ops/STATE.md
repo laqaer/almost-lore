@@ -2,6 +2,29 @@
 
 Updated: 2026-10-18
 
+## Scoped Repair Authorization, 2026-10-18
+
+The owner authorized the reviewed PR #24 reconciliation repair for the existing `almost-lore-ops` Worker only.
+Authorization and acceptance evidence are tracked in [issue #23](https://github.com/laqaer/almost-lore/issues/23#issuecomment-6245756443).
+Preserve secrets, KV, cron, compatibility settings, payments, DNS, and the $0 spending restriction.
+Complete review and merge before the code-only Worker deployment. Production acceptance remains pending the next existing scheduled run and the read-only E2E check.
+
+## Reconciliation Failure, 2026-10-17
+
+The October 16 daily job failed. This finding supersedes the earlier instruction to wait for that run.
+
+- Cloudflare records `scriptThrewException` at `2026-10-16T13:00:45Z`, with 50 subrequests. October 14 and October 15 succeeded.
+- The schedule remains `0 13 * * *`. The public summary remains `2026-10-15T13:00:24.091Z`, with ledger source `no_stripe_key`.
+- The deployed source lists up to 100 Stripe sessions, then retrieves each session separately before writing the summary.
+- Subrequest exhaustion is the leading diagnosis. The observed count matches the [Workers Free limit](https://developers.cloudflare.com/workers/platform/limits/#subrequests), but the exact exception text is unavailable.
+- Worker logs were not enabled. The historical log query returned no events.
+- A source repair replaces individual requests with Stripe list expansion. It preserves the existing 100-session bound and truncation warning.
+- All 15 existing tests pass. A new read-only HTTP E2E check detects the stale production summary. The repair is not deployed or verified end to end.
+
+At this historical check, deployment required the approval tracked in [issue #23](https://github.com/laqaer/almost-lore/issues/23). The scoped authorization above supersedes that hold for this repair only.
+No secrets, DNS, schedules, payment settings, or infrastructure were changed. No checkout session or charge was created.
+Current sales remain unknown. E2 retains its 2026-11-14 evaluation date.
+E1 reaches its original 21-day deadline at 2026-10-17 05:22 UTC. This check occurred before that deadline.
 ## E1 Deadline Evaluation, 2026-10-18
 
 E1 is closed without demonstrated success. Its original deadline was 2026-10-17 at 05:22 UTC. This evaluation does not extend that window.
@@ -82,6 +105,8 @@ States to keep distinct: one probe cron has fired unattended. The daily 13:00 UT
 
 IndexNow maintenance, 2026-09-30: removed `/dossier/thanks` from the submission list because the checkout delivery page declares `noindex`. Verified the dry-run payload retains 23 public URLs, including all 14 essays, and omits the delivery page. No live submission was made; this is not evidence of indexing or revenue.
 
+Follow issue #23 for the authorized reconciliation repair and production acceptance. Do not treat the stale summary as current sales evidence.
+After deployment, verify a fresh Stripe-backed summary and the next unattended cron result; run `npm run test:e2e:ops`.
 E1 is closed. Keep its original deadline and apply the no-new-volume rule until indexing can be measured.
-E2 remains open with its unchanged 2026-11-14 evaluation date. The separate ledger repair remains in draft PR #24, pending issue #23.
+E2 remains open with its unchanged 2026-11-14 evaluation date.
 Sales tax configuration remains unverified.

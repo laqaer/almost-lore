@@ -319,7 +319,7 @@ async function runDaily(env, source) {
 }
 
 async function reconcile(env) {
-  const listed = await stripeGet(env, "/v1/checkout/sessions?limit=100");
+  const listed = await stripeGet(env, "/v1/checkout/sessions?limit=100&expand[]=data.payment_intent");
   if (!listed.ok) {
     return {
       source: "stripe_error",
@@ -331,13 +331,7 @@ async function reconcile(env) {
       provisional: true,
     };
   }
-  const sessions = [];
-  for (const session of listed.body.data || []) {
-    if (!session.id) continue;
-    const full = await stripeGet(env, `/v1/checkout/sessions/${session.id}?expand[]=payment_intent`);
-    if (full.ok) sessions.push(full.body);
-  }
-  const totals = summarizeSessions(sessions);
+  const totals = summarizeSessions(listed.body.data || []);
   return {
     source: "stripe_checkout_sessions",
     ...totals,
