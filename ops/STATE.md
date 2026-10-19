@@ -1,13 +1,29 @@
 # Almost Lore — operating state
 
-Updated: 2026-10-18
+Updated: 2026-10-19
+
+## Reconciliation Restored, 2026-10-19
+
+Production acceptance is complete. This record supersedes the pending acceptance and stale-summary statements below.
+
+- [Issue #23's acceptance receipt](https://github.com/laqaer/almost-lore/issues/23#issuecomment-6250463123) records a successful October 18 scheduled invocation on repaired version `b148a826-80ac-4950-a834-7933895dc411`.
+- That invocation used three subrequests and reported zero errors. The issue is closed.
+- This pass independently verified the public summary at `2026-10-18T13:00:28.914Z`, with source `cron` and ledger source `stripe_checkout_sessions`.
+- Both page probes report HTTP 200. Stripe configured/live, webhook configured, and dossier stored remain true; paused remains false.
+- `npm run test:e2e:ops` passes against production: one test, one pass, no skips.
+- The summary reports zero paid sessions and zero cash. Accounting remains provisional, with a 100-session account-wide limit and incomplete fees and refunds.
+- The summary does not report checkout starts or automatically exclude live owner purchases. It does not establish customer revenue or E2 success.
+
+This pass changed records only. It created no checkout session or charge and made no deployment, configuration change, or discretionary purchase.
+Payment completion, webhook delivery, and paid download delivery remain unverified by these read-only checks.
+E1 remains closed under its original stop rule. E2 retains its 2026-11-14 evaluation date.
 
 ## Scoped Repair Authorization, 2026-10-18
 
 The owner authorized the reviewed PR #24 reconciliation repair for the existing `almost-lore-ops` Worker only.
 Authorization and acceptance evidence are tracked in [issue #23](https://github.com/laqaer/almost-lore/issues/23#issuecomment-6245756443).
 Preserve secrets, KV, cron, compatibility settings, payments, DNS, and the $0 spending restriction.
-Complete review and merge before the code-only Worker deployment. Production acceptance remains pending the next existing scheduled run and the read-only E2E check.
+The repair merged as `4445fdd` and was deployed on October 18. The existing scheduled run and read-only E2E check completed production acceptance.
 
 ## Reconciliation Failure, 2026-10-17
 
@@ -105,8 +121,8 @@ States to keep distinct: one probe cron has fired unattended. The daily 13:00 UT
 
 IndexNow maintenance, 2026-09-30: removed `/dossier/thanks` from the submission list because the checkout delivery page declares `noindex`. Verified the dry-run payload retains 23 public URLs, including all 14 essays, and omits the delivery page. No live submission was made; this is not evidence of indexing or revenue.
 
-Follow issue #23 for the authorized reconciliation repair and production acceptance. Do not treat the stale summary as current sales evidence.
-After deployment, verify a fresh Stripe-backed summary and the next unattended cron result; run `npm run test:e2e:ops`.
+Issue #23 is complete. Continue the existing read-only freshness check with `npm run test:e2e:ops`; do not create another monitoring loop.
+Use only fresh Stripe-backed summaries, with the accounting limits above. Do not treat historical pre-activation zeros as current sales evidence.
 E1 is closed. Keep its original deadline and apply the no-new-volume rule until indexing can be measured.
 E2 remains open with its unchanged 2026-11-14 evaluation date.
 Sales tax configuration remains unverified.

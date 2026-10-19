@@ -4,6 +4,29 @@ Mandate start: 2026-09-26. Currency: USD.
 
 This file is the narrative ledger. It is not a processor export. Exclude test charges from customer revenue.
 
+## Reconciliation Restored, 2026-10-19
+
+The live summary now comes from Stripe. This record supersedes the stale-summary and pending-approval statements below.
+[Issue #23 records successful scheduled acceptance](https://github.com/laqaer/almost-lore/issues/23#issuecomment-6250463123) and is closed.
+This pass independently verified the public summary and passed `npm run test:e2e:ops` against production.
+
+Snapshot: `2026-10-18T13:00:28.914Z`, source `cron`, ledger source `stripe_checkout_sessions`.
+
+| Reported field | Value |
+| --- | ---: |
+| `livePaidCount` | 0 |
+| `liveCashCents` | 0 |
+| `liveRefundedCount` | 0 |
+| `testPaidCount` | 0 |
+| `truncated` | false |
+| `fees` | `not_in_checkout_session` |
+| `provisional` | true |
+
+These values are a bounded session summary, not a complete processor balance or verified profit calculation.
+Reconciliation reads one account-wide page of at most 100 sessions, then applies the product checks. Fees and refunds remain incomplete.
+The summary does not report checkout starts or automatically exclude live owner purchases. Do not use it alone to declare E2 success.
+This pass created no checkout session or charge and incurred no new discretionary spend.
+
 ## Reconciliation Failure, 2026-10-17
 
 Cloudflare records an exception for the October 16 daily reconciliation, after 50 subrequests.
