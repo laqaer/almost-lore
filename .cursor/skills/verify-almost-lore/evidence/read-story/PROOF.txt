@@ -1,0 +1,8 @@
+feature: read-story
+entry: hub link "Read the story"
+instance: http://127.0.0.1:4321
+command: ALMOSTLORE_PORT=4321 ALMOSTLORE_HOST=127.0.0.1 .cursor/skills/verify-almost-lore/helpers/almost-lore follow --from / --name "Read the story" --expect "The country that existed on paper" --expect "A soldier who needed a country" --expect "On sources." --expect "As an Amazon Associate, Almost Lore earns from qualifying purchases."
+result: HTTP 200 http://127.0.0.1:4321/stories/poyais-invented-country h1 "The country that existed on paper" jsonLd Article
+also-driven: lead image "Read: The country that existed on paper" (plate-action.txt); hub card "Aqua Tofana, after the legend" (card-action.txt); More stories "Aqua Tofana, after the legend" (more-action.txt)
+left-page: evidence/read-story/home
+arrived-page: evidence/read-story/story

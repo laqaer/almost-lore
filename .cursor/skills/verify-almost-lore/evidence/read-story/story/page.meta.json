@@ -1,0 +1,14 @@
+{
+  "url": "http://127.0.0.1:4321/stories/poyais-invented-country",
+  "status": 200,
+  "title": "The country that existed on paper · Almost Lore",
+  "h1": "The country that existed on paper",
+  "jsonLd": [
+    "WebSite",
+    "Organization",
+    "ContactPoint",
+    "Article"
+  ],
+  "capturedAt": "2026-10-21T06:20:36.557Z",
+  "feature": "read-story"
+}
