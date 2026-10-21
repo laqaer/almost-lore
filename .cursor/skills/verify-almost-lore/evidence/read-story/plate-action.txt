@@ -1,0 +1,10 @@
+from: http://127.0.0.1:4321/
+link: Read: The country that existed on paper
+href: /stories/poyais-invented-country
+matches: 1
+status: 200
+url: http://127.0.0.1:4321/stories/poyais-invented-country
+title: The country that existed on paper · Almost Lore
+h1: The country that existed on paper
+jsonLd: WebSite, Organization, ContactPoint, Article
+expect: ok A soldier who needed a country

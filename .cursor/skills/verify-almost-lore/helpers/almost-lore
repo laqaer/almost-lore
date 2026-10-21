@@ -1,0 +1,1060 @@
+#!/usr/bin/env node
+/**
+ * Drive a local Almost Lore `next dev` and capture reader-path evidence.
+ * Run from the repo root. Never requests https://almostlore.com.
+ *
+ *   ALMOSTLORE_PORT=4321 ALMOSTLORE_HOST=127.0.0.1 \
+ *     .cursor/skills/verify-almost-lore/helpers/almost-lore <command>
+ */
+"use strict";
+
+const { spawn, execFileSync } = require("node:child_process");
+const fs = require("node:fs");
+const net = require("node:net");
+const path = require("node:path");
+
+const LEAD_H1 = "The country that existed on paper";
+const ADS_TXT_PLACEHOLDER =
+  "# Almost Lore ads.txt — AdSense publisher line added after approval.";
+
+const STORY_SLUGS = [
+  "poyais-invented-country",
+  "aqua-tofana-myth-vs-record",
+  "balloon-almost-atlantic",
+  "forgotten-scheme",
+  "fashoda-incident-1898",
+  "pig-war-san-juan",
+  "caroline-affair",
+  "dogger-bank-1904",
+  "trent-affair",
+  "venezuelan-crisis-1895",
+  "san-francisco-fog-1950",
+  "bering-island-winter",
+  "darien-scheme",
+  "aroostook-war",
+];
+
+const STATIC_SITEMAP_PATHS = [
+  "https://almostlore.com",
+  "https://almostlore.com/about",
+  "https://almostlore.com/contact",
+  "https://almostlore.com/now",
+  "https://almostlore.com/friends",
+  "https://almostlore.com/privacy",
+  "https://almostlore.com/dossier",
+  "https://almostlore.com/support",
+  "https://almostlore.com/terms",
+];
+
+function die(message, code = 1) {
+  console.error(message);
+  process.exit(code);
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function repoRoot() {
+  return process.cwd();
+}
+
+function assertRepo() {
+  const root = repoRoot();
+  const pkgPath = path.join(root, "package.json");
+  if (!fs.existsSync(pkgPath)) {
+    die("run from the Almost Lore repo root (package.json not found)");
+  }
+  const pkg = JSON.parse(fs.readFileSync(pkgPath, "utf8"));
+  if (pkg.name !== "almost-lore") {
+    die(`run from the Almost Lore repo root (package name is ${pkg.name})`);
+  }
+  return root;
+}
+
+function config() {
+  const rawPort = process.env.ALMOSTLORE_PORT || "4321";
+  const port = Number(rawPort);
+  const host = process.env.ALMOSTLORE_HOST || "127.0.0.1";
+  if (!Number.isInteger(port) || port < 1 || port > 65535) {
+    die(`bad ALMOSTLORE_PORT: ${rawPort}`);
+  }
+  if (port === 3000) {
+    die(
+      "refusing port 3000: that is the shared next dev port. " +
+        "Leave ALMOSTLORE_PORT at 4321. This harness does not bind or request :3000, " +
+        "even when an instance.json names it.",
+    );
+  }
+  if (host !== "127.0.0.1") {
+    die(
+      `refusing host ${host}: verification binds 127.0.0.1 only, so a server on 0.0.0.0:3000 stays untouched`,
+    );
+  }
+  return { host, port, base: `http://${host}:${port}` };
+}
+
+function runDir(port) {
+  return `/tmp/almost-lore-verify-${port}`;
+}
+
+function instancePath(port) {
+  return path.join(runDir(port), "instance.json");
+}
+
+function readInstance(port) {
+  const file = instancePath(port);
+  if (!fs.existsSync(file)) return null;
+  try {
+    return JSON.parse(fs.readFileSync(file, "utf8"));
+  } catch (error) {
+    die(`unreadable instance file ${file}: ${error.message}`);
+  }
+}
+
+function isAlive(pid) {
+  if (!Number.isInteger(pid) || pid <= 1) return false;
+  try {
+    process.kill(pid, 0);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function cmdline(pid) {
+  try {
+    return fs.readFileSync(`/proc/${pid}/cmdline`, "utf8").replaceAll("\0", " ").trim();
+  } catch {
+    return "";
+  }
+}
+
+function ppid(pid) {
+  try {
+    const stat = fs.readFileSync(`/proc/${pid}/stat`, "utf8");
+    const end = stat.lastIndexOf(")");
+    const rest = stat.slice(end + 2).trim().split(/\s+/);
+    return Number(rest[1]);
+  } catch {
+    return 0;
+  }
+}
+
+function isInTree(ancestor, pid) {
+  const seen = new Set();
+  let current = pid;
+  while (current > 1 && !seen.has(current)) {
+    if (current === ancestor) return true;
+    seen.add(current);
+    current = ppid(current);
+  }
+  return false;
+}
+
+function descendants(pid) {
+  const children = new Map();
+  let entries = [];
+  try {
+    entries = fs.readdirSync("/proc");
+  } catch {
+    return [];
+  }
+  for (const name of entries) {
+    if (!/^\d+$/.test(name)) continue;
+    const child = Number(name);
+    const parent = ppid(child);
+    if (!children.has(parent)) children.set(parent, []);
+    children.get(parent).push(child);
+  }
+  const out = [];
+  const stack = [...(children.get(pid) || [])];
+  const seen = new Set();
+  while (stack.length) {
+    const next = stack.pop();
+    if (seen.has(next)) continue;
+    seen.add(next);
+    out.push(next);
+    for (const child of children.get(next) || []) stack.push(child);
+  }
+  return out;
+}
+
+function listeners(port) {
+  try {
+    const out = execFileSync("ss", ["-H", "-ltnp"], { encoding: "utf8" });
+    const pids = new Set();
+    for (const line of out.split("\n")) {
+      if (!line.trim()) continue;
+      const local = line.trim().split(/\s+/)[3] || "";
+      if (!local.endsWith(`:${port}`)) continue;
+      for (const match of line.matchAll(/pid=(\d+)/g)) pids.add(Number(match[1]));
+    }
+    return [...pids];
+  } catch {
+    return listenersFromProc(port);
+  }
+}
+
+function listenersFromProc(port) {
+  const hexPort = port.toString(16).toUpperCase().padStart(4, "0");
+  const inodes = new Set();
+  for (const file of ["/proc/net/tcp", "/proc/net/tcp6"]) {
+    let text = "";
+    try {
+      text = fs.readFileSync(file, "utf8");
+    } catch {
+      continue;
+    }
+    for (const line of text.split("\n").slice(1)) {
+      const parts = line.trim().split(/\s+/);
+      if (parts.length < 10) continue;
+      const [, portHex] = parts[1].split(":");
+      if (!portHex || portHex.toUpperCase() !== hexPort) continue;
+      if (parts[3] !== "0A") continue;
+      inodes.add(parts[9]);
+    }
+  }
+  if (inodes.size === 0) return [];
+  const pids = new Set();
+  let entries = [];
+  try {
+    entries = fs.readdirSync("/proc");
+  } catch {
+    return [];
+  }
+  for (const name of entries) {
+    if (!/^\d+$/.test(name)) continue;
+    let fds = [];
+    try {
+      fds = fs.readdirSync(`/proc/${name}/fd`);
+    } catch {
+      continue;
+    }
+    for (const fd of fds) {
+      let link = "";
+      try {
+        link = fs.readlinkSync(`/proc/${name}/fd/${fd}`);
+      } catch {
+        continue;
+      }
+      const match = /^socket:\[(\d+)\]$/.exec(link);
+      if (match && inodes.has(match[1])) pids.add(Number(name));
+    }
+  }
+  return [...pids];
+}
+
+function portOpen(host, port) {
+  return new Promise((resolve) => {
+    const socket = net.connect({ host, port });
+    const done = (open) => {
+      socket.removeAllListeners();
+      socket.destroy();
+      resolve(open);
+    };
+    socket.setTimeout(400, () => done(false));
+    socket.once("connect", () => done(true));
+    socket.once("error", () => done(false));
+  });
+}
+
+function readNextLock(root) {
+  for (const rel of [".next/dev/lock", ".next/lock"]) {
+    const file = path.join(root, rel);
+    try {
+      const info = JSON.parse(fs.readFileSync(file, "utf8"));
+      if (info && Number.isInteger(info.pid)) return { ...info, file };
+    } catch {
+      // absent or not the dev-server json
+    }
+  }
+  return null;
+}
+
+function otherLiveInstance(root, port) {
+  let names = [];
+  try {
+    names = fs.readdirSync("/tmp");
+  } catch {
+    return null;
+  }
+  for (const name of names) {
+    if (!name.startsWith("almost-lore-verify-")) continue;
+    const file = path.join("/tmp", name, "instance.json");
+    if (!fs.existsSync(file)) continue;
+    let info;
+    try {
+      info = JSON.parse(fs.readFileSync(file, "utf8"));
+    } catch {
+      continue;
+    }
+    if (info.repoRoot === root && info.port !== port && isAlive(info.pid)) return info;
+  }
+  return null;
+}
+
+function decode(text) {
+  return text
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCodePoint(parseInt(hex, 16)))
+    .replace(/&#(\d+);/g, (_, num) => String.fromCodePoint(Number(num)))
+    .replace(/&nbsp;/g, " ")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&apos;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&amp;/g, "&");
+}
+
+function stripHidden(html) {
+  let previous = "";
+  let current = html;
+  const hidden =
+    /<([a-z0-9]+)\b[^>]*\baria-hidden(?:\s*=\s*(?:"true"|'true'|true))?(?=[\s>])[^>]*>[\s\S]*?<\/\1>/gi;
+  while (current !== previous) {
+    previous = current;
+    current = current.replace(hidden, " ");
+  }
+  return current;
+}
+
+function visibleText(html) {
+  const without = stripHidden(html)
+    .replace(/<script\b[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style\b[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ");
+  return decode(without).replace(/\s+/g, " ").trim();
+}
+
+function attr(source, name) {
+  const re = new RegExp(
+    `\\b${name}\\s*=\\s*(?:"([^"]*)"|'([^']*)'|([^\\s"'=<>]+))`,
+    "i",
+  );
+  const match = re.exec(source);
+  if (!match) return null;
+  return decode(match[1] ?? match[2] ?? match[3] ?? "");
+}
+
+function field(html, tag) {
+  const match = new RegExp(`<${tag}\\b[^>]*>([\\s\\S]*?)<\\/${tag}>`, "i").exec(html);
+  return match ? visibleText(match[1]) : "";
+}
+
+function jsonLdTypes(html) {
+  const types = [];
+  const re = /<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
+  let match;
+  while ((match = re.exec(html))) {
+    try {
+      collectTypes(JSON.parse(match[1]), types);
+    } catch {
+      // leave a non-json block out of the type list
+    }
+  }
+  return types;
+}
+
+function collectTypes(value, types) {
+  if (!value || typeof value !== "object") return;
+  if (Array.isArray(value)) {
+    for (const item of value) collectTypes(item, types);
+    return;
+  }
+  if (typeof value["@type"] === "string") types.push(value["@type"]);
+  else if (Array.isArray(value["@type"])) types.push(...value["@type"].filter((t) => typeof t === "string"));
+  for (const key of Object.keys(value)) {
+    if (key === "@type") continue;
+    collectTypes(value[key], types);
+  }
+}
+
+function linksIn(html) {
+  const links = [];
+  const re = /<a\b([^>]*)>([\s\S]*?)<\/a>/gi;
+  let match;
+  while ((match = re.exec(html))) {
+    const href = attr(match[1], "href");
+    if (!href) continue;
+    const aria = attr(match[1], "aria-label");
+    const text = visibleText(match[2]);
+    const name = (aria || text).replace(/\s+/g, " ").trim();
+    if (!name) continue;
+    links.push({ href, name });
+  }
+  return links;
+}
+
+function navBlocks(html) {
+  const blocks = [];
+  const re = /<nav\b([^>]*)>([\s\S]*?)<\/nav>/gi;
+  let match;
+  while ((match = re.exec(html))) {
+    const label = attr(match[1], "aria-label") || "(unlabeled)";
+    const names = linksIn(match[2]).map((link) => link.name);
+    blocks.push({ label, names });
+  }
+  return blocks;
+}
+
+function headings(html, tag) {
+  const found = [];
+  const re = new RegExp(`<${tag}\\b[^>]*>([\\s\\S]*?)<\\/${tag}>`, "gi");
+  let match;
+  while ((match = re.exec(html))) found.push(visibleText(match[1]));
+  return found;
+}
+
+function hasId(html, id) {
+  const re = new RegExp(`\\bid\\s*=\\s*["']${id.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}["']`, "i");
+  return re.test(html);
+}
+
+async function fetchUrl(url, timeoutMs) {
+  const response = await fetch(url, {
+    redirect: "manual",
+    signal: AbortSignal.timeout(timeoutMs),
+    headers: { accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" },
+  });
+  const body = await response.text();
+  return {
+    url: response.url || url,
+    status: response.status,
+    body,
+    location: response.headers.get("location"),
+  };
+}
+
+function pageFacts(result) {
+  return {
+    url: result.url,
+    status: result.status,
+    title: field(result.body, "title"),
+    h1: field(result.body, "h1"),
+    jsonLd: jsonLdTypes(result.body),
+    navs: navBlocks(result.body),
+    h2: headings(result.body, "h2"),
+    h3: headings(result.body, "h3"),
+  };
+}
+
+function assertExpects(body, expects) {
+  const visible = visibleText(body);
+  const missing = [];
+  for (const expected of expects) {
+    if (body.includes(expected) || visible.includes(expected)) {
+      console.log(`expect: ok ${expected}`);
+    } else {
+      missing.push(expected);
+      console.log(`expect: missing ${expected}`);
+    }
+  }
+  if (missing.length) die(`missing expected text: ${missing.join(" | ")}`);
+}
+
+function printFacts(facts) {
+  console.log(`status: ${facts.status}`);
+  console.log(`url: ${facts.url}`);
+  console.log(`title: ${facts.title}`);
+  console.log(`h1: ${facts.h1}`);
+  if (facts.jsonLd.length) console.log(`jsonLd: ${[...new Set(facts.jsonLd)].join(", ")}`);
+}
+
+function assertStatus(status, expected) {
+  if (status !== expected) die(`status ${status}, expected ${expected}`);
+}
+
+function requireOwned(root, cfg) {
+  const info = readInstance(cfg.port);
+  if (!info) {
+    die(
+      `foreign or missing instance: no ${instancePath(cfg.port)}. ` +
+        "Launch this run's server before driving. Refusing to use whatever is already on the port.",
+    );
+  }
+  if (info.host !== cfg.host || info.port !== cfg.port) {
+    die(`instance.json host/port ${info.host}:${info.port} does not match ${cfg.host}:${cfg.port}`);
+  }
+  if (info.repoRoot !== root) {
+    die(`instance.json repoRoot is ${info.repoRoot}, not ${root}`);
+  }
+  if (!isAlive(info.pid)) {
+    die(`instance pid ${info.pid} is not running`);
+  }
+  const pids = listeners(cfg.port);
+  if (pids.length) {
+    const owned = pids.filter((pid) => isInTree(info.pid, pid));
+    if (owned.length !== pids.length) {
+      die(
+        `foreign listener on ${cfg.host}:${cfg.port}: pids ${pids.join(",")} are outside launch pid ${info.pid}`,
+      );
+    }
+  }
+  return info;
+}
+
+function logTail(file) {
+  try {
+    const text = fs.readFileSync(file, "utf8");
+    return text.split("\n").slice(-40).join("\n");
+  } catch {
+    return "";
+  }
+}
+
+async function launch(root, cfg) {
+  const nextBin = path.join(root, "node_modules", "next", "dist", "bin", "next");
+  if (!fs.existsSync(nextBin)) {
+    die("next is not installed. From the repo root run: npm install");
+  }
+  if (await portOpen(cfg.host, cfg.port)) {
+    die(
+      `refusing to launch: ${cfg.host}:${cfg.port} is already accepting connections. ` +
+        "Run doctor if this run owns it, or cleanup the instance you started. " +
+        "A shared or foreign server is not a verification target.",
+    );
+  }
+  const other = otherLiveInstance(root, cfg.port);
+  if (other) {
+    die(
+      `refusing to launch a second next dev in ${root}. pid ${other.pid} already owns port ${other.port}. ` +
+        "One checkout has one .next directory.",
+    );
+  }
+  const lock = readNextLock(root);
+  if (lock && isAlive(lock.pid)) {
+    die(
+      `refusing to launch: ${lock.file} is held by live pid ${lock.pid}` +
+        (lock.appUrl ? ` (${lock.appUrl})` : "") +
+        ". That includes a human npm run dev on :3000. This harness will not kill it and will not drive it.",
+    );
+  }
+
+  const dir = runDir(cfg.port);
+  fs.mkdirSync(dir, { recursive: true });
+  const logFile = path.join(dir, "next.log");
+  const logFd = fs.openSync(logFile, "a");
+  const childEnv = { ...process.env, PORT: String(cfg.port) };
+  delete childEnv.ALMOSTLORE_PORT;
+  const child = spawn(
+    process.execPath,
+    [nextBin, "dev", "--hostname", cfg.host, "--port", String(cfg.port)],
+    {
+      cwd: root,
+      detached: true,
+      stdio: ["ignore", logFd, logFd],
+      env: childEnv,
+    },
+  );
+  fs.closeSync(logFd);
+  if (!child.pid) die("next dev failed to spawn");
+  child.unref();
+
+  const info = {
+    pid: child.pid,
+    host: cfg.host,
+    port: cfg.port,
+    repoRoot: root,
+    startedAt: new Date().toISOString(),
+    mode: "dev",
+    command: `${process.execPath} ${nextBin} dev --hostname ${cfg.host} --port ${cfg.port}`,
+    log: logFile,
+  };
+  fs.writeFileSync(instancePath(cfg.port), `${JSON.stringify(info, null, 2)}\n`);
+
+  const deadline = Date.now() + 180000;
+  let lastError = "server did not become usable";
+  while (Date.now() < deadline) {
+    if (!isAlive(child.pid)) {
+      die(`next dev exited before ready\n${logTail(logFile)}`);
+    }
+    if (!(await portOpen(cfg.host, cfg.port))) {
+      await sleep(300);
+      continue;
+    }
+    try {
+      const result = await fetchUrl(`${cfg.base}/`, 90000);
+      const facts = pageFacts(result);
+      if (result.status === 200 && result.body.includes("Almost Lore") && facts.h1 === LEAD_H1) {
+        console.log(`launched pid=${child.pid} ${cfg.base}`);
+        return;
+      }
+      lastError = `status ${result.status} title=${facts.title} h1=${facts.h1}`;
+    } catch (error) {
+      lastError = error.message;
+    }
+    await sleep(500);
+  }
+  await cleanup(root, cfg, { quiet: true });
+  die(`launch timed out: ${lastError}\n${logTail(logFile)}`);
+}
+
+function doctor(root, cfg) {
+  const failures = [];
+  const info = readInstance(cfg.port);
+  if (!info) failures.push(`missing ${instancePath(cfg.port)}`);
+  else {
+    if (info.host !== cfg.host || Number(info.port) !== cfg.port) {
+      failures.push(`instance host/port ${info.host}:${info.port} != ${cfg.host}:${cfg.port}`);
+    }
+    if (info.repoRoot !== root) failures.push(`instance repoRoot ${info.repoRoot} != ${root}`);
+    if (!isAlive(info.pid)) failures.push(`pid ${info.pid} is not alive`);
+    const pids = listeners(cfg.port);
+    if (pids.length && info.pid && pids.some((pid) => !isInTree(info.pid, pid))) {
+      failures.push(`listener pids ${pids.join(",")} are outside launch pid ${info.pid}`);
+    }
+    const lock = readNextLock(root);
+    if (lock && isAlive(lock.pid) && info.pid && !isInTree(info.pid, lock.pid)) {
+      failures.push(`next lock pid ${lock.pid} is not in launch pid ${info.pid}'s tree`);
+    }
+  }
+  return { info, failures };
+}
+
+async function doctorCommand(root, cfg) {
+  const { failures } = doctor(root, cfg);
+  let facts = null;
+  try {
+    const result = await fetchUrl(`${cfg.base}/`, 20000);
+    facts = pageFacts(result);
+    if (result.status !== 200) failures.push(`GET / status ${result.status}`);
+    if (!facts.title.includes("Almost Lore")) failures.push(`title missing Almost Lore: ${facts.title}`);
+    if (facts.h1 !== LEAD_H1) failures.push(`h1 is ${JSON.stringify(facts.h1)}, expected ${JSON.stringify(LEAD_H1)}`);
+  } catch (error) {
+    failures.push(`GET / failed: ${error.message}`);
+  }
+  if (failures.length) {
+    console.log("doctor: fail");
+    for (const failure of failures) console.log(`- ${failure}`);
+    process.exit(1);
+  }
+  console.log("doctor: pass");
+  console.log(`pid: ${readInstance(cfg.port).pid}`);
+  console.log(`url: ${cfg.base}`);
+  console.log(`title: ${facts.title}`);
+  console.log(`h1: ${facts.h1}`);
+}
+
+async function getCommand(root, cfg, pathAndQuery, expects, status) {
+  requireOwned(root, cfg);
+  const target = new URL(pathAndQuery, `${cfg.base}/`);
+  if (target.origin !== cfg.base) die(`refusing off-site: ${target.href}`);
+  const result = await fetchUrl(target, 90000);
+  const facts = pageFacts(result);
+  printFacts(facts);
+  assertStatus(result.status, status);
+  assertExpects(result.body, expects);
+}
+
+async function followCommand(root, cfg, fromPath, name, expects, index, status, fromStatus) {
+  requireOwned(root, cfg);
+  const fromUrl = new URL(fromPath, `${cfg.base}/`);
+  if (fromUrl.origin !== cfg.base) die(`refusing off-site: ${fromUrl.href}`);
+  const source = await fetchUrl(fromUrl, 90000);
+  if (source.status !== fromStatus) die(`source ${fromUrl.pathname} status ${source.status}, expected ${fromStatus}`);
+  const links = linksIn(source.body);
+  const hits = links.filter((link) => link.name === name);
+  if (hits.length === 0) {
+    const hints = links
+      .filter((link) => link.name.includes(name))
+      .slice(0, 12)
+      .map((link) => `${link.name} -> ${link.href}`)
+      .join("\n");
+    die(`no link named ${JSON.stringify(name)} on ${fromPath}${hints ? `\nclose:\n${hints}` : ""}`);
+  }
+  const chosen = index == null ? null : hits[index];
+  if (index != null && !chosen) die(`--index ${index} is outside ${hits.length} matches`);
+  const hrefs = [...new Set(hits.map((link) => link.href))];
+  const link = chosen || hits[0];
+  if (!chosen && hrefs.length > 1) {
+    die(
+      `ambiguous link ${JSON.stringify(name)}:\n` +
+        hits.map((item, i) => `${i}: ${item.href}`).join("\n") +
+        "\npass --index N",
+    );
+  }
+  const dest = new URL(link.href, fromUrl);
+  console.log(`from: ${fromUrl.href}`);
+  console.log(`link: ${name}`);
+  console.log(`href: ${link.href}`);
+  console.log(`matches: ${hits.length}`);
+  if (dest.protocol !== "http:" && dest.protocol !== "https:") {
+    die(`refusing non-http link: ${dest.href}`);
+  }
+  if (dest.origin !== cfg.base) {
+    die(`refusing off-site: ${dest.href}`);
+  }
+  const result = await fetchUrl(dest, 90000);
+  const facts = pageFacts(result);
+  printFacts(facts);
+  if (dest.hash) {
+    const id = decodeURIComponent(dest.hash.slice(1));
+    console.log(`fragment: ${dest.hash}`);
+    console.log(`fragment-id: ${hasId(result.body, id) ? "present" : "missing"}`);
+    if (!hasId(result.body, id)) die(`fragment target #${id} is not in the destination HTML`);
+  }
+  assertStatus(result.status, status);
+  assertExpects(result.body, expects);
+}
+
+function snapshotText(facts, body) {
+  const lines = [
+    `url: ${facts.url}`,
+    `status: ${facts.status}`,
+    `title: ${facts.title}`,
+    `h1: ${facts.h1}`,
+    `jsonLd: ${[...new Set(facts.jsonLd)].join(", ") || "(none)"}`,
+  ];
+  for (const nav of facts.navs) lines.push(`nav ${nav.label}: ${nav.names.join(" | ")}`);
+  for (const heading of facts.h2) lines.push(`h2: ${heading}`);
+  for (const heading of facts.h3) lines.push(`h3: ${heading}`);
+  lines.push("");
+  lines.push(visibleText(body));
+  lines.push("");
+  return lines.join("\n");
+}
+
+function findChrome() {
+  const candidates = [
+    process.env.ALMOSTLORE_CHROME,
+    "/usr/local/bin/google-chrome",
+    "/usr/bin/google-chrome",
+    "/usr/bin/google-chrome-stable",
+    "/usr/bin/chromium",
+    "/usr/bin/chromium-browser",
+  ].filter(Boolean);
+  for (const candidate of candidates) {
+    if (fs.existsSync(candidate)) return candidate;
+  }
+  return null;
+}
+
+function runChrome(chrome, args, timeoutMs) {
+  return new Promise((resolve) => {
+    const child = spawn(chrome, args, { stdio: ["ignore", "pipe", "pipe"] });
+    let stdout = "";
+    let stderr = "";
+    child.stdout.on("data", (chunk) => {
+      stdout += chunk.toString();
+    });
+    child.stderr.on("data", (chunk) => {
+      stderr += chunk.toString();
+    });
+    const timer = setTimeout(() => {
+      try {
+        process.kill(child.pid, "SIGKILL");
+      } catch {
+        // already gone
+      }
+    }, timeoutMs);
+    child.on("close", (code) => {
+      clearTimeout(timer);
+      resolve({ code, stdout, stderr });
+    });
+    child.on("error", (error) => {
+      clearTimeout(timer);
+      resolve({ code: 1, stdout, stderr: `${stderr}\n${error.message}` });
+    });
+  });
+}
+
+async function screenshotTo(url, outFile) {
+  const chrome = findChrome();
+  if (!chrome) return { ok: false, reason: "screenshot blocked: chrome not found" };
+  fs.mkdirSync(path.dirname(outFile), { recursive: true });
+  const dataDir = fs.mkdtempSync("/tmp/almost-lore-chrome-");
+  const args = [
+    "--headless=new",
+    "--no-sandbox",
+    "--disable-gpu",
+    "--disable-dev-shm-usage",
+    "--hide-scrollbars",
+    "--window-size=1280,900",
+    `--screenshot=${outFile}`,
+    `--user-data-dir=${dataDir}`,
+    "--virtual-time-budget=10000",
+    url,
+  ];
+  const result = await runChrome(chrome, args, 30000);
+  const written = fs.existsSync(outFile) && fs.statSync(outFile).size > 1000;
+  fs.rmSync(dataDir, { recursive: true, force: true });
+  if (!written) {
+    return {
+      ok: false,
+      reason: `screenshot blocked: chrome exit ${result.code} ${result.stderr.split("\n").slice(-5).join(" ")}`,
+    };
+  }
+  return { ok: true, outFile };
+}
+
+async function dumpDom(url) {
+  const chrome = findChrome();
+  if (!chrome) return { ok: false, reason: "dom blocked: chrome not found" };
+  const dataDir = fs.mkdtempSync("/tmp/almost-lore-chrome-");
+  const args = [
+    "--headless=new",
+    "--no-sandbox",
+    "--disable-gpu",
+    "--disable-dev-shm-usage",
+    `--user-data-dir=${dataDir}`,
+    "--virtual-time-budget=10000",
+    "--dump-dom",
+    url,
+  ];
+  const result = await runChrome(chrome, args, 30000);
+  fs.rmSync(dataDir, { recursive: true, force: true });
+  if (!result.stdout.includes("<html")) {
+    return { ok: false, reason: `dom blocked: chrome exit ${result.code}` };
+  }
+  return { ok: true, html: result.stdout };
+}
+
+async function snapshotCommand(root, cfg, pathAndQuery, dir, withShot, feature) {
+  requireOwned(root, cfg);
+  const target = new URL(pathAndQuery, `${cfg.base}/`);
+  if (target.origin !== cfg.base) die(`refusing off-site: ${target.href}`);
+  const result = await fetchUrl(target, 90000);
+  const facts = pageFacts(result);
+  fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, "page.html"), result.body);
+  fs.writeFileSync(path.join(dir, "page.txt"), snapshotText(facts, result.body));
+  const meta = {
+    url: facts.url,
+    status: facts.status,
+    title: facts.title,
+    h1: facts.h1,
+    jsonLd: [...new Set(facts.jsonLd)],
+    capturedAt: new Date().toISOString(),
+    feature: feature || null,
+  };
+  fs.writeFileSync(path.join(dir, "page.meta.json"), `${JSON.stringify(meta, null, 2)}\n`);
+  printFacts(facts);
+  console.log(`wrote: ${dir}/page.html`);
+  console.log(`wrote: ${dir}/page.txt`);
+  console.log(`wrote: ${dir}/page.meta.json`);
+  if (withShot) {
+    const shot = await screenshotTo(target.href, path.join(dir, "page.png"));
+    if (!shot.ok) console.log(shot.reason);
+    else console.log(`wrote: ${dir}/page.png`);
+  }
+  assertStatus(result.status, 200);
+}
+
+async function screenshotCommand(root, cfg, pathAndQuery, outFile) {
+  requireOwned(root, cfg);
+  const target = new URL(pathAndQuery, `${cfg.base}/`);
+  if (target.origin !== cfg.base) die(`refusing off-site: ${target.href}`);
+  const shot = await screenshotTo(target.href, outFile);
+  if (!shot.ok) die(shot.reason);
+  console.log(`wrote: ${shot.outFile}`);
+}
+
+async function domCommand(root, cfg, pathAndQuery, outFile, expects) {
+  requireOwned(root, cfg);
+  const target = new URL(pathAndQuery, `${cfg.base}/`);
+  if (target.origin !== cfg.base) die(`refusing off-site: ${target.href}`);
+  const dumped = await dumpDom(target.href);
+  if (!dumped.ok) die(dumped.reason);
+  if (outFile) {
+    fs.mkdirSync(path.dirname(outFile), { recursive: true });
+    fs.writeFileSync(outFile, dumped.html);
+    console.log(`wrote: ${outFile}`);
+  }
+  const facts = pageFacts({ url: target.href, status: 200, body: dumped.html });
+  printFacts(facts);
+  assertExpects(dumped.html, expects);
+}
+
+function locValues(xml) {
+  const values = [];
+  const re = /<loc>([^<]*)<\/loc>/g;
+  let match;
+  while ((match = re.exec(xml))) values.push(decode(match[1].trim()));
+  return values;
+}
+
+async function seoCommand(root, cfg, dir) {
+  requireOwned(root, cfg);
+  const robots = await fetchUrl(`${cfg.base}/robots.txt`, 30000);
+  const sitemap = await fetchUrl(`${cfg.base}/sitemap.xml`, 30000);
+  const ads = await fetchUrl(`${cfg.base}/ads.txt`, 30000);
+  const feed = await fetchUrl(`${cfg.base}/feed.xml`, 30000);
+  const failures = [];
+  if (robots.status !== 200) failures.push(`robots status ${robots.status}`);
+  if (!robots.body.includes("https://almostlore.com/sitemap.xml")) {
+    failures.push("robots.txt missing Sitemap https://almostlore.com/sitemap.xml");
+  }
+  if (!/allow:\s*\//i.test(robots.body)) failures.push("robots.txt missing Allow: /");
+  if (sitemap.status !== 200) failures.push(`sitemap status ${sitemap.status}`);
+  const locs = locValues(sitemap.body);
+  if (locs.length !== 23) failures.push(`sitemap loc count ${locs.length}, expected 23`);
+  for (const expected of STATIC_SITEMAP_PATHS) {
+    if (!locs.includes(expected)) failures.push(`sitemap missing ${expected}`);
+  }
+  for (const slug of STORY_SLUGS) {
+    const loc = `https://almostlore.com/stories/${slug}`;
+    if (!locs.includes(loc)) failures.push(`sitemap missing ${loc}`);
+    if (!feed.body.includes(`/stories/${slug}`)) failures.push(`feed missing /stories/${slug}`);
+  }
+  if (locs.some((loc) => loc.includes("/dossier/thanks"))) {
+    failures.push("sitemap includes /dossier/thanks");
+  }
+  if (ads.status !== 200) failures.push(`ads.txt status ${ads.status}`);
+  if (ads.body.trim() !== ADS_TXT_PLACEHOLDER) {
+    failures.push(`ads.txt is not the placeholder comment: ${JSON.stringify(ads.body)}`);
+  }
+  if (feed.status !== 200) failures.push(`feed status ${feed.status}`);
+  if (!feed.body.includes("<rss")) failures.push("feed.xml missing <rss");
+  if (!feed.body.includes("<title>Almost Lore</title>")) failures.push("feed channel title missing");
+
+  if (dir) {
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, "robots.txt"), robots.body);
+    fs.writeFileSync(path.join(dir, "sitemap.xml"), sitemap.body);
+    fs.writeFileSync(path.join(dir, "ads.txt"), ads.body);
+    fs.writeFileSync(path.join(dir, "feed.xml"), feed.body);
+    console.log(`wrote: ${dir}`);
+  }
+  console.log(`robots: ${robots.status}`);
+  console.log(`sitemap-locs: ${locs.length}`);
+  console.log(`ads.txt: ${ads.body.trim()}`);
+  console.log(`feed: ${feed.status}`);
+  if (failures.length) {
+    console.log("seo: fail");
+    for (const failure of failures) console.log(`- ${failure}`);
+    process.exit(1);
+  }
+  console.log("seo: pass");
+}
+
+function killPid(pid, signal) {
+  if (!Number.isInteger(pid) || pid <= 1) return;
+  try {
+    process.kill(pid, signal);
+  } catch {
+    // already exited
+  }
+}
+
+async function cleanup(root, cfg, options = {}) {
+  const info = readInstance(cfg.port);
+  const pids = new Set();
+  if (info && info.repoRoot === root && Number(info.port) === cfg.port) {
+    pids.add(info.pid);
+    for (const child of descendants(info.pid)) pids.add(child);
+    try {
+      process.kill(-info.pid, "SIGTERM");
+    } catch {
+      // not a process group we can signal
+    }
+  }
+  for (const pid of listeners(cfg.port)) {
+    const line = cmdline(pid);
+    const ours =
+      line.includes(root) &&
+      line.includes("next") &&
+      (line.includes(`--port ${cfg.port}`) || line.includes(`--port=${cfg.port}`));
+    if (ours || (info && isInTree(info.pid, pid))) pids.add(pid);
+  }
+  for (const pid of pids) killPid(pid, "SIGTERM");
+  await sleep(400);
+  for (const pid of pids) {
+    if (isAlive(pid)) killPid(pid, "SIGKILL");
+    for (const child of descendants(pid)) {
+      if (isAlive(child)) killPid(child, "SIGKILL");
+    }
+  }
+  await sleep(200);
+  fs.rmSync(runDir(cfg.port), { recursive: true, force: true });
+  if (!options.quiet) {
+    console.log(`cleanup: removed ${runDir(cfg.port)}`);
+    console.log("cleanup: evidence directory left in place");
+  }
+}
+
+function usage() {
+  console.log(`almost-lore commands:
+  launch
+  doctor
+  url
+  get <path> [--status N] [--expect text]...
+  follow --from <path> --name <text> [--index N] [--from-status N] [--status N] [--expect text]...
+  snapshot <path> --dir <dir> [--screenshot] [--feature <id>]
+  screenshot <path> --out <file>
+  dom <path> [--out <file>] [--expect text]...
+  seo [--dir <dir>]
+  cleanup`);
+}
+
+function parseArgs(argv) {
+  const positional = [];
+  const opts = {};
+  const expects = [];
+  for (let i = 0; i < argv.length; i += 1) {
+    const arg = argv[i];
+    if (arg === "--expect") {
+      expects.push(argv[i + 1]);
+      i += 1;
+    } else if (arg === "--screenshot") {
+      opts.screenshot = true;
+    } else if (
+      arg === "--from" ||
+      arg === "--name" ||
+      arg === "--dir" ||
+      arg === "--out" ||
+      arg === "--status" ||
+      arg === "--from-status" ||
+      arg === "--feature" ||
+      arg === "--index"
+    ) {
+      opts[arg.slice(2)] = argv[i + 1];
+      i += 1;
+    } else if (arg === "--help" || arg === "-h") {
+      opts.help = true;
+    } else if (arg.startsWith("--")) {
+      die(`unknown flag ${arg}`);
+    } else positional.push(arg);
+  }
+  return { positional, opts, expects };
+}
+
+async function main() {
+  const { positional, opts, expects } = parseArgs(process.argv.slice(2));
+  const command = positional[0];
+  if (!command || opts.help) {
+    usage();
+    process.exit(command ? 0 : 1);
+  }
+  const root = assertRepo();
+  const cfg = config();
+  const status = opts.status == null ? 200 : Number(opts.status);
+  if (opts.status != null && !Number.isInteger(status)) die(`bad --status ${opts.status}`);
+
+  if (command === "launch") await launch(root, cfg);
+  else if (command === "doctor") await doctorCommand(root, cfg);
+  else if (command === "url") console.log(cfg.base);
+  else if (command === "get") {
+    if (!positional[1]) die("get requires a path");
+    await getCommand(root, cfg, positional[1], expects, status);
+  } else if (command === "follow") {
+    if (!opts.from || !opts.name) die("follow requires --from and --name");
+    const index = opts.index == null ? null : Number(opts.index);
+    if (opts.index != null && !Number.isInteger(index)) die(`bad --index ${opts.index}`);
+    const fromStatus = opts["from-status"] == null ? 200 : Number(opts["from-status"]);
+    if (!Number.isInteger(fromStatus)) die(`bad --from-status ${opts["from-status"]}`);
+    await followCommand(root, cfg, opts.from, opts.name, expects, index, status, fromStatus);
+  } else if (command === "snapshot") {
+    if (!positional[1] || !opts.dir) die("snapshot requires a path and --dir");
+    await snapshotCommand(root, cfg, positional[1], opts.dir, Boolean(opts.screenshot), opts.feature);
+  } else if (command === "screenshot") {
+    if (!positional[1] || !opts.out) die("screenshot requires a path and --out");
+    await screenshotCommand(root, cfg, positional[1], opts.out);
+  } else if (command === "dom") {
+    if (!positional[1]) die("dom requires a path");
+    await domCommand(root, cfg, positional[1], opts.out, expects);
+  } else if (command === "seo") await seoCommand(root, cfg, opts.dir);
+  else if (command === "cleanup") await cleanup(root, cfg);
+  else die(`unknown command ${command}`);
+}
+
+main().catch((error) => die(error.stack || error.message));

@@ -1,0 +1,10 @@
+from: http://127.0.0.1:4321/stories/poyais-invented-country
+link: Aqua Tofana, after the legend
+href: /stories/aqua-tofana-myth-vs-record
+matches: 1
+status: 200
+url: http://127.0.0.1:4321/stories/aqua-tofana-myth-vs-record
+title: Aqua Tofana, after the legend · Almost Lore
+h1: Aqua Tofana, after the legend
+jsonLd: WebSite, Organization, ContactPoint, Article
+expect: ok On sources.
