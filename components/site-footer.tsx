@@ -14,33 +14,29 @@ const sections = [
 
 export function SiteFooter() {
   return (
-    <footer className="mt-20 border-t border-rule bg-paper-deep">
+    <footer className="site-foot">
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
-            <p className="font-display text-2xl text-ink">{site.name}</p>
-            <p className="mt-2 max-w-sm text-sm leading-6 text-ink-soft">{site.tagline}</p>
+            <p className="foot-name">{site.name}</p>
+            <p className="mt-2 max-w-sm text-base leading-6 text-ink-soft">{site.tagline}</p>
           </div>
-          <nav aria-label="Footer">
-            <h2 className="kicker">Sections</h2>
-            <ul className="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 text-sm sm:grid-cols-1">
+          <nav aria-label="Footer" className="foot-links">
+            <h2 className="foot-label">Sections</h2>
+            <ul className="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-1">
               {sections.map((item) => (
                 <li key={item.href}>
-                  <Link className="text-teal hover:text-rust" href={item.href}>
-                    {item.label}
-                  </Link>
+                  <Link href={item.href}>{item.label}</Link>
                 </li>
               ))}
               <li>
-                <a className="text-teal hover:text-rust" href="/feed.xml">
-                  RSS feed
-                </a>
+                <a href="/feed.xml">RSS feed</a>
               </li>
             </ul>
           </nav>
           <div>
-            <h2 className="kicker">Contact</h2>
-            <p className="mt-3 text-sm leading-6 text-ink-soft">
+            <h2 className="foot-label">Contact</h2>
+            <p className="mt-3 text-base leading-6 text-ink-soft">
               Questions, corrections, and source notes:{" "}
               <Link className="text-teal hover:text-rust" href="/contact">
                 the contact page

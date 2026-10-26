@@ -1,0 +1,14 @@
+url: http://127.0.0.1:4321/about
+status: 200
+title: About Almost Lore · Almost Lore
+h1: A reader for near-misses, published by Laqaer
+jsonLd: WebSite, Organization, ContactPoint
+nav Primary: Stories | About | Contact | Working file
+nav Footer: Stories | About | Now | Working file | Support | Contact | Privacy | Terms | RSS feed
+h2: Editorial standards
+h2: How the site is funded
+h2: What these essays are
+h2: Sections
+h2: Contact
+
+About Almost Lore · Almost Lore Skip to content Laqaer · an editorial archive Almost Lore Public-record near-misses, written as stories. Stories About Contact Working file A reader for near-misses, published by Laqaer Almost Lore is original longform about documented historical near-misses and odd public facts. It is published by Laqaer at almostlore.com . For a correction — a date we should hedge, a count we should unsay — use the support form . Essays are original prose built from the public record — loan notices, trial files, dispatches, contemporaneous news — and each piece names what it draws on. Where the archive is thin or later writers disagree, the disagreement stays visible. Editorial standards Original narrative. Every essay is written for this site from primary documents and the standard published sources, and each piece names what it draws on. Public record first. Loans, trial files, contemporaneous news, and municipal paper outrank a later legend. If the archive is thin, the sentence stays thin. Uncertainty stays visible. We will not average conflicting death tolls into a fake precise number. Sources are named. Each essay’s note lists the record behind it, so a reader can go to the transcript, the treaty, or the loan notice itself. The site is the essays. No accounts, no newsletter, no comment threads to moderate. How the site is funded The essays are free to read. A separate printable working file for the Poyais essay is offered at $9 when card checkout is open; the dossier page says whether it is. There are no display ads on the site today. Some essays link to books on Amazon. As an Amazon Associate, Almost Lore earns from qualifying purchases. There are no display ads on the site today. See privacy for what a small editorial site collects, including the Amazon book links named above. What these essays are Narratives, not a historian’s monograph and not a primary-source edition. Each essay names its sources and points to the archive behind it. The essays are free to read; one working file may be sold separately as a reading aid, not a substitute for the source material. Where a piece rests on a scholarly reconstruction, it says so. Almost Lore Public-record near-misses, written as stories. Sections Stories About Now Working file Support Contact Privacy Terms RSS feed Contact Questions, corrections, and source notes: the contact page . © 2026 Laqaer . Almost Lore publishes original longform essays.

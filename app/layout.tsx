@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Fraunces, Newsreader, Source_Sans_3 } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -28,6 +28,13 @@ const sourceSans = Source_Sans_3({
 });
 
 const title = "Almost Lore — Public-record near-misses, written as stories";
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f3efe6" },
+    { media: "(prefers-color-scheme: dark)", color: "#12161c" },
+  ],
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
@@ -75,7 +82,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to content
         </a>
         <SiteHeader />
-        <div className="folio-rule" aria-hidden />
         <main id="main">{children}</main>
         <SiteFooter />
         <AdsScript />

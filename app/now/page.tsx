@@ -38,12 +38,9 @@ export default function NowPage() {
   const newest = published[0];
 
   return (
-    <article className="mx-auto max-w-measure px-4 py-12 sm:px-6">
-      <p className="text-xs font-medium uppercase tracking-[0.18em] text-rust">Now</p>
-      <h1 className="mt-3 font-display text-4xl leading-[1.15] text-ink sm:text-5xl">
-        What Almost Lore is focused on
-      </h1>
-      <p className="mt-4 text-sm text-ink-faint">Updated {updated}.</p>
+    <article className="folio">
+      <h1 className="folio-title">What Almost Lore is focused on</h1>
+      <p className="colophon">Updated {updated}.</p>
       <div className="prose-page mt-8">
         <h2>Current editorial focus</h2>
         <p>

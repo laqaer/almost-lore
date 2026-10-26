@@ -28,10 +28,9 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <article className="mx-auto max-w-measure px-4 py-12 sm:px-6">
+    <article className="folio">
       <JsonLd data={organizationJsonLd()} />
-      <p className="text-xs font-medium uppercase tracking-[0.18em] text-rust">About</p>
-      <h1 className="mt-3 font-display text-4xl leading-[1.15] text-ink sm:text-5xl">
+      <h1 className="folio-title">
         A reader for near-misses, published by Laqaer
       </h1>
       <div className="prose-page mt-8">

@@ -1,0 +1,13 @@
+{
+  "url": "http://127.0.0.1:4321/about",
+  "status": 200,
+  "title": "About Almost Lore · Almost Lore",
+  "h1": "A reader for near-misses, published by Laqaer",
+  "jsonLd": [
+    "WebSite",
+    "Organization",
+    "ContactPoint"
+  ],
+  "capturedAt": "2026-10-26T01:24:45.692Z",
+  "feature": "section-pages"
+}

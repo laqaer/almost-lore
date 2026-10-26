@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: almostlore.com
+Sitemap: https://almostlore.com/sitemap.xml

@@ -21,7 +21,8 @@ export function StoryArticle({ story }: StoryArticleProps) {
   const midpoint = Math.ceil(story.sections.length / 2);
 
   return (
-    <article className="mx-auto max-w-measure px-4 py-12 sm:px-6">
+    <article>
+      <div className="read-progress" aria-hidden="true" />
       <JsonLd
         data={articleJsonLd({
           headline: story.title,
@@ -32,142 +33,130 @@ export function StoryArticle({ story }: StoryArticleProps) {
           images: media ? [`${siteUrl()}${media.src}`] : undefined,
         })}
       />
-      <p className="kicker">{story.yearLabel}</p>
-      <h1 className="mt-3 font-display text-4xl leading-[1.12] text-ink sm:text-5xl">
-        {story.title}
-      </h1>
-      <p className="mt-5 text-xl leading-8 text-ink-soft">{story.dek}</p>
-      <p className="mt-4 text-sm text-ink-faint">
-        {readingMinutes(story)} min read · Updated {story.updated}
-      </p>
-
-      {media ? (
-        <figure className="mt-8">
-          <Image
-            alt={media.alt}
-            className="h-auto w-full bg-paper-deep"
-            height={media.height}
-            priority
-            sizes="(min-width: 768px) 40rem, 100vw"
-            src={media.src}
-            unoptimized
-            width={media.width}
-          />
-          <figcaption className="mt-2 text-xs text-ink-faint">
-            {media.creditUrl ? (
-              <a
-                className="underline underline-offset-2 hover:text-rust"
-                href={media.creditUrl}
-                rel="noopener"
-              >
-                {media.credit}
-              </a>
-            ) : (
-              media.credit
-            )}
-          </figcaption>
-        </figure>
-      ) : null}
-
-      <div className="prose-lore mt-10">
-        {story.sections.map((section, index) => (
-          <Fragment key={section.heading ?? `section-${index}`}>
-            <section>
-              {section.heading ? <h2>{section.heading}</h2> : null}
-              {section.paragraphs.map((paragraph, paragraphIndex) => (
-                <p key={paragraphIndex}>{paragraph}</p>
-              ))}
-            </section>
-            {index === midpoint - 1 ? <AdSlot className="not-prose my-10" /> : null}
-          </Fragment>
-        ))}
-      </div>
-
-      <aside className="mt-12 border-t border-rule pt-8 text-sm leading-6 text-ink-soft">
-        <p>
-          <strong className="text-ink">On sources. </strong>
-          {story.sourcesNote}
-        </p>
-        {story.dossier ? (
-          <p className="mt-4">
-            <strong className="text-ink">Working file. </strong>
-            {story.dossier.note}{" "}
-            <Link
-              className="text-teal underline underline-offset-3 hover:text-rust"
-              href={story.dossier.href}
-            >
-              {story.dossier.label}
-            </Link>
+      <div className="spread">
+        <header className="story-head">
+          <h1 className="story-title">{story.title}</h1>
+          <p className="dek">{story.dek}</p>
+          <p className="colophon">
+            <span>{story.yearLabel}</span>
+            <span>{readingMinutes(story)} min read</span>
+            <span>Updated {story.updated}</span>
           </p>
+        </header>
+
+        <aside className="marginalia">
+          <p>{story.hook}</p>
+        </aside>
+
+        {media ? (
+          <figure className="story-plate">
+            <div className="plate">
+              <Image
+                alt={media.alt}
+                className="h-auto w-full bg-paper-deep"
+                height={media.height}
+                priority
+                sizes="(min-width: 1100px) 68ch, 100vw"
+                src={media.src}
+                style={{ viewTransitionName: `plate-${story.slug}` }}
+                unoptimized
+                width={media.width}
+              />
+            </div>
+            <figcaption className="credit">
+              {media.creditUrl ? (
+                <a href={media.creditUrl} rel="noopener">
+                  {media.credit}
+                </a>
+              ) : (
+                media.credit
+              )}
+            </figcaption>
+          </figure>
         ) : null}
-      </aside>
 
-      {story.furtherReading && story.furtherReading.length > 0 ? (
-        <aside className="mt-12 border-t border-rule pt-8 text-sm leading-6 text-ink-soft">
-          <p className="kicker">Further reading</p>
-          <ul className="mt-3 space-y-4">
-            {story.furtherReading.map((book) => (
-              <li key={book.href}>
-                <a
-                  className="text-teal underline underline-offset-3 hover:text-rust"
-                  href={book.href}
-                  rel="sponsored nofollow noopener"
-                  target="_blank"
-                >
-                  {book.title}
-                </a>
-                {" — "}
-                {book.author}
-                <span className="mt-1 block">{book.note}</span>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-4 text-ink-faint">
-            As an Amazon Associate, Almost Lore earns from qualifying purchases.
-          </p>
-        </aside>
-      ) : null}
-
-      {links.length > 0 ? (
-        <aside className="mt-12 border-t border-rule pt-8 text-sm leading-6 text-ink-soft">
-          <p className="kicker">
-            {story.furtherReading?.length ? "In the record" : "Further reading"}
-          </p>
-          <ul className="mt-3 space-y-2">
-            {links.map((link) => (
-              <li key={link.href}>
-                <a
-                  className="text-teal underline underline-offset-3 hover:text-rust"
-                  href={link.href}
-                  rel="noopener"
-                  target="_blank"
-                >
-                  {link.label}
-                </a>
-                {" — "}
-                {link.note}
-              </li>
-            ))}
-          </ul>
-        </aside>
-      ) : null}
-
-      <nav aria-label="More stories" className="mt-14 border-t border-rule pt-8">
-        <p className="kicker">More stories</p>
-        <ul className="mt-4 space-y-3">
-          {others.map((item) => (
-            <li key={item.slug}>
-              <Link
-                className="font-serif text-lg text-teal hover:text-rust"
-                href={storyPath(item.slug)}
-              >
-                {item.title}
-              </Link>
-              <p className="text-sm text-ink-soft">{item.dek}</p>
-            </li>
+        <div className="prose-lore">
+          {story.sections.map((section, index) => (
+            <Fragment key={section.heading ?? `section-${index}`}>
+              <section>
+                {section.heading ? <h2>{section.heading}</h2> : null}
+                {section.paragraphs.map((paragraph, paragraphIndex) => (
+                  <p key={paragraphIndex}>{paragraph}</p>
+                ))}
+              </section>
+              {index === midpoint - 1 ? <AdSlot className="not-prose my-10" /> : null}
+            </Fragment>
           ))}
-        </ul>
-      </nav>
+        </div>
+
+        <div className="story-end">
+          <aside>
+            <p>
+              <strong>On sources. </strong>
+              {story.sourcesNote}
+            </p>
+            {story.dossier ? (
+              <p className="mt-4">
+                <strong>Working file. </strong>
+                {story.dossier.note}{" "}
+                <Link href={story.dossier.href}>{story.dossier.label}</Link>
+              </p>
+            ) : null}
+          </aside>
+
+          {story.furtherReading && story.furtherReading.length > 0 ? (
+            <aside>
+              <p className="kicker">Further reading</p>
+              <ul className="mt-3 space-y-4">
+                {story.furtherReading.map((book) => (
+                  <li key={book.href}>
+                    <a href={book.href} rel="sponsored nofollow noopener" target="_blank">
+                      {book.title}
+                    </a>
+                    {" — "}
+                    {book.author}
+                    <span className="mt-1 block">{book.note}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4 text-ink-faint">
+                As an Amazon Associate, Almost Lore earns from qualifying purchases.
+              </p>
+            </aside>
+          ) : null}
+
+          {links.length > 0 ? (
+            <aside>
+              <p className="kicker">
+                {story.furtherReading?.length ? "In the record" : "Further reading"}
+              </p>
+              <ul className="mt-3 space-y-2">
+                {links.map((link) => (
+                  <li key={link.href}>
+                    <a href={link.href} rel="noopener" target="_blank">
+                      {link.label}
+                    </a>
+                    {" — "}
+                    {link.note}
+                  </li>
+                ))}
+              </ul>
+            </aside>
+          ) : null}
+
+          <nav aria-label="More stories" className="more-stories">
+            <p className="kicker">More stories</p>
+            <ul className="mt-4 space-y-3">
+              {others.map((item) => (
+                <li key={item.slug}>
+                  <Link href={storyPath(item.slug)}>{item.title}</Link>
+                  <p className="text-base text-ink-soft">{item.dek}</p>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      </div>
     </article>
   );
 }

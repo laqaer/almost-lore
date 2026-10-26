@@ -1,0 +1,5 @@
+feature: working-file
+entry: Working file
+command: .cursor/skills/verify-almost-lore/helpers/almost-lore follow --from / --name "Working file" --expect "The Poyais working file"
+command: .cursor/skills/verify-almost-lore/helpers/almost-lore dom /dossier --expect "Checkout status could not be confirmed, so the pay button stays off."
+result: dossier h1 matches, pay button stays off, thanks page offers no file
