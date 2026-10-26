@@ -149,7 +149,7 @@ export function StoryArticle({ story }: StoryArticleProps) {
             <ul className="mt-4 space-y-3">
               {others.map((item) => (
                 <li key={item.slug}>
-                  <Link href={storyPath(item.slug)}>{item.title}</Link>
+                  <a href={storyPath(item.slug)}>{item.title}</a>
                   <p className="text-base text-ink-soft">{item.dek}</p>
                 </li>
               ))}

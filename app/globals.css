@@ -21,6 +21,25 @@
   --max-width-measure: 68ch;
 }
 
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  color-scheme: light;
+  scrollbar-color: var(--color-teal) var(--color-paper-deep);
+}
+
+body {
+  min-height: 100vh;
+  background: var(--color-paper);
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+
+::selection {
+  background: #c5ddd9;
+  color: #1a2330;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     --color-paper: #12161c;
@@ -44,25 +63,6 @@
     background: #245955;
     color: #f3efe6;
   }
-}
-
-html {
-  background: var(--color-paper);
-  color: var(--color-ink);
-  color-scheme: light;
-  scrollbar-color: var(--color-teal) var(--color-paper-deep);
-}
-
-body {
-  min-height: 100vh;
-  background: var(--color-paper);
-  font-size: 1rem;
-  letter-spacing: 0;
-}
-
-::selection {
-  background: #c5ddd9;
-  color: #1a2330;
 }
 
 input,

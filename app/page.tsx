@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { AdSlot } from "@/components/ad-slot";
 import { CoastChart } from "@/components/coast-chart";
 import { site } from "@/lib/site";
@@ -51,7 +50,7 @@ export default function HomePage() {
         <div className="order-1 lg:order-2 lg:col-span-5">
           <CoastChart />
           <h1 className="lead-title">
-            <Link href={storyPath(lead.slug)}>{lead.title}</Link>
+            <a href={storyPath(lead.slug)}>{lead.title}</a>
           </h1>
           <p className="dek">{lead.dek}</p>
           <p className="colophon">
@@ -59,16 +58,16 @@ export default function HomePage() {
             <span>{lead.yearLabel}</span>
             <span>{readingMinutes(lead)} min read</span>
           </p>
-          <Link className="read-link" href={storyPath(lead.slug)}>
+          <a className="read-link" href={storyPath(lead.slug)}>
             Read the story
             <svg className="read-arrow" viewBox="0 0 28 12" aria-hidden="true" focusable="false">
               <path d="M0 6 H26 M20 1.5 L26 6 L20 10.5" fill="none" stroke="currentColor" strokeWidth="1.2" />
             </svg>
-          </Link>
+          </a>
         </div>
         {storyMedia[lead.slug] ? (
           <figure className="order-2 lg:order-1 lg:col-span-7">
-            <Link
+            <a
               aria-label={`Read: ${lead.title}`}
               className="lead-plate plate block"
               href={storyPath(lead.slug)}
@@ -86,7 +85,7 @@ export default function HomePage() {
                   width={storyMedia[lead.slug].width}
                 />
               </span>
-            </Link>
+            </a>
             <Credit slug={lead.slug} />
           </figure>
         ) : null}
@@ -114,7 +113,7 @@ export default function HomePage() {
                   <li key={story.slug} className="story-card flex flex-col">
                     {storyMedia[story.slug] ? (
                       <figure className="card-frame flex flex-col">
-                        <Link
+                        <a
                           aria-label={`Read: ${story.title}`}
                           className="block"
                           href={storyPath(story.slug)}
@@ -130,12 +129,12 @@ export default function HomePage() {
                               unoptimized
                             />
                           </span>
-                        </Link>
+                        </a>
                         <Credit slug={story.slug} />
                       </figure>
                     ) : null}
                     <h3>
-                      <Link href={storyPath(story.slug)}>{story.title}</Link>
+                      <a href={storyPath(story.slug)}>{story.title}</a>
                     </h3>
                     <p className="card-dek line-clamp-3">{story.dek}</p>
                     <p className="colophon">

@@ -57,20 +57,20 @@ export default function NowPage() {
         <h2>Longforms on the site</h2>
         <p>
           {stories.length} longforms are published. The newest is{" "}
-          <Link href={storyPath(newest.slug)}>{newest.title}</Link> ({newest.published}). Dates
+          <a href={storyPath(newest.slug)}>{newest.title}</a> ({newest.published}). Dates
           below are the days those essays went up here.
         </p>
         <ul>
           {published.map((story) => (
             <li key={story.slug}>
-              <Link href={storyPath(story.slug)}>{story.title}</Link> ({story.published})
+              <a href={storyPath(story.slug)}>{story.title}</a> ({story.published})
             </li>
           ))}
         </ul>
 
         <h2>What’s next</h2>
         <p>
-          The newest longform is <Link href={storyPath(newest.slug)}>{newest.title}</Link>. The
+          The newest longform is <a href={storyPath(newest.slug)}>{newest.title}</a>. The
           Poyais essay now points at a separate working file. That file is $9 only when the
           dossier page says card checkout is open. There is no newsletter and no account. Some
           essays link to books on Amazon; the about and privacy pages say so. If display ads are
