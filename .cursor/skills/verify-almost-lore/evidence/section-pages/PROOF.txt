@@ -1,0 +1,4 @@
+feature: section-about
+entry: About from the hub
+command: .cursor/skills/verify-almost-lore/helpers/almost-lore follow --from / --name "About" --expect "A reader for near-misses, published by Laqaer"
+result: h1 matches, snapshot in about/

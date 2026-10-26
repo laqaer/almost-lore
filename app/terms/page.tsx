@@ -26,12 +26,9 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <article className="mx-auto max-w-measure px-4 py-12 sm:px-6">
-      <p className="text-xs font-medium uppercase tracking-[0.18em] text-rust">Terms</p>
-      <h1 className="mt-3 font-display text-4xl leading-[1.15] text-ink sm:text-5xl">
-        Terms of the working file
-      </h1>
-      <p className="mt-4 text-sm text-ink-faint">Last updated {site.updated}.</p>
+    <article className="folio">
+      <h1 className="folio-title">Terms of the working file</h1>
+      <p className="colophon">Last updated {site.updated}.</p>
       <div className="prose-page mt-8">
         <p>
           These terms cover one product: the Poyais working file sold by {site.publisher} from{" "}

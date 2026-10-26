@@ -25,12 +25,9 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <article className="mx-auto max-w-measure px-4 py-12 sm:px-6">
-      <p className="text-xs font-medium uppercase tracking-[0.18em] text-rust">Legal</p>
-      <h1 className="mt-3 font-display text-4xl leading-[1.15] text-ink sm:text-5xl">
-        Privacy policy
-      </h1>
-      <p className="mt-4 text-sm text-ink-faint">Last updated 2026-10-15.</p>
+    <article className="folio">
+      <h1 className="folio-title">Privacy policy</h1>
+      <p className="colophon">Last updated 2026-10-15.</p>
       <div className="prose-page mt-8">
         <p>
           Almost Lore ({site.domain}) is a small editorial site published by {site.publisher}.

@@ -5,6 +5,7 @@ export const trentAffairStory: Story = {
   title: "The four men taken off the Trent",
   dek: "On 8 November 1861 a Union captain stopped the British mail steamer Trent in the Old Bahama Channel and took off two Confederate commissioners and their secretaries. No one was killed. The near-war was the month Britain spent demanding them back, and the note that gave them back without settling the law.",
   hook: "The Union boarded a British mail ship, seized two Confederate envoys, and nearly pulled Britain into the Civil War.",
+  era: "1800s",
   yearLabel: "1861–1862",
   published: "2026-09-26",
   updated: "2026-09-26",

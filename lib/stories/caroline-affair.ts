@@ -5,6 +5,7 @@ export const carolineAffairStory: Story = {
   title: "The Caroline at Schlosser",
   dek: "On the night of 29 December 1837 a British party burned the American steamer Caroline at a landing on the New York side of the Niagara. Amos Durfee was killed on the dock. The near-war was not a second battle at the river. It was a murder charge, a boast, and a sentence about necessity that the two governments adopted without agreeing the raid had earned it.",
   hook: "Britain set an American steamboat on fire and sent it over Niagara Falls, and the two countries nearly went to war.",
+  era: "1800s",
   yearLabel: "1837–1842",
   published: "2026-09-26",
   updated: "2026-09-26",

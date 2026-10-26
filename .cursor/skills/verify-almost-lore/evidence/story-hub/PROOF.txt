@@ -1,0 +1,4 @@
+feature: story-hub
+entry: Open /
+command: .cursor/skills/verify-almost-lore/helpers/almost-lore snapshot / --dir .cursor/skills/verify-almost-lore/evidence/story-hub --screenshot --feature story-hub
+result: doctor pass, hub expects pass, snapshot written

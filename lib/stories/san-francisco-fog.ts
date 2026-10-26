@@ -5,6 +5,7 @@ export const sanFranciscoFogStory: Story = {
   title: "The fog that was not weather",
   dek: "In late September 1950 a Navy vessel sprayed bacteria over San Francisco from offshore. The city was not told. The Army later said the organisms were harmless. Stanford Hospital then recorded a rare Serratia cluster, and one man died.",
   hook: "In 1950 the U.S. Navy sprayed San Francisco with bacteria to see where a weapon would go. The city was not told.",
+  era: "1900-onward",
   yearLabel: "September 1950",
   published: "2026-09-25",
   updated: "2026-09-25",

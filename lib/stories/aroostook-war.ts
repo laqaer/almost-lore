@@ -5,6 +5,7 @@ export const aroostookWarStory: Story = {
   title: "A line convenient to both",
   dek: "In February 1839 the lieutenant-governor of New Brunswick told Maine to pull an armed posse off the Aroostook or he would occupy the disputed territory. On 3 March Congress appropriated ten million dollars and, if invasion was imminent, a ceiling of fifty thousand volunteers. The papers of that winter contain an arrest, a parole, and a threat. They do not contain a battle. The line signed in August 1842 was a conventional boundary, not a finding that the highlands of 1783 had been located.",
   hook: "The United States and Britain fought a bloodless war over the forests of Maine.",
+  era: "1800s",
   yearLabel: "1839–1842",
   published: "2026-09-26",
   updated: "2026-09-26",

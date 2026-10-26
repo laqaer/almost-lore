@@ -25,9 +25,8 @@ export const metadata: Metadata = {
 
 export default function SupportPage() {
   return (
-    <article className="mx-auto max-w-measure px-4 py-12 sm:px-6">
-      <p className="text-xs font-medium uppercase tracking-[0.18em] text-rust">Support</p>
-      <h1 className="mt-3 font-display text-4xl leading-[1.15] text-ink sm:text-5xl">
+    <article className="folio">
+      <h1 className="folio-title">
         A correction, a refund, a note
       </h1>
       <div className="prose-page mt-8">

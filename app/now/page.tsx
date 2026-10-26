@@ -38,12 +38,9 @@ export default function NowPage() {
   const newest = published[0];
 
   return (
-    <article className="mx-auto max-w-measure px-4 py-12 sm:px-6">
-      <p className="text-xs font-medium uppercase tracking-[0.18em] text-rust">Now</p>
-      <h1 className="mt-3 font-display text-4xl leading-[1.15] text-ink sm:text-5xl">
-        What Almost Lore is focused on
-      </h1>
-      <p className="mt-4 text-sm text-ink-faint">Updated {updated}.</p>
+    <article className="folio">
+      <h1 className="folio-title">What Almost Lore is focused on</h1>
+      <p className="colophon">Updated {updated}.</p>
       <div className="prose-page mt-8">
         <h2>Current editorial focus</h2>
         <p>
@@ -60,20 +57,20 @@ export default function NowPage() {
         <h2>Longforms on the site</h2>
         <p>
           {stories.length} longforms are published. The newest is{" "}
-          <Link href={storyPath(newest.slug)}>{newest.title}</Link> ({newest.published}). Dates
+          <a href={storyPath(newest.slug)}>{newest.title}</a> ({newest.published}). Dates
           below are the days those essays went up here.
         </p>
         <ul>
           {published.map((story) => (
             <li key={story.slug}>
-              <Link href={storyPath(story.slug)}>{story.title}</Link> ({story.published})
+              <a href={storyPath(story.slug)}>{story.title}</a> ({story.published})
             </li>
           ))}
         </ul>
 
         <h2>What’s next</h2>
         <p>
-          The newest longform is <Link href={storyPath(newest.slug)}>{newest.title}</Link>. The
+          The newest longform is <a href={storyPath(newest.slug)}>{newest.title}</a>. The
           Poyais essay now points at a separate working file. That file is $9 only when the
           dossier page says card checkout is open. There is no newsletter and no account. Some
           essays link to books on Amazon; the about and privacy pages say so. If display ads are

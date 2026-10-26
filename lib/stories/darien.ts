@@ -5,6 +5,7 @@ export const darienStory: Story = {
   title: "The isthmus that was supposed to pay Scotland",
   dek: "In July 1698 five Scottish ships carried about twelve hundred people to Darien and called the place Caledonia. They abandoned it in 1699. A second fleet, already at sea, found the fort empty, refounded it, and surrendered to Spain in the spring of 1700.",
   hook: "Scotland tried to become an empire at a jungle harbor in Panama — and the failure was so expensive that union with England started to look like a refund.",
+  era: "before-1800",
   yearLabel: "1698–1700",
   published: "2026-09-25",
   updated: "2026-09-25",

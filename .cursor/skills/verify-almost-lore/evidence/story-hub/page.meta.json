@@ -1,0 +1,13 @@
+{
+  "url": "http://127.0.0.1:4321/",
+  "status": 200,
+  "title": "Almost Lore — Public-record near-misses, written as stories",
+  "h1": "The country that existed on paper",
+  "jsonLd": [
+    "WebSite",
+    "Organization",
+    "ContactPoint"
+  ],
+  "capturedAt": "2026-10-26T01:24:15.530Z",
+  "feature": "story-hub"
+}

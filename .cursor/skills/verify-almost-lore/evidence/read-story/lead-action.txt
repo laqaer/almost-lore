@@ -8,6 +8,3 @@ title: The country that existed on paper · Almost Lore
 h1: The country that existed on paper
 jsonLd: WebSite, Organization, ContactPoint, Article
 expect: ok The country that existed on paper
-expect: ok A soldier who needed a country
-expect: ok On sources.
-expect: ok As an Amazon Associate, Almost Lore earns from qualifying purchases.

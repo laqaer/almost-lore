@@ -5,6 +5,7 @@ export const doggerBankStory: Story = {
   title: "Searchlights on the Dogger Bank",
   dek: "On the night of 21–22 October 1904 a Russian squadron on its way to the war with Japan fired on Hull trawlers over the Dogger Bank. A commission of inquiry counted two fishermen dead and one trawler sunk, and a majority found no torpedo boats there to fire at. Britain and Russia stayed at peace. The report’s own courtesies are why the outrage and the file are not the same story.",
   hook: "The Russian navy opened fire on British fishing boats because it thought they were Japanese torpedo boats.",
+  era: "1900-onward",
   yearLabel: "1904–1905",
   published: "2026-09-26",
   updated: "2026-09-26",

@@ -5,6 +5,7 @@ export const venezuelanCrisisStory: Story = {
   title: "Every means in its power",
   dek: "In December 1895 Grover Cleveland told Congress the United States would resist, by every means in its power, a British hold on any land an American commission decided belonged to Venezuela. Britain had just refused to arbitrate the whole boundary. No troops met. The near-miss ended in a treaty, a fifty-year prescription rule, and a line Venezuela later refused to treat as the last word.",
   hook: "The United States and Britain almost went to war in 1895 over the border between Venezuela and British Guiana.",
+  era: "1800s",
   yearLabel: "1895–1899",
   published: "2026-09-26",
   updated: "2026-09-26",
