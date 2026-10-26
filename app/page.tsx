@@ -3,10 +3,10 @@ import Link from "next/link";
 import { AdSlot } from "@/components/ad-slot";
 import { CoastChart } from "@/components/coast-chart";
 import { site } from "@/lib/site";
-import { getStory, readingMinutes, stories, storyPath } from "@/lib/stories";
+import { readingMinutes, stories, storyPath, type EraId } from "@/lib/stories";
 import { storyMedia } from "@/lib/stories/media";
 
-type Era = { id: string; name: string; blurb: string };
+type Era = { id: EraId; name: string; blurb: string };
 
 const eras: Era[] = [
   {
@@ -26,41 +26,6 @@ const eras: Era[] = [
   },
 ];
 
-// Explicit departments instead of parsing `yearLabel`. The invariant below fails
-// the build if a story is ever added without a home.
-const departments: { era: Era; slugs: string[] }[] = [
-  {
-    era: eras[0],
-    slugs: ["aqua-tofana-myth-vs-record", "darien-scheme", "bering-island-winter"],
-  },
-  {
-    era: eras[1],
-    slugs: [
-      "poyais-invented-country",
-      "forgotten-scheme",
-      "caroline-affair",
-      "aroostook-war",
-      "pig-war-san-juan",
-      "trent-affair",
-      "venezuelan-crisis-1895",
-      "fashoda-incident-1898",
-    ],
-  },
-  {
-    era: eras[2],
-    slugs: ["dogger-bank-1904", "san-francisco-fog-1950", "balloon-almost-atlantic"],
-  },
-];
-
-const placedSlugs = departments.flatMap((department) => department.slugs);
-if (
-  placedSlugs.length !== stories.length ||
-  new Set(placedSlugs).size !== stories.length ||
-  placedSlugs.some((slug) => !getStory(slug))
-) {
-  throw new Error("Homepage departments must list every story exactly once.");
-}
-
 function Credit({ slug }: { slug: string }) {
   const media = storyMedia[slug];
   if (!media) return null;
@@ -79,7 +44,6 @@ function Credit({ slug }: { slug: string }) {
 
 export default function HomePage() {
   const [lead, ...rest] = stories;
-  const restSlugs = new Set(rest.map((story) => story.slug));
 
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -131,11 +95,8 @@ export default function HomePage() {
       <AdSlot className="mt-12" />
 
       <div id="stories" className="scroll-mt-6">
-        {departments.map(({ era, slugs }) => {
-          const items = slugs.flatMap((slug) => {
-            const story = restSlugs.has(slug) ? getStory(slug) : undefined;
-            return story ? [story] : [];
-          });
+        {eras.map((era) => {
+          const items = rest.filter((story) => story.era === era.id);
 
           if (items.length === 0) return null;
 

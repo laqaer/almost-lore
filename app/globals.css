@@ -14,8 +14,6 @@
   --color-rust: #8d3c22;
   --color-rust-soft: #f3e4d8;
   --color-teal: #0d5c58;
-  /* `moss` is the historical name for the link accent; it now points at teal. */
-  --color-moss: #0d5c58;
   --color-plate: #1b2838;
   --color-plate-ink: #f4efe4;
   --color-plate-soft: #d5dde4;
@@ -35,7 +33,6 @@
     --color-rust: #f0b59a;
     --color-rust-soft: #3a2a24;
     --color-teal: #9adbd4;
-    --color-moss: #9adbd4;
     --color-plate: #0c1016;
     --color-plate-ink: #f3efe6;
     --color-plate-soft: #c5ced6;

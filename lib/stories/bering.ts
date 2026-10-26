@@ -5,6 +5,7 @@ export const beringStory: Story = {
   title: "The island that kept the captain",
   dek: "In November 1741 Vitus Bering’s ship wrecked on an uninhabited island off Kamchatka. He died there on 8 December. Forty-six of the crew got a smaller boat home the next summer, and with them the news that the American coast was not a rumor.",
   hook: "A captain spent a decade trying to prove Asia and America did not touch — then died on the island that proved the gap, before the proof got home.",
+  era: "before-1800",
   yearLabel: "1741–1742",
   published: "2026-09-25",
   updated: "2026-09-25",

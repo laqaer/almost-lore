@@ -16,11 +16,14 @@ export type FurtherReading = {
   note: string;
 };
 
+export type EraId = "before-1800" | "1800s" | "1900-onward";
+
 export type Story = {
   slug: string;
   title: string;
   dek: string;
   hook: string;
+  era: EraId;
   yearLabel: string;
   published: string;
   updated: string;

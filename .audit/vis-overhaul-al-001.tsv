@@ -8,3 +8,4 @@ ts	phase	decision	why	evidence	result
 2026-10-26T01:28:00Z	verify	ran the reader checks, crawler checks, dossier DOM, and reduced-motion probe	the pass has to be the local site, not a compile	.cursor/skills/verify-almost-lore/evidence/story-hub/PROOF.txt	doctor pass, seo pass, chart animation none under reduced motion
 2026-10-26T01:32:00Z	video	recorded the homepage, the move into an essay, and a scroll	the request asks for that clip	/opt/cursor/artifacts/overhaul.mp4	15.2 s
 2026-10-26T01:36:00Z	review	could not run a second-model read of this log	Opus, Sonnet, Gemini, and GPT were refused for this session, so no other family could review the trail	ManagePullRequest create_pr for cursor/visual-overhaul-4fbb	open
+2026-10-26T01:42:00Z	comments	deleted the moss alias and the homepage slug list	the comment review accepted both as dead weight in the overhaul diff	app/page.tsx era filter	era lives on Story, card order follows the stories array

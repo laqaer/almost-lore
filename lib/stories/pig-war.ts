@@ -5,6 +5,7 @@ export const pigWarStory: Story = {
   title: "The war named for a pig",
   dek: "In June 1859 an American settler shot a Hudson’s Bay Company boar on an island the Oregon Treaty had failed to assign. Troops landed. The commemorative line says the pig was the only casualty. The record is a thirteen-year occupation and a boundary drawn in 1872.",
   hook: "A pig started a war between Britain and the United States.",
+  era: "1800s",
   yearLabel: "1859–1872",
   published: "2026-09-26",
   updated: "2026-09-26",
