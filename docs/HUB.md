@@ -9,6 +9,7 @@ This is the stable index for this owner-controlled repository. Existing source d
 | Open work | [Issues](https://github.com/laqaer/almost-lore/issues), [pull requests](https://github.com/laqaer/almost-lore/pulls) |
 | Change and release evidence | [Commits](https://github.com/laqaer/almost-lore/commits), [Actions](https://github.com/laqaer/almost-lore/actions), [releases](https://github.com/laqaer/almost-lore/releases) |
 | Source receipts | [docs/updates](updates/README.md) |
+| Site motion | [Motion pass, 2026-10-28](updates/2026-10/2026-10-28-motion.md) |
 | Portfolio-wide index | [Portfolio hub](https://github.com/laqaer/portfolio-ops/tree/main/docs/hub) |
 
 For each material change, update the affected canonical document and link the issue, PR, revision and verification. Distinguish implemented, merged, deployed, verified and released. Follow the [shared documentation standard](https://github.com/laqaer/agent-config/blob/main/docs/documentation-hub.md).
