@@ -33,7 +33,7 @@ export default function DossierPage() {
       <div className="prose-page mt-8">
         <p>
           The essay{" "}
-          <Link href="/stories/poyais-invented-country">The country that existed on paper</Link>{" "}
+          <Link href="/stories/poyais-invented-country">Poyais: the country that existed on paper</Link>{" "}
           stays free. This is the separate file: a printable dossier for someone who wants the
           loan mechanics and the figures the essay refuses to flatten.
         </p>

@@ -15,7 +15,7 @@ export function SiteFooter() {
           <Link href="/now">At the editorial desk</Link>
           <Link href="/dossier">The working file</Link>
           <Link href="/contact">Contact & corrections</Link>
-          <Link href="/feed.xml">Follow via RSS ↗</Link>
+          <a href="/feed.xml">Follow via RSS ↗</a>
         </nav>
         <div className="footer-note">
           <p className="kicker">Stay curious</p>

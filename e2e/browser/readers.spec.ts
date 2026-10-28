@@ -135,3 +135,44 @@ test("primary navigation stays usable and pages fit the viewport", async ({ page
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
   await expectNoHorizontalOverflow(page);
 });
+
+test("the footer opens a valid RSS document without failed feed requests", async ({ page }) => {
+  const failedFeedResponses: { url: string; status: number }[] = [];
+  page.on("response", (response) => {
+    if (new URL(response.url()).pathname.startsWith("/feed.xml") && !response.ok()) {
+      failedFeedResponses.push({ url: response.url(), status: response.status() });
+    }
+  });
+  await page.goto("/");
+  const feedNavigation = page.waitForResponse((response) =>
+    new URL(response.url()).pathname === "/feed.xml" && response.request().isNavigationRequest(),
+  );
+  await page.getByRole("navigation", { name: "Footer", exact: true }).getByRole("link", { name: "Follow via RSS ↗", exact: true }).click();
+  const response = await feedNavigation;
+  await expect(page).toHaveURL(/\/feed\.xml$/);
+  expect(response.status()).toBe(200);
+  expect(response.headers()["content-type"]).toMatch(/^(?:application|text)\/(?:rss\+)?xml\b/i);
+
+  const feed = await page.evaluate((xml) => {
+    const document = new DOMParser().parseFromString(xml, "text/xml");
+    return {
+      parseError: Boolean(document.querySelector("parsererror")),
+      root: document.documentElement.tagName,
+      title: document.querySelector("channel > title")?.textContent,
+      entries: [...document.querySelectorAll("channel > item")].map((item) => ({
+        title: item.querySelector("title")?.textContent?.trim(),
+        link: item.querySelector("link")?.textContent,
+      })),
+    };
+  }, await response.text());
+  expect(feed.parseError).toBe(false);
+  expect(feed.root).toBe("rss");
+  expect(feed.title).toBe("Almost Lore");
+  expect(feed.entries.length).toBeGreaterThan(3);
+  for (const entry of feed.entries) {
+    expect(entry.title).toBeTruthy();
+    expect(entry.link).toMatch(/^https:\/\/almostlore\.com\/stories\/.+/);
+  }
+  expect(feed.entries.map((entry) => entry.link)).toContain("https://almostlore.com/stories/poyais-invented-country");
+  expect(failedFeedResponses).toEqual([]);
+});
