@@ -3,160 +3,91 @@ import Image from "next/image";
 import Link from "next/link";
 import { AdSlot } from "@/components/ad-slot";
 import { JsonLd } from "@/components/json-ld";
+import { StoryCard } from "@/components/story-card";
+import { StoryTools } from "@/components/story-tools";
 import { articleJsonLd } from "@/lib/schema";
 import { siteUrl } from "@/lib/site";
 import { readingMinutes, stories, storyPath, type Story } from "@/lib/stories";
+import { storyCollections } from "@/lib/stories/collections";
+import { storyGallery } from "@/lib/stories/gallery";
 import { storyLinks } from "@/lib/stories/links";
-import { storyMedia } from "@/lib/stories/media";
+import { storyMedia, type StoryMedia } from "@/lib/stories/media";
 
-type StoryArticleProps = {
-  story: Story;
-};
+function Caption({ media, label }: { media: StoryMedia; label: string }) {
+  return <figcaption className="image-caption"><span>{label}</span><a href={media.creditUrl} rel="noopener">{media.credit}</a></figcaption>;
+}
 
-export function StoryArticle({ story }: StoryArticleProps) {
-  const others = stories.filter((item) => item.slug !== story.slug).slice(0, 4);
+export function StoryArticle({ story }: { story: Story }) {
+  const collection = storyCollections[story.slug];
+  const others = stories.filter((item) => item.slug !== story.slug)
+    .sort((a, b) => Number(storyCollections[b.slug] === collection) - Number(storyCollections[a.slug] === collection))
+    .slice(0, 3);
   const path = storyPath(story.slug);
   const media = storyMedia[story.slug];
+  const gallery = storyGallery[story.slug] ?? [];
   const links = storyLinks[story.slug] ?? [];
   const midpoint = Math.ceil(story.sections.length / 2);
+  const url = `${siteUrl()}${path}`;
 
   return (
-    <article>
+    <article className="shell">
       <div className="read-progress" aria-hidden="true" />
-      <JsonLd
-        data={articleJsonLd({
-          headline: story.title,
-          description: story.dek,
-          path,
-          datePublished: story.published,
-          dateModified: story.updated,
-          images: media ? [`${siteUrl()}${media.src}`] : undefined,
-        })}
-      />
-      <div className="spread">
-        <header className="story-head">
-          <h1 className="story-title">{story.title}</h1>
-          <p className="dek">{story.dek}</p>
-          <p className="colophon">
-            <span>{story.yearLabel}</span>
-            <span>{readingMinutes(story)} min read</span>
-            <span>Updated {story.updated}</span>
-          </p>
-        </header>
-
-        <aside className="marginalia">
+      <JsonLd data={articleJsonLd({ headline: story.title, description: story.dek, path, datePublished: story.published, dateModified: story.updated, images: [media, ...gallery].map((image) => `${siteUrl()}${image.src}`) })} />
+      <nav className="story-breadcrumb" aria-label="Breadcrumb"><Link href="/#stories">The stories</Link><span aria-hidden="true">/</span><span>{collection}</span></nav>
+      <header className="story-heading">
+        <p className="kicker">{collection} · {story.yearLabel}</p>
+        <h1>{story.title}</h1>
+        <p className="story-dek">{story.dek}</p>
+        <div className="story-byline">
+          <span>By the Almost Lore editors</span><span>{readingMinutes(story)} min read</span>
+          <time dateTime={story.updated}>Updated {story.updated}</time><StoryTools url={url} />
+        </div>
+      </header>
+      <figure className="story-hero">
+        <Image src={media.src} alt={media.alt} width={media.width} height={media.height} preload sizes="(min-width: 1100px) 1000px, 100vw" unoptimized />
+        <Caption media={media} label="From the archive" />
+      </figure>
+      <div className="reading-layout">
+        <aside className="story-margin">
+          <nav aria-label="In this story"><p className="kicker">In this story</p>
+            {story.sections.map((section, index) => section.heading ? <a key={index} href={`#section-${index}`}>{section.heading}</a> : null)}
+            <a href="#sources">Sources & further reading</a>
+          </nav>
           <p>{story.hook}</p>
         </aside>
-
-        {media ? (
-          <figure className="story-plate">
-            <div className="plate">
-              <Image
-                alt={media.alt}
-                className="h-auto w-full bg-paper-deep"
-                height={media.height}
-                priority
-                sizes="(min-width: 1100px) 68ch, 100vw"
-                src={media.src}
-                style={{ viewTransitionName: `plate-${story.slug}` }}
-                unoptimized
-                width={media.width}
-              />
-            </div>
-            <figcaption className="credit">
-              {media.creditUrl ? (
-                <a href={media.creditUrl} rel="noopener">
-                  {media.credit}
-                </a>
-              ) : (
-                media.credit
-              )}
-            </figcaption>
-          </figure>
-        ) : null}
-
-        <div className="prose-lore">
-          {story.sections.map((section, index) => (
-            <Fragment key={section.heading ?? `section-${index}`}>
-              <section>
-                {section.heading ? <h2>{section.heading}</h2> : null}
-                {section.paragraphs.map((paragraph, paragraphIndex) => (
-                  <p key={paragraphIndex}>{paragraph}</p>
-                ))}
-              </section>
-              {index === midpoint - 1 ? <AdSlot className="not-prose my-10" /> : null}
-            </Fragment>
-          ))}
-        </div>
-
-        <div className="story-end">
-          <aside>
-            <p>
-              <strong>On sources. </strong>
-              {story.sourcesNote}
-            </p>
-            {story.dossier ? (
-              <p className="mt-4">
-                <strong>Working file. </strong>
-                {story.dossier.note}{" "}
-                <Link href={story.dossier.href}>{story.dossier.label}</Link>
-              </p>
-            ) : null}
+        <div className="story-body">
+          <details className="mobile-contents"><summary>In this story</summary><nav aria-label="Story sections">{story.sections.map((section, index) => section.heading ? <a key={index} href={`#section-${index}`}>{section.heading}</a> : null)}<a href="#sources">Sources & further reading</a></nav></details>
+          <div className="prose-lore">
+            {story.sections.map((section, index) => (
+              <Fragment key={index}>
+                <section id={`section-${index}`}>
+                  {section.heading ? <h2>{section.heading}</h2> : null}
+                  {section.paragraphs.map((paragraph, paragraphIndex) => <p key={paragraphIndex}>{paragraph}</p>)}
+                </section>
+                {index === midpoint - 1 ? <>
+                  {gallery.map((image, imageIndex) => <figure key={image.src} className="archive-plate"><Image src={image.src} alt={image.alt} width={image.width} height={image.height} unoptimized sizes="(min-width: 800px) 640px, 100vw" /><Caption media={image} label={`Archive plate ${imageIndex + 1}`} /></figure>)}
+                  <AdSlot className="not-prose my-10" />
+                </> : null}
+              </Fragment>
+            ))}
+          </div>
+          <aside id="sources" className="story-source-block">
+            <p><strong>On sources. </strong>{story.sourcesNote}</p>
+            {story.dossier ? <p className="mt-4"><strong>Working file. </strong>{story.dossier.note}{" "}<Link href={story.dossier.href}>{story.dossier.label}</Link></p> : null}
           </aside>
-
-          {story.furtherReading && story.furtherReading.length > 0 ? (
-            <aside className="static-aside">
-              <p className="kicker">Further reading</p>
-              <ul className="mt-3 space-y-4">
-                {story.furtherReading.map((book) => (
-                  <li key={book.href}>
-                    <a href={book.href} rel="sponsored nofollow noopener" target="_blank">
-                      {book.title}
-                    </a>
-                    {" — "}
-                    {book.author}
-                    <span className="mt-1 block">{book.note}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-4 text-ink-faint">
-                As an Amazon Associate, Almost Lore earns from qualifying purchases.
-              </p>
-            </aside>
-          ) : null}
-
-          {links.length > 0 ? (
-            <aside className={story.furtherReading?.length ? undefined : "static-aside"}>
-              <p className="kicker">
-                {story.furtherReading?.length ? "In the record" : "Further reading"}
-              </p>
-              <ul className="mt-3 space-y-2">
-                {links.map((link) => (
-                  <li key={link.href}>
-                    <a href={link.href} rel="noopener" target="_blank">
-                      {link.label}
-                    </a>
-                    {" — "}
-                    {link.note}
-                  </li>
-                ))}
-              </ul>
-            </aside>
-          ) : null}
-
-          <nav aria-label="More stories" className="more-stories">
-            <p className="kicker">More stories</p>
-            <ul className="mt-4 space-y-3">
-              {others.map((item) => (
-                <li key={item.slug}>
-                  <a href={storyPath(item.slug)}>{item.title}</a>
-                  <p className="text-base text-ink-soft">{item.dek}</p>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          {links.length > 0 ? <aside className={`story-source-block${story.furtherReading?.length ? "" : " static-aside"}`}><p className="kicker">In the record</p><ul>{links.map((link) => <li key={link.href}><a href={link.href} rel="noopener" target="_blank">{link.label}</a>{" — "}{link.note}</li>)}</ul></aside> : null}
+          {story.furtherReading?.length ? <aside className="story-source-block static-aside">
+            <p className="kicker">Further reading</p>
+            <ul>{story.furtherReading.map((book) => <li key={book.href}><a href={book.href} rel="sponsored nofollow noopener" target="_blank">{book.title}</a>{" — "}{book.author}<span className="mt-1 block">{book.note}</span></li>)}</ul>
+            <p className="mt-4 text-ink-faint">As an Amazon Associate, Almost Lore earns from qualifying purchases.</p>
+          </aside> : null}
+          <div className="story-end"><p>A story worth passing on?</p><StoryTools url={url} /></div>
         </div>
       </div>
+      <nav aria-label="More stories" className="more-stories">
+        <div className="section-heading"><div><p className="kicker">One more rabbit hole</p><h2>Stay a little longer<span className="heading-dot">.</span></h2></div><Link href="/#stories" className="text-link">All stories <span aria-hidden="true">↗</span></Link></div>
+        <div className="archive-grid">{others.map((item) => <StoryCard key={item.slug} story={{ slug: item.slug, title: item.title, dek: item.dek, yearLabel: item.yearLabel, collection: storyCollections[item.slug], minutes: readingMinutes(item), media: storyMedia[item.slug] }} />)}</div>
+      </nav>
     </article>
   );
 }

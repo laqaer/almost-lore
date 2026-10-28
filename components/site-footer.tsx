@@ -1,55 +1,32 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
 
-const sections = [
-  { href: "/#stories", label: "Stories" },
-  { href: "/about", label: "About" },
-  { href: "/now", label: "Now" },
-  { href: "/dossier", label: "Working file" },
-  { href: "/support", label: "Support" },
-  { href: "/contact", label: "Contact" },
-  { href: "/privacy", label: "Privacy" },
-  { href: "/terms", label: "Terms" },
-];
-
 export function SiteFooter() {
   return (
-    <footer className="site-foot">
-      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-        <div className="grid gap-8 md:grid-cols-3">
-          <div>
-            <p className="foot-name">{site.name}</p>
-            <p className="mt-2 max-w-sm text-base leading-6 text-ink-soft">{site.tagline}</p>
-          </div>
-          <nav aria-label="Footer" className="foot-links">
-            <h2 className="foot-label">Sections</h2>
-            <ul className="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-1">
-              {sections.map((item) => (
-                <li key={item.href}>
-                  <Link href={item.href}>{item.label}</Link>
-                </li>
-              ))}
-              <li>
-                <a href="/feed.xml">RSS feed</a>
-              </li>
-            </ul>
-          </nav>
-          <div>
-            <h2 className="foot-label">Contact</h2>
-            <p className="mt-3 text-base leading-6 text-ink-soft">
-              Questions, corrections, and source notes:{" "}
-              <Link className="text-teal hover:text-rust" href="/contact">
-                the contact page
-              </Link>
-              .
-            </p>
-          </div>
+    <footer className="site-footer"><div className="shell">
+      <div className="footer-main">
+        <div>
+          <Link href="/" className="footer-brand">Almost Lore<span aria-hidden="true">✳</span></Link>
+          <p>For the stories that fell<br />between the history books.</p>
         </div>
-        <p className="mt-8 border-t border-rule pt-6 text-sm text-ink-faint">
-          © {new Date().getFullYear()} {site.publisher}. {site.name} publishes original longform
-          essays.
-        </p>
+        <nav aria-label="Footer">
+          <Link href="/#stories">The stories</Link>
+          <Link href="/about">Our approach</Link>
+          <Link href="/now">At the editorial desk</Link>
+          <Link href="/dossier">The working file</Link>
+          <Link href="/contact">Contact & corrections</Link>
+          <a href="/feed.xml">Follow via RSS ↗</a>
+        </nav>
+        <div className="footer-note">
+          <p className="kicker">Stay curious</p>
+          <p>Every story starts with a record.<br />Every good record raises a question.</p>
+          <Link href="/support" className="text-link">Send us a lead <span aria-hidden="true">↗</span></Link>
+        </div>
       </div>
-    </footer>
+      <div className="footer-bottom">
+        <span>© {new Date().getFullYear()} {site.publisher} · An independent publication</span>
+        <div><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link><Link href="/friends">Friends of the journal</Link></div>
+      </div>
+    </div></footer>
   );
 }

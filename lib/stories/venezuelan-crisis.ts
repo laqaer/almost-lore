@@ -2,20 +2,20 @@ import type { Story } from "@/lib/stories/types";
 
 export const venezuelanCrisisStory: Story = {
   slug: "venezuelan-crisis-1895",
-  title: "Every means in its power",
-  dek: "In December 1895 Grover Cleveland told Congress the United States would resist, by every means in its power, a British hold on any land an American commission decided belonged to Venezuela. Britain had just refused to arbitrate the whole boundary. No troops met. The near-miss ended in a treaty, a fifty-year prescription rule, and a line Venezuela later refused to treat as the last word.",
-  hook: "The United States and Britain almost went to war in 1895 over the border between Venezuela and British Guiana.",
+  title: "The Venezuela crisis that threatened a wider war",
+  dek: "In 1895, an argument over British Guiana’s boundary brought a threat from Washington. A treaty eased the crisis. Its map did not settle the dispute.",
+  hook: "A line on a South American map brought a threat from the White House.",
   era: "1800s",
   yearLabel: "1895–1899",
   published: "2026-09-26",
-  updated: "2026-09-26",
+  updated: "2026-10-28",
   sourcesNote:
     "This essay is original prose. Richard Olney’s instruction of 20 July 1895, Lord Salisbury’s replies of 26 November 1895, and Grover Cleveland’s special message of 17 December 1895 are used only in the short lines those documents print, as published in Papers Relating to the Foreign Relations of the United States for 1895. The rupture of 1887 is taken from Salisbury’s own statement of the Venezuelan notes. The commission’s letter to the President dates its appointment to 1 January 1896 and its first meeting to 4 January; a later transmittal from President McKinley dates the appointment to 4 January. Both dates stay. The names are the ones on the commission’s signature. The treaty signed at Washington on 2 February 1897 is the British Treaty Series text, including the fifty-year rule; the parliamentary cover dates the exchange of ratifications at Washington to 11 June 1897. The award of 3 October 1899 is the tribunal’s published result. A memorandum published in 1949, after Severo Mallet-Prevost’s death, alleges a political bargain; it is identified as that later allegation, not as a finding of the tribunal. The Geneva Agreement of 1966 is named only as the later instrument that recorded the controversy as still open.",
   sections: [
     {
       paragraphs: [
-        "The hook is a jungle almost-war. The United States and Britain, in the winter of 1895, nearly fought over a boundary between Venezuela and the colony of British Guiana, a line most of their readers could not have drawn. Grover Cleveland told Congress that if Britain kept land an American inquiry found to be Venezuelan, it would be the duty of the United States to resist by every means in its power. The sentence is in the message of 17 December 1895. It is not a mobilization order. No squadron was sent up the Orinoco. No one died for the Essequibo that month.",
-        "The file is a pair of refusals and a climb-down. Venezuela and Britain had been out of diplomatic relations since 1887 over where the colony ended. Richard Olney, the American secretary of state, told London in July 1895 that the Monroe Doctrine made the question an American one and asked for arbitration of the whole claim. Lord Salisbury answered in November that the doctrine was not law he had signed and that Britain would not put the colony’s settled districts into an open arbitration. Cleveland’s message answered that refusal with a commission and a threat. What followed was not a battle. It was a treaty, a rule that let long occupation count as title, and an award that split the difference in Britain’s favor on the map and did not end the argument.",
+        "On 17 December 1895, President Grover Cleveland asked Congress to fund a boundary commission. He also attached a threat. If Britain held territory the American inquiry judged Venezuelan, the United States should resist by every means in its power.",
+        "The disputed border lay between Venezuela and British Guiana. Britain had refused arbitration of the entire claim; Cleveland proposed an American finding that neither claimant had agreed to accept. His message did not order a mobilization. The confrontation moved toward a treaty and an arbitral award, but the resulting line did not end the dispute.",
       ],
     },
     {

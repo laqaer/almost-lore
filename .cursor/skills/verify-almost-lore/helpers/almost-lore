@@ -13,7 +13,7 @@ const fs = require("node:fs");
 const net = require("node:net");
 const path = require("node:path");
 
-const LEAD_H1 = "The country that existed on paper";
+const HOME_H1 = "Come down the rabbit hole.";
 const ADS_TXT_PLACEHOLDER =
   "# Almost Lore ads.txt — AdSense publisher line added after approval.";
 
@@ -575,7 +575,7 @@ async function launch(root, cfg) {
     try {
       const result = await fetchUrl(`${cfg.base}/`, 90000);
       const facts = pageFacts(result);
-      if (result.status === 200 && result.body.includes("Almost Lore") && facts.h1 === LEAD_H1) {
+      if (result.status === 200 && result.body.includes("Almost Lore") && facts.h1 === HOME_H1) {
         console.log(`launched pid=${child.pid} ${cfg.base}`);
         return;
       }
@@ -619,7 +619,7 @@ async function doctorCommand(root, cfg) {
     facts = pageFacts(result);
     if (result.status !== 200) failures.push(`GET / status ${result.status}`);
     if (!facts.title.includes("Almost Lore")) failures.push(`title missing Almost Lore: ${facts.title}`);
-    if (facts.h1 !== LEAD_H1) failures.push(`h1 is ${JSON.stringify(facts.h1)}, expected ${JSON.stringify(LEAD_H1)}`);
+    if (facts.h1 !== HOME_H1) failures.push(`h1 is ${JSON.stringify(facts.h1)}, expected ${JSON.stringify(HOME_H1)}`);
   } catch (error) {
     failures.push(`GET / failed: ${error.message}`);
   }

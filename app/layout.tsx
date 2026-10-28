@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Newsreader, Source_Sans_3 } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
+import { FeedNavigation } from "@/components/feed-navigation";
 import { SiteHeader } from "@/components/site-header";
 import { AdsScript } from "@/components/ads-script";
 import { JsonLd } from "@/components/json-ld";
@@ -8,6 +9,7 @@ import { ogImage, openGraphImage } from "@/lib/metadata";
 import { websiteJsonLd } from "@/lib/schema";
 import { site, siteUrl } from "@/lib/site";
 import "./globals.css";
+import "./editorial.css";
 
 const newsreader = Newsreader({
   subsets: ["latin"],
@@ -27,12 +29,12 @@ const sourceSans = Source_Sans_3({
   display: "swap",
 });
 
-const title = "Almost Lore — Public-record near-misses, written as stories";
+const title = "Almost Lore — Strange history. True stories.";
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f3efe6" },
-    { media: "(prefers-color-scheme: dark)", color: "#12161c" },
+    { media: "(prefers-color-scheme: light)", color: "#f7f4eb" },
+    { media: "(prefers-color-scheme: dark)", color: "#17221d" },
   ],
 };
 
@@ -75,6 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <body className="font-sans antialiased">
         <JsonLd data={websiteJsonLd()} />
+        <FeedNavigation />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-card focus:px-3 focus:py-2"

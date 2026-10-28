@@ -1,12 +1,4 @@
 import Link from "next/link";
-import { site } from "@/lib/site";
-
-const nav = [
-  { href: "/#stories", label: "Stories" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
-  { href: "/dossier", label: "Working file" },
-];
 
 function Compass() {
   return (
@@ -22,28 +14,24 @@ function Compass() {
 
 export function SiteHeader() {
   return (
-    <header>
-      <div className="site-plate">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <p className="plate-running">
-            {site.publisher} · an editorial archive
-          </p>
-          <div className="plate-mast">
-            <Compass />
-            <Link className="masthead" href="/">
-              {site.name}
-            </Link>
-            <p className="mast-tagline">{site.tagline}</p>
-          </div>
-          <nav aria-label="Primary" className="plate-nav">
-            {nav.map((item) => (
-              <Link key={item.href} href={item.href}>
-                {item.label}
-              </Link>
-            ))}
-          </nav>
-        </div>
+    <header className="site-header shell">
+      <div className="masthead-top">
+        <span>An independent journal of curious history</span>
+        <a href="/feed.xml">Follow the journal <span aria-hidden="true">↗</span></a>
       </div>
+      <div className="masthead">
+        <Link href="/" aria-label="Almost Lore home">Almost<span className="brand-compass"><Compass /></span>Lore</Link>
+        <p>Too strange to forget.<br /> Too true to be folklore.</p>
+      </div>
+      <nav aria-label="Primary" className="primary-nav">
+        <div>
+          <Link href="/#stories">The stories</Link>
+          <Link href="/about">Our approach</Link>
+          <Link href="/dossier">The working file</Link>
+          <Link href="/contact">Get in touch</Link>
+        </div>
+        <Link href="/#editors-picks" className="nav-pick">A good place to start <span aria-hidden="true">↘</span></Link>
+      </nav>
       <div className="plate-edge" aria-hidden="true" />
     </header>
   );

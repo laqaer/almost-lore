@@ -2,13 +2,13 @@ import type { Story } from "@/lib/stories/types";
 
 export const poyaisStory: Story = {
   slug: "poyais-invented-country",
-  title: "The country that existed on paper",
-  dek: "Gregor MacGregor did not invent a rumor. He invented offices, banknotes, a loan, and a sailing date — then sent people to a shore that had none of the city he sold.",
-  hook: "A man sold land in a country that was not on the map.",
+  title: "Poyais: the country that existed on paper",
+  dek: "Gregor MacGregor sold land, banknotes, and government posts in a country that did not exist. Then the settlers arrived.",
+  hook: "The banknotes were real. The capital was not.",
   era: "1800s",
   yearLabel: "1822–1823",
   published: "2026-09-11",
-  updated: "2026-09-11",
+  updated: "2026-10-28",
   sourcesNote:
     "This essay is original prose. It follows the public outline of the Poyais episode as it appears in contemporary loan notices, later court and newspaper coverage, and modern scholarship on the 1822–23 London and Scottish issues. Departure dates, passenger counts, and death totals are not a single agreed ledger; where later writers disagree, the disagreement is named rather than averaged into a fake precision.",
   dossier: {
@@ -19,8 +19,8 @@ export const poyaisStory: Story = {
   sections: [
     {
       paragraphs: [
-        "The hook travels because it is almost too clean. A Scot in a general’s uniform sold a Central American country that did not exist. People bought the land. Some of them boarded ships. The city in the prospectus was not waiting on the far shore.",
-        "That sentence is true enough to survive a thread. It is not the whole record. Poyais was not a doodle on a napkin. It was a stack of paper that behaved, for a season, like a state: a land grant with a real name attached to it, a guidebook, recruiting offices, uniforms, a flag, notes printed to look like money, and a loan offered in London as if a government stood behind the coupons. The almost is not that MacGregor told a lie. The almost is that the lie was built to the same scale as the legitimate South American loans sitting beside it on the same exchange.",
+        "The settlers had crossed an ocean to reach a city. When they arrived on the Mosquito Coast, the city was missing. No port officials, no government offices, no St. Joseph of the guidebook. They had bought passage to Poyais.",
+        "Gregor MacGregor had given the place everything a prospective emigrant might expect to see on paper: a flag, an army, civil appointments, a currency. A real coastal land grant sat beneath the claims. It did not make Poyais a functioning state. In London, however, a Poyais loan could appear beside the bonds of new South American republics. The documents looked familiar. The shore did not.",
       ],
     },
     {

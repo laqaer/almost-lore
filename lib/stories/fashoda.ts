@@ -3,19 +3,19 @@ import type { Story } from "@/lib/stories/types";
 export const fashodaStory: Story = {
   slug: "fashoda-incident-1898",
   title: "Two flags at Fashoda",
-  dek: "In 1898 a French column and an Anglo-Egyptian flotilla met at a ruined fort on the White Nile. Neither side fired. Europe spent the autumn deciding whether that counted as a war.",
-  hook: "Britain and France almost went to war in 1898 over an abandoned fort on the Nile — then both sides waited for Europe to blink.",
+  dek: "A French column reached a ruined fort on the White Nile. An Anglo-Egyptian flotilla followed. In 1898, two imperial claims met at Fashoda.",
+  hook: "Two commanders held their ground while London and Paris argued. Neither opened fire.",
   era: "1800s",
   yearLabel: "1898–1899",
   published: "2026-09-18",
-  updated: "2026-09-18",
+  updated: "2026-10-28",
   sourcesNote:
     "This essay is original prose. It follows the public diplomatic and military outline of the 1898 Fashoda meeting as it appears in contemporary British and French government statements, newspaper coverage of the autumn crisis, and later scholarly surveys of the Upper Nile question. Arrival dates at the fort are stable in the public file (Marchand on 10 July; Kitchener in the week of 18 September). Troop tallies, the exact calendar day of the first interview, and the precise wording of the November withdrawal instruction are not a single agreed ledger; where compilers disagree, the disagreement is named rather than averaged.",
   sections: [
     {
       paragraphs: [
-        "The hook travels because it is almost too clean. Two empires pointed at the same ruined fort on the White Nile. The French got there first. The British arrived with gunboats. For a season the papers in London and Paris wrote as if a great-power war could start in a village that most of their readers could not find. Then the French left, and the same papers wrote as if the war had been a mood.",
-        "That sentence is true enough to survive a thread. It is not the whole record. Fashoda — later Kodok, now in South Sudan — was not a prize anyone wanted for its houses. It was a mark on a river that both capitals had already turned into a claim. The almost is not that two officers lost their tempers in the mud. The almost is that a small occupation and a larger flotilla were enough, in 1898, to make a Nile sandbank behave like a frontier between great-power war and a telegram.",
+        "At Fashoda, the French flag was already flying when the gunboats arrived. Jean-Baptiste Marchand’s small column had reached the ruined fort in July 1898. In September, Horatio Kitchener came up the White Nile with a much larger Anglo-Egyptian force. Neither commander fired.",
+        "The fort was the meeting point of two imperial projects. France wanted a route across Africa; Britain wanted control of the Nile. While the officers waited on the river, London and Paris argued about what a withdrawal would cost. A small post had become a test neither government wanted to lose.",
       ],
     },
     {

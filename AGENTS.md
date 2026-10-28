@@ -2,6 +2,10 @@
 
 ## Checks
 
+E2E: Playwright drives the static export in desktop and mobile Chromium. Run `npm run build && npm run test:e2e`.
+The browser harness serves this checkout at `http://127.0.0.1:4322`. It never proxies requests to the ops Worker.
+Install the browser once with `npx playwright install chromium`. Failure evidence is in `test-results/` and `playwright-report/`.
+
 E2E: Node.js HTTP checks against the running site. Run `npm run test:e2e:ops`.
 The default target is `https://almostlore.com`. Set `E2E_BASE_URL` for another running site.
 This read-only check verifies daily summary freshness and reconciliation status. It does not verify payment or download completion.

@@ -22,6 +22,8 @@ export function GET() {
   const base = siteUrl();
   const ordered = [...stories].sort((a, b) => b.published.localeCompare(a.published));
 
+  const latestUpdate = [site.updated, ...stories.map((story) => story.updated)].sort().at(-1)!;
+
   const items = ordered.map((story) => {
     const url = `${base}${storyPath(story.slug)}`;
     return [
@@ -43,7 +45,7 @@ export function GET() {
     `    <link>${escapeXml(base)}</link>`,
     `    <description>${escapeXml(site.description)}</description>`,
     "    <language>en-us</language>",
-    `    <lastBuildDate>${rfc822(site.updated)}</lastBuildDate>`,
+    `    <lastBuildDate>${rfc822(latestUpdate)}</lastBuildDate>`,
     `    <atom:link href="${escapeXml(`${base}/feed.xml`)}" rel="self" type="application/rss+xml" />`,
     ...items,
     "  </channel>",

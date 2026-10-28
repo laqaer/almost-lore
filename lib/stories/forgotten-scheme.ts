@@ -3,19 +3,19 @@ import type { Story } from "@/lib/stories/types";
 export const forgottenSchemeStory: Story = {
   slug: "forgotten-scheme",
   title: "The subway that ran one block",
-  dek: "Alfred Ely Beach’s 1870 pneumatic tube under Broadway was a working passenger demo, a political long shot, and a civic almost. New York’s real subway opened thirty-four years later.",
-  hook: "New York almost had a subway in 1870 — one block long, blown by a fan, then forgotten under Broadway until the next century’s diggers hit the wall.",
+  dek: "In 1870, Alfred Ely Beach sent passengers beneath Broadway in a car moved by air. The demonstration worked. The larger subway he imagined never followed.",
+  hook: "One car. One block. A giant blower. New York’s future arrived early and stayed small.",
   era: "1800s",
   yearLabel: "1869–1873",
   published: "2026-09-11",
-  updated: "2026-09-11",
+  updated: "2026-10-28",
   sourcesNote:
     "This essay is original prose. The demonstration line is a matter of public record: Scientific American’s own pages, New York newspaper coverage of the 1870 opening, the company’s legislative fight, and the 1912 rediscovery during later subway work. The night-and-secrecy version of the digging is the popular story; later local historians have put more weight on property-owner opposition and the Panic of 1873 than on a single duel with Boss Tweed. Both layers are labeled.",
   sections: [
     {
       paragraphs: [
-        "For a few years after 1870, a person in lower Manhattan could pay twenty-five cents, walk down from a clothing shop on Broadway, and sit in a waiting room that was trying very hard to be a parlor. There was a piano. There were frescoes. There was, depending on the write-up, the sort of ornament that tells you the builder was afraid the public would think a hole in the ground was a sewer. Then a cylindrical car, fitted to an eight-foot tube, was pushed by air from a Roots blower and traveled about three hundred feet under Broadway, from Warren Street toward Murray Street, and back.",
-        "That was the entire subway. One block. One car. A dead end. Alfred Ely Beach called it a beginning. The city, in the end, called it a curiosity. The first IRT train did not run until 1904. The almost is a generation long.",
+        "In 1870, New Yorkers could step down from a Broadway shop into a station with a piano, frescoes, and a single cylindrical railway car. The car had no locomotive pulling it. A powerful blower pushed it through a tube beneath the street, then brought it back.",
+        "The tunnel ran for about three hundred feet. Alfred Ely Beach meant his pneumatic railway to prove that New York could travel underground. Passengers paid twenty-five cents to try it. The demonstration worked; the larger network never arrived. The city’s first IRT subway opened in 1904, thirty-four years after Beach’s experiment.",
       ],
     },
     {

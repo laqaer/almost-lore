@@ -2,20 +2,20 @@ import type { Story } from "@/lib/stories/types";
 
 export const beringStory: Story = {
   slug: "bering-island-winter",
-  title: "The island that kept the captain",
-  dek: "In November 1741 Vitus Bering’s ship wrecked on an uninhabited island off Kamchatka. He died there on 8 December. Forty-six of the crew got a smaller boat home the next summer, and with them the news that the American coast was not a rumor.",
-  hook: "A captain spent a decade trying to prove Asia and America did not touch — then died on the island that proved the gap, before the proof got home.",
+  title: "The last winter of Vitus Bering",
+  dek: "His expedition reached the American coast. The voyage home ended in a wreck, a winter camp, and a boat the survivors had to build themselves.",
+  hook: "The survivors sailed home in a boat made from the wreck. Their captain stayed behind.",
   era: "before-1800",
   yearLabel: "1741–1742",
   published: "2026-09-25",
-  updated: "2026-09-25",
+  updated: "2026-10-28",
   sourcesNote:
     "This essay is original prose. It follows the public outline of the Second Kamchatka Expedition’s 1741 American voyage as it appears in Georg Wilhelm Steller’s journal (published later, and not a neutral log), Sven Waxell’s report, and later surveys of the Russian Pacific expeditions. The sighting of Mount Saint Elias on 16 July 1741, the landfall on the island in early November, Bering’s death on 8 December 1741, and a company of forty-six reaching Avacha Bay on 26 August 1742 are the dates used by the naval chronology and by Bancroft’s reading of the ship’s record. A Russian popular account puts the death on 6 December; this essay stays with 8 December and says so. Departure from Petropavlovsk is early June in some tellings and early July in others. How many sailed, and how many of the roughly thirty winter deaths belong to the island rather than the crossing, moves between ledgers. Steller’s line that Bering died of hunger, thirst, cold, and grief is Steller’s line.",
   sections: [
     {
       paragraphs: [
-        "The hook travels because it is almost too clean. A Danish captain in Russian service spent years trying to show that Asia and America were not one landmass, found the gap, and died on the island that sits in it. The proof went home without him.",
-        "That sentence is true enough to survive a thread. It is not the whole record. Bering had already sailed the strait that carries his name, in 1728, and had not seen America. The 1741 voyage is the one that did. The almost is not a metaphor about explorers and fate. The almost is a winter on an island with no name yet, a ship that could not be repaired, and a smaller boat built from its wreck that reached Petropavlovsk late enough for the captain to be a report.",
+        "By November 1741, the men aboard St. Peter were looking for home. They had reached the American coast and turned back toward Kamchatka. Scurvy had weakened the crew. When land appeared, it was not the mainland they needed. Their ship came ashore on an island where they would spend the winter.",
+        "Vitus Bering died there. The survivors took the wreck apart and built a smaller boat, which carried forty-six men home the following summer. Bering had already sailed the strait named for him in 1728 without seeing America. The 1741 voyage reached the American coast. Its final challenge was keeping enough of the crew alive to report what they had seen.",
       ],
     },
     {

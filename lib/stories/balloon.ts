@@ -3,19 +3,19 @@ import type { Story } from "@/lib/stories/types";
 export const balloonStory: Story = {
   slug: "balloon-almost-atlantic",
   title: "One hundred and ten miles of Atlantic",
-  dek: "In July 1978 Don Cameron and Christopher Davey flew Zanussi from Newfoundland toward Europe, leaked, tore, and ditched in the Bay of Biscay. The first successful crossing landed three weeks later.",
-  hook: "Two men almost made the first balloon crossing of the Atlantic — close enough that the last stretch was a trawler.",
+  dek: "In July 1978, Zanussi carried two men almost across the Atlantic. A leak, a storm, and about 110 miles of remaining ocean kept them from the record.",
+  hook: "They crossed most of an ocean. About 110 miles kept them from the record.",
   era: "1900-onward",
   yearLabel: "July 1978",
   published: "2026-09-11",
-  updated: "2026-09-11",
+  updated: "2026-10-28",
   sourcesNote:
     "This essay is original prose. The flight is documented in contemporaneous British reporting — including BBC coverage as the leak was happening — and in the later public record of Double Eagle II’s August 1978 crossing. Distances and the eight-foot tear come from those contemporary accounts.",
   sections: [
     {
       paragraphs: [
-        "On the last day that mattered, the balloon was still a machine and the ocean was still an ocean. Don Cameron and Major Christopher Davey had left St. John’s, Newfoundland, on 26 July 1978 in a bright yellow craft named Zanussi, after a sponsor, not after a saint. They were trying to do a thing that had already killed enough people to be a category: cross the Atlantic by balloon, on purpose, and arrive on land.",
-        "They did not. They came close enough that the failure has a mileage. Contemporary reports put the ditching in the Bay of Biscay about a hundred and ten miles from the French coast, near enough to Brest that the sentence “they almost made it” is not a mood. It is a remaining gap. The first crew to finish the job — Ben Abruzzo, Maxie Anderson, and Larry Newman in Double Eagle II — would leave Maine in August and stand in a barley field at Miserey, France, on the seventeenth. Three weeks is not a mythic interval. It is a calendar.",
+        "About 110 miles from the French coast, Don Cameron and Christopher Davey were running out of balloon. They had left Newfoundland in Zanussi on 26 July 1978, hoping to complete the first balloon crossing of the Atlantic. A helium leak and then a storm had left them with an ocean beneath them and too little lift to reach land.",
+        "They ditched in the Bay of Biscay, where a trawler picked them up. Three weeks later, Double Eagle II reached France and took the record. The difference between the two flights was not the size of the ambition. It was the remaining stretch of water, the condition of the envelope, and whether the next landing place was a field or the sea.",
       ],
     },
     {

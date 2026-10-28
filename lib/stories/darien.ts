@@ -2,20 +2,20 @@ import type { Story } from "@/lib/stories/types";
 
 export const darienStory: Story = {
   slug: "darien-scheme",
-  title: "The isthmus that was supposed to pay Scotland",
-  dek: "In July 1698 five Scottish ships carried about twelve hundred people to Darien and called the place Caledonia. They abandoned it in 1699. A second fleet, already at sea, found the fort empty, refounded it, and surrendered to Spain in the spring of 1700.",
-  hook: "Scotland tried to become an empire at a jungle harbor in Panama — and the failure was so expensive that union with England started to look like a refund.",
+  title: "The Darien scheme: Scotland’s ruinous shortcut",
+  dek: "Five ships sailed to build a Scottish trading colony in 1698. When the next expedition arrived, the settlement had already been abandoned.",
+  hook: "The second fleet was already at sea when the first colony gave up.",
   era: "before-1800",
   yearLabel: "1698–1700",
   published: "2026-09-25",
-  updated: "2026-09-25",
+  updated: "2026-10-28",
   sourcesNote:
     "This essay is original prose. It follows the public record of the Company of Scotland Trading to Africa and the Indies: the 1695 act, the subscription lists of 1696, five ships leaving Leith in July 1698 with about 1,200 people, the abandonment of the settlement in the summer of 1699, a second expedition that had already sailed, and the Spanish siege that ended the colony in March 1700. Sailing dates inside that July vary by a few days between compilers; so does the exact day the first fort was given up. What is not stable is the money and the dead. The subscribed sum is often given as about £400,000, but compilers disagree on how much was actually paid in. Death totals for the two expeditions are commonly put somewhere past two thousand if both fleets and the voyages are counted together, and much lower if you count only bodies on the isthmus. We do not pick a favorite integer. The Union of 1707 had more causes than Darien.",
   sections: [
     {
       paragraphs: [
-        "The hook travels because it flatters a national story. A small country tried to skip the queue, plant a colony on the narrowest part of the Americas, and catch the trade of both oceans. The colony died. The country, a few years later, voted itself into a larger one. People like a moral that tidy.",
-        "The record is a company, not a moral. In 1695 the Parliament of Scotland chartered the Company of Scotland Trading to Africa and the Indies. In 1696 Scots subscribed amounts that later writers, with varying degrees of care, call half the nation’s free capital. In July 1698 five ships left Leith carrying about twelve hundred people. They were not going to Virginia to copy a plantation that already worked. They were going to the Darien isthmus to build the port that would make the copying unnecessary.",
+        "The second Scottish expedition arrived at Darien to find the settlement empty. Its ships had sailed before the news of the first colony’s abandonment reached Scotland. The newcomers had crossed the Atlantic to join a trading venture. Instead, they had to begin it again.",
+        "The promise had been enormous: a colony on the isthmus that could draw trade from both oceans. In July 1698, five ships had carried about twelve hundred people from Leith toward that promise. They called the settlement Caledonia. Within a year, hunger, illness, and isolation had forced its abandonment. The second attempt would end under Spanish siege. The failure would outlast the colony, in debts, political arguments, and the lives that did not come home.",
       ],
     },
     {

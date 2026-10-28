@@ -30,7 +30,7 @@ Published at `almostlore.com`. Set `NEXT_PUBLIC_SITE_URL` if the deploy URL shou
 | `/friends` | Blogroll of people and their personal sites |
 | `/privacy` | Privacy page, naming any ads, affiliate links, or analytics if added |
 
-No CMS, reader accounts, or picker widgets. Essays are typed content. Article JSON-LD is used only on story pages.
+The archive supports local search and topic filters. Essays remain typed content. Article JSON-LD is used only on story pages.
 
 Card checkout and the support queue live on the Cloudflare Worker `almost-lore-ops`, not in this static export. The paid file body is not in this public repository. Operating notes are in `ops/`.
 
@@ -42,6 +42,36 @@ npm run dev
 ```
 
 Checks: `npm run lint`, `npm run typecheck`, `npm run build`.
+
+The browser suite drives the built site in desktop and mobile Chromium:
+
+```bash
+npx playwright install chromium
+npm run build
+npm run test:e2e
+```
+
+The suite checks archive filters, story navigation, link sharing, image delivery, and narrow layouts.
+It serves `out/` on `http://127.0.0.1:4322` and stops that server after the run.
+Browser failures retain traces and screenshots in `test-results/`. Open the report with `npx playwright show-report`.
+To inspect the same static export manually, run `npm run serve:export`.
+
+The separate `npm run test:e2e:ops` command checks the live scheduled reconciliation.
+It does not verify checkout or download completion.
+
+## Deployment
+
+Production uses Vercel's Git integration for `laqaer/almost-lore`, branch `main`.
+The project is `almost-lore` in `laqaers-projects`. Its production domain is `almostlore.com`.
+Before this release, Vercel metadata showed production from `main` commit `27bff7e`. The previous production build used `8f808ab`.
+
+1. Push or merge the verified change to `main`.
+2. Confirm that the new Vercel deployment uses the expected commit and reaches `READY`.
+3. Verify the changed pages on `https://almostlore.com`.
+4. After the IndexNow key file is live, run `npm run indexnow`.
+
+The root Wrangler configuration supports static export compatibility only. Never use it to deploy the ops Worker.
+The website and `almost-lore-ops` deploy separately. Read [ops/STATE.md](ops/STATE.md) before changing production operations.
 
 ## ads.txt
 

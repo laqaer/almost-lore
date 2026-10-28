@@ -2,20 +2,20 @@ import type { Story } from "@/lib/stories/types";
 
 export const sanFranciscoFogStory: Story = {
   slug: "san-francisco-fog-1950",
-  title: "The fog that was not weather",
-  dek: "In late September 1950 a Navy vessel sprayed bacteria over San Francisco from offshore. The city was not told. The Army later said the organisms were harmless. Stanford Hospital then recorded a rare Serratia cluster, and one man died.",
-  hook: "In 1950 the U.S. Navy sprayed San Francisco with bacteria to see where a weapon would go. The city was not told.",
+  title: "The secret in San Francisco’s fog",
+  dek: "In 1950, the military released bacteria off San Francisco without warning residents. A later hospital outbreak raised a question the surviving evidence could not settle.",
+  hook: "The city was part of an experiment. The residents had not agreed to take part.",
   era: "1900-onward",
   yearLabel: "September 1950",
   published: "2026-09-25",
-  updated: "2026-09-25",
+  updated: "2026-10-28",
   sourcesNote:
     "This essay is original prose. The spray itself is not in dispute: later Army biological-warfare records, discussed in congressional hearings in the 1970s, describe a late-September 1950 operation in which Serratia marcescens and Bacillus globigii were released from a ship offshore of San Francisco. Published accounts do not agree on the exact calendar: some say six days from about 26 September, some say 20–27 September, and a recent local account says eight days. Stanford physicians published a 1951 paper on eleven Serratia infections at the hospital, including Edward J. Nevin, who died of an endocarditis. The Army maintained the organisms were harmless simulants and that the cluster was coincidence; the infections followed medical procedures, and other city hospitals did not report the same spike. We do not upgrade a correlation the hearings left open into a verdict.",
   sections: [
     {
       paragraphs: [
-        "The hook travels because it confirms a suspicion people already enjoy: the government did the thing, and the weather was the alibi. In this case the suspicion has a ship behind it. In late September 1950, a Navy vessel off the Golden Gate released a spray into the air moving inland. The spray was not one organism. It was Serratia marcescens and Bacillus globigii. Serratia was the one you could see: it makes a red pigment, so a colony on a collector’s plate was a map of where the cloud had gone. How many days the ship sprayed is a small argument in the later write-ups — six, seven, eight — and this essay will not pick a favorite day-count so the operation looks neat.",
-        "San Francisco was not the enemy in the exercise. San Francisco was the model. The planners wanted to know how a biological agent released at sea would travel through a real city’s wind, hills, and fog. Monitors at dozens of stations around the bay collected the cloud. The residents were not asked, because asking would have changed the result and, more to the point, because the program was secret. The almost is not that a weapon was used on an American city by mistake. The almost is that simulants were used on purpose, on people who could not consent, and that the word simulant has had to do more ethical work than a pigment can carry.",
+        "In September 1950, a Navy vessel released bacteria off San Francisco and let the wind carry them inland. The military wanted to measure how a biological agent might spread through a city. Residents were not told they were inside the experiment.",
+        "The organisms were Serratia marcescens and Bacillus globigii, used as substitutes for more dangerous agents. The program called them harmless. A later hospital infection cluster made that description harder to accept, although the evidence did not establish that the sprayed strain caused those infections. The experiment is documented. Its precise human cost remains unresolved.",
       ],
     },
     {

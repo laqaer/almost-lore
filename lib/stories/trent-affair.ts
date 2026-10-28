@@ -3,19 +3,19 @@ import type { Story } from "@/lib/stories/types";
 export const trentAffairStory: Story = {
   slug: "trent-affair",
   title: "The four men taken off the Trent",
-  dek: "On 8 November 1861 a Union captain stopped the British mail steamer Trent in the Old Bahama Channel and took off two Confederate commissioners and their secretaries. No one was killed. The near-war was the month Britain spent demanding them back, and the note that gave them back without settling the law.",
-  hook: "The Union boarded a British mail ship, seized two Confederate envoys, and nearly pulled Britain into the Civil War.",
+  dek: "A Union captain seized four men from a British mail ship in 1861. Britain demanded their return. The Civil War nearly acquired another front.",
+  hook: "One captain stopped a mail ship. Two governments had to stop the crisis that followed.",
   era: "1800s",
   yearLabel: "1861–1862",
   published: "2026-09-26",
-  updated: "2026-09-26",
+  updated: "2026-10-28",
   sourcesNote:
     "This essay is original prose. The stop on 8 November 1861, the lack of an order from Washington, and the British movement of troops toward Canada and ships toward the western Atlantic follow the Office of the Historian’s public summary of the Trent Affair. The demands, the private handling of the seven days, and the acceptance of reparation follow the correspondence printed in the London Gazette of 14 January 1862: Earl Russell’s dispatch of 30 November 1861 as he restated it on 11 January, his dispatch of 9 December recording his talk with Charles Francis Adams, Lord Lyons’s dispatch of 27 December, and Russell’s acceptance of 11 January 1862. The gap between Charles Wilkes’s order to take the Trent as a prize and the boarding that removed four men follows the naval reports of the seizure. Prince Albert’s revision of a draft at the start of December, and his death on 14 December 1861, are in the royal record of that month; the revision is not treated here as proof that a war was otherwise certain. Where a later telling has a shot striking the Trent and the naval accounts describe warning fire that brought her to, both are named. American calendars put Seward’s note on 26 December; Lyons says he received it on the morning of the 27th.",
   sections: [
     {
       paragraphs: [
-        "The hook is a kidnapping at sea. A Union warship stops a British mail steamer, lifts two Confederate envoys off the deck, and Britain spends the next month deciding whether the insult is a war. The picture travels because it needs only one villain and one blink. It leaves out the defect the diplomats actually argued, and it leaves out a number. Nobody on the Trent was killed.",
-        "The file is a boarding that did not become a battle, then a note. On 8 November 1861, in the Old Bahama Channel, Captain Charles Wilkes of the USS San Jacinto stopped the British mail packet Trent. James M. Mason and John Slidell, Confederate commissioners bound for London and Paris, were taken off with their secretaries. The ship was allowed to go on. Washington had not ordered the stop. London called the removal a violation of neutral rights and asked for the men back, and for an apology. What closed the crisis was not a battle and not a full meeting of minds about the law. It was a release, an explanation that Wilkes had not been told to do it, and a British decision to count those two things as the reparation the dispatch had demanded.",
+        "The British mail steamer Trent was on a lawful voyage when a Union warship stopped her on 8 November 1861. An armed party took four men: two Confederate commissioners and their secretaries. The mail and the ship went on. The prisoners did not.",
+        "Captain Charles Wilkes had acted without orders from Washington. London demanded the men’s release and an apology, while Britain sent troops toward Canada and ships toward the western Atlantic. Nobody had died aboard the Trent. The question was whether one captain’s decision would open another war while the United States was already fighting its own. Seward’s eventual answer released the men without producing agreement on every point of law.",
       ],
     },
     {

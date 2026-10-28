@@ -28,6 +28,19 @@ jobs:
         run: npx next typegen
       - run: npm run typecheck
       - run: npm run build
+      - name: Install browser for reader checks
+        run: npx playwright install --with-deps chromium
+      - name: Verify desktop and mobile reader flows
+        run: npm run test:e2e
+      - name: Keep browser failure evidence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reader-e2e-failures
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 7
       - name: Verify static output
         shell: bash
         run: |
