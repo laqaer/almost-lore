@@ -105,7 +105,7 @@ export function StoryArticle({ story }: StoryArticleProps) {
           </aside>
 
           {story.furtherReading && story.furtherReading.length > 0 ? (
-            <aside>
+            <aside className="static-aside">
               <p className="kicker">Further reading</p>
               <ul className="mt-3 space-y-4">
                 {story.furtherReading.map((book) => (
@@ -126,7 +126,7 @@ export function StoryArticle({ story }: StoryArticleProps) {
           ) : null}
 
           {links.length > 0 ? (
-            <aside>
+            <aside className={story.furtherReading?.length ? undefined : "static-aside"}>
               <p className="kicker">
                 {story.furtherReading?.length ? "In the record" : "Further reading"}
               </p>

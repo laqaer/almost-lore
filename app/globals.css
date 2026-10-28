@@ -136,10 +136,16 @@ select {
 .plate-nav a {
   color: var(--color-plate-soft);
   text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 1px;
 }
 
-.plate-nav a:hover {
+.plate-nav a:hover,
+.plate-nav a:focus-visible {
   color: var(--color-plate-ink);
+  background-size: 100% 1px;
 }
 
 .plate-edge {
@@ -148,6 +154,7 @@ select {
     linear-gradient(var(--color-rust), var(--color-rust)) 0 0 / 100% 2px no-repeat,
     linear-gradient(var(--color-rule), var(--color-rule)) 0 100% / 100% 1px no-repeat;
   background-color: var(--color-paper);
+  transform-origin: 0 50%;
 }
 
 .site-plate :focus-visible {
@@ -226,7 +233,9 @@ select {
 }
 
 .lead-title a:hover,
-.story-card h3 a:hover {
+.lead-title a:focus-visible,
+.story-card h3 a:hover,
+.story-card h3 a:focus-visible {
   color: var(--color-rust);
 }
 
@@ -266,10 +275,16 @@ select {
   text-transform: uppercase;
   color: var(--color-teal);
   text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 1px;
 }
 
-.read-link:hover {
+.read-link:hover,
+.read-link:focus-visible {
   color: var(--color-rust);
+  background-size: 100% 1px;
 }
 
 .read-arrow {
@@ -302,12 +317,14 @@ select {
 }
 
 .era {
+  --era-rule: 1px;
+  --era-lip: 6px;
   margin-top: 4.25rem;
   padding-top: 1.35rem;
-  border-top: 1px solid var(--color-ink);
+  border-top: var(--era-rule) solid var(--color-ink);
   box-shadow:
-    0 -5px 0 var(--color-paper),
-    0 -6px 0 var(--color-rule);
+    0 calc(var(--era-rule) - var(--era-lip)) 0 var(--color-paper),
+    0 calc(var(--era-lip) * -1) 0 var(--color-rule);
 }
 
 .era-head {
@@ -473,6 +490,7 @@ select {
   height: 1px;
   margin-bottom: 0.7rem;
   background: var(--color-rust);
+  transform-origin: 0 50%;
 }
 
 .prose-lore p {
@@ -491,6 +509,22 @@ select {
   font-size: 4.5rem;
   font-weight: 500;
   line-height: 0.72;
+}
+
+.prose-lore > section:first-child > p:first-of-type {
+  position: relative;
+}
+
+.prose-lore > section:first-child > p:first-of-type::before {
+  content: "";
+  position: absolute;
+  top: 0.15rem;
+  left: 0;
+  width: 1.05rem;
+  height: 1px;
+  background: var(--color-rust);
+  transform-origin: 0 50%;
+  pointer-events: none;
 }
 
 .prose-lore a,
@@ -638,6 +672,12 @@ select {
   display: none;
 }
 
+.static-aside,
+.static-aside * {
+  animation: none;
+  transition: none;
+}
+
 .coast-chart {
   aspect-ratio: 480 / 168;
   width: 100%;
@@ -777,7 +817,8 @@ select {
   .story-card:focus-within .card-media img,
   .lead-plate:hover img,
   .lead-plate:focus-within img,
-  .card-frame:hover img {
+  .card-frame:hover img,
+  .card-frame:focus-within img {
     transform: scale(1.035);
   }
 
@@ -791,6 +832,11 @@ select {
       background-size 0.35s ease;
   }
 
+  .plate-nav a,
+  .read-link {
+    transition: color 0.18s ease, background-size 0.35s ease;
+  }
+
   .read-arrow {
     transition: transform 0.25s ease;
   }
@@ -800,12 +846,78 @@ select {
     transform: translateX(4px);
   }
 
+  .plate-edge {
+    animation: rule-draw 0.58s cubic-bezier(0.33, 0, 0.2, 1) both;
+  }
+
+  .compass circle:first-of-type {
+    stroke-dasharray: 106.814;
+    animation: compass-ring 0.52s cubic-bezier(0.33, 0, 0.2, 1) both;
+  }
+
+  .compass path {
+    transform-box: view-box;
+    transform-origin: 24px 24px;
+    animation: compass-settle 0.46s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .era {
+    position: relative;
+  }
+
+  .era::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: calc((var(--era-lip) + var(--era-rule)) * -1);
+    width: 100%;
+    height: calc(var(--era-lip) + var(--era-rule));
+    background: var(--color-paper);
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    pointer-events: none;
+    animation: rule-reveal 0.5s cubic-bezier(0.33, 0, 0.2, 1) both;
+  }
+
+  @supports (animation-timeline: view()) {
+    .era::after {
+      animation-timeline: view();
+      animation-range: entry 0% entry 30%;
+    }
+  }
+
+  .prose-lore h2::before {
+    animation: rule-draw 0.32s cubic-bezier(0.33, 0, 0.2, 1) both;
+  }
+
+  @supports (animation-timeline: view()) {
+    .prose-lore h2::before {
+      animation-timeline: view();
+      animation-range: entry 0% entry 25%;
+    }
+  }
+
+  .prose-lore > section:first-child > p:first-of-type::before {
+    animation: rule-draw 0.34s cubic-bezier(0.33, 0, 0.2, 1) both;
+  }
+
+  ::view-transition-group(*) {
+    animation-duration: 160ms;
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation-duration: 160ms;
+    animation-timing-function: ease-out;
+  }
+
   ::view-transition-old(root) {
-    animation: 220ms ease-out both vt-fade-out;
+    animation: 140ms ease-out both vt-fade-out;
   }
 
   ::view-transition-new(root) {
-    animation: 280ms ease-out both vt-fade-in;
+    animation: 160ms ease-out both vt-fade-in;
   }
 
   .read-progress {
@@ -830,6 +942,13 @@ select {
   }
 }
 
+@media (min-width: 1100px) and (prefers-reduced-motion: no-preference) {
+  .marginalia::before {
+    transform-origin: 0 50%;
+    animation: rule-draw 0.3s cubic-bezier(0.33, 0, 0.2, 1) both;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .chart-draw {
     animation: none;
@@ -840,6 +959,30 @@ select {
   ::view-transition-old(*),
   ::view-transition-new(*) {
     animation: none !important;
+  }
+
+  .plate-edge,
+  .compass path,
+  .marginalia::before,
+  .prose-lore h2::before,
+  .prose-lore > section:first-child > p:first-of-type::before {
+    animation: none;
+    transform: none;
+  }
+
+  .compass circle:first-of-type {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+
+  .era::after {
+    content: none;
+    animation: none;
+  }
+
+  .read-progress {
+    display: none;
+    animation: none;
   }
 
   @view-transition {
@@ -872,5 +1015,45 @@ select {
 @keyframes read-grow {
   to {
     transform: scaleX(1);
+  }
+}
+
+@keyframes rule-draw {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes rule-reveal {
+  from {
+    transform: scaleX(1);
+  }
+
+  to {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes compass-ring {
+  from {
+    stroke-dashoffset: 106.814;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes compass-settle {
+  from {
+    transform: rotate(-16deg);
+  }
+
+  to {
+    transform: rotate(0deg);
   }
 }
