@@ -5,6 +5,8 @@ This is the stable index for this owner-controlled repository. Existing source d
 | Topic | Canonical reference |
 | --- | --- |
 | README.md | [README.md](../README.md) |
+| Editorial overhaul | [Implementation, verification, and deployment boundary](editorial-overhaul.md) |
+| Social launch | [Drafts, credits, and measurement baseline](social-launch.md) |
 | Existing documentation | [Browse docs](./) |
 | Open work | [Issues](https://github.com/laqaer/almost-lore/issues), [pull requests](https://github.com/laqaer/almost-lore/pulls) |
 | Change and release evidence | [Commits](https://github.com/laqaer/almost-lore/commits), [Actions](https://github.com/laqaer/almost-lore/actions), [releases](https://github.com/laqaer/almost-lore/releases) |

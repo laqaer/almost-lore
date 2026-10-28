@@ -1,0 +1,493 @@
+{
+  "observedOn": "2026-10-28",
+  "projectId": "cd37cdd7-bd46-45a4-83fd-ad493669cd90",
+  "property": "sc-domain:almostlore.com",
+  "daily": {
+    "ok": true,
+    "siteUrl": "sc-domain:almostlore.com",
+    "startDate": "2026-09-27",
+    "endDate": "2026-10-24",
+    "dimensions": [
+      "date"
+    ],
+    "rowCount": 28,
+    "rows": [
+      {
+        "keys": [
+          "2026-09-27"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 3.5
+      },
+      {
+        "keys": [
+          "2026-09-28"
+        ],
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 6.3
+      },
+      {
+        "keys": [
+          "2026-09-29"
+        ],
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 9.7
+      },
+      {
+        "keys": [
+          "2026-09-30"
+        ],
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 8
+      },
+      {
+        "keys": [
+          "2026-10-01"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 13.5
+      },
+      {
+        "keys": [
+          "2026-10-02"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 12.3
+      },
+      {
+        "keys": [
+          "2026-10-03"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 12
+      },
+      {
+        "keys": [
+          "2026-10-04"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 7
+      },
+      {
+        "keys": [
+          "2026-10-05"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 11
+      },
+      {
+        "keys": [
+          "2026-10-06"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "keys": [
+          "2026-10-07"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "keys": [
+          "2026-10-08"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "keys": [
+          "2026-10-09"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 7.7
+      },
+      {
+        "keys": [
+          "2026-10-10"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 9
+      },
+      {
+        "keys": [
+          "2026-10-11"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "keys": [
+          "2026-10-12"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "keys": [
+          "2026-10-13"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "keys": [
+          "2026-10-14"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "keys": [
+          "2026-10-15"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 8
+      },
+      {
+        "keys": [
+          "2026-10-16"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      {
+        "keys": [
+          "2026-10-17"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 28
+      },
+      {
+        "keys": [
+          "2026-10-18"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 11.7
+      },
+      {
+        "keys": [
+          "2026-10-19"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "keys": [
+          "2026-10-20"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 10.5
+      },
+      {
+        "keys": [
+          "2026-10-21"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "2026-10-22"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 79
+      },
+      {
+        "keys": [
+          "2026-10-23"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "keys": [
+          "2026-10-24"
+        ],
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": 0
+      }
+    ],
+    "hasMore": false,
+    "meta": {
+      "projectId": "cd37cdd7-bd46-45a4-83fd-ad493669cd90",
+      "url": "https://app.openseo.so/p/cd37cdd7-bd46-45a4-83fd-ad493669cd90/search-performance"
+    }
+  },
+  "pages": {
+    "ok": true,
+    "siteUrl": "sc-domain:almostlore.com",
+    "startDate": "2026-09-27",
+    "endDate": "2026-10-24",
+    "dimensions": [
+      "page"
+    ],
+    "rowCount": 6,
+    "rows": [
+      {
+        "keys": [
+          "https://almostlore.com/"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 7
+      },
+      {
+        "keys": [
+          "https://almostlore.com/about"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "keys": [
+          "https://almostlore.com/stories/poyais-invented-country"
+        ],
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 14.8
+      },
+      {
+        "keys": [
+          "https://almostlore.com/stories/venezuelan-crisis-1895"
+        ],
+        "clicks": 0,
+        "impressions": 41,
+        "ctr": 0,
+        "position": 10.6
+      },
+      {
+        "keys": [
+          "https://www.almostlore.com/about"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 2
+      },
+      {
+        "keys": [
+          "https://www.almostlore.com/stories/forgotten-scheme"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 11
+      }
+    ],
+    "hasMore": false,
+    "meta": {
+      "projectId": "cd37cdd7-bd46-45a4-83fd-ad493669cd90",
+      "url": "https://app.openseo.so/p/cd37cdd7-bd46-45a4-83fd-ad493669cd90/search-performance"
+    }
+  },
+  "inspection": {
+    "ok": true,
+    "siteUrl": "sc-domain:almostlore.com",
+    "results": [
+      {
+        "url": "https://almostlore.com/",
+        "result": {
+          "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:almostlore.com&id=T9csskiw5qa0V2_4w1Q3pg&utm_medium=link&utm_source=api",
+          "indexStatusResult": {
+            "verdict": "PASS",
+            "coverageState": "Submitted and indexed",
+            "robotsTxtState": "ALLOWED",
+            "indexingState": "INDEXING_ALLOWED",
+            "lastCrawlTime": "2026-09-21T21:31:20Z",
+            "pageFetchState": "SUCCESSFUL",
+            "googleCanonical": "https://almostlore.com/",
+            "userCanonical": "https://almostlore.com/",
+            "referringUrls": [
+              "https://almost-lore.vercel.app/",
+              "https://almost-lore.vercel.app/stories/balloon-almost-atlantic",
+              "https://almostlore.com/sitemap.xml"
+            ],
+            "crawledAs": "MOBILE"
+          },
+          "mobileUsabilityResult": {
+            "verdict": "VERDICT_UNSPECIFIED"
+          }
+        }
+      },
+      {
+        "url": "https://almostlore.com/stories/pig-war-san-juan",
+        "result": {
+          "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:almostlore.com&id=S1bz9rlkUQN2yN3mjw1zyw&utm_medium=link&utm_source=api",
+          "indexStatusResult": {
+            "verdict": "NEUTRAL",
+            "coverageState": "Discovered - currently not indexed",
+            "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+            "indexingState": "INDEXING_STATE_UNSPECIFIED",
+            "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+            "sitemap": [
+              "https://almostlore.com/sitemap.xml"
+            ],
+            "referringUrls": [
+              "https://almost-lore.vercel.app/stories/pig-war-san-juan",
+              "https://almostlore.com/about"
+            ],
+            "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+          },
+          "mobileUsabilityResult": {
+            "verdict": "VERDICT_UNSPECIFIED"
+          }
+        }
+      },
+      {
+        "url": "https://almostlore.com/stories/poyais-invented-country",
+        "result": {
+          "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:almostlore.com&id=4cfhdqD5s8YIaGfxy2xDng&utm_medium=link&utm_source=api",
+          "indexStatusResult": {
+            "verdict": "PASS",
+            "coverageState": "Submitted and indexed",
+            "robotsTxtState": "ALLOWED",
+            "indexingState": "INDEXING_ALLOWED",
+            "lastCrawlTime": "2026-09-26T17:45:22Z",
+            "pageFetchState": "SUCCESSFUL",
+            "googleCanonical": "https://almostlore.com/stories/poyais-invented-country",
+            "userCanonical": "https://almostlore.com/stories/poyais-invented-country",
+            "sitemap": [
+              "https://almostlore.com/sitemap.xml"
+            ],
+            "referringUrls": [
+              "https://www.almostlore.com/stories/poyais-invented-country",
+              "https://almost-lore.vercel.app/stories/poyais-invented-country"
+            ],
+            "crawledAs": "MOBILE"
+          },
+          "mobileUsabilityResult": {
+            "verdict": "VERDICT_UNSPECIFIED"
+          }
+        }
+      },
+      {
+        "url": "https://almostlore.com/stories/caroline-affair",
+        "result": {
+          "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:almostlore.com&id=7KoL0-RrNw-YRI2SVsFaHA&utm_medium=link&utm_source=api",
+          "indexStatusResult": {
+            "verdict": "NEUTRAL",
+            "coverageState": "Discovered - currently not indexed",
+            "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+            "indexingState": "INDEXING_STATE_UNSPECIFIED",
+            "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+            "sitemap": [
+              "https://almostlore.com/sitemap.xml"
+            ],
+            "referringUrls": [
+              "https://almost-lore.vercel.app/stories/caroline-affair",
+              "https://almostlore.com/about"
+            ],
+            "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+          },
+          "mobileUsabilityResult": {
+            "verdict": "VERDICT_UNSPECIFIED"
+          }
+        }
+      }
+    ],
+    "meta": {
+      "projectId": "cd37cdd7-bd46-45a4-83fd-ad493669cd90",
+      "url": "https://app.openseo.so/p/cd37cdd7-bd46-45a4-83fd-ad493669cd90/settings/integrations"
+    }
+  },
+  "queries": {
+    "ok": true,
+    "siteUrl": "sc-domain:almostlore.com",
+    "startDate": "2026-09-27",
+    "endDate": "2026-10-24",
+    "dimensions": [
+      "query",
+      "page"
+    ],
+    "rowCount": 2,
+    "rows": [
+      {
+        "keys": [
+          "poyais currency",
+          "https://almostlore.com/stories/poyais-invented-country"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 79
+      },
+      {
+        "keys": [
+          "venezuela boundary dispute 1895",
+          "https://almostlore.com/stories/venezuelan-crisis-1895"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 41
+      }
+    ],
+    "hasMore": false,
+    "meta": {
+      "projectId": "cd37cdd7-bd46-45a4-83fd-ad493669cd90",
+      "url": "https://app.openseo.so/p/cd37cdd7-bd46-45a4-83fd-ad493669cd90/search-performance"
+    }
+  }
+}

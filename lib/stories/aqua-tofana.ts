@@ -3,19 +3,19 @@ import type { Story } from "@/lib/stories/types";
 export const aquaTofanaStory: Story = {
   slug: "aqua-tofana-myth-vs-record",
   title: "Aqua Tofana, after the legend",
-  dek: "The poison that killed six hundred husbands is a later story. The Roman archive holds a 1659 prosecution, a sealed transcript, and a woman popularly called Tofana who was already dead.",
-  hook: "A woman sold a colorless poison that killed six hundred men — except the number, the name, and the hanging do not survive the archive intact.",
+  dek: "The story promises one poisoner and six hundred dead husbands. The Roman archive holds a real prosecution, disputed identities, and a very different chronology.",
+  hook: "The famous body count is part of the legend. The trial is in the archive.",
   era: "before-1800",
   yearLabel: "1633–1659",
   published: "2026-09-11",
-  updated: "2026-09-11",
+  updated: "2026-10-28",
   sourcesNote:
     "This essay is original prose. It follows the public scholarly reconstruction of the Palermo and Rome poison cases — especially work that uses the 1659 notarial transcript and related Roman archival material — and it treats nineteenth-century retellings as retellings. We have not claimed to re-transcribe sealed files. Where historians still disagree on kinship, recipe, and victim counts, the disagreement stays visible.",
   sections: [
     {
       paragraphs: [
-        "The version that still moves online is a complete object. In seventeenth-century Italy, a woman named Giulia Tofana brewed a colorless liquid, sold it as a cosmetic, and taught wives how to use it. Hundreds of husbands died. The Church or the governor sprang a trap. She confessed under torture and was executed, sometimes with a daughter, sometimes with a coven, always as the spider at the center of a web.",
-        "That object is a nineteenth-century souvenir hanging on an older trial. It is not nothing. There was a poison associated with the name Tofana. There was a Roman investigation in 1659 that ended with women hanged in the Campo de’ Fiori. There were clients, intermediaries, and a fear — contemporaneous, not invented last year — that a plague year could hide a dose. What the souvenir adds is the part a thread needs: one named villain, a round body count, and a moral that women in locked marriages found a chemical exit and were punished for it.",
+        "In July 1659, five women were hanged in Rome’s Campo de’ Fiori after an investigation into poison and suspected murder. Later retellings gathered the story around one woman: Giulia Tofana, said to have helped kill six hundred husbands. The dates do not fit that neat account.",
+        "In the archival reconstruction followed here, the woman later known as Giulia Tofana had died in 1651. The 1659 prosecution was real, but it involved a network of clients and intermediaries. Names, family relationships, recipes, and victim counts grew less certain as the story passed between writers. What survives is disturbing enough without giving the legend the status of a verdict.",
       ],
     },
     {

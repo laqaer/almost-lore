@@ -8,6 +8,7 @@ import { ogImage, openGraphImage } from "@/lib/metadata";
 import { websiteJsonLd } from "@/lib/schema";
 import { site, siteUrl } from "@/lib/site";
 import "./globals.css";
+import "./editorial.css";
 
 const newsreader = Newsreader({
   subsets: ["latin"],
@@ -27,12 +28,12 @@ const sourceSans = Source_Sans_3({
   display: "swap",
 });
 
-const title = "Almost Lore — Public-record near-misses, written as stories";
+const title = "Almost Lore — Strange history. True stories.";
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f3efe6" },
-    { media: "(prefers-color-scheme: dark)", color: "#12161c" },
+    { media: "(prefers-color-scheme: light)", color: "#f7f4eb" },
+    { media: "(prefers-color-scheme: dark)", color: "#17221d" },
   ],
 };
 

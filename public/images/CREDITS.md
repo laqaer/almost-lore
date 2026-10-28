@@ -1,12 +1,11 @@
 # Story image credits
 
-Archive imagery used on the story pages. Every file is a genuine archival item
-from Wikimedia Commons — a photograph, map, document, or period illustration.
-Some are later illustrations rather than eyewitness views, and one is a modern
-satellite view; the captions say so. Nothing here is a generated or
-reconstructed image. Licenses were checked on Commons; all are public domain
-except the one CC BY-SA item noted below. Local copies keep the original aspect
-ratio and are only downscaled (longest edge 1600 px, JPEG quality 82).
+These images are archival photographs, maps, documents, or period illustrations from Wikimedia Commons.
+Some are later illustrations, and one is a modern satellite view. The captions identify those limits.
+None is a generated or reconstructed image. Commons lists each image as public domain except the CC BY-SA item noted below.
+
+Local copies keep the original aspect ratio. Images are downscaled to at most 1600 pixels on the longest edge.
+Existing lead images use JPEG quality 82. The gallery additions below use quality 75 with optimized JPEG encoding.
 
 ## Map
 
@@ -44,5 +43,25 @@ ratio and are only downscaled (longest edge 1600 px, JPEG quality 82).
 - `stories/darien-scheme.jpg` — <https://commons.wikimedia.org/wiki/File:Paul_Hardy_-_Scene_of_the_departure_from_Leith_of_the_Darien_expedition,_AD_1698.jpg> (original 873x1195). A later 1909 illustration, not a contemporary view.
 - `stories/aroostook-war.jpg` — <https://commons.wikimedia.org/wiki/File:1839_Map_of_the_disputed_territory_(Maine),_reduced_from_the_original_of_Messrs._Featherstonehaugh_%26_Mudge,_British_commissioners,_by_William_James_Stone,_from_the_Digital_Commonwealth_-_commonwealth_7h14b0247.jpg> (original 8246x7899)
 
-This list is what `lib/stories/media.ts` references. If a file is replaced,
-update both this table and the matching `storyMedia` entry.
+The lead images are listed in `lib/stories/media.ts`. The gallery images are listed in `lib/stories/gallery.ts`.
+If an image changes, update its credit and the matching media entry.
+
+## Gallery additions, 2026-10-28
+
+These three images extend the existing essays. They do not add new stories or reconstructed scenes.
+Each file preserves the complete downloaded image and its aspect ratio. Only size and JPEG compression changed.
+The files are stored locally. Pages do not depend on an external image host.
+
+| Local file | Subject | Source and date | License | Local dimensions |
+|---|---|---|---|---|
+| `stories/poyais-promised-port.jpg` | Advertised Black River port in Poyais | *Sketch of the Mosquito Shore*, 1822; John Carter Brown Library | Public domain | 1280 × 829 |
+| `stories/beach-pneumatic-plan.jpg` | Plan of Beach's demonstration railway and air machinery | *Scientific American*, 5 March 1870; scan by Joseph Brennan | Public domain | 1600 × 1458 |
+| `stories/san-juan-reservations-1860.jpg` | Government reservations on southeastern San Juan Island | War Department, December 1860; National Archives, NAID 100305680 | Public domain | 1600 × 1143 |
+
+- **Poyais:** [Commons file and license](https://commons.wikimedia.org/wiki/File:View_of_the_port_of_Black_River_in_the_Territory_of_Poyais.jpg). The original scan is 4965 × 3217 pixels. This promotional engraving depicts the advertised port. It is not evidence that settlers found those buildings or conditions.
+- **Beach railway:** [Commons file and license](https://commons.wikimedia.org/wiki/File:Beach_Pneumatic_plan.jpg). The original scan is 1936 × 1764 pixels. The issue date is visible in the scan. The diagram shows the railway plan, including the waiting room and blower.
+- **San Juan Island:** [Commons file and license](https://commons.wikimedia.org/wiki/File:Map_of_South_East_End_of_San_Juan_Island,_Washington_Territory,_Showing_Government_Reservations_-_NARA_-_100305680.jpg) and [National Archives record](https://catalog.archives.gov/id/100305680). The original scan is 6348 × 4534 pixels. This federal government map dates from the joint occupation. It does not show the initial 1859 confrontation.
+
+The source and license pages were checked on 2026-10-28. Wikimedia downloads stalled on the local connection.
+The files were retrieved through the public weserv image cache, using the original Wikimedia URLs or their thumbnail URLs.
+No account, paid service, or runtime image proxy was added. The visible captions retain the archive sources and factual limits.

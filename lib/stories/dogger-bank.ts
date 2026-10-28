@@ -2,20 +2,20 @@ import type { Story } from "@/lib/stories/types";
 
 export const doggerBankStory: Story = {
   slug: "dogger-bank-1904",
-  title: "Searchlights on the Dogger Bank",
-  dek: "On the night of 21–22 October 1904 a Russian squadron on its way to the war with Japan fired on Hull trawlers over the Dogger Bank. A commission of inquiry counted two fishermen dead and one trawler sunk, and a majority found no torpedo boats there to fire at. Britain and Russia stayed at peace. The report’s own courtesies are why the outrage and the file are not the same story.",
-  hook: "The Russian navy opened fire on British fishing boats because it thought they were Japanese torpedo boats.",
+  title: "Dogger Bank: the night the navy fired at fishermen",
+  dek: "A Russian squadron mistook Hull trawlers for a threat in 1904. Two fishermen died. Britain and Russia then had to prevent a second disaster.",
+  hook: "The fleet was bound for a war with Japan. Its guns found British fishing boats.",
   era: "1900-onward",
   yearLabel: "1904–1905",
   published: "2026-09-26",
-  updated: "2026-09-26",
+  updated: "2026-10-28",
   sourcesNote:
     "This essay is original prose. The night’s sequence and the findings follow the International Commission of Inquiry’s report of 26 February 1905 on the North Sea incident, as reprinted from the public record (the commission’s English text spells the admiral Rojdestvensky). The agreement to inquire is the Anglo-Russian declaration of 25 November 1904, made on the model of the 1899 Hague Convention’s articles for commissions of inquiry. The compensation figure is the one the Prime Minister, Sir Henry Campbell-Bannerman, gave the House of Commons on 12 November 1906: £65,000. A round figure of £66,000 also circulates; it is not averaged in here. The dead men’s names follow the Hull coroner’s verdict as contemporary reports carried it: George Smith, master of the Crane, and William Leggett of her crew. Where fishermen’s memories of how long the guns fired differ from the commission’s ten to twelve minutes, both are named.",
   sections: [
     {
       paragraphs: [
-        "The hook is built for a laugh that curdles. The Russian Baltic fleet, sailing to a war on the other side of the world, met British fishing boats in the North Sea, decided they were the Japanese navy, and opened fire. Two empires that were not fighting each other spent the next week behaving as if they might. Then a commission sat in Paris, and the joke became a report.",
-        "The report is the part worth keeping. It is public, it is dated, and it is less generous to the punch line than a thread wants. On the night of 21–22 October 1904 — 8–9 October by the Russian calendar the November agreement also prints — Admiral Zinovy Rozhestvensky’s squadron did fire on a fleet of Hull trawlers working the Dogger Bank. The commission’s count is two men killed and six wounded, the trawler Crane sunk, and five other named boats damaged. A majority of the commissioners found that there were no torpedo boats among the trawlers or near them, and that the order to fire was not justified. The same report says, unanimously, that this conclusion was not a stain on the admiral’s military qualities or his humanity, and that he had tried to stop the guns once the targets were recognized as fishing boats. Britain and Russia did not go to war. The almost is in that double finding: unjustified fire, and a unanimous refusal to treat the man who ordered it as a disgrace to his service.",
+        "Searchlights swept the North Sea on the night of 21–22 October 1904. A Russian squadron, heading toward the war with Japan, had encountered Hull trawlers on the Dogger Bank. Then it opened fire. The trawler Crane sank. Two fishermen died.",
+        "The inquiry counted six wounded and five more boats damaged. A majority of commissioners found no torpedo boats among the trawlers or nearby. The firing was unjustified. Yet the same report unanimously defended the admiral’s military qualities and humanity. Britain and Russia stayed at peace. The report records the harm while showing how carefully the investigators avoided turning their findings into a fresh insult.",
       ],
     },
     {

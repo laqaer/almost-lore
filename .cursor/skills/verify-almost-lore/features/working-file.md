@@ -10,7 +10,7 @@ The working file is the paid Poyais dossier. The essay stays free. On a local `n
 
 ## How to get to it (user POV)
 
-- Choose `Working file` in the header or footer.
+- Choose `The working file` in the header or footer.
 - On the Poyais essay, choose `The Poyais working file`.
 - Open `/dossier/thanks` only to see the no-session state. A paid return from Stripe is not part of local verification.
 
@@ -22,11 +22,11 @@ Preconditions:
 - `almost-lore doctor` prints `doctor: pass`.
 - Chrome is required for `dossier-checkout` and for the hydrated thanks copy. If `dom` prints `dom blocked:`, those two sub-features are not verified.
 
-- **Header entry.** Choose `Working file`. Run `.cursor/skills/verify-almost-lore/helpers/almost-lore follow --from / --name "Working file" --expect "The Poyais working file" --expect "Checking whether card checkout is open."`. The `h1` is `The Poyais working file` and the server HTML still contains the checking sentence.
+- **Header entry.** Choose `The working file`. Run `.cursor/skills/verify-almost-lore/helpers/almost-lore follow --from / --name "The working file" --expect "The Poyais working file" --expect "Checking whether card checkout is open."`. The `h1` is `The Poyais working file` and the server HTML still contains the checking sentence.
 - **Essay entry.** From the Poyais essay, choose `The Poyais working file`. Run `.cursor/skills/verify-almost-lore/helpers/almost-lore follow --from /stories/poyais-invented-country --name "The Poyais working file" --expect "The Poyais working file"`. The destination path is `/dossier`.
 - **Checkout stays unpaid.** Load the dossier in Chrome. Run `.cursor/skills/verify-almost-lore/helpers/almost-lore dom /dossier --out .cursor/skills/verify-almost-lore/evidence/working-file/dossier.dom.html --expect "Checkout status could not be confirmed, so the pay button stays off."`. The dumped DOM contains that sentence. It does not contain `Pay $9 and continue to checkout`.
 - **Thanks without a session.** Open `/dossier/thanks`. Run `.cursor/skills/verify-almost-lore/helpers/almost-lore get /dossier/thanks --expect "Your download" --expect "Preparing the download link."`. The `h1` is `Your download`. Then run `.cursor/skills/verify-almost-lore/helpers/almost-lore dom /dossier/thanks --expect "No checkout session came back with this page."`. The hydrated page says no session came back. It does not contain `Download the working file`.
-- **Proof.** Keep the follow stdout and the `dom` output. Write `PROOF.txt` naming `working-file`, the entry `Working file`, and both commands. `page.meta.json` or the dom file's source URL is `http://127.0.0.1:4321/dossier`.
+- **Proof.** Keep the follow stdout and the `dom` output. Write `PROOF.txt` naming `working-file`, the entry `The working file`, and both commands. `page.meta.json` or the dom file's source URL is `http://127.0.0.1:4321/dossier`.
 
 ## Gotchas
 

@@ -2,20 +2,20 @@ import type { Story } from "@/lib/stories/types";
 
 export const pigWarStory: Story = {
   slug: "pig-war-san-juan",
-  title: "The war named for a pig",
-  dek: "In June 1859 an American settler shot a Hudson’s Bay Company boar on an island the Oregon Treaty had failed to assign. Troops landed. The commemorative line says the pig was the only casualty. The record is a thirteen-year occupation and a boundary drawn in 1872.",
-  hook: "A pig started a war between Britain and the United States.",
+  title: "The Pig War: one shot, thirteen years of waiting",
+  dek: "A pig wandered into an American settler’s garden in 1859. His shot brought troops to San Juan Island, where the border remained unsettled until 1872.",
+  hook: "The pig died. The armies arrived. The battle never came.",
   era: "1800s",
   yearLabel: "1859–1872",
   published: "2026-09-26",
-  updated: "2026-09-26",
+  updated: "2026-10-28",
   sourcesNote:
     "This essay is original prose. The narrative follows the National Park Service account of the Pig War at San Juan Island National Historical Park and the HistoryLink.org essay “San Juan Island Pig War,” which itself cites Mike Vouri and Edmond S. Meany. Where those public summaries use different calendar days for the same landing, both days are named. The sentence that the pig was the only casualty is the commemorative claim in those sources, meaning the detachments did not fire on each other. It is not a claim that the island saw no other deaths across thirteen years.",
   sections: [
     {
       paragraphs: [
-        "The hook is efficient. An American shot a British pig, two empires nearly went to war, and nobody died except the animal. The sentence is what the park and the regional historians still put on the label. It is also doing too much work. The pig was real. The standoff was real. The war, in the sense of a battle, is the part the record refuses to deliver.",
-        "What the Oregon Treaty had refused, thirteen years earlier, was a line. In 1846 Britain and the United States split the mainland Oregon Country at the forty-ninth parallel and left Vancouver Island to Britain even where the island dips south of that line. The boundary was then supposed to run “to the middle of the channel which separates the continent from Vancouver’s Island; and thence southerly through the middle of the said channel, and of Fuca’s Straits to the Pacific Ocean.” Between the continent and the island there is not one channel. Rosario Strait would have left the San Juans British. Haro Strait would leave them American. The diplomats signed the ambiguity and went home. The islands already had their own people. The treaty was a conversation between two empires about water.",
+        "On 15 June 1859, an American settler on San Juan Island shot a Hudson’s Bay Company pig rooting in his garden. What followed was far larger than a quarrel over an animal. American troops landed. British warships arrived. Both governments claimed the island, and neither wanted the other to turn a landing into possession.",
+        "The border dispute was already thirteen years old. The 1846 Oregon Treaty sent the boundary through “the middle of the channel” between the mainland and Vancouver Island. There was more than one channel. One route favored Britain; another favored the United States. The islands already had their own people. The treaty settled a claim between empires without settling where, on this water, that claim would end.",
       ],
     },
     {

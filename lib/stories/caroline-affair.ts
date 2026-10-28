@@ -2,20 +2,20 @@ import type { Story } from "@/lib/stories/types";
 
 export const carolineAffairStory: Story = {
   slug: "caroline-affair",
-  title: "The Caroline at Schlosser",
-  dek: "On the night of 29 December 1837 a British party burned the American steamer Caroline at a landing on the New York side of the Niagara. Amos Durfee was killed on the dock. The near-war was not a second battle at the river. It was a murder charge, a boast, and a sentence about necessity that the two governments adopted without agreeing the raid had earned it.",
-  hook: "Britain set an American steamboat on fire and sent it over Niagara Falls, and the two countries nearly went to war.",
+  title: "The Caroline affair: a burning ship, an unsteady peace",
+  dek: "A British raid burned an American steamer on the Niagara in 1837. One man died. Years later, a murder trial threatened the peace again.",
+  hook: "The fire lasted a night. The diplomatic danger lasted years.",
   era: "1800s",
   yearLabel: "1837–1842",
   published: "2026-09-26",
-  updated: "2026-09-26",
+  updated: "2026-10-28",
   sourcesNote:
     "This essay is original prose. The 1837 facts and the 1842 notes follow Hunter Miller’s Treaties and Other International Acts of the United States of America, volume 4 (Government Printing Office, 1934), which reprints the Webster–Ashburton correspondence and extracts John Bassett Moore’s Digest for the seizure, the master’s deposition, and the later investigation. The trial account follows the Historical Society of the New York Courts summary of People v. McLeod (1841). Where the master’s first numbers and the later investigation disagree about who was missing, both are named. Where Moore dates the diplomatic turn to March 1841 and the court history dates the arrest to November 1840, both dates stay. The claim that the hull went over the falls is the claim in the early reports and in the title of Andrew Drew’s 1864 narrative; it is not treated here as a survey of the brink.",
   sections: [
     {
       paragraphs: [
-        "The hook is a picture. An American steamer, fired by a British cutting-out party, goes over Niagara Falls, and two countries that are officially at peace spend years not quite fighting about it. The picture is what traveled. It made a small boat large, and it made a file of notes look like a battle that simply failed to start.",
-        "The file is less obedient. On the night of 29 December 1837 a party sent from the Canadian shore did board the steamer Caroline at Schlosser, on the New York side of the Niagara, while the Upper Canadian rebellion was using the river as a supply line. Amos Durfee, an American, was killed on the dock. The boat was burned and cast into the current above the cataract. Whether the hull itself went over the brink is where the prints and the later investigation part company. Ashburton, the British negotiator, later wrote that the case had more than once endangered the peace. The danger in that sentence is not a second volley at the landing. It is the years after: a boast, a state murder charge, and a rule about self-defense that Daniel Webster wrote down and that both governments then agreed to recite without agreeing that this raid had met it.",
+        "On the night of 29 December 1837, a party from the Canadian shore crossed the Niagara and boarded the American steamer Caroline. She was moored at Schlosser, in New York. Amos Durfee was killed on the dock. The raiders burned the boat and cast it into the river above the falls.",
+        "Prints later made the plunge over Niagara Falls the story’s defining image. Whether the hull went over the brink remains disputed. The danger to peace is easier to trace: a man’s boast, a state murder charge, and two governments defending incompatible accounts of the raid. Daniel Webster’s rule for self-defense emerged from that argument. Agreement on the rule did not mean agreement that Britain had met it.",
       ],
     },
     {

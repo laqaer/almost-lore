@@ -2,11 +2,12 @@ import type { MetadataRoute } from "next";
 import { site, siteUrl } from "@/lib/site";
 import { stories, storyPath } from "@/lib/stories";
 import { storyMedia } from "@/lib/stories/media";
+import { storyGallery } from "@/lib/stories/gallery";
 
 // `updated` is the day the page's content last changed. Pages reworked in the
 // 2026-09-27 pass carry that date; /terms was untouched and keeps the earlier one.
 const staticRoutes = [
-  { path: "/", priority: 1, updated: "2026-09-27" },
+  { path: "/", priority: 1, updated: "2026-10-28" },
   { path: "/about", priority: 0.6, updated: "2026-09-27" },
   { path: "/contact", priority: 0.6, updated: "2026-09-27" },
   { path: "/now", priority: 0.6, updated: "2026-09-27" },
@@ -37,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: new Date(story.updated),
         changeFrequency: "monthly" as const,
         priority: 0.8,
-        ...(media ? { images: [`${base}${media.src}`] } : {}),
+        images: [media, ...(storyGallery[story.slug] ?? [])].map((image) => `${base}${image.src}`),
       };
     }),
   ];
