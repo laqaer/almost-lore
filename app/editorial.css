@@ -4,7 +4,7 @@
 .masthead-top a { display: flex; gap: 22px; }
 .masthead { display: flex; justify-content: space-between; align-items: center; padding: 24px 0 27px; }
 .masthead > a { display: inline-flex; align-items: center; font: 500 clamp(48px, 6.8vw, 96px)/1 var(--font-display); letter-spacing: -.065em; }
-.brand-star { color: var(--color-rust); font: 400 .48em/1 var(--font-sans); margin: .1em .26em 0 .32em; }
+.brand-compass { color: var(--color-rust); font: 400 .48em/1 var(--font-sans); margin: .1em .26em 0 .32em; }
 .masthead > p { font-family: var(--font-serif); font-size: 18px; line-height: 1.4; font-style: italic; }
 .primary-nav { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--color-ink); border-bottom: 1px solid var(--color-ink); padding: 15px 0; font-size: 12px; font-weight: 600; }
 .primary-nav > div { display: flex; align-items: center; gap: 34px; }
@@ -284,4 +284,27 @@
 }
 @media (max-width: 540px) {
   .nav-pick { border-top: 1px solid var(--color-rule); width: 100%; justify-content: space-between; }
+}
+
+.brand-compass .compass { width: 1em; height: 1em; }
+.plate-edge { height: 7px; background: linear-gradient(var(--color-rust),var(--color-rust)) 0 0 / 100% 2px no-repeat, linear-gradient(var(--color-rule),var(--color-rule)) 0 100% / 100% 1px no-repeat; transform-origin: 0 50%; }
+.primary-nav a, .text-link { background-image: linear-gradient(currentColor,currentColor); background-position: 0 100%; background-repeat: no-repeat; background-size: 0 1px; }
+.primary-nav a:hover, .primary-nav a:focus-visible, .text-link:hover, .text-link:focus-visible { background-size: 100% 1px; }
+.archive-card h3 a:focus-visible, .shortlist-story h3 a:focus-visible { color: var(--color-rust); }
+.archive-controls { position: relative; }
+.story-margin::before { content: ""; display: block; width: 2.25rem; height: 1px; margin-bottom: 18px; background: var(--color-rust); transform-origin: 0 50%; }
+@media (prefers-reduced-motion: no-preference) {
+  .primary-nav a, .text-link { transition: color .18s ease, background-size .35s ease; }
+  .plate-edge { animation: rule-draw .58s cubic-bezier(.33,0,.2,1) both; }
+  .compass circle:first-of-type { stroke-dasharray: 106.814; animation: compass-ring .52s cubic-bezier(.33,0,.2,1) both; }
+  .compass path { transform-box: view-box; transform-origin: 24px 24px; animation: compass-settle .46s cubic-bezier(.22,1,.36,1) both; }
+  .archive-controls::after { content: ""; position: absolute; left: 0; top: -1px; width: 100%; height: 1px; background: var(--color-paper); transform: scaleX(0); transform-origin: 100% 50%; pointer-events: none; animation: rule-reveal .5s cubic-bezier(.33,0,.2,1) both; }
+  .archive-card:focus-within img, .shortlist-story:focus-within img { transform: scale(1.045); }
+  .cover-link:focus-visible > img { transform: scale(1.035); }
+  @supports (animation-timeline: view()) {
+    .archive-controls::after { animation-timeline: view(); animation-range: entry 0% entry 30%; }
+  }
+}
+@media (min-width: 1100px) and (prefers-reduced-motion: no-preference) {
+  .story-margin::before { animation: rule-draw .3s cubic-bezier(.33,0,.2,1) both; }
 }

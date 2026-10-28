@@ -75,8 +75,8 @@ export function StoryArticle({ story }: { story: Story }) {
             <p><strong>On sources. </strong>{story.sourcesNote}</p>
             {story.dossier ? <p className="mt-4"><strong>Working file. </strong>{story.dossier.note}{" "}<Link href={story.dossier.href}>{story.dossier.label}</Link></p> : null}
           </aside>
-          {links.length > 0 ? <aside className="story-source-block"><p className="kicker">In the record</p><ul>{links.map((link) => <li key={link.href}><a href={link.href} rel="noopener" target="_blank">{link.label}</a>{" — "}{link.note}</li>)}</ul></aside> : null}
-          {story.furtherReading?.length ? <aside className="story-source-block">
+          {links.length > 0 ? <aside className={`story-source-block${story.furtherReading?.length ? "" : " static-aside"}`}><p className="kicker">In the record</p><ul>{links.map((link) => <li key={link.href}><a href={link.href} rel="noopener" target="_blank">{link.label}</a>{" — "}{link.note}</li>)}</ul></aside> : null}
+          {story.furtherReading?.length ? <aside className="story-source-block static-aside">
             <p className="kicker">Further reading</p>
             <ul>{story.furtherReading.map((book) => <li key={book.href}><a href={book.href} rel="sponsored nofollow noopener" target="_blank">{book.title}</a>{" — "}{book.author}<span className="mt-1 block">{book.note}</span></li>)}</ul>
             <p className="mt-4 text-ink-faint">As an Amazon Associate, Almost Lore earns from qualifying purchases.</p>

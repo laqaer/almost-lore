@@ -2,6 +2,8 @@
 
 This change improves the existing collection of 14 essays. It adds no new essays.
 The homepage, story cards, and reading pages use one editorial design with a Caroline cover story and an editor's shortlist.
+The reconciliation retains the compass, drawn rules, keyboard focus effects, and static further-reading blocks from [PR #28](https://github.com/laqaer/almost-lore/pull/28).
+Reduced-motion preferences keep those decorations still.
 All 14 essays have revised introductions or summaries. Existing routes, source notes, and factual limits remain in place.
 
 ## Reader changes
@@ -64,7 +66,7 @@ Production acceptance remains pending. Local command logs are retained in `.veri
 | Implementation | Complete in the working tree |
 | Related issue | No separate issue; the pull request tracks this owner-requested change |
 | Commit | Pending |
-| Pull request | Pending |
+| Pull request | [#29](https://github.com/laqaer/almost-lore/pull/29) |
 | Merge | Pending |
 | Production deployment | Not yet deployed |
 | Production verification | Pending |
