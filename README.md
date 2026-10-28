@@ -22,6 +22,7 @@ Published at `almostlore.com`. Set `NEXT_PUBLIC_SITE_URL` if the deploy URL shou
 | `/stories/san-francisco-fog-1950` | San Francisco bacterial spray, September 1950 |
 | `/stories/bering-island-winter` | Bering’s wreck on Bering Island, 1741–1742 |
 | `/stories/darien-scheme` | Company of Scotland at Darien, 1698–1700 |
+| `/stories/aroostook-war` | Aroostook boundary dispute, 1838–1842 |
 | `/dossier` | Paid Poyais working file. Checkout stays closed until Stripe is connected |
 | `/support` | Corrections and refund notes, stored for the publisher |
 | `/terms` | Price, delivery, and refund terms for the working file |
@@ -63,7 +64,7 @@ It does not verify checkout or download completion.
 
 Production uses Vercel's Git integration for `laqaer/almost-lore`, branch `main`.
 The project is `almost-lore` in `laqaers-projects`. Its production domain is `almostlore.com`.
-Before this release, Vercel metadata showed production from `main` commit `27bff7e`. The previous production build used `8f808ab`.
+The [editorial release record](docs/editorial-overhaul.md) contains the deployed revision and production acceptance evidence.
 
 1. Push or merge the verified change to `main`.
 2. Confirm that the new Vercel deployment uses the expected commit and reaches `READY`.

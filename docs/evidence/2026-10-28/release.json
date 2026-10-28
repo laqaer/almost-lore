@@ -1,0 +1,37 @@
+{
+  "observedOn": "2026-10-28",
+  "candidate": "090adfc0a0aee828c5846fde66714e151cef6246",
+  "merge": "38bfb4c3c7f89db03f1a15ea7065e8d6cbb01c39",
+  "deployedRevision": "b14c92d63ab2b7f48c468f6a502323d9062e359c",
+  "deploymentId": "dpl_EjFPrjTQ5Qg2BRwZVBXa2RN3oCiP",
+  "deploymentState": "READY",
+  "deploymentMethod": "Vercel Git integration",
+  "productionOrigin": "https://almostlore.com",
+  "hostedChecks": {
+    "url": "https://github.com/laqaer/almost-lore/actions/runs/40654848666",
+    "staticExport": "success",
+    "bugbot": "success",
+    "securityReview": "success"
+  },
+  "checks": {
+    "lint": "pass",
+    "typecheck": "pass",
+    "existingTests": 15,
+    "browserTests": 10,
+    "productionPagesHttp200": 23,
+    "productionAssetsHttp200": 34,
+    "productionSitemapImages": 17,
+    "productionBrowserModes": [
+      "desktop",
+      "mobile"
+    ],
+    "productionPageErrors": 0
+  },
+  "indexNow": {
+    "urlCount": 23,
+    "httpStatus": 200,
+    "indexingConfirmed": false
+  },
+  "socialPostsPublished": 0,
+  "opsWorkerDeployed": false
+}

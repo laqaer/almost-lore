@@ -1,0 +1,280 @@
+{
+  "observedAt": "2026-10-28T08:23:36.343Z",
+  "pages": [
+    {
+      "url": "https://almostlore.com",
+      "status": 200,
+      "canonical": "https://almostlore.com"
+    },
+    {
+      "url": "https://almostlore.com/about",
+      "status": 200,
+      "canonical": "https://almostlore.com/about"
+    },
+    {
+      "url": "https://almostlore.com/contact",
+      "status": 200,
+      "canonical": "https://almostlore.com/contact"
+    },
+    {
+      "url": "https://almostlore.com/now",
+      "status": 200,
+      "canonical": "https://almostlore.com/now"
+    },
+    {
+      "url": "https://almostlore.com/friends",
+      "status": 200,
+      "canonical": "https://almostlore.com/friends"
+    },
+    {
+      "url": "https://almostlore.com/privacy",
+      "status": 200,
+      "canonical": "https://almostlore.com/privacy"
+    },
+    {
+      "url": "https://almostlore.com/dossier",
+      "status": 200,
+      "canonical": "https://almostlore.com/dossier"
+    },
+    {
+      "url": "https://almostlore.com/support",
+      "status": 200,
+      "canonical": "https://almostlore.com/support"
+    },
+    {
+      "url": "https://almostlore.com/terms",
+      "status": 200,
+      "canonical": "https://almostlore.com/terms"
+    },
+    {
+      "url": "https://almostlore.com/stories/poyais-invented-country",
+      "status": 200,
+      "canonical": "https://almostlore.com/stories/poyais-invented-country"
+    },
+    {
+      "url": "https://almostlore.com/stories/aqua-tofana-myth-vs-record",
+      "status": 200,
+      "canonical": "https://almostlore.com/stories/aqua-tofana-myth-vs-record"
+    },
+    {
+      "url": "https://almostlore.com/stories/balloon-almost-atlantic",
+      "status": 200,
+      "canonical": "https://almostlore.com/stories/balloon-almost-atlantic"
+    },
+    {
+      "url": "https://almostlore.com/stories/forgotten-scheme",
+      "status": 200,
+      "canonical": "https://almostlore.com/stories/forgotten-scheme"
+    },
+    {
+      "url": "https://almostlore.com/stories/fashoda-incident-1898",
+      "status": 200,
+      "canonical": "https://almostlore.com/stories/fashoda-incident-1898"
+    },
+    {
+      "url": "https://almostlore.com/stories/pig-war-san-juan",
+      "status": 200,
+      "canonical": "https://almostlore.com/stories/pig-war-san-juan"
+    },
+    {
+      "url": "https://almostlore.com/stories/caroline-affair",
+      "status": 200,
+      "canonical": "https://almostlore.com/stories/caroline-affair"
+    },
+    {
+      "url": "https://almostlore.com/stories/dogger-bank-1904",
+      "status": 200,
+      "canonical": "https://almostlore.com/stories/dogger-bank-1904"
+    },
+    {
+      "url": "https://almostlore.com/stories/trent-affair",
+      "status": 200,
+      "canonical": "https://almostlore.com/stories/trent-affair"
+    },
+    {
+      "url": "https://almostlore.com/stories/venezuelan-crisis-1895",
+      "status": 200,
+      "canonical": "https://almostlore.com/stories/venezuelan-crisis-1895"
+    },
+    {
+      "url": "https://almostlore.com/stories/san-francisco-fog-1950",
+      "status": 200,
+      "canonical": "https://almostlore.com/stories/san-francisco-fog-1950"
+    },
+    {
+      "url": "https://almostlore.com/stories/bering-island-winter",
+      "status": 200,
+      "canonical": "https://almostlore.com/stories/bering-island-winter"
+    },
+    {
+      "url": "https://almostlore.com/stories/darien-scheme",
+      "status": 200,
+      "canonical": "https://almostlore.com/stories/darien-scheme"
+    },
+    {
+      "url": "https://almostlore.com/stories/aroostook-war",
+      "status": 200,
+      "canonical": "https://almostlore.com/stories/aroostook-war"
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://almostlore.com/images/stories/poyais-invented-country.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/images/stories/poyais-promised-port.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/images/stories/aqua-tofana-myth-vs-record.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/images/stories/balloon-almost-atlantic.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/images/stories/forgotten-scheme.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/images/stories/beach-pneumatic-plan.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/images/stories/fashoda-incident-1898.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/images/stories/pig-war-san-juan.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/images/stories/san-juan-reservations-1860.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/images/stories/caroline-affair.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/images/stories/dogger-bank-1904.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/images/stories/trent-affair.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/images/stories/venezuelan-crisis-1895.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/images/stories/san-francisco-fog-1950.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/images/stories/bering-island-winter.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/images/stories/darien-scheme.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/images/stories/aroostook-war.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/_next/static/media/03bda585a99c6450-s.p.0glcd8n2pdab0.woff2",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/_next/static/media/47df9ba1c7236d3b-s.p.3__uj2j3k64hq.woff2",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/_next/static/media/5f402bd2d8eef81a-s.p.23oeb0afa3wba.woff2",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/_next/static/chunks/2ekf3ha80our4.css",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/_next/static/chunks/17tuxysuvqwd2.js",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/_next/static/chunks/28fkf9f9btak4.js",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/_next/static/chunks/3sehtyhn4u4zd.js",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/_next/static/chunks/3ncvvwbnij_d1.js",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/_next/static/chunks/turbopack-3x-iauwn3-zle.js",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/_next/static/chunks/0bg5ov74-itcg.js",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/_next/static/chunks/0_9dptqat5d7k.js",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/_next/static/chunks/1e1pxllb312mx.js",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/_next/static/chunks/2corl6wyj4669.js",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/icon.svg",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/_next/static/chunks/0c0hxoamwjsbw.js",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/_next/static/chunks/3k336dwo7an8b.js",
+      "status": 200
+    },
+    {
+      "url": "https://almostlore.com/_next/static/chunks/1fnnpkylny74k.js",
+      "status": 200
+    }
+  ],
+  "browser": [
+    {
+      "mode": "desktop",
+      "search": "pass",
+      "navigation": "pass",
+      "copy": "pass",
+      "gallery": "pass",
+      "rss": "pass",
+      "overflow": "pass",
+      "pageErrors": []
+    },
+    {
+      "mode": "mobile",
+      "search": "pass",
+      "navigation": "pass",
+      "copy": "pass",
+      "gallery": "pass",
+      "rss": "pass",
+      "overflow": "pass",
+      "pageErrors": []
+    }
+  ]
+}
