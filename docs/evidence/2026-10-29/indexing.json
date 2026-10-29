@@ -1,0 +1,39 @@
+{
+  "observedOn": "2026-10-29",
+  "retrievedThrough": "OpenSEO inspect_urls (Google Search Console existing index status; not a live crawl)",
+  "sourceAtObservation": "6f7a37ddd88f147457772fde856c822c054b129e",
+  "inspection": {
+    "ok": true,
+    "siteUrl": "sc-domain:almostlore.com",
+    "results": [
+      {
+        "url": "https://almostlore.com/stories/pig-war-san-juan",
+        "result": {
+          "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:almostlore.com&id=BMTy50PGo0BBeDI28T04mQ&utm_medium=link&utm_source=api",
+          "indexStatusResult": {
+            "verdict": "NEUTRAL",
+            "coverageState": "Discovered - currently not indexed",
+            "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+            "indexingState": "INDEXING_STATE_UNSPECIFIED",
+            "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+            "sitemap": [
+              "https://almostlore.com/sitemap.xml"
+            ],
+            "referringUrls": [
+              "https://almost-lore.vercel.app/stories/pig-war-san-juan",
+              "https://almostlore.com/about"
+            ],
+            "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+          },
+          "mobileUsabilityResult": {
+            "verdict": "VERDICT_UNSPECIFIED"
+          }
+        }
+      }
+    ],
+    "meta": {
+      "projectId": "cd37cdd7-bd46-45a4-83fd-ad493669cd90",
+      "url": "https://app.openseo.so/p/cd37cdd7-bd46-45a4-83fd-ad493669cd90/settings/integrations"
+    }
+  }
+}

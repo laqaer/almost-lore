@@ -1,6 +1,24 @@
 # Almost Lore — operating state
 
-Updated: 2026-10-19
+Updated: 2026-10-29
+
+## Indexing Measurement Available, 2026-10-29
+
+Search Console access is available through the existing OpenSEO project. This supersedes the access-blocked statements below.
+
+- A read-only inspection of the Pig War URL returned `NEUTRAL`: "Discovered - currently not indexed".
+- Google lists the sitemap and referring pages. It supplies no last crawl time or canonical verdict for this URL.
+- The result describes Google's stored index status. It is not a live crawl or evidence from E1's original window.
+- The [inspection receipt](../docs/evidence/2026-10-29/indexing.json) confirms the [October 28 observation](../docs/evidence/2026-10-28/search-console.json) introduced by [PR #29](https://github.com/laqaer/almost-lore/pull/29).
+
+E1 remains closed without demonstrated success. Its original deadline remains 2026-10-17 at 05:22 UTC.
+The access blocker is resolved; the Pig War page is still not indexed in this inspection.
+Use the connected property's measurements to choose one evidenced title or internal-link repair before adding story volume.
+Do not repeat account setup or treat IndexNow acceptance as indexing.
+
+This pass changes operating records only. It adds no story and makes no configuration change, payment, or separate deployment.
+The [execution record](../docs/evidence/2026-10-29/execution.json) binds the scope, checks, review, and publication boundary.
+E2 retains its 2026-11-14 evaluation date. The accounting limits in `ops/LEDGER.md` remain in force.
 
 ## Reconciliation Restored, 2026-10-19
 
@@ -123,6 +141,7 @@ IndexNow maintenance, 2026-09-30: removed `/dossier/thanks` from the submission 
 
 Issue #23 is complete. Continue the existing read-only freshness check with `npm run test:e2e:ops`; do not create another monitoring loop.
 Use only fresh Stripe-backed summaries, with the accounting limits above. Do not treat historical pre-activation zeros as current sales evidence.
-E1 is closed. Keep its original deadline and apply the no-new-volume rule until indexing can be measured.
+E1 is closed, and indexing is now measurable through OpenSEO. Use that evidence for the next title or internal-link repair.
+Keep E1's original deadline and unsuccessful outcome. Read the current measurement record above before adding story volume.
 E2 remains open with its unchanged 2026-11-14 evaluation date.
 Sales tax configuration remains unverified.

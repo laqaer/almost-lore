@@ -29,6 +29,19 @@ The HTTP requirement passed. The indexing requirement was not demonstrated, so E
 Apply the original stop rule: do not add another essay in this pattern until the first can be measured.
 Keep future work limited to evidenced title or internal-link repairs, or indexing measurement access. Do not extend this experiment or count submission acceptance as indexing.
 
+### E1 Measurement Follow-up, 2026-10-29
+
+Search Console access is now available through OpenSEO project `cd37cdd7-bd46-45a4-83fd-ad493669cd90`.
+A read-only inspection returned `NEUTRAL`: "Discovered - currently not indexed" for the Pig War URL.
+Google lists the sitemap and referring pages but supplies no last crawl time or canonical verdict.
+This is stored index status, not a live crawl. See the [inspection receipt](../docs/evidence/2026-10-29/indexing.json).
+It agrees with the [October 28 receipt](../docs/evidence/2026-10-28/search-console.json) from [PR #29](https://github.com/laqaer/almost-lore/pull/29).
+
+This resolves the measurement-access blocker. It does not establish indexing within the original window or change the October 18 evaluation.
+E1 stays closed without demonstrated success, with its original 2026-10-17 05:22 UTC deadline.
+Use current measurements for the next title or internal-link repair. Do not restart the experiment or repeat account setup.
+No new story was added in this follow-up.
+
 ## E2 — Poyais working file, $9 once
 
 - Hypothesis: A reader who wants the citable loan table, not another retelling, will pay $9 once for the printable working file.

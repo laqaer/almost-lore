@@ -1,0 +1,85 @@
+{
+  "task": {
+    "objective": "Correct stale Search Console access statements using observed Google index status.",
+    "owner": "Almost Lore editorial desk",
+    "owningTask": "https://github.com/laqaer/almost-lore/pull/29",
+    "repository": "laqaer/almost-lore",
+    "sourceHead": "6f7a37ddd88f147457772fde856c822c054b129e",
+    "sourceBase": "6f7a37ddd88f147457772fde856c822c054b129e",
+    "environment": "Local macOS checkout; connected OpenSEO property; read-only production HTTP",
+    "scope": [
+      "ops/STATE.md",
+      "ops/EXPERIMENTS.md",
+      "docs/HUB.md",
+      "docs/evidence/2026-10-29"
+    ],
+    "exclusions": [
+      "New stories",
+      "Payments",
+      "Secrets",
+      "DNS",
+      "Infrastructure deployment",
+      "Outreach",
+      "New discretionary spending"
+    ],
+    "completionBoundary": "Publish corrected operating records to main.",
+    "acceptanceCriteria": [
+      "Record the observed Pig War index status and resolved access blocker.",
+      "Preserve the original E1 deadline and unsuccessful outcome.",
+      "Preserve the E2 deadline and accounting limits.",
+      "Keep original evidence immutable and link the new observation."
+    ]
+  },
+  "observation": {
+    "dateUtc": "2026-10-29",
+    "receipt": "indexing.json",
+    "method": "Read-only OpenSEO inspect_urls against the existing Search Console connection",
+    "status": "pass"
+  },
+  "verification": {
+    "dateUtc": "2026-10-29",
+    "localChecks": [
+      {
+        "command": "git diff --check",
+        "result": "pass"
+      },
+      {
+        "command": "Python JSON and local Markdown link checks",
+        "result": "pass"
+      }
+    ],
+    "productionCheck": {
+      "command": "npm run test:e2e:ops",
+      "testSourceRevision": "6f7a37ddd88f147457772fde856c822c054b129e",
+      "target": "https://almostlore.com",
+      "result": "pass",
+      "tests": 1,
+      "failed": 0,
+      "skipped": 0,
+      "output": "✔ the public status exposes a recent, successful scheduled reconciliation (1193.26ms)\nℹ tests 1\nℹ suites 0\nℹ pass 1\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1274.32475",
+      "limits": "Checks freshness and reconciliation status only. It does not verify payment completion, delivery, profit, or search indexing."
+    },
+    "hostedChecks": "Not run at this pre-publication checkpoint; documentation-only change.",
+    "integration": "Pending publication; the final source receipt will record the revision.",
+    "deployment": "Outside the task boundary. No deployment claim.",
+    "review": {
+      "provider": "OpenAI",
+      "harness": "Codex",
+      "session": "/root/review_indexing_record",
+      "model": "Exact identifier unavailable",
+      "scope": "Operating-record diff, documentation hub link, and indexing receipt against the original E1 rules and October 28 receipt.",
+      "result": "No actionable findings",
+      "independentChecks": ["JSON parsing", "Matching Pig War status across receipts", "Unchanged original experiment text", "git diff --check", "Ten documentation style checks"],
+      "limits": "Reviewer did not repeat the provider query or production E2E check. This execution packet records the review afterward."
+    },
+    "documentationStyle": "New prose checked against the ten house-style checks. Exact Google status terms and historical evidence are retained."
+  },
+  "costs": {
+    "newDiscretionarySpendUsd": 0,
+    "openseoCredits": 0,
+    "modelCost": "unknown",
+    "agentComputeCost": "unknown",
+    "ciCost": "unknown"
+  },
+  "packetValidation": "No project execution-evidence validator is installed in this checkout. JSON and local links were checked."
+}
