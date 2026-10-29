@@ -84,6 +84,9 @@ The website and `almost-lore-ops` deploy separately. Read [ops/STATE.md](ops/STA
 
 After AdSense approval, set that variable to the publisher id (`pub-` plus 10–20 digits) and rebuild. The file becomes one line: `google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0`. Any other value keeps the comment.
 
+Ad markup uses the separate `NEXT_PUBLIC_ADS_PUBLISHER_ID` and `NEXT_PUBLIC_ADS_SLOT` values.
+Configuration does not enable ad delivery while the certified consent platform remains absent.
+
 ## IndexNow
 
 Run `npm run indexnow` after a production deploy. The key file must already be live at `https://almostlore.com/7843aae65a441c1d1eea85e21facde25.txt` (body is the key). `npm run build` does not submit. `npm run indexnow -- --dry-run` prints the payload and does not send it.

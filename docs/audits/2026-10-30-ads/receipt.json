@@ -1,0 +1,98 @@
+{
+  "recorded_at": "2026-10-29T16:50:04.597116+00:00",
+  "repository": "laqaer/almost-lore",
+  "base": "9f674e994c67336bb96ffc27c1736dfb991de85c",
+  "tested_head": "b714e9d8fc9798209d4f01e4c05d7657abcdaefb",
+  "tested_tree": "f4681100a4bbf9ab1ff3c8cd35699e4ce0b2de01",
+  "objective": "Remove only the unused ad publisher wrapper and its obsolete assertions.",
+  "scope": [
+    "lib/ads.ts",
+    "lib/ads.test.mts",
+    "README.md",
+    "audit evidence and hub link"
+  ],
+  "exclusions": [
+    "Ops source and tests",
+    "Other test-audit findings",
+    "Dependencies and workflows",
+    "Consent configuration",
+    "Credentials, payments, provider writes",
+    "Production mutation and deployment claims"
+  ],
+  "completion_boundary": "source integration",
+  "environment": "macOS; Node v26.0.0; npm 11.12.1; Playwright 1.64.1; existing local Chromium",
+  "checks": {
+    "npm_test": {
+      "before": 15,
+      "after": 15,
+      "failed": 0,
+      "skipped": 0
+    },
+    "browser": {
+      "before": 12,
+      "after": 12,
+      "failed": 0,
+      "skipped": 0,
+      "retries": 0
+    },
+    "lint": "pass",
+    "typecheck": "pass",
+    "native_build": "pass",
+    "ads_txt_byte_parity": "pass",
+    "independent_review": "pass",
+    "active_whitespace": "pass",
+    "hosted": "pending",
+    "integration": "pending",
+    "cloudflare_bundle_dry_run": "pass; no deployment"
+  },
+  "commands": [
+    "npm ci --ignore-scripts",
+    "npm test",
+    "npm run lint",
+    "npm run build",
+    "npm run typecheck",
+    "npm run test:e2e",
+    "cmp out/ads.txt baseline-ads.txt",
+    "npx --yes wrangler@4.135.0 deploy --dry-run --outdir <evidence>/cloudflare-dry-run"
+  ],
+  "source_sha256": {
+    "lib/ads.ts": "b2c28e49ba9156315aa1d31c877a20137a95cbe3384470adbe326af2c9b2ecb7",
+    "lib/ads.test.mts": "fb9cfc7e90ab0dc34d86571c7738f0d57cef8829b226003b57cffd09028efbf2",
+    "README.md": "6886f86233c4b83c875ab8f4824f55b1cd0674b2ef3241e59c3360e1db9b920e",
+    "package.json": "64059ff86ee138fc0bab9d6254d2e8a418ed3f9f61ba89ebe092bd3346264633",
+    "package-lock.json": "c2e5be0b69f83ed5b5be76158f455acfa787150759e8d4752a254ccc5c95e4c3",
+    "e2e/browser/readers.spec.ts": "ff519bb89378237807e2d7b87d911c9978e920d051d1ce66f851b33d2974bcc9",
+    "workers/ops/policy.test.js": "63318a87e3eb1ca95f3654feb556de02f5fe961cd5c4ea629f817c5517e14667",
+    "workers/ops/policy.js": "f6427dfb0088e0e5e2afba7acd72916cbe0cbe4ecc8da2d54dd2f8afe5f7a61c",
+    "workers/ops/index.js": "7ce4100c0a42ea5bc35d34b1da358ad287fef5fcf6a5bc5aa9147779e11f575a"
+  },
+  "review": {
+    "provider": "OpenAI/Codex",
+    "reviewer": "/root/lore_web_audit",
+    "head": "b714e9d8fc9798209d4f01e4c05d7657abcdaefb",
+    "result": "No correctness or requirements findings. All eight ad cases and all active assertions remain.",
+    "executed_tests": false
+  },
+  "line_counts": {
+    "production_removed": 8,
+    "test_net_removed": 4,
+    "documentation_added_before_audit": 3
+  },
+  "limitations": [
+    "No live payment, download, reconciliation, credential, deployment, or customer acceptance.",
+    "This bounded ads cleanup does not complete the broader repository audit.",
+    "The FAQ browser case imports production content. Its assertions remain; black-box migration needs equivalent independent expectations.",
+    "A sandbox build failed fetching Google Fonts. An approved retry hit a Turbopack port error. Preserving the failed generated cache and rebuilding with confirmed loopback access passed.",
+    "The exact cause of the second build failure remains environmental; clean build success does not establish a product repair.",
+    "No installed portable execution-evidence validator was found; this receipt records source-bound observations."
+  ],
+  "costs": {
+    "model": "unknown",
+    "agent_compute": "unknown",
+    "ci": "unknown"
+  },
+  "raw_diagnostics": {
+    "final-lint.log": "\n> almost-lore@1.0.0 lint\n> eslint\n\n",
+    "final-typecheck.log": "\n> almost-lore@1.0.0 typecheck\n> tsc --noEmit\n\n"
+  }
+}

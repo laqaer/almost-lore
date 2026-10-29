@@ -1,0 +1,32 @@
+{
+  "source": "9f674e994c67336bb96ffc27c1736dfb991de85c",
+  "candidate": "lib/ads.ts: adsPublisherId",
+  "test_locations": [
+    "lib/ads.test.mts: no configuration",
+    "lib/ads.test.mts: malformed publisher",
+    "lib/ads.test.mts: client ID parsing before serving"
+  ],
+  "detectable_failure": "Changes to the retired environment-to-publisher wrapper only.",
+  "non_test_callers": [],
+  "history": "763e98495636a2a7027a469ff6f32695cf0f81c5 (PR21) removed the only production caller in app/ads.txt/route.ts.",
+  "remaining_proof": [
+    "publisherIdFromClient parser tests",
+    "adsConfig enabled/default cases",
+    "adsRunnableConfig consent guard",
+    "adsTxtBody seller-file values",
+    "real build and static export",
+    "all six desktop/mobile browser scenarios"
+  ],
+  "deletion_unlocked": "Remove unused private wrapper, its test import, and three obsolete assertions. Preserve the mixed case enabled=false assertion.",
+  "risk": "Low; private package, no public export contract, production caller removed by PR21.",
+  "validation": [
+    "npm test",
+    "npm run lint",
+    "npm run typecheck",
+    "npm run build",
+    "npm run test:e2e",
+    "Compare emitted out/ads.txt bytes"
+  ],
+  "reviewer": "OpenAI/Codex /root/lore_web_audit",
+  "cost": "unknown"
+}
