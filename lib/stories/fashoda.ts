@@ -8,7 +8,7 @@ export const fashodaStory: Story = {
   era: "1800s",
   yearLabel: "1898–1899",
   published: "2026-09-18",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   sourcesNote:
     "This essay is original prose. It follows the public diplomatic and military outline of the 1898 Fashoda meeting as it appears in contemporary British and French government statements, newspaper coverage of the autumn crisis, and later scholarly surveys of the Upper Nile question. Arrival dates at the fort are stable in the public file (Marchand on 10 July; Kitchener in the week of 18 September). Troop tallies, the exact calendar day of the first interview, and the precise wording of the November withdrawal instruction are not a single agreed ledger; where compilers disagree, the disagreement is named rather than averaged.",
   sections: [
@@ -77,6 +77,28 @@ export const fashodaStory: Story = {
       author: "Darrell Bates",
       href: "https://www.amazon.com/dp/0192117718?tag=laqaer-20",
       note: "An account of the 1898 confrontation at Fashoda between the French mission and the Anglo-Egyptian force on the Nile.",
+    },
+  ],
+  faq: [
+    {
+      question: "What was the Fashoda incident?",
+      answer: "In 1898 two imperial claims met at a ruined fort on the White Nile. Jean-Baptiste Marchand’s small column reached an empty Egyptian fort on 10 July 1898. The French flag was already flying when the gunboats arrived. In September, Horatio Kitchener came up the White Nile with a much larger Anglo-Egyptian force. Neither commander fired. While the officers waited on the river, London and Paris argued about what a withdrawal would cost.",
+    },
+    {
+      question: "Why did Britain and France meet at Fashoda?",
+      answer: "After the occupation of Egypt in 1882, British policy treated the Nile as a single political object. A Cape-to-Cairo railway was the popular picture of that object. The operational picture was plainer, to keep other European flags off the upper river. From holdings on the Atlantic and in the Congo basin, ministers and colonial officers talked of an eastward belt that would cross Africa and touch the Nile. Fashoda was an old Egyptian post on the White Nile, abandoned during the Mahdist years, sitting where a west-east French line and a north-south British line were likely to cross. The meeting point was not chosen because it was a city.",
+    },
+    {
+      question: "Who arrived at Fashoda first?",
+      answer: "Jean-Baptiste Marchand arrived first. He left French Equatorial Africa in 1896 with a column that reached an empty Egyptian fort on 10 July 1898 and raised the tricolour. Britannica’s familiar figure is about a hundred and fifty men starting east from Gabon. Other tallies shrink or swell depending on whether they count Senegalese tirailleurs, porters, or only the French officers Paris could name. Almost Lore will not pick a favorite headcount so the march looks neater. A second French approach, sometimes remembered under the name de Bonchamps and aimed from the Ethiopian side, did not join them on the Nile. Marchand’s people were, for practical purposes, alone.",
+    },
+    {
+      question: "Why did the commanders at Fashoda not open fire?",
+      answer: "Herbert Kitchener, sirdar of the Egyptian army, had been moving south from Egypt to break the Mahdist state. On 2 September 1898 his force won at Omdurman. He reached Fashoda in the week of 18 September 1898. Some careful accounts keep the eighteenth as the arrival date. Others put the first formal interview on the nineteenth. A flotilla of gunboats brought an Anglo-Egyptian force many times the size of Marchand’s column. Later round numbers, five boats and fifteen hundred men, circulate because the story wants a ratio. The ratio is real even if the integers move. A fight at the fort would not have been a fight. It would have been a demonstration. Neither man opened fire. Neither abandoned his claim. In the versions that stay close to the contemporary reports, they agreed that Egyptian, British, and French flags could fly over the same post while the question went home.",
+    },
+    {
+      question: "How did the Fashoda crisis end?",
+      answer: "Lord Salisbury, prime minister and foreign secretary, refused to bargain while the French flag stayed on the river. France did not have a fleet that could contest the Nile or the approaches to Egypt. The instruction to withdraw went out in the first days of November 1898. Compilers split between the third and the fourth. The order is the fact. The extra calendar day is not load-bearing. Marchand took his people out by the east, through Abyssinia toward Djibouti. On 21 March 1899 Britain and France put a line on paper. The watershed between the Nile and the Congo would mark their spheres. That declaration is the end of the Fashoda crisis as a diplomatic file. It is not yet the Entente Cordiale of 1904.",
     },
   ],
 };

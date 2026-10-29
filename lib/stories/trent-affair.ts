@@ -8,7 +8,7 @@ export const trentAffairStory: Story = {
   era: "1800s",
   yearLabel: "1861–1862",
   published: "2026-09-26",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   sourcesNote:
     "This essay is original prose. The stop on 8 November 1861, the lack of an order from Washington, and the British movement of troops toward Canada and ships toward the western Atlantic follow the Office of the Historian’s public summary of the Trent Affair. The demands, the private handling of the seven days, and the acceptance of reparation follow the correspondence printed in the London Gazette of 14 January 1862: Earl Russell’s dispatch of 30 November 1861 as he restated it on 11 January, his dispatch of 9 December recording his talk with Charles Francis Adams, Lord Lyons’s dispatch of 27 December, and Russell’s acceptance of 11 January 1862. The gap between Charles Wilkes’s order to take the Trent as a prize and the boarding that removed four men follows the naval reports of the seizure. Prince Albert’s revision of a draft at the start of December, and his death on 14 December 1861, are in the royal record of that month; the revision is not treated here as proof that a war was otherwise certain. Where a later telling has a shot striking the Trent and the naval accounts describe warning fire that brought her to, both are named. American calendars put Seward’s note on 26 December; Lyons says he received it on the morning of the 27th.",
   sections: [
@@ -71,6 +71,28 @@ export const trentAffairStory: Story = {
       author: "Norman B. Ferris",
       href: "https://www.amazon.com/dp/0870491695?tag=laqaer-20",
       note: "A diplomatic history of the Trent crisis of 1861–1862.",
+    },
+  ],
+  faq: [
+    {
+      question: "What was the Trent Affair?",
+      answer: "On 8 November 1861 a Union warship stopped the British mail steamer Trent. She was on a lawful voyage. An armed party took four men, two Confederate commissioners and their secretaries. The mail and the ship went on. The warship was the San Jacinto. Captain Charles Wilkes had acted without orders from Washington. Nobody had died aboard the Trent. The National Park Service’s short account has a shell striking the bow. The naval accounts that stay with warning fire have shots that made her heave to without turning the morning into an action. Almost Lore will not pick the strike so the boarding looks bloodier.",
+    },
+    {
+      question: "Who was taken off the Trent?",
+      answer: "Mason, Slidell, and the secretaries George Eustis and James E. Macfarland were to be taken, and the Trent was to be seized as a prize and sent in for a court. Mason had chaired the Senate Foreign Relations Committee in the old Union and was sent toward Britain. Slidell, a New Orleans lawyer, was sent toward France. In October they ran from Charleston to Cuba. From Havana they took the Trent. She left Havana on 7 November. A Union warship stopped the Trent on 8 November 1861. Slidell’s wife and children were aboard and were not taken. Lieutenant Donald McNeill Fairfax brought off the four. He did not bring off the ship.",
+    },
+    {
+      question: "What did Britain demand after the Trent was stopped?",
+      answer: "Earl Russell sent Lord Lyons a demand that the four gentlemen be freed and delivered to Lyons, so that they could be placed again under British protection. There was to be a suitable apology for the aggression. Britain sent troops toward Canada and ships toward the western Atlantic. Lyons was to talk the matter over with Seward two days before reading him the dispatch. The direction to leave Washington in seven days was not in the paper to be read. Russell thought an explanation, that the American government had not authorized the seizure, would stand in the place of an apology. The essential condition was the men.",
+    },
+    {
+      question: "Did Prince Albert prevent a war over the Trent?",
+      answer: "Prince Albert revised a draft dispatch on 1 December 1861. He was already ill. He died on 14 December 1861. What the revision changed was tone and an exit. The dispatch, as sent, still required the men and still asked for an apology, and it left room for Washington to say that Wilkes had not been authorized to insult the flag. The revision is not treated here as proof that a war was otherwise certain. The edit did not bind Lincoln, move a regiment, or write Seward’s last page. Albert was dead before the American answer existed.",
+    },
+    {
+      question: "How did the Trent Affair end?",
+      answer: "Seward admitted that reparation was due and consented to deliver the four prisoners. He said no instructions had authorized Wilkes to do what he did. American calendars put Seward’s note on 26 December 1861. Lyons says he received it on the morning of the 27th. On 11 January 1862 Earl Russell took the liberation, the delivery, and the admission that there had been no orders, and concluded that they were the reparation Britain had a right to expect. He did not adopt Seward’s theory of the road not taken. He said Britain differed from some of those conclusions. On 1 January 1862 the four left American custody aboard the British ship Rinaldo. They were not received as the ministers of a recognized state. Britain’s neutrality was still neutrality when the year turned.",
     },
   ],
 };

@@ -8,7 +8,7 @@ export const darienStory: Story = {
   era: "before-1800",
   yearLabel: "1698–1700",
   published: "2026-09-25",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   sourcesNote:
     "This essay is original prose. It follows the public record of the Company of Scotland Trading to Africa and the Indies: the 1695 act, the subscription lists of 1696, five ships leaving Leith in July 1698 with about 1,200 people, the abandonment of the settlement in the summer of 1699, a second expedition that had already sailed, and the Spanish siege that ended the colony in March 1700. Sailing dates inside that July vary by a few days between compilers; so does the exact day the first fort was given up. What is not stable is the money and the dead. The subscribed sum is often given as about £400,000, but compilers disagree on how much was actually paid in. Death totals for the two expeditions are commonly put somewhere past two thousand if both fleets and the voyages are counted together, and much lower if you count only bodies on the isthmus. We do not pick a favorite integer. The Union of 1707 had more causes than Darien.",
   sections: [
@@ -66,6 +66,28 @@ export const darienStory: Story = {
       author: "Douglas Watt",
       href: "https://www.amazon.com/dp/1906307091?tag=laqaer-20",
       note: "A financial history of the Company of Scotland, the loss at Darien, and the Darien debt in the Union of 1707.",
+    },
+  ],
+  faq: [
+    {
+      question: "What was the Darien scheme?",
+      answer: "Five ships of the Company of Scotland Trading to Africa and the Indies left Leith in July 1698 with about 1,200 people to build a Scottish trading colony on the isthmus of Panama. They called the settlement Caledonia. The promise was a colony on the isthmus that could draw trade from both oceans. Goods that crossed Panama would not have to round Cape Horn. Sailing dates inside that July vary by a few days between compilers. William Paterson, the London Scot who had already helped invent the Bank of England, had carried a version of the plan for years. The company was chartered by a real parliament. The English subscription, opened first, was shut by politics. The money that remained was Scottish. The subscribed sum is often given as about £400,000, but compilers disagree on how much was actually paid in.",
+    },
+    {
+      question: "Why was the first Darien colony abandoned?",
+      answer: "The settlers landed in early November 1698 and renamed the bay Caledonia. The settlement was New Edinburgh. The trade goods they had brought, woolens, stockings, and shoes, were not what the coast wanted to buy. Fever did the rest. Within a year, hunger, illness, and isolation had forced its abandonment. English colonial governors were told not to help. The king was also King of England and did not want a war with Spain over a Scottish stock certificate. In the summer of 1699 the survivors abandoned the bay. Later tallies say only a few hundred of the twelve hundred were still alive to leave, and that not every ship that fled got home. The exact day the first fort was given up varies by a few days between compilers.",
+    },
+    {
+      question: "What did the second Darien expedition find?",
+      answer: "The second fleet was already at sea when the first colony gave up. Its ships had sailed before the news of the first colony’s abandonment reached Scotland. The second fleet, on the order of a thousand more people, found an empty fort and the graves. They refounded the place anyway. Spain had never agreed that a Scottish charter was a title to the isthmus. There was a fight inland, then a siege of Fort St. Andrew. In March 1700 the second settlement surrendered on terms. The colonists could leave. The port could not. Few of that second company saw Scotland again.",
+    },
+    {
+      question: "How many people died in the Darien scheme?",
+      answer: "We do not pick a favorite integer. Death totals for the two expeditions are commonly put somewhere past two thousand if both fleets and the voyages are counted together, and much lower if only bodies on the isthmus are counted. Count only the first summer on the bay and you can tell a smaller story.",
+    },
+    {
+      question: "Did the Darien scheme cause the Union of 1707?",
+      answer: "The Union of 1707 had more causes than Darien. It was a negotiation about succession, trade, religion, and sovereignty that had been failing and restarting for years. A large number of politically audible Scots were poorer than they had been in 1696. The treaty offered the Equivalent, a sum paid to Scotland that would, among other debts, compensate the company’s investors. Some took the price. Some called it a bribe, and were not only being rhetorical. The colony failed, and the failure was present in the room when the Union was priced, alongside other facts that would have been in the room anyway. The isthmus did not decide Scotland.",
     },
   ],
 };

@@ -8,7 +8,7 @@ export const poyaisStory: Story = {
   era: "1800s",
   yearLabel: "1822–1823",
   published: "2026-09-11",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   sourcesNote:
     "This essay is original prose. It follows the public outline of the Poyais episode as it appears in contemporary loan notices, later court and newspaper coverage, and modern scholarship on the 1822–23 London and Scottish issues. Departure dates, passenger counts, and death totals are not a single agreed ledger; where later writers disagree, the disagreement is named rather than averaged into a fake precision.",
   dossier: {
@@ -68,6 +68,28 @@ export const poyaisStory: Story = {
       author: "David Sinclair",
       href: "https://www.amazon.com/dp/0306813092?tag=laqaer-20",
       note: "A history of Gregor MacGregor’s Poyais scheme: the land grant, the London loan, and the settlers sent to the Mosquito Coast.",
+    },
+  ],
+  faq: [
+    {
+      question: "Was Poyais a real country?",
+      answer: "Poyais was not a functioning state. In 1820 Gregor MacGregor obtained a grant of land along the Black River from George Frederic, king of the Mosquito Shore, on what is now the Caribbean coast of Honduras. The grant was not a recognized sovereign state. It was not a capital with a port authority and a civil list. It did not create a government that could service a London loan. MacGregor’s later title, cazique of Poyais, treated a coastal concession as if it were a crown. That leap is the fraud.",
+    },
+    {
+      question: "What did Gregor MacGregor sell?",
+      answer: "Gregor MacGregor sold land, banknotes, and government posts in a country that did not exist. Land was priced by the acre. Commissions in a Poyaisian army were for sale, and so were civil appointments. Some exchanged hard coin for notes that claimed to be the currency of Poyais. In London, a loan on the order of two hundred thousand pounds was offered. The notices said it was secured on the resources of the state of Poyais. On the ground, that state was still a river mouth and a story.",
+    },
+    {
+      question: "What did the Poyais settlers find?",
+      answer: "The settlers had crossed an ocean to reach a city. When they arrived on the Mosquito Coast, the city was missing. There were no port officials, no government offices, and no St. Joseph of the guidebook. The first arrivals found no city of St. Joseph waiting to receive a salute. More than one vessel left Britain carrying people who believed they were emigrating to a functioning settlement. Contemporary notices and later reconstructions do not agree on every sailing date or every headcount. Popular versions move the Honduras Packet between London and Leith and between September and November of 1822.",
+    },
+    {
+      question: "How many Poyais settlers died?",
+      answer: "Later writing likes a death toll that can be said in one breath. Two hundred. Half the settlers. More than half. Those figures circulate because the story wants a number the way a prospectus wanted a capital. We do not have a single passenger-and-burial register that every careful historian is willing to treat as complete. Almost Lore will not invent one so the ending feels finished. Departure dates, passenger counts, and death totals are not a single agreed ledger. We know that people died on that coast who would not have been there without the loan, the book, and the uniforms.",
+    },
+    {
+      question: "Who took the Poyais survivors off the coast?",
+      answer: "In the spring of 1823, British Honduras, Belize, sent a vessel to take off the people who were still alive and still willing to leave. Some went back toward Britain. Some were absorbed into the coastal labor already organized around mahogany. MacGregor did not stay to be counted with them. He died in 1845 in Venezuela.",
     },
   ],
 };
