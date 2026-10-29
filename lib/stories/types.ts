@@ -16,6 +16,16 @@ export type FurtherReading = {
   note: string;
 };
 
+export type FaqItem = {
+  question: string;
+  answer: string;
+};
+
+export type StoryFaq =
+  | readonly [FaqItem, FaqItem, FaqItem]
+  | readonly [FaqItem, FaqItem, FaqItem, FaqItem]
+  | readonly [FaqItem, FaqItem, FaqItem, FaqItem, FaqItem];
+
 export type EraId = "before-1800" | "1800s" | "1900-onward";
 
 export type Story = {
@@ -31,4 +41,5 @@ export type Story = {
   sections: StorySection[];
   dossier?: StoryDossier;
   furtherReading?: FurtherReading[];
+  faq?: StoryFaq;
 };
