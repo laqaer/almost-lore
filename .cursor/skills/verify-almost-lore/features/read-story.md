@@ -40,3 +40,4 @@ Preconditions:
 - Wikimedia and book links are sources, not local navigation. The HTTP helper must refuse their off-site origins.
 - A source note preserves uncertainty. Do not remove caveats to simplify expected copy.
 - Article JSON-LD belongs on story pages. The hub includes WebSite data and does not become an Article.
+- The five essays that already have further reading show a Questions heading and a FAQPage script. `/stories/caroline-affair` has Article JSON-LD and no FAQPage script.

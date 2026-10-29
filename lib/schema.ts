@@ -1,3 +1,4 @@
+import type { StoryFaq } from "@/lib/stories/types";
 import { site, siteUrl } from "@/lib/site";
 
 export function websiteJsonLd() {
@@ -50,6 +51,24 @@ export function articleJsonLd(input: {
       "@type": "Organization",
       name: site.publisher,
     },
+  };
+}
+
+export function faqPageJsonLd(input: { path: string; faq: StoryFaq }) {
+  const url = `${siteUrl()}${input.path}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    url,
+    inLanguage: "en-US",
+    mainEntity: input.faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
   };
 }
 

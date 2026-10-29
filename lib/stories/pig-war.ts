@@ -8,7 +8,7 @@ export const pigWarStory: Story = {
   era: "1800s",
   yearLabel: "1859–1872",
   published: "2026-09-26",
-  updated: "2026-10-28",
+  updated: "2026-10-29",
   sourcesNote:
     "This essay is original prose. The narrative follows the National Park Service account of the Pig War at San Juan Island National Historical Park and the HistoryLink.org essay “San Juan Island Pig War,” which itself cites Mike Vouri and Edmond S. Meany. Where those public summaries use different calendar days for the same landing, both days are named. The sentence that the pig was the only casualty is the commemorative claim in those sources, meaning the detachments did not fire on each other. It is not a claim that the island saw no other deaths across thirteen years.",
   sections: [
@@ -61,6 +61,28 @@ export const pigWarStory: Story = {
       author: "Mike Vouri",
       href: "https://www.amazon.com/dp/1638640025?tag=laqaer-20",
       note: "A history of the Pig War: the 1859 shooting on San Juan Island and the British and American occupation that followed.",
+    },
+  ],
+  faq: [
+    {
+      question: "What was the Pig War?",
+      answer: "On 15 June 1859 an American settler on San Juan Island shot a Hudson’s Bay Company pig rooting in his garden. American troops landed. British warships arrived. Both governments claimed the island, and neither wanted the other to turn a landing into possession. The pig died. The battle never came. The border remained unsettled until 1872.",
+    },
+    {
+      question: "Why was the San Juan Island border unsettled in 1859?",
+      answer: "The border dispute was already thirteen years old. The 1846 Oregon Treaty sent the boundary through “the middle of the channel” between the mainland and Vancouver Island. There was more than one channel. One route favored Britain. Another favored the United States. The islands already had their own people. The treaty settled a claim between empires without settling where, on this water, that claim would end.",
+    },
+    {
+      question: "Did the settlers ask for troops because of the pig?",
+      answer: "Lyman Cutlar arrived in April 1859 and started a claim a short walk north of Belle Vue’s headquarters. Charles John Griffin managed the Hudson’s Bay Company sheep farm and named it Belle Vue. One of Griffin’s boars kept coming into the potatoes. On 15 June 1859 Cutlar shot it. He offered to replace the animal. Griffin wanted $100. Cutlar said it was not worth $10. The petition of 11 July, signed by deputy customs collector Paul Hubbs, Cutlar, and others, did not mention the pig or the Hudson’s Bay Company. It asked for protection from raids by northern indigenous nations. Those raids were a real fear on the Sound. The collector Isaac Ebey had been killed in one in 1857. Brigadier General William S. Harney’s later explanation to his own superiors was that Americans had to be shielded from the company’s “oppressive interference.” The written request and the general’s reason are not the same document.",
+    },
+    {
+      question: "Why was there no battle in the Pig War?",
+      answer: "The shooting that brought troops to San Juan Island was on 15 June 1859. On 18 July Brigadier General William S. Harney ordered Captain George E. Pickett to leave Fort Bellingham and occupy the island. Pickett’s company reached the Hudson’s Bay Company harbor, Griffin Bay, on the evening of 26 July and began making camp above the dock the next morning. The park’s short history dates the landing to 27 July and gives the strength as sixty-four men. This essay has not counted the roll. Governor James Douglas ordered marines landed to balance Pickett. The marines were in the harbor by 2 August. On the afternoon of 3 August the British captains met Pickett, who said he would fight a landing. Captain Geoffrey Hornby did not land the marines. The pig was weeks dead. The war was still optional. The commemorative claim that the pig was the only casualty means the detachments did not fire on each other. It is not a claim that the island saw no other deaths across thirteen years.",
+    },
+    {
+      question: "When was the San Juan Island boundary settled?",
+      answer: "In the autumn General Winfield Scott came out and arranged a drawdown to one American company, a British ship, and a joint occupation, until the governments could stand to finish the sentence they had left open in 1846. On 21 March 1860, royal marines landed on Garrison Bay and built the post now called English Camp. The American camp stayed at the south end. In 1871 the Treaty of Washington sent the water boundary to the German emperor, Wilhelm I. He handed it to a three-man commission. On 21 October 1872 the award ran the line through Haro Strait. The San Juans were American. The royal marines left English Camp on 25 November 1872. The last American troops left in July 1874.",
     },
   ],
 };

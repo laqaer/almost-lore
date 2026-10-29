@@ -31,7 +31,7 @@ Published at `almostlore.com`. Set `NEXT_PUBLIC_SITE_URL` if the deploy URL shou
 | `/friends` | Blogroll of people and their personal sites |
 | `/privacy` | Privacy page, naming any ads, affiliate links, or analytics if added |
 
-The archive supports local search and topic filters. Essays remain typed content. Article JSON-LD is used only on story pages.
+The archive supports local search and topic filters. Essays remain typed content. Article JSON-LD is used only on story pages. The five essays that already have further reading also show a Questions block, and those pages emit FAQPage JSON-LD from the same questions and answers.
 
 Card checkout and the support queue live on the Cloudflare Worker `almost-lore-ops`, not in this static export. The paid file body is not in this public repository. Operating notes are in `ops/`.
 

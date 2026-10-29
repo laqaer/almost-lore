@@ -1,4 +1,9 @@
 import { test as base, expect, type Page } from "@playwright/test";
+import { darienStory } from "../../lib/stories/darien";
+import { fashodaStory } from "../../lib/stories/fashoda";
+import { pigWarStory } from "../../lib/stories/pig-war";
+import { poyaisStory } from "../../lib/stories/poyais";
+import { trentAffairStory } from "../../lib/stories/trent-affair";
 
 const test = base.extend<{ runtimeCheck: void }>({
   runtimeCheck: [async ({ page }, use) => {
@@ -134,6 +139,35 @@ test("primary navigation stays usable and pages fit the viewport", async ({ page
   await expect(page).toHaveURL(/\/contact$/);
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
   await expectNoHorizontalOverflow(page);
+});
+
+test("further-reading essays show the same questions on the page and in FAQPage data", async ({ page }) => {
+  for (const story of [poyaisStory, darienStory, fashodaStory, trentAffairStory, pigWarStory]) {
+    await page.goto(`/stories/${story.slug}`);
+    await expect(page.getByRole("heading", { name: "Questions", exact: true })).toBeVisible();
+    const html = await page.content();
+    expect(html).toContain('"@type":"Article"');
+    const faqScript = html
+      .match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)
+      ?.find((script) => script.includes('"@type":"FAQPage"'));
+    if (!story.faq) throw new Error(`${story.slug} has no questions`);
+    if (!faqScript) throw new Error(`${story.slug} FAQPage script`);
+    const faqPage = JSON.parse(faqScript.replace(/^<script type="application\/ld\+json">/, "").replace(/<\/script>$/, "")) as {
+      "@type": string;
+      mainEntity: { name: string; acceptedAnswer: { text: string } }[];
+    };
+    expect(faqPage["@type"]).toBe("FAQPage");
+    expect(faqPage.mainEntity.map((item) => item.name)).toEqual(story.faq.map((item) => item.question));
+    expect(faqPage.mainEntity.map((item) => item.acceptedAnswer.text)).toEqual(story.faq.map((item) => item.answer));
+    for (const item of story.faq) {
+      await expect(page.getByText(item.question, { exact: true })).toBeVisible();
+      await expect(page.getByText(item.answer, { exact: true })).toBeVisible();
+    }
+  }
+
+  await page.goto("/stories/caroline-affair");
+  expect(await page.content()).not.toContain("FAQPage");
+  await expect(page.getByRole("heading", { name: "Questions", exact: true })).toHaveCount(0);
 });
 
 test("the footer opens a valid RSS document without failed feed requests", async ({ page }) => {

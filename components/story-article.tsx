@@ -5,7 +5,7 @@ import { AdSlot } from "@/components/ad-slot";
 import { JsonLd } from "@/components/json-ld";
 import { StoryCard } from "@/components/story-card";
 import { StoryTools } from "@/components/story-tools";
-import { articleJsonLd } from "@/lib/schema";
+import { articleJsonLd, faqPageJsonLd } from "@/lib/schema";
 import { siteUrl } from "@/lib/site";
 import { readingMinutes, stories, storyPath, type Story } from "@/lib/stories";
 import { storyCollections } from "@/lib/stories/collections";
@@ -15,6 +15,17 @@ import { storyMedia, type StoryMedia } from "@/lib/stories/media";
 
 function Caption({ media, label }: { media: StoryMedia; label: string }) {
   return <figcaption className="image-caption"><span>{label}</span><a href={media.creditUrl} rel="noopener">{media.credit}</a></figcaption>;
+}
+
+function storyContents(story: Story) {
+  const links: { href: string; label: string }[] = [];
+  for (const [index, section] of story.sections.entries()) {
+    if (!section.heading) continue;
+    links.push({ href: `#section-${index}`, label: section.heading });
+  }
+  links.push({ href: "#sources", label: "Sources & further reading" });
+  if (story.faq) links.push({ href: "#faq", label: "Questions" });
+  return links;
 }
 
 export function StoryArticle({ story }: { story: Story }) {
@@ -50,13 +61,12 @@ export function StoryArticle({ story }: { story: Story }) {
       <div className="reading-layout">
         <aside className="story-margin">
           <nav aria-label="In this story"><p className="kicker">In this story</p>
-            {story.sections.map((section, index) => section.heading ? <a key={index} href={`#section-${index}`}>{section.heading}</a> : null)}
-            <a href="#sources">Sources & further reading</a>
+            {storyContents(story).map((link) => <a key={link.href} href={link.href}>{link.label}</a>)}
           </nav>
           <p>{story.hook}</p>
         </aside>
         <div className="story-body">
-          <details className="mobile-contents"><summary>In this story</summary><nav aria-label="Story sections">{story.sections.map((section, index) => section.heading ? <a key={index} href={`#section-${index}`}>{section.heading}</a> : null)}<a href="#sources">Sources & further reading</a></nav></details>
+          <details className="mobile-contents"><summary>In this story</summary><nav aria-label="Story sections">{storyContents(story).map((link) => <a key={link.href} href={link.href}>{link.label}</a>)}</nav></details>
           <div className="prose-lore">
             {story.sections.map((section, index) => (
               <Fragment key={index}>
@@ -81,6 +91,22 @@ export function StoryArticle({ story }: { story: Story }) {
             <ul>{story.furtherReading.map((book) => <li key={book.href}><a href={book.href} rel="sponsored nofollow noopener" target="_blank">{book.title}</a>{" — "}{book.author}<span className="mt-1 block">{book.note}</span></li>)}</ul>
             <p className="mt-4 text-ink-faint">As an Amazon Associate, Almost Lore earns from qualifying purchases.</p>
           </aside> : null}
+          {story.faq ? (
+            <>
+              <aside id="faq" className="story-source-block static-aside">
+                <h2 className="kicker m-0">Questions</h2>
+                <ul>
+                  {story.faq.map((item) => (
+                    <li key={item.question}>
+                      <strong>{item.question}</strong>
+                      <span className="mt-1 block">{item.answer}</span>
+                    </li>
+                  ))}
+                </ul>
+              </aside>
+              <JsonLd data={faqPageJsonLd({ path, faq: story.faq })} />
+            </>
+          ) : null}
           <div className="story-end"><p>A story worth passing on?</p><StoryTools url={url} /></div>
         </div>
       </div>
