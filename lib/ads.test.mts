@@ -5,7 +5,6 @@ import {
   ADS_TXT_CERTIFICATION_AUTHORITY,
   ADS_TXT_PLACEHOLDER,
   adsConfig,
-  adsPublisherId,
   adsRunnableConfig,
   adsTxtBody,
   publisherIdFromClient,
@@ -35,7 +34,6 @@ function withEnv(values: Record<string, string>, run: () => void) {
 test("ads are off with no configuration", () => {
   withEnv({}, () => {
     assert.equal(adsConfig().enabled, false);
-    assert.equal(adsPublisherId(), null);
     assert.equal(adsRunnableConfig(), null);
   });
 });
@@ -45,7 +43,6 @@ test("a malformed publisher id keeps ads off", () => {
     { NEXT_PUBLIC_ADS_ENABLED: "true", NEXT_PUBLIC_ADS_PUBLISHER_ID: "pub-1234", NEXT_PUBLIC_ADS_SLOT: "1234567890" },
     () => {
       assert.equal(adsConfig().enabled, false);
-      assert.equal(adsPublisherId(), null);
     },
   );
 });
@@ -74,9 +71,8 @@ test("valid ids configure ads but never serve without a consent platform", () =>
   );
 });
 
-test("a client id can be parsed before ads serve", () => {
+test("a publisher id alone leaves ads disabled", () => {
   withEnv({ NEXT_PUBLIC_ADS_PUBLISHER_ID: "ca-pub-1111111111111111" }, () => {
-    assert.equal(adsPublisherId(), "pub-1111111111111111");
     assert.equal(adsConfig().enabled, false);
   });
 });

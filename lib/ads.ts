@@ -33,14 +33,6 @@ export function publisherIdFromClient(client: string): string | null {
   return CLIENT_RE.test(client) ? client.replace(/^ca-/, "") : null;
 }
 
-/**
- * The configured `pub-…` id from the ad client, or null. Independent of
- * whether ads serve. ads.txt reads `NEXT_PUBLIC_ADSENSE_PUB_ID` instead.
- */
-export function adsPublisherId(): string | null {
-  return publisherIdFromClient(env("NEXT_PUBLIC_ADS_PUBLISHER_ID"));
-}
-
 /** ads.txt accepts only `pub-` plus 10–20 digits. Anything else stays a comment. */
 const ADSENSE_PUB_RE = /^pub-\d{10,20}$/;
 
