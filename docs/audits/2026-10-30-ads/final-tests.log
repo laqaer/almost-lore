@@ -1,0 +1,31 @@
+
+> almost-lore@1.0.0 test
+> node --test --experimental-strip-types workers/ops/policy.test.js lib/ads.test.mts
+
+(node:23526) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/andyzhou/dev/almostlore--deep-test-audit/lib/ads.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/andyzhou/dev/almostlore--deep-test-audit/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ ads are off with no configuration (0.672541ms)
+✔ a malformed publisher id keeps ads off (0.0765ms)
+✔ a valid publisher id without a slot stays off (0.081542ms)
+✔ valid ids configure ads but never serve without a consent platform (0.087666ms)
+✔ a publisher id alone leaves ads disabled (0.056916ms)
+✔ publisher id parsing rejects junk (0.044791ms)
+✔ the ads.txt certification authority is Google's (0.032875ms)
+✔ ads.txt is comment-only until a valid AdSense publisher id is set (0.115625ms)
+✔ a paid live session for this product can be delivered (1.142083ms)
+✔ delivery fails closed on amount, mode, refund, and an unexpanded intent (0.0775ms)
+✔ test-mode payments are counted apart from live cash (0.074125ms)
+✔ signature header parsing and freshness (0.109458ms)
+✔ secret comparison does not treat different lengths as equal (0.059083ms)
+✔ webhook signatures reject tampering and stale timestamps (5.619875ms)
+✔ live keys are recognized without logging them (0.062875ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 120.578291
