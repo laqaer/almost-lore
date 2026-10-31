@@ -5,7 +5,6 @@ export const trentAffairStory: Story = {
   title: "The four men taken off the Trent",
   dek: "A Union captain seized four men from a British mail ship in 1861. Britain demanded their return. The Civil War nearly acquired another front.",
   hook: "One captain stopped a mail ship. Two governments had to stop the crisis that followed.",
-  era: "1800s",
   yearLabel: "1861–1862",
   published: "2026-09-26",
   updated: "2026-10-29",

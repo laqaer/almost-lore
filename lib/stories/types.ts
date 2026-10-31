@@ -26,14 +26,11 @@ export type StoryFaq =
   | readonly [FaqItem, FaqItem, FaqItem, FaqItem]
   | readonly [FaqItem, FaqItem, FaqItem, FaqItem, FaqItem];
 
-export type EraId = "before-1800" | "1800s" | "1900-onward";
-
 export type Story = {
   slug: string;
   title: string;
   dek: string;
   hook: string;
-  era: EraId;
   yearLabel: string;
   published: string;
   updated: string;

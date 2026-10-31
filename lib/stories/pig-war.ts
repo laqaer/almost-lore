@@ -5,7 +5,6 @@ export const pigWarStory: Story = {
   title: "The Pig War: one shot, thirteen years of waiting",
   dek: "A pig wandered into an American settler’s garden in 1859. His shot brought troops to San Juan Island, where the border remained unsettled until 1872.",
   hook: "The pig died. The armies arrived. The battle never came.",
-  era: "1800s",
   yearLabel: "1859–1872",
   published: "2026-09-26",
   updated: "2026-10-29",
