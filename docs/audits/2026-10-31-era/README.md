@@ -8,7 +8,9 @@ It also removes a redundant static-output assertion. No test file changes.
 
 The candidate starts from revision [`71c50c233dd7ce52d7e31ac19295f60bc4f13f0d`](https://github.com/laqaer/almost-lore/commit/71c50c233dd7ce52d7e31ac19295f60bc4f13f0d).
 The [receipt](receipt.json) records the exact source hashes, tested tree, commands, results, and review.
-The owning cleanup PR remains pending publication. [Issue #22](https://github.com/laqaer/almost-lore/issues/22) and [refund PR #34](https://github.com/laqaer/almost-lore/pull/34) provide background only.
+The owning cleanup is [PR #35](https://github.com/laqaer/almost-lore/pull/35).
+Published source: `b8e2f761e2f3c1b92c6c8fb77cf75c977d8f55f1`.
+It is based on refund merge `c0ed250334e4e50bf1f2450e5701482cebd6b6ff`; its tree matches the reviewed candidate. [Issue #22](https://github.com/laqaer/almost-lore/issues/22) and [refund PR #34](https://github.com/laqaer/almost-lore/pull/34) provide background only.
 
 [PR #27](https://github.com/laqaer/almost-lore/pull/27) introduced era grouping.
 [PR #29](https://github.com/laqaer/almost-lore/pull/29), revision `38bfb4c`, removed the last `story.era` reader.
@@ -41,7 +43,7 @@ The project has no portable packet validator installed, so this audit retains na
 ## Delivery boundary
 
 This task ends at reviewed source integration. It does not include a deployment, purchase, refund, or production acceptance check.
-The root agent will publish the cleanup after the refund repair integrates. A source merge does not prove a production update.
+The refund repair integrated in PR #34 before cleanup publication. A source merge does not prove a production update.
 Model, agent compute, and CI costs are unknown.
 
 The changed prose satisfies the ten shared documentation checks. Exact commands, identifiers, and historical evidence retain their original form.

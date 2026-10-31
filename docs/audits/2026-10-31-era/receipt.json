@@ -290,7 +290,7 @@
     "exceptions": []
   },
   "completionBoundary": "source integration; delegate hands off a verified local commit",
-  "pullRequest": "pending root publication; refund PR34 is background only",
+  "pullRequest": "https://github.com/laqaer/almost-lore/pull/35",
   "background": [
     "https://github.com/laqaer/almost-lore/issues/22",
     "https://github.com/laqaer/almost-lore/pull/34"
@@ -304,5 +304,10 @@
     "model": "unknown",
     "agentCompute": "unknown",
     "CI": "unknown"
-  }
+  },
+  "publishedSource": "b8e2f761e2f3c1b92c6c8fb77cf75c977d8f55f1",
+  "integrationBase": "c0ed250334e4e50bf1f2450e5701482cebd6b6ff",
+  "reviewedCommit": "bcc3efa02c56b60e96d23ccb9063484d64a543b5",
+  "reviewedAndRebasedTree": "706ae57ecf55abd48f05553c02777af3830a37c8",
+  "rebaseTreeUnchanged": true
 }
