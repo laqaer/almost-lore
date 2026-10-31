@@ -1,6 +1,24 @@
 # Almost Lore — operating state
 
-Updated: 2026-10-29
+Updated: 2026-10-31
+
+## Scheduled-run Evidence Gap, 2026-10-31
+
+The production check now fails because the latest summary comes from a webhook, not cron. The failure does not establish a scheduled-job outage.
+
+- `/api/status` returned HTTP 200 with summary time `2026-10-30T19:10:37.252Z` and source `webhook`.
+- Both page probes report HTTP 200. The ledger source remains `stripe_checkout_sessions`, with zero reported paid sessions and provisional accounting.
+- `npm run test:e2e:ops` passed its freshness assertion, then failed its unconditional `source === "cron"` assertion.
+- The Worker writes webhook, manual, and cron results to the same latest-summary key. A later webhook can replace scheduled-run evidence.
+- The Cloudflare connector requires reauthentication, so this pass could not inspect the scheduled invocation directly.
+
+The existing test assumes a contract that the endpoint does not provide. The owner policy requires stopping when an existing test is wrong.
+This pass preserves the failed test and records the diagnosis only. No product code, configuration, payment, or deployment changed.
+See [issue #32](https://github.com/laqaer/almost-lore/issues/32), the [status snapshot](../docs/evidence/2026-10-31/status.json), and the [failed check](../docs/evidence/2026-10-31/ops-e2e.log).
+The [execution record](../docs/evidence/2026-10-31/execution.json) records source, scope, checks, and review.
+
+The next repair must preserve scheduled-run evidence separately from the latest reconciliation. A webhook is not proof that cron ran.
+Payment completion and paid delivery remain unverified. E1 stays closed; E2 retains its 2026-11-14 evaluation date.
 
 ## Indexing Measurement Available, 2026-10-29
 
@@ -140,6 +158,7 @@ States to keep distinct: one probe cron has fired unattended. The daily 13:00 UT
 IndexNow maintenance, 2026-09-30: removed `/dossier/thanks` from the submission list because the checkout delivery page declares `noindex`. Verified the dry-run payload retains 23 public URLs, including all 14 essays, and omits the delivery page. No live submission was made; this is not evidence of indexing or revenue.
 
 Issue #23 is complete. Continue the existing read-only freshness check with `npm run test:e2e:ops`; do not create another monitoring loop.
+Track the incorrect cron-only assertion and missing scheduled-run evidence in [issue #32](https://github.com/laqaer/almost-lore/issues/32). Keep the test unchanged pending correction.
 Use only fresh Stripe-backed summaries, with the accounting limits above. Do not treat historical pre-activation zeros as current sales evidence.
 E1 is closed, and indexing is now measurable through OpenSEO. Use that evidence for the next title or internal-link repair.
 Keep E1's original deadline and unsuccessful outcome. Read the current measurement record above before adding story volume.

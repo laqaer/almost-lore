@@ -1,0 +1,88 @@
+{
+  "task": {
+    "objective": "Diagnose and retain the new production ops check failure without changing an incorrect test.",
+    "owningIssue": "https://github.com/laqaer/almost-lore/issues/32",
+    "repository": "laqaer/almost-lore",
+    "head": "fbdc8f3040fc706df9f4ef8107007a7300414ad2",
+    "base": "fbdc8f3040fc706df9f4ef8107007a7300414ad2",
+    "environment": "Local macOS checkout and read-only production HTTP",
+    "owner": "Almost Lore editorial desk",
+    "scope": [
+      "ops/STATE.md",
+      "docs/evidence/2026-10-31",
+      "issue #32"
+    ],
+    "exclusions": [
+      "Product code",
+      "Test assertions",
+      "Payments",
+      "Credentials",
+      "DNS",
+      "Infrastructure deployment",
+      "New stories",
+      "Outreach",
+      "New discretionary spending"
+    ],
+    "acceptance": [
+      "Reproduce the source assertion failure.",
+      "Trace the shared summary writes.",
+      "Distinguish a bad test assumption from a proven cron failure.",
+      "Preserve experiment rules and deadlines.",
+      "Publish the diagnostic evidence and exact next repair."
+    ],
+    "completionBoundary": "Publication of diagnostic records; product repair and runtime acceptance remain outstanding in issue #32."
+  },
+  "observations": {
+    "statusCapturedAt": "2026-10-31T00:00:53.090863+00:00",
+    "statusReceipt": "status.json",
+    "testCompletedAt": "2026-10-30T23:59:08.293631+00:00",
+    "testCommand": "npm run test:e2e:ops",
+    "testTarget": "https://almostlore.com",
+    "testSource": "fbdc8f3040fc706df9f4ef8107007a7300414ad2",
+    "testExitCode": 1,
+    "testCounts": {
+      "pass": 0,
+      "fail": 1,
+      "skip": 0
+    },
+    "testLog": "ops-e2e.log",
+    "failedAssertion": "'webhook' !== 'cron'",
+    "sourceTrace": [
+      "workers/ops/index.js:255 calls runDaily with webhook source.",
+      "workers/ops/index.js:316-317 overwrite the same-day and latest summary for every source.",
+      "workers/ops/index.js:69 reads that shared latest summary.",
+      "e2e/ops.test.mjs:29 requires the latest source to be cron."
+    ],
+    "providerHistory": "Not verified: Cloudflare connector requires reauthentication. No reconnect or configuration change attempted.",
+    "paymentEvidence": "No payment, owner purchase, fulfillment, or E2 success established."
+  },
+  "validation": {
+    "localDocumentChecks": "Pass: git diff --check, JSON parsing, saved status assertions, local Markdown links, and source line references.",
+    "independentReview": {
+      "provider": "OpenAI",
+      "harness": "Codex",
+      "session": "/root/review_ops_evidence",
+      "model": "Exact identifier unavailable",
+      "scope": "Complete operating-record diff, retained status and test evidence, Worker source trace, original experiment rules and dates.",
+      "findings": [
+        {
+          "description": "The shared summary read is at line 69, not line 70.",
+          "disposition": "Confirmed; corrected before publication. The primary agent independently found the same reference error."
+        }
+      ],
+      "result": "No unresolved findings after the source reference correction. Reviewer verified JSON parsing, git diff --check, and all ten documentation style checks.",
+      "limits": "No independent provider-history or production recheck claimed."
+    },
+    "hostedProductChecks": "Not run; no product or test source changes.",
+    "integration": "Pending publication; see the final issue receipt for the committed revision.",
+    "deployment": "Not performed; separate infrastructure deployment is outside heartbeat authority.",
+    "runtime": "Production failure reproduced. Scheduled execution itself remains unverified."
+  },
+  "costs": {
+    "newDiscretionarySpendUsd": 0,
+    "modelCost": "unknown",
+    "agentComputeCost": "unknown",
+    "ciCost": "unknown"
+  },
+  "packetValidation": "No project execution-evidence validator is installed. Retain JSON, links, raw status, and failed-test evidence."
+}

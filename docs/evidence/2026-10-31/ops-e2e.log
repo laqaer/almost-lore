@@ -1,0 +1,33 @@
+
+> almost-lore@1.0.0 test:e2e:ops
+> node --test e2e/ops.test.mjs
+
+✖ the public status exposes a recent, successful scheduled reconciliation (1386.925625ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1500.126709
+
+✖ failing tests:
+
+test at e2e/ops.test.mjs:6:1
+✖ the public status exposes a recent, successful scheduled reconciliation (1386.925625ms)
+  AssertionError [ERR_ASSERTION]: The latest summary must come from the scheduled reconciliation
+  
+  'webhook' !== 'cron'
+  
+      at TestContext.<anonymous> (file:///Users/andyzhou/.codex/worktrees/indexnow-public-pages/almostlore/e2e/ops.test.mjs:29:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'webhook',
+    expected: 'cron',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
