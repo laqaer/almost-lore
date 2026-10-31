@@ -1,0 +1,43 @@
+
+> almost-lore@1.0.0 test:e2e
+> playwright test
+
+[WebServer] (node:52632) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 12 tests using 5 workers
+
+(node:52640) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:52636) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:52639) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:52637) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:52638) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   4 [desktop] › e2e/browser/readers.spec.ts:122:1 › primary navigation stays usable and pages fit the viewport (1.9s)
+  ✓   1 [desktop] › e2e/browser/readers.spec.ts:33:1 › archive search, collections, and reset help readers find a story (3.0s)
+  ✓   2 [desktop] › e2e/browser/readers.spec.ts:70:1 › a reader opens the cover, copies its canonical link, and continues to another story (3.2s)
+  ✓   6 [desktop] › e2e/browser/readers.spec.ts:173:1 › the footer opens a valid RSS document without failed feed requests (1.3s)
+  ✓   5 [desktop] › e2e/browser/readers.spec.ts:144:1 › further-reading essays show the same questions on the page and in FAQPage data (3.4s)
+(node:52688) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:52689) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:52690) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:52697) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 [desktop] › e2e/browser/readers.spec.ts:107:1 › archival images load on the collection and an illustrated essay (5.3s)
+  ✓  10 [mobile] › e2e/browser/readers.spec.ts:122:1 › primary navigation stays usable and pages fit the viewport (911ms)
+  ✓   7 [mobile] › e2e/browser/readers.spec.ts:33:1 › archive search, collections, and reset help readers find a story (1.6s)
+  ✓  11 [mobile] › e2e/browser/readers.spec.ts:173:1 › the footer opens a valid RSS document without failed feed requests (484ms)
+(node:52764) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  12 [mobile] › e2e/browser/readers.spec.ts:144:1 › further-reading essays show the same questions on the page and in FAQPage data (1.4s)
+  ✓   8 [mobile] › e2e/browser/readers.spec.ts:70:1 › a reader opens the cover, copies its canonical link, and continues to another story (3.7s)
+  ✓   9 [mobile] › e2e/browser/readers.spec.ts:107:1 › archival images load on the collection and an illustrated essay (4.5s)
+
+  12 passed (9.5s)

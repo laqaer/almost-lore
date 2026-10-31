@@ -161,7 +161,7 @@ async function download(request, env, url) {
     return html("Checkout is not open", "<p>There is no merchant key, so this link cannot be verified.</p>", 503);
   }
   const stripeUrl = new URL(`https://api.stripe.com/v1/checkout/sessions/${sessionId}`);
-  stripeUrl.searchParams.set("expand[]", "payment_intent");
+  stripeUrl.searchParams.set("expand[]", "payment_intent.latest_charge");
   const response = await fetch(stripeUrl, {
     headers: { Authorization: `Bearer ${env.STRIPE_SECRET_KEY}` },
   });
@@ -319,7 +319,7 @@ async function runDaily(env, source) {
 }
 
 async function reconcile(env) {
-  const listed = await stripeGet(env, "/v1/checkout/sessions?limit=100&expand[]=data.payment_intent");
+  const listed = await stripeGet(env, "/v1/checkout/sessions?limit=100&expand[]=data.payment_intent.latest_charge");
   if (!listed.ok) {
     return {
       source: "stripe_error",

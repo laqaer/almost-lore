@@ -1,0 +1,293 @@
+
+> almost-lore@1.0.0 test:e2e:refunds
+> node --test e2e/ops-refunds.test.mjs
+
+TAP version 13
+# Subtest: full and partial refunds do not release the dossier
+not ok 1 - full and partial refunds do not release the dossier
+  ---
+  duration_ms: 2083.330334
+  type: 'test'
+  location: '/Users/andyzhou/dev/almostlore--deep-test-audit/e2e/ops-refunds.test.mjs:108:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+        {
+    +     fileReleased: true,
+    -     fileReleased: false,
+          id: 'cs_full_refund',
+    +     refundDenied: false,
+    +     status: 200
+    -     refundDenied: true,
+    -     status: 402
+        },
+        {
+    +     fileReleased: true,
+    -     fileReleased: false,
+          id: 'cs_partial_refund',
+    +     refundDenied: false,
+    +     status: 200
+    -     refundDenied: true,
+    -     status: 402
+        }
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0:
+      id: 'cs_full_refund'
+      status: 402
+      refundDenied: true
+      fileReleased: false
+    1:
+      id: 'cs_partial_refund'
+      status: 402
+      refundDenied: true
+      fileReleased: false
+  actual:
+    0:
+      id: 'cs_full_refund'
+      status: 200
+      refundDenied: false
+      fileReleased: true
+    1:
+      id: 'cs_partial_refund'
+      status: 200
+      refundDenied: false
+      fileReleased: true
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/andyzhou/dev/almostlore--deep-test-audit/e2e/ops-refunds.test.mjs:115:10)
+    process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: an unrefunded paid session downloads the stored dossier
+ok 2 - an unrefunded paid session downloads the stored dossier
+  ---
+  duration_ms: 9.229292
+  type: 'test'
+  ...
+# Subtest: missing or invalid Charge refund evidence cannot release the dossier
+not ok 3 - missing or invalid Charge refund evidence cannot release the dossier
+  ---
+  duration_ms: 112.915583
+  type: 'test'
+  location: '/Users/andyzhou/dev/almostlore--deep-test-audit/e2e/ops-refunds.test.mjs:129:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+        {
+    +     denied: false,
+    +     fileReleased: true,
+    -     denied: true,
+    -     fileReleased: false,
+          id: 'cs_no_charge',
+    +     status: 200
+    -     status: 402
+        },
+        {
+    +     denied: false,
+    +     fileReleased: true,
+    -     denied: true,
+    -     fileReleased: false,
+          id: 'cs_unexpanded_charge',
+    +     status: 200
+    -     status: 402
+        },
+        {
+    +     denied: false,
+    +     fileReleased: true,
+    -     denied: true,
+    -     fileReleased: false,
+          id: 'cs_missing_refund',
+    +     status: 200
+    -     status: 402
+        },
+        {
+    +     denied: false,
+    +     fileReleased: true,
+    -     denied: true,
+    -     fileReleased: false,
+          id: 'cs_null_refund',
+    +     status: 200
+    -     status: 402
+        },
+        {
+    +     denied: false,
+    +     fileReleased: true,
+    -     denied: true,
+    -     fileReleased: false,
+          id: 'cs_string_refund',
+    +     status: 200
+    -     status: 402
+        },
+        {
+    +     denied: false,
+    +     fileReleased: true,
+    -     denied: true,
+    -     fileReleased: false,
+          id: 'cs_negative_refund',
+    +     status: 200
+    -     status: 402
+        },
+        {
+    +     denied: false,
+    +     fileReleased: true,
+    -     denied: true,
+    -     fileReleased: false,
+          id: 'cs_fractional_refund',
+    +     status: 200
+    -     status: 402
+        }
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0:
+      id: 'cs_no_charge'
+      status: 402
+      denied: true
+      fileReleased: false
+    1:
+      id: 'cs_unexpanded_charge'
+      status: 402
+      denied: true
+      fileReleased: false
+    2:
+      id: 'cs_missing_refund'
+      status: 402
+      denied: true
+      fileReleased: false
+    3:
+      id: 'cs_null_refund'
+      status: 402
+      denied: true
+      fileReleased: false
+    4:
+      id: 'cs_string_refund'
+      status: 402
+      denied: true
+      fileReleased: false
+    5:
+      id: 'cs_negative_refund'
+      status: 402
+      denied: true
+      fileReleased: false
+    6:
+      id: 'cs_fractional_refund'
+      status: 402
+      denied: true
+      fileReleased: false
+  actual:
+    0:
+      id: 'cs_no_charge'
+      status: 200
+      denied: false
+      fileReleased: true
+    1:
+      id: 'cs_unexpanded_charge'
+      status: 200
+      denied: false
+      fileReleased: true
+    2:
+      id: 'cs_missing_refund'
+      status: 200
+      denied: false
+      fileReleased: true
+    3:
+      id: 'cs_null_refund'
+      status: 200
+      denied: false
+      fileReleased: true
+    4:
+      id: 'cs_string_refund'
+      status: 200
+      denied: false
+      fileReleased: true
+    5:
+      id: 'cs_negative_refund'
+      status: 200
+      denied: false
+      fileReleased: true
+    6:
+      id: 'cs_fractional_refund'
+      status: 200
+      denied: false
+      fileReleased: true
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/andyzhou/dev/almostlore--deep-test-audit/e2e/ops-refunds.test.mjs:137:10)
+    process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: an authorized reconciliation persists refund exclusions in public status
+not ok 4 - an authorized reconciliation persists refund exclusions in public status
+  ---
+  duration_ms: 39.128542
+  type: 'test'
+  location: '/Users/andyzhou/dev/almostlore--deep-test-audit/e2e/ops-refunds.test.mjs:140:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      {
+        fees: 'not_in_checkout_session',
+    +   liveCashCents: 9000,
+    +   livePaidCount: 10,
+    +   liveRefundedCount: 0,
+    -   liveCashCents: 900,
+    -   livePaidCount: 1,
+    -   liveRefundedCount: 2,
+        provisional: true,
+        source: 'stripe_checkout_sessions',
+        testPaidCount: 1,
+        truncated: false
+      }
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    source: 'stripe_checkout_sessions'
+    livePaidCount: 1
+    liveCashCents: 900
+    liveRefundedCount: 2
+    testPaidCount: 1
+    truncated: false
+    fees: 'not_in_checkout_session'
+    provisional: true
+  actual:
+    source: 'stripe_checkout_sessions'
+    livePaidCount: 10
+    liveCashCents: 9000
+    liveRefundedCount: 0
+    testPaidCount: 1
+    truncated: false
+    fees: 'not_in_checkout_session'
+    provisional: true
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/andyzhou/dev/almostlore--deep-test-audit/e2e/ops-refunds.test.mjs:152:10)
+    process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 1
+# fail 3
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4811.1955

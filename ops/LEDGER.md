@@ -4,6 +4,16 @@ Mandate start: 2026-09-26. Currency: USD.
 
 This file is the narrative ledger. It is not a processor export. Exclude test charges from customer revenue.
 
+## Refund classification repair, 2026-10-31
+
+The source repair reads refund amounts from the expanded Stripe Charge. PaymentIntent has no `amount_refunded` field.
+An otherwise eligible live session with any refund increments `liveRefundedCount` and contributes zero to `livePaidCount` and `liveCashCents`.
+This preserves the existing conservative policy. For partial refunds, the summary omits the retained balance.
+Missing or invalid Charge evidence cannot qualify a session as paid. These totals remain provisional and do not establish net cash or profit.
+
+The [audit record](../docs/audits/2026-10-31-refunds/README.md) separates local HTTP checks, source integration, and production acceptance.
+The Worker requires a separate deployment. Historical production snapshots below do not verify this repair.
+
 ## Reconciliation Restored, 2026-10-19
 
 The live summary now comes from Stripe. This record supersedes the stale-summary and pending-approval statements below.

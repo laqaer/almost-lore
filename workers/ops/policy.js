@@ -24,7 +24,14 @@ export function assessCheckoutSession(session, options) {
   if (typeof intent.amount_received === "number" && intent.amount_received < PRICE_CENTS) {
     return { ok: false, reason: "amount_received" };
   }
-  if ((intent.amount_refunded ?? 0) > 0) return { ok: false, reason: "refunded" };
+  const charge = intent.latest_charge;
+  if (!charge || typeof charge !== "object" || charge.object !== "charge") {
+    return { ok: false, reason: "charge_not_expanded" };
+  }
+  if (!Number.isInteger(charge.amount_refunded) || charge.amount_refunded < 0) {
+    return { ok: false, reason: "refund_unknown" };
+  }
+  if (charge.amount_refunded > 0) return { ok: false, reason: "refunded" };
   if (intent.status && intent.status !== "succeeded") return { ok: false, reason: "intent_status" };
   return { ok: true, reason: "paid" };
 }

@@ -11,6 +11,10 @@ The default target is `https://almostlore.com`. Set `E2E_BASE_URL` for another r
 This read-only check verifies daily summary freshness and reconciliation status. It does not verify payment or download completion.
 Run existing tests with `npm test`. Do not replace E2E checks with unit coverage.
 
+E2E: Run `npm run test:e2e:refunds` for local Worker download and reconciliation checks.
+Miniflare runs the Worker. Synthetic Stripe responses and a synthetic dossier keep these checks local.
+This suite makes no real payment or deployment and does not verify production refunds.
+
 ## Ops Worker
 
 The website and `workers/ops` deploy separately. A site deployment does not publish the ops Worker.
@@ -29,4 +33,6 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## Documentation hub
 
-Read [docs/HUB.md](docs/HUB.md) before material changes. Update the affected canonical documentation in the same PR/commit and link the issue, exact revision, tests and deployment boundary. Automatic `docs/updates/` receipts prove only source pushes. Follow the [shared standard](https://github.com/laqaer/agent-config/blob/main/docs/documentation-hub.md); never copy secrets or customer data into documentation.
+Read [docs/HUB.md](docs/HUB.md) before material changes. Update the affected canonical documentation in the same PR/commit.
+Link the issue, exact revision, tests, and deployment boundary. Historical `docs/updates/` receipts prove only source pushes; their workflow is retired.
+Follow the [shared standard](https://github.com/laqaer/agent-config/blob/main/docs/documentation-hub.md). Never copy secrets or customer data into documentation.
