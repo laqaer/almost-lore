@@ -5,7 +5,6 @@ export const aquaTofanaStory: Story = {
   title: "Aqua Tofana, after the legend",
   dek: "The story promises one poisoner and six hundred dead husbands. The Roman archive holds a real prosecution, disputed identities, and a very different chronology.",
   hook: "The famous body count is part of the legend. The trial is in the archive.",
-  era: "before-1800",
   yearLabel: "1633–1659",
   published: "2026-09-11",
   updated: "2026-10-28",

@@ -5,7 +5,6 @@ export const beringStory: Story = {
   title: "The last winter of Vitus Bering",
   dek: "His expedition reached the American coast. The voyage home ended in a wreck, a winter camp, and a boat the survivors had to build themselves.",
   hook: "The survivors sailed home in a boat made from the wreck. Their captain stayed behind.",
-  era: "before-1800",
   yearLabel: "1741–1742",
   published: "2026-09-25",
   updated: "2026-10-28",

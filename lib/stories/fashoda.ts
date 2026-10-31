@@ -5,7 +5,6 @@ export const fashodaStory: Story = {
   title: "Two flags at Fashoda",
   dek: "A French column reached a ruined fort on the White Nile. An Anglo-Egyptian flotilla followed. In 1898, two imperial claims met at Fashoda.",
   hook: "Two commanders held their ground while London and Paris argued. Neither opened fire.",
-  era: "1800s",
   yearLabel: "1898–1899",
   published: "2026-09-18",
   updated: "2026-10-29",

@@ -5,7 +5,6 @@ export const doggerBankStory: Story = {
   title: "Dogger Bank: the night the navy fired at fishermen",
   dek: "A Russian squadron mistook Hull trawlers for a threat in 1904. Two fishermen died. Britain and Russia then had to prevent a second disaster.",
   hook: "The fleet was bound for a war with Japan. Its guns found British fishing boats.",
-  era: "1900-onward",
   yearLabel: "1904–1905",
   published: "2026-09-26",
   updated: "2026-10-28",

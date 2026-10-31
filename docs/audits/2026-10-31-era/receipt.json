@@ -1,0 +1,308 @@
+{
+  "recordedAt": "2026-10-31T05:51:04.542951+00:00",
+  "repository": "laqaer/almost-lore",
+  "owner": "OpenAI Codex /root/retired_era_cleanup",
+  "objective": "Remove retired era metadata and one redundant static-output assertion.",
+  "base": "71c50c233dd7ce52d7e31ac19295f60bc4f13f0d",
+  "testedSourceState": "Uncommitted implementation files against base; source hashes and diff digest identify the tested change.",
+  "testedIndexTree": "b4c4a7e6e48acf15fb15d52ce387df8b9840472f",
+  "sourceDiffSha256": "fd658c4f5f0aefb65a5b55ef37dbff3d67c84f77e07ea6209f272e95b4382fc6",
+  "sourceSha256": {
+    ".github/workflows/cloudflare-static-export.yml": "ef21e6e060b7b61f5617e4b12e7e5d4b31ba27c9769c98fd8e19c0a8dac0e318",
+    "lib/stories/aqua-tofana.ts": "8085dbfa84550c66ef2a3d6bd9ce0c7cae541f35dbe6ba48ef404217cff1781d",
+    "lib/stories/aroostook-war.ts": "8d9a779c2225be044d46d48bd4d1cf178aa5f9a2a507f97c67a9ba7292503e1c",
+    "lib/stories/balloon.ts": "97e4fd1a55997d5577e118cce4ef01ce78bd5f2202b90c6284e6b2f95930f7aa",
+    "lib/stories/bering.ts": "2b9629431d6e9622881fda56915cceb91763f7406e4fb21eb52cb3b7e41550cc",
+    "lib/stories/caroline-affair.ts": "ffc27aa08529518a5641f131609b3eacdfa5ed854db763a7d88f92f393bede42",
+    "lib/stories/darien.ts": "26157aee850b253faf95b735fcc625725b199ffcc43659a67d6031fea5b21219",
+    "lib/stories/dogger-bank.ts": "f1acdc4843277966f4c3e183a47d79abacf318552495ead48688cec2fe4bfc50",
+    "lib/stories/fashoda.ts": "d50612a1cc5802f77df5c201c37bd0be0d6a8b1bd100d286738473571c2484ec",
+    "lib/stories/forgotten-scheme.ts": "484b5e291bd9d1987b183b806d945346f6819bd99b61c4007ec2af635944d70a",
+    "lib/stories/index.ts": "a6fedad1070ff06f89bc237f30e2a6c3a4e6b55398da63551eb744dd04f50759",
+    "lib/stories/pig-war.ts": "12505d8844a4100a7c76778f501790709c805f650c328faa5eb063a3a376dd19",
+    "lib/stories/poyais.ts": "7ff925bb9d14198ef3ce921541306b19e5025a7d0727eb52b6d5bf3e2ffbb129",
+    "lib/stories/san-francisco-fog.ts": "3f1b200892c43d61b50a56893ed08ee2373ab278024081acc8b824e480b824fe",
+    "lib/stories/trent-affair.ts": "63ec6d312b62111a6434f6278414fcf4991088fd45cf6f8adc87b9011b162937",
+    "lib/stories/types.ts": "9b25fb677fff9291da557da71d5ed4202a002852afbfeca989247073fd905bd2",
+    "lib/stories/venezuelan-crisis.ts": "22f834fbf17d1fa005c39e673fb4e4d5d4863062dd12f04aba2eb0f55156fdc2"
+  },
+  "retainedSourceSha256": {
+    "e2e/browser/readers.spec.ts": "ff519bb89378237807e2d7b87d911c9978e920d051d1ce66f851b33d2974bcc9",
+    "e2e/ops-refunds.test.mjs": "47dc1c1d481beff8beb5a3badc37327c1190bb528516e238d4576abebe194ccc",
+    "workers/ops/index.js": "0a69e1ed942f4bbe3532e898c445f8ed56d3408ad68d41ba79866c393ae47cb7",
+    "workers/ops/policy.js": "290ff6d289208db4ec2a0e98f83dc78f67487c6b3d388775e28b487c7017c5f3",
+    "workers/ops/policy.test.js": "3dea2f765ba93470e448cdc30d33eafd6af7d7c2c62ab031c206bf606961187f",
+    "lib/ads.test.mts": "fb9cfc7e90ab0dc34d86571c7738f0d57cef8829b226003b57cffd09028efbf2",
+    "package.json": "a92dc4cad0df7a82e8db6e6ee2665338081f499a1704570b1f6891ff8c02adc3",
+    "package-lock.json": "969f489d028b7151c24525e89191569a0d06f518b640d4ae96f394cfa06be54c",
+    "playwright.config.ts": "8f34028dd6330d5f8c882525bd080c4c215911bfcf6dddec1795c5c8c34f4405"
+  },
+  "sourceFreeze": {
+    "startedAt": "2026-10-31T05:49:23.100090+00:00",
+    "endedAt": "2026-10-31T05:50:00.043360+00:00",
+    "trackedSourceUnchanged": true,
+    "fullBeforeManifestSha256": "aef66a660c25a8d24d78d9233b9212e65f0620c0f6db8223f9c8846f868622c6",
+    "fullAfterManifestSha256": "aef66a660c25a8d24d78d9233b9212e65f0620c0f6db8223f9c8846f868622c6"
+  },
+  "scope": [
+    "lib/stories/*.ts",
+    ".github/workflows/cloudflare-static-export.yml",
+    "docs/audits/2026-10-31-era/README.md",
+    "docs/audits/2026-10-31-era/receipt.json",
+    "docs/HUB.md"
+  ],
+  "exclusions": [
+    "Refund implementation and tests",
+    "FAQ, RSS and ads coverage",
+    "Production deployment",
+    "Provider or payment mutations"
+  ],
+  "acceptance": [
+    "No remaining production EraId or era readers",
+    "15 native, 4 local refund HTTP, and 12 browser cases pass",
+    "Lint, route type generation, typecheck, static build, output contract, Cloudflare dry run pass",
+    "Independent root review before source integration"
+  ],
+  "candidates": [
+    {
+      "name": "EraId and Story.era metadata",
+      "locations": [
+        "lib/stories/types.ts:29",
+        "lib/stories/types.ts:36",
+        "lib/stories/index.ts:15",
+        "14 story files:8"
+      ],
+      "detectableFailure": "No executable behavior; obsolete data still required every new story to select an era.",
+      "nonTestCallers": "None. Current homepage, archive and story articles use storyCollections.",
+      "strongerProof": "e2e/browser/readers.spec.ts:33 archive search, collections, and reset help readers find a story; desktop and mobile browser execution",
+      "history": "8f808ab PR27 introduced era grouping. 38bfb4c PR29 removed story.era from app/page.tsx.",
+      "contract": "Private application package; no external SDK or stored era data contract found.",
+      "deletion": "EraId type, Story.era property, import/reexport and 14 literals",
+      "risk": "Low: unused internal content metadata.",
+      "validation": "npm run typecheck && npm run build && npm run test:e2e"
+    },
+    {
+      "name": "Verify static output: generic story count",
+      "location": ".github/workflows/cloudflare-static-export.yml:60",
+      "detectableFailure": "Fails when no story HTML file exists.",
+      "nonTestCallers": "Runs only in the pull-request static-export job.",
+      "strongerProof": "Immediately preceding test -f out/stories/pig-war-san-juan.html already establishes a story HTML file. Browser cases open and navigate story routes.",
+      "history": "650d9ca introduced the exact Pig War artifact check. The generic count originated in 07c9282.",
+      "deletion": "One redundant shell assertion. No support seam.",
+      "risk": "Low: the stronger exact path check remains.",
+      "validation": "Run retained static output block and Cloudflare bundle dry run."
+    }
+  ],
+  "runtime": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "node": "v22.23.3",
+    "npm": "10.9.9",
+    "pathPrefix": "/opt/homebrew/opt/node@22/bin",
+    "dependencyInstall": "npm ci --no-audit --no-fund",
+    "lockfileUnchanged": true,
+    "browserTarget": "http://127.0.0.1:4322",
+    "refundTarget": "local Miniflare HTTP; synthetic provider responses"
+  },
+  "checks": [
+    {
+      "name": "native",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "startedAt": "2026-10-31T05:49:23.360747+00:00",
+      "log": "native.log",
+      "endedAt": "2026-10-31T05:49:23.645602+00:00",
+      "exitCode": 0,
+      "logSha256": "2ee7fd78d11c3f57f6b246f551e4957fe3e41515e964f66f380779491f5b6e6c",
+      "result": "15 passed; no failures or skips"
+    },
+    {
+      "name": "refunds-http",
+      "command": [
+        "npm",
+        "run",
+        "test:e2e:refunds"
+      ],
+      "startedAt": "2026-10-31T05:49:23.646050+00:00",
+      "log": "refunds-http.log",
+      "endedAt": "2026-10-31T05:49:25.466661+00:00",
+      "exitCode": 0,
+      "logSha256": "a80330368aaea4b72495c3ecb6be49cc548151785756f368ea1d83b303e9ad15",
+      "result": "4 passed; no failures or skips"
+    },
+    {
+      "name": "lint",
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "startedAt": "2026-10-31T05:49:25.467162+00:00",
+      "log": "lint.log",
+      "endedAt": "2026-10-31T05:49:31.410234+00:00",
+      "exitCode": 0,
+      "logSha256": "3a189cb602fd8fc3ebe23d358e8669dff69f27252c244f56d1c55ae7c88a4665",
+      "result": "passed"
+    },
+    {
+      "name": "typegen",
+      "command": [
+        "npx",
+        "next",
+        "typegen"
+      ],
+      "startedAt": "2026-10-31T05:49:31.410895+00:00",
+      "log": "typegen.log",
+      "endedAt": "2026-10-31T05:49:33.854348+00:00",
+      "exitCode": 0,
+      "logSha256": "adba4af9194e10e47dda75ff0fd0f8c2b756474896d0eba5612799c527ff372a",
+      "result": "passed"
+    },
+    {
+      "name": "typecheck",
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "startedAt": "2026-10-31T05:49:33.854757+00:00",
+      "log": "typecheck.log",
+      "endedAt": "2026-10-31T05:49:35.322956+00:00",
+      "exitCode": 0,
+      "logSha256": "39d0e8f7d1d3262f4da5a934bddec52eb2ee0324a569d2e1a01415624154d281",
+      "result": "passed"
+    },
+    {
+      "name": "build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "startedAt": "2026-10-31T05:49:35.323498+00:00",
+      "log": "build.log",
+      "endedAt": "2026-10-31T05:49:47.353087+00:00",
+      "exitCode": 0,
+      "logSha256": "c803c23c92eafb728c3befb32932d9004f2a9f790d3deaec98de09eb237f8438",
+      "result": "passed; static export generated"
+    },
+    {
+      "name": "browser",
+      "command": [
+        "npm",
+        "run",
+        "test:e2e"
+      ],
+      "startedAt": "2026-10-31T05:49:47.354106+00:00",
+      "log": "browser.log",
+      "endedAt": "2026-10-31T05:49:55.660710+00:00",
+      "exitCode": 0,
+      "logSha256": "42be7ddb898dee830efd2bc04b6e9684e7f314ba0a8dbfaa62a4b76bc26368c8",
+      "result": "12 passed; no failures, skips or retries"
+    },
+    {
+      "name": "static-bundle",
+      "command": [
+        "npx",
+        "--yes",
+        "wrangler@4.135.0",
+        "deploy",
+        "--dry-run",
+        "--outdir",
+        "/Users/andyzhou/dev/.audit-evidence/2026-10-31/almostlore/era/era-static-bundle"
+      ],
+      "startedAt": "2026-10-31T05:49:55.661517+00:00",
+      "log": "static-bundle.log",
+      "endedAt": "2026-10-31T05:50:00.003989+00:00",
+      "exitCode": 0,
+      "logSha256": "284a86ba295a6a2213daba98bd88e795c2b3785aaf87493a1e22357720397349",
+      "result": "passed; dry run only, 215 asset files"
+    },
+    {
+      "name": "static-output",
+      "command": [
+        "bash",
+        "/Users/andyzhou/dev/.audit-evidence/2026-10-31/almostlore/era/static-output.sh"
+      ],
+      "startedAt": "2026-10-31T05:50:15.689697+00:00",
+      "log": "static-output.log",
+      "scriptSha256": "cad1baeef15c33ef8d95676de430cb935a53f88cd6e973e3f8fe0ec88f8641bb",
+      "endedAt": "2026-10-31T05:50:15.717909+00:00",
+      "exitCode": 0,
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": "passed; all retained artifact assertions"
+    }
+  ],
+  "evidenceDirectory": "/Users/andyzhou/dev/.audit-evidence/2026-10-31/almostlore/era",
+  "additionalEvidence": {
+    "candidate.json": "991d7fa40a662fd5c72ac7a5f0f906f5056564d1e1dddcd2944cecf287c5d7c7",
+    "era-caller-before.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "era-history.txt": "149886df3531a524b82a86b82dda7e07f11e51f45d6789d9996449680488db8d",
+    "era-caller-after.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "npm-ci.log": "397104e85f63a9e13c051507045b102b5828e0abc82e8eab392621071a1e8273",
+    "source.patch": "fd658c4f5f0aefb65a5b55ef37dbff3d67c84f77e07ea6209f272e95b4382fc6",
+    "source-numstat.txt": "54363240c25b45c4eaead0411617c974f2cfd6cadf6da3f7e8cdcd3ad2486d5d",
+    "static-output.sh": "cad1baeef15c33ef8d95676de430cb935a53f88cd6e973e3f8fe0ec88f8641bb"
+  },
+  "diffCheck": "passed",
+  "lineDelta": {
+    "production": {
+      "added": 2,
+      "removed": 19,
+      "net": -17
+    },
+    "tooling": {
+      "added": 0,
+      "removed": 1,
+      "net": -1
+    },
+    "testFiles": {
+      "added": 0,
+      "removed": 0,
+      "net": 0
+    }
+  },
+  "retainedCoverage": [
+    "Archive search, collections and reset on desktop and mobile",
+    "FAQ visible content and published structured-data parity",
+    "RSS failed-navigation regression",
+    "Ads configuration, consent, parser and seller-file contracts",
+    "Refund download refusal and persisted reconciliation through local HTTP"
+  ],
+  "review": {
+    "provider": "OpenAI Codex",
+    "session": "/root/lore_audit_completion",
+    "sourceDiffSha256": "fd658c4f5f0aefb65a5b55ef37dbff3d67c84f77e07ea6209f272e95b4382fc6",
+    "scope": "Independent correctness and requirements review of the complete source diff, callers, history and unchanged tests.",
+    "sourceFindings": [],
+    "documentationReview": "completed; no findings",
+    "evidenceReview": "Matched 43 recorded hashes to disk; inspected native, refund HTTP, browser and bundle logs and the retained static-output script.",
+    "reviewCompletedAt": "2026-10-31T05:51:48.361985+00:00"
+  },
+  "documentationStyle": {
+    "files": [
+      "docs/audits/2026-10-31-era/README.md",
+      "docs/HUB.md"
+    ],
+    "checksSatisfied": 10,
+    "review": "Human-language review against the ten shared checks; exact identifiers and commands retained.",
+    "exceptions": []
+  },
+  "completionBoundary": "source integration; delegate hands off a verified local commit",
+  "pullRequest": "pending root publication; refund PR34 is background only",
+  "background": [
+    "https://github.com/laqaer/almost-lore/issues/22",
+    "https://github.com/laqaer/almost-lore/pull/34"
+  ],
+  "hostedChecks": "not run for this cleanup",
+  "integration": "pending root review and publication",
+  "deployment": "not performed",
+  "runtimeAcceptance": "production not verified; local browser and Worker checks passed",
+  "portablePacketValidator": "not installed in this repository; native evidence retained",
+  "cost": {
+    "model": "unknown",
+    "agentCompute": "unknown",
+    "CI": "unknown"
+  }
+}

@@ -12,9 +12,9 @@ import { poyaisStory } from "@/lib/stories/poyais";
 import { sanFranciscoFogStory } from "@/lib/stories/san-francisco-fog";
 import { trentAffairStory } from "@/lib/stories/trent-affair";
 import { venezuelanCrisisStory } from "@/lib/stories/venezuelan-crisis";
-import type { EraId, Story } from "@/lib/stories/types";
+import type { Story } from "@/lib/stories/types";
 
-export type { EraId, Story };
+export type { Story };
 
 export const stories: Story[] = [
   poyaisStory,

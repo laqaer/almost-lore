@@ -5,7 +5,6 @@ export const balloonStory: Story = {
   title: "One hundred and ten miles of Atlantic",
   dek: "In July 1978, Zanussi carried two men almost across the Atlantic. A leak, a storm, and about 110 miles of remaining ocean kept them from the record.",
   hook: "They crossed most of an ocean. About 110 miles kept them from the record.",
-  era: "1900-onward",
   yearLabel: "July 1978",
   published: "2026-09-11",
   updated: "2026-10-28",

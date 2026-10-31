@@ -5,7 +5,6 @@ export const venezuelanCrisisStory: Story = {
   title: "The Venezuela crisis that threatened a wider war",
   dek: "In 1895, an argument over British Guiana’s boundary brought a threat from Washington. A treaty eased the crisis. Its map did not settle the dispute.",
   hook: "A line on a South American map brought a threat from the White House.",
-  era: "1800s",
   yearLabel: "1895–1899",
   published: "2026-09-26",
   updated: "2026-10-28",

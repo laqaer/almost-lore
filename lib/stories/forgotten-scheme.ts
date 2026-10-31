@@ -5,7 +5,6 @@ export const forgottenSchemeStory: Story = {
   title: "The subway that ran one block",
   dek: "In 1870, Alfred Ely Beach sent passengers beneath Broadway in a car moved by air. The demonstration worked. The larger subway he imagined never followed.",
   hook: "One car. One block. A giant blower. New York’s future arrived early and stayed small.",
-  era: "1800s",
   yearLabel: "1869–1873",
   published: "2026-09-11",
   updated: "2026-10-28",

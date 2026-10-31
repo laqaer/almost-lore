@@ -5,7 +5,6 @@ export const poyaisStory: Story = {
   title: "Poyais: the country that existed on paper",
   dek: "Gregor MacGregor sold land, banknotes, and government posts in a country that did not exist. Then the settlers arrived.",
   hook: "The banknotes were real. The capital was not.",
-  era: "1800s",
   yearLabel: "1822–1823",
   published: "2026-09-11",
   updated: "2026-10-29",

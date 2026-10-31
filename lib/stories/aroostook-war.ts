@@ -5,7 +5,6 @@ export const aroostookWarStory: Story = {
   title: "The Aroostook War: a border without a battle",
   dek: "Maine sent an armed posse into disputed forest in 1839. Arrests and military preparations followed. The Aroostook War ended at a negotiating table.",
   hook: "They could agree that a treaty had drawn the border. They could not agree where to find it.",
-  era: "1800s",
   yearLabel: "1839–1842",
   published: "2026-09-26",
   updated: "2026-10-28",

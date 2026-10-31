@@ -5,7 +5,6 @@ export const darienStory: Story = {
   title: "The Darien scheme: Scotland’s ruinous shortcut",
   dek: "Five ships sailed to build a Scottish trading colony in 1698. When the next expedition arrived, the settlement had already been abandoned.",
   hook: "The second fleet was already at sea when the first colony gave up.",
-  era: "before-1800",
   yearLabel: "1698–1700",
   published: "2026-09-25",
   updated: "2026-10-29",

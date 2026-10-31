@@ -5,7 +5,6 @@ export const carolineAffairStory: Story = {
   title: "The Caroline affair: a burning ship, an unsteady peace",
   dek: "A British raid burned an American steamer on the Niagara in 1837. One man died. Years later, a murder trial threatened the peace again.",
   hook: "The fire lasted a night. The diplomatic danger lasted years.",
-  era: "1800s",
   yearLabel: "1837–1842",
   published: "2026-09-26",
   updated: "2026-10-28",
