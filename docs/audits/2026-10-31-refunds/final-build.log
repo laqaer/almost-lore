@@ -1,0 +1,47 @@
+
+> almost-lore@1.0.0 build
+> next build
+
+▲ Next.js 16.3.4 (Turbopack)
+✓ Running next.config.ts took 16ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.5s
+  Running TypeScript ...
+  Finished TypeScript in 825ms ...
+  Collecting page data using 9 workers ...
+  Generating static pages using 9 workers (0/32) ...
+  Generating static pages using 9 workers (8/32) 
+  Generating static pages using 9 workers (16/32) 
+  Generating static pages using 9 workers (24/32) 
+✓ Generating static pages using 9 workers (32/32) in 359ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ○ /ads.txt
+├ ○ /contact
+├ ○ /dossier
+├ ○ /dossier/thanks
+├ ○ /feed.xml
+├ ○ /friends
+├ ○ /icon.svg
+├ ○ /now
+├ ○ /opengraph-image
+├ ○ /privacy
+├ ○ /robots.txt
+├ ○ /sitemap.xml
+├   /stories/[slug]
+│ ├ ● /stories/poyais-invented-country
+│ ├ ● /stories/aqua-tofana-myth-vs-record
+│ ├ ● /stories/balloon-almost-atlantic
+│ └ ● [+11 more paths]
+├ ○ /support
+└ ○ /terms
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+

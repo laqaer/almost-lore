@@ -2,6 +2,17 @@
 
 Updated: 2026-10-31
 
+## Refund source repair, 2026-10-31
+
+The audit reproduced refunded dossier access through local HTTP. The old guard read a refund field that PaymentIntent does not contain.
+The repair reads the expanded Charge and rejects refunds or unknown refund evidence.
+All four local HTTP cases and all 15 existing cases pass. The browser suite passes all 12 desktop/mobile checks.
+See the [refund audit and verification receipt](../docs/audits/2026-10-31-refunds/README.md).
+
+This is source verification. The ops Worker has not been deployed by this audit, and production refund handling remains unverified.
+The owner purchase in [issue #22](https://github.com/laqaer/almost-lore/issues/22) remains deferred.
+The scheduled-summary issue below remains open. Neither repair establishes E2 demand or changes its November 14 evaluation date.
+
 ## Scheduled-run Evidence Gap, 2026-10-31
 
 The production check now fails because the latest summary comes from a webhook, not cron. The failure does not establish a scheduled-job outage.

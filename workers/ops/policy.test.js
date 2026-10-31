@@ -23,7 +23,7 @@ function paidSession(overrides = {}) {
     metadata: { product: PRODUCT_ID },
     payment_intent: {
       amount_received: PRICE_CENTS,
-      amount_refunded: 0,
+      latest_charge: { object: "charge", amount_refunded: 0 },
       status: "succeeded",
     },
     ...overrides,
@@ -40,7 +40,7 @@ test("a paid live session for this product can be delivered", () => {
 test("delivery fails closed on amount, mode, refund, and an unexpanded intent", () => {
   assert.equal(assessCheckoutSession(paidSession({ amount_total: 100 }), { livemode: true }).ok, false);
   assert.equal(
-    assessCheckoutSession(paidSession({ payment_intent: { amount_refunded: 900, status: "succeeded" } }), {
+    assessCheckoutSession(paidSession({ payment_intent: { latest_charge: { object: "charge", amount_refunded: 900 }, status: "succeeded" } }), {
       livemode: true,
     }).reason,
     "refunded",
@@ -57,7 +57,7 @@ test("test-mode payments are counted apart from live cash", () => {
     paidSession(),
     paidSession({ livemode: false }),
     paidSession({
-      payment_intent: { amount_received: PRICE_CENTS, amount_refunded: 900, status: "succeeded" },
+      payment_intent: { amount_received: PRICE_CENTS, latest_charge: { object: "charge", amount_refunded: 900 }, status: "succeeded" },
     }),
   ]);
   assert.equal(totals.livePaidCount, 1);

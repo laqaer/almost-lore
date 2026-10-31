@@ -35,7 +35,16 @@ Another agent can restart from `ops/STATE.md`, `ops/LEDGER.md`, and `ops/EXPERIM
 
 ## When Stripe is connected
 
-Put the secret on the worker, not in git. Use a webhook signing secret on `POST /stripe/webhook`. Run one test-mode purchase and confirm the download works and the ledger’s `testPaidCount` moves while `liveCashCents` stays 0. Do not count that purchase as demand. Then a live key is what turns the button on for real cards. Refunds are requested on `/support` and issued in Stripe. The download function refuses a session with `amount_refunded > 0`.
+Put the secret on the worker, not in git. Use a webhook signing secret on `POST /stripe/webhook`.
+With the required payment authorization, verify a test purchase and its download. Confirm that `testPaidCount` changes while `liveCashCents` stays zero.
+Do not count that purchase as demand. A live key enables checkout for real cards.
+Customers request refunds through `/support`. The owner issues refunds in Stripe.
+
+The download guard reads `payment_intent.latest_charge.amount_refunded` from the expanded Charge.
+Any positive refund amount blocks delivery, including partial refunds. Missing or invalid Charge evidence also blocks delivery.
+Reconciliation requests the same nested evidence for each listed session.
+Run `npm run test:e2e:refunds` to check these routes with local synthetic data.
+See the [refund audit](../docs/audits/2026-10-31-refunds/README.md) for source verification and the production boundary.
 
 ## Delivered in the SEO + ads pass (2026-09-27)
 

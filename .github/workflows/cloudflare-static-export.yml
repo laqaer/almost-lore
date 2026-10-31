@@ -23,6 +23,8 @@ jobs:
           cache: npm
       - run: npm ci --no-audit --no-fund
       - run: npm test
+      - name: Verify refund access and reconciliation through local HTTP
+        run: npm run test:e2e:refunds
       - run: npm run lint
       - name: Generate Next.js route types
         run: npx next typegen

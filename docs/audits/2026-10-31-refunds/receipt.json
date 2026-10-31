@@ -1,0 +1,117 @@
+{
+  "recordedAt": "2026-10-31T05:44:16.087694+00:00",
+  "repository": "laqaer/almost-lore",
+  "base": "e9825c66e2f5ae5914150caa732cae655f3e4d71",
+  "sourceState": "uncommitted implementation files; hashes below bind this receipt",
+  "sha256": {
+    "workers/ops/index.js": "0a69e1ed942f4bbe3532e898c445f8ed56d3408ad68d41ba79866c393ae47cb7",
+    "workers/ops/policy.js": "290ff6d289208db4ec2a0e98f83dc78f67487c6b3d388775e28b487c7017c5f3",
+    "workers/ops/policy.test.js": "3dea2f765ba93470e448cdc30d33eafd6af7d7c2c62ab031c206bf606961187f",
+    "e2e/ops-refunds.test.mjs": "47dc1c1d481beff8beb5a3badc37327c1190bb528516e238d4576abebe194ccc",
+    "package.json": "a92dc4cad0df7a82e8db6e6ee2665338081f499a1704570b1f6891ff8c02adc3",
+    "package-lock.json": "969f489d028b7151c24525e89191569a0d06f518b640d4ae96f394cfa06be54c"
+  },
+  "runtime": {
+    "node": "/opt/homebrew/opt/node@22/bin/node v22.23.3",
+    "miniflare": "4.20260730.0",
+    "workerd": "1.20260730.1",
+    "compatibilityDate": "2026-07-30",
+    "platform": "Darwin arm64"
+  },
+  "checks": [
+    {
+      "command": "PATH=/opt/homebrew/opt/node@22/bin:$PATH npm run test:e2e:refunds",
+      "result": "baseline 1 pass / 3 intended failures",
+      "log": "refunds-baseline.log",
+      "provenance": "refunds-baseline-provenance.txt"
+    },
+    {
+      "command": "PATH=/opt/homebrew/opt/node@22/bin:$PATH npm run test:e2e:refunds",
+      "result": "fixed 4 pass / 0 fail",
+      "log": "refunds-fixed.log"
+    },
+    {
+      "command": "PATH=/opt/homebrew/opt/node@22/bin:$PATH npm test",
+      "result": "15 pass / 0 fail",
+      "log": "refunds-existing-tests.log"
+    },
+    {
+      "command": "PATH=/opt/homebrew/opt/node@22/bin:$PATH npm exec -- eslint workers/ops/index.js workers/ops/policy.js workers/ops/policy.test.js e2e/ops-refunds.test.mjs",
+      "result": "pass",
+      "log": "refunds-lint.log"
+    },
+    {
+      "command": "git diff --check",
+      "result": "pass"
+    },
+    {
+      "command": "npm run lint",
+      "result": "pass",
+      "log": "final-lint.log"
+    },
+    {
+      "command": "npx next typegen",
+      "result": "pass",
+      "log": "final-typegen.log"
+    },
+    {
+      "command": "npm run typecheck",
+      "result": "pass",
+      "log": "final-typecheck.log"
+    },
+    {
+      "command": "npm run build",
+      "result": "pass",
+      "log": "final-build.log"
+    },
+    {
+      "command": "npm run test:e2e",
+      "result": "12 pass; zero skips/retries",
+      "log": "final-browser.log"
+    },
+    {
+      "command": "npx --yes wrangler@4.135.0 deploy --dry-run --outdir <evidence>/static-bundle",
+      "result": "pass; static site bundle only, no deployment",
+      "log": "final-dry-run.log"
+    }
+  ],
+  "boundary": "local Worker HTTP runtime; Stripe and site calls use fetch-boundary fixtures with external network disabled",
+  "limitations": [
+    "No deployment or provider mutation occurred.",
+    "Any positive refund excludes the session from paid cash; remaining partial-refund cash is not calculated.",
+    "No new unit tests or production test seams were added.",
+    "Independent integration review is owned by parent agent."
+  ],
+  "cost": {
+    "model": "unknown",
+    "agentCompute": "unknown",
+    "CI": "pending"
+  },
+  "completionBoundary": "source integration",
+  "owningIssue": "https://github.com/laqaer/almost-lore/issues/22#issuecomment-6539652801",
+  "review": {
+    "provider": "OpenAI Codex",
+    "session": "/root/refund_contract_review",
+    "executed": "read-only inspection, provider contract review, lock comparison, hashes, diff check",
+    "finding": "Qualify ledger refund count as otherwise eligible sessions.",
+    "disposition": "Corrected ops/LEDGER.md; no correctness blockers.",
+    "documentationStyle": "At least eight of ten checks satisfied; exact commands and historical evidence retained."
+  },
+  "logSha256": {
+    "refunds-baseline.log": "e4934b52aecfd32321c5730e9ab9f356464c3422e95b2abac06acd67ff1f8768",
+    "refunds-baseline-provenance.txt": "055b83aa2ed45d2c2ba5670e8d4a1cfc35c038048a58010b9ba83a7befead624",
+    "refunds-fixed.log": "f13b629462a4dfd19f6dcd1b2434a5076d28b2aba7309f20636e8a4fac8cc04e",
+    "refunds-existing-tests.log": "ecaf66abf09be91f908d0968607b3bcf98d7ba51d2f0d03ce396443a6cfbf99c",
+    "final-lint.log": "3a189cb602fd8fc3ebe23d358e8669dff69f27252c244f56d1c55ae7c88a4665",
+    "final-typegen.log": "adba4af9194e10e47dda75ff0fd0f8c2b756474896d0eba5612799c527ff372a",
+    "final-typecheck.log": "39d0e8f7d1d3262f4da5a934bddec52eb2ee0324a569d2e1a01415624154d281",
+    "final-build.log": "cf32df6ebd576f0002fc97174a0c1fdc488ad38a641cdeadc9aaf00d84784bf7",
+    "final-browser.log": "3fba17efdf95cab35adf01dc5886d613eb25ab35641ecdacdfd6cfae3b4c6576",
+    "final-dry-run.log": "e72e1c483a17587e8de1472362b323547b1eb9ea9f9fc0c54e9d14d9783e5139"
+  },
+  "hostedChecks": "pending PR",
+  "integration": "pending",
+  "deployment": "not performed",
+  "runtimeAcceptance": "not verified",
+  "portablePacketValidator": "not installed in this repository; native evidence retained"
+}
