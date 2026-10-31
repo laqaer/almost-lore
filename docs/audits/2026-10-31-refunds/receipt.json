@@ -95,7 +95,8 @@
     "executed": "read-only inspection, provider contract review, lock comparison, hashes, diff check",
     "finding": "Qualify ledger refund count as otherwise eligible sessions.",
     "disposition": "Corrected ops/LEDGER.md; no correctness blockers.",
-    "documentationStyle": "At least eight of ten checks satisfied; exact commands and historical evidence retained."
+    "documentationStyle": "At least eight of ten checks satisfied; exact commands and historical evidence retained.",
+    "evidenceFinding": "Focused lint log reference lacked a retained file. Added the actual empty successful log and its hash."
   },
   "logSha256": {
     "refunds-baseline.log": "e4934b52aecfd32321c5730e9ab9f356464c3422e95b2abac06acd67ff1f8768",
@@ -107,11 +108,14 @@
     "final-typecheck.log": "39d0e8f7d1d3262f4da5a934bddec52eb2ee0324a569d2e1a01415624154d281",
     "final-build.log": "cf32df6ebd576f0002fc97174a0c1fdc488ad38a641cdeadc9aaf00d84784bf7",
     "final-browser.log": "3fba17efdf95cab35adf01dc5886d613eb25ab35641ecdacdfd6cfae3b4c6576",
-    "final-dry-run.log": "e72e1c483a17587e8de1472362b323547b1eb9ea9f9fc0c54e9d14d9783e5139"
+    "final-dry-run.log": "e72e1c483a17587e8de1472362b323547b1eb9ea9f9fc0c54e9d14d9783e5139",
+    "refunds-lint.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "hostedChecks": "pending PR",
   "integration": "pending",
   "deployment": "not performed",
   "runtimeAcceptance": "not verified",
-  "portablePacketValidator": "not installed in this repository; native evidence retained"
+  "portablePacketValidator": "not installed in this repository; native evidence retained",
+  "testedCommit": "6f7f46ac87c9252582571434e40f236131dcff49",
+  "pullRequest": "https://github.com/laqaer/almost-lore/pull/34"
 }

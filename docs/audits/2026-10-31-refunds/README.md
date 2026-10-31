@@ -3,6 +3,7 @@
 The download guard read `amount_refunded` from PaymentIntent. Stripe defines that field on Charge.
 The existing fixtures copied the incorrect shape, so their passing results did not establish refund refusal.
 The owner authorized fixture correction and local repair on October 31.
+Source revision: `6f7f46ac87c9252582571434e40f236131dcff49`. Integration: [PR #34](https://github.com/laqaer/almost-lore/pull/34).
 See [issue #22](https://github.com/laqaer/almost-lore/issues/22#issuecomment-6539652801).
 
 ## Contract and repair
