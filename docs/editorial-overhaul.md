@@ -94,3 +94,20 @@ The [Vercel deployment](https://vercel.com/laqaers-projects/almost-lore/EjFPrjTQ
 `npm run indexnow` submitted 23 public URLs after acceptance. IndexNow returned HTTP 200.
 Submission acceptance does not establish indexing or traffic growth. No social post has been published.
 This release does not verify payment completion or paid download delivery.
+
+## Chrome cleanup, 2026-11-01
+
+The October record above still describes that release. Current pages no longer draw the compass, the plate edge, or the short rust rules on headings.
+
+The shared chrome drops these tells:
+
+- Tight tracking on Fraunces titles.
+- Italic used as decoration in the masthead, the home lines, the footer, and the story margin.
+- The boxed cover label, the numbered shortlist kickers, and the year chip on each archive image. The year stays in the card kicker.
+- The front-page fade-in, the compass stroke, and the drawn rules.
+- The four-stop cover scrim. One dark veil remains so the title stays readable on the photograph.
+- Filled filter chips. The same collection buttons remain. The selected one is underlined.
+
+Fraunces still sets titles. Newsreader still sets essays. Hairline rules still separate the nav, the shortlist, the sources, and the footer. Reading progress, page transitions, and the image hover stay. The story breadcrumb, source notes, further reading, questions, and ads markup stay. Essay text is unchanged.
+
+If this decorative chrome comes back, or if the deploy of this change is broken, revert it by 2026-12-01. This note does not deploy the site and does not submit IndexNow.

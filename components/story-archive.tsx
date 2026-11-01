@@ -15,7 +15,7 @@ export function StoryArchive({ stories }: { stories: StoryPreview[] }) {
   return (
     <section id="stories" className="story-archive" aria-label="Story archive">
       <div className="section-heading">
-        <div><p className="kicker">Follow your curiosity</p><h2>The story collection<span className="heading-dot">.</span></h2></div>
+        <div><p className="kicker">Follow your curiosity</p><h2>The story collection.</h2></div>
         <p>Extraordinary events.<br /> The records to back them up.</p>
       </div>
       <div className="archive-controls">

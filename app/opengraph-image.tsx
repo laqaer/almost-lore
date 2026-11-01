@@ -26,7 +26,7 @@ export default function OpenGraphImage() {
           style={{
             display: "flex",
             fontSize: 22,
-            letterSpacing: "0.18em",
+            letterSpacing: "0.06em",
             textTransform: "uppercase",
             color: "#d4a08c",
           }}
@@ -39,7 +39,7 @@ export default function OpenGraphImage() {
               fontSize: 62,
               fontWeight: 500,
               lineHeight: 1.12,
-              letterSpacing: "-0.03em",
+              letterSpacing: "0",
               maxWidth: 980,
             }}
           >
