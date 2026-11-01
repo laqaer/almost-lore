@@ -12,7 +12,6 @@
   --color-ink-faint: #656b5d;
   --color-rule: #d6d7c9;
   --color-rust: #9d4d2d;
-  --color-rust-soft: #f0e3d4;
   --color-teal: #285c49;
   --max-width-measure: 68ch;
 }
@@ -32,7 +31,6 @@ input, textarea, select { caret-color: var(--color-teal); }
     --color-ink-faint: #bac5b4;
     --color-rule: #465346;
     --color-rust: #e9b28b;
-    --color-rust-soft: #3b3025;
     --color-teal: #b9d5ad;
     color-scheme: dark;
   }
@@ -40,14 +38,13 @@ input, textarea, select { caret-color: var(--color-teal); }
 }
 
 .folio { width: min(68ch, calc(100% - 2.5rem)); margin-inline: auto; padding-block: 3.25rem 4.5rem; }
-.folio-title { font-family: var(--font-display); font-weight: 500; font-size: clamp(2.15rem, 5vw, 3.35rem); letter-spacing: -.04em; line-height: 1.08; text-wrap: balance; color: var(--color-ink); }
+.folio-title { font-family: var(--font-display); font-weight: 500; font-size: clamp(2.15rem, 5vw, 3.35rem); line-height: 1.08; text-wrap: balance; color: var(--color-ink); }
 .colophon { display: flex; flex-wrap: wrap; align-items: baseline; margin-top: .95rem; font-size: .875rem; color: var(--color-ink-faint); }
 .colophon span + span::before { content: "·"; margin-inline: .45rem; color: var(--color-rust); }
 
 .prose-lore, .prose-page { color: var(--color-ink-soft); font-family: var(--font-serif); font-size: 1.125rem; line-height: 1.7; }
 .prose-lore > * + *, .prose-page > * + * { margin-top: 1.35rem; }
-.prose-lore h2, .prose-page h2 { margin-top: 2.4rem; margin-bottom: .85rem; color: var(--color-ink); font-family: var(--font-display); font-size: clamp(1.55rem, 2.4vw, 1.9rem); font-weight: 500; letter-spacing: -.02em; line-height: 1.2; text-wrap: balance; }
-.prose-lore h2::before, .prose-page h2::before { content: ""; display: block; width: 2.25rem; height: 1px; margin-bottom: .7rem; background: var(--color-rust); }
+.prose-lore h2, .prose-page h2 { margin-top: 2.4rem; margin-bottom: .85rem; color: var(--color-ink); font-family: var(--font-display); font-size: clamp(1.55rem, 2.4vw, 1.9rem); font-weight: 500; line-height: 1.2; text-wrap: balance; }
 .prose-lore p, .prose-page p { text-wrap: pretty; }
 .prose-lore p + p { margin-top: 1.15rem; }
 .prose-lore > section:first-child > p:first-of-type::first-letter { float: left; padding: .12em .08em 0 0; color: var(--color-ink); font-family: var(--font-display); font-size: 4.5rem; font-weight: 500; line-height: .72; }
@@ -77,18 +74,4 @@ input, textarea, select { caret-color: var(--color-teal); }
 @keyframes page-out { to { opacity: 0; } }
 @keyframes page-in { from { opacity: 0; } }
 
-.prose-lore > section:first-child > p:first-of-type { position: relative; }
-.prose-lore > section:first-child > p:first-of-type::before { content: ""; position: absolute; top: .15rem; left: 0; width: 1.05rem; height: 1px; background: var(--color-rust); transform-origin: 0 50%; pointer-events: none; }
-.prose-lore h2::before, .prose-page h2::before { transform-origin: 0 50%; }
 .static-aside, .static-aside * { animation: none; transition: none; }
-@media (prefers-reduced-motion: no-preference) {
-  .prose-lore h2::before, .prose-page h2::before { animation: rule-draw .32s cubic-bezier(.33,0,.2,1) both; }
-  .prose-lore > section:first-child > p:first-of-type::before { animation: rule-draw .34s cubic-bezier(.33,0,.2,1) both; }
-  @supports (animation-timeline: view()) {
-    .prose-lore h2::before, .prose-page h2::before { animation-timeline: view(); animation-range: entry 0% entry 25%; }
-  }
-}
-@keyframes rule-draw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
-@keyframes rule-reveal { from { transform: scaleX(1); } to { transform: scaleX(0); } }
-@keyframes compass-ring { from { stroke-dashoffset: 106.814; } to { stroke-dashoffset: 0; } }
-@keyframes compass-settle { from { transform: rotate(-16deg); } to { transform: rotate(0deg); } }

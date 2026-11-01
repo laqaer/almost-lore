@@ -111,7 +111,7 @@ export function StoryArticle({ story }: { story: Story }) {
         </div>
       </div>
       <nav aria-label="More stories" className="more-stories">
-        <div className="section-heading"><div><p className="kicker">One more rabbit hole</p><h2>Stay a little longer<span className="heading-dot">.</span></h2></div><Link href="/#stories" className="text-link">All stories <span aria-hidden="true">↗</span></Link></div>
+        <div className="section-heading"><div><p className="kicker">One more rabbit hole</p><h2>Stay a little longer.</h2></div><Link href="/#stories" className="text-link">All stories <span aria-hidden="true">↗</span></Link></div>
         <div className="archive-grid">{others.map((item) => <StoryCard key={item.slug} story={{ slug: item.slug, title: item.title, dek: item.dek, yearLabel: item.yearLabel, collection: storyCollections[item.slug], minutes: readingMinutes(item), media: storyMedia[item.slug] }} />)}</div>
       </nav>
     </article>

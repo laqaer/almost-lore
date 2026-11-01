@@ -6,7 +6,7 @@ export function SiteFooter() {
     <footer className="site-footer"><div className="shell">
       <div className="footer-main">
         <div>
-          <Link href="/" className="footer-brand">Almost Lore<span aria-hidden="true">✳</span></Link>
+          <Link href="/" className="footer-brand">Almost Lore</Link>
           <p>For the stories that fell<br />between the history books.</p>
         </div>
         <nav aria-label="Footer">

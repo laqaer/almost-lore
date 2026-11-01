@@ -18,10 +18,9 @@ export function StoryCard({ story }: { story: StoryPreview }) {
     <article className="archive-card">
       <Link className="archive-card-image" href={storyPath(story.slug)} tabIndex={-1} aria-hidden="true">
         <Image src={story.media.src} alt="" width={story.media.width} height={story.media.height} sizes="(min-width: 1000px) 30vw, (min-width: 640px) 45vw, 100vw" unoptimized />
-        <span className="image-label">{story.yearLabel}</span>
       </Link>
       <p className="card-image-credit"><a href={story.media.creditUrl} rel="noopener">{story.media.credit}</a></p>
-      <p className="kicker">{story.collection}</p>
+      <p className="kicker">{story.yearLabel} · {story.collection}</p>
       <h3><Link href={storyPath(story.slug)}>{story.title}</Link></h3>
       <p className="card-dek">{story.dek}</p>
       <p className="card-tail"><span>{story.minutes} min read</span><span aria-hidden="true">↗</span></p>

@@ -18,7 +18,7 @@ export default function HomePage() {
   return (
     <div className="shell">
       <section className="opening-line">
-        <div><p className="kicker">History took a strange turn.</p><h1>Come down the <em>rabbit hole.</em></h1></div>
+        <div><p className="kicker">History took a strange turn.</p><h1>Come down the rabbit hole.</h1></div>
         <p>Remarkable true stories, hidden in the public record.<br /> A little disbelief is a good place to begin.</p>
       </section>
       <section className="front-page" aria-label="Featured stories">
@@ -26,7 +26,6 @@ export default function HomePage() {
           <Link href={storyPath(lead.slug)} className="cover-link" aria-label="Read the Caroline affair">
             <Image src={leadMedia.src} alt={leadMedia.alt} width={leadMedia.width} height={leadMedia.height} preload sizes="(min-width: 1000px) 65vw, 100vw" unoptimized />
             <div className="cover-shade" />
-            <div className="cover-top"><span>The cover story</span><span>01 / Close calls</span></div>
             <div className="cover-copy">
               <p className="kicker">1837 · The Niagara frontier</p>
               <h2>A burning ship.<br />Two nations on the brink.</h2>
@@ -37,14 +36,14 @@ export default function HomePage() {
           <p className="cover-image-credit"><a href={leadMedia.creditUrl} rel="noopener">{leadMedia.credit}</a></p>
         </div>
         <aside id="editors-picks" className="editors-picks">
-          <div className="picks-heading"><p className="kicker">Worth getting lost in</p><h2>The editor’s shortlist<span>.</span></h2></div>
-          {picks.map((story, index) => (
+          <div className="picks-heading"><p className="kicker">Worth getting lost in</p><h2>The editor’s shortlist.</h2></div>
+          {picks.map((story) => (
             <article className="shortlist-story" key={story.slug}>
               <Link href={storyPath(story.slug)} className="shortlist-image" tabIndex={-1} aria-hidden="true">
                 <Image src={storyMedia[story.slug].src} alt="" width={storyMedia[story.slug].width} height={storyMedia[story.slug].height} unoptimized sizes="130px" />
               </Link>
               <div>
-                <p className="kicker">0{index + 1} / {storyCollections[story.slug]}</p>
+                <p className="kicker">{storyCollections[story.slug]}</p>
                 <h3><Link href={storyPath(story.slug)}>{story.title}</Link></h3>
                 <span className="read-time">{readingMinutes(story)} min read <span aria-hidden="true">↗</span></span>
               </div>
@@ -54,7 +53,7 @@ export default function HomePage() {
         </aside>
       </section>
       <div className="editorial-strip">
-        <span aria-hidden="true">✳</span><p>Stranger than fiction.<br className="mobile-break" /> <em>Grounded in the record.</em></p>
+        <p>Stranger than fiction.<br className="mobile-break" /> Grounded in the record.</p>
         <Link href="/about">How we tell these stories <span aria-hidden="true">↗</span></Link>
       </div>
       <AdSlot />
@@ -72,8 +71,8 @@ export default function HomePage() {
         </div>
       </section>
       <section className="journal-invite">
-        <span className="journal-mark" aria-hidden="true">✳</span><p className="kicker">There is always another story</p>
-        <h2>Keep a little room<br />for <em>curiosity.</em></h2>
+        <p className="kicker">There is always another story</p>
+        <h2>Keep a little room<br />for curiosity.</h2>
         <p>Follow Almost Lore in your feed reader.<br />New stories, whenever the archive gives one up.</p>
         <a href="/feed.xml" className="button-dark">Follow the journal via RSS <span aria-hidden="true">↗</span></a>
       </section>
