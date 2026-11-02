@@ -7,7 +7,7 @@ export const doggerBankStory: Story = {
   hook: "The fleet was bound for a war with Japan. Its guns found British fishing boats.",
   yearLabel: "1904–1905",
   published: "2026-09-26",
-  updated: "2026-10-28",
+  updated: "2026-11-02",
   sourcesNote:
     "This essay is original prose. The night’s sequence and the findings follow the International Commission of Inquiry’s report of 26 February 1905 on the North Sea incident, as reprinted from the public record (the commission’s English text spells the admiral Rojdestvensky). The agreement to inquire is the Anglo-Russian declaration of 25 November 1904, made on the model of the 1899 Hague Convention’s articles for commissions of inquiry. The compensation figure is the one the Prime Minister, Sir Henry Campbell-Bannerman, gave the House of Commons on 12 November 1906: £65,000. A round figure of £66,000 also circulates; it is not averaged in here. The dead men’s names follow the Hull coroner’s verdict as contemporary reports carried it: George Smith, master of the Crane, and William Leggett of her crew. Where fishermen’s memories of how long the guns fired differ from the commission’s ten to twelve minutes, both are named.",
   sections: [
@@ -57,6 +57,15 @@ export const doggerBankStory: Story = {
         "On a forum the Dogger Bank arrives as incompetence with a body count: a frightened fleet, a fishing ground, an own goal against the Aurora, an admiral who could not tell a trawler from a torpedo boat. Pieces of that are in the report. The Aurora was hit by several shots while the squadron was firing, and the fishing boats did not carry the guns to explain that. The majority did find that the boats he lit up were not Japanese. The hook’s extra claim — that the night proves a navy of fools, and that Britain almost answered with a war because the joke was too large to ignore — asks the report to stop before the courtesies. The report did not stop. It called the fire unjustified and, in the next breath, refused to call the man unfit or inhumane. That refusal is political. It is also part of the public record of how this particular almost-war was switched off.",
         "The useful near-miss is the sequence, not the sneer. A lagging transport fired at neutral steamers and told the flagship she was surrounded. The flagship met a fishing fleet and, for ten or twelve minutes by the only clock the commission would fix, treated it as the attack the message had promised. Two men died. The governments that were not at war with each other had a week in which their alliances made a larger war thinkable, and then built a commission whose job was responsibility without a battle. The squadron sailed on. In May 1905, in the straits at Tsushima, the Japanese fleet that had not been waiting on the Dogger Bank defeated it. That battle is a different story. It is only a reminder that staying out of a war with Britain was not the same thing as arriving.",
       ],
+    },
+  ],
+  furtherReading: [
+    {
+      title:
+        "The Voyage to Tsushima: Rodjdestvensky’s Russian Fleet, the Dogger Bank Incident & the Russo-Japanese War at Sea, 1904-05-From Libau to Tsushima with Two Short Accounts of the North Sea Incident",
+      author: "Eugène S. Politovsky, Walter Wood, and John Bassett Moore",
+      href: "https://www.amazon.com/dp/178282829X?tag=laqaer-20",
+      note: "Letters from the Baltic fleet, with two short accounts of the North Sea incident of October 1904.",
     },
   ],
 };

@@ -7,7 +7,7 @@ export const venezuelanCrisisStory: Story = {
   hook: "A line on a South American map brought a threat from the White House.",
   yearLabel: "1895–1899",
   published: "2026-09-26",
-  updated: "2026-10-28",
+  updated: "2026-11-02",
   sourcesNote:
     "This essay is original prose. Richard Olney’s instruction of 20 July 1895, Lord Salisbury’s replies of 26 November 1895, and Grover Cleveland’s special message of 17 December 1895 are used only in the short lines those documents print, as published in Papers Relating to the Foreign Relations of the United States for 1895. The rupture of 1887 is taken from Salisbury’s own statement of the Venezuelan notes. The commission’s letter to the President dates its appointment to 1 January 1896 and its first meeting to 4 January; a later transmittal from President McKinley dates the appointment to 4 January. Both dates stay. The names are the ones on the commission’s signature. The treaty signed at Washington on 2 February 1897 is the British Treaty Series text, including the fifty-year rule; the parliamentary cover dates the exchange of ratifications at Washington to 11 June 1897. The award of 3 October 1899 is the tribunal’s published result. A memorandum published in 1949, after Severo Mallet-Prevost’s death, alleges a political bargain; it is identified as that later allegation, not as a finding of the tribunal. The Geneva Agreement of 1966 is named only as the later instrument that recorded the controversy as still open.",
   sections: [
@@ -62,6 +62,14 @@ export const venezuelanCrisisStory: Story = {
         "The compressed line needs a bully and a blink. Olney declares the continent an American possession. Cleveland threatens war. Salisbury scoffs. A market panic brings Britain to heel. A courtroom then gives the jungle to the empire that already held it. The file is less obliging. Olney’s sentence about practical sovereignty is in the instruction, and it is as large as it sounds. Salisbury’s refusal is also in writing, and it is a refusal of a doctrine Britain had not signed, not a confession that the colony had no title worth arguing. Cleveland’s “every means” is a conditional duty he stated to his own Congress, attached to a commission that had not yet been named, about a line the United States was not a party to. The climb-down was mutual. Britain accepted an arbitration it had refused in November. The United States accepted a treaty in which an American commission’s fiat was not the rule of decision. The fifty-year rule is how occupation stayed in the case after the threat had been put away.",
         "The useful near-miss is the distance between a sentence and a war. In December 1895 two governments that were not going to land battalions on that river were willing to let a boundary they did not share become a question of national honor. They hired jurists instead. The honor survived. The line did not settle the honor, and it did not settle the neighbors. If you came for the almost-war, it is the message of 17 December and the fact that no one acted it out. The story that can survive a footnote is the one in which that message produces a treaty, a prescription rule, and a dispute that outlived every man who signed either.",
       ],
+    },
+  ],
+  furtherReading: [
+    {
+      title: "The Venezuelan Boundary Controversy",
+      author: "Grover Cleveland",
+      href: "https://www.amazon.com/dp/1313429082?tag=laqaer-20",
+      note: "Cleveland’s account of the boundary dispute between Venezuela and British Guiana, and of the American intervention in 1895.",
     },
   ],
 };
