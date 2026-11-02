@@ -7,7 +7,7 @@ export const aroostookWarStory: Story = {
   hook: "They could agree that a treaty had drawn the border. They could not agree where to find it.",
   yearLabel: "1839–1842",
   published: "2026-09-26",
-  updated: "2026-10-28",
+  updated: "2026-11-02",
   sourcesNote:
     "This essay is original prose. The 1783 highlands clause is the National Archives transcription of Article 2 of the Treaty of Paris, signed 3 September 1783. The St. Croix commission’s declaration of 25 October 1798, the Treaty of Ghent’s fifth article, the convention of 29 September 1827, the King of the Netherlands’ opinion of 10 January 1831, and the Senate’s refusal to treat that opinion as obligatory follow the historical outline transmitted with the President’s message of 20 March 1838, as printed by the American Presidency Project. Henry Fox’s note of 10 January 1838, in the same message, is the source for the statement that both governments had agreed the award bound neither party, and for the British proposal of an equal division. The February 1839 arrests, the parole, the letters of Sir John Harvey, John Fairfield, George Frederick Street, and Charles Jarvis, and the Forsyth–Fox memorandum of 27 February 1839 are taken from the President’s messages of 16 and 27 February 1839. The arrangement of 23 and 25 March 1839 is John Forsyth’s recital of 25 March 1840, which attributes it to the agency of General Winfield Scott; this essay uses that recital and has not reprinted Scott’s own March letters. Where the message of 16 February counts the land agent and two other citizens, Street’s letter of 17 February and Jarvis’s of 19 February count three, and the parole of 18 February is addressed to four men, the counts stay. The act of 3 March 1839 is United States Statutes at Large, volume 5, chapter 89. The treaty of 9 August 1842 is the Avalon Project text of the public compilation, including Article V’s three hundred thousand dollars. That compilation’s header dates the exchange of ratifications at London to 15 October 1842; a Library of Congress catalog note on an 1842 printing dates the exchange to 13 October. Both dates stay. The British day of ratification is not readable in the transcription used here, and it is not supplied. The figures 7,015 and 5,012 square miles are the Office of the Historian’s, not a sentence of the treaty. The Maine State Library’s public note is the source for the labels Bloodless War and Pork and Beans War; they are treated as labels, not as a casualty return or a ration list.",
   sections: [
@@ -72,6 +72,14 @@ export const aroostookWarStory: Story = {
         "A compressed line needs a war and a mercy. Empires march, somebody sensible holds them, the only casualty is a legend about pork and beans. The papers will not supply the battle that legend requires. They will supply a treaty article that could not be walked, an arbiter who said the article could not be satisfied and was then held to have recommended rather than decided, a land agent seized on his way to a meeting and released on parole, a solicitor-general writing from one river-mouth and a land agent answering from another, a governor’s “about 750,” and a statute whose fifty thousand volunteers existed only if the President found an invasion actual or imminent before Congress could sit. General Scott’s agency, in the recital Forsyth gave a year later, left a civil posse in the timber and the soldiers withdrawn, with each side still denying the other’s right to the ground it held.",
         "Nothing in that file is a certificate that the winter killed no one. Camps, drafts, and log works can cost lives the diplomatic notes do not itemize, and this essay will not invent a death, or a zero, to decorate the library’s label. The near-miss is the distance between Jarvis’s sentence — an approach would be hostility, and he would meet it — and the absence, in the papers Congress was given, of the approach. What ended the dispute was not a volley that failed to be fired. It was a preamble that declined to find the highlands, a conventional line, and three hundred thousand dollars for the states that assented to it.",
       ],
+    },
+  ],
+  furtherReading: [
+    {
+      title: "The Aroostook War of 1839",
+      author: "W. E. Campbell",
+      href: "https://www.amazon.com/dp/0864926782?tag=laqaer-20",
+      note: "A history of the 1839 Aroostook confrontation and the line agreed in the treaty of 1842.",
     },
   ],
 };

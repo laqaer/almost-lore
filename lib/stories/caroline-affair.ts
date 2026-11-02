@@ -7,7 +7,7 @@ export const carolineAffairStory: Story = {
   hook: "The fire lasted a night. The diplomatic danger lasted years.",
   yearLabel: "1837–1842",
   published: "2026-09-26",
-  updated: "2026-10-28",
+  updated: "2026-11-02",
   sourcesNote:
     "This essay is original prose. The 1837 facts and the 1842 notes follow Hunter Miller’s Treaties and Other International Acts of the United States of America, volume 4 (Government Printing Office, 1934), which reprints the Webster–Ashburton correspondence and extracts John Bassett Moore’s Digest for the seizure, the master’s deposition, and the later investigation. The trial account follows the Historical Society of the New York Courts summary of People v. McLeod (1841). Where the master’s first numbers and the later investigation disagree about who was missing, both are named. Where Moore dates the diplomatic turn to March 1841 and the court history dates the arrest to November 1840, both dates stay. The claim that the hull went over the falls is the claim in the early reports and in the title of Andrew Drew’s 1864 narrative; it is not treated here as a survey of the brink.",
   sections: [
@@ -59,6 +59,15 @@ export const carolineAffairStory: Story = {
         "A compressed line needs the falls. The falls are a machine for awe, and awe does not ask whether twelve men were in the hull or whether the later investigation had already reduced the missing to a dead man on the dock and a cabin boy. The line also needs a war that almost was, preferably with a match already lit. The match in this file is real and duller. A rebellion occupied an island the boundary assigned to Britain. A steamer supplied it from New York. A cutting-out party followed the steamer to the wrong shore, or to the shore the night had made the only shore, and burned it. One killing is firm. The rest of the body count is a rumor the digest itself retired.",
         "The near-miss that can survive the note is the one after the fire was out. A Canadian boasted, and New York charged him. Britain called the raid a public act and demanded a release the federal government could not order and a state court would not grant on a writ. A jury acquitted him for being at Chippewa. Two years of that, Ashburton wrote, had more than once endangered the peace. The peace was kept by an apology for the violation and a shared sentence about necessity — and by leaving unsettled the only question the sentence was written to decide.",
       ],
+    },
+  ],
+  furtherReading: [
+    {
+      title:
+        "Border Diplomacy: The Caroline and McLeod Affairs in Anglo-American-Canadian Relations, 1837-1842",
+      author: "Kenneth R. Stevens",
+      href: "https://www.amazon.com/dp/0817351582?tag=laqaer-20",
+      note: "A history of the Caroline raid of 1837, the McLeod trial, and the Webster–Ashburton notes of 1842.",
     },
   ],
 };
