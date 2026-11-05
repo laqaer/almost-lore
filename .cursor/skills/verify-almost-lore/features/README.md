@@ -47,4 +47,4 @@ Keep implementation details out of the map except where a command would otherwis
 - [Read a story](./read-story.md) covers the cover link, an archive card, images, sources, sharing, and More stories.
 - [Section pages](./section-pages.md) covers About, Contact, Now, Privacy, Terms, Support, and Friends.
 - [Working file](./working-file.md) covers the Poyais dossier page and the download page without a checkout session.
-- [Crawler files](./crawler-files.md) covers robots, sitemap, ads.txt, and the RSS feed linked from the footer.
+- [Crawler files](./crawler-files.md) covers robots, sitemap, ads.txt, the RSS feed linked from the footer, and `/llms.txt`.
