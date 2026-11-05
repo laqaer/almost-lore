@@ -13,7 +13,7 @@ Read `features/README.md`, then the feature file for the behavior under review.
 
 ## Interview (what this skill is built on)
 
-- **Surface:** browser pages and the public crawler files `/robots.txt`, `/sitemap.xml`, `/ads.txt`, and `/feed.xml`.
+- **Surface:** browser pages and the public crawler files `/robots.txt`, `/sitemap.xml`, `/ads.txt`, `/feed.xml`, and `/llms.txt`.
 - **Run:** use `npm ci`, `npm run build`, and `npm run test:e2e`. The app exports static files to `out/`.
 - **Drive:** Playwright tests exercise real browser interactions in desktop and mobile Chromium. The HTTP helper supports route, snapshot, and crawler checks.
 - **Observe:** headings, navigation, search results, clipboard contents, decoded images, page width, HTTP status, metadata, and browser exceptions.

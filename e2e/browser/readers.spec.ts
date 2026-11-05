@@ -1,4 +1,5 @@
 import { test as base, expect, type Page } from "@playwright/test";
+import { stories } from "../../lib/stories";
 import { darienStory } from "../../lib/stories/darien";
 import { fashodaStory } from "../../lib/stories/fashoda";
 import { pigWarStory } from "../../lib/stories/pig-war";
@@ -209,4 +210,30 @@ test("the footer opens a valid RSS document without failed feed requests", async
   }
   expect(feed.entries.map((entry) => entry.link)).toContain("https://almostlore.com/stories/poyais-invented-country");
   expect(failedFeedResponses).toEqual([]);
+});
+
+test("llms.txt lists the further-reading essays as plain text", async ({ request }) => {
+  const response = await request.get("/llms.txt");
+  expect(response.status()).toBe(200);
+  expect(response.headers()["content-type"]).toMatch(/^text\/plain\b/);
+  const body = await response.text();
+  expect(body.startsWith("# Almost Lore\n")).toBe(true);
+  expect(body).toContain("\n> Original longform on public-record historical near-misses and weird history.\n");
+  expect(body).toContain("\n## Stories\n");
+  expect(body.toLowerCase()).not.toContain("amazon.com");
+  expect(body).not.toContain("laqaer-20");
+
+  const tagged = stories.filter((story) => {
+    const reading = story.furtherReading ?? [];
+    return reading.length > 0 && reading.some((item) => item.href.includes("tag=laqaer-20"));
+  });
+  const urls = [...body.matchAll(/https:\/\/almostlore\.com\/stories\/[a-z0-9-]+/g)].map((match) => match[0]);
+  expect(urls.slice().sort()).toEqual(tagged.map((story) => `https://almostlore.com/stories/${story.slug}`).sort());
+  for (const story of tagged) {
+    expect(body).toContain(`- [${story.title}](https://almostlore.com/stories/${story.slug}): ${story.dek}`);
+  }
+  for (const story of stories) {
+    if (tagged.includes(story)) continue;
+    expect(body).not.toContain(`https://almostlore.com/stories/${story.slug}`);
+  }
 });
