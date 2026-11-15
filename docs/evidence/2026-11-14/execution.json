@@ -1,0 +1,63 @@
+{
+  "task": {
+    "objective": "Record the E2 evaluation attempt on its original date using available evidence.",
+    "owningIssue": "https://github.com/laqaer/almost-lore/issues/32",
+    "repository": "laqaer/almost-lore",
+    "head": "c4dd0095f7aba9411e91307401bceda8b25752b7",
+    "base": "c4dd0095f7aba9411e91307401bceda8b25752b7",
+    "owner": "Almost Lore editorial desk",
+    "scope": [
+      "ops/STATE.md",
+      "ops/EXPERIMENTS.md",
+      "docs/evidence/2026-11-14"
+    ],
+    "exclusions": [
+      "Payments",
+      "Secrets",
+      "DNS",
+      "Infrastructure deployment",
+      "New stories",
+      "New spend"
+    ],
+    "completionBoundary": "Reviewed integration of the evaluation record. Independent review remains pending."
+  },
+  "observation": {
+    "observedAt": "2026-11-15T04:22:31Z",
+    "localEvaluationDate": "2026-11-14",
+    "timezone": "America/Los_Angeles",
+    "status": "status.json",
+    "stripeOperation": "list_available_accounts_or_orgs",
+    "stripeResult": {
+      "error": "This app connection requires reauthentication. Reconnect the app and try again.",
+      "error_code": "UNAUTHORIZED"
+    },
+    "processorExport": "unavailable",
+    "evaluation": "inconclusive",
+    "checkoutStarts": "unknown",
+    "originalSuccess": "not demonstrated",
+    "zeroStartPivotCondition": "unverified"
+  },
+  "checks": {
+    "production": {
+      "command": "npm run test:e2e:ops",
+      "source": "c4dd0095f7aba9411e91307401bceda8b25752b7",
+      "target": "https://almostlore.com",
+      "exitCode": 0,
+      "pass": 1,
+      "skip": 0,
+      "log": "ops-e2e.log"
+    },
+    "local": "Pass: JSON, saved status claims, local links, git diff --check. Changed prose checked against all ten house-style checks.",
+    "independentReview": "Pending; no available helper concurrency slot",
+    "hosted": "not run",
+    "integration": "pending",
+    "deployment": "not performed"
+  },
+  "costs": {
+    "discretionarySpendUsd": 0,
+    "model": "unknown",
+    "agentCompute": "unknown",
+    "CI": "unknown"
+  },
+  "validator": "Project execution-evidence validator is absent."
+}

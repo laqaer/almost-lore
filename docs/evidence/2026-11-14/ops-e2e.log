@@ -1,0 +1,13 @@
+
+> almost-lore@1.0.0 test:e2e:ops
+> node --test e2e/ops.test.mjs
+
+✔ the public status exposes a recent, successful scheduled reconciliation (1269.578417ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1331.468125
