@@ -54,13 +54,4 @@ export const beringStory: Story = {
       ],
     },
   ],
-  furtherReading: [
-    {
-      title:
-        "Island of the Blue Foxes: Disaster and Triumph on the World’s Greatest Scientific Expedition",
-      author: "Stephen R. Bown",
-      href: "https://www.amazon.com/dp/0306825198?tag=laqaer-20",
-      note: "A history of the Second Kamchatka Expedition, the wreck of St. Peter, and the winter on Bering Island.",
-    },
-  ],
 };

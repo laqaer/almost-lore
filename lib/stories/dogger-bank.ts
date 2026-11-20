@@ -59,13 +59,4 @@ export const doggerBankStory: Story = {
       ],
     },
   ],
-  furtherReading: [
-    {
-      title:
-        "The Voyage to Tsushima: Rodjdestvensky’s Russian Fleet, the Dogger Bank Incident & the Russo-Japanese War at Sea, 1904-05-From Libau to Tsushima with Two Short Accounts of the North Sea Incident",
-      author: "Eugène S. Politovsky, Walter Wood, and John Bassett Moore",
-      href: "https://www.amazon.com/dp/178282829X?tag=laqaer-20",
-      note: "Letters from the Baltic fleet, with two short accounts of the North Sea incident of October 1904.",
-    },
-  ],
 };
