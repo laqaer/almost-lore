@@ -64,12 +64,4 @@ export const venezuelanCrisisStory: Story = {
       ],
     },
   ],
-  furtherReading: [
-    {
-      title: "The Venezuelan Boundary Controversy",
-      author: "Grover Cleveland",
-      href: "https://www.amazon.com/dp/1313429082?tag=laqaer-20",
-      note: "Cleveland’s account of the boundary dispute between Venezuela and British Guiana, and of the American intervention in 1895.",
-    },
-  ],
 };

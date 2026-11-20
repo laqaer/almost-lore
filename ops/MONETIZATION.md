@@ -74,7 +74,7 @@ Angle rules:
 ## Ads and affiliate
 
 - **Ads: start the paperwork now, keep tags off.** Serving needs a real publisher ID **and** `CONSENT_PLATFORM_INSTALLED`. That constant is `false` on purpose, because an env string is not visitor consent. Turning ads on is one change that sets the ids, installs a certified CMP, and flips the constant. `ads.txt` lists the seller once `NEXT_PUBLIC_ADSENSE_PUB_ID` is a valid `pub-` id, before ads serve; it is comment-only while that variable is empty or invalid.
-- **Affiliate (books):** Amazon Associates links are on the further-reading lists for Poyais, Darien, Fashoda, the Trent Affair, the Pig War, the Caroline affair, Dogger Bank, the Venezuela crisis, the Aroostook War, and the Bering Island winter. `/privacy` and `/about` carry the disclosure. Do not add more book links without the same disclosure.
+- **Affiliate (books):** Live `tag=laqaer-20` count is zero. Those further-reading links were removed because the Associates sitelist does not include almostlore.com. The ground-truth row above is the count on 2026-09-27, ten essays. `/about` and `/privacy` still include the Associates sentence.
 - Both can be started in parallel because they cost no money; they simply cannot be switched on until the missing approvals exist. Judge them on approvals and traffic, not against a 30-day promise.
 
 ## Risks and open questions

@@ -74,12 +74,4 @@ export const aroostookWarStory: Story = {
       ],
     },
   ],
-  furtherReading: [
-    {
-      title: "The Aroostook War of 1839",
-      author: "W. E. Campbell",
-      href: "https://www.amazon.com/dp/0864926782?tag=laqaer-20",
-      note: "A history of the 1839 Aroostook confrontation and the line agreed in the treaty of 1842.",
-    },
-  ],
 };

@@ -61,13 +61,4 @@ export const carolineAffairStory: Story = {
       ],
     },
   ],
-  furtherReading: [
-    {
-      title:
-        "Border Diplomacy: The Caroline and McLeod Affairs in Anglo-American-Canadian Relations, 1837-1842",
-      author: "Kenneth R. Stevens",
-      href: "https://www.amazon.com/dp/0817351582?tag=laqaer-20",
-      note: "A history of the Caroline raid of 1837, the McLeod trial, and the Webster–Ashburton notes of 1842.",
-    },
-  ],
 };
