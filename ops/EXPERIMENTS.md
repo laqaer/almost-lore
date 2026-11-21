@@ -57,3 +57,18 @@ No new story was added in this follow-up.
 - Measurement failure, verified 2026-10-17 (historical): the October 16 cron threw an exception after 50 subrequests. The latest summary then remained the October 15 cron, with source `no_stripe_key`. Current sales were unknown. The repair then awaited deployment approval in [issue #23](https://github.com/laqaer/almost-lore/issues/23). The evaluation date did not change. No checkout session or charge was created during verification.
 - Measurement restored, verified 2026-10-19: the latest summary is the October 18 cron at `2026-10-18T13:00:28.914Z`, with ledger source `stripe_checkout_sessions`. The production read-only E2E check passes. [Issue #23 records successful scheduled acceptance](https://github.com/laqaer/almost-lore/issues/23#issuecomment-6250463123) and is closed. The summary reports zero paid sessions but does not report checkout starts. Its account-wide 100-session limit, incomplete fees and refunds, and lack of automatic owner exclusion still prevent full demand and profit measurement. This recovery does not establish E2 success or change its deadline.
 - Owner test purchases, including live-mode purchases later refunded, verify payment plumbing only. Exclude them from customer revenue and the original demand metric. Keep the original success metric above unchanged.
+
+### E2 Evaluation Attempt, 2026-11-14
+
+The evaluation is inconclusive because checkout-start evidence is unavailable. This supersedes the open-status description above.
+The evaluation date remains November 14. Any later reconstruction must use transactions from the original experiment window.
+
+- At 20:22 Pacific time on November 14, `/api/status` returned the November 14 cron summary from `13:00:14.384Z`.
+- That bounded summary reports zero paid sessions and zero cash. It omits checkout starts and retains provisional accounting.
+- Stripe's account-list operation returned `UNAUTHORIZED` and requires reauthentication. This pass obtained no processor session export.
+- The production HTTP check passes one test with no skips. It verifies summary freshness and page probes.
+
+Neither original success branch is established by these observations. The zero-checkout-start condition for the original pivot rule also remains unverified.
+Retain the original metric and window when recovering the missing counts. Exclude owner purchases from customer-demand evidence.
+Track the measurement repair in [issue #32](https://github.com/laqaer/almost-lore/issues/32).
+The [evaluation evidence](../docs/evidence/2026-11-14/execution.json) records the snapshot, checks, and exact access failure.
