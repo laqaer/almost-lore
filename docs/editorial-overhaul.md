@@ -111,3 +111,16 @@ The shared chrome drops these tells:
 Fraunces still sets titles. Newsreader still sets essays. Hairline rules still separate the nav, the shortlist, the sources, and the footer. Reading progress, page transitions, and the image hover stay. The story breadcrumb, source notes, further reading, questions, and ads markup stay. Essay text is unchanged.
 
 If this decorative chrome comes back, or if the deploy of this change is broken, revert it by 2026-12-01. This note does not deploy the site and does not submit IndexNow.
+
+## Accessible archive controls, 2026-11-13
+
+The archive's topic filters use a named `group` with each button's existing
+`aria-pressed` state. Search text uses `1rem` with a unitless line height so it
+responds to browser font preferences. The shared focus outline also covers
+selects, textareas and disclosure summaries. These changes follow the pinned
+[Modern Web Guidance accessibility and typography guides](https://github.com/GoogleChrome/modern-web-guidance/tree/4dd968349e54ca45a05dd5c818fb035c9054b022/skills/modern-web-guidance/guides).
+
+This source change is based on `c4dd0095f7aba9411e91307401bceda8b25752b7`.
+The draft PR for `codex/modern-web-guidance-20261113` records its exact candidate
+and current checks. The earlier production acceptance above applies only to its
+named release; this maintenance has no deployment or browser-acceptance receipt.

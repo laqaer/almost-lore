@@ -19,7 +19,7 @@ export function StoryArchive({ stories }: { stories: StoryPreview[] }) {
         <p>Extraordinary events.<br /> The records to back them up.</p>
       </div>
       <div className="archive-controls">
-        <div className="filter-tabs" aria-label="Filter stories">
+        <div className="filter-tabs" role="group" aria-label="Filter stories">
           {["All stories", ...collections].map((label) => (
             <button key={label} type="button" aria-pressed={collection === label} onClick={() => setCollection(label)}>{label}</button>
           ))}

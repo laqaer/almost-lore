@@ -55,7 +55,7 @@
 .filter-tabs button:hover:not([aria-pressed="true"]) { color: var(--color-ink); }
 .archive-search { display: flex; align-items: center; gap: 10px; padding: 8px 0; min-width: 225px; }
 .archive-search svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.5; flex-shrink: 0; }
-.archive-search input { font-size: 12px; width: 100%; min-width: 0; padding: 4px 0; background: transparent; }
+.archive-search input { font-size: 1rem; line-height: 1.5; width: 100%; min-width: 0; padding: 4px 0; background: transparent; }
 .archive-search input::placeholder { color: var(--color-ink-faint); }
 .results-count { font-size: 11px; color: var(--color-ink-faint); margin: 18px 0 24px; }
 .archive-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); column-gap: 30px; row-gap: 44px; }
@@ -135,7 +135,7 @@
 .story-end > p { font: 400 23px/1.2 var(--font-serif); }
 .more-stories { padding: 65px 0 75px; margin-top: 65px; border-top: 1px solid var(--color-rule); }
 .more-stories .archive-grid { margin-top: 30px; }
-:where(a, button, input):focus-visible { outline: 2px solid var(--color-rust); outline-offset: 5px; }
+:where(a, button, input, select, textarea, summary):focus-visible { outline: 2px solid var(--color-rust); outline-offset: 5px; }
 @media (max-width: 1100px) {
   .shell { width: calc(100% - 48px); }
   .front-page { gap: 25px; grid-template-columns: minmax(0,1.65fr) minmax(0,1fr); }
@@ -214,7 +214,6 @@
   .filter-tabs { gap: 6px 14px; }
   .filter-tabs button { padding: 8px 0; font-size: 12px; }
   .archive-search { margin-top: 12px; max-width: none; border-top: 1px solid var(--color-rule); padding-top: 15px; }
-  .archive-search input { font-size: 16px; }
   .archive-grid { grid-template-columns: 1fr; row-gap: 33px; }
   .archive-card h3 { font-size: 29px; }
   .archive-card-image { aspect-ratio: 1.5; }
