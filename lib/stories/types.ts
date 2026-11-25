@@ -34,6 +34,7 @@ export type Story = {
   yearLabel: string;
   published: string;
   updated: string;
+  holidayPriceCheck?: true;
   sourcesNote: string;
   sections: StorySection[];
   dossier?: StoryDossier;

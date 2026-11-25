@@ -111,3 +111,7 @@ The shared chrome drops these tells:
 Fraunces still sets titles. Newsreader still sets essays. Hairline rules still separate the nav, the shortlist, the sources, and the footer. Reading progress, page transitions, and the image hover stay. The story breadcrumb, source notes, further reading, questions, and ads markup stay. Essay text is unchanged.
 
 If this decorative chrome comes back, or if the deploy of this change is broken, revert it by 2026-12-01. This note does not deploy the site and does not submit IndexNow.
+
+## Holiday price note, 2026-11-25
+
+Poyais (`poyais-invented-country`), the Bering Island winter (`bering-island-winter`), and the Darien scheme (`darien-scheme`) tell a reader to check the Amazon price on the day they look. Each further-reading link on those essays says Check today’s price. A line under the list says holiday prices change daily. The Associates disclosure is unchanged. The other seven essays with book links are unchanged. `updated` on those three essays is 2026-11-25. That date is the visible date and the Article JSON-LD `dateModified`. This note does not deploy the site.

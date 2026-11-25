@@ -88,7 +88,8 @@ export function StoryArticle({ story }: { story: Story }) {
           {links.length > 0 ? <aside className={`story-source-block${story.furtherReading?.length ? "" : " static-aside"}`}><p className="kicker">In the record</p><ul>{links.map((link) => <li key={link.href}><a href={link.href} rel="noopener" target="_blank">{link.label}</a>{" — "}{link.note}</li>)}</ul></aside> : null}
           {story.furtherReading?.length ? <aside className="story-source-block static-aside">
             <p className="kicker">Further reading</p>
-            <ul>{story.furtherReading.map((book) => <li key={book.href}><a href={book.href} rel="sponsored nofollow noopener" target="_blank">{book.title}</a>{" — "}{book.author}<span className="mt-1 block">{book.note}</span></li>)}</ul>
+            <ul>{story.furtherReading.map((book) => <li key={book.href}><a href={book.href} rel="sponsored nofollow noopener" target="_blank">{story.holidayPriceCheck ? "Check today’s price" : book.title}</a>{story.holidayPriceCheck ? <>{" — "}{book.title}</> : null}{" — "}{book.author}<span className="mt-1 block">{book.note}</span></li>)}</ul>
+            {story.holidayPriceCheck ? <p>Holiday prices change daily, so check today’s price on Amazon.</p> : null}
             <p className="mt-4 text-ink-faint">As an Amazon Associate, Almost Lore earns from qualifying purchases.</p>
           </aside> : null}
           {story.faq ? (
