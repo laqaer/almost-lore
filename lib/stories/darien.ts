@@ -7,7 +7,8 @@ export const darienStory: Story = {
   hook: "The second fleet was already at sea when the first colony gave up.",
   yearLabel: "1698–1700",
   published: "2026-09-25",
-  updated: "2026-10-29",
+  updated: "2026-11-25",
+  holidayPriceCheck: true,
   sourcesNote:
     "This essay is original prose. It follows the public record of the Company of Scotland Trading to Africa and the Indies: the 1695 act, the subscription lists of 1696, five ships leaving Leith in July 1698 with about 1,200 people, the abandonment of the settlement in the summer of 1699, a second expedition that had already sailed, and the Spanish siege that ended the colony in March 1700. Sailing dates inside that July vary by a few days between compilers; so does the exact day the first fort was given up. What is not stable is the money and the dead. The subscribed sum is often given as about £400,000, but compilers disagree on how much was actually paid in. Death totals for the two expeditions are commonly put somewhere past two thousand if both fleets and the voyages are counted together, and much lower if you count only bodies on the isthmus. We do not pick a favorite integer. The Union of 1707 had more causes than Darien.",
   sections: [

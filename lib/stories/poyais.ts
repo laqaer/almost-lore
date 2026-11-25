@@ -7,7 +7,8 @@ export const poyaisStory: Story = {
   hook: "The banknotes were real. The capital was not.",
   yearLabel: "1822–1823",
   published: "2026-09-11",
-  updated: "2026-10-29",
+  updated: "2026-11-25",
+  holidayPriceCheck: true,
   sourcesNote:
     "This essay is original prose. It follows the public outline of the Poyais episode as it appears in contemporary loan notices, later court and newspaper coverage, and modern scholarship on the 1822–23 London and Scottish issues. Departure dates, passenger counts, and death totals are not a single agreed ledger; where later writers disagree, the disagreement is named rather than averaged into a fake precision.",
   dossier: {

@@ -7,7 +7,8 @@ export const beringStory: Story = {
   hook: "The survivors sailed home in a boat made from the wreck. Their captain stayed behind.",
   yearLabel: "1741–1742",
   published: "2026-09-25",
-  updated: "2026-11-02",
+  updated: "2026-11-25",
+  holidayPriceCheck: true,
   sourcesNote:
     "This essay is original prose. It follows the public outline of the Second Kamchatka Expedition’s 1741 American voyage as it appears in Georg Wilhelm Steller’s journal (published later, and not a neutral log), Sven Waxell’s report, and later surveys of the Russian Pacific expeditions. The sighting of Mount Saint Elias on 16 July 1741, the landfall on the island in early November, Bering’s death on 8 December 1741, and a company of forty-six reaching Avacha Bay on 26 August 1742 are the dates used by the naval chronology and by Bancroft’s reading of the ship’s record. A Russian popular account puts the death on 6 December; this essay stays with 8 December and says so. Departure from Petropavlovsk is early June in some tellings and early July in others. How many sailed, and how many of the roughly thirty winter deaths belong to the island rather than the crossing, moves between ledgers. Steller’s line that Bering died of hunger, thirst, cold, and grief is Steller’s line.",
   sections: [
