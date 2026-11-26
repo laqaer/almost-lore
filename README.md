@@ -33,7 +33,7 @@ Published at `almostlore.com`. Set `NEXT_PUBLIC_SITE_URL` if the deploy URL shou
 | `/friends` | Blogroll of people and their personal sites |
 | `/privacy` | Privacy page, naming any ads, affiliate links, or analytics if added |
 
-The archive supports local search and topic filters. Essays remain typed content. Article JSON-LD is used only on story pages. The five essays that already have further reading also show a Questions block, and those pages emit FAQPage JSON-LD from the same questions and answers.
+The archive supports local search and topic filters. Essays remain typed content. Article JSON-LD is used only on story pages. Contact uses ContactPage JSON-LD. Friends and support use WebPage JSON-LD. The five essays that already have further reading also show a Questions block, and those pages emit FAQPage JSON-LD from the same questions and answers.
 
 Card checkout and the support queue live on the Cloudflare Worker `almost-lore-ops`, not in this static export. The paid file body is not in this public repository. Operating notes are in `ops/`.
 
@@ -65,7 +65,7 @@ It does not verify checkout or download completion.
 ## Deployment
 
 Production uses Vercel's Git integration for `laqaer/almost-lore`, branch `main`.
-The project is `almost-lore` in `laqaers-projects`. Its production domain is `almostlore.com`.
+The project is `almost-lore` in `laqaers-projects`. Its production domain is `almostlore.com`. `vercel.json` permanently redirects every `www.almostlore.com` path to the same path on `almostlore.com`.
 The [editorial release record](docs/editorial-overhaul.md) contains the deployed revision and production acceptance evidence.
 
 1. Push or merge the verified change to `main`.

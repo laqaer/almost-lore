@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/json-ld";
 import { openGraphImage, twitterWithImage } from "@/lib/metadata";
+import { pageJsonLd } from "@/lib/schema";
 
-const title = "Friends";
+const title = "People on their own sites";
 const description =
   "A short list of people and their personal sites a reader of Almost Lore might like.";
 
@@ -63,6 +65,7 @@ export const metadata: Metadata = {
 export default function FriendsPage() {
   return (
     <article className="folio">
+      <JsonLd data={pageJsonLd({ type: "WebPage", path: "/friends", name: title, description })} />
       <h1 className="folio-title">
         People on their own sites
       </h1>

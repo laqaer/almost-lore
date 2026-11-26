@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { JsonLd } from "@/components/json-ld";
 import { openGraphImage, twitterWithImage } from "@/lib/metadata";
+import { pageJsonLd } from "@/lib/schema";
 
-const title = "Support";
+const title = "Corrections, refunds, and notes";
 const description =
   "Send Almost Lore a correction, a refund request, or a note about the Poyais working file.";
 
@@ -26,6 +28,7 @@ export const metadata: Metadata = {
 export default function SupportPage() {
   return (
     <article className="folio">
+      <JsonLd data={pageJsonLd({ type: "WebPage", path: "/support", name: title, description })} />
       <h1 className="folio-title">
         A correction, a refund, a note
       </h1>

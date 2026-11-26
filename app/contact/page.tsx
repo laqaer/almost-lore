@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { JsonLd } from "@/components/json-ld";
 import { openGraphImage, twitterWithImage } from "@/lib/metadata";
+import { pageJsonLd } from "@/lib/schema";
 import { site } from "@/lib/site";
 
-const title = "Contact";
+const title = "How to reach the editors";
 const description =
   "Editorial notes and corrections for Almost Lore, published by Laqaer. The support form stores a note for the publisher.";
 
@@ -27,6 +29,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <article className="folio">
+      <JsonLd data={pageJsonLd({ type: "ContactPage", path: "/contact", name: title, description })} />
       <h1 className="folio-title">
         How to reach Almost Lore
       </h1>

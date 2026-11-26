@@ -3,7 +3,7 @@ import type { Story } from "@/lib/stories/types";
 export const sanFranciscoFogStory: Story = {
   slug: "san-francisco-fog-1950",
   title: "The secret in San Francisco’s fog",
-  dek: "In 1950, the military released bacteria off San Francisco without warning residents. A later hospital outbreak raised a question the surviving evidence could not settle.",
+  dek: "In 1950, the military released bacteria off San Francisco without warning residents. A later hospital outbreak raised a question the evidence could not settle.",
   hook: "The city was part of an experiment. The residents had not agreed to take part.",
   yearLabel: "September 1950",
   published: "2026-09-25",
