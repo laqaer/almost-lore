@@ -7,6 +7,12 @@
   },
   "redirects": [
     {
+      "source": "/",
+      "has": [{ "type": "host", "value": "www.almostlore.com" }],
+      "destination": "https://almostlore.com/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.almostlore.com" }],
       "destination": "https://almostlore.com/:path*",
