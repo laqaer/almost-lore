@@ -66,7 +66,7 @@ It does not verify checkout or download completion.
 
 Production uses Vercel's Git integration for `laqaer/almost-lore`, branch `main`.
 The project is `almost-lore` in `laqaers-projects`. Its production domain is `almostlore.com`. `vercel.json` permanently redirects every `www.almostlore.com` path to the same path on `almostlore.com`.
-The [editorial release record](docs/editorial-overhaul.md) contains the deployed revision and production acceptance evidence.
+The [editorial release record](docs/editorial-overhaul.md) contains the deployed revision and production acceptance evidence. The [SEO metadata note](docs/editorial-overhaul.md#seo-metadata-2026-11-26) records this redirect as implemented in source. The hosted redirect check is still outstanding.
 
 1. Push or merge the verified change to `main`.
 2. Confirm that the new Vercel deployment uses the expected commit and reaches `READY`.
