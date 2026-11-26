@@ -72,6 +72,22 @@ export function faqPageJsonLd(input: { path: string; faq: StoryFaq }) {
   };
 }
 
+export function pageJsonLd(input: {
+  type: "ContactPage" | "WebPage";
+  path: string;
+  name: string;
+  description: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": input.type,
+    name: input.name,
+    description: input.description,
+    url: `${siteUrl()}${input.path}`,
+    inLanguage: "en-US",
+  };
+}
+
 export function organizationJsonLd() {
   const url = siteUrl();
   return {

@@ -115,3 +115,25 @@ If this decorative chrome comes back, or if the deploy of this change is broken,
 ## Holiday price note, 2026-11-25
 
 Poyais (`poyais-invented-country`), the Bering Island winter (`bering-island-winter`), and the Darien scheme (`darien-scheme`) tell a reader to check the Amazon price on the day they look. Each further-reading link on those essays says Check today’s price. A line under the list says holiday prices change daily. The Associates disclosure is unchanged. The other seven essays with book links are unchanged. `updated` on those three essays is 2026-11-25. That date is the visible date and the Article JSON-LD `dateModified`. This note does not deploy the site.
+
+## SEO metadata, 2026-11-26
+
+Task FLEET-SEO-20261126 has no separate GitHub issue. The change is pull request [#44](https://github.com/laqaer/almost-lore/pull/44). The behavior is commit [`d483be5`](https://github.com/laqaer/almost-lore/commit/d483be5ce5b5c51a8cb5ca48a2006dc18c5bfa0a).
+
+`vercel.json` permanently redirects every path on `www.almostlore.com` to the same path on `almostlore.com`. The rule matches only the host `www.almostlore.com`.
+
+Contact, friends, and support titles describe those pages. The San Francisco fog summary is shorter. Contact uses ContactPage JSON-LD. Friends and support use WebPage JSON-LD. Essay paragraphs are unchanged.
+
+Local checks ran against the static export. `npm run build` completed. Built titles are 38, 39, and 45 characters on `/contact`, `/friends`, and `/support`. The fog meta description is 159 characters. Its Open Graph and Twitter descriptions match that text. `npm run test:e2e` passed 14 tests. The suite serves the static export at `127.0.0.1:4322`. The host redirect runs on Vercel after deploy.
+
+A production GET of `https://www.almostlore.com/` returned 200 before this change.
+
+| Stage | Status |
+| --- | --- |
+| Implementation | Complete in the pull request |
+| Merge | Not merged |
+| Website deployment | Not deployed |
+| Hosted redirect check | Not run |
+| Ops Worker | Unchanged |
+
+This note does not deploy the site and does not submit IndexNow. A website deployment does not publish `almost-lore-ops`.

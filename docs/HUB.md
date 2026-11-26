@@ -7,6 +7,7 @@ This is the stable index for this owner-controlled repository. Existing source d
 | README.md | [README.md](../README.md) |
 | Editorial overhaul | [Implementation, verification, and deployment boundary](editorial-overhaul.md) |
 | Editorial chrome | [Quiet chrome, 2026-11-01](editorial-overhaul.md#chrome-cleanup-2026-11-01) |
+| SEO metadata | [www redirect and page metadata, 2026-11-26](editorial-overhaul.md#seo-metadata-2026-11-26) |
 | Social launch | [Drafts, credits, and measurement baseline](social-launch.md) |
 | Experiments and operations | [Current state](../ops/STATE.md), [experiment rules and results](../ops/EXPERIMENTS.md), [profit ledger](../ops/LEDGER.md) |
 | Existing documentation | [Browse docs](./) |

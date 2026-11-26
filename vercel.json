@@ -5,6 +5,14 @@
       "infra/cloudflare-preview-workflow": false
     }
   },
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.almostlore.com" }],
+      "destination": "https://almostlore.com/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/api/:path*",
