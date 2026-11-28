@@ -1,6 +1,17 @@
 # Almost Lore — operating state
 
-Updated: 2026-10-31
+Updated: 2026-11-14
+
+## E2 Evaluation Attempt, 2026-11-14
+
+E2's evaluation is inconclusive because checkout-start evidence is unavailable.
+The November 14 cron summary reports zero provisional paid sessions and cash, and omits checkout starts.
+Stripe's account-list operation requires reauthentication, which prevented a direct processor export during this evaluation.
+The production HTTP check passes one test with no skips.
+
+The original success metric and zero-start pivot condition remain unverified. The evaluation date stays November 14.
+Recover the original-window session counts through the measurement work in [issue #32](https://github.com/laqaer/almost-lore/issues/32).
+See the [experiment evaluation](EXPERIMENTS.md#e2-evaluation-attempt-2026-11-14) and [execution evidence](../docs/evidence/2026-11-14/execution.json).
 
 ## Refund source repair, 2026-10-31
 
@@ -173,5 +184,5 @@ Track the incorrect cron-only assertion and missing scheduled-run evidence in [i
 Use only fresh Stripe-backed summaries, with the accounting limits above. Do not treat historical pre-activation zeros as current sales evidence.
 E1 is closed, and indexing is now measurable through OpenSEO. Use that evidence for the next title or internal-link repair.
 Keep E1's original deadline and unsuccessful outcome. Read the current measurement record above before adding story volume.
-E2 remains open with its unchanged 2026-11-14 evaluation date.
+E2's November 14 evaluation is inconclusive. Recover its original-window checkout counts as recorded above.
 Sales tax configuration remains unverified.
