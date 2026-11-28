@@ -224,8 +224,8 @@ test("llms.txt lists the further-reading essays as plain text", async ({ request
   expect(body).not.toContain("laqaer-20");
 
   const tagged = stories.filter((story) => {
-    const reading = story.furtherReading ?? [];
-    return reading.length > 0 && reading.some((item) => item.href.includes("tag=laqaer-20"));
+    const books = [...(story.furtherReading ?? []), ...(story.sourceBook ? [story.sourceBook] : [])];
+    return books.some((book) => book.href.includes("tag=laqaer-20"));
   });
   const urls = [...body.matchAll(/https:\/\/almostlore\.com\/stories\/[a-z0-9-]+/g)].map((match) => match[0]);
   expect(urls.slice().sort()).toEqual(tagged.map((story) => `https://almostlore.com/stories/${story.slug}`).sort());

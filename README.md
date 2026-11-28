@@ -2,7 +2,7 @@
 
 Original longform on public-record historical near-misses and weird history. Published by Laqaer.
 
-`/llms.txt` lists each essay whose further reading carries the `laqaer-20` tag.
+`/llms.txt` lists each essay whose source book or further reading carries the `laqaer-20` tag.
 
 Published at `almostlore.com`. Set `NEXT_PUBLIC_SITE_URL` if the deploy URL should differ.
 
