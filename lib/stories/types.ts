@@ -38,6 +38,7 @@ export type Story = {
   sourcesNote: string;
   sections: StorySection[];
   dossier?: StoryDossier;
+  sourceBook?: FurtherReading;
   furtherReading?: FurtherReading[];
   faq?: StoryFaq;
 };

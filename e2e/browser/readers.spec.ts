@@ -237,3 +237,33 @@ test("llms.txt lists the further-reading essays as plain text", async ({ request
     expect(body).not.toContain(`https://almostlore.com/stories/${story.slug}`);
   }
 });
+
+test("the Venezuela essay shows its source book once, above the body", async ({ page }) => {
+  await page.goto("/stories/venezuelan-crisis-1895");
+  const callout = page.getByRole("complementary", { name: "Source book" });
+  await expect(callout).toBeVisible();
+  const link = callout.getByRole("link", { name: "The Venezuelan Boundary Controversy" });
+  await expect(link).toHaveAttribute("href", "https://www.amazon.com/dp/1313429082?tag=laqaer-20");
+  await expect(link).toHaveAttribute("rel", "sponsored nofollow noopener");
+  await expect(callout).toContainText("Grover Cleveland");
+  await expect(callout).toContainText("Cleveland’s account of the boundary dispute between Venezuela and British Guiana, and of the American intervention in 1895.");
+  await expect(callout).toContainText("As an Amazon Associate, Almost Lore earns from qualifying purchases.");
+  await expect(page.locator('a[href="https://www.amazon.com/dp/1313429082?tag=laqaer-20"]')).toHaveCount(1);
+  await expect(page.getByText("Further reading", { exact: true })).toHaveCount(0);
+  await expect(page.locator(".prose-lore p").first()).toContainText(/^On 17 December 1895, President Grover Cleveland asked Congress to fund a boundary commission\./);
+  const order = await page.evaluate(() => {
+    const byline = document.querySelector(".story-byline");
+    const callout = document.querySelector(".source-book");
+    const hero = document.querySelector(".story-hero");
+    const prose = document.querySelector(".prose-lore");
+    if (!byline || !callout || !hero || !prose) return false;
+    const follows = (earlier: Element, later: Element) => (earlier.compareDocumentPosition(later) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
+    return follows(byline, callout) && follows(callout, hero) && follows(hero, prose);
+  });
+  expect(order).toBe(true);
+
+  await page.goto("/stories/caroline-affair");
+  await expect(page.getByText("Further reading", { exact: true })).toBeVisible();
+  await expect(page.getByRole("complementary", { name: "Source book" })).toHaveCount(0);
+  await expect(page.locator('a[href="https://www.amazon.com/dp/0817351582?tag=laqaer-20"]')).toHaveCount(1);
+});
