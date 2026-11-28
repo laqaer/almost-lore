@@ -99,6 +99,9 @@
 .story-heading h1 { font: 400 clamp(38px,5.4vw,70px)/1.04 var(--font-display); margin: 18px 0 23px; text-wrap: balance; }
 .story-heading .story-dek { font: 400 22px/1.5 var(--font-serif); color: var(--color-ink-soft); max-width: 720px; margin: 0 auto; }
 .story-byline { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; align-items: center; margin-top: 25px; font-size: 11px; color: var(--color-ink-faint); }
+.source-book { max-width: 720px; margin-inline: auto; font-size: 13px; line-height: 1.7; color: var(--color-ink-soft); }
+.source-book p + p { margin-top: 8px; }
+.source-book a { color: var(--color-teal); text-decoration: underline; text-underline-offset: 3px; }
 .story-tools { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 .share-button { display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--color-rule); padding: 8px 11px; cursor: pointer; color: var(--color-ink); }
 .share-button:hover { background: var(--color-paper-deep); }

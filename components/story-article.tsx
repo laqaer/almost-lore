@@ -54,6 +54,12 @@ export function StoryArticle({ story }: { story: Story }) {
           <time dateTime={story.updated}>Updated {story.updated}</time><StoryTools url={url} />
         </div>
       </header>
+      {story.sourceBook ? <aside className="source-book" aria-labelledby="source-book-label">
+        <p id="source-book-label" className="kicker">Source book</p>
+        <p><a href={story.sourceBook.href} rel="sponsored nofollow noopener" target="_blank">{story.sourceBook.title}</a>{" — "}{story.sourceBook.author}</p>
+        <p>{story.sourceBook.note}</p>
+        <p className="mt-4 text-ink-faint">As an Amazon Associate, Almost Lore earns from qualifying purchases.</p>
+      </aside> : null}
       <figure className="story-hero">
         <Image src={media.src} alt={media.alt} width={media.width} height={media.height} preload sizes="(min-width: 1100px) 1000px, 100vw" unoptimized />
         <Caption media={media} label="From the archive" />
